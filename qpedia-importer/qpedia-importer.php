@@ -159,7 +159,7 @@ function qpedia_imp_run() {
 			$src    = wp_get_attachment_image_url( $attach_id, 'full' );
 			$figure = '<figure style="margin:28px 0;">'
 				. '<img src="' . esc_url( $src ) . '" alt="' . esc_attr( $meta['alt'] ) . '" loading="lazy" style="max-width:100%;height:auto;border-radius:12px;display:block;" />'
-				. '<div style="background:#e8f0fe;border-inline-start:4px solid #1a73e8;color:#174ea6;padding:10px 16px;border-radius:0 8px 8px 0;margin-top:10px;font-size:0.95em;line-height:2;">' . wp_kses_post( $meta['caption'] ) . '</div>'
+				. '<div style="background:#E8F6FF;border-inline-start:4px solid #3BA7F2;color:#0B3D91;padding:10px 16px;border-radius:0 8px 8px 0;margin-top:10px;font-size:0.95em;line-height:2;">' . wp_kses_post( $meta['caption'] ) . '</div>'
 				. '</figure>';
 			$html     = str_replace( '<!--QIMG:' . $key . '-->', $figure, $html );
 			$uploaded++;
