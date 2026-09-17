@@ -27,7 +27,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
-define( 'QPEDIA_CHILD_VERSION', '2026.09.17b' );
+define( 'QPEDIA_CHILD_VERSION', '2026.09.17c' );
 
 /* ── ۱. راه‌اندازی: بارگذاری ترجمه (رفع خطای Doing it Wrong) ── */
 function qpedia_child_setup() {
