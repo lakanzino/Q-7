@@ -1,0 +1,277 @@
+<!-- ============================================================
+     صفحهٔ «از کجا شروع کنیم؟» — کوانتوم پدیا فارسی
+     (استاندارد گوگل: یک H1، سلسله‌مراتب تیتر، لینک‌های توصیفی،
+      هدف‌های لمسی ۴۸px، کنتراست AA، بدون JS، بدون درخواست خارجی)
+     SEO پیشنهادی (در فیلدهای _qpedia_* صفحه):
+       - اسلاگ: where-to-start
+       - عنوان SEO: از کجا شروع کنیم؟ ۳ مسیر مطالعه در کوانتوم پدیا
+       - توضیحات متا: با ۳ مسیر آماده — از صفر، با پیش‌زمینهٔ فیزیک، به‌سمت کاربردها — در ۴ تا ۵ قدم وارد دنیای کوانتوم شوید. بدون پیش‌نیاز، با ترتیبِ درست.
+       - کلیدواژهٔ تمرکز: از کجا شروع کنیم
+     ============================================================ -->
+<style>
+  .st{--st-primary:#0B3D91;--st-secondary:#3BA7F2;--st-secondary-deep:#1E7FD0;--st-tertiary:#7FE7D6;--st-warm:#F4A261;--st-warm-deep:#B4692E;--st-ice:#E8F6FF;--st-text:#333333;--st-dim:#5b6472;--st-line:rgba(59,167,242,.15);--st-shadow:0 16px 40px rgba(11,61,145,.10),0 8px 18px rgba(11,61,145,.05);
+    font-family:"Vazirmatn",Tahoma,sans-serif;color:var(--st-text);line-height:2;font-size:1.05rem;max-width:1120px;margin:0 auto;padding:8px 12px 48px}
+  .st *{box-sizing:border-box}
+  .st a{color:var(--st-secondary-deep)}
+  .st a:hover{color:var(--st-warm)}
+  .st :focus-visible{outline:2px solid var(--st-warm);outline-offset:2px;border-radius:4px}
+
+  /* ── hero ── */
+  .st-hero{padding:48px 0 8px}
+  .st-eyebrow{display:inline-flex;align-items:center;gap:8px;padding:8px 14px;border-radius:999px;background:var(--st-tertiary);color:var(--st-primary);font-size:.85rem;font-weight:700}
+  .st-hero h1{margin:16px 0 8px;color:var(--st-primary);font-size:clamp(2.4rem,5vw,3.25rem);font-weight:800;line-height:1.3;letter-spacing:-.02em}
+  .st-hero>p{max-width:800px;margin:0;color:var(--st-dim);font-size:1.1rem}
+
+  /* ── buttons (قانون ۱.۴ + ۲.۶) ── */
+  .st-btn{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:0 24px;border-radius:12px;font-weight:700;font-size:1rem;text-decoration:none;border:1px solid transparent;transition:all .2s ease-in-out}
+  .st-btn--primary{background:var(--st-warm);color:#fff}
+  .st-btn--primary:hover{transform:translateY(-2px);box-shadow:0 12px 24px rgba(244,162,97,.32);color:#fff}
+  .st-btn--secondary{background:var(--st-primary);color:#fff}
+  .st-btn--secondary:hover{transform:translateY(-2px);box-shadow:0 12px 24px rgba(11,61,145,.25);color:#fff}
+  .st-btn--ghost{background:transparent;border-color:rgba(59,167,242,.35);color:var(--st-primary)}
+  .st-btn--ghost:hover{border-color:var(--st-warm);color:var(--st-warm-deep);transform:translateY(-2px)}
+
+  /* ── sections (رتم ۸px) ── */
+  .st-section{margin-top:48px}
+  .st-section>h2{margin:0 0 8px;color:var(--st-primary);font-size:clamp(1.5rem,2.6vw,2rem);font-weight:800;line-height:1.4}
+  .st-section>h2::before{content:"";display:inline-block;width:8px;height:22px;margin-inline-end:10px;border-radius:4px;background:linear-gradient(180deg,var(--st-primary),var(--st-secondary));vertical-align:-3px}
+  .st-section>.st-sub{margin:0 0 24px;color:var(--st-dim);max-width:800px}
+
+  /* ── path cards ── */
+  .st-paths{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+  .st-path{display:flex;flex-direction:column;background:#fff;border:1px solid var(--st-line);border-radius:16px;padding:24px;box-shadow:var(--st-shadow);transition:border-color .15s ease-out,transform .15s ease-out,box-shadow .15s ease-out}
+  .st-path:hover{border-color:rgba(59,167,242,.4);transform:translateY(-4px)}
+  .st-path__num{display:inline-flex;align-items:center;justify-content:center;min-width:32px;height:32px;border-radius:10px;background:var(--st-tertiary);color:var(--st-primary);font-weight:800;font-size:.95rem;margin-bottom:12px}
+  .st-path h3{margin:0 0 8px;color:var(--st-primary);font-size:1.2rem;font-weight:800;line-height:1.6}
+  .st-path p{margin:0 0 16px;color:var(--st-dim);font-size:.95rem;line-height:1.9;flex:1}
+  .st-path .st-btn{align-self:flex-start}
+
+  /* ── steps ── */
+  .st-steps{display:grid;gap:12px}
+  .st-step{display:flex;align-items:flex-start;gap:16px;background:#fff;border:1px solid var(--st-line);border-radius:14px;padding:16px 20px;transition:border-color .15s ease-out}
+  .st-step:hover{border-color:rgba(59,167,242,.4)}
+  .st-step__num{flex:none;display:inline-flex;align-items:center;justify-content:center;width:36px;height:36px;border-radius:50%;background:var(--st-ice);border:1px solid rgba(59,167,242,.25);color:var(--st-primary);font-weight:800}
+  .st-step h3{margin:0 0 2px;font-size:1.05rem;font-weight:700;line-height:1.7}
+  .st-step h3 a{color:var(--st-primary);text-decoration:none}
+  .st-step h3 a:hover{color:var(--st-secondary-deep)}
+  .st-step p{margin:0;color:var(--st-dim);font-size:.92rem;line-height:1.9}
+
+  /* ── not-sure box ── */
+  .st-sure{background:#fff;border:1px solid var(--st-line);border-inline-start:4px solid var(--st-tertiary);border-radius:14px;padding:24px;box-shadow:var(--st-shadow)}
+  .st-sure h3{margin:0 0 8px;color:var(--st-primary);font-size:1.2rem;font-weight:800}
+  .st-sure p{margin:0 0 16px;color:var(--st-dim)}
+
+  /* ── FAQ ── */
+  .st-faq details{background:#fff;border:1px solid var(--st-line);border-radius:12px;margin-bottom:12px;overflow:hidden}
+  .st-faq summary{cursor:pointer;padding:16px 20px;font-weight:700;color:var(--st-primary);list-style:none;display:flex;align-items:center;gap:10px}
+  .st-faq summary::-webkit-details-marker{display:none}
+  .st-faq summary::before{content:"+";color:var(--st-secondary-deep);font-weight:800}
+  .st-faq details[open] summary::before{content:"–"}
+  .st-faq details p{margin:0;padding:0 20px 16px;color:var(--st-dim);border-top:1px solid rgba(59,167,242,.12);padding-top:12px}
+
+  /* ── CTA band ── */
+  .st-cta{position:relative;margin-top:48px;padding:40px 24px;border-radius:16px;background-color:var(--st-primary);background-image:linear-gradient(rgba(59,167,242,.10) 1px,transparent 1px),linear-gradient(90deg,rgba(59,167,242,.10) 1px,transparent 1px);background-size:16px 16px;text-align:center;overflow:hidden}
+  .st-cta::before{content:"";position:absolute;top:0;inset-inline:0;height:2px;background:linear-gradient(90deg,rgba(59,167,242,.75),rgba(127,231,214,.75) 50%,rgba(244,162,97,.75))}
+  .st-cta h2{margin:0 0 8px;color:var(--st-ice);font-size:clamp(1.5rem,2.6vw,2rem);font-weight:800}
+  .st-cta p{margin:0 auto 24px;color:rgba(232,246,255,.85);max-width:560px}
+
+  @media (max-width:900px){
+    .st-paths{grid-template-columns:1fr}
+    .st-hero{padding-top:32px}
+  }
+</style>
+
+<main class="st" dir="rtl" id="start-here">
+  <!-- hero -->
+  <header class="st-hero">
+    <span class="st-eyebrow">مسیرهای مطالعه</span>
+    <h1>از کجا شروع کنیم؟</h1>
+    <p>فیزیک کوانتوم «یک درس» نیست؛ یک نقشه است. سه مسیر آماده برایتان ترسیم کرده‌ایم — هر مسیر ۴ تا ۵ مقالهٔ انتخاب‌شده، با ترتیبی که هر قدم، زمینۀ قدم بعدی باشد. مسیر خود را انتخاب کنید.</p>
+  </header>
+
+  <!-- pick a path -->
+  <section class="st-section" aria-labelledby="st-paths-title">
+    <h2 id="st-paths-title">مسیر خود را انتخاب کنید</h2>
+    <p class="st-sub">هر مسیر مستقل است؛ لازم نیست همه را بخوانید. ۳ تا ۵ ساعت برای تکمیل هر مسیر کافی است.</p>
+    <div class="st-paths">
+      <article class="st-path" id="path-a">
+        <span class="st-path__num">۰۱</span>
+        <h3>از صفر — بدون پیش‌زمینه</h3>
+        <p>فیزیک خوانده‌اید؟ نه، و هیچ اشکالی ندارد. این مسیر از «چرا اصلاً کوانتوم وجود دارد» شروع می‌کند و ۵ قدم تا عمیق‌ترین بحث می‌رود.</p>
+        <a class="st-btn st-btn--ghost" href="#path-a-steps">مسیر ۰۱ را ببینید</a>
+      </article>
+      <article class="st-path" id="path-b">
+        <span class="st-path__num">۰۲</span>
+        <h3>با پیش‌زمینهٔ فیزیک</h3>
+        <p>اگر فیزیک دبیرستانی یا دانشگاهی دارید، از ابتدایی‌ها رد می‌شویم و مستقیم به قلب مفاهیم می‌رسیم: عدم قطعیت، برهم‌نهی، واهمدوسی.</p>
+        <a class="st-btn st-btn--ghost" href="#path-b-steps">مسیر ۰۲ را ببینید</a>
+      </article>
+      <article class="st-path" id="path-c">
+        <span class="st-path__num">۰۳</span>
+        <h3>به‌سمت کاربردها</h3>
+        <p>مفاهیم را بلدتان، بگذارید ببینید همین‌ها چه ماشین‌هایی ساخته‌اند: کیوبیت، نقطه‌های کوانتومی، رایانهٔ کوانتومی، فیبر نوری.</p>
+        <a class="st-btn st-btn--ghost" href="#path-c-steps">مسیر ۰۳ را ببینید</a>
+      </article>
+    </div>
+  </section>
+
+  <!-- path A -->
+  <section class="st-section" id="path-a-steps" aria-labelledby="path-a-title">
+    <h2 id="path-a-title">مسیر ۰۱ — از صفر</h2>
+    <p class="st-sub">پیشنهاد برای شروع: این ۵ مقاله را همین حالا، به همین ترتیب.</p>
+    <div class="st-steps">
+      <article class="st-step">
+        <span class="st-step__num">۱</span>
+        <div>
+          <h3><a href="https://qpedia.ir/planck-constant/">ثابت پلانک؛ عددی که مرز دو دنیا را ترسیم کرد</a></h3>
+          <p>چرا دنیای اتمی از دنیای ما فرق دارد؟ پاسخ یک عدد کوچک است: h.</p>
+        </div>
+      </article>
+      <article class="st-step">
+        <span class="st-step__num">۲</span>
+        <div>
+          <h3><a href="https://qpedia.ir/wave-particle-duality/">دوگانهٔ موج-ذره</a></h3>
+          <p>استوانه‌ای که بسته به اندازه‌گیری، دایره به نظر می‌رسد یا مستطیل — نور و ماده همین‌طور‌اند.</p>
+        </div>
+      </article>
+      <article class="st-step">
+        <span class="st-step__num">۳</span>
+        <div>
+          <h3><a href="https://qpedia.ir/wave-function/">تابع موج؛ نقشه‌ای از جایی که «ممکن است» باشید</a></h3>
+          <p>الکترون نقطه نیست. تابع موج، تمام چیزی است که دربارهٔ آن می‌دانیم.</p>
+        </div>
+      </article>
+      <article class="st-step">
+        <span class="st-step__num">۴</span>
+        <div>
+          <h3><a href="https://qpedia.ir/quantum-measurement/">اندازه‌گیری کوانتومی؛ چرا پرسیدن، پاسخ را عوض می‌کند؟</a></h3>
+          <p>نیمهٔ مرموزِ نظریه: فروپاشی تابع موج و پرسش «ناظر کیست».</p>
+        </div>
+      </article>
+      <article class="st-step">
+        <span class="st-step__num">۵</span>
+        <div>
+          <h3><a href="https://qpedia.ir/quantum-entanglement-explained/">درهم‌تنیدگی کوانتومی؛ هماهنگی بدون سیم و سیگنال</a></h3>
+          <p>دو ذره، یک حالت. عجیب‌ترین — و کاربردی‌ترین — ویژگیِ کوانتوم.</p>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- path B -->
+  <section class="st-section" id="path-b-steps" aria-labelledby="path-b-title">
+    <h2 id="path-b-title">مسیر ۰۲ — با پیش‌زمینهٔ فیزیک</h2>
+    <p class="st-sub">مستقیم به هستهٔ مفاهیم، بدون مقدمات.</p>
+    <div class="st-steps">
+      <article class="st-step">
+        <span class="st-step__num">۱</span>
+        <div>
+          <h3><a href="https://qpedia.ir/heisenberg-uncertainty-principle/">اصل عدم قطعیت هایزنبرگ</a></h3>
+          <p>مه در جاده نیست، در جنسِ جاده است: Δx·Δp ≥ ħ/2.</p>
+        </div>
+      </article>
+      <article class="st-step">
+        <span class="st-step__num">۲</span>
+        <div>
+          <h3><a href="https://qpedia.ir/quantum-superposition/">برهم‌نهی کوانتومی؛ جمعِ فازیِ «همین حالا هر دو»</a></h3>
+          <p>نه سکهٔ نصفه — برداری که هم‌زمان دو جهت را حمل می‌کند.</p>
+        </div>
+      </article>
+      <article class="st-step">
+        <span class="st-step__num">۳</span>
+        <div>
+          <h3><a href="https://qpedia.ir/quantum-state/">حالت کوانتومی؛ پروندهٔ کامل یک سامانه</a></h3>
+          <p>آنچه «مکان و سرعت» برای توپ است، «حالت» برای الکترون است.</p>
+        </div>
+      </article>
+      <article class="st-step">
+        <span class="st-step__num">۴</span>
+        <div>
+          <h3><a href="https://qpedia.ir/decoherence/">واهمدوسی؛ چرا جهان بزرگ کلاسیک به نظر می‌رسد؟</a></h3>
+          <p>محیط، ناظرِ همیشگی است — و برهم‌نهی را خاموش می‌کند.</p>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- path C -->
+  <section class="st-section" id="path-c-steps" aria-labelledby="path-c-title">
+    <h2 id="path-c-title">مسیر ۰۳ — به‌سمت کاربردها</h2>
+    <p class="st-sub">از مفهوم به ماشین: همین فیزیک، امروز چه کارهایی می‌کند؟</p>
+    <div class="st-steps">
+      <article class="st-step">
+        <span class="st-step__num">۱</span>
+        <div>
+          <h3><a href="https://qpedia.ir/qubit/">کیوبیت؛ سکه‌ای که می‌چرخد</a></h3>
+          <p>واحد بنیادینِ اطلاعاتِ کوانتومی — و دلیلِ اصلیِ قدرتِ رایانه‌های آینده.</p>
+        </div>
+      </article>
+      <article class="st-step">
+        <span class="st-step__num">۲</span>
+        <div>
+          <h3><a href="https://qpedia.ir/quantum-dots/">نقطه‌های کوانتومی؛ اتم‌هایی مصنوعی در دلِ نیمه‌رسانا</a></h3>
+          <p>مبناِ نمایشگرهای QLED و نسلِ بعدیِ سلول‌های خورشیدی.</p>
+        </div>
+      </article>
+      <article class="st-step">
+        <span class="st-step__num">۳</span>
+        <div>
+          <h3><a href="https://qpedia.ir/how-does-quantum-computer-work/">رایانهٔ کوانتومی چگونه کار می‌کند؟</a></h3>
+          <p>نه «کامپیوتر سریع‌تر» — شیوۀ دیگری برای حلِ مسئله.</p>
+        </div>
+      </article>
+      <article class="st-step">
+        <span class="st-step__num">۴</span>
+        <div>
+          <h3><a href="https://qpedia.ir/fiber-optics/">فیبر نوری؛ کوانتومی که اینترنت را ممکن کرد</a></h3>
+          <p>هر بیتی که همین حالا می‌خوانید، از همین فیزیک می‌گذرد.</p>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- not sure -->
+  <section class="st-section" aria-labelledby="st-sure-title">
+    <h2 id="st-sure-title">هنوز مطمئن نیستید؟</h2>
+    <div class="st-sure">
+      <h3>یک پیشنهادِ مطمئن</h3>
+      <p><a href="https://qpedia.ir/double-slit-experiment/">آزمایش دو شکاف</a> را بخوانید: اگر بعد از خواندنش کنجکاو شدید که «چرا؟»، مسیر ۰۱ برای شماست؛ اگر ذهنتان رفت سمت «چطور محاسبه می‌شود؟»، مسیر ۰۲.</p>
+      <a class="st-btn st-btn--secondary" href="https://qpedia.ir/double-slit-experiment/">آزمایش دو شکاف را بخوانید</a>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="st-section st-faq" aria-labelledby="st-faq-title">
+    <h2 id="st-faq-title">پرسش‌های رایج</h2>
+    <details>
+      <summary>هر مسیر چقدر طول می‌کشد؟</summary>
+      <p>هر مقاله حدود ۵ تا ۸ دقیقه مطالعه دارد. مسیرهای ۴ تا ۵ مرحله‌ای را با ریتمِ عادی، در حدود ۱ تا ۱٫۵ ساعت می‌توانید تمام کنید.</p>
+    </details>
+    <details>
+      <summary>به ریاضی نیاز دارم؟</summary>
+      <p>مسیر ۰۱ بدون ریاضی است. مسیر ۰۲ مفاهیمِ فیزیکِ دبیرستانی/دانشگاهی را پیش‌فرض می‌داند. مسیر ۰۳ اول مفاهیم را می‌گوید، ریاضی بعد.</p>
+    </details>
+    <details>
+      <summary>اگر در یک مرحله گیر کردم چه کنم؟</summary>
+      <p>یک قدم عقب برگردید؛ ترتیب مهم‌تر از سرعت است. همهٔ مقالات «مقالات مرتبط» دارند — می‌توانید از همان‌جا به عقب برگردید.</p>
+    </details>
+  </section>
+
+  <!-- CTA band -->
+  <section class="st-cta" aria-labelledby="st-cta-title">
+    <h2 id="st-cta-title">آماده‌اید؟</h2>
+    <p>به بومِ کاملِ دسته‌ها بروید — ۱۸۷ مقاله، ۱۳ دسته و زیردسته، همه در یک نقشه.</p>
+    <a class="st-btn st-btn--primary" href="https://qpedia.ir/topic/fundamentals/">شروع از مبانی</a>
+  </section>
+</main>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "خانه", "item": "https://qpedia.ir/" },
+    { "@type": "ListItem", "position": 2, "name": "از کجا شروع کنیم", "item": "https://qpedia.ir/where-to-start/" }
+  ]
+}
+</script>
