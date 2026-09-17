@@ -67,7 +67,6 @@ if ( ! is_wp_error( $qpedia_header_categories ) && ! empty( $qpedia_header_categ
 				</span>
 				<span class="qp-brand__text">
 					<span class="qp-brand__title">کوانتوم پدیا فارسی</span>
-					<span class="qp-brand__desc">دانشنامه‌ای دقیق، کاربردی و خوش‌خوان برای یادگیری کوانتوم</span>
 				</span>
 			</a>
 		</div>
