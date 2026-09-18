@@ -1,0 +1,105 @@
+<script>
+/*
+ * QPedia — وصلهٔ موقت «تازه‌ترین مقاله‌ها» (بدون دسترسی به فایل)
+ *
+ * کجا چسبانده شود؟ داخل همان بلوک HTMLِ برگهٔ Home، جایی که اسکریپت شکستهٔ قبلی بود.
+ *   ۱) پیشخوان → برگه‌ها → Home → ویرایش
+ *   ۲) اگر کد PHP در صفحه چاپ شده: اول کل آن بلوک/پاراگراف‌های چسبانده‌شده را پاک کنید
+ *      (یا از Revisions نسخهٔ قبل را برگردانید). کد PHP نباید در محتوای برگه باشد.
+ *   ۳) منوی سه‌نقطی → «ویرایشگر کد» (Code Editor) → بلوک HTML سفارشی را ویرایش کنید
+ *      → اسکریپت قدیمی را با همین کد عوض کنید → به‌روزرسانی
+ *   ۴) ابزارها → LiteSpeed Cache → Purge All
+ *
+ * چرا این شکل؟ نسخهٔ قبلی داخل بلوک HTML چون عملگر منطقی دوتایی داشت، به شکل
+ * entity در دیتابیس ذخیره شد و JS با SyntaxError می‌مرد. در این کد عمداً هیچ
+ * آمپرسند، خطِ موازی یا کاراکتر گوشه‌ای وجود ندارد؛ برای همین همان sanitizer
+ * بلوک HTML دیگر نمی‌تواند خرابش کند.
+ *
+ * محدودیت: این فقط ظاهر را درست می‌کند. برای رندر سمت سرور (سئو + نبود JS) و برای
+ * زنده‌شدن لینک «مشاهدهٔ همهٔ مقاله‌ها» (/topics/) باید qpedia-home-fix.tiny.php را
+ * در mu-plugin یا functions.php پوستهٔ فرزند بگذارید.
+ */
+(function () {
+  "use strict";
+
+  var box = document.getElementById("qp-articles");
+  if (box === null) { return; }
+
+  var limit = 8;
+  var api = "/wp-json/wp/v2/quantum_article?per_page=8";
+  var alt = "/index.php?rest_route=/wp/v2/quantum_article";
+  var tried = 0;
+
+  function plain(value) {
+    var holder = document.createElement("div");
+    holder.innerHTML = value;
+    var text = holder.textContent;
+    if (text === null) { text = ""; }
+    text = text.trim();
+    if (text === "") { text = "بدون عنوان"; }
+    return text;
+  }
+
+  function addRow(title, href) {
+    var link = document.createElement("a");
+    link.className = "qp-article";
+    link.setAttribute("href", href);
+    link.setAttribute("dir", "auto");
+    link.setAttribute("title", title);
+
+    var label = document.createElement("span");
+    label.className = "qp-article-title";
+    label.textContent = title;
+
+    var arrow = document.createElement("span");
+    arrow.className = "qp-article-arrow";
+    arrow.setAttribute("aria-hidden", "true");
+    arrow.textContent = "\u27F5";
+
+    link.appendChild(label);
+    link.appendChild(arrow);
+    box.appendChild(link);
+  }
+
+  function paint(items) {
+    box.textContent = "";
+    items.slice(0, limit).forEach(function (item) {
+      var title = "بدون عنوان";
+      if (item.title !== undefined) { title = plain(item.title.rendered); }
+      var href = alt;
+      if (item.link !== undefined) { href = item.link; }
+      addRow(title, href);
+    });
+  }
+
+  function say(message) {
+    box.textContent = message;
+  }
+
+  function load(url) {
+    fetch(url, { credentials: "omit", cache: "no-store" })
+      .then(function (response) {
+        if (response.ok === false) { throw new Error("HTTP " + response.status); }
+        return response.json();
+      })
+      .then(function (data) {
+        if (Array.isArray(data) === false) { throw new Error("پاسخ غیرمنتظره"); }
+        if (data.length === 0) { throw new Error("لیست خالی"); }
+        paint(data);
+      })
+      .catch(function (error) {
+        tried = tried + 1;
+        if (tried === 1) { load(alt); return; }
+        say("دریافت مقاله‌ها ناموفق بود (" + error.message + "). یک بار دیگر تلاش کنید.");
+      });
+  }
+
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", function () { load(api); });
+    return;
+  }
+
+  load(api);
+})();
+
+</script>
