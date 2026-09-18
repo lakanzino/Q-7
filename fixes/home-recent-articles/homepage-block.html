@@ -1,0 +1,27 @@
+<!--
+  QPedia — جایگزین بخش «تازه‌ترین مقاله‌ها» در صفحهٔ home
+  نحوهٔ استفاده:
+    ۱) برگهٔ Home (شناسهٔ ۲۷۹۰) را در حالت «ویرایشگر کد» (Code Editor) باز کنید.
+    ۲) کل بلوک <section> که شامل <div class="qp-articles" id="qp-articles"> است را
+       با محتوای همین فایل عوض کنید (اسکریپت inline شکسته هم حذف می‌شود).
+    ۳) به‌روز رسانی → سپس LiteSpeed → Purge All.
+
+  چرا این‌طور؟ متن موجودِ بلوک، دو عملگر && را به شکل &#038;&#038; ذخیره کرده؛
+  داخل <script> هیچ entity بازگشایی نمی‌شود، پس کل loader با SyntaxError می‌میرد
+  و «در حال دریافت…» برای همیشه می‌ماند. در این نسخه هیچ JS لازم نیست و
+  لیست سمت سرور رندر می‌شود (اگر فایل qpedia-home-fix.php نصب باشد).
+  قاعدهٔ آینده: داخل بلوک HTML سفارشی از && و || استفاده نکنید.
+-->
+
+<!-- wp:html -->
+<section class="qp-section">
+  <div class="qp-section-head">
+    <div class="qp-section-number">۰۲</div>
+    <h2 class="qp-section-title">تازه‌ترین <span>مقاله‌ها</span></h2>
+    <div class="qp-section-line"></div>
+  </div>
+
+  [qpedia_recent_articles limit="8"]
+
+</section>
+<!-- /wp:html -->
