@@ -151,6 +151,18 @@ If a mutation fails on auth, tell the user the GitHub connection needs reconnect
 
 When routing is ambiguous, ask exactly one question, e.g.: "Is this for the post body, a page, or the theme stylesheet?" or "Should I also create the missing page this article links to, or drop the link?"
 
+## Merged skill index (inline digest — this is the part that actually executes)
+
+The full text of each upstream skill stays upstream; what this skill carries is the distilled rules below.
+
+- **`WordPress/agent-skills` (18 skills)** — adopted the section contract (`When to use / Inputs required / Procedure / Verification / Failure modes / Escalation`), a **"Done when"** clause per step, and the habit of classifying before acting (`wordpress-router`). Its `wp-block-themes`, `wp-patterns`, `wp-block-development` and `wp-interactivity-api` content is restated for our use case in `references/wp-blocks-templates.md`.
+- **`UiPath/skills` (41 skills)** — adopted front-matter with explicit `when_to_use` triggers, a mandatory **"Do NOT use this skill for"** list that names the skill to use instead, and deep detail kept in `references/` rather than one bloated file.
+- **`agentic-awesome-skills` (2,040 skills / 6,730 SKILL.md)** — adopted the front-matter schema (`category`, `risk`, `source`, `source_repo`, `source_type`, `date_added`, `tags`, `tools`); the audit-first gated orchestrator (`seo-aeo-orchestrator`, incl. "no mutation before authorization" and "never claim indexation/deployment without observable evidence"); the four internal-link types with **"every cluster article links up to its pillar — no exceptions"** (`seo-aeo-internal-linking`); CTR mechanics for title/description (`seo-aeo-meta-description-generator`); "schema must match visible content" (`seo-aeo-schema-generator`); the seven hreflang checks and `fa` code discipline (`seo-hreflang`); the evidence-or-`Not assessed` rule and severity→evidence→fix→verification finding format (`seo-aeo-content-quality-auditor`); hardcoded-string / RTL awareness (`i18n-localization`). **None of them covered Persian** — that gap is exactly what `references/persian-style.md` and `scripts/fa_precheck.py` exist for.
+- **`conholdate/blog-translation-agent`** — has **no SKILL.md**; its governance lives in `AGENTS.md` (allowed/forbidden paths). Adopted: the four-step loop **Scan → Translate → Quality check → Retranslate**, paragraph-level alignment, `should_skip_validation()`, the `appears_translated()` 20 % change heuristic, and the `SCORE / DECISION / REASON / UNTRANSLATED` contract with "when in doubt, RETRANSLATE". It lists `fa` among RTL locales, which is why its heuristics port here unchanged. See `references/pipeline-gates.md`.
+- **`# پرامپت نویسنده اختصاصی Qpedi.txt`** — the site's own standard outranks every generic SEO habit above: fixed H2 sequence, tone contract, analogy-limit sentence, hard-fail list, and «گزارش کنترل نویسنده».
+
+Storage and retrieval: this folder is the source of truth in the repo; the repo's `AGENTS.md` (Rule zero) makes every future session read it before touching anything, and a pointer memory (`qpedia-fa-skill`) keeps it reachable from the agent side. For global use in an editor, copy the folder to `~/.claude/skills/`.
+
 ## Files in this skill
 
 ```
