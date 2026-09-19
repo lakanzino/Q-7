@@ -2,7 +2,7 @@
 /**
  * Plugin Name: QPedia — رفع ۴۰۴ شدن برگه‌ها
  * Description: برگه‌ها (خانه /home/، شروع /start/، درباره ما، تماس، حریم خصوصی و هر برگهٔ تازه) را از قاعدهٔ catch-all مقاله‌های کوانتومی نجات می‌دهد و تأکید می‌کند «برگه» خوانده شوند.
- * Version: 2026.09.18-pages3 · Author: QPedia
+ * Version: 2026.09.20-pages4 · Author: QPedia
  *
  * علت خرابی: پوستهٔ فرزند با add_rewrite_rule(..., 'top') هر آدرس تک‌بخشی را به
  * «مقالهٔ کوانتوم» تبدیل می‌کند و لیست استثناها ثابت است ⇒ هر برگهٔ تازه ۴۰۴ می‌شود.
@@ -15,7 +15,7 @@
  * جزئیات و فیلترها: README.md کنار همین فایل.
  */
 if ( ! defined( 'ABSPATH' ) ) { exit; }
-define( 'QPEDIA_PAGES_FIX_VERSION', '2026.09.18-pages3' );
+define( 'QPEDIA_PAGES_FIX_VERSION', '2026.09.20-pages4' );
 
 /* ─── ۰) ابزارها ─────────────────────────────────────────────────── */
 /** اسلاگ‌هایی که حتماً «برگه»‌اند، حتی اگر مقاله‌ای همان اسلاگ را داشته باشد. */
@@ -136,6 +136,58 @@ function qpedia_pages_fix_ensure_pages() {
 	}
 }
 add_action( 'init', 'qpedia_pages_fix_ensure_pages', 18 ); // پیش از قواعد (۱۹) و flush (۹۸).
+
+/* ─── ۱.۵) ترمیم برگهٔ یتیم: پدرِ رفته، آدرس را می‌بلعد ──────────────
+ * چرا لازم است: وردپرس برگه را از «مسیر آدرس» پیدا می‌کند (get_page_by_path).
+ * اگر post_parent به برگهٔ حذف‌شده/زباله/پیش‌نویس برود، آدرسِ تک‌بخشی مثل
+ * /privacy-policy/ هرگز پیدا نمی‌شود ⇒ ۴۰۴، درحالی‌که برگه publish است و
+ * متنش سالم. در مقابل get_permalink همان /privacy-policy/ را می‌دهد؛ این
+ * دوسو بودگی دقیقاً همان چیزی است که کاربر به‌عنوان «برگهٔ ۴۰۴» می‌بیند.
+ * این تابع فقط post_parent را صفر می‌کند — به محتوا، عنوان و اسلاگ دست نمی‌زند.
+ * (برگهٔ 2308 حریم خصوصی، پدرِ 2275: منتشرشده نیست.)
+ */
+function qpedia_pages_fix_unorphan_pages() {
+	if ( get_transient( 'qpedia_pages_fix_unorphan_scan' ) ) {
+		return array();
+	}
+	set_transient( 'qpedia_pages_fix_unorphan_scan', 1, 300 ); // هر ۵ دقیقه یک بار
+
+	$ids = get_posts(
+		array(
+			'post_type'              => 'page',
+			'post_status'            => 'publish',
+			'posts_per_page'         => 200,
+			'post_parent__not_in'    => array( 0 ), // فقط برگه‌هایی که والد دارند
+			'fields'                 => 'ids',
+			'no_found_rows'          => true,
+			'update_post_term_cache' => false,
+		)
+	);
+
+	$fixed = array();
+	foreach ( $ids as $id ) {
+		$page   = get_post( $id );
+		$parent = $page instanceof WP_Post ? (int) $page->post_parent : 0;
+		if ( $parent <= 0 ) { continue; }
+
+		$par = get_post( $parent );
+		if ( $par instanceof WP_Post && 'publish' === $par->post_status ) { continue; } // زنجیره سالم است
+
+		$done = wp_update_post( array( 'ID' => (int) $id, 'post_parent' => 0 ), true );
+		if ( is_wp_error( $done ) ) { continue; }
+
+		$fixed[] = (int) $id;
+	}
+
+	if ( $fixed ) {
+		update_option( 'qpedia_pages_fix_unorphaned', $fixed, false );
+		flush_rewrite_rules( false );
+		if ( function_exists( 'litespeed_purge_all' ) ) { litespeed_purge_all(); }
+		error_log( 'QPedia pages-fix: detached orphaned page(s) from a missing parent: ' . implode( ', ', $fixed ) );
+	}
+	return $fixed;
+}
+add_action( 'init', 'qpedia_pages_fix_unorphan_pages', 17 );
 
 /* ─── ۲) اصلاح درخواست: اسلاگی که برگه است باید pagename باشد ─────── */
 function qpedia_pages_fix_request( $query_vars ) {
