@@ -1,0 +1,37 @@
+/* ══ هدر و فوتر هم‌رنگ زمینۀ سایت — paste در انتهای custom.css ══
+   (اگر بعداً رنگ زمینۀ body را عوض کردی، همین #E8F6FF را هم عوض کن) */
+.qp-global-header,
+.qp-global-footer{
+	background-color:#E8F6FF!important;
+	background-image:linear-gradient(rgba(59,167,242,.07) 1px,transparent 1px),linear-gradient(90deg,rgba(59,167,242,.07) 1px,transparent 1px)!important;
+	background-size:32px 32px!important;
+	background-position:0 0!important;
+	box-shadow:none!important;
+	-webkit-backdrop-filter:none!important;
+	backdrop-filter:none!important;
+}
+.qp-global-header{border-bottom:1px solid rgba(11,61,145,.12)!important;}
+.qp-global-header::after,.qp-global-footer::before{opacity:1;}
+.qp-brand__title,.qp-global-footer__title,.qp-global-footer__slogan,.qp-desktop-nav__link,.qp-desktop-nav__panel-title{color:#0B3D91!important;}
+.qp-brand__title::before,.qp-global-footer__title::before{background:#3BA7F2!important;box-shadow:0 0 8px rgba(59,167,242,.35)!important;}
+.qp-brand__desc,.qp-global-footer__desc{color:rgba(51,51,51,.78)!important;}
+.qp-global-footer__bottom{border-top:1px solid rgba(11,61,145,.10)!important;}
+.qp-global-footer__bottom p{color:rgba(51,51,51,.70)!important;}
+.qp-desktop-nav__link:hover,.qp-desktop-nav__sublist a:hover,.qp-global-header a:hover,.qp-global-footer a:hover{color:#B4692E!important;}
+.qp-desktop-nav__trigger-wrap{background:rgba(11,61,145,.05)!important;border-color:rgba(11,61,145,.10)!important;box-shadow:none!important;}
+.qp-desktop-nav__trigger-wrap:hover,.qp-desktop-nav__item.is-open .qp-desktop-nav__trigger-wrap{border-color:rgba(59,167,242,.35)!important;box-shadow:0 12px 24px rgba(11,61,145,.10)!important;}
+.qp-desktop-nav__toggle{color:#1E7FD0!important;background:rgba(59,167,242,.14)!important;box-shadow:inset 0 0 0 1px rgba(59,167,242,.22)!important;}
+.qp-desktop-nav__panel{background:#ffffff!important;border-color:rgba(11,61,145,.12)!important;box-shadow:0 24px 48px rgba(11,61,145,.14)!important;}
+.qp-desktop-nav__sublist a{background:rgba(11,61,145,.04)!important;border-color:transparent!important;color:#0B3D91!important;}
+.qp-desktop-nav__sublist a:hover{border-color:rgba(59,167,242,.35)!important;}
+.qp-brand__logo-wrap{background:#ffffff!important;border-color:rgba(11,61,145,.10)!important;box-shadow:0 10px 22px rgba(11,61,145,.10)!important;}
+.qp-brand__logo{box-shadow:0 0 0 2px rgba(59,167,242,.45),0 0 14px rgba(127,231,214,.25)!important;}
+.qp-global-footer__logo{box-shadow:0 0 0 2px rgba(59,167,242,.30)!important;filter:drop-shadow(0 2px 8px rgba(11,61,145,.14))!important;}
+.qp-search-form__input{background:#ffffff!important;color:#0B3D91!important;border-color:rgba(11,61,145,.18)!important;box-shadow:none!important;}
+.qp-search-form__input::placeholder{color:rgba(11,61,145,.45)!important;}
+.qp-search-form__input:focus{border-color:rgba(59,167,242,.55)!important;box-shadow:0 0 0 4px rgba(59,167,242,.10)!important;}
+.qp-global-footer__links a{background:#ffffff!important;color:#0B3D91!important;border-color:rgba(11,61,145,.14)!important;}
+.qp-global-footer__links a:hover{background:#FFF7EF!important;color:#B4692E!important;border-color:#F4A261!important;}
+.qp-global-header .main-navigation ul,.qp-global-header .menu-toggle{background:#E8F6FF!important;color:#0B3D91!important;border-bottom:1px solid rgba(11,61,145,.12)!important;}
+.qp-global-header .main-navigation a{color:#0B3D91!important;}
+/* ══ پایان بلوک ══ */

@@ -1,0 +1,34 @@
+/* ═══════════════════════════════════════════════════════════════
+   اختیاری — اگر «هدر» را فقط هدرِ بالای صفحه نمی‌دانی و کادر
+   تیترِ صفحه‌های دسته (موضوع) هم تیره است، این بلوک را هم
+   در انتهای custom.css اضافه کن.
+   باز هم: paste در انتهای فایل، نه جایگزینی کل فایل.
+   ═══════════════════════════════════════════════════════════════ */
+
+/* کادر تیترِ صفحه‌های دسته: هم‌رنگ زمینۀ سایت */
+.tax-quantum_category .qp-archive__title {
+	background: rgba(11,61,145,.04) !important;
+	border-color: rgba(11,61,145,.14) !important;
+	color: #0B3D91 !important;
+	text-shadow: none !important;
+	box-shadow: none !important;
+}
+.tax-quantum_category .qp-archive__title::before {
+	color: #F4A261 !important;
+	text-shadow: none !important;
+}
+
+/* باکس جست‌وجوی صفحهٔ اول (گرادیان تیره) — هم‌خانواده شود */
+.qp-front-search .qp-search-form {
+	background: #ffffff !important;
+	border-color: rgba(11,61,145,.12) !important;
+	box-shadow: 0 16px 36px rgba(11,61,145,.10) !important;
+}
+.qp-front-search .qp-search-form .qp-search-form__input {
+	background: rgba(11,61,145,.04) !important;
+	color: #0B3D91 !important;
+	border-color: rgba(11,61,145,.10) !important;
+}
+.qp-front-search .qp-search-form .qp-search-form__input::placeholder {
+	color: rgba(11,61,145,.45) !important;
+}
