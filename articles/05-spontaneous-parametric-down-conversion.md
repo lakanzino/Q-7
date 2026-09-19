@@ -182,16 +182,20 @@ SPDC یک تبدیل قطعی و مکانیکی نیست. میدان پمپ در
 
 ## پرسش‌های متداول
 
-<style>
-.qpedia-faq details{background:#fff;border:1px solid #e2e8f0;border-radius:12px;margin:12px 0;box-shadow:0 5px 16px rgba(15,23,42,.08);overflow:hidden}.qpedia-faq summary{position:relative;cursor:pointer;list-style:none;padding:16px 52px 16px 18px;font-weight:700;color:#14532d}.qpedia-faq summary::-webkit-details-marker{display:none}.qpedia-faq summary:before{content:"+";position:absolute;right:17px;top:50%;transform:translateY(-50%);width:25px;height:25px;border-radius:7px;background:#dcfce7;color:#15803d;display:grid;place-items:center;font-size:20px}.qpedia-faq details[open] summary:before{content:"−"}.qpedia-faq details[open] summary{background:#f8fafc}.qpedia-faq .answer{padding:4px 18px 17px;line-height:2;color:#334155}
-</style>
-<div class="qpedia-faq" dir="rtl">
-<details open><summary>SPDC چیست؟</summary><div class="answer">فرایندی غیرخطی و احتمالاتی است که در آن میدان پمپ در یک ماده دارای پاسخ مرتبه دوم، جفت‌فوتون‌های سیگنال و آیدلر تولید می‌کند.</div></details>
-<details><summary>آیا یک فوتون پمپ واقعاً به دو نیم می‌شود؟</summary><div class="answer">پایستگی انرژی اجازه می‌دهد رویداد را تبدیل یک کوانتوم پمپ به دو فوتون توصیف کنیم، اما تصویر بریدن یک گلوله نور سازوکار میدان و ماده را درست نشان نمی‌دهد.</div></details>
-<details><summary>تفاوت سیگنال و آیدلر چیست؟</summary><div class="answer">این نام‌ها دو مُد خروجی را مشخص می‌کنند. ممکن است بسامد، قطبش یا مسیرشان متفاوت باشد؛ هیچ‌کدام ذاتاً مهم‌تر از دیگری نیست.</div></details>
-<details><summary>آیا فوتون‌های SPDC همیشه درهم‌تنیده‌اند؟</summary><div class="answer">خیر. درهم‌تنیدگی به طراحی حالت، وجود چند امکان همدوس و حذف اطلاعات کدام‌مسیر وابسته است.</div></details>
-<details><summary>چرا SPDC یک منبع قطعی نیست؟</summary><div class="answer">احتمال برهم‌کنش در هر پالس کم است؛ بیشتر چرخه‌ها خلأ، بعضی تک‌جفت و تعداد کمتری چندجفت تولید می‌کنند.</div></details>
-</div>
+<p><strong>SPDC چیست؟</strong></p>
+<p>فرایندی غیرخطی و احتمالاتی است که در آن میدان پمپ در یک ماده دارای پاسخ مرتبه دوم، جفت‌فوتون‌های سیگنال و آیدلر تولید می‌کند.</p>
+
+<p><strong>آیا یک فوتون پمپ واقعاً به دو نیم می‌شود؟</strong></p>
+<p>پایستگی انرژی اجازه می‌دهد رویداد را تبدیل یک کوانتوم پمپ به دو فوتون توصیف کنیم، اما تصویر بریدن یک گلوله نور سازوکار میدان و ماده را درست نشان نمی‌دهد.</p>
+
+<p><strong>تفاوت سیگنال و آیدلر چیست؟</strong></p>
+<p>این نام‌ها دو مُد خروجی را مشخص می‌کنند. ممکن است بسامد، قطبش یا مسیرشان متفاوت باشد؛ هیچ‌کدام ذاتاً مهم‌تر از دیگری نیست.</p>
+
+<p><strong>آیا فوتون‌های SPDC همیشه درهم‌تنیده‌اند؟</strong></p>
+<p>خیر. درهم‌تنیدگی به طراحی حالت، وجود چند امکان همدوس و حذف اطلاعات کدام‌مسیر وابسته است.</p>
+
+<p><strong>چرا SPDC یک منبع قطعی نیست؟</strong></p>
+<p>احتمال برهم‌کنش در هر پالس کم است؛ بیشتر چرخه‌ها خلأ، بعضی تک‌جفت و تعداد کمتری چندجفت تولید می‌کنند.</p>
 
 ## منابع
 

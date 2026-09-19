@@ -49,15 +49,20 @@ slug: quantum-imaging-undetected-photons
 
 ## پرسش‌های متداول
 
-<style>.qpedia-faq details{background:#fff;border:1px solid #e2e8f0;border-radius:12px;margin:12px 0;box-shadow:0 5px 16px rgba(15,23,42,.08);overflow:hidden}.qpedia-faq summary{position:relative;cursor:pointer;list-style:none;padding:16px 52px 16px 18px;font-weight:700;color:#1e3a8a}.qpedia-faq summary::-webkit-details-marker{display:none}.qpedia-faq summary:before{content:"+";position:absolute;right:17px;top:50%;transform:translateY(-50%);width:25px;height:25px;border-radius:7px;background:#dbeafe;color:#1d4ed8;display:grid;place-items:center;font-size:20px}.qpedia-faq details[open] summary:before{content:"−"}.qpedia-faq .answer{padding:4px 18px 17px;line-height:2;color:#334155}</style>
+<p><strong>فوتون آشکارنشده یعنی چه؟</strong></p>
+<p>فوتون کاوشگر با نمونه برهم‌کنش می‌کند اما در دوربین نهایی ثبت نمی‌شود.</p>
 
-<div class="qpedia-faq" dir="rtl">
-<details open><summary>فوتون آشکارنشده یعنی چه؟</summary><div class="answer">فوتون کاوشگر با نمونه برهم‌کنش می‌کند اما در دوربین نهایی ثبت نمی‌شود.</div></details>
-<details><summary>پس تصویر چگونه ساخته می‌شود؟</summary><div class="answer">نمونه همدوسی و فاز میان دو امکان تولید را تغییر می‌دهد و این تغییر در فوتون سیگنال دیده می‌شود.</div></details>
-<details><summary>آیا بدون تاباندن نور به جسم تصویر می‌گیریم؟</summary><div class="answer">خیر؛ فوتون آیدلر باید با نمونه برهم‌کنش کند.</div></details>
-<details><summary>مزیت طول موجی چیست؟</summary><div class="answer">نمونه با طول موج مناسب کاوش می‌شود، ولی آشکارسازی در طول موجی انجام می‌شود که دوربین بهتر است.</div></details>
-<details><summary>آیا درهم‌تنیدگی همیشه لازم است؟</summary><div class="answer">طرح به هم‌بستگی و همدوسی القاشده متکی است؛ صورت‌بندی دقیق منبع می‌تواند متفاوت باشد و هر ادعای مزیت باید جدا سنجیده شود.</div></details>
-</div>
+<p><strong>پس تصویر چگونه ساخته می‌شود؟</strong></p>
+<p>نمونه همدوسی و فاز میان دو امکان تولید را تغییر می‌دهد و این تغییر در فوتون سیگنال دیده می‌شود.</p>
+
+<p><strong>آیا بدون تاباندن نور به جسم تصویر می‌گیریم؟</strong></p>
+<p>خیر؛ فوتون آیدلر باید با نمونه برهم‌کنش کند.</p>
+
+<p><strong>مزیت طول موجی چیست؟</strong></p>
+<p>نمونه با طول موج مناسب کاوش می‌شود، ولی آشکارسازی در طول موجی انجام می‌شود که دوربین بهتر است.</p>
+
+<p><strong>آیا درهم‌تنیدگی همیشه لازم است؟</strong></p>
+<p>طرح به هم‌بستگی و همدوسی القاشده متکی است؛ صورت‌بندی دقیق منبع می‌تواند متفاوت باشد و هر ادعای مزیت باید جدا سنجیده شود.</p>
 
 ## منابع
 

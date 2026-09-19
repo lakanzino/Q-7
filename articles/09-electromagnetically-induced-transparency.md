@@ -49,15 +49,20 @@ slug: electromagnetically-induced-transparency
 
 ## پرسش‌های متداول
 
-<style>.qpedia-faq details{background:#fff;border:1px solid #e2e8f0;border-radius:12px;margin:12px 0;box-shadow:0 5px 16px rgba(15,23,42,.08);overflow:hidden}.qpedia-faq summary{position:relative;cursor:pointer;list-style:none;padding:16px 52px 16px 18px;font-weight:700;color:#1e3a8a}.qpedia-faq summary::-webkit-details-marker{display:none}.qpedia-faq summary:before{content:"+";position:absolute;right:17px;top:50%;transform:translateY(-50%);width:25px;height:25px;border-radius:7px;background:#dbeafe;color:#1d4ed8;display:grid;place-items:center;font-size:20px}.qpedia-faq details[open] summary:before{content:"−"}.qpedia-faq .answer{padding:4px 18px 17px;line-height:2;color:#334155}</style>
+<p><strong>EIT چیست؟</strong></p>
+<p>کاهش همدوس جذب در بازه‌ای باریک به‌سبب تداخل مسیرهای برانگیختگی است.</p>
 
-<div class="qpedia-faq" dir="rtl">
-<details open><summary>EIT چیست؟</summary><div class="answer">کاهش همدوس جذب در بازه‌ای باریک به‌سبب تداخل مسیرهای برانگیختگی است.</div></details>
-<details><summary>حالت تاریک چیست؟</summary><div class="answer">برهم‌نهی‌ای از حالت‌های ماده است که با میدان موردنظر به حالت برانگیخته کوپل نمی‌شود.</div></details>
-<details><summary>آیا EIT نور را متوقف می‌کند؟</summary><div class="answer">اطلاعات پالس می‌تواند موقتاً به همدوسی ماده نگاشت شود؛ نور به شکل گلوله ساکن نمی‌ماند.</div></details>
-<details><summary>نور کند نسبیت را نقض می‌کند؟</summary><div class="answer">خیر؛ سرعت گروهی کاهش می‌یابد و علیت و حد سرعت اطلاعات حفظ می‌شود.</div></details>
-<details><summary>فرق EIT و اشباع چیست؟</summary><div class="answer">EIT به همدوسی و تداخل فازی وابسته است، در حالی که اشباع عمدتاً از تغییر جمعیت گذار می‌آید.</div></details>
-</div>
+<p><strong>حالت تاریک چیست؟</strong></p>
+<p>برهم‌نهی‌ای از حالت‌های ماده است که با میدان موردنظر به حالت برانگیخته کوپل نمی‌شود.</p>
+
+<p><strong>آیا EIT نور را متوقف می‌کند؟</strong></p>
+<p>اطلاعات پالس می‌تواند موقتاً به همدوسی ماده نگاشت شود؛ نور به شکل گلوله ساکن نمی‌ماند.</p>
+
+<p><strong>نور کند نسبیت را نقض می‌کند؟</strong></p>
+<p>خیر؛ سرعت گروهی کاهش می‌یابد و علیت و حد سرعت اطلاعات حفظ می‌شود.</p>
+
+<p><strong>فرق EIT و اشباع چیست؟</strong></p>
+<p>EIT به همدوسی و تداخل فازی وابسته است، در حالی که اشباع عمدتاً از تغییر جمعیت گذار می‌آید.</p>
 
 ## منابع
 

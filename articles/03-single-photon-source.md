@@ -149,16 +149,20 @@ slug: single-photon-source
 
 ## پرسش‌های متداول
 
-<style>
-.qpedia-faq details{background:#fff;border:1px solid #e2e8f0;border-radius:12px;margin:12px 0;box-shadow:0 5px 16px rgba(15,23,42,.08);overflow:hidden}.qpedia-faq summary{position:relative;cursor:pointer;list-style:none;padding:16px 52px 16px 18px;font-weight:700;color:#4c1d95}.qpedia-faq summary::-webkit-details-marker{display:none}.qpedia-faq summary:before{content:"+";position:absolute;right:17px;top:50%;transform:translateY(-50%);width:25px;height:25px;border-radius:7px;background:#ede9fe;color:#6d28d9;display:grid;place-items:center;font-size:20px}.qpedia-faq details[open] summary:before{content:"−"}.qpedia-faq details[open] summary{background:#fafafa}.qpedia-faq .answer{padding:4px 18px 17px;line-height:2;color:#334155}
-</style>
-<div class="qpedia-faq" dir="rtl">
-<details open><summary>چشمهٔ تک‌فوتون چگونه کار می‌کند؟</summary><div class="answer">یا یک گسیل‌کننده منفرد را برانگیخته می‌کند تا یک فوتون آزاد کند، یا یک جفت فوتون می‌سازد و آشکارسازی یکی را نشانه حضور دیگری قرار می‌دهد.</div></details>
-<details><summary>آیا لیزر می‌تواند تک‌فوتون تولید کند؟</summary><div class="answer">پالس لیزر را می‌توان بسیار ضعیف کرد، اما شمار فوتون آن احتمالاتی است و احتمال پالس خالی یا چندفوتونی باقی می‌ماند.</div></details>
-<details><summary>g²(0) چه چیزی را می‌سنجد؟</summary><div class="answer">هم‌بستگی شدت در تأخیر صفر و در عمل گرایش دو فوتون به آشکارشدن هم‌زمان را می‌سنجد. مقدار نزدیک صفر نشانه پاکی تک‌فوتونی بهتر است.</div></details>
-<details><summary>چرا منابع تک‌فوتونی معمولاً سرد می‌شوند؟</summary><div class="answer">سرمایش برهم‌کنش با ارتعاشات شبکه و پهن‌شدن طیفی را کاهش می‌دهد و می‌تواند فوتون‌های پایدارتر و تمایزناپذیرتری بسازد.</div></details>
-<details><summary>مهم‌ترین کاربرد چشمهٔ تک‌فوتون چیست؟</summary><div class="answer">ارتباط کوانتومی، رایانش فوتونی، اندازه‌شناسی و کالیبراسیون آشکارساز از کاربردهای اصلی‌اند؛ نیاز دقیق هرکدام به منبع متفاوت است.</div></details>
-</div>
+<p><strong>چشمهٔ تک‌فوتون چگونه کار می‌کند؟</strong></p>
+<p>یا یک گسیل‌کننده منفرد را برانگیخته می‌کند تا یک فوتون آزاد کند، یا یک جفت فوتون می‌سازد و آشکارسازی یکی را نشانه حضور دیگری قرار می‌دهد.</p>
+
+<p><strong>آیا لیزر می‌تواند تک‌فوتون تولید کند؟</strong></p>
+<p>پالس لیزر را می‌توان بسیار ضعیف کرد، اما شمار فوتون آن احتمالاتی است و احتمال پالس خالی یا چندفوتونی باقی می‌ماند.</p>
+
+<p><strong>g²(0) چه چیزی را می‌سنجد؟</strong></p>
+<p>هم‌بستگی شدت در تأخیر صفر و در عمل گرایش دو فوتون به آشکارشدن هم‌زمان را می‌سنجد. مقدار نزدیک صفر نشانه پاکی تک‌فوتونی بهتر است.</p>
+
+<p><strong>چرا منابع تک‌فوتونی معمولاً سرد می‌شوند؟</strong></p>
+<p>سرمایش برهم‌کنش با ارتعاشات شبکه و پهن‌شدن طیفی را کاهش می‌دهد و می‌تواند فوتون‌های پایدارتر و تمایزناپذیرتری بسازد.</p>
+
+<p><strong>مهم‌ترین کاربرد چشمهٔ تک‌فوتون چیست؟</strong></p>
+<p>ارتباط کوانتومی، رایانش فوتونی، اندازه‌شناسی و کالیبراسیون آشکارساز از کاربردهای اصلی‌اند؛ نیاز دقیق هرکدام به منبع متفاوت است.</p>
 
 ## منابع
 

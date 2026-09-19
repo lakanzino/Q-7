@@ -49,15 +49,20 @@ slug: rabi-oscillations
 
 ## پرسش‌های متداول
 
-<style>.qpedia-faq details{background:#fff;border:1px solid #e2e8f0;border-radius:12px;margin:12px 0;box-shadow:0 5px 16px rgba(15,23,42,.08);overflow:hidden}.qpedia-faq summary{position:relative;cursor:pointer;list-style:none;padding:16px 52px 16px 18px;font-weight:700;color:#1e3a8a}.qpedia-faq summary::-webkit-details-marker{display:none}.qpedia-faq summary:before{content:"+";position:absolute;right:17px;top:50%;transform:translateY(-50%);width:25px;height:25px;border-radius:7px;background:#dbeafe;color:#1d4ed8;display:grid;place-items:center;font-size:20px}.qpedia-faq details[open] summary:before{content:"−"}.qpedia-faq .answer{padding:4px 18px 17px;line-height:2;color:#334155}</style>
+<p><strong>نوسان رابی چیست؟</strong></p>
+<p>تغییر دوره‌ای احتمال حضور سامانه کوانتومی دوترازی در اثر میدان محرک همدوس است.</p>
 
-<div class="qpedia-faq" dir="rtl">
-<details open><summary>نوسان رابی چیست؟</summary><div class="answer">تغییر دوره‌ای احتمال حضور سامانه کوانتومی دوترازی در اثر میدان محرک همدوس است.</div></details>
-<details><summary>فرکانس رابی به چه بستگی دارد؟</summary><div class="answer">به دامنه میدان، گشتاور گذار و در حالت کلی ناهم‌رزونی بستگی دارد.</div></details>
-<details><summary>پالس π چه می‌کند؟</summary><div class="answer">در مدل ایده‌آل جمعیت را از یک حالت به حالت دیگر منتقل می‌کند.</div></details>
-<details><summary>آیا ذره واقعاً رفت‌وبرگشت می‌کند؟</summary><div class="answer">آن‌چه نوسان می‌کند حالت و احتمال نتایج اندازه‌گیری است، نه مسیر کلاسیکی ذره.</div></details>
-<details><summary>چرا نوسان میرا می‌شود؟</summary><div class="answer">اتلاف انرژی، واهَم‌فازی، نویز و ناهمگنی کنترل می‌توانند پوش نوسان را کاهش دهند.</div></details>
-</div>
+<p><strong>فرکانس رابی به چه بستگی دارد؟</strong></p>
+<p>به دامنه میدان، گشتاور گذار و در حالت کلی ناهم‌رزونی بستگی دارد.</p>
+
+<p><strong>پالس π چه می‌کند؟</strong></p>
+<p>در مدل ایده‌آل جمعیت را از یک حالت به حالت دیگر منتقل می‌کند.</p>
+
+<p><strong>آیا ذره واقعاً رفت‌وبرگشت می‌کند؟</strong></p>
+<p>آن‌چه نوسان می‌کند حالت و احتمال نتایج اندازه‌گیری است، نه مسیر کلاسیکی ذره.</p>
+
+<p><strong>چرا نوسان میرا می‌شود؟</strong></p>
+<p>اتلاف انرژی، واهَم‌فازی، نویز و ناهمگنی کنترل می‌توانند پوش نوسان را کاهش دهند.</p>
 
 ## منابع
 

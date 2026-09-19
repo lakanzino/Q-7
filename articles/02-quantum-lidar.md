@@ -143,16 +143,20 @@ slug: quantum-lidar
 
 ## پرسش‌های متداول
 
-<style>
-.qpedia-faq details{background:#fff;border:1px solid #e2e8f0;border-radius:12px;margin:12px 0;box-shadow:0 5px 16px rgba(15,23,42,.08);overflow:hidden}.qpedia-faq summary{position:relative;cursor:pointer;list-style:none;padding:16px 52px 16px 18px;font-weight:700;color:#164e63}.qpedia-faq summary::-webkit-details-marker{display:none}.qpedia-faq summary:before{content:"+";position:absolute;right:17px;top:50%;transform:translateY(-50%);width:25px;height:25px;border-radius:7px;background:#cffafe;color:#0e7490;display:grid;place-items:center;font-size:20px}.qpedia-faq details[open] summary:before{content:"−"}.qpedia-faq details[open] summary{background:#f8fafc}.qpedia-faq .answer{padding:4px 18px 17px;line-height:2;color:#334155}
-</style>
-<div class="qpedia-faq" dir="rtl">
-<details open><summary>لیدار کوانتومی چگونه فاصله را اندازه می‌گیرد؟</summary><div class="answer">در روش زمان پرواز، فاصله از نصف حاصل‌ضرب سرعت نور در زمان رفت‌وبرگشت به دست می‌آید. روش کوانتومی می‌تواند برای جداکردن بازتاب از نویز، از هم‌بستگی سیگنال و مرجع استفاده کند.</div></details>
-<details><summary>آیا هر لیدار تک‌فوتونی کوانتومی است؟</summary><div class="answer">به معنای گسترده از آشکارسازی کوانتومی استفاده می‌کند، اما لزوماً مزیت غیرکلاسیک ندارد. منبع، گیرنده و مقایسه با بهترین سامانه کلاسیک باید مشخص باشند.</div></details>
-<details><summary>آیا لیدار کوانتومی در مه بهتر کار می‌کند؟</summary><div class="answer">برخی روش‌ها می‌توانند نویز نامرتبط را بهتر رد کنند، اما پراکندگی و جذب مه حذف نمی‌شود. عملکرد واقعی به طول موج، شدت مه، اپتیک و پروتکل بستگی دارد.</div></details>
-<details><summary>تفاوت لیدار کوانتومی و رادار کوانتومی چیست؟</summary><div class="answer">لیدار با نور اپتیکی و رادار با امواج رادیویی یا مایکروویو کار می‌کند. منابع نویز، آشکارسازها و محدودیت برد آن‌ها یکسان نیست.</div></details>
-<details><summary>آیا لیدار کوانتومی تجاری شده است؟</summary><div class="answer">لیدارهای حساس به تک‌فوتون کاربرد عملی دارند، اما سامانه‌های متکی بر درهم‌تنیدگی یا دیگر منابع غیرکلاسیک عمدتاً در مرحله پژوهش و نمونه آزمایشگاهی‌اند.</div></details>
-</div>
+<p><strong>لیدار کوانتومی چگونه فاصله را اندازه می‌گیرد؟</strong></p>
+<p>در روش زمان پرواز، فاصله از نصف حاصل‌ضرب سرعت نور در زمان رفت‌وبرگشت به دست می‌آید. روش کوانتومی می‌تواند برای جداکردن بازتاب از نویز، از هم‌بستگی سیگنال و مرجع استفاده کند.</p>
+
+<p><strong>آیا هر لیدار تک‌فوتونی کوانتومی است؟</strong></p>
+<p>به معنای گسترده از آشکارسازی کوانتومی استفاده می‌کند، اما لزوماً مزیت غیرکلاسیک ندارد. منبع، گیرنده و مقایسه با بهترین سامانه کلاسیک باید مشخص باشند.</p>
+
+<p><strong>آیا لیدار کوانتومی در مه بهتر کار می‌کند؟</strong></p>
+<p>برخی روش‌ها می‌توانند نویز نامرتبط را بهتر رد کنند، اما پراکندگی و جذب مه حذف نمی‌شود. عملکرد واقعی به طول موج، شدت مه، اپتیک و پروتکل بستگی دارد.</p>
+
+<p><strong>تفاوت لیدار کوانتومی و رادار کوانتومی چیست؟</strong></p>
+<p>لیدار با نور اپتیکی و رادار با امواج رادیویی یا مایکروویو کار می‌کند. منابع نویز، آشکارسازها و محدودیت برد آن‌ها یکسان نیست.</p>
+
+<p><strong>آیا لیدار کوانتومی تجاری شده است؟</strong></p>
+<p>لیدارهای حساس به تک‌فوتون کاربرد عملی دارند، اما سامانه‌های متکی بر درهم‌تنیدگی یا دیگر منابع غیرکلاسیک عمدتاً در مرحله پژوهش و نمونه آزمایشگاهی‌اند.</p>
 
 ## منابع
 

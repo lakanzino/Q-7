@@ -168,16 +168,20 @@ slug: entangled-photon-source
 
 ## پرسش‌های متداول
 
-<style>
-.qpedia-faq details{background:#fff;border:1px solid #e2e8f0;border-radius:12px;margin:12px 0;box-shadow:0 5px 16px rgba(15,23,42,.08);overflow:hidden}.qpedia-faq summary{position:relative;cursor:pointer;list-style:none;padding:16px 52px 16px 18px;font-weight:700;color:#1e3a8a}.qpedia-faq summary::-webkit-details-marker{display:none}.qpedia-faq summary:before{content:"+";position:absolute;right:17px;top:50%;transform:translateY(-50%);width:25px;height:25px;border-radius:7px;background:#dbeafe;color:#1d4ed8;display:grid;place-items:center;font-size:20px}.qpedia-faq details[open] summary:before{content:"−"}.qpedia-faq details[open] summary{background:#f8fafc}.qpedia-faq .answer{padding:4px 18px 17px;line-height:2;color:#334155}
-</style>
-<div class="qpedia-faq" dir="rtl">
-<details open><summary>چشمهٔ فوتون درهم‌تنیده چگونه کار می‌کند؟</summary><div class="answer">منبع چند امکان همدوس برای تولید یک جفت می‌سازد و اطلاعاتی را که بتواند این امکان‌ها را از هم تشخیص دهد حذف می‌کند. SPDC در بلور غیرخطی رایج‌ترین روش است.</div></details>
-<details><summary>آیا هر جفت‌فوتون تولیدشده درهم‌تنیده است؟</summary><div class="answer">خیر. دو فوتون ممکن است فقط هم‌بسته یا حتی جداپذیر باشند. درهم‌تنیدگی به حالت مشترک و نبود اطلاعات کدام‌مسیر وابسته است.</div></details>
-<details><summary>چگونه درهم‌تنیدگی را آزمایش می‌کنند؟</summary><div class="answer">با اندازه‌گیری در پایه‌های گوناگون، توموگرافی حالت، شاهدهای درهم‌تنیدگی و در شرایط مناسب نقض نامساوی بل.</div></details>
-<details><summary>آیا این فوتون‌ها پیام را سریع‌تر از نور می‌فرستند؟</summary><div class="answer">خیر. نتیجه محلی کنترل‌پذیر نیست و برای مقایسه نتایج به ارتباط کلاسیک نیاز داریم.</div></details>
-<details><summary>چرا توان پمپ را برای جفت بیشتر بالا نمی‌برند؟</summary><div class="answer">توان بیشتر نرخ تولید را بالا می‌برد، اما احتمال ساخته‌شدن چند جفت در یک پنجره زمانی را نیز زیاد می‌کند و وفاداری کاربرد تک‌جفتی افت می‌کند.</div></details>
-</div>
+<p><strong>چشمهٔ فوتون درهم‌تنیده چگونه کار می‌کند؟</strong></p>
+<p>منبع چند امکان همدوس برای تولید یک جفت می‌سازد و اطلاعاتی را که بتواند این امکان‌ها را از هم تشخیص دهد حذف می‌کند. SPDC در بلور غیرخطی رایج‌ترین روش است.</p>
+
+<p><strong>آیا هر جفت‌فوتون تولیدشده درهم‌تنیده است؟</strong></p>
+<p>خیر. دو فوتون ممکن است فقط هم‌بسته یا حتی جداپذیر باشند. درهم‌تنیدگی به حالت مشترک و نبود اطلاعات کدام‌مسیر وابسته است.</p>
+
+<p><strong>چگونه درهم‌تنیدگی را آزمایش می‌کنند؟</strong></p>
+<p>با اندازه‌گیری در پایه‌های گوناگون، توموگرافی حالت، شاهدهای درهم‌تنیدگی و در شرایط مناسب نقض نامساوی بل.</p>
+
+<p><strong>آیا این فوتون‌ها پیام را سریع‌تر از نور می‌فرستند؟</strong></p>
+<p>خیر. نتیجه محلی کنترل‌پذیر نیست و برای مقایسه نتایج به ارتباط کلاسیک نیاز داریم.</p>
+
+<p><strong>چرا توان پمپ را برای جفت بیشتر بالا نمی‌برند؟</strong></p>
+<p>توان بیشتر نرخ تولید را بالا می‌برد، اما احتمال ساخته‌شدن چند جفت در یک پنجره زمانی را نیز زیاد می‌کند و وفاداری کاربرد تک‌جفتی افت می‌کند.</p>
 
 ## منابع
 

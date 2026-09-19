@@ -49,15 +49,20 @@ slug: circuit-qed
 
 ## پرسش‌های متداول
 
-<style>.qpedia-faq details{background:#fff;border:1px solid #e2e8f0;border-radius:12px;margin:12px 0;box-shadow:0 5px 16px rgba(15,23,42,.08);overflow:hidden}.qpedia-faq summary{position:relative;cursor:pointer;list-style:none;padding:16px 52px 16px 18px;font-weight:700;color:#1e3a8a}.qpedia-faq summary::-webkit-details-marker{display:none}.qpedia-faq summary:before{content:"+";position:absolute;right:17px;top:50%;transform:translateY(-50%);width:25px;height:25px;border-radius:7px;background:#dbeafe;color:#1d4ed8;display:grid;place-items:center;font-size:20px}.qpedia-faq details[open] summary:before{content:"−"}.qpedia-faq .answer{padding:4px 18px 17px;line-height:2;color:#334155}</style>
+<p><strong>circuit QED چیست؟</strong></p>
+<p>برهم‌کنش کیوبیت‌های ابررسانا با مُدهای مایکروویو کوانتیده در تشدیدگرهای مدار است.</p>
 
-<div class="qpedia-faq" dir="rtl">
-<details open><summary>circuit QED چیست؟</summary><div class="answer">برهم‌کنش کیوبیت‌های ابررسانا با مُدهای مایکروویو کوانتیده در تشدیدگرهای مدار است.</div></details>
-<details><summary>اتم مصنوعی چیست؟</summary><div class="answer">مداری غیرخطی با ترازهای انرژی گسسته و قابل‌کنترل است.</div></details>
-<details><summary>چرا دستگاه سرد می‌شود؟</summary><div class="answer">برای کاهش برانگیختگی گرمایی و حفظ ابررسانایی و همدوسی.</div></details>
-<details><summary>خوانش پاشنده چیست؟</summary><div class="answer">استنباط حالت کیوبیت از جابه‌جایی پاسخ تشدیدگر بدون تبادل رزونانسی مستقیم.</div></details>
-<details><summary>آیا circuit QED همان Cavity QED است؟</summary><div class="answer">نسخه مداری همان چارچوب است، اما بستر و منابع نویز تفاوت دارند.</div></details>
-</div>
+<p><strong>اتم مصنوعی چیست؟</strong></p>
+<p>مداری غیرخطی با ترازهای انرژی گسسته و قابل‌کنترل است.</p>
+
+<p><strong>چرا دستگاه سرد می‌شود؟</strong></p>
+<p>برای کاهش برانگیختگی گرمایی و حفظ ابررسانایی و همدوسی.</p>
+
+<p><strong>خوانش پاشنده چیست؟</strong></p>
+<p>استنباط حالت کیوبیت از جابه‌جایی پاسخ تشدیدگر بدون تبادل رزونانسی مستقیم.</p>
+
+<p><strong>آیا circuit QED همان Cavity QED است؟</strong></p>
+<p>نسخه مداری همان چارچوب است، اما بستر و منابع نویز تفاوت دارند.</p>
 
 ## منابع
 

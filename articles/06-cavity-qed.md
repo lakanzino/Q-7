@@ -49,15 +49,20 @@ slug: cavity-qed
 
 ## پرسش‌های متداول
 
-<style>.qpedia-faq details{background:#fff;border:1px solid #e2e8f0;border-radius:12px;margin:12px 0;box-shadow:0 5px 16px rgba(15,23,42,.08);overflow:hidden}.qpedia-faq summary{position:relative;cursor:pointer;list-style:none;padding:16px 52px 16px 18px;font-weight:700;color:#1e3a8a}.qpedia-faq summary::-webkit-details-marker{display:none}.qpedia-faq summary:before{content:"+";position:absolute;right:17px;top:50%;transform:translateY(-50%);width:25px;height:25px;border-radius:7px;background:#dbeafe;color:#1d4ed8;display:grid;place-items:center;font-size:20px}.qpedia-faq details[open] summary:before{content:"−"}.qpedia-faq .answer{padding:4px 18px 17px;line-height:2;color:#334155}</style>
+<p><strong>Cavity QED چیست؟</strong></p>
+<p>مطالعه برهم‌کنش کوانتومی ماده با مُدهای محدودشده میدان در یک حفره است.</p>
 
-<div class="qpedia-faq" dir="rtl">
-<details open><summary>Cavity QED چیست؟</summary><div class="answer">مطالعه برهم‌کنش کوانتومی ماده با مُدهای محدودشده میدان در یک حفره است.</div></details>
-<details><summary>اثر پرسل چیست؟</summary><div class="answer">تغییر نرخ گسیل خودبه‌خودی گسیل‌کننده به‌سبب تغییر چگالی مُدهای میدان است.</div></details>
-<details><summary>کوپلش قوی چه شرطی دارد؟</summary><div class="answer">نرخ برهم‌کنش باید بر اتلاف حفره و واپاشی همدوسی غلبه کند.</div></details>
-<details><summary>شکافت رابی خلأ چیست؟</summary><div class="answer">جداشدن طیف به دو قله بر اثر تشکیل حالت‌های ترکیبی نور و ماده است.</div></details>
-<details><summary>آیا حفره انرژی خلأ تولید می‌کند؟</summary><div class="answer">خیر؛ حفره ساختار مُدها را تغییر می‌دهد و منبع انرژی رایگان نیست.</div></details>
-</div>
+<p><strong>اثر پرسل چیست؟</strong></p>
+<p>تغییر نرخ گسیل خودبه‌خودی گسیل‌کننده به‌سبب تغییر چگالی مُدهای میدان است.</p>
+
+<p><strong>کوپلش قوی چه شرطی دارد؟</strong></p>
+<p>نرخ برهم‌کنش باید بر اتلاف حفره و واپاشی همدوسی غلبه کند.</p>
+
+<p><strong>شکافت رابی خلأ چیست؟</strong></p>
+<p>جداشدن طیف به دو قله بر اثر تشکیل حالت‌های ترکیبی نور و ماده است.</p>
+
+<p><strong>آیا حفره انرژی خلأ تولید می‌کند؟</strong></p>
+<p>خیر؛ حفره ساختار مُدها را تغییر می‌دهد و منبع انرژی رایگان نیست.</p>
 
 ## منابع
 
