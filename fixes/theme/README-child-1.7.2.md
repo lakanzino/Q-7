@@ -42,6 +42,9 @@
 
 نصب با گوشی: cPanel → File Manager → `public_html/wp-content/themes/quantum-pedia-child/footer.php` → راست‌کلیک → Edit → همان یک خط را عوض کن → Save Changes. **اول از همان فایل یک کپی بگیر** (`footer.php.bak`) تا راه برگشت داشته باشی. نکته: اگر افزونهٔ «ویرایش پوسته» در پیشخوان باز است، همان‌جا هم می‌شود؛ اما File Manager قابل‌اتکاتر است.
 
+**فایل آماده در این ریپو:** `fixes/theme/footer.php` (تغییرِ تأییدشده در همان یک خط، بقیهٔ ۲۵ خط بیت‌به‌بیت فایل ۱.۷.۲ است؛ sha256 `063557e8…`) — بازگشت: `fixes/theme/footer.orig.php`.
+
+
 **پ) تکرار وظیفه بین mu-plugin و پوسته.**
 پوسته حالا خودش در `functions.php:213-218` فهرست `start / about-us / contact-us / privacy-policy` را «برگه» می‌داند؛ mu-plugin `qpedia-pages-fix.php` همان کار را به‌علاوهٔ `home`، ۳۰۱های `starting|start-here|begin → start`، `about → about-us`، `contact → contact-us`، `privacy → privacy-policy`، آرشیو `/topics/` و ترمیم یتیم‌ها انجام می‌دهد. هر دو با هم تداخل ندارند (mu-plugin زودتر اجرا می‌شود و هر دو به یک `pagename` می‌رسند)، ولی اگر یک‌جا‌کردنی می‌خواهی: mu-plugin را نگه دار و فقط از فهرستِ `page_first_slugs` پوسته بی‌نیاز شو — فعلاً لازم نیست دست بزنی.
 
