@@ -1,0 +1,24 @@
+/*
+Theme Name: Quantum Pedia Child — RTL
+Description: استایل‌های راست‌به‌چپ قالب فرزند کوانتوم پدیا. وردپرس در سایت‌های فارسی این فایل را خودکار بعد از style.css بارگذاری می‌کند.
+*/
+
+/* جهت کلی و تراز پیش‌فرض */
+body{direction:rtl;text-align:right}
+
+/* کانتینر و چیدمان‌های اصلی */
+.container{margin-inline:auto}
+
+/* ناوبری دسکتاپ */
+.qp-desktop-nav__list{padding-right:0}
+.qp-desktop-nav__panel{right:0;left:auto;text-align:right}
+
+/* فرم جست‌وجو */
+.qp-search-form__input{text-align:right}
+
+/* مقاله و فهرست مطالب */
+.qp-article-toc__list,.qp-article-toc__sub{padding-right:1.25rem;padding-left:0}
+.qp-related-card__title{text-align:right}
+
+/* کارت‌های آرشیو */
+.qp-archive-card__title,.qp-archive-card__excerpt{text-align:right}

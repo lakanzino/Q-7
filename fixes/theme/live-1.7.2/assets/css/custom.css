@@ -1,0 +1,589 @@
+@font-face {
+  font-family: "Vazirmatn";
+  src: url("../../fonts/Vazirmatn-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Vazirmatn";
+  src: url("../../fonts/Vazirmatn-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Vazirmatn";
+  src: url("../../fonts/Vazirmatn-SemiBold.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Vazirmatn";
+  src: url("../../fonts/Vazirmatn-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Vazirmatn";
+  src: url("../../fonts/Vazirmatn-ExtraBold.woff2") format("woff2");
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+html,
+body,
+body h1,
+body h2,
+body h3,
+body h4,
+body h5,
+body h6,
+body p,
+body a,
+body li,
+body button,
+body input,
+body textarea,
+body select {
+  font-family: "Vazirmatn", sans-serif;
+}
+
+:root{
+  /* ── Ocean Breeze (قانون ۱ سند Original_personal_Q-pedia-7) ── */
+  --qp-primary:#0B3D91;
+  --qp-secondary:#3BA7F2;
+  --qp-tertiary:#7FE7D6;
+  --qp-ice:#E8F6FF;
+  --qp-warm:#F4A261;
+  --qp-warm-deep:#B4692E;
+  --qp-secondary-deep:#1E7FD0;
+  --qp-text:#333333;
+  /* الیاس‌های قدیمی (برای قاعده‌های موجود) */
+  --qp-dark-1:#0B3D91;
+  --qp-dark-2:#0d47a8;
+  --qp-dark-3:#1a55b0;
+  --qp-ink:#333333;
+  --qp-neon:#3BA7F2;
+  --qp-neon-soft:rgba(59,167,242,.16);
+  --qp-neon-strong:rgba(59,167,242,.34);
+  --qp-surface:#ffffff;
+  --qp-card-shadow:0 16px 40px rgba(11,61,145,.10),0 8px 18px rgba(11,61,145,.05);
+  --qp-card-shadow-hover:0 24px 54px rgba(11,61,145,.15),0 10px 24px rgba(11,61,145,.07);
+}
+
+body{
+  background-color:#E8F6FF;
+  background-image:
+    linear-gradient(rgba(59,167,242,.07) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(59,167,242,.07) 1px, transparent 1px);
+  background-size:32px 32px;
+}
+
+.qp-global-header{
+  position:sticky;
+  top:0;
+  z-index:999;
+  /* هم‌رنگ زمینۀ سایت (body) — بلوک «هدر و فوتر هم‌رنگ» */
+  background-color:#E8F6FF;
+  background-image:
+    linear-gradient(rgba(59,167,242,.07) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(59,167,242,.07) 1px, transparent 1px);
+  background-size:32px 32px;
+  border-bottom:1px solid rgba(11,61,145,.12);
+  box-shadow:none;
+  backdrop-filter:none;
+}
+.qp-global-header::after{
+  content:"";
+  position:absolute;
+  inset:auto 0 0 0;
+  height:2px;
+  background:linear-gradient(90deg,transparent,rgba(59,167,242,.75) 30%,rgba(127,231,214,.75) 55%,rgba(244,162,97,.75) 80%,transparent);
+}
+.qp-global-header__inner{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:24px;
+  min-height:72px;
+}
+.qp-global-header__brand{margin-inline-start:auto}
+.qp-brand{
+  display:flex;
+  align-items:center;
+  gap:14px;
+  text-decoration:none;
+}
+.qp-brand__logo-wrap{
+  width:48px;height:48px;border-radius:14px;display:inline-flex;align-items:center;justify-content:center;
+  background:#ffffff;
+  border:1px solid rgba(11,61,145,.10);
+  box-shadow:0 10px 22px rgba(11,61,145,.10);
+}
+.qp-brand__logo{
+  width:38px;height:38px;object-fit:cover;display:block;border-radius:50%;
+  box-shadow:0 0 0 2px rgba(59,167,242,.45),0 0 14px rgba(127,231,214,.22);
+}
+.qp-brand__text{display:flex;flex-direction:column;gap:6px}
+.qp-brand__title,
+.qp-global-footer__title{
+  position:relative;
+  display:inline-flex;
+  align-items:center;
+  gap:10px;
+  color:#0B3D91;
+  font-size:1.08rem;
+  font-weight:800;
+  letter-spacing:-.2px;
+}
+.qp-brand__title::before,
+.qp-global-footer__title::before{
+  content:"";
+  width:10px;height:10px;border-radius:50%;
+  background:#3BA7F2;
+  box-shadow:0 0 8px rgba(59,167,242,.35);
+  animation:none;
+}
+@keyframes qpPulse {
+  0%,100%{opacity:.45;transform:scale(.92);box-shadow:0 0 0 0 rgba(59,167,242,.0),0 0 10px rgba(59,167,242,.26)}
+  50%{opacity:1;transform:scale(1.08);box-shadow:0 0 0 5px rgba(59,167,242,.06),0 0 16px rgba(59,167,242,.52)}
+}
+.qp-brand__desc{
+  color:rgba(51,51,51,.78);
+  font-size:.82rem;
+  max-width:360px;
+}
+
+.qp-desktop-nav{flex:1}
+.qp-desktop-nav__list{display:flex;align-items:center;gap:10px;list-style:none;margin:0;padding:0}
+.qp-desktop-nav__item{position:relative}
+.qp-desktop-nav__trigger-wrap{
+  display:flex;align-items:center;gap:6px;
+  padding:8px 12px;border-radius:14px;
+  background:rgba(11,61,145,.05);
+  border:1px solid rgba(11,61,145,.10);
+  transition:.2s ease;
+}
+.qp-desktop-nav__link{
+  color:#0B3D91;
+  text-decoration:none;
+  font-weight:700;
+  font-size:.92rem;
+  white-space:nowrap;
+}
+.qp-desktop-nav__toggle{
+  width:28px;height:28px;border:none;border-radius:10px;cursor:pointer;
+  color:#1E7FD0;background:rgba(59,167,242,.14);
+  box-shadow:inset 0 0 0 1px rgba(59,167,242,.22);
+}
+.qp-desktop-nav__trigger-wrap:hover,
+.qp-desktop-nav__item.is-open .qp-desktop-nav__trigger-wrap{
+  transform:translateY(-1px);
+  border-color:rgba(59,167,242,.2);
+  box-shadow:0 12px 24px rgba(11,61,145,.10);
+}
+.qp-desktop-nav__link:hover{color:#B4692E}
+.qp-desktop-nav__panel{
+  position:absolute;
+  top:calc(100% + 14px);
+  right:0;
+  min-width:265px;
+  padding:16px;
+  border-radius:20px;
+  background:#ffffff;
+  border:1px solid rgba(11,61,145,.12);
+  box-shadow:0 24px 48px rgba(11,61,145,.14);
+  opacity:0;visibility:hidden;transform:translateY(10px);
+  transition:.18s ease;
+}
+.qp-desktop-nav__item.is-open .qp-desktop-nav__panel{opacity:1;visibility:visible;transform:translateY(0)}
+.qp-desktop-nav__panel-title{
+  margin:0 0 12px;
+  color:#0B3D91;
+  font-size:.9rem;
+  font-weight:800;
+}
+.qp-desktop-nav__sublist{list-style:none;margin:0;padding:0;display:grid;gap:8px}
+.qp-desktop-nav__sublist a{
+  display:block;padding:11px 12px;border-radius:12px;background:rgba(11,61,145,.04);border:1px solid transparent;
+  color:#0B3D91;text-decoration:none;font-size:.88rem;
+}
+.qp-desktop-nav__sublist a:hover{color:#B4692E;border-color:rgba(59,167,242,.35)}
+
+.qp-search-form{display:flex;gap:12px;align-items:center}
+.qp-search-form__input{
+  flex:1;min-height:58px;padding:0 18px;border-radius:18px;border:1px solid rgba(11,61,145,.18);
+  background:#ffffff;color:#0B3D91;outline:none;
+  box-shadow:none;
+}
+.qp-search-form__input::placeholder{color:rgba(11,61,145,.45)}
+.qp-search-form__input:focus{border-color:rgba(59,167,242,.55);box-shadow:0 0 0 4px rgba(59,167,242,.10)}
+.qp-search-form__submit{
+  min-width:144px;min-height:58px;border:none;border-radius:18px;padding:0 18px;
+  background:#F4A261;
+  color:#fff;font-weight:800;cursor:pointer;box-shadow:0 12px 24px rgba(244,162,97,.30);
+}
+
+.qp-global-footer{
+  margin-top:50px;
+  padding:40px 0 18px;
+  /* هم‌رنگ زمینۀ سایت (body) */
+  background-color:#E8F6FF;
+  background-image:
+    linear-gradient(rgba(59,167,242,.07) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(59,167,242,.07) 1px, transparent 1px);
+  background-size:32px 32px;
+  border-top:0;
+  box-shadow:0 -12px 26px rgba(11,61,145,.10);
+}
+.qp-global-footer__inner{
+  display:flex;align-items:flex-start;justify-content:space-between;gap:28px;
+}
+.qp-global-footer__brand-top{display:flex;align-items:center;gap:14px;margin-bottom:10px}
+.qp-global-footer__logo{
+  width:48px;height:48px;object-fit:contain;display:block;
+  filter:drop-shadow(0 2px 10px rgba(59,167,242,.08));
+}
+.qp-global-footer__desc{margin:0;color:rgba(51,51,51,.78);max-width:430px;line-height:1.9}
+.qp-global-footer__links{display:flex;flex-wrap:wrap;gap:14px}
+.qp-global-footer__links a{
+  display:inline-flex;align-items:center;justify-content:center;min-height:46px;padding:0 16px;border-radius:14px;
+  border:1px solid rgba(11,61,145,.14);background:#ffffff;color:#0B3D91;text-decoration:none;font-weight:700;
+}
+.qp-global-footer__links a:hover{color:#B4692E;border-color:rgba(244,162,97,.55)}
+.qp-global-footer__bottom{padding-top:18px;margin-top:18px;border-top:1px solid rgba(11,61,145,.10)}
+.qp-global-footer__bottom p{margin:0;color:rgba(51,51,51,.70)}
+
+.qp-front-hero,
+.qp-front-cat,
+.qp-front-article,
+.qp-archive-card,
+.qp-scientist-card,
+.qp-article,
+.qp-single,
+.site-main article{
+  box-shadow:var(--qp-card-shadow)!important;
+}
+.qp-front-hero,
+.qp-front-cat,
+.qp-front-article{border:1px solid rgba(59,167,242,.10)}
+.qp-front-hero{background:linear-gradient(135deg,#ffffff 0%,#f7fbff 52%,#eef6ff 100%)}
+.qp-front-search{margin-top:24px}
+.qp-front-search .qp-search-form{
+  padding:14px;border-radius:24px;background:linear-gradient(135deg,#082a5e 0%,#0d3f8f 100%);border:1px solid rgba(59,167,242,.25);
+  box-shadow:0 20px 44px rgba(11,61,145,.20);
+}
+/* چون زمینۀ این باکس هنوز تیره است، ورودی‌اش تیره می‌ماند (فقط هدر روشن شد) */
+.qp-front-search .qp-search-form .qp-search-form__input{
+  background:#082a5e;color:#fff;border-color:rgba(59,167,242,.18);
+}
+.qp-front-search .qp-search-form .qp-search-form__input::placeholder{color:rgba(255,255,255,.56)}
+.qp-front-btn--primary{background:#F4A261!important;border-color:#F4A261!important;color:#fff!important}
+.qp-front-btn--ghost{border-color:#3BA7F2!important;color:#0B3D91!important}
+.qp-front-btn--ghost:hover{border-color:#F4A261!important;color:#B4692E!important}
+.qp-front-cat:hover,
+.qp-front-article:hover{
+  transform:translateY(-4px)!important;
+  box-shadow:var(--qp-card-shadow-hover)!important;
+}
+.qp-front-cat__sub,
+.qp-front-article__term,
+.qp-front-cat__icon{border-color:rgba(59,167,242,.16)!important}
+
+@media (max-width: 960px){
+  .qp-desktop-nav{display:none}
+  .qp-global-header__inner{min-height:72px}
+  .qp-global-header__brand{margin-inline-start:0}
+  .qp-brand__logo-wrap{width:44px;height:44px}
+  .qp-brand__logo{width:36px;height:36px}
+}
+
+@media (max-width: 782px){
+  .qp-global-footer__inner{flex-direction:column}
+  .qp-search-form,
+  .qp-front-search .qp-search-form{flex-direction:column;align-items:stretch}
+  .qp-search-form__submit{width:100%}
+}
+
+/* کادر تیتر دسته اصلی */
+.tax-quantum_category .qp-archive__header {
+  width: 100%;
+  margin: 0 0 14px;
+}
+
+.tax-quantum_category .qp-archive__title {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 10px 18px;
+  border: 1px solid rgba(59,167,242,.25);
+  border-radius: 16px;
+  background: #0B3D91;
+  color: #E8F6FF;
+  font-family: "Vazirmatn", sans-serif;
+  font-size: clamp(1.35rem, 4vw, 2.6rem);
+  font-weight: 800;
+  line-height: 1.5;
+  text-shadow: 0 0 10px rgba(59, 167, 242, 0.45);
+  box-shadow: 0 10px 28px rgba(11, 61, 145, 0.10);
+  overflow-wrap: anywhere;
+}
+
+/* علامت ابتدای عنوان */
+.tax-quantum_category .qp-archive__title::before {
+  content: "|";
+  display: inline-block;
+  margin-inline-end: 10px;
+  color: #F4A261;
+  font-weight: 800;
+  text-shadow: 0 0 10px rgba(244, 162, 97, 0.40);
+}
+
+@media (max-width: 640px) {
+  .tax-quantum_category .qp-archive__title {
+    padding: 9px 12px;
+    font-size: 1.5rem;
+    text-align: center;
+  }
+}
+/* رنگ تیترهای داخل مقاله و نوشته */
+.qp-article__content h2,
+.qp-article__content h3,
+.qp-single__content h2,
+.qp-single__content h3,
+.qp-scientist__content h2,
+.qp-scientist__content h3,
+.entry-content h2 {
+  color: #0B3D91 !important;
+}
+
+.entry-content h3 {
+  color: #3BA7F2 !important;
+}
+
+/* بخش‌های نقل‌قول یا تأکیدی داخل مقاله */
+.qp-article__content blockquote,
+.qp-single__content blockquote,
+.qp-scientist__content blockquote,
+.entry-content blockquote {
+  background: #E8F6FF !important;
+  border-right: 4px solid #3BA7F2 !important;
+  color: #0B3D91 !important;
+}
+
+/* باکس روایت شخصی بزرگان علم (طبق بند ۵.۱ دستورالعمل مرجع) */
+.qp-narrative-box {
+  background: #FEF6EE !important;
+  border: 1px solid #F3D9BF !important;
+  border-right: 4px solid #F4A261 !important;
+  border-radius: 0 8px 8px 0 !important;
+  padding: 18px 22px !important;
+  margin: 24px 0 !important;
+  color: #7C3F10 !important;
+}
+
+/* باکس تفکیک شهود کوانتومی */
+.qp-intuition-box {
+  background: #E8FBF8 !important;
+  border: 1px solid #B9EDE0 !important;
+  border-right: 4px solid #7FE7D6 !important;
+  border-radius: 0 8px 8px 0 !important;
+  padding: 18px 22px !important;
+  margin: 24px 0 !important;
+  color: #0B3D91 !important;
+}
+
+/* ═══════════════════════════════════════════════════
+   Ocean Breeze — قوانین سراسری (قانون ۱)
+   ═══════════════════════════════════════════════════ */
+
+/* ۱.۳ تایپوگرافی: سلسله‌مراتب رنگی تیترها */
+h1, h2 { color: #0B3D91; }
+h3, h4 { color: #3BA7F2; }
+
+/* تیترهای صفحه‌های اصلی (کلاس‌های قلم‌فرزند) */
+.qp-single__title,
+.qp-scientist__title,
+.qp-archive__title,
+.qp-front-hero__title,
+.qp-front-section__title,
+.qp-article__title,
+.qp-hub__t,
+.qp-related__title,
+.qp-empty-state__title,
+.qp-recent,
+.qp-article-toc__title,
+.qp-callout__title {
+  color: #0B3D91;
+}
+
+/* ۱.۳ لینک‌ها */
+body a { color: #3BA7F2; }
+body a:hover,
+body a:focus-visible { color: #F4A261; }
+
+/* لینک‌های داخل هدر/فوتر (هم‌رنگ زمینۀ سایت → هاور گرم) */
+.qp-global-header a:hover,
+.qp-global-footer a:hover { color: #B4692E; }
+
+/* ۱.۵ برچسب‌ها (Badges): فیروزه‌ای + متن آبی نفتی */
+.qp-single__eyebrow,
+.qp-scientist__eyebrow,
+.qp-archive__eyebrow,
+.qp-front-hero__badge,
+.qp-front-section__eyebrow,
+.qp-front-article__term,
+.qp-front-cat__icon,
+.qp-hub__b {
+  background: #7FE7D6;
+  color: #0B3D91;
+  border-color: #7FE7D6;
+}
+
+/* ۱.۶ حلقهٔ فوکوس کیبورد (دسترس‌پذیری) */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+[tabindex]:focus-visible {
+  outline: 2px solid #F4A261;
+  outline-offset: 2px;
+}
+
+/* انتخاب متن */
+::selection { background: rgba(59, 167, 242, 0.25); }
+
+/* ═══════════════════════════════════════════════════
+   قانون ۲ — سیستم طراحی (مینیمال + تیترهای درشت)
+   ═══════════════════════════════════════════════════ */
+
+/* ۲.۳ خوانایی: H3/H4 با آبیِ عمیق‌تر (کنتراست ~4.2:1) — باقی‌ماندهٔ آبی روشن فقط برای المان‌های درشت و تزئینی */
+h3, h4 { color: #1E7FD0; }
+.qp-article__content h3,
+.qp-single__content h3,
+.qp-scientist__content h3,
+.entry-content h3 { color: #1E7FD0 !important; }
+
+/* ۲.۴ ستونِ خواندن: عرضِ متنِ مقاله محدود (خطوطِ بلند نه) */
+.qp-article__content,
+.qp-single__content,
+.qp-scientist__content {
+  max-width: 800px;
+  margin-inline: auto;
+}
+
+/* لینک‌هایِ کوچکِ رویِ زمینهٔ روشن: عمیق‌تر برای خوانایی */
+body a { color: #1E7FD0; }
+body a:hover,
+body a:focus-visible { color: #F4A261; }
+.qp-scientist__meta a,
+.qp-archive-card__more,
+.qp-scientist-card__more,
+.qp-front-section__link,
+.qp-article-toc a:hover,
+.site-main article .entry-title a:hover,
+.qp-related-card__title a:hover,
+.post-navigation a:hover .nav-title {
+  color: #1E7FD0;
+}
+
+/* ۲.۶ دکمه‌ها: ترنزیشن ۲۰ms + بلند شدنِ ملایم */
+.qp-front-btn { transition: all .2s ease-in-out; }
+.qp-front-btn--primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 24px rgba(244, 162, 97, 0.32);
+}
+.qp-front-btn--ghost:hover { transform: translateY(-2px); }
+
+/* ۲.۵ کارت‌ها: سایهٔ نرمِ موجود حفظ شد (چندلایه، آبی‌نرم) */
+
+/* ═══════════════════════════════════════════════════
+   فوترِ باریک (logo + شعار + ۳ لینک) — پالت کامل
+   ═══════════════════════════════════════════════════ */
+
+.qp-global-footer{
+  position:relative;
+  margin-top:56px;
+  padding:24px 0;
+  border-top:0;
+  box-shadow:0 -12px 26px rgba(11,61,145,.10);
+}
+
+/* خطِ امضای سه‌رنگِ بالایی (Secondary + Tertiary + Warm) */
+.qp-global-footer::before{
+  content:"";
+  position:absolute;
+  top:0;
+  inset-inline:0;
+  height:2px;
+  background:linear-gradient(90deg,rgba(59,167,242,.75),rgba(127,231,214,.75) 50%,rgba(244,162,97,.75));
+}
+
+.qp-global-footer__inner{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:24px;
+  flex-wrap:wrap;
+}
+
+.qp-global-footer__brand{
+  display:inline-flex;
+  align-items:center;
+  gap:12px;
+  text-decoration:none;
+}
+
+.qp-global-footer__logo{
+  width:40px;
+  height:40px;
+  object-fit:cover;
+  display:block;
+  border-radius:50%;
+  box-shadow:0 0 0 2px rgba(59,167,242,.35);
+  filter:drop-shadow(0 2px 8px rgba(59,167,242,.35));
+}
+
+.qp-global-footer__slogan{
+  color:#0B3D91;
+  font-size:.9rem;
+  font-weight:600;
+  line-height:1.8;
+}
+
+.qp-global-footer__links{
+  display:flex;
+  flex-wrap:wrap;
+  gap:8px;
+}
+
+.qp-global-footer__links a{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  min-height:40px;
+  padding:0 14px;
+  border-radius:10px;
+  border:1px solid rgba(11,61,145,.14);
+  background:#ffffff;
+  color:#0B3D91;
+  text-decoration:none;
+  font-size:.85rem;
+  font-weight:700;
+  transition:all .15s ease-out;
+}
+
+.qp-global-footer__links a:hover{
+  color:#B4692E;
+  border-color:#F4A261;
+  background:#FFF7EF;
+}
