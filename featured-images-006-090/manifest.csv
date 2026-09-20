@@ -1,0 +1,83 @@
+﻿article_number,source_id,slug,filename,alt_fa,dimensions
+6,8368,cavity-qed,cavity-qed.webp,الکترودینامیک کوانتومی حفره,1200×675
+7,8367,circuit-qed,circuit-qed.webp,الکترودینامیک کوانتومی مدار,1200×675
+8,8366,rabi-oscillations,rabi-oscillations.webp,نمودار نوسانات رابی در سامانه دوترازی,1200×675
+9,8365,electromagnetically-induced-transparency,electromagnetically-induced-transparency.webp,شفافیت القایی الکترومغناطیسی,1200×675
+10,8364,quantum-imaging-undetected-photons,quantum-imaging-undetected-photons.webp,تصویربرداری کوانتومی با فوتون‌های آشکارنشده,1200×675
+11,8369,quantum-microscopy,quantum-microscopy.webp,میکروسکوپ کوانتومی و تصویربرداری نمونه,1200×675
+12,8370,super-resolution-quantum,super-resolution-quantum.webp,ابر تفکیک کوانتومی,1200×675
+13,8371,quantum-secret-sharing,quantum-secret-sharing.webp,اشتراک راز کوانتومی,1200×675
+14,8373,device-independent-qkd,device-independent-qkd.webp,توزیع کلید کوانتومی مستقل از دستگاه,1200×675
+15,8372,measurement-device-independent-qkd,measurement-device-independent-qkd.webp,توزیع کلید کوانتومی مستقل از دستگاه اندازه‌گیری,1200×675
+16,8374,twin-field-qkd,twin-field-qkd.webp,توزیع کلید کوانتومی میدان دوقلو,1200×675
+17,8375,quantum-digital-signature,quantum-digital-signature.webp,امضای دیجیتال کوانتومی,1200×675
+18,8376,quantum-money,quantum-money.webp,پول کوانتومی,1200×675
+19,8377,quantum-voting,quantum-voting.webp,رأی‌گیری کوانتومی,1200×675
+20,8378,quantum-router,quantum-router.webp,مسیریاب کوانتومی,1200×675
+21,8379,quantum-network,quantum-network.webp,شبکه کوانتومی,1200×675
+22,8380,quantum-cloud,quantum-cloud.webp,رایانش ابری کوانتومی,1200×675
+23,8381,deutsch-jozsa-algorithm,deutsch-jozsa-algorithm.webp,مدار الگوریتم دویچ–جوزا,1200×675
+24,8382,simon-algorithm,simon-algorithm.webp,نمایش الگوریتم سایمون,1200×675
+25,8383,bernstein-vazirani-algorithm,bernstein-vazirani-algorithm.webp,مدار الگوریتم برنشتاین–وزیرانی,1200×675
+26,8384,quantum-phase-estimation,quantum-phase-estimation.webp,مدار تخمین فاز کوانتومی,1200×675
+27,8385,quantum-walk,quantum-walk.webp,مقایسه قدم‌زدن کلاسیک و کوانتومی,1200×675
+28,8386,variational-quantum-eigensolver,variational-quantum-eigensolver.webp,حلقه الگوریتم تغییراتی کوانتومی,1200×675
+29,8387,qaoa,qaoa.webp,الگوریتم بهینه‌سازی تقریبی کوانتومی,1200×675
+30,8388,quantum-kernel,quantum-kernel.webp,هسته کوانتومی در یادگیری ماشین,1200×675
+31,8389,quantum-neural-network,quantum-neural-network.webp,شبکه عصبی کوانتومی,1200×675
+32,8390,quantum-generative-model,quantum-generative-model.webp,مدل مولد کوانتومی,1200×675
+33,8391,quantum-reinforcement-learning,quantum-reinforcement-learning.webp,یادگیری تقویتی کوانتومی,1200×675
+34,8392,quantum-programming-language,quantum-programming-language.webp,زبان برنامه‌نویسی کوانتومی,1200×675
+35,8393,quantum-compiler,quantum-compiler.webp,کامپایلر کوانتومی,1200×675
+36,8394,quantum-control,quantum-control.webp,کنترل کوانتومی سامانه,1200×675
+37,8395,topological-insulator,topological-insulator.webp,ساختار عایق توپولوژیک,1200×675
+38,8396,weyl-semimetal,weyl-semimetal.webp,نیمه‌فلز ویل,1200×675
+39,8398,dirac-semimetal,dirac-semimetal.webp,نیمه‌فلز دیراک,1200×675
+40,8397,majorana-fermion,majorana-fermion.webp,فرمیون مایورانا,1200×675
+41,8399,anyon,anyon.webp,آنیون و آمار ذرات دوبعدی,1200×675
+42,8400,fractional-quantum-hall-effect,fractional-quantum-hall-effect.webp,اثر هال کوانتومی کسری,1200×675
+43,8401,mott-insulator,mott-insulator.webp,عایق مات,1200×675
+44,8402,quantum-criticality,quantum-criticality.webp,بحرانیت کوانتومی,1200×675
+45,8403,quantum-phase-transition,quantum-phase-transition.webp,گذار فاز کوانتومی,1200×675
+46,8404,heavy-fermion,heavy-fermion.webp,فرمیون سنگین,1200×675
+47,8405,kondo-effect,kondo-effect.webp,اثر کوندو,1200×675
+48,8406,spin-ice,spin-ice.webp,ساختار یخ اسپینی,1200×675
+49,8407,squid,squid.webp,تداخل‌سنج کوانتومی ابررسانا اسکویید,1200×675
+50,8408,optical-lattice,optical-lattice.webp,شبکه نوری برای به‌دام‌اندازی اتم‌ها,1200×675
+51,8409,rydberg-atom,rydberg-atom.webp,اتم ریدبرگ و ترازهای انرژی,1200×675
+52,8411,polaron,polaron.webp,پولارون در شبکه بلوری,1200×675
+53,8410,exciton,exciton.webp,اکسایتون در شبکه بلوری,1200×675
+55,8412,magnon,magnon.webp,مگنون و موج اسپینی,1200×675
+56,8413,plasmon,plasmon.webp,پلاسمون و نوسان جمعی الکترون‌ها,1200×675
+57,8414,phonon,phonon.webp,فونون و ارتعاش شبکه بلوری,1200×675
+58,8415,quantum-heat-engine,quantum-heat-engine.webp,موتور گرمایی کوانتومی,1200×675
+59,8416,quantum-refrigerator,quantum-refrigerator.webp,یخچال کوانتومی,1200×675
+60,8417,quantum-maxwell-demon,quantum-maxwell-demon.webp,دیو ماکسول کوانتومی,1200×675
+61,8418,quantum-entropy,quantum-entropy.webp,آنتروپی کوانتومی,1200×675
+62,8419,quantum-thermalization,quantum-thermalization.webp,گرمایی‌شدن کوانتومی,1200×675
+63,8420,many-body-localization,many-body-localization.webp,جایگزیدگی چندجسمی,1200×675
+64,8421,eigenstate-thermalization,eigenstate-thermalization.webp,فرضیه گرمایی‌شدن حالت ویژه,1200×675
+65,8422,quantum-fluctuation-theorem,quantum-fluctuation-theorem.webp,قضیه نوسان کوانتومی,1200×675
+66,8423,quantum-thermometry,quantum-thermometry.webp,دماسنجی کوانتومی,1200×675
+68,8424,quantum-cell-signaling,quantum-cell-signaling.webp,پیام‌رسانی سلولی کوانتومی,1200×675
+69,8425,quantum-anesthesia,quantum-anesthesia.webp,بیهوشی و فرضیه‌های کوانتومی,1200×675
+70,8426,quantum-cancer,quantum-cancer.webp,کوانتوم در پژوهش سرطان,1200×675
+71,8440,quantum-bacteria,quantum-bacteria.webp,کوانتوم در باکتری‌ها,1200×675
+73,8441,ghz-state,ghz-state.webp,حالت درهم‌تنیده GHZ,1200×675
+74,8442,hardy-paradox,hardy-paradox.webp,چیدمان پارادوکس هاردی,1200×675
+75,8443,quantum-contextuality,quantum-contextuality.webp,زمینه‌مندی کوانتومی,1200×675
+76,8444,quantum-cheshire-cat,quantum-cheshire-cat.webp,گربه چشایر کوانتومی,1200×675
+77,8446,three-box-paradox,three-box-paradox.webp,پارادوکس سه جعبه,1200×675
+78,8445,quantum-logic,quantum-logic.webp,منطق کوانتومی و مدار منطقی,1200×675
+79,8447,quantum-probability,quantum-probability.webp,احتمال کوانتومی,1200×675
+80,8448,acceleration-radiation,acceleration-radiation.webp,اثر شتاب و تابش اونرو,1200×675
+81,8449,anomalous-magnetic-moment,anomalous-magnetic-moment.webp,گشتاور مغناطیسی ناهنجار,1200×675
+82,8450,fine-structure-constant,fine-structure-constant.webp,ثابت ساختار ریز,1200×675
+83,8451,quantum-electrodynamics,quantum-electrodynamics.webp,الکترودینامیک کوانتومی,1200×675
+84,8452,quantum-chromodynamics,quantum-chromodynamics.webp,کرومودینامیک کوانتومی,1200×675
+85,8453,electroweak-theory,electroweak-theory.webp,نظریه الکتروضعیف,1200×675
+86,8454,proton-decay,proton-decay.webp,واپاشی پروتون,1200×675
+87,8455,axion,axion.webp,اکسیون,1200×675
+88,8456,wimp,wimp.webp,ذره فرضی ویمپ,1200×675
+89,8457,dark-energy-quantum,dark-energy-quantum.webp,انرژی تاریک کوانتومی,1200×675
+90,8458,cosmic-inflation,cosmic-inflation.webp,تورم کیهانی,1200×675
