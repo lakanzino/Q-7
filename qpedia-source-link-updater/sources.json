@@ -1,0 +1,751 @@
+{
+  "quantum-illumination": [
+    "<a href=\"https://doi.org/10.1126/science.1160627)\" target=\"_blank\" rel=\"noopener noreferrer\">Seth Lloyd, “Enhanced Sensitivity of Photodetection via Quantum Illumination,” *Science*, 2008. DOI: [10.1126/science.1160627](</a>",
+    "<a href=\"https://doi.org/10.1103/PhysRevLett.101.253601)\" target=\"_blank\" rel=\"noopener noreferrer\">Si-Hui Tan et al., “Quantum Illumination with Gaussian States,” *Physical Review Letters*, 2008. DOI: [10.1103/PhysRevLett.101.253601](</a>",
+    "<a href=\"https://doi.org/10.1088/1367-2630/11/6/063045)\" target=\"_blank\" rel=\"noopener noreferrer\">Jeffrey H. Shapiro and Seth Lloyd, “Quantum Illumination versus Coherent-State Target Detection,” *New Journal of Physics*, 2009. DOI: [10.1088/1367-2630/11/6/063045](</a>",
+    "<a href=\"https://doi.org/10.1103/PhysRevLett.110.153603)\" target=\"_blank\" rel=\"noopener noreferrer\">Elena D. Lopaeva et al., “Experimental Realization of Quantum Illumination,” *Physical Review Letters*, 2013. DOI: [10.1103/PhysRevLett.110.153603](</a>",
+    "<a href=\"https://doi.org/10.1103/PhysRevLett.111.010501)\" target=\"_blank\" rel=\"noopener noreferrer\">Zheshen Zhang et al., “Entanglement’s Benefit Survives an Entanglement-Breaking Channel,” *Physical Review Letters*, 2013. DOI: [10.1103/PhysRevLett.111.010501](</a>",
+    "<a href=\"https://doi.org/10.1364/OPTICA.384959)\" target=\"_blank\" rel=\"noopener noreferrer\">Raj Nair and Mile Gu, “Fundamental Limits of Quantum Illumination,” *Optica*, 2020. DOI: [10.1364/OPTICA.384959](</a>",
+    "<a href=\"https://doi.org/10.1126/sciadv.aay2652)\" target=\"_blank\" rel=\"noopener noreferrer\">Thomas Gregory, Paul-Antoine Moreau, Ermes Toninelli, and Miles J. Padgett, “Imaging through Noise with Quantum Illumination,” *Science Advances*, 2020. DOI: [10.1126/sciadv.aay2652](</a>"
+  ],
+  "qaoa": [
+    "<a href=\"https://doi.org/10.48550/arXiv.1411.4028\" target=\"_blank\" rel=\"noopener noreferrer\">E. Farhi, J. Goldstone, and S. Gutmann, “A Quantum Approximate Optimization Algorithm,” 2014.</a>",
+    "<a href=\"https://doi.org/10.48550/arXiv.1602.07674\" target=\"_blank\" rel=\"noopener noreferrer\">E. Farhi and A. W. Harrow, “Quantum Supremacy through the Quantum Approximate Optimization Algorithm,” 2016.</a>",
+    "<a href=\"https://doi.org/10.1103/PhysRevX.10.021067\" target=\"_blank\" rel=\"noopener noreferrer\">L. Zhou et al., “Quantum Approximate Optimization Algorithm: Performance, Mechanism, and Implementation,” Physical Review X, 2020.</a>",
+    "<a href=\"https://doi.org/10.1038/s42254-021-00348-9\" target=\"_blank\" rel=\"noopener noreferrer\">M. Cerezo et al., “Variational Quantum Algorithms,” Nature Reviews Physics, 2021.</a>"
+  ],
+  "quantum-lidar": [
+    "<a href=\"https://www.sciencedirect.com/book/9780123400505/quantum-detection-and-estimation-theory)\" target=\"_blank\" rel=\"noopener noreferrer\">Christopher C. Helstrom, *Quantum Detection and Estimation Theory*, Academic Press, 1976. [ScienceDirect](</a>",
+    "<a href=\"https://doi.org/10.1038/s41467-022-33376-9)\" target=\"_blank\" rel=\"noopener noreferrer\">Jonathan Blakey et al., “Quantum and Non-local Effects Offer over 40 dB Noise Resilience Advantage towards Quantum LiDAR,” *Nature Communications*, 2022. DOI: [10.1038/s41467-022-33376-9](</a>",
+    "<a href=\"https://doi.org/10.1038/s41534-022-00662-9)\" target=\"_blank\" rel=\"noopener noreferrer\">Athena Karsa et al., “Quantum-enhanced Doppler LiDAR,” *npj Quantum Information*, 2022. DOI: [10.1038/s41534-022-00662-9](</a>",
+    "<a href=\"https://doi.org/10.1038/s41467-023-40914-6)\" target=\"_blank\" rel=\"noopener noreferrer\">Shuhong Hao et al., “Compact All-fiber Quantum-inspired LiDAR with over 100 dB Noise Rejection and Single Photon Sensitivity,” *Nature Communications*, 2023. DOI: [10.1038/s41467-023-40914-6](</a>",
+    "<a href=\"https://doi.org/10.1103/PhysRevApplied.21.064008)\" target=\"_blank\" rel=\"noopener noreferrer\">Roberto Murchie et al., “Object Detection and Range Finding with Quantum States Using Simple Detection,” *Physical Review Applied*, 2024. DOI: [10.1103/PhysRevApplied.21.064008](</a>",
+    "<a href=\"https://doi.org/10.1103/PhysRevResearch.7.L022059)\" target=\"_blank\" rel=\"noopener noreferrer\">Roberto Murchie et al., “Quantum Target Ranging for LiDAR,” *Physical Review Research*, 2025. DOI: [10.1103/PhysRevResearch.7.L022059](</a>"
+  ],
+  "single-photon-source": [
+    "<a href=\"https://doi.org/10.1063/1.3610677)\" target=\"_blank\" rel=\"noopener noreferrer\">M. D. Eisaman et al., “Invited Review Article: Single-photon Sources and Detectors,” *Review of Scientific Instruments*, 2011. DOI: [10.1063/1.3610677](</a>",
+    "<a href=\"https://doi.org/10.1038/nphoton.2016.186)\" target=\"_blank\" rel=\"noopener noreferrer\">Igor Aharonovich, Dirk Englund, and Milos Toth, “Solid-state Single-photon Emitters,” *Nature Photonics*, 2016. DOI: [10.1038/nphoton.2016.186](</a>",
+    "<a href=\"https://doi.org/10.1038/nnano.2017.218)\" target=\"_blank\" rel=\"noopener noreferrer\">Pascale Senellart, Glenn Solomon, and Andrew White, “High-performance Semiconductor Quantum-dot Single-photon Sources,” *Nature Nanotechnology*, 2017. DOI: [10.1038/nnano.2017.218](</a>",
+    "<a href=\"https://doi.org/10.1088/0034-4885/75/12/126503)\" target=\"_blank\" rel=\"noopener noreferrer\">Sonia Buckley, Kelley Rivoire, and Jelena Vučković, “Engineered Quantum Dot Single-photon Sources,” *Reports on Progress in Physics*, 2012. DOI: [10.1088/0034-4885/75/12/126503](</a>",
+    "<a href=\"https://doi.org/10.1038/nature21037)\" target=\"_blank\" rel=\"noopener noreferrer\">Peter Lodahl et al., “Chiral Quantum Optics,” *Nature*, 2017. DOI: [10.1038/nature21037](</a>",
+    "<a href=\"https://doi.org/10.1038/s41566-019-0494-3)\" target=\"_blank\" rel=\"noopener noreferrer\">Hui Wang et al., “Towards Optimal Single-photon Sources from Polarized Microcavities,” *Nature Photonics*, 2019. DOI: [10.1038/s41566-019-0494-3](</a>"
+  ],
+  "entangled-photon-source": [
+    "<a href=\"https://doi.org/10.1103/PhysRevLett.75.4337)\" target=\"_blank\" rel=\"noopener noreferrer\">Paul G. Kwiat et al., “New High-Intensity Source of Polarization-Entangled Photon Pairs,” *Physical Review Letters*, 1995. DOI: [10.1103/PhysRevLett.75.4337](</a>",
+    "<a href=\"https://doi.org/10.1103/PhysRevA.60.R773)\" target=\"_blank\" rel=\"noopener noreferrer\">Paul G. Kwiat et al., “Ultrabright Source of Polarization-Entangled Photons,” *Physical Review A*, 1999. DOI: [10.1103/PhysRevA.60.R773](</a>",
+    "<a href=\"https://doi.org/10.1364/OE.15.007853)\" target=\"_blank\" rel=\"noopener noreferrer\">Hannes Hübel et al., “High-fidelity Transmission of Polarization Encoded Qubits from an Entangled Source over 100 km of Fiber,” *Optics Express*, 2007. DOI: [10.1364/OE.15.007853](</a>",
+    "<a href=\"https://doi.org/10.1002/lpor.201100010)\" target=\"_blank\" rel=\"noopener noreferrer\">Sebastien Tanzilli et al., “On the Genesis and Evolution of Integrated Quantum Optics,” *Laser &amp; Photonics Reviews*, 2012. DOI: [10.1002/lpor.201100010](</a>",
+    "<a href=\"https://doi.org/10.1038/nphys1996)\" target=\"_blank\" rel=\"noopener noreferrer\">Adetunmise C. Dada et al., “Experimental High-dimensional Two-photon Entanglement and Violations of Generalized Bell Inequalities,” *Nature Physics*, 2011. DOI: [10.1038/nphys1996](</a>",
+    "<a href=\"https://doi.org/10.1126/science.aar7053)\" target=\"_blank\" rel=\"noopener noreferrer\">Jianwei Wang et al., “Multidimensional Quantum Entanglement with Large-scale Integrated Optics,” *Science*, 2018. DOI: [10.1126/science.aar7053](</a>"
+  ],
+  "spontaneous-parametric-down-conversion": [
+    "<a href=\"https://doi.org/10.1103/PhysRevLett.25.84)\" target=\"_blank\" rel=\"noopener noreferrer\">David C. Burnham and Donald L. Weinberg, “Observation of Simultaneity in Parametric Production of Optical Photon Pairs,” *Physical Review Letters*, 1970. DOI: [10.1103/PhysRevLett.25.84](</a>",
+    "<a href=\"https://doi.org/10.1103/PhysRevA.31.2409)\" target=\"_blank\" rel=\"noopener noreferrer\">C. K. Hong and L. Mandel, “Theory of Parametric Frequency Down Conversion of Light,” *Physical Review A*, 1985. DOI: [10.1103/PhysRevA.31.2409](</a>",
+    "<a href=\"https://doi.org/10.1103/PhysRevLett.75.4337)\" target=\"_blank\" rel=\"noopener noreferrer\">Paul G. Kwiat et al., “New High-Intensity Source of Polarization-Entangled Photon Pairs,” *Physical Review Letters*, 1995. DOI: [10.1103/PhysRevLett.75.4337](</a>",
+    "<a href=\"https://doi.org/10.1103/PhysRevA.64.063815)\" target=\"_blank\" rel=\"noopener noreferrer\">Warren P. Grice, Alfred B. U’Ren, and Ian A. Walmsley, “Eliminating Frequency and Space-time Correlations in Multiphoton States,” *Physical Review A*, 2001. DOI: [10.1103/PhysRevA.64.063815](</a>",
+    "<a href=\"https://doi.org/10.1103/PhysRevLett.100.133601)\" target=\"_blank\" rel=\"noopener noreferrer\">Peter J. Mosley et al., “Heralded Generation of Ultrafast Single Photons in Pure Quantum States,” *Physical Review Letters*, 2008. DOI: [10.1103/PhysRevLett.100.133601](</a>",
+    "<a href=\"https://doi.org/10.1103/PhysRevA.90.063840)\" target=\"_blank\" rel=\"noopener noreferrer\">Nicolás Quesada and J. E. Sipe, “Effects of Time Ordering in Quantum Nonlinear Optics,” *Physical Review A*, 2014. DOI: [10.1103/PhysRevA.90.063840](</a>"
+  ],
+  "cavity-qed": [
+    "<a href=\"https://doi.org/10.1103/PhysRev.69.681\" target=\"_blank\" rel=\"noopener noreferrer\">E. M. Purcell, “Spontaneous Emission Probabilities at Radio Frequencies,” 1946.</a>",
+    "<a href=\"https://doi.org/10.1063/1.881201\" target=\"_blank\" rel=\"noopener noreferrer\">S. Haroche and D. Kleppner, “Cavity Quantum Electrodynamics,” Physics Today, 1989.</a>",
+    "<a href=\"https://doi.org/10.1238/Physica.Topical.076a00127\" target=\"_blank\" rel=\"noopener noreferrer\">H. J. Kimble, “Strong Interactions of Single Atoms and Photons in Cavity QED,” Physica Scripta, 1998.</a>",
+    "<a href=\"https://doi.org/10.1103/RevModPhys.73.565\" target=\"_blank\" rel=\"noopener noreferrer\">J. M. Raimond, M. Brune, and S. Haroche, “Manipulating Quantum Entanglement with Atoms and Photons in a Cavity,” Reviews of Modern Physics, 2001.</a>"
+  ],
+  "circuit-qed": [
+    "<a href=\"https://doi.org/10.1103/PhysRevA.69.062320\" target=\"_blank\" rel=\"noopener noreferrer\">A. Blais et al., “Cavity Quantum Electrodynamics for Superconducting Electrical Circuits,” Physical Review A, 2004.</a>",
+    "<a href=\"https://doi.org/10.1038/nature02851\" target=\"_blank\" rel=\"noopener noreferrer\">A. Wallraff et al., “Strong Coupling of a Single Photon to a Superconducting Qubit,” Nature, 2004.</a>",
+    "<a href=\"https://doi.org/10.1103/RevModPhys.93.025005\" target=\"_blank\" rel=\"noopener noreferrer\">A. Blais et al., “Circuit Quantum Electrodynamics,” Reviews of Modern Physics, 2021.</a>",
+    "<a href=\"https://doi.org/10.1103/PhysRevA.76.042319\" target=\"_blank\" rel=\"noopener noreferrer\">J. Koch et al., “Charge-insensitive Qubit Design Derived from the Cooper Pair Box,” Physical Review A, 2007.</a>"
+  ],
+  "rabi-oscillations": [
+    "<a href=\"https://doi.org/10.1103/PhysRev.51.652\" target=\"_blank\" rel=\"noopener noreferrer\">I. I. Rabi, “Space Quantization in a Gyrating Magnetic Field,” Physical Review, 1937.</a>",
+    "<a href=\"https://store.doverpublications.com/products/9780486655338\" target=\"_blank\" rel=\"noopener noreferrer\">L. Allen and J. H. Eberly, Optical Resonance and Two-Level Atoms, Dover, 1987.</a>",
+    "<a href=\"https://doi.org/10.1002/9783527617197\" target=\"_blank\" rel=\"noopener noreferrer\">C. Cohen-Tannoudji, J. Dupont-Roc, and G. Grynberg, Atom–Photon Interactions, Wiley, 1992.</a>",
+    "<a href=\"https://doi.org/10.1017/CBO9780511976667\" target=\"_blank\" rel=\"noopener noreferrer\">M. A. Nielsen and I. L. Chuang, Quantum Computation and Quantum Information, Cambridge University Press, 2010.</a>"
+  ],
+  "electromagnetically-induced-transparency": [
+    "<a href=\"https://doi.org/10.1063/1.881806\" target=\"_blank\" rel=\"noopener noreferrer\">S. E. Harris, “Electromagnetically Induced Transparency,” Physics Today, 1997.</a>",
+    "<a href=\"https://doi.org/10.1103/RevModPhys.77.633\" target=\"_blank\" rel=\"noopener noreferrer\">M. Fleischhauer, A. Imamoglu, and J. P. Marangos, “Electromagnetically Induced Transparency,” Reviews of Modern Physics, 2005.</a>",
+    "<a href=\"https://doi.org/10.1038/17561\" target=\"_blank\" rel=\"noopener noreferrer\">L. V. Hau et al., “Light Speed Reduction to 17 Metres per Second,” Nature, 1999.</a>",
+    "<a href=\"https://doi.org/10.1103/PhysRevLett.86.783\" target=\"_blank\" rel=\"noopener noreferrer\">D. F. Phillips et al., “Storage of Light in Atomic Vapor,” Physical Review Letters, 2001.</a>"
+  ],
+  "quantum-imaging-undetected-photons": [
+    "<a href=\"https://doi.org/10.1103/PhysRevLett.67.318\" target=\"_blank\" rel=\"noopener noreferrer\">X. Y. Zou, L. J. Wang, and L. Mandel, “Induced Coherence and Indistinguishability in Optical Interference,” Physical Review Letters, 1991.</a>",
+    "<a href=\"https://doi.org/10.1038/nature13586\" target=\"_blank\" rel=\"noopener noreferrer\">G. B. Lemos et al., “Quantum Imaging with Undetected Photons,” Nature, 2014.</a>",
+    "<a href=\"https://doi.org/10.1364/AOP.8.000104\" target=\"_blank\" rel=\"noopener noreferrer\">M. V. Chekhova and Z. Y. Ou, “Nonlinear Interferometers in Quantum Optics,” Advances in Optics and Photonics, 2016.</a>",
+    "<a href=\"https://doi.org/10.1126/sciadv.abd0460\" target=\"_blank\" rel=\"noopener noreferrer\">A. Paterova et al., “Hyperspectral Infrared Microscopy with Visible Light,” Science Advances, 2020.</a>"
+  ],
+  "quantum-microscopy": [
+    "<a href=\"https://doi.org/10.1038/nphoton.2011.35\" target=\"_blank\" rel=\"noopener noreferrer\">V. Giovannetti, S. Lloyd, and L. Maccone, “Advances in Quantum Metrology,” Nature Photonics, 2011.</a>",
+    "<a href=\"https://doi.org/10.1016/j.physrep.2015.12.002\" target=\"_blank\" rel=\"noopener noreferrer\">M. A. Taylor and W. P. Bowen, “Quantum Metrology and Its Application in Biology,” Physics Reports, 2016.</a>",
+    "<a href=\"https://doi.org/10.1038/ncomms3426\" target=\"_blank\" rel=\"noopener noreferrer\">T. Ono, R. Okamoto, and S. Takeuchi, “An Entanglement-enhanced Microscope,” Nature Communications, 2013.</a>",
+    "<a href=\"https://doi.org/10.1103/RevModPhys.89.035002\" target=\"_blank\" rel=\"noopener noreferrer\">C. L. Degen, F. Reinhard, and P. Cappellaro, “Quantum Sensing,” Reviews of Modern Physics, 2017.</a>"
+  ],
+  "quantum-music": [
+    "<a href=\"https://sonification.de/handbook/\" target=\"_blank\" rel=\"noopener noreferrer\">T. Hermann, A. Hunt, and J. G. Neuhoff, eds., The Sonification Handbook, Logos, 2011.</a>",
+    "<a href=\"https://digitalcommons.unl.edu/psychfacpub/444/\" target=\"_blank\" rel=\"noopener noreferrer\">G. Kramer et al., “Sonification Report: Status of the Field and Research Agenda,” ICAD, 1999.</a>",
+    "<a href=\"https://doi.org/10.1007/978-3-030-72116-9\" target=\"_blank\" rel=\"noopener noreferrer\">E. R. Miranda, ed., Handbook of Artificial Intelligence for Music, Springer, 2021.</a>",
+    "<a href=\"https://doi.org/10.20935/AcadQuant7699\" target=\"_blank\" rel=\"noopener noreferrer\">E. R. Miranda and H. V. Shaji, “A Quantum Reservoir Computing Approach to Computer-Aided Music Composition,” Academia Quantum, 2025.</a>"
+  ],
+  "quantum-fiction": [
+    "<a href=\"https://doi.org/10.1007/978-90-481-3851-7_5\" target=\"_blank\" rel=\"noopener noreferrer\">S. Frigg, “Fiction and Scientific Representation,” in Beyond Mimesis and Convention, Springer, 2010.</a>",
+    "<a href=\"https://doi.org/10.1007/BF00670071\" target=\"_blank\" rel=\"noopener noreferrer\">D. Deutsch, “Quantum Theory as a Universal Physical Theory,” International Journal of Theoretical Physics, 1985.</a>",
+    "<a href=\"https://doi.org/10.1103/RevModPhys.75.715\" target=\"_blank\" rel=\"noopener noreferrer\">W. H. Zurek, “Decoherence, Einselection, and the Quantum Origins of the Classical,” Reviews of Modern Physics, 2003.</a>",
+    "<a href=\"https://doi.org/10.1080/0950238042000214946\" target=\"_blank\" rel=\"noopener noreferrer\">N. K. Hayles, “Quantum Mechanics and the Posthuman,” 2004.</a>"
+  ],
+  "quantum-culture": [
+    "<a href=\"https://doi.org/10.4135/9781412990127.n14\" target=\"_blank\" rel=\"noopener noreferrer\">B. Wynne, “Public Understanding of Science,” in Handbook of Science and Technology Studies, 1995.</a>",
+    "<a href=\"https://doi.org/10.1073/pnas.1213275110\" target=\"_blank\" rel=\"noopener noreferrer\">D. A. Scheufele, “Communicating Science in Social Settings,” PNAS, 2013.</a>",
+    "<a href=\"https://doi.org/10.17226/23674\" target=\"_blank\" rel=\"noopener noreferrer\">National Academies of Sciences, Engineering, and Medicine, Communicating Science Effectively, 2017.</a>",
+    "<a href=\"https://doi.org/10.17226/23595\" target=\"_blank\" rel=\"noopener noreferrer\">National Academies of Sciences, Engineering, and Medicine, Science Literacy, 2016.</a>"
+  ],
+  "quantum-winter": [
+    "<a href=\"https://doi.org/10.17226/25196\" target=\"_blank\" rel=\"noopener noreferrer\">National Academies of Sciences, Engineering, and Medicine, Quantum Computing: Progress and Prospects, 2019.</a>",
+    "<a href=\"https://doi.org/10.1038/530144a\" target=\"_blank\" rel=\"noopener noreferrer\">M. M. Waldrop, “The Chips Are Down for Moore’s Law,” Nature, 2016.</a>",
+    "<a href=\"https://doi.org/10.1787/fd1153c3-en\" target=\"_blank\" rel=\"noopener noreferrer\">OECD, “A Quantum Technologies Policy Primer,” OECD Digital Economy Papers No. 371, 2025.</a>",
+    "<a href=\"https://www.gao.gov/products/gao-22-104422\" target=\"_blank\" rel=\"noopener noreferrer\">U.S. Government Accountability Office, “Quantum Computing and Communications: Status and Prospects,” 2021.</a>"
+  ],
+  "quantum-singularity": [
+    "<a href=\"https://doi.org/10.1103/PhysRevLett.14.57\" target=\"_blank\" rel=\"noopener noreferrer\">R. Penrose, “Gravitational Collapse and Space-Time Singularities,” Physical Review Letters, 1965.</a>",
+    "<a href=\"https://doi.org/10.1098/rspa.1970.0021\" target=\"_blank\" rel=\"noopener noreferrer\">S. W. Hawking and R. Penrose, “The Singularities of Gravitational Collapse and Cosmology,” Proceedings of the Royal Society A, 1970.</a>",
+    "<a href=\"https://doi.org/10.1088/0264-9381/28/21/213001\" target=\"_blank\" rel=\"noopener noreferrer\">A. Ashtekar and P. Singh, “Loop Quantum Cosmology: A Status Report,” Classical and Quantum Gravity, 2011.</a>",
+    "<a href=\"https://www.scientificamerican.com/article/the-limits-of-quantum-computers/\" target=\"_blank\" rel=\"noopener noreferrer\">S. Aaronson, “The Limits of Quantum Computers,” Scientific American, 2008.</a>"
+  ],
+  "super-resolution-quantum": [
+    "<a href=\"https://doi.org/10.1103/PhysRevX.6.031033\" target=\"_blank\" rel=\"noopener noreferrer\">M. Tsang, R. Nair, and X.-M. Lu, “Quantum Theory of Superresolution for Two Incoherent Optical Point Sources,” Physical Review X, 2016.</a>",
+    "<a href=\"https://doi.org/10.1103/PhysRevLett.117.190801\" target=\"_blank\" rel=\"noopener noreferrer\">R. Nair and M. Tsang, “Far-field Superresolution of Thermal Electromagnetic Sources,” Physical Review Letters, 2016.</a>",
+    "<a href=\"https://doi.org/10.1103/PhysRevA.96.062107\" target=\"_blank\" rel=\"noopener noreferrer\">J. Řeháček et al., “Multiparameter Quantum Metrology of Incoherent Point Sources,” Physical Review A, 2017.</a>",
+    "<a href=\"https://doi.org/10.1364/OPTICA.3.001144\" target=\"_blank\" rel=\"noopener noreferrer\">M. Paúr et al., “Achieving the Ultimate Optical Resolution,” Optica, 2016.</a>"
+  ],
+  "quantum-secret-sharing": [
+    "<a href=\"https://doi.org/10.1103/PhysRevA.59.1829\" target=\"_blank\" rel=\"noopener noreferrer\">M. Hillery, V. Bužek, and A. Berthiaume, “Quantum Secret Sharing,” Physical Review A, 1999.</a>",
+    "<a href=\"https://doi.org/10.1103/PhysRevLett.83.648\" target=\"_blank\" rel=\"noopener noreferrer\">R. Cleve, D. Gottesman, and H.-K. Lo, “How to Share a Quantum Secret,” Physical Review Letters, 1999.</a>",
+    "<a href=\"https://doi.org/10.1103/PhysRevA.59.162\" target=\"_blank\" rel=\"noopener noreferrer\">A. Karlsson, M. Koashi, and N. Imoto, “Quantum Entanglement for Secret Sharing and Secret Splitting,” Physical Review A, 1999.</a>",
+    "<a href=\"https://doi.org/10.1103/PhysRevLett.95.200502\" target=\"_blank\" rel=\"noopener noreferrer\">Y.-A. Chen et al., “Experimental Quantum Secret Sharing and Third-Man Quantum Cryptography,” Physical Review Letters, 2005.</a>"
+  ],
+  "device-independent-qkd": [
+    "<a href=\"https://doi.org/10.1103/PhysRevLett.67.661\" target=\"_blank\" rel=\"noopener noreferrer\">A. K. Ekert, “Quantum Cryptography Based on Bell’s Theorem,” Physical Review Letters, 1991.</a>",
+    "<a href=\"https://doi.org/10.1103/PhysRevLett.98.230501\" target=\"_blank\" rel=\"noopener noreferrer\">A. Acín et al., “Device-Independent Security of Quantum Cryptography against Collective Attacks,” Physical Review Letters, 2007.</a>",
+    "<a href=\"https://doi.org/10.1103/PhysRevLett.113.140501\" target=\"_blank\" rel=\"noopener noreferrer\">U. Vazirani and T. Vidick, “Fully Device-Independent Quantum Key Distribution,” Physical Review Letters, 2014.</a>",
+    "<a href=\"https://doi.org/10.1038/s41586-022-04507-9\" target=\"_blank\" rel=\"noopener noreferrer\">W. Zhang et al., “A Device-Independent Quantum Key Distribution System for Distant Users,” Nature, 2022.</a>"
+  ],
+  "measurement-device-independent-qkd": [
+    "<a href=\"https://doi.org/10.1103/PhysRevLett.108.130503\" target=\"_blank\" rel=\"noopener noreferrer\">H.-K. Lo, M. Curty, and B. Qi, “Measurement-Device-Independent Quantum Key Distribution,” Physical Review Letters, 2012.</a>",
+    "<a href=\"https://doi.org/10.1103/PhysRevLett.108.130502\" target=\"_blank\" rel=\"noopener noreferrer\">S. L. Braunstein and S. Pirandola, “Side-Channel-Free Quantum Key Distribution,” Physical Review Letters, 2012.</a>",
+    "<a href=\"https://doi.org/10.1103/PhysRevLett.111.130502\" target=\"_blank\" rel=\"noopener noreferrer\">Y. Liu et al., “Experimental Measurement-Device-Independent Quantum Key Distribution,” Physical Review Letters, 2013.</a>",
+    "<a href=\"https://doi.org/10.1103/RevModPhys.92.025002\" target=\"_blank\" rel=\"noopener noreferrer\">F. Xu et al., “Secure Quantum Key Distribution with Realistic Devices,” Reviews of Modern Physics, 2020.</a>"
+  ],
+  "twin-field-qkd": [
+    "<a href=\"https://doi.org/10.1038/s41586-018-0066-6\" target=\"_blank\" rel=\"noopener noreferrer\">M. Lucamarini et al., “Overcoming the Rate–Distance Limit of Quantum Key Distribution without Quantum Repeaters,” Nature, 2018.</a>",
+    "<a href=\"https://doi.org/10.1038/ncomms15043\" target=\"_blank\" rel=\"noopener noreferrer\">S. Pirandola et al., “Fundamental Limits of Repeaterless Quantum Communications,” Nature Communications, 2017.</a>",
+    "<a href=\"https://doi.org/10.1038/s41534-019-0177-6\" target=\"_blank\" rel=\"noopener noreferrer\">M. Curty, K. Azuma, and H.-K. Lo, “Simple Security Proof of Twin-Field Type Quantum Key Distribution Protocol,” npj Quantum Information, 2019.</a>",
+    "<a href=\"https://doi.org/10.1038/s41566-021-00828-5\" target=\"_blank\" rel=\"noopener noreferrer\">J.-P. Chen et al., “Twin-Field Quantum Key Distribution over a 511 km Optical Fibre,” Nature Photonics, 2021.</a>"
+  ],
+  "quantum-digital-signature": [
+    "<a href=\"https://doi.org/10.48550/arXiv.quant-ph/0105032\" target=\"_blank\" rel=\"noopener noreferrer\">D. Gottesman and I. Chuang, “Quantum Digital Signatures,” arXiv, 2001.</a>",
+    "<a href=\"https://doi.org/10.1103/PhysRevLett.112.040502\" target=\"_blank\" rel=\"noopener noreferrer\">V. Dunjko, P. Wallden, and E. Andersson, “Quantum Digital Signatures without Quantum Memory,” Physical Review Letters, 2014.</a>",
+    "<a href=\"https://doi.org/10.1103/PhysRevLett.113.040502\" target=\"_blank\" rel=\"noopener noreferrer\">R. J. Collins et al., “Realization of Quantum Digital Signatures without the Requirement of Quantum Memory,” Physical Review Letters, 2014.</a>",
+    "<a href=\"https://doi.org/10.1038/s41467-017-02225-9\" target=\"_blank\" rel=\"noopener noreferrer\">G. L. Roberts et al., “Experimental Measurement-Device-Independent Quantum Digital Signatures,” Nature Communications, 2017.</a>"
+  ],
+  "quantum-money": [
+    "<a href=\"https://doi.org/10.1145/1008908.1008920\" target=\"_blank\" rel=\"noopener noreferrer\">S. Wiesner, “Conjugate Coding,” ACM SIGACT News, 1983.</a>",
+    "<a href=\"https://doi.org/10.48550/arXiv.1004.5127\" target=\"_blank\" rel=\"noopener noreferrer\">E. Farhi et al., “Quantum Money from Knots,” arXiv, 2010.</a>",
+    "<a href=\"https://doi.org/10.1145/2213977.2213983\" target=\"_blank\" rel=\"noopener noreferrer\">S. Aaronson and P. Christiano, “Quantum Money from Hidden Subspaces,” STOC, 2012.</a>",
+    "<a href=\"https://doi.org/10.1038/s41534-018-0128-3\" target=\"_blank\" rel=\"noopener noreferrer\">M. Bozzio et al., “Experimental Investigation of Practical Unforgeable Quantum Money,” npj Quantum Information, 2018.</a>"
+  ],
+  "quantum-voting": [
+    "<a href=\"https://doi.org/10.1016/j.physleta.2005.09.010\" target=\"_blank\" rel=\"noopener noreferrer\">M. Hillery et al., “Towards Quantum-based Privacy and Voting,” Physics Letters A, 2006.</a>",
+    "<a href=\"https://doi.org/10.1103/PhysRevA.75.012333\" target=\"_blank\" rel=\"noopener noreferrer\">J. A. Vaccaro, J. Spring, and A. Chefles, “Quantum Protocols for Anonymous Voting and Surveying,” Physical Review A, 2007.</a>",
+    "<a href=\"https://doi.org/10.1016/j.physleta.2011.07.044\" target=\"_blank\" rel=\"noopener noreferrer\">M. Horoshko and S. Kilin, “Quantum Anonymous Voting with Anonymity Check,” Physics Letters A, 2011.</a>",
+    "<a href=\"https://doi.org/10.1103/PhysRevA.71.012328\" target=\"_blank\" rel=\"noopener noreferrer\">S. K. Singh and R. Srikanth, “Quantum Protocol for Anonymous Voting,” Physical Review A, 2005.</a>"
+  ],
+  "quantum-router": [
+    "<a href=\"https://doi.org/10.1103/PhysRevA.87.062333\" target=\"_blank\" rel=\"noopener noreferrer\">K. Lemr et al., “Experimental Implementation of the Quantum Router,” Physical Review A, 2013.</a>",
+    "<a href=\"https://doi.org/10.1038/srep12452\" target=\"_blank\" rel=\"noopener noreferrer\">X.-X. Yuan et al., “Experimental Quantum Router,” Scientific Reports, 2015.</a>",
+    "<a href=\"https://doi.org/10.1007/s11128-006-0013-3\" target=\"_blank\" rel=\"noopener noreferrer\">S. J. Devitt, A. D. Greentree, and L. C. L. Hollenberg, “Quantum Information Bus,” Quantum Information Processing, 2006.</a>",
+    "<a href=\"https://doi.org/10.1126/science.aam9288\" target=\"_blank\" rel=\"noopener noreferrer\">S. Wehner, D. Elkouss, and R. Hanson, “Quantum Internet: A Vision for the Road Ahead,” Science, 2018.</a>"
+  ],
+  "coherent-states": [
+    "<a href=\"https://doi.org/10.1103/PhysRev.131.2766\" target=\"_blank\" rel=\"noopener noreferrer\">R. J. Glauber, “Coherent and Incoherent States of the Radiation Field,” Physical Review, 1963.</a>",
+    "<a href=\"https://doi.org/10.1103/PhysRevLett.10.277\" target=\"_blank\" rel=\"noopener noreferrer\">E. C. G. Sudarshan, “Equivalence of Semiclassical and Quantum Mechanical Descriptions of Statistical Light Beams,” Physical Review Letters, 1963.</a>",
+    "<a href=\"https://doi.org/10.1103/PhysRev.130.2529\" target=\"_blank\" rel=\"noopener noreferrer\">R. J. Glauber, “The Quantum Theory of Optical Coherence,” Physical Review, 1963.</a>",
+    "<a href=\"https://doi.org/10.1007/978-3-540-28574-8\" target=\"_blank\" rel=\"noopener noreferrer\">D. F. Walls and G. J. Milburn, Quantum Optics, Springer, 2008.</a>"
+  ],
+  "fock-state": [
+    "<a href=\"https://doi.org/10.1098/rspa.1927.0039\" target=\"_blank\" rel=\"noopener noreferrer\">P. A. M. Dirac, “The Quantum Theory of the Emission and Absorption of Radiation,” Proceedings of the Royal Society A, 1927.</a>",
+    "<a href=\"https://doi.org/10.1103/PhysRev.130.2529\" target=\"_blank\" rel=\"noopener noreferrer\">R. J. Glauber, “The Quantum Theory of Optical Coherence,” Physical Review, 1963.</a>",
+    "<a href=\"https://doi.org/10.1016/S0079-6638(08)70339-3\" target=\"_blank\" rel=\"noopener noreferrer\">D. G. Welsch, W. Vogel, and T. Opatrný, “Homodyne Detection and Quantum-State Reconstruction,” Progress in Optics, 1999.</a>",
+    "<a href=\"https://doi.org/10.1038/nature07288\" target=\"_blank\" rel=\"noopener noreferrer\">S. Deléglise et al., “Reconstruction of Non-Classical Cavity Field States with Snapshots of Their Decoherence,” Nature, 2008.</a>"
+  ],
+  "four-wave-mixing": [
+    "<a href=\"https://doi.org/10.1016/C2015-0-05510-1\" target=\"_blank\" rel=\"noopener noreferrer\">R. W. Boyd, Nonlinear Optics, 4th ed., Academic Press, 2020.</a>",
+    "<a href=\"https://doi.org/10.1103/PhysRevLett.55.2409\" target=\"_blank\" rel=\"noopener noreferrer\">R. E. Slusher et al., “Observation of Squeezed States Generated by Four-Wave Mixing in an Optical Cavity,” Physical Review Letters, 1985.</a>",
+    "<a href=\"https://doi.org/10.1364/OPEX.12.003086\" target=\"_blank\" rel=\"noopener noreferrer\">J. E. Sharping et al., “Quantum Correlated Twin Photons from Microstructure Fiber,” Optics Express, 2004.</a>",
+    "<a href=\"https://doi.org/10.1364/OE.17.016558\" target=\"_blank\" rel=\"noopener noreferrer\">S. Clemmen et al., “Continuous Wave Photon Pair Generation in Silicon-on-Insulator Waveguides and Ring Resonators,” Optics Express, 2009.</a>"
+  ],
+  "optical-parametric-oscillator": [
+    "<a href=\"https://doi.org/10.1103/PhysRevLett.14.973\" target=\"_blank\" rel=\"noopener noreferrer\">J. A. Giordmaine and R. C. Miller, “Tunable Coherent Parametric Oscillation in LiNbO₃ at Optical Frequencies,” Physical Review Letters, 1965.</a>",
+    "<a href=\"https://doi.org/10.1103/PhysRevLett.57.2520\" target=\"_blank\" rel=\"noopener noreferrer\">L. A. Wu et al., “Generation of Squeezed States by Parametric Down Conversion,” Physical Review Letters, 1986.</a>",
+    "<a href=\"https://doi.org/10.1103/PhysRevLett.100.033602\" target=\"_blank\" rel=\"noopener noreferrer\">H. Vahlbruch et al., “Observation of Squeezed Light with 10-dB Quantum-Noise Reduction,” Physical Review Letters, 2008.</a>",
+    "<a href=\"https://doi.org/10.1016/C2015-0-05510-1\" target=\"_blank\" rel=\"noopener noreferrer\">R. W. Boyd, Nonlinear Optics, 4th ed., Academic Press, 2020.</a>"
+  ],
+  "homodyne-detection": [
+    "<a href=\"https://doi.org/10.1109/TIT.1978.1055849\" target=\"_blank\" rel=\"noopener noreferrer\">H. P. Yuen and J. H. Shapiro, “Optical Communication with Two-Photon Coherent States,” IEEE Transactions on Information Theory, 1978.</a>",
+    "<a href=\"https://doi.org/10.1103/PhysRevA.48.4598\" target=\"_blank\" rel=\"noopener noreferrer\">U. Leonhardt and H. Paul, “Realistic Optical Homodyne Measurements and Quasiprobability Distributions,” Physical Review A, 1993.</a>",
+    "<a href=\"https://doi.org/10.1103/RevModPhys.81.299\" target=\"_blank\" rel=\"noopener noreferrer\">A. I. Lvovsky and M. G. Raymer, “Continuous-Variable Optical Quantum-State Tomography,” Reviews of Modern Physics, 2009.</a>",
+    "<a href=\"https://doi.org/10.1016/S0079-6638(08)70339-3\" target=\"_blank\" rel=\"noopener noreferrer\">D. G. Welsch, W. Vogel, and T. Opatrný, “Homodyne Detection and Quantum-State Reconstruction,” Progress in Optics, 1999.</a>"
+  ],
+  "photon-counting": [
+    "<a href=\"https://doi.org/10.1103/PhysRev.130.2529\" target=\"_blank\" rel=\"noopener noreferrer\">R. J. Glauber, “The Quantum Theory of Optical Coherence,” Physical Review, 1963.</a>",
+    "<a href=\"https://doi.org/10.1038/nphoton.2009.230\" target=\"_blank\" rel=\"noopener noreferrer\">R. H. Hadfield, “Single-Photon Detectors for Optical Quantum Information Applications,” Nature Photonics, 2009.</a>",
+    "<a href=\"https://doi.org/10.1063/1.3610677\" target=\"_blank\" rel=\"noopener noreferrer\">M. D. Eisaman et al., “Invited Review Article: Single-Photon Sources and Detectors,” Review of Scientific Instruments, 2011.</a>",
+    "<a href=\"https://doi.org/10.1038/nphoton.2013.13\" target=\"_blank\" rel=\"noopener noreferrer\">F. Marsili et al., “Detecting Single Infrared Photons with 93% System Efficiency,” Nature Photonics, 2013.</a>"
+  ],
+  "photon-blockade": [
+    "<a href=\"https://doi.org/10.1103/PhysRevLett.79.1467\" target=\"_blank\" rel=\"noopener noreferrer\">A. Imamoğlu et al., “Strongly Interacting Photons in a Nonlinear Cavity,” Physical Review Letters, 1997.</a>",
+    "<a href=\"https://doi.org/10.1038/nature03804\" target=\"_blank\" rel=\"noopener noreferrer\">K. M. Birnbaum et al., “Photon Blockade in an Optical Cavity with One Trapped Atom,” Nature, 2005.</a>",
+    "<a href=\"https://doi.org/10.1038/nphys1078\" target=\"_blank\" rel=\"noopener noreferrer\">A. Faraon et al., “Coherent Generation of Non-Classical Light on a Chip via Photon-Induced Tunnelling and Blockade,” Nature Physics, 2008.</a>",
+    "<a href=\"https://doi.org/10.1103/RevModPhys.85.299\" target=\"_blank\" rel=\"noopener noreferrer\">I. Carusotto and C. Ciuti, “Quantum Fluids of Light,” Reviews of Modern Physics, 2013.</a>"
+  ],
+  "quantum-network": [
+    "<a href=\"https://doi.org/10.1038/nature07127\" target=\"_blank\" rel=\"noopener noreferrer\">H. J. Kimble, “The Quantum Internet,” Nature, 2008.</a>",
+    "<a href=\"https://doi.org/10.1126/science.aam9288\" target=\"_blank\" rel=\"noopener noreferrer\">S. Wehner, D. Elkouss, and R. Hanson, “Quantum Internet: A Vision for the Road Ahead,” Science, 2018.</a>",
+    "<a href=\"https://doi.org/10.1038/532169a\" target=\"_blank\" rel=\"noopener noreferrer\">S. Pirandola and S. L. Braunstein, “Physics: Unite to Build a Quantum Internet,” Nature, 2016.</a>",
+    "<a href=\"https://doi.org/10.1145/3341302.3342070\" target=\"_blank\" rel=\"noopener noreferrer\">A. Dahlberg et al., “A Link Layer Protocol for Quantum Networks,” SIGCOMM, 2019.</a>"
+  ],
+  "slow-light": [
+    "<a href=\"https://doi.org/10.1038/17561\" target=\"_blank\" rel=\"noopener noreferrer\">L. V. Hau et al., “Light Speed Reduction to 17 Metres per Second in an Ultracold Atomic Gas,” Nature, 1999.</a>",
+    "<a href=\"https://doi.org/10.1103/PhysRevLett.82.5229\" target=\"_blank\" rel=\"noopener noreferrer\">M. M. Kash et al., “Ultraslow Group Velocity and Enhanced Nonlinear Optical Effects in a Coherently Driven Hot Atomic Gas,” Physical Review Letters, 1999.</a>",
+    "<a href=\"https://doi.org/10.1103/PhysRevLett.84.5094\" target=\"_blank\" rel=\"noopener noreferrer\">M. Fleischhauer and M. D. Lukin, “Dark-State Polaritons in Electromagnetically Induced Transparency,” Physical Review Letters, 2000.</a>",
+    "<a href=\"https://doi.org/10.1103/RevModPhys.77.633\" target=\"_blank\" rel=\"noopener noreferrer\">M. Fleischhauer, A. Imamoglu, and J. P. Marangos, “Electromagnetically Induced Transparency,” Reviews of Modern Physics, 2005.</a>"
+  ],
+  "quantum-lithography": [
+    "<a href=\"https://doi.org/10.1103/PhysRevLett.85.2733\" target=\"_blank\" rel=\"noopener noreferrer\">A. N. Boto et al., “Quantum Interferometric Optical Lithography: Exploiting Entanglement to Beat the Diffraction Limit,” Physical Review Letters, 2000.</a>",
+    "<a href=\"https://doi.org/10.1103/PhysRevLett.87.013602\" target=\"_blank\" rel=\"noopener noreferrer\">M. D’Angelo, M. V. Chekhova, and Y. Shih, “Two-Photon Diffraction and Quantum Lithography,” Physical Review Letters, 2001.</a>",
+    "<a href=\"https://doi.org/10.1103/PhysRevA.63.063407\" target=\"_blank\" rel=\"noopener noreferrer\">P. Kok et al., “Quantum-Interferometric Optical Lithography: Towards Arbitrary Two-Dimensional Patterns,” Physical Review A, 2001.</a>",
+    "<a href=\"https://doi.org/10.1103/PhysRevLett.102.253601\" target=\"_blank\" rel=\"noopener noreferrer\">M. Tsang, “Quantum Imaging beyond the Diffraction Limit by Optical Centroid Measurements,” Physical Review Letters, 2009.</a>"
+  ],
+  "quantum-secure-direct-communication": [
+    "<a href=\"https://doi.org/10.1103/PhysRevA.65.032302\" target=\"_blank\" rel=\"noopener noreferrer\">G. L. Long and X. S. Liu, “Theoretically Efficient High-Capacity Quantum-Key-Distribution Scheme,” Physical Review A, 2002.</a>",
+    "<a href=\"https://doi.org/10.1103/PhysRevA.68.042317\" target=\"_blank\" rel=\"noopener noreferrer\">F. G. Deng, G. L. Long, and X. S. Liu, “Two-Step Quantum Direct Communication Protocol Using the Einstein-Podolsky-Rosen Pair Block,” Physical Review A, 2003.</a>",
+    "<a href=\"https://doi.org/10.1038/lsa.2016.144\" target=\"_blank\" rel=\"noopener noreferrer\">J. Hu et al., “Experimental Quantum Secure Direct Communication with Single Photons,” Light: Science &amp; Applications, 2016.</a>",
+    "<a href=\"https://doi.org/10.1038/s41377-021-00634-2\" target=\"_blank\" rel=\"noopener noreferrer\">Z. Qi et al., “A 15-User Quantum Secure Direct Communication Network,” Light: Science &amp; Applications, 2021.</a>"
+  ],
+  "quantum-fingerprinting": [
+    "<a href=\"https://doi.org/10.1103/PhysRevLett.87.167902\" target=\"_blank\" rel=\"noopener noreferrer\">H. Buhrman et al., “Quantum Fingerprinting,” Physical Review Letters, 2001.</a>",
+    "<a href=\"https://doi.org/10.48550/arXiv.quant-ph/0309036\" target=\"_blank\" rel=\"noopener noreferrer\">J. N. de Beaudrap, “One-Way Quantum Finite Automata and Quantum Fingerprinting,” 2003.</a>",
+    "<a href=\"https://doi.org/10.1103/PhysRevA.90.042335\" target=\"_blank\" rel=\"noopener noreferrer\">J. M. Arrazola and N. Lütkenhaus, “Quantum Communication with Coherent States and Linear Optics,” Physical Review A, 2014.</a>",
+    "<a href=\"https://doi.org/10.1038/ncomms9735\" target=\"_blank\" rel=\"noopener noreferrer\">F. Xu et al., “Experimental Quantum Fingerprinting with Weak Coherent Pulses,” Nature Communications, 2015.</a>"
+  ],
+  "quantum-auction": [
+    "<a href=\"https://doi.org/10.1016/S0378-4371(02)01037-1\" target=\"_blank\" rel=\"noopener noreferrer\">E. W. Piotrowski and J. Sładkowski, “Quantum Market Games,” Physica A, 2002.</a>",
+    "<a href=\"https://doi.org/10.1142/S0219749907002890\" target=\"_blank\" rel=\"noopener noreferrer\">T. Hogg et al., “Quantum Auctions,” International Journal of Quantum Information, 2007.</a>",
+    "<a href=\"https://doi.org/10.48550/arXiv.1209.1758\" target=\"_blank\" rel=\"noopener noreferrer\">V. D. Glisic, “Quantum Auctions: Facts and Myths,” 2012.</a>",
+    "<a href=\"https://doi.org/10.1103/PhysRevLett.83.3077\" target=\"_blank\" rel=\"noopener noreferrer\">J. Eisert, M. Wilkens, and M. Lewenstein, “Quantum Games and Quantum Strategies,” Physical Review Letters, 1999.</a>"
+  ],
+  "quantum-fpga": [
+    "<a href=\"https://doi.org/10.1063/1.5006525\" target=\"_blank\" rel=\"noopener noreferrer\">C. A. Ryan et al., “Hardware for Dynamic Quantum Computing,” Review of Scientific Instruments, 2017.</a>",
+    "<a href=\"https://doi.org/10.1109/ISSCC.2017.7870358\" target=\"_blank\" rel=\"noopener noreferrer\">Q. P. Herr et al., “Realizing Quantum Algorithms with Qubit Control and Readout via a Cryogenic CMOS Chip,” 2017.</a>",
+    "<a href=\"https://doi.org/10.1038/s41586-020-2764-0\" target=\"_blank\" rel=\"noopener noreferrer\">W. Bogaerts et al., “Programmable Photonic Circuits,” Nature, 2020.</a>",
+    "<a href=\"https://doi.org/10.1126/science.aab3642\" target=\"_blank\" rel=\"noopener noreferrer\">J. Carolan et al., “Universal Linear Optics,” Science, 2015.</a>"
+  ],
+  "nanowire": [
+    "<a href=\"https://doi.org/10.1002/adma.200390087\" target=\"_blank\" rel=\"noopener noreferrer\">Y. Xia et al., “One-Dimensional Nanostructures: Synthesis, Characterization, and Applications,” Advanced Materials, 2003.</a>",
+    "<a href=\"https://doi.org/10.1557/mrs2007.41\" target=\"_blank\" rel=\"noopener noreferrer\">C. M. Lieber and Z. L. Wang, “Functional Nanowires,” MRS Bulletin, 2007.</a>",
+    "<a href=\"https://doi.org/10.1126/science.1222360\" target=\"_blank\" rel=\"noopener noreferrer\">V. Mourik et al., “Signatures of Majorana Fermions in Hybrid Superconductor–Semiconductor Nanowire Devices,” Science, 2012.</a>",
+    "<a href=\"https://doi.org/10.1038/nphoton.2013.13\" target=\"_blank\" rel=\"noopener noreferrer\">F. Marsili et al., “Detecting Single Infrared Photons with 93% System Efficiency,” Nature Photonics, 2013.</a>"
+  ],
+  "cryogenic-electronics": [
+    "<a href=\"https://doi.org/10.1109/JSSC.2019.2955389\" target=\"_blank\" rel=\"noopener noreferrer\">J. C. Bardin et al., “Design and Characterization of a 28-nm Bulk-CMOS Cryogenic Quantum Controller,” IEEE Journal of Solid-State Circuits, 2019.</a>",
+    "<a href=\"https://doi.org/10.1109/JSSC.2018.2879674\" target=\"_blank\" rel=\"noopener noreferrer\">B. Patra et al., “Cryo-CMOS Circuits and Systems for Quantum Computing Applications,” IEEE Journal of Solid-State Circuits, 2018.</a>",
+    "<a href=\"https://doi.org/10.1103/PhysRevApplied.12.044054\" target=\"_blank\" rel=\"noopener noreferrer\">J. P. G. van Dijk et al., “Impact of Classical Control Electronics on Qubit Fidelity,” Physical Review Applied, 2019.</a>",
+    "<a href=\"https://doi.org/10.1103/PhysRevApplied.3.024010\" target=\"_blank\" rel=\"noopener noreferrer\">J. M. Hornibrook et al., “Cryogenic Control Architecture for Large-Scale Quantum Computing,” Physical Review Applied, 2015.</a>"
+  ],
+  "dilution-refrigerator": [
+    "<a href=\"https://doi.org/10.1007/978-3-540-46360-3\" target=\"_blank\" rel=\"noopener noreferrer\">F. Pobell, Matter and Methods at Low Temperatures, Springer, 2007.</a>",
+    "<a href=\"https://doi.org/10.1063/1.1138450\" target=\"_blank\" rel=\"noopener noreferrer\">J. M. Parpia, W. P. Kirk, and P. S. Kobiela, “Optimization Procedure for the Pumped ³He–⁴He Dilution Refrigerator,” Review of Scientific Instruments, 1985.</a>",
+    "<a href=\"https://doi.org/10.1007/978-1-4419-9979-5\" target=\"_blank\" rel=\"noopener noreferrer\">S. W. Van Sciver, Helium Cryogenics, Springer, 2012.</a>",
+    "<a href=\"https://doi.org/10.1140/epjqt/i2019-100172-0\" target=\"_blank\" rel=\"noopener noreferrer\">S. Krinner et al., “Engineering Cryogenic Setups for 100-Qubit Scale Superconducting Circuit Systems,” EPJ Quantum Technology, 2019.</a>"
+  ],
+  "quantum-dimer": [
+    "<a href=\"https://doi.org/10.1103/PhysRevLett.61.2376\" target=\"_blank\" rel=\"noopener noreferrer\">D. S. Rokhsar and S. A. Kivelson, “Superconductivity and the Quantum Hard-Core Dimer Gas,” Physical Review Letters, 1988.</a>",
+    "<a href=\"https://doi.org/10.1103/PhysRevLett.86.1881\" target=\"_blank\" rel=\"noopener noreferrer\">R. Moessner and S. L. Sondhi, “Resonating Valence Bond Phase in the Triangular Lattice Quantum Dimer Model,” Physical Review Letters, 2001.</a>",
+    "<a href=\"https://doi.org/10.1103/PhysRevB.69.224415\" target=\"_blank\" rel=\"noopener noreferrer\">E. Fradkin et al., “Bipartite Rokhsar–Kivelson Points and Cantor Deconfinement,” Physical Review B, 2004.</a>",
+    "<a href=\"https://doi.org/10.48550/arXiv.cond-mat/0310405\" target=\"_blank\" rel=\"noopener noreferrer\">G. Misguich and C. Lhuillier, “Two-Dimensional Quantum Antiferromagnets,” 2003.</a>"
+  ],
+  "quantum-cloud": [
+    "<a href=\"https://arxiv.org/abs/1804.03719\" target=\"_blank\" rel=\"noopener noreferrer\">A. W. Cross, “The IBM Q Experience and QISKit Open-Source Quantum Computing Software,” APS March Meeting, 2018.</a>",
+    "<a href=\"https://doi.org/10.1088/2058-9565/abae7d\" target=\"_blank\" rel=\"noopener noreferrer\">F. Leymann and J. Barzen, “The Bitter Truth About Gate-Based Quantum Algorithms in the NISQ Era,” Quantum Science and Technology, 2020.</a>",
+    "<a href=\"https://doi.org/10.22331/q-2018-08-06-79\" target=\"_blank\" rel=\"noopener noreferrer\">J. Preskill, “Quantum Computing in the NISQ Era and Beyond,” Quantum, 2018.</a>",
+    "<a href=\"https://doi.org/10.1038/s42254-021-00348-9\" target=\"_blank\" rel=\"noopener noreferrer\">M. Cerezo et al., “Variational Quantum Algorithms,” Nature Reviews Physics, 2021.</a>"
+  ],
+  "dipolar-gas": [
+    "<a href=\"https://doi.org/10.1088/0034-4885/72/12/126401\" target=\"_blank\" rel=\"noopener noreferrer\">T. Lahaye et al., “The Physics of Dipolar Bosonic Quantum Gases,” Reports on Progress in Physics, 2009.</a>",
+    "<a href=\"https://doi.org/10.1103/PhysRevLett.94.160401\" target=\"_blank\" rel=\"noopener noreferrer\">A. Griesmaier et al., “Bose-Einstein Condensation of Chromium,” Physical Review Letters, 2005.</a>",
+    "<a href=\"https://doi.org/10.1103/PhysRevLett.107.190401\" target=\"_blank\" rel=\"noopener noreferrer\">M. Lu et al., “Strongly Dipolar Bose-Einstein Condensate of Dysprosium,” Physical Review Letters, 2011.</a>",
+    "<a href=\"https://doi.org/10.1021/cr2003568\" target=\"_blank\" rel=\"noopener noreferrer\">M. A. Baranov et al., “Condensed Matter Theory of Dipolar Quantum Gases,” Chemical Reviews, 2012.</a>"
+  ],
+  "fermi-gas": [
+    "<a href=\"https://doi.org/10.1103/PhysRevLett.92.120403\" target=\"_blank\" rel=\"noopener noreferrer\">M. W. Zwierlein et al., “Condensation of Pairs of Fermionic Atoms near a Feshbach Resonance,” Physical Review Letters, 2004.</a>",
+    "<a href=\"https://doi.org/10.1103/PhysRevLett.92.040403\" target=\"_blank\" rel=\"noopener noreferrer\">C. A. Regal, M. Greiner, and D. S. Jin, “Observation of Resonance Condensation of Fermionic Atom Pairs,” Physical Review Letters, 2004.</a>",
+    "<a href=\"https://doi.org/10.48550/arXiv.0801.2500\" target=\"_blank\" rel=\"noopener noreferrer\">W. Ketterle and M. W. Zwierlein, “Making, Probing and Understanding Ultracold Fermi Gases,” 2008.</a>",
+    "<a href=\"https://doi.org/10.1103/RevModPhys.80.1215\" target=\"_blank\" rel=\"noopener noreferrer\">S. Giorgini, L. P. Pitaevskii, and S. Stringari, “Theory of Ultracold Atomic Fermi Gases,” Reviews of Modern Physics, 2008.</a>"
+  ],
+  "quantum-droplet": [
+    "<a href=\"https://doi.org/10.1103/PhysRevLett.115.155302\" target=\"_blank\" rel=\"noopener noreferrer\">D. S. Petrov, “Quantum Mechanical Stabilization of a Collapsing Bose-Bose Mixture,” Physical Review Letters, 2015.</a>",
+    "<a href=\"https://doi.org/10.1038/nature16485\" target=\"_blank\" rel=\"noopener noreferrer\">H. Kadau et al., “Observing the Rosensweig Instability of a Quantum Ferrofluid,” Nature, 2016.</a>",
+    "<a href=\"https://doi.org/10.1103/PhysRevLett.116.215301\" target=\"_blank\" rel=\"noopener noreferrer\">I. Ferrier-Barbut et al., “Observation of Quantum Droplets in a Strongly Dipolar Bose Gas,” Physical Review Letters, 2016.</a>",
+    "<a href=\"https://doi.org/10.1126/science.aao5686\" target=\"_blank\" rel=\"noopener noreferrer\">C. R. Cabrera et al., “Quantum Liquid Droplets in a Mixture of Bose-Einstein Condensates,” Science, 2018.</a>"
+  ],
+  "soliton": [
+    "<a href=\"https://ui.adsabs.harvard.edu/abs/1972JETP...34...62Z\" target=\"_blank\" rel=\"noopener noreferrer\">V. E. Zakharov and A. B. Shabat, “Exact Theory of Two-Dimensional Self-Focusing and One-Dimensional Self-Modulation of Waves,” Soviet Physics JETP, 1972.</a>",
+    "<a href=\"https://doi.org/10.1103/PhysRevLett.83.5198\" target=\"_blank\" rel=\"noopener noreferrer\">S. Burger et al., “Dark Solitons in Bose-Einstein Condensates,” Physical Review Letters, 1999.</a>",
+    "<a href=\"https://doi.org/10.1126/science.1071021\" target=\"_blank\" rel=\"noopener noreferrer\">L. Khaykovich et al., “Formation of a Matter-Wave Bright Soliton,” Science, 2002.</a>",
+    "<a href=\"https://doi.org/10.1016/B978-0-12-410590-4.X5000-1\" target=\"_blank\" rel=\"noopener noreferrer\">Y. S. Kivshar and G. P. Agrawal, Optical Solitons, Academic Press, 2003.</a>"
+  ],
+  "quantum-pigeonhole": [
+    "<a href=\"https://doi.org/10.1073/pnas.1522411113\" target=\"_blank\" rel=\"noopener noreferrer\">Y. Aharonov et al., “Quantum Violation of the Pigeonhole Principle and the Nature of Quantum Correlations,” Proceedings of the National Academy of Sciences, 2016.</a>",
+    "<a href=\"https://doi.org/10.1103/PhysRevA.95.012130\" target=\"_blank\" rel=\"noopener noreferrer\">M. Waegell et al., “Confined Contextuality in Neutron Interferometry: Observing the Quantum Pigeonhole Effect,” Physical Review A, 2017.</a>",
+    "<a href=\"https://doi.org/10.1038/s41598-019-38825-7\" target=\"_blank\" rel=\"noopener noreferrer\">J. M. Rae and E. T. F. Forgan, “On the Implications of the Quantum Pigeonhole Principle,” Scientific Reports, 2019.</a>",
+    "<a href=\"https://doi.org/10.1073/pnas.1815467116\" target=\"_blank\" rel=\"noopener noreferrer\">M. Chen et al., “Experimental Realization of Quantum Violation of the Pigeonhole Principle,” Proceedings of the National Academy of Sciences, 2019.</a>"
+  ],
+  "quantum-solipsism": [
+    "<a href=\"https://philpapers.org/rec/WIGROT-2\" target=\"_blank\" rel=\"noopener noreferrer\">E. P. Wigner, “Remarks on the Mind-Body Question,” in The Scientist Speculates, 1961.</a>",
+    "<a href=\"https://doi.org/10.1119/1.4874855\" target=\"_blank\" rel=\"noopener noreferrer\">C. A. Fuchs, N. D. Mermin, and R. Schack, “An Introduction to QBism with an Application to the Locality of Quantum Mechanics,” American Journal of Physics, 2014.</a>",
+    "<a href=\"https://doi.org/10.1038/s41467-018-05739-8\" target=\"_blank\" rel=\"noopener noreferrer\">D. Frauchiger and R. Renner, “Quantum Theory Cannot Consistently Describe the Use of Itself,” Nature Communications, 2018.</a>",
+    "<a href=\"https://doi.org/10.3390/e20050350\" target=\"_blank\" rel=\"noopener noreferrer\">Č. Brukner, “A No-Go Theorem for Observer-Independent Facts,” Entropy, 2018.</a>"
+  ],
+  "deutsch-jozsa-algorithm": [
+    "<a href=\"https://doi.org/10.1098/rspa.1992.0167\" target=\"_blank\" rel=\"noopener noreferrer\">D. Deutsch and R. Jozsa, “Rapid Solution of Problems by Quantum Computation,” Proceedings of the Royal Society A, 1992.</a>",
+    "<a href=\"https://doi.org/10.1098/rspa.1985.0070\" target=\"_blank\" rel=\"noopener noreferrer\">D. Deutsch, “Quantum Theory, the Church–Turing Principle and the Universal Quantum Computer,” Proceedings of the Royal Society A, 1985.</a>",
+    "<a href=\"https://doi.org/10.1098/rspa.1998.0164\" target=\"_blank\" rel=\"noopener noreferrer\">R. Cleve et al., “Quantum Algorithms Revisited,” Proceedings of the Royal Society A, 1998.</a>",
+    "<a href=\"https://doi.org/10.1017/CBO9780511976667\" target=\"_blank\" rel=\"noopener noreferrer\">M. A. Nielsen and I. L. Chuang, Quantum Computation and Quantum Information, Cambridge University Press, 2010.</a>"
+  ],
+  "simon-algorithm": [
+    "<a href=\"https://doi.org/10.1137/S0097539796298637\" target=\"_blank\" rel=\"noopener noreferrer\">D. R. Simon, “On the Power of Quantum Computation,” SIAM Journal on Computing, 1997.</a>",
+    "<a href=\"https://doi.org/10.1098/rspa.1998.0164\" target=\"_blank\" rel=\"noopener noreferrer\">R. Cleve et al., “Quantum Algorithms Revisited,” Proceedings of the Royal Society A, 1998.</a>",
+    "<a href=\"https://doi.org/10.1017/CBO9780511976667\" target=\"_blank\" rel=\"noopener noreferrer\">M. A. Nielsen and I. L. Chuang, Quantum Computation and Quantum Information, Cambridge University Press, 2010.</a>",
+    "<a href=\"https://doi.org/10.1038/npjqi.2015.23\" target=\"_blank\" rel=\"noopener noreferrer\">A. Montanaro, “Quantum Algorithms: An Overview,” npj Quantum Information, 2016.</a>"
+  ],
+  "bernstein-vazirani-algorithm": [
+    "<a href=\"https://doi.org/10.1137/S0097539796300921\" target=\"_blank\" rel=\"noopener noreferrer\">E. Bernstein and U. Vazirani, “Quantum Complexity Theory,” SIAM Journal on Computing, 1997.</a>",
+    "<a href=\"https://doi.org/10.1098/rspa.1992.0167\" target=\"_blank\" rel=\"noopener noreferrer\">D. Deutsch and R. Jozsa, “Rapid Solution of Problems by Quantum Computation,” Proceedings of the Royal Society A, 1992.</a>",
+    "<a href=\"https://doi.org/10.1017/CBO9780511976667\" target=\"_blank\" rel=\"noopener noreferrer\">M. A. Nielsen and I. L. Chuang, Quantum Computation and Quantum Information, Cambridge University Press, 2010.</a>",
+    "<a href=\"https://doi.org/10.1038/npjqi.2015.23\" target=\"_blank\" rel=\"noopener noreferrer\">A. Montanaro, “Quantum Algorithms: An Overview,” npj Quantum Information, 2016.</a>"
+  ],
+  "quantum-phase-estimation": [
+    "<a href=\"https://doi.org/10.48550/arXiv.quant-ph/9511026\" target=\"_blank\" rel=\"noopener noreferrer\">A. Y. Kitaev, “Quantum Measurements and the Abelian Stabilizer Problem,” 1995.</a>",
+    "<a href=\"https://doi.org/10.1017/CBO9780511976667\" target=\"_blank\" rel=\"noopener noreferrer\">M. A. Nielsen and I. L. Chuang, Quantum Computation and Quantum Information, 2010.</a>",
+    "<a href=\"https://doi.org/10.1103/PhysRevLett.83.5162\" target=\"_blank\" rel=\"noopener noreferrer\">D. S. Abrams and S. Lloyd, “Quantum Algorithm Providing Exponential Speed Increase for Finding Eigenvalues,” Physical Review Letters, 1999.</a>",
+    "<a href=\"https://doi.org/10.1126/science.1113479\" target=\"_blank\" rel=\"noopener noreferrer\">A. Aspuru-Guzik et al., “Simulated Quantum Computation of Molecular Energies,” Science, 2005.</a>"
+  ],
+  "quantum-walk": [
+    "<a href=\"https://doi.org/10.1103/PhysRevA.48.1687\" target=\"_blank\" rel=\"noopener noreferrer\">Y. Aharonov, L. Davidovich, and N. Zagury, “Quantum Random Walks,” Physical Review A, 1993.</a>",
+    "<a href=\"https://doi.org/10.1103/PhysRevA.58.915\" target=\"_blank\" rel=\"noopener noreferrer\">E. Farhi and S. Gutmann, “Quantum Computation and Decision Trees,” Physical Review A, 1998.</a>",
+    "<a href=\"https://doi.org/10.1103/PhysRevLett.102.180501\" target=\"_blank\" rel=\"noopener noreferrer\">A. M. Childs, “Universal Computation by Quantum Walk,” Physical Review Letters, 2009.</a>",
+    "<a href=\"https://doi.org/10.1080/00107151031000110776\" target=\"_blank\" rel=\"noopener noreferrer\">J. Kempe, “Quantum Random Walks: An Introductory Overview,” Contemporary Physics, 2003.</a>"
+  ],
+  "variational-quantum-eigensolver": [
+    "<a href=\"https://doi.org/10.1038/ncomms5213\" target=\"_blank\" rel=\"noopener noreferrer\">A. Peruzzo et al., “A Variational Eigenvalue Solver on a Photonic Quantum Processor,” Nature Communications, 2014.</a>",
+    "<a href=\"https://doi.org/10.1088/1367-2630/18/2/023023\" target=\"_blank\" rel=\"noopener noreferrer\">J. R. McClean et al., “The Theory of Variational Hybrid Quantum-Classical Algorithms,” New Journal of Physics, 2016.</a>",
+    "<a href=\"https://doi.org/10.1038/s42254-021-00348-9\" target=\"_blank\" rel=\"noopener noreferrer\">M. Cerezo et al., “Variational Quantum Algorithms,” Nature Reviews Physics, 2021.</a>",
+    "<a href=\"https://doi.org/10.1021/acs.chemrev.8b00803\" target=\"_blank\" rel=\"noopener noreferrer\">Y. Cao et al., “Quantum Chemistry in the Age of Quantum Computing,” Chemical Reviews, 2019.</a>"
+  ],
+  "quantum-kernel": [
+    "<a href=\"https://doi.org/10.1038/s41586-019-0980-2\" target=\"_blank\" rel=\"noopener noreferrer\">V. Havlíček et al., “Supervised Learning with Quantum-Enhanced Feature Spaces,” Nature, 2019.</a>",
+    "<a href=\"https://doi.org/10.1103/PhysRevLett.122.040504\" target=\"_blank\" rel=\"noopener noreferrer\">M. Schuld and N. Killoran, “Quantum Machine Learning in Feature Hilbert Spaces,” Physical Review Letters, 2019.</a>",
+    "<a href=\"https://doi.org/10.1038/s41467-021-22539-9\" target=\"_blank\" rel=\"noopener noreferrer\">H.-Y. Huang et al., “Power of Data in Quantum Machine Learning,” Nature Communications, 2021.</a>",
+    "<a href=\"https://doi.org/10.1038/s41467-023-36159-y\" target=\"_blank\" rel=\"noopener noreferrer\">S. Jerbi et al., “Quantum Machine Learning beyond Kernel Methods,” Nature Communications, 2023.</a>"
+  ],
+  "quantum-neural-network": [
+    "<a href=\"https://doi.org/10.1103/PhysRevA.101.032308\" target=\"_blank\" rel=\"noopener noreferrer\">M. Schuld et al., “Circuit-centric Quantum Classifiers,” Physical Review A, 2020.</a>",
+    "<a href=\"https://arxiv.org/abs/1802.06002\" target=\"_blank\" rel=\"noopener noreferrer\">E. Farhi and H. Neven, “Classification with Quantum Neural Networks on Near Term Processors,” 2018.</a>",
+    "<a href=\"https://doi.org/10.1038/s41467-018-07090-4\" target=\"_blank\" rel=\"noopener noreferrer\">J. R. McClean et al., “Barren Plateaus in Quantum Neural Network Training Landscapes,” Nature Communications, 2018.</a>",
+    "<a href=\"https://doi.org/10.1038/s42254-021-00348-9\" target=\"_blank\" rel=\"noopener noreferrer\">M. Cerezo et al., “Variational Quantum Algorithms,” Nature Reviews Physics, 2021.</a>"
+  ],
+  "quantum-generative-model": [
+    "<a href=\"https://doi.org/10.1038/s41534-019-0157-8\" target=\"_blank\" rel=\"noopener noreferrer\">M. Benedetti et al., “A Generative Modeling Approach for Benchmarking and Training Shallow Quantum Circuits,” npj Quantum Information, 2019.</a>",
+    "<a href=\"https://doi.org/10.1103/PhysRevLett.121.040502\" target=\"_blank\" rel=\"noopener noreferrer\">S. Lloyd and C. Weedbrook, “Quantum Generative Adversarial Learning,” Physical Review Letters, 2018.</a>",
+    "<a href=\"https://doi.org/10.1103/PhysRevA.98.012324\" target=\"_blank\" rel=\"noopener noreferrer\">P.-L. Dallaire-Demers and N. Killoran, “Quantum Generative Adversarial Networks,” Physical Review A, 2018.</a>",
+    "<a href=\"https://doi.org/10.1103/PhysRevA.98.062324\" target=\"_blank\" rel=\"noopener noreferrer\">J.-G. Liu and L. Wang, “Differentiable Learning of Quantum Circuit Born Machines,” Physical Review A, 2018.</a>"
+  ],
+  "quantum-reinforcement-learning": [
+    "<a href=\"https://doi.org/10.1103/PhysRevLett.117.130501\" target=\"_blank\" rel=\"noopener noreferrer\">V. Dunjko, J. M. Taylor, and H. J. Briegel, “Quantum-Enhanced Machine Learning,” Physical Review Letters, 2016.</a>",
+    "<a href=\"https://doi.org/10.1109/TSMCB.2008.925743\" target=\"_blank\" rel=\"noopener noreferrer\">D. Dong et al., “Quantum Reinforcement Learning,” IEEE Transactions on Systems, Man, and Cybernetics B, 2008.</a>",
+    "<a href=\"https://doi.org/10.3390/photonics8020033\" target=\"_blank\" rel=\"noopener noreferrer\">L. Lamata, “Quantum Reinforcement Learning with Quantum Photonics,” Photonics, 2021.</a>",
+    "<a href=\"https://arxiv.org/abs/2008.07524\" target=\"_blank\" rel=\"noopener noreferrer\">O. Lockwood and M. Si, “Reinforcement Learning with Quantum Variational Circuit,” AAAI Workshops, 2020.</a>"
+  ],
+  "quantum-programming-language": [
+    "<a href=\"https://doi.org/10.1017/S0960129504004256\" target=\"_blank\" rel=\"noopener noreferrer\">P. Selinger, “Towards a Quantum Programming Language,” Mathematical Structures in Computer Science, 2004.</a>",
+    "<a href=\"https://doi.org/10.1145/3505636\" target=\"_blank\" rel=\"noopener noreferrer\">A. W. Cross et al., “OpenQASM 3: A Broader and Deeper Quantum Assembly Language,” ACM Transactions on Quantum Computing, 2022.</a>",
+    "<a href=\"https://doi.org/10.1145/3183895.3183901\" target=\"_blank\" rel=\"noopener noreferrer\">K. Svore et al., “Q#: Enabling Scalable Quantum Computing and Development with a High-level DSL,” 2018.</a>",
+    "<a href=\"https://arxiv.org/abs/1804.03719\" target=\"_blank\" rel=\"noopener noreferrer\">A. W. Cross, “The IBM Q Experience and QISKit,” 2018.</a>"
+  ],
+  "quantum-compiler": [
+    "<a href=\"https://doi.org/10.1109/TCAD.2013.2244643\" target=\"_blank\" rel=\"noopener noreferrer\">M. Amy et al., “A Meet-in-the-Middle Algorithm for Fast Synthesis of Depth-Optimal Quantum Circuits,” IEEE TCAD, 2013.</a>",
+    "<a href=\"https://doi.org/10.1109/TCAD.2018.2846658\" target=\"_blank\" rel=\"noopener noreferrer\">A. Zulehner, A. Paler, and R. Wille, “An Efficient Methodology for Mapping Quantum Circuits to the IBM QX Architectures,” IEEE TCAD, 2019.</a>",
+    "<a href=\"https://doi.org/10.1016/j.parco.2014.12.001\" target=\"_blank\" rel=\"noopener noreferrer\">A. Javadi-Abhari et al., “ScaffCC: Scalable Compilation and Analysis of Quantum Programs,” Parallel Computing, 2015.</a>",
+    "<a href=\"https://doi.org/10.1038/nature23459\" target=\"_blank\" rel=\"noopener noreferrer\">F. T. Chong, D. Franklin, and M. Martonosi, “Programming Languages and Compiler Design for Realistic Quantum Hardware,” Nature, 2017.</a>"
+  ],
+  "quantum-control": [
+    "<a href=\"https://doi.org/10.1063/1.448765\" target=\"_blank\" rel=\"noopener noreferrer\">D. J. Tannor and S. A. Rice, “Control of Selectivity of Chemical Reaction via Control of Wave Packet Evolution,” Journal of Chemical Physics, 1985.</a>",
+    "<a href=\"https://doi.org/10.1016/j.jmr.2004.11.004\" target=\"_blank\" rel=\"noopener noreferrer\">N. Khaneja et al., “Optimal Control of Coupled Spin Dynamics,” Journal of Magnetic Resonance, 2005.</a>",
+    "<a href=\"https://doi.org/10.1088/1367-2630/12/7/075008\" target=\"_blank\" rel=\"noopener noreferrer\">C. Brif, R. Chakrabarti, and H. Rabitz, “Control of Quantum Phenomena,” New Journal of Physics, 2010.</a>",
+    "<a href=\"https://doi.org/10.1140/epjqt/s40507-022-00138-x\" target=\"_blank\" rel=\"noopener noreferrer\">C. P. Koch et al., “Quantum Optimal Control in Quantum Technologies,” EPJ Quantum Technology, 2022.</a>"
+  ],
+  "topological-insulator": [
+    "<a href=\"https://doi.org/10.1103/PhysRevLett.95.146802\" target=\"_blank\" rel=\"noopener noreferrer\">C. L. Kane and E. J. Mele, “Z2 Topological Order and the Quantum Spin Hall Effect,” Physical Review Letters, 2005.</a>",
+    "<a href=\"https://doi.org/10.1126/science.1133734\" target=\"_blank\" rel=\"noopener noreferrer\">B. A. Bernevig, T. L. Hughes, and S.-C. Zhang, “Quantum Spin Hall Effect and Topological Phase Transition in HgTe Quantum Wells,” Science, 2006.</a>",
+    "<a href=\"https://doi.org/10.1103/RevModPhys.82.3045\" target=\"_blank\" rel=\"noopener noreferrer\">M. Z. Hasan and C. L. Kane, “Colloquium: Topological Insulators,” Reviews of Modern Physics, 2010.</a>",
+    "<a href=\"https://doi.org/10.1103/RevModPhys.83.1057\" target=\"_blank\" rel=\"noopener noreferrer\">X.-L. Qi and S.-C. Zhang, “Topological Insulators and Superconductors,” Reviews of Modern Physics, 2011.</a>"
+  ],
+  "weyl-semimetal": [
+    "<a href=\"https://doi.org/10.1103/PhysRevB.83.205101\" target=\"_blank\" rel=\"noopener noreferrer\">X. Wan et al., “Topological Semimetal and Fermi-arc Surface States in the Electronic Structure of Pyrochlore Iridates,” Physical Review B, 2011.</a>",
+    "<a href=\"https://doi.org/10.1126/science.aaa9297\" target=\"_blank\" rel=\"noopener noreferrer\">S.-Y. Xu et al., “Discovery of a Weyl Fermion Semimetal and Topological Fermi Arcs,” Science, 2015.</a>",
+    "<a href=\"https://doi.org/10.1103/PhysRevX.5.031013\" target=\"_blank\" rel=\"noopener noreferrer\">B. Q. Lv et al., “Experimental Discovery of Weyl Semimetal TaAs,” Physical Review X, 2015.</a>",
+    "<a href=\"https://doi.org/10.1103/RevModPhys.90.015001\" target=\"_blank\" rel=\"noopener noreferrer\">N. P. Armitage, E. J. Mele, and A. Vishwanath, “Weyl and Dirac Semimetals in Three-Dimensional Solids,” Reviews of Modern Physics, 2018.</a>"
+  ],
+  "dirac-semimetal": [
+    "<a href=\"https://doi.org/10.1103/PhysRevB.85.195320\" target=\"_blank\" rel=\"noopener noreferrer\">Z. Wang et al., “Dirac Semimetal and Topological Phase Transitions in A3Bi,” Physical Review B, 2012.</a>",
+    "<a href=\"https://doi.org/10.1103/PhysRevB.88.125427\" target=\"_blank\" rel=\"noopener noreferrer\">Z. Wang et al., “Three-Dimensional Dirac Semimetal and Quantum Transport in Cd3As2,” Physical Review B, 2013.</a>",
+    "<a href=\"https://doi.org/10.1038/ncomms4786\" target=\"_blank\" rel=\"noopener noreferrer\">M. Neupane et al., “Observation of a Three-Dimensional Topological Dirac Semimetal Phase in High-Mobility Cd3As2,” Nature Communications, 2014.</a>",
+    "<a href=\"https://doi.org/10.1103/RevModPhys.90.015001\" target=\"_blank\" rel=\"noopener noreferrer\">N. P. Armitage, E. J. Mele, and A. Vishwanath, “Weyl and Dirac Semimetals in Three-Dimensional Solids,” Reviews of Modern Physics, 2018.</a>"
+  ],
+  "majorana-fermion": [
+    "<a href=\"https://doi.org/10.1007/BF02961314\" target=\"_blank\" rel=\"noopener noreferrer\">E. Majorana, “Teoria Simmetrica dell’Elettrone e del Positrone,” Il Nuovo Cimento, 1937.</a>",
+    "<a href=\"https://doi.org/10.1070/1063-7869/44/10S/S29\" target=\"_blank\" rel=\"noopener noreferrer\">A. Y. Kitaev, “Unpaired Majorana Fermions in Quantum Wires,” Physics-Uspekhi, 2001.</a>",
+    "<a href=\"https://doi.org/10.1103/PhysRevLett.105.077001\" target=\"_blank\" rel=\"noopener noreferrer\">R. M. Lutchyn, J. D. Sau, and S. Das Sarma, “Majorana Fermions and a Topological Phase Transition in Semiconductor-Superconductor Heterostructures,” Physical Review Letters, 2010.</a>",
+    "<a href=\"https://doi.org/10.1146/annurev-conmatphys-030212-184337\" target=\"_blank\" rel=\"noopener noreferrer\">C. W. J. Beenakker, “Search for Majorana Fermions in Superconductors,” Annual Review of Condensed Matter Physics, 2013.</a>"
+  ],
+  "anyon": [
+    "<a href=\"https://doi.org/10.1007/BF02727953\" target=\"_blank\" rel=\"noopener noreferrer\">J. M. Leinaas and J. Myrheim, “On the Theory of Identical Particles,” Il Nuovo Cimento B, 1977.</a>",
+    "<a href=\"https://doi.org/10.1103/PhysRevLett.49.957\" target=\"_blank\" rel=\"noopener noreferrer\">F. Wilczek, “Quantum Mechanics of Fractional-Spin Particles,” Physical Review Letters, 1982.</a>",
+    "<a href=\"https://doi.org/10.1103/RevModPhys.80.1083\" target=\"_blank\" rel=\"noopener noreferrer\">C. Nayak et al., “Non-Abelian Anyons and Topological Quantum Computation,” Reviews of Modern Physics, 2008.</a>",
+    "<a href=\"https://doi.org/10.1126/science.aaz5601\" target=\"_blank\" rel=\"noopener noreferrer\">H. Bartolomei et al., “Fractional Statistics in Anyon Collisions,” Science, 2020.</a>"
+  ],
+  "fractional-quantum-hall-effect": [
+    "<a href=\"https://doi.org/10.1103/PhysRevLett.48.1559\" target=\"_blank\" rel=\"noopener noreferrer\">D. C. Tsui, H. L. Stormer, and A. C. Gossard, “Two-Dimensional Magnetotransport in the Extreme Quantum Limit,” Physical Review Letters, 1982.</a>",
+    "<a href=\"https://doi.org/10.1103/PhysRevLett.50.1395\" target=\"_blank\" rel=\"noopener noreferrer\">R. B. Laughlin, “Anomalous Quantum Hall Effect: An Incompressible Quantum Fluid with Fractionally Charged Excitations,” Physical Review Letters, 1983.</a>",
+    "<a href=\"https://doi.org/10.1103/PhysRevLett.63.199\" target=\"_blank\" rel=\"noopener noreferrer\">J. K. Jain, “Composite-Fermion Approach for the Fractional Quantum Hall Effect,” Physical Review Letters, 1989.</a>",
+    "<a href=\"https://doi.org/10.1038/387162a0\" target=\"_blank\" rel=\"noopener noreferrer\">R. de-Picciotto et al., “Direct Observation of a Fractional Charge,” Nature, 1997.</a>"
+  ],
+  "mott-insulator": [
+    "<a href=\"https://doi.org/10.1088/0370-1298/62/7/303\" target=\"_blank\" rel=\"noopener noreferrer\">N. F. Mott, “The Basis of the Electron Theory of Metals,” Proceedings of the Physical Society A, 1949.</a>",
+    "<a href=\"https://doi.org/10.1098/rspa.1963.0204\" target=\"_blank\" rel=\"noopener noreferrer\">J. Hubbard, “Electron Correlations in Narrow Energy Bands,” Proceedings of the Royal Society A, 1963.</a>",
+    "<a href=\"https://doi.org/10.1103/RevModPhys.70.1039\" target=\"_blank\" rel=\"noopener noreferrer\">M. Imada, A. Fujimori, and Y. Tokura, “Metal-Insulator Transitions,” Reviews of Modern Physics, 1998.</a>",
+    "<a href=\"https://doi.org/10.1103/RevModPhys.78.17\" target=\"_blank\" rel=\"noopener noreferrer\">P. A. Lee, N. Nagaosa, and X.-G. Wen, “Doping a Mott Insulator,” Reviews of Modern Physics, 2006.</a>"
+  ],
+  "quantum-criticality": [
+    "<a href=\"https://doi.org/10.1017/CBO9780511973765\" target=\"_blank\" rel=\"noopener noreferrer\">S. Sachdev, Quantum Phase Transitions, Cambridge University Press, 2011.</a>",
+    "<a href=\"https://doi.org/10.1103/RevModPhys.69.315\" target=\"_blank\" rel=\"noopener noreferrer\">S. L. Sondhi et al., “Continuous Quantum Phase Transitions,” Reviews of Modern Physics, 1997.</a>",
+    "<a href=\"https://doi.org/10.1038/nphys892\" target=\"_blank\" rel=\"noopener noreferrer\">P. Gegenwart, Q. Si, and F. Steglich, “Quantum Criticality in Heavy-Fermion Metals,” Nature Physics, 2008.</a>",
+    "<a href=\"https://doi.org/10.1103/RevModPhys.79.1015\" target=\"_blank\" rel=\"noopener noreferrer\">H. v. Löhneysen et al., “Fermi-Liquid Instabilities at Magnetic Quantum Phase Transitions,” Reviews of Modern Physics, 2007.</a>"
+  ],
+  "quantum-phase-transition": [
+    "<a href=\"https://doi.org/10.1017/CBO9780511973765\" target=\"_blank\" rel=\"noopener noreferrer\">S. Sachdev, Quantum Phase Transitions, Cambridge University Press, 2011.</a>",
+    "<a href=\"https://doi.org/10.1103/RevModPhys.69.315\" target=\"_blank\" rel=\"noopener noreferrer\">S. L. Sondhi et al., “Continuous Quantum Phase Transitions,” Reviews of Modern Physics, 1997.</a>",
+    "<a href=\"https://doi.org/10.1088/0034-4885/66/12/R01\" target=\"_blank\" rel=\"noopener noreferrer\">M. Vojta, “Quantum Phase Transitions,” Reports on Progress in Physics, 2003.</a>",
+    "<a href=\"https://doi.org/10.1038/nphys1025\" target=\"_blank\" rel=\"noopener noreferrer\">T. Giamarchi, C. Rüegg, and O. Tchernyshyov, “Bose–Einstein Condensation in Magnetic Insulators,” Nature Physics, 2008.</a>"
+  ],
+  "heavy-fermion": [
+    "<a href=\"https://doi.org/10.1103/RevModPhys.56.755\" target=\"_blank\" rel=\"noopener noreferrer\">G. R. Stewart, “Heavy-Fermion Systems,” Reviews of Modern Physics, 1984.</a>",
+    "<a href=\"https://doi.org/10.48550/arXiv.cond-mat/0612006\" target=\"_blank\" rel=\"noopener noreferrer\">P. Coleman, “Heavy Fermions: Electrons at the Edge of Magnetism,” Handbook of Magnetism, 2007.</a>",
+    "<a href=\"https://doi.org/10.1103/RevModPhys.79.1015\" target=\"_blank\" rel=\"noopener noreferrer\">H. v. Löhneysen et al., “Fermi-Liquid Instabilities at Magnetic Quantum Phase Transitions,” Reviews of Modern Physics, 2007.</a>",
+    "<a href=\"https://doi.org/10.1038/nphys892\" target=\"_blank\" rel=\"noopener noreferrer\">P. Gegenwart, Q. Si, and F. Steglich, “Quantum Criticality in Heavy-Fermion Metals,” Nature Physics, 2008.</a>"
+  ],
+  "kondo-effect": [
+    "<a href=\"https://doi.org/10.1143/PTP.32.37\" target=\"_blank\" rel=\"noopener noreferrer\">J. Kondo, “Resistance Minimum in Dilute Magnetic Alloys,” Progress of Theoretical Physics, 1964.</a>",
+    "<a href=\"https://doi.org/10.1103/RevModPhys.47.773\" target=\"_blank\" rel=\"noopener noreferrer\">K. G. Wilson, “The Renormalization Group: Critical Phenomena and the Kondo Problem,” Reviews of Modern Physics, 1975.</a>",
+    "<a href=\"https://doi.org/10.1134/1.1280576\" target=\"_blank\" rel=\"noopener noreferrer\">L. I. Glazman and M. E. Raikh, “Resonant Kondo Transparency of a Barrier with Quasilocal Impurity States,” JETP Letters, 1988.</a>",
+    "<a href=\"https://doi.org/10.1038/25601\" target=\"_blank\" rel=\"noopener noreferrer\">D. Goldhaber-Gordon et al., “Kondo Effect in a Single-Electron Transistor,” Nature, 1998.</a>"
+  ],
+  "spin-ice": [
+    "<a href=\"https://doi.org/10.1126/science.1064761\" target=\"_blank\" rel=\"noopener noreferrer\">S. T. Bramwell and M. J. P. Gingras, “Spin Ice State in Frustrated Magnetic Pyrochlore Materials,” Science, 2001.</a>",
+    "<a href=\"https://doi.org/10.1038/nature06433\" target=\"_blank\" rel=\"noopener noreferrer\">C. Castelnovo, R. Moessner, and S. L. Sondhi, “Magnetic Monopoles in Spin Ice,” Nature, 2008.</a>",
+    "<a href=\"https://doi.org/10.1038/nphys1227\" target=\"_blank\" rel=\"noopener noreferrer\">L. D. C. Jaubert and P. C. W. Holdsworth, “Signature of Magnetic Monopole and Dirac String Dynamics in Spin Ice,” Nature Physics, 2009.</a>",
+    "<a href=\"https://doi.org/10.1038/nature04447\" target=\"_blank\" rel=\"noopener noreferrer\">R. F. Wang et al., “Artificial Spin Ice in a Geometrically Frustrated Lattice of Nanoscale Ferromagnetic Islands,” Nature, 2006.</a>"
+  ],
+  "squid": [
+    "<a href=\"https://doi.org/10.1016/0031-9163(62)91369-0\" target=\"_blank\" rel=\"noopener noreferrer\">B. D. Josephson, “Possible New Effects in Superconductive Tunnelling,” Physics Letters, 1962.</a>",
+    "<a href=\"https://doi.org/10.1103/PhysRevLett.12.159\" target=\"_blank\" rel=\"noopener noreferrer\">R. C. Jaklevic et al., “Quantum Interference Effects in Josephson Tunneling,” Physical Review Letters, 1964.</a>",
+    "<a href=\"https://doi.org/10.1002/3527603646\" target=\"_blank\" rel=\"noopener noreferrer\">J. Clarke and A. I. Braginski, The SQUID Handbook, Wiley-VCH, 2004.</a>",
+    "<a href=\"https://doi.org/10.1063/1.2354545\" target=\"_blank\" rel=\"noopener noreferrer\">R. L. Fagaly, “Superconducting Quantum Interference Device Instruments and Applications,” Review of Scientific Instruments, 2006.</a>"
+  ],
+  "optical-lattice": [
+    "<a href=\"https://doi.org/10.1016/S0370-1573(00)00132-0\" target=\"_blank\" rel=\"noopener noreferrer\">G. Grynberg and C. Robilliard, “Cold Atoms in Dissipative Optical Lattices,” Physics Reports, 2001.</a>",
+    "<a href=\"https://doi.org/10.1038/415039a\" target=\"_blank\" rel=\"noopener noreferrer\">M. Greiner et al., “Quantum Phase Transition from a Superfluid to a Mott Insulator,” Nature, 2002.</a>",
+    "<a href=\"https://doi.org/10.1103/RevModPhys.80.885\" target=\"_blank\" rel=\"noopener noreferrer\">I. Bloch, J. Dalibard, and W. Zwerger, “Many-Body Physics with Ultracold Gases,” Reviews of Modern Physics, 2008.</a>",
+    "<a href=\"https://doi.org/10.1038/s41567-020-01100-3\" target=\"_blank\" rel=\"noopener noreferrer\">C. Gross and W. S. Bakr, “Quantum Gas Microscopy for Single Atom and Spin Detection,” Nature Physics, 2021.</a>"
+  ],
+  "rydberg-atom": [
+    "<a href=\"https://doi.org/10.1017/CBO9780511524530\" target=\"_blank\" rel=\"noopener noreferrer\">T. F. Gallagher, Rydberg Atoms, Cambridge University Press, 1994.</a>",
+    "<a href=\"https://doi.org/10.1103/PhysRevLett.85.2208\" target=\"_blank\" rel=\"noopener noreferrer\">D. Jaksch et al., “Fast Quantum Gates for Neutral Atoms,” Physical Review Letters, 2000.</a>",
+    "<a href=\"https://doi.org/10.1103/RevModPhys.82.2313\" target=\"_blank\" rel=\"noopener noreferrer\">M. Saffman, T. G. Walker, and K. Mølmer, “Quantum Information with Rydberg Atoms,” Reviews of Modern Physics, 2010.</a>",
+    "<a href=\"https://doi.org/10.1038/nature24622\" target=\"_blank\" rel=\"noopener noreferrer\">H. Bernien et al., “Probing Many-Body Dynamics on a 51-Atom Quantum Simulator,” Nature, 2017.</a>"
+  ],
+  "polaron": [
+    "<a href=\"https://doi.org/10.1016/0003-4916(59)90002-8\" target=\"_blank\" rel=\"noopener noreferrer\">T. Holstein, “Studies of Polaron Motion: Part I. The Molecular-Crystal Model,” Annals of Physics, 1959.</a>",
+    "<a href=\"https://doi.org/10.1080/00018735400101213\" target=\"_blank\" rel=\"noopener noreferrer\">H. Fröhlich, “Electrons in Lattice Fields,” Advances in Physics, 1954.</a>",
+    "<a href=\"https://doi.org/10.1088/0034-4885/72/6/066501\" target=\"_blank\" rel=\"noopener noreferrer\">J. T. Devreese and A. S. Alexandrov, “Fröhlich Polaron and Bipolaron,” Reports on Progress in Physics, 2009.</a>",
+    "<a href=\"https://doi.org/10.1088/0034-4885/73/11/112401\" target=\"_blank\" rel=\"noopener noreferrer\">F. Chevy and C. Mora, “Ultra-Cold Polarized Fermi Gases,” Reports on Progress in Physics, 2010.</a>"
+  ],
+  "exciton": [
+    "<a href=\"https://doi.org/10.1103/PhysRev.52.191\" target=\"_blank\" rel=\"noopener noreferrer\">G. H. Wannier, “The Structure of Electronic Excitation Levels in Insulating Crystals,” Physical Review, 1937.</a>",
+    "<a href=\"https://doi.org/10.1103/PhysRev.37.17\" target=\"_blank\" rel=\"noopener noreferrer\">J. Frenkel, “On the Transformation of Light into Heat in Solids,” Physical Review, 1931.</a>",
+    "<a href=\"https://doi.org/10.1103/RevModPhys.90.021001\" target=\"_blank\" rel=\"noopener noreferrer\">G. Wang et al., “Colloquium: Excitons in Atomically Thin Transition Metal Dichalcogenides,” Reviews of Modern Physics, 2018.</a>",
+    "<a href=\"https://doi.org/10.1038/s41699-018-0074-2\" target=\"_blank\" rel=\"noopener noreferrer\">T. Mueller and E. Malic, “Exciton Physics and Device Application of Two-Dimensional Transition Metal Dichalcogenide Semiconductors,” npj 2D Materials and Applications, 2018.</a>"
+  ],
+  "polariton": [
+    "<a href=\"https://doi.org/10.1103/PhysRev.112.1555\" target=\"_blank\" rel=\"noopener noreferrer\">J. J. Hopfield, “Theory of the Contribution of Excitons to the Complex Dielectric Constant of Crystals,” Physical Review, 1958.</a>",
+    "<a href=\"https://doi.org/10.1103/PhysRevLett.69.3314\" target=\"_blank\" rel=\"noopener noreferrer\">C. Weisbuch et al., “Observation of the Coupled Exciton-Photon Mode Splitting in a Semiconductor Quantum Microcavity,” Physical Review Letters, 1992.</a>",
+    "<a href=\"https://doi.org/10.1038/nature05131\" target=\"_blank\" rel=\"noopener noreferrer\">J. Kasprzak et al., “Bose–Einstein Condensation of Exciton Polaritons,” Nature, 2006.</a>",
+    "<a href=\"https://doi.org/10.1103/RevModPhys.85.299\" target=\"_blank\" rel=\"noopener noreferrer\">I. Carusotto and C. Ciuti, “Quantum Fluids of Light,” Reviews of Modern Physics, 2013.</a>"
+  ],
+  "magnon": [
+    "<a href=\"https://doi.org/10.1007/BF01339661\" target=\"_blank\" rel=\"noopener noreferrer\">F. Bloch, “Zur Theorie des Ferromagnetismus,” Zeitschrift für Physik, 1930.</a>",
+    "<a href=\"https://doi.org/10.1103/PhysRev.58.1098\" target=\"_blank\" rel=\"noopener noreferrer\">T. Holstein and H. Primakoff, “Field Dependence of the Intrinsic Domain Magnetization of a Ferromagnet,” Physical Review, 1940.</a>",
+    "<a href=\"https://doi.org/10.1038/nphys3347\" target=\"_blank\" rel=\"noopener noreferrer\">A. V. Chumak et al., “Magnon Spintronics,” Nature Physics, 2015.</a>",
+    "<a href=\"https://doi.org/10.1007/978-0-387-77865-5\" target=\"_blank\" rel=\"noopener noreferrer\">D. D. Stancil and A. Prabhakar, Spin Waves: Theory and Applications, Springer, 2009.</a>"
+  ],
+  "plasmon": [
+    "<a href=\"https://doi.org/10.1103/PhysRev.106.874\" target=\"_blank\" rel=\"noopener noreferrer\">R. H. Ritchie, “Plasma Losses by Fast Electrons in Thin Films,” Physical Review, 1957.</a>",
+    "<a href=\"https://doi.org/10.1038/nature01937\" target=\"_blank\" rel=\"noopener noreferrer\">W. L. Barnes, A. Dereux, and T. W. Ebbesen, “Surface Plasmon Subwavelength Optics,” Nature, 2003.</a>",
+    "<a href=\"https://doi.org/10.1007/0-387-37825-1\" target=\"_blank\" rel=\"noopener noreferrer\">S. A. Maier, Plasmonics: Fundamentals and Applications, Springer, 2007.</a>",
+    "<a href=\"https://doi.org/10.1038/nmat2162\" target=\"_blank\" rel=\"noopener noreferrer\">J. N. Anker et al., “Biosensing with Plasmonic Nanosensors,” Nature Materials, 2008.</a>"
+  ],
+  "phonon": [
+    "<a href=\"https://doi.org/10.1002/andp.19123441404\" target=\"_blank\" rel=\"noopener noreferrer\">P. Debye, “Zur Theorie der spezifischen Wärmen,” Annalen der Physik, 1912.</a>",
+    "<a href=\"https://www.wiley.com/en-us/Introduction+to+Solid+State+Physics%2C+8th+Edition-p-9780471415268\" target=\"_blank\" rel=\"noopener noreferrer\">C. Kittel, Introduction to Solid State Physics, Wiley, 2004.</a>",
+    "<a href=\"https://doi.org/10.1201/9780203736241\" target=\"_blank\" rel=\"noopener noreferrer\">G. P. Srivastava, The Physics of Phonons, CRC Press, 1990.</a>",
+    "<a href=\"https://doi.org/10.1063/1.1524305\" target=\"_blank\" rel=\"noopener noreferrer\">D. G. Cahill et al., “Nanoscale Thermal Transport,” Journal of Applied Physics, 2003.</a>"
+  ],
+  "quantum-heat-engine": [
+    "<a href=\"https://doi.org/10.1088/0305-4470/12/5/007\" target=\"_blank\" rel=\"noopener noreferrer\">R. Alicki, “The Quantum Open System as a Model of the Heat Engine,” Journal of Physics A, 1979.</a>",
+    "<a href=\"https://doi.org/10.1103/PhysRevE.76.031105\" target=\"_blank\" rel=\"noopener noreferrer\">H. T. Quan et al., “Quantum Thermodynamic Cycles and Quantum Heat Engines,” Physical Review E, 2007.</a>",
+    "<a href=\"https://doi.org/10.1146/annurev-physchem-040513-103724\" target=\"_blank\" rel=\"noopener noreferrer\">R. Kosloff and A. Levy, “Quantum Heat Engines and Refrigerators,” Annual Review of Physical Chemistry, 2014.</a>",
+    "<a href=\"https://doi.org/10.1126/science.aad6320\" target=\"_blank\" rel=\"noopener noreferrer\">J. Roßnagel et al., “A Single-Atom Heat Engine,” Science, 2016.</a>"
+  ],
+  "quantum-refrigerator": [
+    "<a href=\"https://doi.org/10.1103/PhysRevLett.105.130401\" target=\"_blank\" rel=\"noopener noreferrer\">N. Linden, S. Popescu, and P. Skrzypczyk, “How Small Can Thermal Machines Be? The Smallest Possible Refrigerator,” Physical Review Letters, 2010.</a>",
+    "<a href=\"https://doi.org/10.1103/PhysRevLett.108.070604\" target=\"_blank\" rel=\"noopener noreferrer\">A. Levy and R. Kosloff, “Quantum Absorption Refrigerator,” Physical Review Letters, 2012.</a>",
+    "<a href=\"https://doi.org/10.1146/annurev-physchem-040513-103724\" target=\"_blank\" rel=\"noopener noreferrer\">R. Kosloff and A. Levy, “Quantum Heat Engines and Refrigerators,” Annual Review of Physical Chemistry, 2014.</a>",
+    "<a href=\"https://doi.org/10.1038/nphys3169\" target=\"_blank\" rel=\"noopener noreferrer\">J. P. Pekola, “Towards Quantum Thermodynamics in Electronic Circuits,” Nature Physics, 2015.</a>"
+  ],
+  "quantum-maxwell-demon": [
+    "<a href=\"https://doi.org/10.1147/rd.53.0183\" target=\"_blank\" rel=\"noopener noreferrer\">R. Landauer, “Irreversibility and Heat Generation in the Computing Process,” IBM Journal of Research and Development, 1961.</a>",
+    "<a href=\"https://doi.org/10.1007/BF02084158\" target=\"_blank\" rel=\"noopener noreferrer\">C. H. Bennett, “The Thermodynamics of Computation—a Review,” International Journal of Theoretical Physics, 1982.</a>",
+    "<a href=\"https://doi.org/10.1038/nphys1821\" target=\"_blank\" rel=\"noopener noreferrer\">S. Toyabe et al., “Experimental Demonstration of Information-to-Energy Conversion,” Nature Physics, 2010.</a>",
+    "<a href=\"https://doi.org/10.1073/pnas.1406966111\" target=\"_blank\" rel=\"noopener noreferrer\">J. V. Koski et al., “Experimental Realization of a Szilard Engine with a Single Electron,” PNAS, 2014.</a>"
+  ],
+  "quantum-entropy": [
+    "<a href=\"https://press.princeton.edu/books/paperback/9780691028934/mathematical-foundations-of-quantum-mechanics\" target=\"_blank\" rel=\"noopener noreferrer\">J. von Neumann, Mathematical Foundations of Quantum Mechanics, Princeton University Press, 1955.</a>",
+    "<a href=\"https://doi.org/10.1103/PhysRevA.51.2738\" target=\"_blank\" rel=\"noopener noreferrer\">B. Schumacher, “Quantum Coding,” Physical Review A, 1995.</a>",
+    "<a href=\"https://doi.org/10.1017/CBO9780511976667\" target=\"_blank\" rel=\"noopener noreferrer\">M. A. Nielsen and I. L. Chuang, Quantum Computation and Quantum Information, Cambridge University Press, 2010.</a>",
+    "<a href=\"https://doi.org/10.1007/BF01646092\" target=\"_blank\" rel=\"noopener noreferrer\">H. Araki and E. H. Lieb, “Entropy Inequalities,” Communications in Mathematical Physics, 1970.</a>"
+  ],
+  "quantum-thermalization": [
+    "<a href=\"https://doi.org/10.1103/PhysRevA.43.2046\" target=\"_blank\" rel=\"noopener noreferrer\">J. M. Deutsch, “Quantum Statistical Mechanics in a Closed System,” Physical Review A, 1991.</a>",
+    "<a href=\"https://doi.org/10.1103/PhysRevE.50.888\" target=\"_blank\" rel=\"noopener noreferrer\">M. Srednicki, “Chaos and Quantum Thermalization,” Physical Review E, 1994.</a>",
+    "<a href=\"https://doi.org/10.1038/nature06838\" target=\"_blank\" rel=\"noopener noreferrer\">M. Rigol, V. Dunjko, and M. Olshanii, “Thermalization and Its Mechanism for Generic Isolated Quantum Systems,” Nature, 2008.</a>",
+    "<a href=\"https://doi.org/10.1080/00018732.2016.1198134\" target=\"_blank\" rel=\"noopener noreferrer\">L. D’Alessio et al., “From Quantum Chaos and Eigenstate Thermalization to Statistical Mechanics,” Advances in Physics, 2016.</a>"
+  ],
+  "many-body-localization": [
+    "<a href=\"https://doi.org/10.1016/j.aop.2005.11.014\" target=\"_blank\" rel=\"noopener noreferrer\">D. M. Basko, I. L. Aleiner, and B. L. Altshuler, “Metal–Insulator Transition in a Weakly Interacting Many-Electron System,” Annals of Physics, 2006.</a>",
+    "<a href=\"https://doi.org/10.1146/annurev-conmatphys-031214-014726\" target=\"_blank\" rel=\"noopener noreferrer\">R. Nandkishore and D. A. Huse, “Many-Body Localization and Thermalization in Quantum Statistical Mechanics,” Annual Review of Condensed Matter Physics, 2015.</a>",
+    "<a href=\"https://doi.org/10.1103/RevModPhys.91.021001\" target=\"_blank\" rel=\"noopener noreferrer\">D. A. Abanin et al., “Colloquium: Many-Body Localization, Thermalization, and Entanglement,” Reviews of Modern Physics, 2019.</a>",
+    "<a href=\"https://doi.org/10.1126/science.aaa7432\" target=\"_blank\" rel=\"noopener noreferrer\">M. Schreiber et al., “Observation of Many-Body Localization of Interacting Fermions in a Quasirandom Optical Lattice,” Science, 2015.</a>"
+  ],
+  "eigenstate-thermalization": [
+    "<a href=\"https://doi.org/10.1103/PhysRevA.43.2046\" target=\"_blank\" rel=\"noopener noreferrer\">J. M. Deutsch, “Quantum Statistical Mechanics in a Closed System,” Physical Review A, 1991.</a>",
+    "<a href=\"https://doi.org/10.1103/PhysRevE.50.888\" target=\"_blank\" rel=\"noopener noreferrer\">M. Srednicki, “Chaos and Quantum Thermalization,” Physical Review E, 1994.</a>",
+    "<a href=\"https://doi.org/10.1038/nature06838\" target=\"_blank\" rel=\"noopener noreferrer\">M. Rigol, V. Dunjko, and M. Olshanii, “Thermalization and Its Mechanism for Generic Isolated Quantum Systems,” Nature, 2008.</a>",
+    "<a href=\"https://doi.org/10.1080/00018732.2016.1198134\" target=\"_blank\" rel=\"noopener noreferrer\">L. D’Alessio et al., “From Quantum Chaos and Eigenstate Thermalization to Statistical Mechanics,” Advances in Physics, 2016.</a>"
+  ],
+  "quantum-fluctuation-theorem": [
+    "<a href=\"https://doi.org/10.1103/PhysRevLett.78.2690\" target=\"_blank\" rel=\"noopener noreferrer\">C. Jarzynski, “Nonequilibrium Equality for Free Energy Differences,” Physical Review Letters, 1997.</a>",
+    "<a href=\"https://doi.org/10.1103/PhysRevE.60.2721\" target=\"_blank\" rel=\"noopener noreferrer\">G. E. Crooks, “Entropy Production Fluctuation Theorem and the Nonequilibrium Work Relation,” Physical Review E, 1999.</a>",
+    "<a href=\"https://doi.org/10.48550/arXiv.cond-mat/0007360\" target=\"_blank\" rel=\"noopener noreferrer\">J. Kurchan, “A Quantum Fluctuation Theorem,” 2000.</a>",
+    "<a href=\"https://doi.org/10.1103/RevModPhys.83.771\" target=\"_blank\" rel=\"noopener noreferrer\">M. Campisi, P. Hänggi, and P. Talkner, “Colloquium: Quantum Fluctuation Relations,” Reviews of Modern Physics, 2011.</a>"
+  ],
+  "quantum-thermometry": [
+    "<a href=\"https://doi.org/10.1088/1751-8113/49/3/03LT02\" target=\"_blank\" rel=\"noopener noreferrer\">M. G. A. Paris, “Achieving the Landau Bound to Precision of Quantum Thermometry in Systems with Vanishing Gap,” Journal of Physics A, 2016.</a>",
+    "<a href=\"https://doi.org/10.1103/PhysRevLett.114.220405\" target=\"_blank\" rel=\"noopener noreferrer\">L. A. Correa et al., “Individual Quantum Probes for Optimal Thermometry,” Physical Review Letters, 2015.</a>",
+    "<a href=\"https://doi.org/10.1007/978-3-319-99046-0_20\" target=\"_blank\" rel=\"noopener noreferrer\">A. De Pasquale and T. M. Stace, “Quantum Thermometry,” in Thermodynamics in the Quantum Regime, 2018.</a>",
+    "<a href=\"https://doi.org/10.1038/nature12373\" target=\"_blank\" rel=\"noopener noreferrer\">G. Kucsko et al., “Nanometre-Scale Thermometry in a Living Cell,” Nature, 2013.</a>"
+  ],
+  "quantum-engine-efficiency": [
+    "<a href=\"https://doi.org/10.1103/PhysRevE.76.031105\" target=\"_blank\" rel=\"noopener noreferrer\">H. T. Quan et al., “Quantum Thermodynamic Cycles and Quantum Heat Engines,” Physical Review E, 2007.</a>",
+    "<a href=\"https://doi.org/10.1146/annurev-physchem-040513-103724\" target=\"_blank\" rel=\"noopener noreferrer\">R. Kosloff and A. Levy, “Quantum Heat Engines and Refrigerators,” Annual Review of Physical Chemistry, 2014.</a>",
+    "<a href=\"https://doi.org/10.1103/PhysRevX.5.031044\" target=\"_blank\" rel=\"noopener noreferrer\">R. Uzdin, A. Levy, and R. Kosloff, “Equivalence of Quantum Heat Machines,” Physical Review X, 2015.</a>",
+    "<a href=\"https://doi.org/10.1126/science.aad6320\" target=\"_blank\" rel=\"noopener noreferrer\">J. Roßnagel et al., “A Single-Atom Heat Engine,” Science, 2016.</a>"
+  ],
+  "quantum-cell-signaling": [
+    "<a href=\"https://doi.org/10.1038/nphys2474\" target=\"_blank\" rel=\"noopener noreferrer\">N. Lambert et al., “Quantum Biology,” Nature Physics, 2013.</a>",
+    "<a href=\"https://doi.org/10.1098/rspa.2016.0814\" target=\"_blank\" rel=\"noopener noreferrer\">J. C. Brookes, “Quantum Effects in Biology,” Proceedings of the Royal Society A, 2017.</a>",
+    "<a href=\"https://doi.org/10.1021/cr1001436\" target=\"_blank\" rel=\"noopener noreferrer\">S. Hammes-Schiffer and A. A. Stuchebrukhov, “Theory of Coupled Electron and Proton Transfer Reactions,” Chemical Reviews, 2010.</a>",
+    "<a href=\"https://doi.org/10.1038/nature21425\" target=\"_blank\" rel=\"noopener noreferrer\">G. D. Scholes et al., “Using Coherence to Enhance Function in Chemical and Biophysical Systems,” Nature, 2017.</a>"
+  ],
+  "quantum-anesthesia": [
+    "<a href=\"https://doi.org/10.1038/nrn2372\" target=\"_blank\" rel=\"noopener noreferrer\">N. P. Franks, “General Anaesthesia: From Molecular Targets to Neuronal Pathways,” Nature Reviews Neuroscience, 2008.</a>",
+    "<a href=\"https://doi.org/10.1056/NEJMra0808281\" target=\"_blank\" rel=\"noopener noreferrer\">E. N. Brown, R. Lydic, and N. D. Schiff, “General Anesthesia, Sleep, and Coma,” New England Journal of Medicine, 2010.</a>",
+    "<a href=\"https://doi.org/10.1126/science.1149213\" target=\"_blank\" rel=\"noopener noreferrer\">M. B. Alkire, A. G. Hudetz, and G. Tononi, “Consciousness and Anesthesia,” Science, 2008.</a>",
+    "<a href=\"https://doi.org/10.1103/PhysRevE.61.4194\" target=\"_blank\" rel=\"noopener noreferrer\">M. Tegmark, “Importance of Quantum Decoherence in Brain Processes,” Physical Review E, 2000.</a>"
+  ],
+  "quantum-cancer": [
+    "<a href=\"https://doi.org/10.1200/JCO.2007.10.9231\" target=\"_blank\" rel=\"noopener noreferrer\">D. A. Mankoff et al., “Tumor-specific Positron Emission Tomography Imaging in Patients,” Journal of Clinical Oncology, 2007.</a>",
+    "<a href=\"https://doi.org/10.1021/cr980440x\" target=\"_blank\" rel=\"noopener noreferrer\">P. Caravan et al., “Gadolinium(III) Chelates as MRI Contrast Agents,” Chemical Reviews, 1999.</a>",
+    "<a href=\"https://doi.org/10.1038/nbt994\" target=\"_blank\" rel=\"noopener noreferrer\">X. Gao et al., “In Vivo Cancer Targeting and Imaging with Semiconductor Quantum Dots,” Nature Biotechnology, 2004.</a>",
+    "<a href=\"https://doi.org/10.1038/nature06917\" target=\"_blank\" rel=\"noopener noreferrer\">R. Weissleder and M. J. Pittet, “Imaging in the Era of Molecular Oncology,” Nature, 2008.</a>"
+  ],
+  "quantum-bacteria": [
+    "<a href=\"https://doi.org/10.1038/nature05678\" target=\"_blank\" rel=\"noopener noreferrer\">G. S. Engel et al., “Evidence for Wavelike Energy Transfer through Quantum Coherence in Photosynthetic Systems,” Nature, 2007.</a>",
+    "<a href=\"https://doi.org/10.1038/nature08811\" target=\"_blank\" rel=\"noopener noreferrer\">E. Collini et al., “Coherently Wired Light-Harvesting in Photosynthetic Marine Algae at Ambient Temperature,” Nature, 2010.</a>",
+    "<a href=\"https://doi.org/10.1038/nphys2474\" target=\"_blank\" rel=\"noopener noreferrer\">N. Lambert et al., “Quantum Biology,” Nature Physics, 2013.</a>",
+    "<a href=\"https://doi.org/10.1073/pnas.1702261114\" target=\"_blank\" rel=\"noopener noreferrer\">H.-G. Duan et al., “Nature Does Not Rely on Long-Lived Electronic Quantum Coherence for Photosynthetic Energy Transfer,” PNAS, 2017.</a>"
+  ],
+  "quantum-viruses": [
+    "<a href=\"https://doi.org/10.1103/RevModPhys.35.724\" target=\"_blank\" rel=\"noopener noreferrer\">P.-O. Löwdin, “Proton Tunneling in DNA and Its Biological Implications,” Reviews of Modern Physics, 1963.</a>",
+    "<a href=\"https://doi.org/10.1039/C4CP04156A\" target=\"_blank\" rel=\"noopener noreferrer\">A. Godbeer et al., “Modelling Proton Tunnelling in the Adenine–Thymine Base Pair,” Physical Chemistry Chemical Physics, 2015.</a>",
+    "<a href=\"https://doi.org/10.1038/s42005-022-00881-8\" target=\"_blank\" rel=\"noopener noreferrer\">M. Slocombe, M. Sacchi, and J. Al-Khalili, “An Open Quantum Systems Approach to Proton Tunnelling in DNA,” Communications Physics, 2022.</a>",
+    "<a href=\"https://doi.org/10.1038/nphys2474\" target=\"_blank\" rel=\"noopener noreferrer\">N. Lambert et al., “Quantum Biology,” Nature Physics, 2013.</a>"
+  ],
+  "ghz-state": [
+    "<a href=\"https://doi.org/10.48550/arXiv.0712.0921\" target=\"_blank\" rel=\"noopener noreferrer\">D. M. Greenberger, M. A. Horne, and A. Zeilinger, “Going Beyond Bell’s Theorem,” 1989.</a>",
+    "<a href=\"https://doi.org/10.1103/PhysRevLett.65.1838\" target=\"_blank\" rel=\"noopener noreferrer\">N. D. Mermin, “Extreme Quantum Entanglement in a Superposition of Macroscopically Distinct States,” Physical Review Letters, 1990.</a>",
+    "<a href=\"https://doi.org/10.1038/35000514\" target=\"_blank\" rel=\"noopener noreferrer\">J.-W. Pan et al., “Experimental Test of Quantum Nonlocality in Three-Photon GHZ Entanglement,” Nature, 2000.</a>",
+    "<a href=\"https://doi.org/10.1016/j.physrep.2009.02.004\" target=\"_blank\" rel=\"noopener noreferrer\">O. Gühne and G. Tóth, “Entanglement Detection,” Physics Reports, 2009.</a>"
+  ],
+  "hardy-paradox": [
+    "<a href=\"https://doi.org/10.1103/PhysRevLett.68.2981\" target=\"_blank\" rel=\"noopener noreferrer\">L. Hardy, “Quantum Mechanics, Local Realistic Theories, and Lorentz-Invariant Realistic Theories,” Physical Review Letters, 1992.</a>",
+    "<a href=\"https://doi.org/10.1103/PhysRevLett.71.1665\" target=\"_blank\" rel=\"noopener noreferrer\">L. Hardy, “Nonlocality for Two Particles without Inequalities for Almost All Entangled States,” Physical Review Letters, 1993.</a>",
+    "<a href=\"https://doi.org/10.1103/PhysRevLett.79.2755\" target=\"_blank\" rel=\"noopener noreferrer\">D. Boschi et al., “Ladder Proof of Nonlocality without Inequalities,” Physical Review Letters, 1997.</a>",
+    "<a href=\"https://doi.org/10.48550/arXiv.2205.02826\" target=\"_blank\" rel=\"noopener noreferrer\">J. R. Hance et al., “Hardy’s Paradox and Its Experimental Tests,” 2022.</a>"
+  ],
+  "quantum-contextuality": [
+    "<a href=\"https://doi.org/10.1512/iumj.1968.17.17004\" target=\"_blank\" rel=\"noopener noreferrer\">S. Kochen and E. P. Specker, “The Problem of Hidden Variables in Quantum Mechanics,” Journal of Mathematics and Mechanics, 1967.</a>",
+    "<a href=\"https://doi.org/10.1103/PhysRevLett.101.020403\" target=\"_blank\" rel=\"noopener noreferrer\">A. A. Klyachko et al., “Simple Test for Hidden Variables in Spin-1 Systems,” Physical Review Letters, 2008.</a>",
+    "<a href=\"https://doi.org/10.1103/PhysRevLett.112.040401\" target=\"_blank\" rel=\"noopener noreferrer\">A. Cabello, S. Severini, and A. Winter, “Graph-Theoretic Approach to Quantum Correlations,” Physical Review Letters, 2014.</a>",
+    "<a href=\"https://doi.org/10.1038/nature13460\" target=\"_blank\" rel=\"noopener noreferrer\">M. Howard et al., “Contextuality Supplies the Magic for Quantum Computation,” Nature, 2014.</a>"
+  ],
+  "quantum-cheshire-cat": [
+    "<a href=\"https://doi.org/10.1103/PhysRevLett.60.1351\" target=\"_blank\" rel=\"noopener noreferrer\">Y. Aharonov, D. Z. Albert, and L. Vaidman, “How the Result of a Measurement of a Component of the Spin of a Spin-1/2 Particle Can Turn Out to Be 100,” Physical Review Letters, 1988.</a>",
+    "<a href=\"https://doi.org/10.1088/1367-2630/15/11/113015\" target=\"_blank\" rel=\"noopener noreferrer\">Y. Aharonov et al., “Quantum Cheshire Cats,” New Journal of Physics, 2013.</a>",
+    "<a href=\"https://doi.org/10.1038/ncomms5492\" target=\"_blank\" rel=\"noopener noreferrer\">T. Denkmayr et al., “Observation of a Quantum Cheshire Cat in a Matter-Wave Interferometer Experiment,” Nature Communications, 2014.</a>",
+    "<a href=\"https://doi.org/10.1088/1367-2630/17/5/053042\" target=\"_blank\" rel=\"noopener noreferrer\">R. Corrêa et al., “Quantum Cheshire Cat as Simple Quantum Interference,” New Journal of Physics, 2015.</a>"
+  ],
+  "three-box-paradox": [
+    "<a href=\"https://doi.org/10.1088/0305-4470/24/10/018\" target=\"_blank\" rel=\"noopener noreferrer\">Y. Aharonov and L. Vaidman, “Complete Description of a Quantum System at a Given Time,” Journal of Physics A, 1991.</a>",
+    "<a href=\"https://doi.org/10.1103/PhysRev.134.B1410\" target=\"_blank\" rel=\"noopener noreferrer\">Y. Aharonov, P. G. Bergmann, and J. L. Lebowitz, “Time Symmetry in the Quantum Process of Measurement,” Physical Review, 1964.</a>",
+    "<a href=\"https://doi.org/10.1016/j.physleta.2003.10.050\" target=\"_blank\" rel=\"noopener noreferrer\">K. J. Resch, J. S. Lundeen, and A. M. Steinberg, “Experimental Realization of the Quantum Box Problem,” Physics Letters A, 2004.</a>",
+    "<a href=\"https://doi.org/10.48550/arXiv.quant-ph/9906042\" target=\"_blank\" rel=\"noopener noreferrer\">L. Vaidman, “The Three-Box Paradox,” 1999.</a>"
+  ],
+  "quantum-logic": [
+    "<a href=\"https://doi.org/10.2307/1968621\" target=\"_blank\" rel=\"noopener noreferrer\">G. Birkhoff and J. von Neumann, “The Logic of Quantum Mechanics,” Annals of Mathematics, 1936.</a>",
+    "<a href=\"https://store.doverpublications.com/products/9780486435176\" target=\"_blank\" rel=\"noopener noreferrer\">G. W. Mackey, Mathematical Foundations of Quantum Mechanics, Dover, 2004.</a>",
+    "<a href=\"https://doi.org/10.1007/978-94-017-0526-4\" target=\"_blank\" rel=\"noopener noreferrer\">M. L. Dalla Chiara, R. Giuntini, and R. Greechie, Reasoning in Quantum Theory, Springer, 2004.</a>",
+    "<a href=\"https://doi.org/10.48550/arXiv.0803.0417\" target=\"_blank\" rel=\"noopener noreferrer\">A. Döring and C. J. Isham, “What Is a Thing? Topos Theory in the Foundations of Physics,” 2008.</a>"
+  ],
+  "quantum-probability": [
+    "<a href=\"https://doi.org/10.1007/BF01397477\" target=\"_blank\" rel=\"noopener noreferrer\">M. Born, “Zur Quantenmechanik der Stoßvorgänge,” Zeitschrift für Physik, 1926.</a>",
+    "<a href=\"https://doi.org/10.1512/iumj.1957.6.56050\" target=\"_blank\" rel=\"noopener noreferrer\">A. M. Gleason, “Measures on the Closed Subspaces of a Hilbert Space,” Journal of Mathematics and Mechanics, 1957.</a>",
+    "<a href=\"https://doi.org/10.1103/PhysRevLett.91.120403\" target=\"_blank\" rel=\"noopener noreferrer\">P. Busch, “Quantum States and Generalized Observables,” Physical Review Letters, 2003.</a>",
+    "<a href=\"https://doi.org/10.1088/0034-4885/74/11/116001\" target=\"_blank\" rel=\"noopener noreferrer\">C. Ferrie, “Quasi-Probability Representations of Quantum Theory,” Reports on Progress in Physics, 2011.</a>"
+  ],
+  "acceleration-radiation": [
+    "<a href=\"https://doi.org/10.1103/PhysRevD.7.2850\" target=\"_blank\" rel=\"noopener noreferrer\">S. A. Fulling, “Nonuniqueness of Canonical Field Quantization in Riemannian Space-Time,” Physical Review D, 1973.</a>",
+    "<a href=\"https://doi.org/10.1088/0305-4470/8/4/022\" target=\"_blank\" rel=\"noopener noreferrer\">P. C. W. Davies, “Scalar Production in Schwarzschild and Rindler Metrics,” Journal of Physics A, 1975.</a>",
+    "<a href=\"https://doi.org/10.1103/PhysRevD.14.870\" target=\"_blank\" rel=\"noopener noreferrer\">W. G. Unruh, “Notes on Black-Hole Evaporation,” Physical Review D, 1976.</a>",
+    "<a href=\"https://doi.org/10.1103/RevModPhys.80.787\" target=\"_blank\" rel=\"noopener noreferrer\">L. C. B. Crispino, A. Higuchi, and G. E. A. Matsas, “The Unruh Effect and Its Applications,” Reviews of Modern Physics, 2008.</a>"
+  ],
+  "anomalous-magnetic-moment": [
+    "<a href=\"https://doi.org/10.1103/PhysRev.73.416\" target=\"_blank\" rel=\"noopener noreferrer\">J. Schwinger, “On Quantum-Electrodynamics and the Magnetic Moment of the Electron,” Physical Review, 1948.</a>",
+    "<a href=\"https://doi.org/10.1016/j.physrep.2020.07.006\" target=\"_blank\" rel=\"noopener noreferrer\">T. Aoyama et al., “The Anomalous Magnetic Moment of the Muon in the Standard Model,” Physics Reports, 2020.</a>",
+    "<a href=\"https://doi.org/10.1103/PhysRevLett.126.141801\" target=\"_blank\" rel=\"noopener noreferrer\">B. Abi et al., “Measurement of the Positive Muon Anomalous Magnetic Moment to 0.46 ppm,” Physical Review Letters, 2021.</a>",
+    "<a href=\"https://doi.org/10.1038/s41586-021-03418-1\" target=\"_blank\" rel=\"noopener noreferrer\">S. Borsanyi et al., “Leading Hadronic Contribution to the Muon Magnetic Moment from Lattice QCD,” Nature, 2021.</a>"
+  ],
+  "fine-structure-constant": [
+    "<a href=\"https://doi.org/10.1103/PhysRevLett.75.4728\" target=\"_blank\" rel=\"noopener noreferrer\">T. Kinoshita, “Theory of the Anomalous Magnetic Moment of the Electron,” Physical Review Letters, 1995.</a>",
+    "<a href=\"https://doi.org/10.1126/science.aap7706\" target=\"_blank\" rel=\"noopener noreferrer\">R. H. Parker et al., “Measurement of the Fine-Structure Constant as a Test of the Standard Model,” Science, 2018.</a>",
+    "<a href=\"https://doi.org/10.1038/s41586-020-2964-7\" target=\"_blank\" rel=\"noopener noreferrer\">L. Morel et al., “Determination of the Fine-Structure Constant with an Accuracy of 81 Parts per Trillion,” Nature, 2020.</a>",
+    "<a href=\"https://doi.org/10.1103/RevModPhys.93.025010\" target=\"_blank\" rel=\"noopener noreferrer\">E. Tiesinga et al., “CODATA Recommended Values of the Fundamental Physical Constants: 2018,” Reviews of Modern Physics, 2021.</a>"
+  ],
+  "quantum-electrodynamics": [
+    "<a href=\"https://doi.org/10.1143/PTP.1.27\" target=\"_blank\" rel=\"noopener noreferrer\">S. Tomonaga, “On a Relativistically Invariant Formulation of the Quantum Theory of Wave Fields,” Progress of Theoretical Physics, 1946.</a>",
+    "<a href=\"https://doi.org/10.1103/PhysRev.74.1439\" target=\"_blank\" rel=\"noopener noreferrer\">J. Schwinger, “Quantum Electrodynamics. I,” Physical Review, 1948.</a>",
+    "<a href=\"https://doi.org/10.1103/PhysRev.76.769\" target=\"_blank\" rel=\"noopener noreferrer\">R. P. Feynman, “Space-Time Approach to Quantum Electrodynamics,” Physical Review, 1949.</a>",
+    "<a href=\"https://doi.org/10.1103/PhysRev.75.486\" target=\"_blank\" rel=\"noopener noreferrer\">F. J. Dyson, “The Radiation Theories of Tomonaga, Schwinger, and Feynman,” Physical Review, 1949.</a>"
+  ],
+  "quantum-chromodynamics": [
+    "<a href=\"https://doi.org/10.1103/PhysRevLett.30.1343\" target=\"_blank\" rel=\"noopener noreferrer\">D. J. Gross and F. Wilczek, “Ultraviolet Behavior of Non-Abelian Gauge Theories,” Physical Review Letters, 1973.</a>",
+    "<a href=\"https://doi.org/10.1103/PhysRevLett.30.1346\" target=\"_blank\" rel=\"noopener noreferrer\">H. D. Politzer, “Reliable Perturbative Results for Strong Interactions?” Physical Review Letters, 1973.</a>",
+    "<a href=\"https://doi.org/10.1103/PhysRevD.10.2445\" target=\"_blank\" rel=\"noopener noreferrer\">K. G. Wilson, “Confinement of Quarks,” Physical Review D, 1974.</a>",
+    "<a href=\"https://doi.org/10.1007/978-3-642-01850-3\" target=\"_blank\" rel=\"noopener noreferrer\">C. Gattringer and C. B. Lang, Quantum Chromodynamics on the Lattice, Springer, 2010.</a>"
+  ],
+  "electroweak-theory": [
+    "<a href=\"https://doi.org/10.1016/0029-5582(61)90469-2\" target=\"_blank\" rel=\"noopener noreferrer\">S. L. Glashow, “Partial-Symmetries of Weak Interactions,” Nuclear Physics, 1961.</a>",
+    "<a href=\"https://doi.org/10.1103/PhysRevLett.19.1264\" target=\"_blank\" rel=\"noopener noreferrer\">S. Weinberg, “A Model of Leptons,” Physical Review Letters, 1967.</a>",
+    "<a href=\"https://doi.org/10.1142/9789812795915_0034\" target=\"_blank\" rel=\"noopener noreferrer\">A. Salam, “Weak and Electromagnetic Interactions,” 1968.</a>",
+    "<a href=\"https://doi.org/10.1016/j.physletb.2012.08.020\" target=\"_blank\" rel=\"noopener noreferrer\">G. Aad et al., “Observation of a New Particle in the Search for the Standard Model Higgs Boson,” Physics Letters B, 2012.</a>"
+  ],
+  "proton-decay": [
+    "<a href=\"https://doi.org/10.1103/PhysRevLett.32.438\" target=\"_blank\" rel=\"noopener noreferrer\">H. Georgi and S. L. Glashow, “Unity of All Elementary-Particle Forces,” Physical Review Letters, 1974.</a>",
+    "<a href=\"https://doi.org/10.1103/PhysRevD.95.012004\" target=\"_blank\" rel=\"noopener noreferrer\">K. Abe et al., “Search for Proton Decay via p→e⁺π⁰ and p→μ⁺π⁰ in 0.31 Megaton·Years,” Physical Review D, 2017.</a>",
+    "<a href=\"https://doi.org/10.1103/PhysRevD.90.072005\" target=\"_blank\" rel=\"noopener noreferrer\">K. Abe et al., “Search for Proton Decay via p→νK⁺ Using 260 Kiloton·Year Data,” Physical Review D, 2014.</a>",
+    "<a href=\"https://doi.org/10.1016/j.physrep.2007.02.010\" target=\"_blank\" rel=\"noopener noreferrer\">P. Nath and P. Fileviez Pérez, “Proton Stability in Grand Unified Theories,” Physics Reports, 2007.</a>"
+  ],
+  "axion": [
+    "<a href=\"https://doi.org/10.1103/PhysRevLett.38.1440\" target=\"_blank\" rel=\"noopener noreferrer\">R. D. Peccei and H. R. Quinn, “CP Conservation in the Presence of Pseudoparticles,” Physical Review Letters, 1977.</a>",
+    "<a href=\"https://doi.org/10.1103/PhysRevLett.40.223\" target=\"_blank\" rel=\"noopener noreferrer\">S. Weinberg, “A New Light Boson?” Physical Review Letters, 1978.</a>",
+    "<a href=\"https://doi.org/10.1103/PhysRevLett.40.279\" target=\"_blank\" rel=\"noopener noreferrer\">F. Wilczek, “Problem of Strong P and T Invariance in the Presence of Instantons,” Physical Review Letters, 1978.</a>",
+    "<a href=\"https://doi.org/10.1103/PhysRevLett.51.1415\" target=\"_blank\" rel=\"noopener noreferrer\">P. Sikivie, “Experimental Tests of the Invisible Axion,” Physical Review Letters, 1983.</a>"
+  ],
+  "wimp": [
+    "<a href=\"https://doi.org/10.1016/0370-1573(95)00058-5\" target=\"_blank\" rel=\"noopener noreferrer\">G. Jungman, M. Kamionkowski, and K. Griest, “Supersymmetric Dark Matter,” Physics Reports, 1996.</a>",
+    "<a href=\"https://doi.org/10.1016/j.physrep.2004.08.031\" target=\"_blank\" rel=\"noopener noreferrer\">G. Bertone, D. Hooper, and J. Silk, “Particle Dark Matter,” Physics Reports, 2005.</a>",
+    "<a href=\"https://doi.org/10.1103/PhysRevLett.121.111302\" target=\"_blank\" rel=\"noopener noreferrer\">E. Aprile et al., “Dark Matter Search Results from a One Tonne×Year Exposure of XENON1T,” Physical Review Letters, 2018.</a>",
+    "<a href=\"https://doi.org/10.1103/PhysRevLett.131.041002\" target=\"_blank\" rel=\"noopener noreferrer\">J. Aalbers et al., “First Dark Matter Search Results from the LUX-ZEPLIN Experiment,” Physical Review Letters, 2023.</a>"
+  ],
+  "dark-energy-quantum": [
+    "<a href=\"https://doi.org/10.1086/300499\" target=\"_blank\" rel=\"noopener noreferrer\">A. G. Riess et al., “Observational Evidence from Supernovae for an Accelerating Universe,” Astronomical Journal, 1998.</a>",
+    "<a href=\"https://doi.org/10.1086/307221\" target=\"_blank\" rel=\"noopener noreferrer\">S. Perlmutter et al., “Measurements of Ω and Λ from 42 High-Redshift Supernovae,” Astrophysical Journal, 1999.</a>",
+    "<a href=\"https://doi.org/10.1103/RevModPhys.61.1\" target=\"_blank\" rel=\"noopener noreferrer\">S. Weinberg, “The Cosmological Constant Problem,” Reviews of Modern Physics, 1989.</a>",
+    "<a href=\"https://doi.org/10.1103/RevModPhys.75.559\" target=\"_blank\" rel=\"noopener noreferrer\">P. J. E. Peebles and B. Ratra, “The Cosmological Constant and Dark Energy,” Reviews of Modern Physics, 2003.</a>"
+  ],
+  "cosmic-inflation": [
+    "<a href=\"https://doi.org/10.1103/PhysRevD.23.347\" target=\"_blank\" rel=\"noopener noreferrer\">A. H. Guth, “Inflationary Universe: A Possible Solution to the Horizon and Flatness Problems,” Physical Review D, 1981.</a>",
+    "<a href=\"https://doi.org/10.1016/0370-2693(82)91219-9\" target=\"_blank\" rel=\"noopener noreferrer\">A. D. Linde, “A New Inflationary Universe Scenario,” Physics Letters B, 1982.</a>",
+    "<a href=\"https://ui.adsabs.harvard.edu/abs/1981JETPL..33..532M\" target=\"_blank\" rel=\"noopener noreferrer\">V. F. Mukhanov and G. V. Chibisov, “Quantum Fluctuations and a Nonsingular Universe,” JETP Letters, 1981.</a>",
+    "<a href=\"https://doi.org/10.1051/0004-6361/201833887\" target=\"_blank\" rel=\"noopener noreferrer\">Y. Akrami et al., “Planck 2018 Results. X. Constraints on Inflation,” Astronomy &amp; Astrophysics, 2020.</a>"
+  ],
+  "cosmic-microwave-background": [
+    "<a href=\"https://doi.org/10.1086/148307\" target=\"_blank\" rel=\"noopener noreferrer\">A. A. Penzias and R. W. Wilson, “A Measurement of Excess Antenna Temperature at 4080 Mc/s,” Astrophysical Journal, 1965.</a>",
+    "<a href=\"https://doi.org/10.1086/185717\" target=\"_blank\" rel=\"noopener noreferrer\">J. C. Mather et al., “A Preliminary Measurement of the Cosmic Microwave Background Spectrum by COBE,” Astrophysical Journal Letters, 1990.</a>",
+    "<a href=\"https://doi.org/10.1086/186504\" target=\"_blank\" rel=\"noopener noreferrer\">G. F. Smoot et al., “Structure in the COBE Differential Microwave Radiometer First-Year Maps,” Astrophysical Journal Letters, 1992.</a>",
+    "<a href=\"https://doi.org/10.1051/0004-6361/201833910\" target=\"_blank\" rel=\"noopener noreferrer\">N. Aghanim et al., “Planck 2018 Results. VI. Cosmological Parameters,” Astronomy &amp; Astrophysics, 2020.</a>"
+  ],
+  "wormhole": [
+    "<a href=\"https://doi.org/10.1103/PhysRev.48.73\" target=\"_blank\" rel=\"noopener noreferrer\">A. Einstein and N. Rosen, “The Particle Problem in the General Theory of Relativity,” Physical Review, 1935.</a>",
+    "<a href=\"https://doi.org/10.1119/1.15620\" target=\"_blank\" rel=\"noopener noreferrer\">M. S. Morris and K. S. Thorne, “Wormholes in Spacetime and Their Use for Interstellar Travel,” American Journal of Physics, 1988.</a>",
+    "<a href=\"https://doi.org/10.1103/PhysRevLett.61.1446\" target=\"_blank\" rel=\"noopener noreferrer\">M. S. Morris, K. S. Thorne, and U. Yurtsever, “Wormholes, Time Machines, and the Weak Energy Condition,” Physical Review Letters, 1988.</a>",
+    "<a href=\"https://doi.org/10.1002/prop.201300020\" target=\"_blank\" rel=\"noopener noreferrer\">J. Maldacena and L. Susskind, “Cool Horizons for Entangled Black Holes,” Fortschritte der Physik, 2013.</a>"
+  ],
+  "quantum-cosmology": [
+    "<a href=\"https://doi.org/10.1103/PhysRev.160.1113\" target=\"_blank\" rel=\"noopener noreferrer\">B. S. DeWitt, “Quantum Theory of Gravity. I. The Canonical Theory,” Physical Review, 1967.</a>",
+    "<a href=\"https://doi.org/10.1103/PhysRevD.28.2960\" target=\"_blank\" rel=\"noopener noreferrer\">J. B. Hartle and S. W. Hawking, “Wave Function of the Universe,” Physical Review D, 1983.</a>",
+    "<a href=\"https://doi.org/10.1103/PhysRevD.30.509\" target=\"_blank\" rel=\"noopener noreferrer\">A. Vilenkin, “Quantum Creation of Universes,” Physical Review D, 1984.</a>",
+    "<a href=\"https://doi.org/10.48550/arXiv.0804.0672\" target=\"_blank\" rel=\"noopener noreferrer\">C. Kiefer and B. Sandhöfer, “Quantum Cosmology,” 2008.</a>"
+  ],
+  "quantum-bounce": [
+    "<a href=\"https://doi.org/10.1103/PhysRevLett.86.5227\" target=\"_blank\" rel=\"noopener noreferrer\">M. Bojowald, “Absence of a Singularity in Loop Quantum Cosmology,” Physical Review Letters, 2001.</a>",
+    "<a href=\"https://doi.org/10.1103/PhysRevLett.96.141301\" target=\"_blank\" rel=\"noopener noreferrer\">A. Ashtekar, T. Pawlowski, and P. Singh, “Quantum Nature of the Big Bang,” Physical Review Letters, 2006.</a>",
+    "<a href=\"https://doi.org/10.1088/0264-9381/28/21/213001\" target=\"_blank\" rel=\"noopener noreferrer\">A. Ashtekar and P. Singh, “Loop Quantum Cosmology: A Status Report,” Classical and Quantum Gravity, 2011.</a>",
+    "<a href=\"https://doi.org/10.1007/s10701-016-0057-0\" target=\"_blank\" rel=\"noopener noreferrer\">R. Brandenberger and P. Peter, “Bouncing Cosmologies: Progress and Problems,” Foundations of Physics, 2017.</a>"
+  ],
+  "quantum-blockchain": [
+    "<a href=\"https://doi.org/10.1088/2058-9565/aabc6b\" target=\"_blank\" rel=\"noopener noreferrer\">E. O. Kiktenko et al., “Quantum-Secured Blockchain,” Quantum Science and Technology, 2018.</a>",
+    "<a href=\"https://doi.org/10.3390/quantum1010002\" target=\"_blank\" rel=\"noopener noreferrer\">D. Rajan and M. Visser, “Quantum Blockchain Using Entanglement in Time,” Quantum Reports, 2019.</a>",
+    "<a href=\"https://doi.org/10.1109/JSTSP.2018.2877512\" target=\"_blank\" rel=\"noopener noreferrer\">X. Sun et al., “Quantum-Secured Blockchain Based on Quantum Key Distribution,” IEEE Journal of Selected Topics in Signal Processing, 2018.</a>",
+    "<a href=\"https://doi.org/10.6028/NIST.IR.8413-upd1\" target=\"_blank\" rel=\"noopener noreferrer\">G. Alagic et al., “Status Report on the Third Round of the NIST Post-Quantum Cryptography Standardization Process,” NISTIR 8413, 2022.</a>"
+  ]
+}

@@ -1,0 +1,16 @@
+#!/usr/bin/env python3
+from pathlib import Path
+import subprocess,csv
+src=Path('image38-work/original'); out=Path('featured-images-final'); out.mkdir(exist_ok=True)
+# Duplicates 8457/8458 are intentionally excluded: already processed as articles 89/90.
+M={8468:(91,'cosmic-microwave-background','تابش زمینهٔ کیهانی و مسیر دریافت آن توسط ماهواره'),8469:(92,'wormhole','نمای مفهومی کرم‌چاله و اتصال دو ناحیه فضا–زمان'),8470:(93,'quantum-cosmology','روند مفهومی کیهان‌شناسی کوانتومی از جهان آغازین'),8471:(94,'quantum-bounce','جهش کوانتومی کیهان از انقباض به انبساط'),8472:(95,'quantum-blockchain','زنجیره بلوک‌های بلاک‌چین کوانتومی'),8473:(72,'quantum-viruses','تصویر مفهومی کوانتوم در ویروس‌ها'),8474:(112,'quantum-fiction','داستان علمی‌تخیلی کوانتومی و جهان‌های روایی'),8475:(111,'quantum-music','موسیقی کوانتومی و تبدیل داده کوانتومی به صدا'),8476:(113,'quantum-culture','فرهنگ کوانتومی در علم، هنر و جامعه'),8477:(114,'quantum-winter','زمستان کوانتومی و کاهش فعالیت فناوری'),8478:(116,'quantum-singularity','تکینگی کوانتومی در فضا–زمان'),8479:(54,'polariton','پولاریتون حاصل برهم‌کنش نور و ماده'),8480:(67,'quantum-engine-efficiency','بازده موتور کوانتومی'),8481:(226,'quantum-solipsism','سولیپسیسم کوانتومی و مسئله ناظر'),8482:(225,'quantum-pigeonhole','اصل لانه‌کبوتری کوانتومی'),8483:(224,'soliton','سالیتون و حفظ شکل موج هنگام انتشار'),8484:(223,'quantum-droplet','قطره کوانتومی خودبسته'),8485:(222,'fermi-gas','گاز فرمی و پرشدن ترازها تا انرژی فرمی'),8486:(221,'dipolar-gas','گاز دوقطبی و آرایش ذرات قطبی'),8488:(211,'quantum-lithography','لیتوگرافی کوانتومی و ایجاد الگوی ریز'),8489:(214,'quantum-fingerprinting','انگشت‌نگاری کوانتومی برای مقایسه داده‌ها'),8490:(215,'quantum-auction','مزایده کوانتومی با چند پیشنهاددهنده'),8491:(219,'quantum-dimer','دیمر کوانتومی و پیوند میان دو جایگاه'),8492:(203,'coherent-states','حالت همدوس و نمایش فضای فاز'),8493:(204,'fock-state','حالت فوک با تعداد مشخص کوانتوم'),8494:(205,'four-wave-mixing','فرایند چهارموجی در محیط غیرخطی'),8495:(206,'optical-parametric-oscillator','نوسانگر پارامتری نوری و تولید سیگنال و آیدلر'),8496:(207,'homodyne-detection','آشکارسازی هوموداین با سیگنال و نوسان‌ساز محلی'),8497:(208,'photon-counting','شمارش فوتون و توزیع تعداد رویدادها'),8498:(220,'nanowire','نانوسیم و ساختارهای نانومتری'),8499:(218,'dilution-refrigerator','یخچال رقیق‌سازی و مراحل دمایی آن'),8500:(209,'photon-blockade','انسداد فوتونی و عبور یک فوتون'),8501:(217,'cryogenic-electronics','الکترونیک سرد درون یخچال برودتی'),8502:(210,'slow-light','نور کند در محیط پاشنده'),8503:(216,'quantum-fpga','FPGA کوانتومی و کنترل بازپیکربندی‌پذیر'),8504:(213,'quantum-secure-direct-communication','ارتباط مستقیم امن کوانتومی میان فرستنده و گیرنده')}
+assert len(M)==36
+rows=[]
+for sid,(n,slug,alt) in M.items():
+ inp=src/f'100009{sid}.jpg'; dst=out/f'{slug}.webp'; assert inp.exists()
+ subprocess.run(['convert',str(inp),'-auto-orient','-resize','1200x675^','-gravity','center','-extent','1200x675','-strip','-quality','82',str(dst)],check=True)
+ rows.append((n,sid,slug,dst.name,alt,'1200x675'))
+rows.sort()
+with open(out/'manifest.csv','w',encoding='utf-8-sig',newline='') as f:
+ w=csv.writer(f);w.writerow(['article_number','source_id','slug','filename','alt_fa','dimensions']);w.writerows(rows)
+print('processed',len(rows),'excluded duplicates: 2')
