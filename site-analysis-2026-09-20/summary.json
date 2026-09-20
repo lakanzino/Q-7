@@ -1,0 +1,33 @@
+{
+  "articles_total": 311,
+  "published": 207,
+  "draft": 103,
+  "trash": 1,
+  "scientists_total": 56,
+  "scientists_published": 56,
+  "word_avg": 801.0,
+  "word_median": 747.0,
+  "word_min": 329,
+  "word_max": 4660,
+  "with_sources": 272,
+  "with_source_links": 242,
+  "without_source_links": 68,
+  "with_3_source_links": 211,
+  "featured": 301,
+  "featured_alt": 297,
+  "focus": 164,
+  "desc": 272,
+  "faq_schema": 122,
+  "traffic": {
+    "green": 5,
+    "red": 230,
+    "yellow": 75
+  },
+  "word_bands": {
+    "1500+": 20,
+    "<500": 128,
+    "500–899": 62,
+    "900–1499": 100
+  },
+  "duplicate_groups": 0
+}
