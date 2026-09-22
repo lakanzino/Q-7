@@ -7,10 +7,13 @@
   "seo_title": "کوانتوم چیست؟ تعریف ساده، تاریخچه و کاربردهای واقعی",
   "focus_keyword": "کوانتوم چیست",
   "source_url": "https://qpedia.ir/what-is-quantum/",
-  "rewrite_status": "completed_and_qa_checked",
+  "rewrite_status": "completed_qa_checked_and_general_reader_revised",
   "importer_batch": "001-005",
   "meta_description": "برای پاسخ به پرسش « کوانتوم چیست ؟» باید از نور چراغ، گرمای یک جسم و حرکت ذرات شروع کنیم؛ پدیده‌هایی که در نگاه روزمره پیوسته به نظر می‌رسند. مکانیک کوانتو",
   "rank_math_focus_keyword": "کوانتوم چیست",
   "rank_math_title": "کوانتوم چیست؟ تعریف ساده، تاریخچه و کاربردهای واقعی",
-  "rank_math_description": "برای پاسخ به پرسش « کوانتوم چیست ؟» باید از نور چراغ، گرمای یک جسم و حرکت ذرات شروع کنیم؛ پدیده‌هایی که در نگاه روزمره پیوسته به نظر می‌رسند. مکانیک کوانتو"
+  "rank_math_description": "برای پاسخ به پرسش « کوانتوم چیست ؟» باید از نور چراغ، گرمای یک جسم و حرکت ذرات شروع کنیم؛ پدیده‌هایی که در نگاه روزمره پیوسته به نظر می‌رسند. مکانیک کوانتو",
+  "general_reader_revision": true,
+  "analogy_rule_checked": true,
+  "comprehensive_importer_batch": "001-025"
 }
