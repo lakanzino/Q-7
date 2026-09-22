@@ -1,0 +1,1752 @@
+<?php
+/**
+ * Full SEO report exporter for Qpedia SEO Pro.
+ *
+ * @package QpediaSEO
+ */
+
+namespace QpediaSEO;
+
+if (!defined('ABSPATH')) {
+    exit;
+}
+
+/**
+ * Builds the dated report folder, writes CSV/JSON/HTML, and zips it to uploads.
+ */
+class Export {
+
+    /**
+     * Singleton instance.
+     *
+     * @var Export|null
+     */
+    private static $instance = null;
+
+    /**
+     * JSON encode flags.
+     *
+     * @var int
+     */
+    const JSON_FLAGS = 448; // JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES | JSON_PRETTY_PRINT
+
+    /**
+     * UTF-8 BOM.
+     *
+     * @var string
+     */
+    const BOM = "\xEF\xBB\xBF";
+
+    /**
+     * Site name.
+     *
+     * @var string
+     */
+    const SITE_NAME = 'Qpedia Farsi';
+
+    /**
+     * Get singleton instance.
+     *
+     * @return Export
+     */
+    public static function instance() {
+        if (null === self::$instance) {
+            self::$instance = new self();
+        }
+        return self::$instance;
+    }
+
+    /**
+     * Constructor.
+     */
+    public function __construct() {
+    }
+
+    /**
+     * Build the complete ZIP report.
+     *
+     * @return array|\WP_Error {path,url}
+     */
+    public function export_full_report() {
+        if (!class_exists('ZipArchive')) {
+            return new \WP_Error(
+                'zip_missing',
+                __('PHP ZipArchive is not available.', 'qpedia-seo-pro')
+            );
+        }
+
+        $scan = $this->ensure_scan();
+        if (is_wp_error($scan)) {
+            return $scan;
+        }
+
+        $bundle = $this->gather_bundle($scan);
+        $date   = date('Y-m-d');
+        $folder = 'qpedia-seo-report-' . $date;
+
+        $upload = wp_upload_dir();
+        if (!empty($upload['error'])) {
+            return new \WP_Error('upload_dir', $upload['error']);
+        }
+
+        $dest_dir = trailingslashit($upload['basedir']) . 'qpedia-seo-pro';
+        if (!wp_mkdir_p($dest_dir)) {
+            return new \WP_Error('mkdir', __('Could not create the export directory.', 'qpedia-seo-pro'));
+        }
+
+        $tmp = trailingslashit(get_temp_dir()) . $folder . '-' . wp_generate_password(8, false);
+        if (!wp_mkdir_p($tmp)) {
+            return new \WP_Error('tmp', __('Could not create a temporary folder.', 'qpedia-seo-pro'));
+        }
+
+        $sub = array('articles', 'scientists', 'taxonomy', 'images', 'links', 'schema', 'schema/sample-schemas', 'technical', 'recommendations');
+        foreach ($sub as $s) {
+            wp_mkdir_p($tmp . '/' . $s);
+        }
+
+        $ok = $this->write_all_files($tmp, $bundle);
+        if (is_wp_error($ok)) {
+            $this->rrmdir($tmp);
+            return $ok;
+        }
+
+        $zip_name = $folder . '.zip';
+        $zip_path = trailingslashit($dest_dir) . $zip_name;
+        if (file_exists($zip_path)) {
+            @unlink($zip_path);
+        }
+
+        $zip = new \ZipArchive();
+        $opened = $zip->open($zip_path, \ZipArchive::CREATE | \ZipArchive::OVERWRITE);
+        if (true !== $opened) {
+            $this->rrmdir($tmp);
+            return new \WP_Error('zip', __('Could not create the ZIP archive.', 'qpedia-seo-pro'));
+        }
+
+        $zip->addEmptyDir($folder);
+        $this->zip_add_dir($zip, $tmp, $folder);
+        $zip->close();
+        $this->rrmdir($tmp);
+
+        if (!file_exists($zip_path)) {
+            return new \WP_Error('zip_write', __('ZIP file was not written.', 'qpedia-seo-pro'));
+        }
+
+        return array(
+            'path' => $zip_path,
+            'url'  => trailingslashit($upload['baseurl']) . 'qpedia-seo-pro/' . rawurlencode($zip_name),
+        );
+    }
+
+    /**
+     * Consistent HTML chrome: navy header, teal accents, RTL, Vazirmatn.
+     *
+     * @param string $title Title.
+     * @param string $body  Inner HTML.
+     * @return string
+     */
+    public function html_wrap($title, $body) {
+        $css = $this->report_css();
+        $html  = '<!DOCTYPE html><html lang="fa" dir="rtl"><head><meta charset="utf-8" />';
+        $html .= '<meta name="viewport" content="width=device-width, initial-scale=1" />';
+        $html .= '<title>' . esc_html($title) . ' | ' . esc_html(self::SITE_NAME) . '</title>';
+        $html .= '<link rel="preconnect" href="https://fonts.googleapis.com" />';
+        $html .= '<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />';
+        $html .= '<link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;600;700;800&display=swap" rel="stylesheet" />';
+        $html .= '<style>' . $css . '</style></head><body>';
+        $html .= '<header class="qpedia-hero"><div class="wrap">';
+        $html .= '<div class="eyebrow">Qpedia SEO Pro</div>';
+        $html .= '<h1>' . esc_html($title) . '</h1>';
+        $html .= '<div class="meta">' . esc_html(self::SITE_NAME) . ' · qpedia.ir · ' . esc_html(date_i18n('Y/m/d H:i')) . '</div>';
+        $html .= '</div></header><main class="wrap">' . $body . '</main>';
+        $html .= '<footer><div class="wrap">' . esc_html__('Report generated by Qpedia SEO Pro — Rank Math meta not overwritten.', 'qpedia-seo-pro') . '</div></footer>';
+        $html .= '</body></html>';
+        return $html;
+    }
+
+    /**
+     * Escape a CSV field and join a row.
+     *
+     * @param array $fields Fields.
+     * @return string
+     */
+    public function csv_row($fields) {
+        $out = array();
+        foreach ((array) $fields as $f) {
+            if (is_array($f) || is_object($f)) {
+                $f = wp_json_encode($f, JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES);
+            }
+            $f = (string) $f;
+            $f = str_replace('"', '""', $f);
+            $out[] = '"' . $f . '"';
+        }
+        return implode(',', $out);
+    }
+
+    /**
+     * Load scan data, running Collector + Analyzer when needed.
+     *
+     * @return array|\WP_Error
+     */
+    private function ensure_scan() {
+        $data = $this->read_scan_store();
+        if ($this->scan_has_content($data)) {
+            return $data;
+        }
+
+        if (class_exists(__NAMESPACE__ . '\\Collector')) {
+            $collector = method_exists(Collector::class, 'instance') ? Collector::instance() : new Collector();
+            foreach (array('collect_all', 'run', 'scan', 'get_data', 'get_scan', 'collect') as $method) {
+                if (is_object($collector) && method_exists($collector, $method)) {
+                    $got = $collector->{$method}();
+                    if ($this->scan_has_content($got)) {
+                        $data = $got;
+                        break;
+                    }
+                }
+            }
+            if (class_exists(__NAMESPACE__ . '\\Analyzer') && $this->scan_has_content($data)) {
+                $analyzer = method_exists(Analyzer::class, 'instance') ? Analyzer::instance() : new Analyzer();
+                foreach (array('analyze_all', 'run', 'analyze') as $method) {
+                    if (is_object($analyzer) && method_exists($analyzer, $method)) {
+                        $analyzed = $analyzer->{$method}($data);
+                        if (is_array($analyzed)) {
+                            if (!is_array($data)) {
+                                $data = array();
+                            }
+                            $data['analysis'] = $analyzed;
+                        }
+                        break;
+                    }
+                }
+            }
+        }
+
+        if ($this->scan_has_content($data)) {
+            return $data;
+        }
+
+        // Other audit classes query WordPress directly — allow a live export.
+        $live = array(
+            'source'       => 'live',
+            'generated_at' => current_time('mysql'),
+            'articles'     => array(),
+            'scientists'   => array(),
+            'pages'        => array(),
+            'images'       => array(),
+            'terms'        => array(),
+        );
+        if (class_exists(__NAMESPACE__ . '\\Collector')) {
+            return $live;
+        }
+        // Standalone: still produce a report from WP queries inside sibling classes.
+        return $live;
+    }
+
+    /**
+     * Stored scan from transients / options.
+     *
+     * @return array
+     */
+    private function read_scan_store() {
+        $keys = array(
+            'qpedia_seo_pro_scan',
+            'qpedia_seo_pro_scan_data',
+            'qpedia_seo_scan',
+            'qpedia_collector_data',
+        );
+        foreach ($keys as $key) {
+            $t = get_transient($key);
+            if ($this->scan_has_content($t)) {
+                return $t;
+            }
+            $o = get_option($key, false);
+            if ($this->scan_has_content($o)) {
+                return $o;
+            }
+        }
+        if (class_exists(__NAMESPACE__ . '\\Collector') && method_exists(Collector::class, 'instance')) {
+            $c = Collector::instance();
+            foreach (array('get_data', 'get_scan', 'get_results') as $m) {
+                if (is_object($c) && method_exists($c, $m)) {
+                    $d = $c->{$m}();
+                    if ($this->scan_has_content($d)) {
+                        return $d;
+                    }
+                }
+            }
+        }
+        return array();
+    }
+
+    /**
+     * Whether scan looks populated.
+     *
+     * @param mixed $data Data.
+     * @return bool
+     */
+    private function scan_has_content($data) {
+        if (!is_array($data) || empty($data)) {
+            return false;
+        }
+        foreach (array('articles', 'scientists', 'images', 'terms', 'categories', 'pages') as $k) {
+            if (!empty($data[$k]) && is_array($data[$k])) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    /**
+     * Run every module and assemble a bundle.
+     *
+     * @param array $scan Scan.
+     * @return array
+     */
+    private function gather_bundle($scan) {
+        $meta   = class_exists(__NAMESPACE__ . '\\Meta_Tags') ? Meta_Tags::instance() : null;
+        $links  = class_exists(__NAMESPACE__ . '\\Internal_Links') ? Internal_Links::instance() : null;
+        $content = class_exists(__NAMESPACE__ . '\\Content_Audit') ? Content_Audit::instance() : null;
+        $sci    = class_exists(__NAMESPACE__ . '\\Scientist_SEO') ? Scientist_SEO::instance() : null;
+        $tax    = class_exists(__NAMESPACE__ . '\\Taxonomy_SEO') ? Taxonomy_SEO::instance() : null;
+        $img    = class_exists(__NAMESPACE__ . '\\Image_Audit') ? Image_Audit::instance() : null;
+        $schema = class_exists(__NAMESPACE__ . '\\Schema') ? Schema::instance() : null;
+        $smap   = class_exists(__NAMESPACE__ . '\\Sitemap') ? Sitemap::instance() : null;
+        $robots = class_exists(__NAMESPACE__ . '\\Robots') ? Robots::instance() : null;
+        $perf   = class_exists(__NAMESPACE__ . '\\Performance') ? Performance::instance() : null;
+
+        $graph = $links ? $links->scan_all_internal_links($scan) : array('nodes' => array(), 'edges' => array(), 'stats' => array());
+
+        $articles_meta = $meta ? $meta->audit_meta_tags($scan) : array('items' => array(), 'summary' => array());
+        $conflicts     = $meta ? $meta->detect_conflicts($scan) : array('conflicts' => array(), 'legacy' => array());
+        $missing_meta  = $meta ? $meta->generate_missing_meta($scan, false) : array('items' => array());
+
+        $thin     = $content ? $content->audit_thin_content($scan) : array();
+        $dup_t    = $content ? $content->audit_duplicate_titles($scan) : array();
+        $dup_d    = $content ? $content->audit_duplicate_descriptions($scan) : array();
+        $cannibal = $content ? $content->audit_keyword_cannibalization($scan) : array();
+        $heads    = $content ? $content->audit_heading_structure($scan) : array();
+        $read     = $content ? $content->audit_readability_persian($scan) : array();
+        $drafts   = $content ? $content->audit_draft_articles() : array();
+
+        $sci_comp  = $sci ? $sci->completeness_check($scan) : array();
+        $sci_xref  = $sci ? $sci->cross_reference($scan) : array();
+        $sci_schema = $sci ? $sci->schema_completeness($scan) : array();
+
+        $cats = $tax ? $tax->audit_categories($scan) : array();
+        $tags = $tax ? $tax->audit_tags($scan) : array();
+        $tree = $tax ? $tax->taxonomy_hierarchy($scan) : array();
+
+        $images   = $img ? $img->audit_all_images($scan) : array('items' => array(), 'summary' => array());
+        $no_thumb = $img ? $img->find_missing_thumbnails() : array('items' => array());
+        $oversize = $img ? $img->find_oversized_images($scan) : array('items' => array());
+
+        $orphans = $links ? $links->find_orphan_pages($graph) : array('items' => array());
+        $opps    = $links ? $links->find_link_opportunities($graph, 250) : array('items' => array());
+        $anchors = $links ? $links->analyze_anchor_texts($graph) : array();
+        $dist    = $links ? $links->link_distribution($graph) : array();
+
+        $samples     = $schema ? $schema->sample_schemas() : array();
+        $schema_audit = $schema ? $schema->audit_generated(20) : array();
+        $website     = $schema ? $schema->website_schema() : array();
+
+        $sitemap_audit = $smap ? $smap->audit_sitemaps() : array();
+        $sitemap_opt   = $smap ? $smap->generate_optimal_sitemap() : array();
+        $robots_audit  = $robots ? $robots->audit_robots() : array();
+        $crawl         = $robots ? $robots->audit_crawlability() : array();
+        $perf_audit    = $perf ? $perf->audit() : array();
+
+        $article_rows = $this->article_rows($scan, $articles_meta, $thin);
+        $scientist_rows = $this->scientist_rows($sci_comp);
+
+        $site_score = $this->site_score($article_rows, $sci_comp, $cats, $images);
+        $actions    = $this->priority_actions($thin, $orphans, $images, $cats, $cannibal, $conflicts, $sitemap_audit, $robots_audit, $no_thumb, $drafts);
+        $calendar   = $this->content_calendar($drafts, $cats);
+
+        return array(
+            'generated_at'    => current_time('mysql'),
+            'scan'            => $scan,
+            'site_score'      => $site_score,
+            'articles'        => $article_rows,
+            'articles_meta'   => $articles_meta,
+            'missing_meta'    => $missing_meta,
+            'scientists'      => $scientist_rows,
+            'scientist_comp'  => $sci_comp,
+            'scientist_xref'  => $sci_xref,
+            'scientist_schema'=> $sci_schema,
+            'thin'            => $thin,
+            'dup_titles'      => $dup_t,
+            'dup_desc'        => $dup_d,
+            'cannibal'        => $cannibal,
+            'headings'        => $heads,
+            'readability'     => $read,
+            'drafts'          => $drafts,
+            'categories'      => $cats,
+            'tags'            => $tags,
+            'hierarchy'       => $tree,
+            'images'          => $images,
+            'missing_thumbs'  => $no_thumb,
+            'oversized'       => $oversize,
+            'graph'           => $graph,
+            'orphans'         => $orphans,
+            'opportunities'   => $opps,
+            'anchors'         => $anchors,
+            'distribution'    => $dist,
+            'schema_samples'  => $samples,
+            'schema_audit'    => $schema_audit,
+            'website_schema'  => $website,
+            'sitemap'         => $sitemap_audit,
+            'sitemap_optimal' => $sitemap_opt,
+            'robots'          => $robots_audit,
+            'crawl'           => $crawl,
+            'conflicts'       => $conflicts,
+            'performance'     => $perf_audit,
+            'actions'         => $actions,
+            'calendar'        => $calendar,
+        );
+    }
+
+    /**
+     * Write every file in the spec tree.
+     *
+     * @param string $tmp    Temp root.
+     * @param array  $bundle Data.
+     * @return true|\WP_Error
+     */
+    private function write_all_files($tmp, $bundle) {
+        $writes = array();
+
+        $writes[] = $this->put_json($tmp . '/summary.json', $this->summary_json($bundle));
+        $writes[] = $this->put($tmp . '/summary.html', $this->html_wrap(__('SEO Summary Report', 'qpedia-seo-pro'), $this->html_summary($bundle)));
+
+        $writes[] = $this->put($tmp . '/articles/articles-all.csv', $this->csv_articles_all($bundle));
+        $writes[] = $this->put($tmp . '/articles/articles-issues.csv', $this->csv_articles_issues($bundle));
+        $writes[] = $this->put_json($tmp . '/articles/articles-scores.json', $this->articles_scores_json($bundle));
+        $writes[] = $this->put($tmp . '/articles/articles-detail.html', $this->html_wrap(__('Articles Report', 'qpedia-seo-pro'), $this->html_articles($bundle)));
+
+        $writes[] = $this->put($tmp . '/scientists/scientists-all.csv', $this->csv_scientists_all($bundle));
+        $writes[] = $this->put($tmp . '/scientists/scientists-issues.csv', $this->csv_scientists_issues($bundle));
+        $writes[] = $this->put_json($tmp . '/scientists/scientists-completeness.json', isset($bundle['scientist_comp']) ? $bundle['scientist_comp'] : array());
+        $writes[] = $this->put($tmp . '/scientists/scientists-detail.html', $this->html_wrap(__('Scientists Report', 'qpedia-seo-pro'), $this->html_scientists($bundle)));
+
+        $writes[] = $this->put($tmp . '/taxonomy/categories.csv', $this->csv_categories($bundle));
+        $writes[] = $this->put($tmp . '/taxonomy/tags.csv', $this->csv_tags($bundle));
+        $writes[] = $this->put_json($tmp . '/taxonomy/categories-issues.json', $this->categories_issues_json($bundle));
+        $writes[] = $this->put($tmp . '/taxonomy/taxonomy-detail.html', $this->html_wrap(__('Categories and Tags Report', 'qpedia-seo-pro'), $this->html_taxonomy($bundle)));
+
+        $writes[] = $this->put($tmp . '/images/images-all.csv', $this->csv_images_all($bundle));
+        $writes[] = $this->put($tmp . '/images/images-missing-alt.csv', $this->csv_images_missing_alt($bundle));
+        $writes[] = $this->put($tmp . '/images/images-oversized.csv', $this->csv_images_oversized($bundle));
+        $writes[] = $this->put($tmp . '/images/images-detail.html', $this->html_wrap(__('Images Report', 'qpedia-seo-pro'), $this->html_images($bundle)));
+
+        $writes[] = $this->put_json($tmp . '/links/internal-links-map.json', $this->links_map_json($bundle));
+        $writes[] = $this->put($tmp . '/links/orphan-pages.csv', $this->csv_orphans($bundle));
+        $writes[] = $this->put($tmp . '/links/link-opportunities.csv', $this->csv_opportunities($bundle));
+        $writes[] = $this->put($tmp . '/links/links-detail.html', $this->html_wrap(__('Internal Links Report', 'qpedia-seo-pro'), $this->html_links($bundle)));
+
+        $writes[] = $this->put_json($tmp . '/schema/schema-audit.json', isset($bundle['schema_audit']) ? $bundle['schema_audit'] : array());
+        $writes[] = $this->put_json($tmp . '/schema/sample-schemas/article-sample.json', isset($bundle['schema_samples']['article']) ? $bundle['schema_samples']['article'] : array());
+        $writes[] = $this->put_json($tmp . '/schema/sample-schemas/scientist-sample.json', isset($bundle['schema_samples']['scientist']) ? $bundle['schema_samples']['scientist'] : array());
+        $writes[] = $this->put_json($tmp . '/schema/sample-schemas/category-sample.json', isset($bundle['schema_samples']['category']) ? $bundle['schema_samples']['category'] : array());
+        $writes[] = $this->put($tmp . '/schema/schema-detail.html', $this->html_wrap(__('Schema Report', 'qpedia-seo-pro'), $this->html_schema($bundle)));
+
+        $writes[] = $this->put_json($tmp . '/technical/sitemap-audit.json', isset($bundle['sitemap']) ? $bundle['sitemap'] : array());
+        $writes[] = $this->put_json($tmp . '/technical/robots-audit.json', isset($bundle['robots']) ? $bundle['robots'] : array());
+        $writes[] = $this->put($tmp . '/technical/meta-conflicts.csv', $this->csv_conflicts($bundle));
+        $writes[] = $this->put($tmp . '/technical/redirects.csv', $this->csv_redirects($bundle));
+        $writes[] = $this->put($tmp . '/technical/technical-detail.html', $this->html_wrap(__('Technical Report', 'qpedia-seo-pro'), $this->html_technical($bundle)));
+
+        $writes[] = $this->put_json($tmp . '/recommendations/priority-actions.json', isset($bundle['actions']) ? $bundle['actions'] : array());
+        $writes[] = $this->put($tmp . '/recommendations/priority-actions.html', $this->html_wrap(__('Priority Actions', 'qpedia-seo-pro'), $this->html_actions($bundle)));
+        $writes[] = $this->put_json($tmp . '/recommendations/content-calendar.json', isset($bundle['calendar']) ? $bundle['calendar'] : array());
+
+        foreach ($writes as $w) {
+            if (is_wp_error($w)) {
+                return $w;
+            }
+        }
+        return true;
+    }
+
+    /**
+     * Flatten articles for CSV/HTML.
+     *
+     * @param array $scan Scan.
+     * @param array $meta Meta audit.
+     * @param array $thin Thin audit.
+     * @return array
+     */
+    private function article_rows($scan, $meta, $thin) {
+        $thin_map = array();
+        if (!empty($thin['thin'])) {
+            foreach ($thin['thin'] as $r) {
+                $thin_map[(int) $r['id']] = 'thin';
+            }
+        }
+        if (!empty($thin['needs_boost'])) {
+            foreach ($thin['needs_boost'] as $r) {
+                $thin_map[(int) $r['id']] = 'needs_boost';
+            }
+        }
+        $meta_map = array();
+        if (!empty($meta['items'])) {
+            foreach ($meta['items'] as $r) {
+                $meta_map[(int) $r['post_id']] = $r;
+            }
+        }
+
+        $posts = get_posts(
+            array(
+                'post_type'      => 'quantum_article',
+                'post_status'    => 'publish',
+                'posts_per_page' => -1,
+                'orderby'        => 'title',
+                'order'          => 'ASC',
+            )
+        );
+
+        $rows = array();
+        foreach ($posts as $post) {
+            $id     = (int) $post->ID;
+            $score  = $this->analyze_one('article', $id);
+            $issues = array();
+            if (isset($thin_map[$id])) {
+                $issues[] = $thin_map[$id];
+            }
+            if (isset($meta_map[$id]['issues'])) {
+                $issues = array_merge($issues, $meta_map[$id]['issues']);
+            }
+            $kw = (string) get_post_meta($id, 'rank_math_focus_keyword', true);
+            $terms = get_the_terms($id, 'quantum_category');
+            $cats  = array();
+            if (!is_wp_error($terms) && $terms) {
+                foreach ($terms as $t) {
+                    $cats[] = $t->name;
+                }
+            }
+            $rows[] = array(
+                'id'          => $id,
+                'title'       => $post->post_title,
+                'slug'        => $post->post_name,
+                'url'         => get_permalink($post),
+                'word_count'  => $this->word_count($post->post_content),
+                'seo_title'   => (string) get_post_meta($id, 'rank_math_title', true),
+                'description' => (string) get_post_meta($id, 'rank_math_description', true),
+                'keyword'     => $kw,
+                'categories'  => implode(', ', $cats),
+                'modified'    => $post->post_modified,
+                'score'       => $score['score'],
+                'grade'       => $score['grade'],
+                'issues'      => $issues,
+                'issue_count' => count($issues),
+            );
+        }
+        return $rows;
+    }
+
+    /**
+     * Flatten scientists from completeness check.
+     *
+     * @param array $comp Completeness.
+     * @return array
+     */
+    private function scientist_rows($comp) {
+        $rows = array();
+        if (empty($comp['items']) || !is_array($comp['items'])) {
+            $posts = get_posts(
+                array(
+                    'post_type'      => 'quantum_scientist',
+                    'post_status'    => 'publish',
+                    'posts_per_page' => -1,
+                )
+            );
+            foreach ($posts as $post) {
+                $score = $this->analyze_one('scientist', $post->ID);
+                $rows[] = array(
+                    'id'         => (int) $post->ID,
+                    'title'      => $post->post_title,
+                    'url'        => get_permalink($post),
+                    'percent'    => $score['score'],
+                    'grade'      => $score['grade'],
+                    'complete'   => false,
+                    'checklist'  => array(),
+                    'word_count' => $this->word_count($post->post_content),
+                    'issues'     => array(),
+                );
+            }
+            return $rows;
+        }
+        foreach ($comp['items'] as $item) {
+            $issues = array();
+            if (!empty($item['checklist']) && is_array($item['checklist'])) {
+                foreach ($item['checklist'] as $k => $ok) {
+                    if (!$ok) {
+                        $issues[] = $k;
+                    }
+                }
+            }
+            $rows[] = array(
+                'id'         => (int) $item['id'],
+                'title'      => $item['title'],
+                'url'        => isset($item['url']) ? $item['url'] : '',
+                'percent'    => isset($item['percent']) ? $item['percent'] : 0,
+                'grade'      => $this->grade(isset($item['percent']) ? $item['percent'] : 0),
+                'complete'   => !empty($item['complete']),
+                'checklist'  => isset($item['checklist']) ? $item['checklist'] : array(),
+                'word_count' => isset($item['word_count']) ? $item['word_count'] : 0,
+                'issues'     => $issues,
+            );
+        }
+        return $rows;
+    }
+
+    /**
+     * Analyzer hook with local fallback.
+     *
+     * @param string $type article|scientist.
+     * @param int    $id   Post ID.
+     * @return array
+     */
+    private function analyze_one($type, $id) {
+        if (class_exists(__NAMESPACE__ . '\\Analyzer')) {
+            $a = method_exists(Analyzer::class, 'instance') ? Analyzer::instance() : null;
+            $method = $type === 'scientist' ? 'analyze_scientist' : 'analyze_article';
+            if (is_object($a) && method_exists($a, $method)) {
+                $res = $a->{$method}($id);
+                if (is_array($res) && isset($res['score'])) {
+                    if (empty($res['grade'])) {
+                        $res['grade'] = $this->grade((int) $res['score']);
+                    }
+                    return $res;
+                }
+            }
+        }
+        return array(
+            'score' => 0,
+            'grade' => $this->grade(0),
+        );
+    }
+
+    /**
+     * Weighted site score.
+     *
+     * @param array $articles Articles.
+     * @param array $sci      Scientist completeness.
+     * @param array $cats     Categories.
+     * @param array $images   Images.
+     * @return array
+     */
+    private function site_score($articles, $sci, $cats, $images) {
+        if (class_exists(__NAMESPACE__ . '\\Analyzer')) {
+            $a = method_exists(Analyzer::class, 'instance') ? Analyzer::instance() : null;
+            if (is_object($a) && method_exists($a, 'get_site_score')) {
+                $s = $a->get_site_score();
+                if (is_numeric($s)) {
+                    $s = array('score' => (float) $s);
+                }
+                if (is_array($s) && isset($s['score'])) {
+                    if (empty($s['grade'])) {
+                        $s['grade'] = $this->grade((int) $s['score']);
+                    }
+                    return $s;
+                }
+            }
+        }
+
+        $art_sum = 0;
+        $art_n   = 0;
+        foreach ($articles as $r) {
+            $art_sum += (int) $r['score'];
+            $art_n++;
+        }
+        $art_avg = $art_n ? $art_sum / $art_n : 0;
+        $sci_avg = isset($sci['totals']['avg_percent']) ? (float) $sci['totals']['avg_percent'] : 0;
+
+        $cat_items = isset($cats['items']) ? $cats['items'] : array();
+        $cat_ok    = 0;
+        $cat_n     = count($cat_items);
+        foreach ($cat_items as $c) {
+            if (empty($c['issues'])) {
+                $cat_ok++;
+            }
+        }
+        $cat_avg = $cat_n ? ($cat_ok / $cat_n) * 100 : 0;
+
+        $img_sum = isset($images['summary']) ? $images['summary'] : array();
+        $img_n   = isset($img_sum['total']) ? (int) $img_sum['total'] : 0;
+        $img_bad = (isset($img_sum['missing_alt']) ? (int) $img_sum['missing_alt'] : 0) + (isset($img_sum['oversized']) ? (int) $img_sum['oversized'] : 0);
+        $img_avg = $img_n ? max(0, 100 - ($img_bad / $img_n) * 100) : 0;
+
+        $pages_avg = 70;
+        $score     = ($art_avg * 0.50) + ($sci_avg * 0.20) + ($cat_avg * 0.15) + ($pages_avg * 0.05) + ($img_avg * 0.10);
+        $score     = (int) round($score);
+
+        return array(
+            'score'      => $score,
+            'grade'      => $this->grade($score),
+            'breakdown'  => array(
+                'articles'   => round($art_avg, 1),
+                'scientists' => round($sci_avg, 1),
+                'terms'      => round($cat_avg, 1),
+                'pages'      => $pages_avg,
+                'images'     => round($img_avg, 1),
+            ),
+        );
+    }
+
+    /**
+     * Letter grade.
+     *
+     * @param int $score Score.
+     * @return string
+     */
+    private function grade($score) {
+        if (class_exists(__NAMESPACE__ . '\\Core') && method_exists(Core::class, 'grade')) {
+            return (string) Core::grade($score);
+        }
+        $score = (int) $score;
+        if ($score >= 90) {
+            return 'A';
+        }
+        if ($score >= 70) {
+            return 'B';
+        }
+        if ($score >= 50) {
+            return 'C';
+        }
+        if ($score >= 30) {
+            return 'D';
+        }
+        return 'F';
+    }
+
+    /**
+     * Build prioritized action list.
+     *
+     * @return array
+     */
+    private function priority_actions() {
+        $args = func_get_args();
+        list($thin, $orphans, $images, $cats, $cannibal, $conflicts, $sitemap, $robots, $no_thumb, $drafts) = array_pad($args, 10, array());
+
+        $actions = array();
+        $add     = function ($sev, $area, $title, $detail, $count = 0) use (&$actions) {
+            $actions[] = array(
+                'severity' => $sev,
+                'area'     => $area,
+                'title'    => $title,
+                'detail'   => $detail,
+                'count'    => (int) $count,
+            );
+        };
+
+        if (!empty($thin['thin_count'])) {
+            $add('critical', 'content', __('Thin content (less than 300 words)', 'qpedia-seo-pro'), __('Expand articles under 300 words.', 'qpedia-seo-pro'), $thin['thin_count']);
+        }
+        if (!empty($no_thumb['count'])) {
+            $add('high', 'images', __('Missing featured image', 'qpedia-seo-pro'), __('Add featured images for articles and scientists without one.', 'qpedia-seo-pro'), $no_thumb['count']);
+        }
+        if (!empty($images['summary']['missing_alt'])) {
+            $add('high', 'images', __('Missing alt text', 'qpedia-seo-pro'), __('Write meaningful alt text for images without alt.', 'qpedia-seo-pro'), $images['summary']['missing_alt']);
+        }
+        if (!empty($orphans['count'])) {
+            $add('high', 'links', __('Orphan pages', 'qpedia-seo-pro'), __('Add at least one internal link to each orphan page.', 'qpedia-seo-pro'), $orphans['count']);
+        }
+        if (!empty($cannibal['count'])) {
+            $add('high', 'content', __('Keyword cannibalization', 'qpedia-seo-pro'), __('Split or merge duplicate keywords between articles.', 'qpedia-seo-pro'), $cannibal['count']);
+        }
+        if (!empty($cats['summary']['persian_slug'])) {
+            $add('medium', 'taxonomy', __('Persian category slug', 'qpedia-seo-pro'), __('Change Persian quantum_category slugs to Latin kebab-case.', 'qpedia-seo-pro'), $cats['summary']['persian_slug']);
+        }
+        if (!empty($cats['summary']['missing_desc'])) {
+            $add('medium', 'taxonomy', __('Empty category description', 'qpedia-seo-pro'), __('Write at least 100-word description for /topic/ archives.', 'qpedia-seo-pro'), $cats['summary']['missing_desc']);
+        }
+        if (!empty($conflicts['conflict_count'])) {
+            $add('medium', 'meta', __('Rank Math / Yoast / Qpedia meta conflict', 'qpedia-seo-pro'), __('Remove legacy meta after backup. Do not overwrite Rank Math.', 'qpedia-seo-pro'), $conflicts['conflict_count']);
+        }
+        if (!empty($thin['needs_boost_count'])) {
+            $add('medium', 'content', __('Articles needing boost', 'qpedia-seo-pro'), __('Expand articles under 800 words to target 1500.', 'qpedia-seo-pro'), $thin['needs_boost_count']);
+        }
+        if (!empty($images['summary']['oversized'])) {
+            $add('medium', 'images', __('Images heavier than 200KB', 'qpedia-seo-pro'), __('Compress WebP.', 'qpedia-seo-pro'), $images['summary']['oversized']);
+        }
+        if (!empty($sitemap['counts']['missing'])) {
+            $add('high', 'technical', __('URL missing in sitemap', 'qpedia-seo-pro'), __('Add published URLs to sitemap.', 'qpedia-seo-pro'), $sitemap['counts']['missing']);
+        }
+        if (!empty($robots['issues'])) {
+            $crit = 0;
+            foreach ($robots['issues'] as $iss) {
+                if (isset($iss['severity']) && $iss['severity'] === 'critical') {
+                    $crit++;
+                }
+            }
+            if ($crit) {
+                $add('critical', 'technical', __('Critical robots.txt issue', 'qpedia-seo-pro'), __('Check suggested file in technical report.', 'qpedia-seo-pro'), $crit);
+            }
+        }
+        if (!empty($drafts['count'])) {
+            $add('low', 'content', __('Drafts awaiting publish', 'qpedia-seo-pro'), __('Follow content calendar to complete valuable drafts.', 'qpedia-seo-pro'), $drafts['count']);
+        }
+
+        $order = array('critical' => 0, 'high' => 1, 'medium' => 2, 'low' => 3);
+        usort(
+            $actions,
+            function ($a, $b) use ($order) {
+                $ia = isset($order[$a['severity']]) ? $order[$a['severity']] : 9;
+                $ib = isset($order[$b['severity']]) ? $order[$b['severity']] : 9;
+                if ($ia === $ib) {
+                    return $b['count'] - $a['count'];
+                }
+                return $ia - $ib;
+            }
+        );
+
+        $grouped = array(
+            'critical' => array(),
+            'high'     => array(),
+            'medium'   => array(),
+            'low'      => array(),
+        );
+        foreach ($actions as $a) {
+            $grouped[$a['severity']][] = $a;
+        }
+        return array(
+            'generated_at' => current_time('mysql'),
+            'items'        => $actions,
+            'by_severity'  => $grouped,
+        );
+    }
+
+    /**
+     * 12-week calendar from ranked drafts.
+     *
+     * @param array $drafts Drafts audit.
+     * @param array $cats   Categories.
+     * @return array
+     */
+    private function content_calendar($drafts, $cats) {
+        $items = isset($drafts['items']) ? $drafts['items'] : array();
+        $weeks = array();
+        $per   = 2;
+        $i     = 0;
+        $week  = 1;
+        $start = strtotime(current_time('Y-m-d'));
+        foreach ($items as $d) {
+            if ($week > 12) {
+                break;
+            }
+            if (!isset($weeks[$week])) {
+                $weeks[$week] = array(
+                    'week'     => $week,
+                    'start'    => date('Y-m-d', $start + (($week - 1) * 7 * DAY_IN_SECONDS)),
+                    'items'    => array(),
+                );
+            }
+            $weeks[$week]['items'][] = array(
+                'id'     => $d['id'],
+                'title'  => $d['title'],
+                'worth'  => $d['worth'],
+                'reason' => $d['reason'],
+                'action' => __('Complete and publish draft', 'qpedia-seo-pro'),
+            );
+            $i++;
+            if ($i % $per === 0) {
+                $week++;
+            }
+        }
+
+        $empty_cats = array();
+        if (!empty($cats['items'])) {
+            foreach ($cats['items'] as $c) {
+                if (!empty($c['count']) && (int) $c['count'] < 3) {
+                    $empty_cats[] = $c['name'];
+                }
+            }
+        }
+        return array(
+            'generated_at'     => current_time('mysql'),
+            'weeks'            => array_values($weeks),
+            'underfilled_cats' => $empty_cats,
+            'note'             => __('Priority to drafts that have body or keyword.', 'qpedia-seo-pro'),
+        );
+    }
+
+    /* ---------- CSV builders ---------- */
+
+    /**
+     * Articles all CSV.
+     *
+     * @param array $bundle Bundle.
+     * @return string
+     */
+    private function csv_articles_all($bundle) {
+        $headers = array('ID', 'Title', 'Slug', 'URL', 'Word count', 'SEO Title', 'Description', 'Keyword', 'Category', 'Modified date', 'Score', 'Grade', 'Issues count');
+        $lines   = array($this->csv_row($headers));
+        foreach ($bundle['articles'] as $r) {
+            $lines[] = $this->csv_row(
+                array($r['id'], $r['title'], $r['slug'], $r['url'], $r['word_count'], $r['seo_title'], $r['description'], $r['keyword'], $r['categories'], $r['modified'], $r['score'], $r['grade'], $r['issue_count'])
+            );
+        }
+        return self::BOM . implode("\n", $lines) . "\n";
+    }
+
+    /**
+     * Articles with issues.
+     *
+     * @param array $bundle Bundle.
+     * @return string
+     */
+    private function csv_articles_issues($bundle) {
+        $headers = array('ID', 'Title', 'Score', 'Grade', 'Issues');
+        $lines   = array($this->csv_row($headers));
+        foreach ($bundle['articles'] as $r) {
+            if ((int) $r['issue_count'] < 1) {
+                continue;
+            }
+            $lines[] = $this->csv_row(array($r['id'], $r['title'], $r['score'], $r['grade'], implode(' | ', $r['issues'])));
+        }
+        return self::BOM . implode("\n", $lines) . "\n";
+    }
+
+    /**
+     * Scientists all CSV.
+     *
+     * @param array $bundle Bundle.
+     * @return string
+     */
+    private function csv_scientists_all($bundle) {
+        $headers = array('ID', 'Title', 'URL', 'Completeness %', 'Grade', 'Complete', 'Word count', 'Missing fields');
+        $lines   = array($this->csv_row($headers));
+        foreach ($bundle['scientists'] as $r) {
+            $lines[] = $this->csv_row(array($r['id'], $r['title'], $r['url'], $r['percent'], $r['grade'], $r['complete'] ? 'Yes' : 'No', $r['word_count'], implode(' | ', $r['issues'])));
+        }
+        return self::BOM . implode("\n", $lines) . "\n";
+    }
+
+    /**
+     * Scientists issues CSV.
+     *
+     * @param array $bundle Bundle.
+     * @return string
+     */
+    private function csv_scientists_issues($bundle) {
+        $headers = array('ID', 'Title', 'Percent', 'Missing fields');
+        $lines   = array($this->csv_row($headers));
+        foreach ($bundle['scientists'] as $r) {
+            if (empty($r['issues'])) {
+                continue;
+            }
+            $lines[] = $this->csv_row(array($r['id'], $r['title'], $r['percent'], implode(' | ', $r['issues'])));
+        }
+        return self::BOM . implode("\n", $lines) . "\n";
+    }
+
+    /**
+     * Categories CSV.
+     *
+     * @param array $bundle Bundle.
+     * @return string
+     */
+    private function csv_categories($bundle) {
+        $headers = array('ID', 'Name', 'Slug', 'Count', 'Description (words)', 'Persian Slug', 'Suggested Latin', 'Issues');
+        $lines   = array($this->csv_row($headers));
+        $items   = isset($bundle['categories']['items']) ? $bundle['categories']['items'] : array();
+        foreach ($items as $c) {
+            $lines[] = $this->csv_row(array($c['id'], $c['name'], $c['slug'], $c['count'], $c['description_words'], $c['slug_is_persian'] ? 'Yes' : 'No', $c['suggested_latin_slug'], implode(' | ', $c['issues'])));
+        }
+        return self::BOM . implode("\n", $lines) . "\n";
+    }
+
+    /**
+     * Tags CSV.
+     *
+     * @param array $bundle Bundle.
+     * @return string
+     */
+    private function csv_tags($bundle) {
+        $headers = array('Status', 'ID', 'Name', 'Slug', 'Count');
+        $lines   = array($this->csv_row($headers));
+        if (!empty($bundle['tags']['unused'])) {
+            foreach ($bundle['tags']['unused'] as $t) {
+                $lines[] = $this->csv_row(array('Unused', $t['id'], $t['name'], $t['slug'], $t['count']));
+            }
+        }
+        if (!empty($bundle['tags']['duplicates'])) {
+            foreach ($bundle['tags']['duplicates'] as $g) {
+                foreach ($g['tags'] as $t) {
+                    $lines[] = $this->csv_row(array('Duplicate-' . $g['kind'], $t['id'], $t['name'], $t['slug'], $t['count']));
+                }
+            }
+        }
+        return self::BOM . implode("\n", $lines) . "\n";
+    }
+
+    /**
+     * Images all CSV.
+     *
+     * @param array $bundle Bundle.
+     * @return string
+     */
+    private function csv_images_all($bundle) {
+        $headers = array('ID', 'Title', 'URL', 'alt', 'Alt length', 'Width', 'Height', 'Size (KB)', 'Parent', 'Featured', 'Issues');
+        $lines   = array($this->csv_row($headers));
+        $items   = isset($bundle['images']['items']) ? $bundle['images']['items'] : array();
+        foreach ($items as $i) {
+            $lines[] = $this->csv_row(array($i['id'], $i['title'], $i['url'], $i['alt'], $i['alt_length'], $i['width'], $i['height'], $i['filesize_kb'], $i['post_parent'], $i['is_featured'] ? 'Yes' : 'No', implode(' | ', $i['issues'])));
+        }
+        return self::BOM . implode("\n", $lines) . "\n";
+    }
+
+    /**
+     * Missing alt CSV.
+     *
+     * @param array $bundle Bundle.
+     * @return string
+     */
+    private function csv_images_missing_alt($bundle) {
+        $headers = array('ID', 'Title', 'URL', 'Parent');
+        $lines   = array($this->csv_row($headers));
+        $items   = isset($bundle['images']['items']) ? $bundle['images']['items'] : array();
+        foreach ($items as $i) {
+            if (in_array('missing_alt', $i['issues'], true)) {
+                $lines[] = $this->csv_row(array($i['id'], $i['title'], $i['url'], $i['post_parent']));
+            }
+        }
+        return self::BOM . implode("\n", $lines) . "\n";
+    }
+
+    /**
+     * Oversized images CSV.
+     *
+     * @param array $bundle Bundle.
+     * @return string
+     */
+    private function csv_images_oversized($bundle) {
+        $headers = array('ID', 'Title', 'URL', 'Size (KB)', 'Dimensions');
+        $lines   = array($this->csv_row($headers));
+        $items   = isset($bundle['oversized']['items']) ? $bundle['oversized']['items'] : array();
+        foreach ($items as $i) {
+            $lines[] = $this->csv_row(array($i['id'], $i['title'], $i['url'], $i['filesize_kb'], $i['width'] . '×' . $i['height']));
+        }
+        return self::BOM . implode("\n", $lines) . "\n";
+    }
+
+    /**
+     * Orphans CSV.
+     *
+     * @param array $bundle Bundle.
+     * @return string
+     */
+    private function csv_orphans($bundle) {
+        $headers = array('ID', 'Title', 'Type', 'URL', 'Outgoing link');
+        $lines   = array($this->csv_row($headers));
+        $items   = isset($bundle['orphans']['items']) ? $bundle['orphans']['items'] : array();
+        foreach ($items as $o) {
+            $lines[] = $this->csv_row(array($o['id'], $o['title'], $o['type'], $o['url'], $o['out_count']));
+        }
+        return self::BOM . implode("\n", $lines) . "\n";
+    }
+
+    /**
+     * Opportunities CSV.
+     *
+     * @param array $bundle Bundle.
+     * @return string
+     */
+    private function csv_opportunities($bundle) {
+        $headers = array('From ID', 'From Title', 'To ID', 'To Title', 'Reason', 'Score', 'Suggestion');
+        $lines   = array($this->csv_row($headers));
+        $items   = isset($bundle['opportunities']['items']) ? $bundle['opportunities']['items'] : array();
+        foreach ($items as $o) {
+            $lines[] = $this->csv_row(array($o['from_id'], $o['from_title'], $o['to_id'], $o['to_title'], implode('+', $o['reasons']), $o['score'], $o['suggestion']));
+        }
+        return self::BOM . implode("\n", $lines) . "\n";
+    }
+
+    /**
+     * Meta conflicts CSV.
+     *
+     * @param array $bundle Bundle.
+     * @return string
+     */
+    private function csv_conflicts($bundle) {
+        $headers = array('ID', 'Title', 'Type', 'Field', 'Families', 'Winner', 'Action');
+        $lines   = array($this->csv_row($headers));
+        $items   = isset($bundle['conflicts']['conflicts']) ? $bundle['conflicts']['conflicts'] : array();
+        foreach ($items as $c) {
+            $lines[] = $this->csv_row(array($c['post_id'], $c['post_title'], $c['post_type'], $c['field'], implode('+', $c['families']), $c['winner'], $c['action']));
+        }
+        if (!empty($bundle['conflicts']['legacy'])) {
+            foreach ($bundle['conflicts']['legacy'] as $c) {
+                $lines[] = $this->csv_row(array($c['post_id'], $c['post_title'], $c['post_type'], $c['meta_key'], $c['family'], 'legacy', __('Cleanup after backup', 'qpedia-seo-pro')));
+            }
+        }
+        return self::BOM . implode("\n", $lines) . "\n";
+    }
+
+    /**
+     * Redirects CSV.
+     *
+     * @param array $bundle Bundle.
+     * @return string
+     */
+    private function csv_redirects($bundle) {
+        $headers = array('Target', 'From', 'To', 'Status', 'Hop Count');
+        $lines   = array($this->csv_row($headers));
+        $rows    = isset($bundle['crawl']['redirects_table']) ? $bundle['crawl']['redirects_table'] : array();
+        foreach ($rows as $r) {
+            $lines[] = $this->csv_row(array($r['target'], $r['from'], $r['to'], $r['status'], $r['hops']));
+        }
+        return self::BOM . implode("\n", $lines) . "\n";
+    }
+
+    /* ---------- JSON helpers ---------- */
+
+    /**
+     * Summary JSON payload.
+     *
+     * @param array $bundle Bundle.
+     * @return array
+     */
+    private function summary_json($bundle) {
+        return array(
+            'site'         => self::SITE_NAME,
+            'url'          => 'https://qpedia.ir',
+            'generated_at' => $bundle['generated_at'],
+            'score'        => $bundle['site_score'],
+            'counts'       => array(
+                'articles'   => count($bundle['articles']),
+                'scientists' => count($bundle['scientists']),
+                'categories' => isset($bundle['categories']['summary']['total']) ? $bundle['categories']['summary']['total'] : 0,
+                'tags'       => isset($bundle['tags']['total']) ? $bundle['tags']['total'] : 0,
+                'images'     => isset($bundle['images']['summary']['total']) ? $bundle['images']['summary']['total'] : 0,
+                'orphans'    => isset($bundle['orphans']['count']) ? $bundle['orphans']['count'] : 0,
+                'drafts'     => isset($bundle['drafts']['count']) ? $bundle['drafts']['count'] : 0,
+            ),
+            'priority_top' => array_slice(isset($bundle['actions']['items']) ? $bundle['actions']['items'] : array(), 0, 8),
+        );
+    }
+
+    /**
+     * Article scores JSON.
+     *
+     * @param array $bundle Bundle.
+     * @return array
+     */
+    private function articles_scores_json($bundle) {
+        $out = array();
+        foreach ($bundle['articles'] as $r) {
+            $out[] = array(
+                'id'     => $r['id'],
+                'title'  => $r['title'],
+                'score'  => $r['score'],
+                'grade'  => $r['grade'],
+                'issues' => $r['issues'],
+            );
+        }
+        return $out;
+    }
+
+    /**
+     * Category issues JSON.
+     *
+     * @param array $bundle Bundle.
+     * @return array
+     */
+    private function categories_issues_json($bundle) {
+        $items = isset($bundle['categories']['items']) ? $bundle['categories']['items'] : array();
+        $out   = array();
+        foreach ($items as $c) {
+            if (!empty($c['issues'])) {
+                $out[] = $c;
+            }
+        }
+        return array(
+            'summary' => isset($bundle['categories']['summary']) ? $bundle['categories']['summary'] : array(),
+            'items'   => $out,
+        );
+    }
+
+    /**
+     * Link graph JSON (trim content).
+     *
+     * @param array $bundle Bundle.
+     * @return array
+     */
+    private function links_map_json($bundle) {
+        $graph = isset($bundle['graph']) ? $bundle['graph'] : array();
+        $nodes = array();
+        if (!empty($graph['nodes']) && is_array($graph['nodes'])) {
+            foreach ($graph['nodes'] as $id => $n) {
+                $nodes[] = array(
+                    'id'         => (int) $id,
+                    'title'      => isset($n['title']) ? $n['title'] : '',
+                    'type'       => isset($n['type']) ? $n['type'] : '',
+                    'url'        => isset($n['url']) ? $n['url'] : '',
+                    'categories' => isset($n['categories']) ? $n['categories'] : array(),
+                );
+            }
+        }
+        return array(
+            'stats'  => isset($graph['stats']) ? $graph['stats'] : array(),
+            'nodes'  => $nodes,
+            'edges'  => isset($graph['edges']) ? $graph['edges'] : array(),
+        );
+    }
+
+    /* ---------- HTML bodies ---------- */
+
+    /**
+     * Summary HTML.
+     *
+     * @param array $b Bundle.
+     * @return string
+     */
+    private function html_summary($b) {
+        $score = isset($b['site_score']['score']) ? (int) $b['site_score']['score'] : 0;
+        $grade = isset($b['site_score']['grade']) ? $b['site_score']['grade'] : $this->grade($score);
+        $bd    = isset($b['site_score']['breakdown']) ? $b['site_score']['breakdown'] : array();
+
+        $pie = $this->svg_pie(
+            array(
+                array('label' => 'A/B', 'value' => max(1, $score), 'color' => '#0d9488'),
+                array('label' => 'gap', 'value' => max(1, 100 - $score), 'color' => '#e2e8f0'),
+            )
+        );
+        $bars = $this->svg_bar(
+            array(
+                array('label' => __('Articles', 'qpedia-seo-pro'), 'value' => isset($bd['articles']) ? $bd['articles'] : 0),
+                array('label' => __('Scientists', 'qpedia-seo-pro'), 'value' => isset($bd['scientists']) ? $bd['scientists'] : 0),
+                array('label' => __('Categories', 'qpedia-seo-pro'), 'value' => isset($bd['terms']) ? $bd['terms'] : 0),
+                array('label' => __('Images', 'qpedia-seo-pro'), 'value' => isset($bd['images']) ? $bd['images'] : 0),
+            )
+        );
+
+        $html  = '<section class="card score-card"><div class="score-num">' . (int) $score . '</div>';
+        $html .= '<div class="score-grade badge badge-' . strtolower($grade) . '">' . esc_html($grade) . '</div>';
+        $html .= '<p>' . esc_html__('Overall Site Score', 'qpedia-seo-pro') . '</p><div class="charts">' . $pie . $bars . '</div></section>';
+
+        $stats = array(
+            array(__('Articles', 'qpedia-seo-pro'), count($b['articles'])),
+            array(__('Scientists', 'qpedia-seo-pro'), count($b['scientists'])),
+            array(__('Draft', 'qpedia-seo-pro'), isset($b['drafts']['count']) ? $b['drafts']['count'] : 0),
+            array(__('Orphan pages', 'qpedia-seo-pro'), isset($b['orphans']['count']) ? $b['orphans']['count'] : 0),
+            array(__('Without alt', 'qpedia-seo-pro'), isset($b['images']['summary']['missing_alt']) ? $b['images']['summary']['missing_alt'] : 0),
+            array(__('Persian Slug', 'qpedia-seo-pro'), isset($b['categories']['summary']['persian_slug']) ? $b['categories']['summary']['persian_slug'] : 0),
+        );
+        $html .= '<section class="card"><h2>' . esc_html__('Featured', 'qpedia-seo-pro') . '</h2>';
+        $html .= $this->table_html(array(__('Featured', 'qpedia-seo-pro'), __('Value', 'qpedia-seo-pro')), $stats) . '</section>';
+
+        $top = array();
+        if (!empty($b['actions']['items'])) {
+            foreach (array_slice($b['actions']['items'], 0, 10) as $a) {
+                $top[] = array($a['severity'], $a['area'], $a['title'], $a['count']);
+            }
+        }
+        $html .= '<section class="card"><h2>' . esc_html__('Immediate Actions', 'qpedia-seo-pro') . '</h2>';
+        $html .= $this->table_html(array(__('Severity', 'qpedia-seo-pro'), __('Area', 'qpedia-seo-pro'), __('Title', 'qpedia-seo-pro'), __('Count', 'qpedia-seo-pro')), $top) . '</section>';
+        return $html;
+    }
+
+    /**
+     * Articles HTML.
+     *
+     * @param array $b Bundle.
+     * @return string
+     */
+    private function html_articles($b) {
+        $grades = array('A' => 0, 'B' => 0, 'C' => 0, 'D' => 0, 'F' => 0);
+        foreach ($b['articles'] as $r) {
+            $g = $r['grade'];
+            if (!isset($grades[$g])) {
+                $g = 'F';
+            }
+            $grades[$g]++;
+        }
+        $html  = '<section class="card"><h2>' . esc_html__('Grade Distribution', 'qpedia-seo-pro') . '</h2>';
+        $html .= $this->svg_pie(
+            array(
+                array('label' => 'A', 'value' => $grades['A'], 'color' => '#16a34a'),
+                array('label' => 'B', 'value' => $grades['B'], 'color' => '#0284c7'),
+                array('label' => 'C', 'value' => $grades['C'], 'color' => '#ca8a04'),
+                array('label' => 'D', 'value' => $grades['D'], 'color' => '#ea580c'),
+                array('label' => 'F', 'value' => $grades['F'], 'color' => '#dc2626'),
+            )
+        );
+        $html .= '</section>';
+        $rows = array();
+        foreach ($b['articles'] as $r) {
+            $rows[] = array($r['id'], $r['title'], $r['word_count'], $r['score'], $r['grade'], $r['issue_count']);
+        }
+        $html .= '<section class="card"><h2>' . esc_html__('All Articles', 'qpedia-seo-pro') . '</h2>';
+        $html .= $this->table_html(array('ID', __('Title', 'qpedia-seo-pro'), __('Keyword', 'qpedia-seo-pro'), __('Score', 'qpedia-seo-pro'), __('Grade', 'qpedia-seo-pro'), __('Issue', 'qpedia-seo-pro')), $rows) . '</section>';
+        $html .= $this->issues_card(__('Thin content', 'qpedia-seo-pro'), isset($b['thin']['thin']) ? $b['thin']['thin'] : array(), array('id', 'title', 'word_count'));
+        $html .= $this->issues_card(__('Keyword cannibalization', 'qpedia-seo-pro'), isset($b['cannibal']['groups']) ? $b['cannibal']['groups'] : array(), array('keyword', 'warning', 'count'));
+        return $html;
+    }
+
+    /**
+     * Scientists HTML.
+     *
+     * @param array $b Bundle.
+     * @return string
+     */
+    private function html_scientists($b) {
+        $rows = array();
+        foreach ($b['scientists'] as $r) {
+            $rows[] = array($r['id'], $r['title'], $r['percent'], $r['grade'], $r['complete'] ? '✓' : '✗', implode(', ', $r['issues']));
+        }
+        $html  = '<section class="card"><h2>' . esc_html__('Completeness Checklist', 'qpedia-seo-pro') . '</h2>';
+        $avg   = isset($b['scientist_comp']['totals']['avg_percent']) ? $b['scientist_comp']['totals']['avg_percent'] : 0;
+        $html .= '<p>' . sprintf(
+            /* translators: %s: percent */
+            esc_html__('Average completeness: %s%%', 'qpedia-seo-pro'),
+            esc_html((string) $avg)
+        ) . '</p>';
+        $html .= $this->table_html(array('ID', __('Name', 'qpedia-seo-pro'), '%', __('Grade', 'qpedia-seo-pro'), __('Complete', 'qpedia-seo-pro'), __('Defects', 'qpedia-seo-pro')), $rows) . '</section>';
+        return $html;
+    }
+
+    /**
+     * Taxonomy HTML.
+     *
+     * @param array $b Bundle.
+     * @return string
+     */
+    private function html_taxonomy($b) {
+        $rows = array();
+        if (!empty($b['categories']['items'])) {
+            foreach ($b['categories']['items'] as $c) {
+                $rows[] = array($c['id'], $c['name'], $c['slug'], $c['count'], $c['slug_is_persian'] ? $c['suggested_latin_slug'] : '—', implode(', ', $c['issues']));
+            }
+        }
+        $html  = '<section class="card"><h2>' . esc_html__('Categories quantum_category', 'qpedia-seo-pro') . '</h2>';
+        $html .= $this->table_html(array('ID', __('Name', 'qpedia-seo-pro'), __('Slug', 'qpedia-seo-pro'), __('Count', 'qpedia-seo-pro'), __('Suggested Latin', 'qpedia-seo-pro'), __('Issue', 'qpedia-seo-pro')), $rows) . '</section>';
+        $html .= '<section class="card"><h2>' . esc_html__('Tags', 'qpedia-seo-pro') . '</h2><p>';
+        $html .= sprintf(
+            /* translators: 1: unused 2: duplicates */
+            esc_html__('Unused: %1$d — Duplicate: %2$d', 'qpedia-seo-pro'),
+            isset($b['tags']['unused_count']) ? (int) $b['tags']['unused_count'] : 0,
+            isset($b['tags']['duplicate_count']) ? (int) $b['tags']['duplicate_count'] : 0
+        );
+        $html .= '</p></section>';
+        return $html;
+    }
+
+    /**
+     * Images HTML.
+     *
+     * @param array $b Bundle.
+     * @return string
+     */
+    private function html_images($b) {
+        $s    = isset($b['images']['summary']) ? $b['images']['summary'] : array();
+        $html = '<section class="card"><h2>' . esc_html__('Images', 'qpedia-seo-pro') . '</h2>';
+        $html .= $this->svg_bar(
+            array(
+                array('label' => __('Total', 'qpedia-seo-pro'), 'value' => isset($s['total']) ? $s['total'] : 0),
+                array('label' => __('Without alt', 'qpedia-seo-pro'), 'value' => isset($s['missing_alt']) ? $s['missing_alt'] : 0),
+                array('label' => __('Heavy', 'qpedia-seo-pro'), 'value' => isset($s['oversized']) ? $s['oversized'] : 0),
+                array('label' => __('Without Parent', 'qpedia-seo-pro'), 'value' => isset($s['unattached']) ? $s['unattached'] : 0),
+            )
+        );
+        $html .= '</section>';
+        $rows = array();
+        if (!empty($b['missing_thumbs']['items'])) {
+            foreach ($b['missing_thumbs']['items'] as $t) {
+                $rows[] = array($t['id'], $t['title'], $t['post_type'], $t['status']);
+            }
+        }
+        $html .= '<section class="card"><h2>' . esc_html__('Without Featured Image', 'qpedia-seo-pro') . '</h2>';
+        $html .= $this->table_html(array('ID', __('Title', 'qpedia-seo-pro'), __('Type', 'qpedia-seo-pro'), __('Status', 'qpedia-seo-pro')), $rows) . '</section>';
+        return $html;
+    }
+
+    /**
+     * Links HTML.
+     *
+     * @param array $b Bundle.
+     * @return string
+     */
+    private function html_links($b) {
+        $html  = '<section class="card"><h2>' . esc_html__('Graph Stats', 'qpedia-seo-pro') . '</h2>';
+        $st    = isset($b['graph']['stats']) ? $b['graph']['stats'] : array();
+        $html .= $this->table_html(
+            array(__('Featured', 'qpedia-seo-pro'), __('Value', 'qpedia-seo-pro')),
+            array(
+                array(__('Node', 'qpedia-seo-pro'), isset($st['nodes']) ? $st['nodes'] : 0),
+                array(__('Edge', 'qpedia-seo-pro'), isset($st['edges']) ? $st['edges'] : 0),
+                array(__('Orphan', 'qpedia-seo-pro'), isset($b['orphans']['count']) ? $b['orphans']['count'] : 0),
+                array(__('Item', 'qpedia-seo-pro'), isset($b['opportunities']['count']) ? $b['opportunities']['count'] : 0),
+                array(__('Weak anchor', 'qpedia-seo-pro'), isset($b['anchors']['weak_count']) ? $b['anchors']['weak_count'] : 0),
+            )
+        );
+        $html .= '</section>';
+        $rows = array();
+        if (!empty($b['distribution']['top'])) {
+            foreach ($b['distribution']['top'] as $t) {
+                $rows[] = array($t['id'], $t['title'], $t['in_count'], $t['out_count'], $t['pagerank']);
+            }
+        }
+        $html .= '<section class="card"><h2>' . esc_html__('Top Internal PageRank', 'qpedia-seo-pro') . '</h2>';
+        $html .= $this->table_html(array('ID', __('Title', 'qpedia-seo-pro'), 'in', 'out', 'PR'), $rows) . '</section>';
+        return $html;
+    }
+
+    /**
+     * Schema HTML.
+     *
+     * @param array $b Bundle.
+     * @return string
+     */
+    private function html_schema($b) {
+        $a    = isset($b['schema_audit']) ? $b['schema_audit'] : array();
+        $html = '<section class="card"><h2>' . esc_html__('Schema Validation', 'qpedia-seo-pro') . '</h2>';
+        $html .= $this->table_html(
+            array(__('Featured', 'qpedia-seo-pro'), __('Value', 'qpedia-seo-pro')),
+            array(
+                array(__('Checked', 'qpedia-seo-pro'), isset($a['checked']) ? $a['checked'] : 0),
+                array(__('Valid', 'qpedia-seo-pro'), isset($a['valid']) ? $a['valid'] : 0),
+                array(__('Invalid', 'qpedia-seo-pro'), isset($a['invalid']) ? count($a['invalid']) : 0),
+            )
+        );
+        $html .= '<p>' . esc_html__('Samples stored in schema/sample-schemas.', 'qpedia-seo-pro') . '</p></section>';
+        return $html;
+    }
+
+    /**
+     * Technical HTML.
+     *
+     * @param array $b Bundle.
+     * @return string
+     */
+    private function html_technical($b) {
+        $html  = '<section class="card"><h2>Sitemap</h2>';
+        $sm    = isset($b['sitemap']['counts']) ? $b['sitemap']['counts'] : array();
+        $html .= $this->table_html(
+            array(__('Featured', 'qpedia-seo-pro'), __('Value', 'qpedia-seo-pro')),
+            array(
+                array(__('Missing', 'qpedia-seo-pro'), isset($sm['missing']) ? $sm['missing'] : 0),
+                array(__('Extra', 'qpedia-seo-pro'), isset($sm['extra']) ? $sm['extra'] : 0),
+                array(__('Duplicate', 'qpedia-seo-pro'), isset($sm['duplicate']) ? $sm['duplicate'] : 0),
+            )
+        );
+        $html .= '</section><section class="card"><h2>robots.txt</h2><pre class="code">';
+        $html .= esc_html(isset($b['robots']['proposed_robots_txt']) ? $b['robots']['proposed_robots_txt'] : '');
+        $html .= '</pre></section>';
+        if (!empty($b['performance']['response']['targets'])) {
+            $rows = array();
+            foreach ($b['performance']['response']['targets'] as $k => $t) {
+                $rows[] = array($k, isset($t['url']) ? $t['url'] : '', isset($t['elapsed']) ? $t['elapsed'] : '', isset($t['status']) ? $t['status'] : '');
+            }
+            $html .= '<section class="card"><h2>' . esc_html__('Response Time', 'qpedia-seo-pro') . '</h2>';
+            $html .= $this->table_html(array(__('Target', 'qpedia-seo-pro'), 'URL', 'ms', 'HTTP'), $rows) . '</section>';
+        }
+        return $html;
+    }
+
+    /**
+     * Actions HTML.
+     *
+     * @param array $b Bundle.
+     * @return string
+     */
+    private function html_actions($b) {
+        $rows = array();
+        if (!empty($b['actions']['items'])) {
+            foreach ($b['actions']['items'] as $a) {
+                $rows[] = array($a['severity'], $a['area'], $a['title'], $a['detail'], $a['count']);
+            }
+        }
+        $html  = '<section class="card"><h2>' . esc_html__('Priority List', 'qpedia-seo-pro') . '</h2>';
+        $html .= $this->table_html(array(__('Severity', 'qpedia-seo-pro'), __('Area', 'qpedia-seo-pro'), __('Title', 'qpedia-seo-pro'), __('Description', 'qpedia-seo-pro'), __('Count', 'qpedia-seo-pro')), $rows) . '</section>';
+        return $html;
+    }
+
+    /**
+     * Small issues table card.
+     *
+     * @param string $title   Title.
+     * @param array  $items   Items.
+     * @param array  $keys    Keys.
+     * @return string
+     */
+    private function issues_card($title, $items, $keys) {
+        $rows = array();
+        foreach ((array) $items as $it) {
+            $row = array();
+            foreach ($keys as $k) {
+                $row[] = isset($it[$k]) ? (is_scalar($it[$k]) ? $it[$k] : wp_json_encode($it[$k], JSON_UNESCAPED_UNICODE)) : '';
+            }
+            $rows[] = $row;
+        }
+        $html  = '<section class="card"><h2>' . esc_html($title) . '</h2>';
+        $html .= $this->table_html($keys, $rows) . '</section>';
+        return $html;
+    }
+
+    /**
+     * HTML table.
+     *
+     * @param array $headers Headers.
+     * @param array $rows    Rows.
+     * @return string
+     */
+    private function table_html($headers, $rows) {
+        $h = '<div class="table-wrap"><table><thead><tr>';
+        foreach ($headers as $x) {
+            $h .= '<th>' . esc_html((string) $x) . '</th>';
+        }
+        $h .= '</tr></thead><tbody>';
+        $i = 0;
+        foreach ((array) $rows as $row) {
+            if ($i++ > 400) {
+                break;
+            }
+            $h .= '<tr>';
+            foreach ((array) $row as $cell) {
+                if (is_bool($cell)) {
+                    $cell = $cell ? '1' : '0';
+                } elseif (!is_scalar($cell) && $cell !== null) {
+                    $cell = wp_json_encode($cell, JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES);
+                }
+                $h .= '<td>' . esc_html((string) $cell) . '</td>';
+            }
+            $h .= '</tr>';
+        }
+        $h .= '</tbody></table></div>';
+        return $h;
+    }
+
+    /**
+     * Inline SVG pie chart.
+     *
+     * @param array $data Segments {label,value,color}.
+     * @return string
+     */
+    private function svg_pie($data) {
+        $size  = 180;
+        $cx    = 90;
+        $cy    = 90;
+        $r     = 78;
+        $total = 0;
+        foreach ($data as $d) {
+            $total += (float) $d['value'];
+        }
+        $svg = '<div class="chart"><svg viewBox="0 0 ' . $size . ' ' . $size . '" width="' . $size . '" height="' . $size . '">';
+        if ($total <= 0) {
+            $svg .= '<circle cx="' . $cx . '" cy="' . $cy . '" r="' . $r . '" fill="#e2e8f0" /></svg></div>';
+            return $svg;
+        }
+        $angle = -90;
+        foreach ($data as $d) {
+            $val = (float) $d['value'];
+            if ($val <= 0) {
+                continue;
+            }
+            $sweep = $val / $total * 360;
+            $color = isset($d['color']) ? $d['color'] : '#0d9488';
+            if ($sweep >= 359.9) {
+                $svg .= '<circle cx="' . $cx . '" cy="' . $cy . '" r="' . $r . '" fill="' . esc_attr($color) . '" />';
+            } else {
+                $svg .= $this->svg_slice($cx, $cy, $r, $angle, $angle + $sweep, $color);
+            }
+            $angle += $sweep;
+        }
+        $svg .= '</svg><ul class="legend">';
+        foreach ($data as $d) {
+            $c = isset($d['color']) ? $d['color'] : '#0d9488';
+            $svg .= '<li><span class="sw" style="background:' . esc_attr($c) . '"></span>' . esc_html($d['label']) . ' (' . esc_html((string) $d['value']) . ')</li>';
+        }
+        $svg .= '</ul></div>';
+        return $svg;
+    }
+
+    /**
+     * Pie slice path.
+     *
+     * @param float  $cx    Center x.
+     * @param float  $cy    Center y.
+     * @param float  $r     Radius.
+     * @param float  $start Start angle deg.
+     * @param float  $end   End angle deg.
+     * @param string $color Fill.
+     * @return string
+     */
+    private function svg_slice($cx, $cy, $r, $start, $end, $color) {
+        $a1 = deg2rad($start);
+        $a2 = deg2rad($end);
+        $x1 = $cx + $r * cos($a1);
+        $y1 = $cy + $r * sin($a1);
+        $x2 = $cx + $r * cos($a2);
+        $y2 = $cy + $r * sin($a2);
+        $large = (($end - $start) > 180) ? 1 : 0;
+        $d     = "M {$cx} {$cy} L {$x1} {$y1} A {$r} {$r} 0 {$large} 1 {$x2} {$y2} Z";
+        return '<path d="' . esc_attr($d) . '" fill="' . esc_attr($color) . '" />';
+    }
+
+    /**
+     * Simple horizontal bar chart.
+     *
+     * @param array $items {label,value}.
+     * @return string
+     */
+    private function svg_bar($items) {
+        $w      = 420;
+        $row_h  = 28;
+        $h      = 20 + count($items) * $row_h;
+        $max    = 1;
+        foreach ($items as $it) {
+            if ($it['value'] > $max) {
+                $max = $it['value'];
+            }
+        }
+        $svg = '<svg class="bar" viewBox="0 0 ' . $w . ' ' . $h . '" width="' . $w . '" height="' . $h . '">';
+        $y   = 8;
+        foreach ($items as $it) {
+            $bw = max(4, (int) (($it['value'] / $max) * 240));
+            $svg .= '<text x="410" y="' . ($y + 14) . '" text-anchor="end" font-size="12" fill="#1e293b">' . esc_html($it['label']) . '</text>';
+            $svg .= '<rect x="10" y="' . $y . '" width="' . $bw . '" height="16" rx="4" fill="#0d9488" />';
+            $svg .= '<text x="' . ($bw + 16) . '" y="' . ($y + 13) . '" font-size="11" fill="#0b1f3a">' . esc_html((string) $it['value']) . '</text>';
+            $y += $row_h;
+        }
+        $svg .= '</svg>';
+        return '<div class="chart">' . $svg . '</div>';
+    }
+
+    /**
+     * Report CSS.
+     *
+     * @return string
+     */
+    private function report_css() {
+        return 'html{direction:rtl}body{margin:0;font-family:Vazirmatn,Tahoma,Arial,sans-serif;background:#f8fafc;color:#1e293b;line-height:1.8}'
+            . '.qpedia-hero{background:linear-gradient(135deg,#0b1f3a,#132a4a);color:#fff;padding:32px 0;border-bottom:4px solid #0d9488}'
+            . '.qpedia-hero h1{margin:0 0 6px;font-size:28px}.eyebrow{color:#14b8a6;font-weight:700;letter-spacing:.04em}.meta{opacity:.85;font-size:14px}'
+            . '.wrap{max-width:1100px;margin:0 auto;padding:24px}'
+            . '.card{background:#fff;border:1px solid #e2e8f0;border-radius:12px;padding:20px;margin:0 0 20px;box-shadow:0 1px 2px rgba(15,23,42,.05)}'
+            . 'h2{color:#0b1f3a;border-bottom:3px solid #0d9488;display:inline-block;padding-bottom:4px;margin-top:0}'
+            . 'table{width:100%;border-collapse:collapse;font-size:13px}th,td{border-bottom:1px solid #e2e8f0;padding:8px 10px;text-align:right}'
+            . 'th{background:#0b1f3a;color:#fff;font-weight:600}tr:nth-child(even){background:#f1f5f9}.table-wrap{overflow:auto}'
+            . '.badge{display:inline-block;padding:2px 10px;border-radius:999px;color:#fff;font-weight:700}'
+            . '.badge-a{background:#16a34a}.badge-b{background:#0284c7}.badge-c{background:#ca8a04}.badge-d{background:#ea580c}.badge-f{background:#dc2626}'
+            . '.score-card{text-align:center}.score-num{font-size:64px;font-weight:800;color:#0b1f3a;line-height:1}'
+            . '.charts{display:flex;flex-wrap:wrap;gap:24px;align-items:center;justify-content:center}'
+            . '.legend{list-style:none;padding:0;margin:8px 0 0;font-size:13px}.legend .sw{display:inline-block;width:10px;height:10px;border-radius:2px;margin-left:6px}'
+            . 'pre.code{background:#0b1f3a;color:#e2e8f0;padding:16px;border-radius:8px;overflow:auto;direction:ltr;text-align:left;font-size:12px}'
+            . 'footer{background:#0b1f3a;color:#fff;text-align:center;padding:16px;font-size:13px}';
+    }
+
+    /**
+     * Write a text file.
+     *
+     * @param string $path Path.
+     * @param string $body Body.
+     * @return true|\WP_Error
+     */
+    private function put($path, $body) {
+        $dir = dirname($path);
+        if (!is_dir($dir) && !wp_mkdir_p($dir)) {
+            return new \WP_Error('write', sprintf(__('Cannot create directory %s', 'qpedia-seo-pro'), $dir));
+        }
+        $ok = file_put_contents($path, $body);
+        if (false === $ok) {
+            return new \WP_Error('write', sprintf(__('Cannot write %s', 'qpedia-seo-pro'), $path));
+        }
+        return true;
+    }
+
+    /**
+     * Write JSON.
+     *
+     * @param string $path Path.
+     * @param mixed  $data Data.
+     * @return true|\WP_Error
+     */
+    private function put_json($path, $data) {
+        $flags = JSON_UNESCAPED_UNICODE | JSON_PRETTY_PRINT | JSON_UNESCAPED_SLASHES;
+        $json  = wp_json_encode($data, $flags);
+        if (false === $json) {
+            $json = '{}';
+        }
+        return $this->put($path, $json);
+    }
+
+    /**
+     * Recursively add a directory into a zip under a local prefix.
+     *
+     * @param \ZipArchive $zip    Zip.
+     * @param string      $dir    Absolute dir.
+     * @param string      $prefix Zip prefix.
+     * @return void
+     */
+    private function zip_add_dir($zip, $dir, $prefix) {
+        $dir  = rtrim($dir, '/\\');
+        $list = scandir($dir);
+        if (!is_array($list)) {
+            return;
+        }
+        foreach ($list as $item) {
+            if ($item === '.' || $item === '..') {
+                continue;
+            }
+            $path  = $dir . DIRECTORY_SEPARATOR . $item;
+            $local = $prefix . '/' . $item;
+            if (is_dir($path)) {
+                $zip->addEmptyDir($local);
+                $this->zip_add_dir($zip, $path, $local);
+            } else {
+                $zip->addFile($path, $local);
+            }
+        }
+    }
+
+    /**
+     * Recursively delete a directory.
+     *
+     * @param string $dir Dir.
+     * @return void
+     */
+    private function rrmdir($dir) {
+        if (!is_dir($dir)) {
+            return;
+        }
+        $items = scandir($dir);
+        if (!is_array($items)) {
+            return;
+        }
+        foreach ($items as $item) {
+            if ($item === '.' || $item === '..') {
+                continue;
+            }
+            $path = $dir . DIRECTORY_SEPARATOR . $item;
+            if (is_dir($path)) {
+                $this->rrmdir($path);
+            } else {
+                @unlink($path);
+            }
+        }
+        @rmdir($dir);
+    }
+
+    /**
+     * Word count helper.
+     *
+     * @param string $html HTML.
+     * @return int
+     */
+    private function word_count($html) {
+        if (class_exists(__NAMESPACE__ . '\\Core') && method_exists(Core::class, 'word_count')) {
+            return (int) Core::word_count($html);
+        }
+        $text = is_string($html) ? $html : '';
+        $text = wp_strip_all_tags($text, true);
+        $text = str_replace("\xE2\x80\x8C", ' ', $text);
+        $text = trim(preg_replace('/\s+/u', ' ', $text));
+        if ($text === '') {
+            return 0;
+        }
+        $parts = preg_split('/\s+/u', $text);
+        return is_array($parts) ? count($parts) : 0;
+    }
+}

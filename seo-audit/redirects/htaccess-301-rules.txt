@@ -1,0 +1,72 @@
+# === قوانین ریدایرکت qpedia.ir — تولید خودکار از ممیزی واقعی ===
+# این بلوک را «بالای» قوانین وردپرس در .htaccess ریشه بگذارید.
+# (Apache + mod_alias؛ اگر افزونهٔ Redirection دارید، CSV کنار همین پوشه را ایمپورت کنید)
+
+<IfModule mod_alias.c>
+Redirect 301 /quantum-measurement-problem/ https://qpedia.ir/quantum-measurement/
+Redirect 301 /quantum-decoherence/ https://qpedia.ir/decoherence/
+Redirect 301 /quantum-entanglement/ https://qpedia.ir/quantum-entanglement-explained/
+Redirect 301 /quantum-fluctuations/ https://qpedia.ir/quantum-fluctuations-cosmos/
+Redirect 301 /loop-quantum-gravity/ https://qpedia.ir/quantum-gravity/
+Redirect 301 /dark-energy/ https://qpedia.ir/dark-energy-quantum/
+Redirect 301 /superconducting-qubit/ https://qpedia.ir/superconductivity/
+Redirect 301 /scientists/albert-einstein/ https://qpedia.ir/scientists/albert-einstein-2/
+Redirect 301 /scientist/albert-einstein/ https://qpedia.ir/scientists/albert-einstein-2/
+Redirect 301 /albert-einstein/ https://qpedia.ir/scientists/albert-einstein-2/
+Redirect 301 /scientists/max-planck/ https://qpedia.ir/scientists/max-plank/
+Redirect 301 /scientist/max-planck/ https://qpedia.ir/scientists/max-plank/
+Redirect 301 /max-planck/ https://qpedia.ir/scientists/max-plank/
+Redirect 301 /epr-paradox-2/ https://qpedia.ir/epr-paradox/
+Redirect 301 /no-cloning-theorem-2/ https://qpedia.ir/no-cloning-theorem/
+Redirect 301 /quantum-gate-2/ https://qpedia.ir/quantum-gate/
+Redirect 301 /solvay-conference-1927-2/ https://qpedia.ir/solvay-conference-1927/
+Redirect 301 /aspect-experiment-1982-2/ https://qpedia.ir/aspect-experiment-1982/
+Redirect 301 /absolute-zero-2/ https://qpedia.ir/absolute-zero/
+Redirect 301 /alpha-decay-2/ https://qpedia.ir/alpha-decay/
+Redirect 301 /stimulated-emission-2/ https://qpedia.ir/stimulated-emission/
+Redirect 301 /neutrino-2/ https://qpedia.ir/neutrino/
+Redirect 301 /standard-model-2/ https://qpedia.ir/standard-model/
+Redirect 301 /virtual-particles-2/ https://qpedia.ir/virtual-particles/
+Redirect 301 /stern-gerlach-experiment-2/ https://qpedia.ir/stern-gerlach-experiment/
+Redirect 301 /flash-memory-2/ https://qpedia.ir/flash-memory/
+Redirect 301 /scanning-tunneling-microscope-2/ https://qpedia.ir/scanning-tunneling-microscope/
+Redirect 301 /fiber-optics-2/ https://qpedia.ir/fiber-optics/
+Redirect 301 /quantum-supremacy-2/ https://qpedia.ir/quantum-supremacy/
+Redirect 301 /shor-algorithm-2/ https://qpedia.ir/shor-algorithm/
+Redirect 301 /pilot-wave-2/ https://qpedia.ir/pilot-wave/
+Redirect 301 /genetic-mutation-2/ https://qpedia.ir/genetic-mutation/
+Redirect 301 /google-error-correction__trashed/ https://qpedia.ir/quantum-error-correction/
+Redirect 301 /higgs-boson-2/ https://qpedia.ir/higgs-boson/
+Redirect 301 /coherence-2/ https://qpedia.ir/coherence/
+Redirect 301 /grover-algorithm-2/ https://qpedia.ir/grover-algorithm/
+Redirect 301 /quantum-error-correction-2/ https://qpedia.ir/quantum-error-correction/
+Redirect 301 /bose-einstein-condensate-2/ https://qpedia.ir/bose-einstein-condensate/
+Redirect 301 /stellar-fusion-2/ https://qpedia.ir/stellar-fusion/
+Redirect 301 /quantum-simulation-2/ https://qpedia.ir/quantum-simulation/
+Redirect 410 /black-hole/
+Redirect 410 /dark-matter/
+Redirect 410 /fundamental-forces/
+Redirect 410 /led/
+Redirect 410 /matter-wave/
+Redirect 410 /max-planck-blackbody/
+Redirect 410 /noon-state/
+Redirect 410 /quantum-art/
+Redirect 410 /quantum-communication/
+Redirect 410 /quantum-ethics/
+Redirect 410 /quantum-game-theory/
+Redirect 410 /quantum-interference/
+Redirect 410 /quantum-investment/
+Redirect 410 /quantum-key-distribution/
+Redirect 410 /quantum-literacy/
+Redirect 410 /quantum-photosynthesis/
+Redirect 410 /quantum-policy/
+Redirect 410 /quantum-smart-contract/
+Redirect 410 /quantum-startup/
+Redirect 410 /semiconductor/
+Redirect 410 /swap-test/
+Redirect 410 /transistor/
+Redirect 410 /quantum-photosynthesis__trashed/
+Redirect 410 /dirac-antimatter__trashed/
+Redirect 410 /max-planck-blackbody__trashed/
+Redirect 410 /led__trashed/
+</IfModule>

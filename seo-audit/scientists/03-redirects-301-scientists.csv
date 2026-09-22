@@ -1,0 +1,23 @@
+old_url,new_url,type,reason
+https://qpedia.ir/scientists/albert-einstein-2/,https://qpedia.ir/scientists/albert-einstein/,301,عدد اضافی -2 — canonical باید بدون عدد باشد
+https://qpedia.ir/scientists/albert-einstein-2/albert-einstein-3/,https://qpedia.ir/scientists/albert-einstein/,301,لینک تو در تو اشتباه از باگ سلسله‌مراتبی
+https://qpedia.ir/scientists/max-plank/,https://qpedia.ir/scientists/max-planck/,301,غلط املایی plank vs pl**a**nk — طبق Nobel و Britannica صحیح planck است
+https://qpedia.ir/scientists/schrodingerr/,https://qpedia.ir/scientists/erwin-schrodinger/,301,غلط املایی schrodingerr + دوبل — canonical erwin-schrodinger
+https://qpedia.ir/scientists/schrodingerr/ervin-schrodinger/,https://qpedia.ir/scientists/erwin-schrodinger/,301,غلط املایی ervin به جای erwin + مسیر اشتباه
+https://qpedia.ir/scientists/schrodingerr/arnold-sommer-feld/,https://qpedia.ir/scientists/arnold-sommerfeld/,301,مسیر اشتباه زیر schrodingerr — باید مستقیم
+https://qpedia.ir/scientists/schrodingerr/herman-weyl/,https://qpedia.ir/scientists/hermann-weyl/,301,مسیر اشتباه + غلط املایی herman vs hermann
+https://qpedia.ir/scientists/schrodingerr/john-bell-3/,https://qpedia.ir/scientists/john-bell/,301,مسیر اشتباه + عدد اضافی -3
+https://qpedia.ir/scientists/schrodingerr/arnold-sommer-feld,https://qpedia.ir/scientists/arnold-sommerfeld/,301,بدون اسلش انتهایی
+https://qpedia.ir/scientists/schrodingerr/herman-weyl,https://qpedia.ir/scientists/hermann-weyl/,301,بدون اسلش
+https://qpedia.ir/scientists/schrodingerr/john-bell-3,https://qpedia.ir/scientists/john-bell/,301,بدون اسلش
+https://qpedia.ir/scientists/schrodingerr/ervin-schrodinger,https://qpedia.ir/scientists/erwin-schrodinger/,301,بدون اسلش
+https://qpedia.ir/scientists/max-plank,https://qpedia.ir/scientists/max-planck/,301,بدون اسلش انتهایی
+https://qpedia.ir/scientists/albert-einstein-2,https://qpedia.ir/scientists/albert-einstein/,301,بدون اسلش
+https://qpedia.ir/scientists/schrodingerr,https://qpedia.ir/scientists/erwin-schrodinger/,301,بدون اسلش
+
+# htaccess snippet for Apache (if needed)
+# Redirect 301 /scientists/albert-einstein-2/ /scientists/albert-einstein/
+# Redirect 301 /scientists/max-plank/ /scientists/max-planck/
+# Redirect 301 /scientists/schrodingerr/ /scientists/erwin-schrodinger/
+# RedirectMatch 301 ^/scientists/schrodingerr/(.*)$ /scientists/$1
+# RedirectMatch 301 ^/scientists/albert-einstein-2/(.*)$ /scientists/albert-einstein/

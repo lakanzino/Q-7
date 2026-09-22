@@ -1,0 +1,205 @@
+@import url("https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;600;700&display=swap");
+
+.qpedia-wrap {
+	max-width: 1400px;
+	font-family: Vazirmatn, Tahoma, sans-serif;
+	direction: rtl;
+	color: #1a2430;
+}
+
+.qpedia-wrap h1 {
+	font-weight: 600;
+	letter-spacing: -0.02em;
+}
+
+.qpedia-muted {
+	color: #6b7884;
+	font-size: 13px;
+}
+
+.qpedia-empty {
+	background: #fff;
+	border: 1px solid #d9d1c2;
+	border-radius: 12px;
+	padding: 32px;
+	text-align: center;
+}
+
+.qpedia-hero {
+	display: flex;
+	gap: 24px;
+	align-items: center;
+	background: #fff;
+	border: 1px solid #d9d1c2;
+	border-radius: 18px;
+	padding: 24px;
+	margin: 16px 0;
+}
+
+.qpedia-ring {
+	position: relative;
+	width: 128px;
+	height: 128px;
+}
+
+.qpedia-ring-label {
+	position: absolute;
+	inset: 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.qpedia-ring-label strong {
+	font-size: 28px;
+	font-variant-numeric: tabular-nums;
+}
+
+.qpedia-cards {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+	gap: 12px;
+	margin: 16px 0;
+	list-style: none;
+	padding: 0;
+}
+
+.qpedia-card {
+	background: #fff;
+	border: 1px solid #d9d1c2;
+	border-radius: 12px;
+	padding: 16px;
+}
+
+.qpedia-card strong {
+	display: block;
+	font-size: 24px;
+	font-variant-numeric: tabular-nums;
+	margin-top: 6px;
+}
+
+.qpedia-grid-2 {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 16px;
+}
+
+.qpedia-table td,
+.qpedia-table th {
+	text-align: right;
+}
+
+.qpedia-grade {
+	display: inline-flex;
+	min-width: 22px;
+	justify-content: center;
+	padding: 0 6px;
+	border-radius: 999px;
+	font-size: 11px;
+	font-weight: 600;
+	margin-left: 6px;
+}
+
+.qpedia-grade-a { background: rgba(47, 125, 74, 0.12); color: #2f7d4a; }
+.qpedia-grade-b { background: rgba(44, 106, 160, 0.12); color: #2c6aa0; }
+.qpedia-grade-c { background: rgba(184, 137, 45, 0.15); color: #b8892d; }
+.qpedia-grade-d { background: rgba(196, 92, 38, 0.12); color: #c45c26; }
+.qpedia-grade-f { background: rgba(180, 35, 24, 0.12); color: #b42318; }
+
+.qpedia-filters {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 8px;
+	margin: 12px 0;
+	align-items: center;
+}
+
+.qpedia-pre {
+	background: #0c1620;
+	color: #f3efe4;
+	padding: 12px;
+	border-radius: 8px;
+	overflow: auto;
+	font-size: 12px;
+	line-height: 1.5;
+}
+
+.qpedia-dist {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.qpedia-dist li {
+	display: flex;
+	justify-content: space-between;
+	padding: 6px 0;
+	border-bottom: 1px solid #eee;
+}
+
+.qpedia-tree {
+	color: #3a4a58;
+}
+
+.qpedia-scan-overlay {
+	position: fixed;
+	inset: 0;
+	background: rgba(12, 22, 32, 0.55);
+	z-index: 100000;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.qpedia-scan-overlay .inner {
+	background: #fff;
+	border-radius: 16px;
+	padding: 24px;
+	width: min(420px, 92vw);
+}
+
+.qpedia-progress {
+	height: 8px;
+	background: #e8e2d4;
+	border-radius: 999px;
+	overflow: hidden;
+	margin-top: 12px;
+}
+
+.qpedia-progress > span {
+	display: block;
+	height: 100%;
+	background: #1f7a72;
+	width: 0;
+	transition: width 0.2s ease;
+}
+
+.qpedia-metabox .bar {
+	height: 8px;
+	background: #e8e2d4;
+	border-radius: 999px;
+	overflow: hidden;
+	margin: 8px 0 12px;
+}
+
+.qpedia-metabox .bar > span {
+	display: block;
+	height: 100%;
+	background: #1f7a72;
+}
+
+.qpedia-metabox ul {
+	margin: 0 0 12px;
+	padding-right: 16px;
+}
+
+@media (max-width: 782px) {
+	.qpedia-grid-2 {
+		grid-template-columns: 1fr;
+	}
+	.qpedia-hero {
+		flex-direction: column;
+		text-align: center;
+	}
+}

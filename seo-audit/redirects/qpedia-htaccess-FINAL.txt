@@ -1,0 +1,354 @@
+# BEGIN LSCACHE
+
+## LITESPEED WP CACHE PLUGIN - Do not edit the contents of this block! ##
+
+<IfModule mod_rewrite.c>
+
+RewriteEngine on
+
+RewriteRule litespeed/debug/.*\.log$ - [F,L]
+
+RewriteRule \.litespeed_conf\.dat - [F,L]
+
+</IfModule>
+
+<IfModule LiteSpeed>
+
+CacheLookup on
+
+RewriteRule .* - [E=Cache-Control:no-autoflush]
+
+
+
+### marker ASYNC start ###
+
+RewriteCond %{REQUEST_URI} /wp-admin/admin-ajax\.php
+
+RewriteCond %{QUERY_STRING} action=async_litespeed
+
+RewriteRule .* - [E=noabort:1]
+
+### marker ASYNC end ###
+
+
+
+### marker MOBILE start ###
+
+RewriteCond %{HTTP_USER_AGENT} Mobile|Android|Silk/|Kindle|BlackBerry|Opera\ Mini|Opera\ Mobi [NC]
+
+RewriteRule .* - [E=Cache-Control:vary=%{ENV:LSCACHE_VARY_VALUE}+ismobile]
+
+### marker MOBILE end ###
+
+
+
+### marker WEBP start ###
+
+RewriteCond %{HTTP_ACCEPT} image/webp [OR]
+
+RewriteCond %{HTTP_USER_AGENT} iPhone\ OS\ (1[4-9]|[2-9][0-9]) [OR]
+
+RewriteCond %{HTTP_USER_AGENT} Macintosh.*Version/((1[7-9]|[2-9][0-9])|16\.([4-9]|[1-9][0-9])) [OR]
+
+RewriteCond %{HTTP_USER_AGENT} Firefox/([6-9][0-9]|[1-9][0-9]{2,})
+
+RewriteRule .* - [E=Cache-Control:vary=%{ENV:LSCACHE_VARY_VALUE}+webp]
+
+### marker WEBP end ###
+
+
+
+### marker DROPQS start ###
+
+CacheKeyModify -qs:fbclid
+
+CacheKeyModify -qs:gclid
+
+CacheKeyModify -qs:utm*
+
+CacheKeyModify -qs:_ga
+
+### marker DROPQS end ###
+
+
+
+</IfModule>
+
+## LITESPEED WP CACHE PLUGIN - Do not edit the contents of this block! ##
+
+# END LSCACHE
+
+# BEGIN NON_LSCACHE
+
+## LITESPEED WP CACHE PLUGIN - Do not edit the contents of this block! ##
+
+### marker BROWSER CACHE start ###
+
+<IfModule mod_expires.c>
+
+ExpiresActive on
+
+ExpiresByType application/pdf A31557600
+
+ExpiresByType image/x-icon A31557600
+
+ExpiresByType image/vnd.microsoft.icon A31557600
+
+ExpiresByType image/svg+xml A31557600
+
+
+
+ExpiresByType image/jpg A31557600
+
+ExpiresByType image/jpeg A31557600
+
+ExpiresByType image/png A31557600
+
+ExpiresByType image/gif A31557600
+
+ExpiresByType image/webp A31557600
+
+ExpiresByType image/avif A31557600
+
+
+
+ExpiresByType video/ogg A31557600
+
+ExpiresByType audio/ogg A31557600
+
+ExpiresByType video/mp4 A31557600
+
+ExpiresByType video/webm A31557600
+
+
+
+ExpiresByType text/css A31557600
+
+ExpiresByType text/javascript A31557600
+
+ExpiresByType application/javascript A31557600
+
+ExpiresByType application/x-javascript A31557600
+
+
+
+ExpiresByType application/x-font-ttf A31557600
+
+ExpiresByType application/x-font-woff A31557600
+
+ExpiresByType application/font-woff A31557600
+
+ExpiresByType application/font-woff2 A31557600
+
+ExpiresByType application/vnd.ms-fontobject A31557600
+
+ExpiresByType font/ttf A31557600
+
+ExpiresByType font/otf A31557600
+
+ExpiresByType font/woff A31557600
+
+ExpiresByType font/woff2 A31557600
+
+
+
+</IfModule>
+
+### marker BROWSER CACHE end ###
+
+
+
+## LITESPEED WP CACHE PLUGIN - Do not edit the contents of this block! ##
+
+# END NON_LSCACHE
+
+
+
+RewriteOptions inherit
+
+
+
+RewriteEngine on
+
+RewriteCond %{HTTP_HOST} ^.*$
+
+RewriteRule ^/?$ "https\:\/\/qpedia\.ir\/" [R=301,L]
+
+
+#======================================================================
+# Q-7 SEO Fixes v2 — قوانین ریدایرکت qpedia.ir (تولید از ممیزی ۲۱ سپتامبر)
+# محل نصب: بعد از قانون ریدایرکت ریشه و «قبل از» # BEGIN WordPress
+# تغییرات نسخهٔ ۲: حذف ۳ قانون ۴۱۰ برای topic/core-concepts, pseudoscience,
+#   technology — آن‌ها بایگانی واقعی تکسونومی‌اند و در سایت‌مپ هستند؛
+#   و حذف ۳ ریدایرکت بلاارجاع (dirac-antimatter, google-error-correction,
+#   quantum_article/uncertainty-principle) چون لینک‌های ارجاعشان روی سایت
+#   توسط افزونه اصلاح شد.
+# هشدار مهم (بلوک B): اگر روزی مقاله‌ای با اسلاگ یکی از نشانی‌های زیر
+#   واقعاً منتشر کردی، ابتدا خط مربوطه را از همین‌جا حذف کن.
+#======================================================================
+<IfModule mod_rewrite.c>
+RewriteRule ^articles/?$ https://qpedia.ir/topics/ [R=301,L]
+RewriteRule ^weak-measurement/?$ https://qpedia.ir/quantum-measurement/ [R=301,L]
+RewriteRule ^loop-quantum-gravity/?$ https://qpedia.ir/quantum-gravity/ [R=301,L]
+RewriteRule ^quantum-measurement-problem/?$ https://qpedia.ir/quantum-measurement/ [R=301,L]
+RewriteRule ^quantum-decoherence/?$ https://qpedia.ir/decoherence/ [R=301,L]
+RewriteRule ^quantum-fluctuations/?$ https://qpedia.ir/quantum-fluctuations-cosmos/ [R=301,L]
+RewriteRule ^quantum-entanglement/?$ https://qpedia.ir/quantum-entanglement-explained/ [R=301,L]
+RewriteRule ^dark-energy/?$ https://qpedia.ir/dark-energy-quantum/ [R=301,L]
+RewriteRule ^superconducting-qubit/?$ https://qpedia.ir/superconductivity/ [R=301,L]
+RewriteRule ^scientists/albert-einstein/?$ https://qpedia.ir/scientists/albert-einstein-2/ [R=301,L]
+RewriteRule ^scientist/albert-einstein/?$ https://qpedia.ir/scientists/albert-einstein-2/ [R=301,L]
+RewriteRule ^albert-einstein/?$ https://qpedia.ir/scientists/albert-einstein-2/ [R=301,L]
+RewriteRule ^scientists/max-planck/?$ https://qpedia.ir/scientists/max-plank/ [R=301,L]
+RewriteRule ^scientist/max-planck/?$ https://qpedia.ir/scientists/max-plank/ [R=301,L]
+RewriteRule ^max-planck/?$ https://qpedia.ir/scientists/max-plank/ [R=301,L]
+RewriteRule ^epr-paradox-2/?$ https://qpedia.ir/epr-paradox/ [R=301,L]
+RewriteRule ^no-cloning-theorem-2/?$ https://qpedia.ir/no-cloning-theorem/ [R=301,L]
+RewriteRule ^quantum-gate-2/?$ https://qpedia.ir/quantum-gate/ [R=301,L]
+RewriteRule ^solvay-conference-1927-2/?$ https://qpedia.ir/solvay-conference-1927/ [R=301,L]
+RewriteRule ^aspect-experiment-1982-2/?$ https://qpedia.ir/aspect-experiment-1982/ [R=301,L]
+RewriteRule ^absolute-zero-2/?$ https://qpedia.ir/absolute-zero/ [R=301,L]
+RewriteRule ^alpha-decay-2/?$ https://qpedia.ir/alpha-decay/ [R=301,L]
+RewriteRule ^stimulated-emission-2/?$ https://qpedia.ir/stimulated-emission/ [R=301,L]
+RewriteRule ^neutrino-2/?$ https://qpedia.ir/neutrino/ [R=301,L]
+RewriteRule ^standard-model-2/?$ https://qpedia.ir/standard-model/ [R=301,L]
+RewriteRule ^virtual-particles-2/?$ https://qpedia.ir/virtual-particles/ [R=301,L]
+RewriteRule ^stern-gerlach-experiment-2/?$ https://qpedia.ir/stern-gerlach-experiment/ [R=301,L]
+RewriteRule ^flash-memory-2/?$ https://qpedia.ir/flash-memory/ [R=301,L]
+RewriteRule ^scanning-tunneling-microscope-2/?$ https://qpedia.ir/scanning-tunneling-microscope/ [R=301,L]
+RewriteRule ^fiber-optics-2/?$ https://qpedia.ir/fiber-optics/ [R=301,L]
+RewriteRule ^quantum-supremacy-2/?$ https://qpedia.ir/quantum-supremacy/ [R=301,L]
+RewriteRule ^shor-algorithm-2/?$ https://qpedia.ir/shor-algorithm/ [R=301,L]
+RewriteRule ^pilot-wave-2/?$ https://qpedia.ir/pilot-wave/ [R=301,L]
+RewriteRule ^genetic-mutation-2/?$ https://qpedia.ir/genetic-mutation/ [R=301,L]
+RewriteRule ^google-error-correction__trashed/?$ https://qpedia.ir/quantum-error-correction/ [R=301,L]
+RewriteRule ^higgs-boson-2/?$ https://qpedia.ir/higgs-boson/ [R=301,L]
+RewriteRule ^coherence-2/?$ https://qpedia.ir/coherence/ [R=301,L]
+RewriteRule ^grover-algorithm-2/?$ https://qpedia.ir/grover-algorithm/ [R=301,L]
+RewriteRule ^quantum-error-correction-2/?$ https://qpedia.ir/quantum-error-correction/ [R=301,L]
+RewriteRule ^bose-einstein-condensate-2/?$ https://qpedia.ir/bose-einstein-condensate/ [R=301,L]
+RewriteRule ^stellar-fusion-2/?$ https://qpedia.ir/stellar-fusion/ [R=301,L]
+RewriteRule ^quantum-simulation-2/?$ https://qpedia.ir/quantum-simulation/ [R=301,L]
+</IfModule>
+
+# پاسخ ۴۱۰ (حذف‌شدهٔ عمدی) — هشدار بالا دربارهٔ انتشار آینده صادق است:
+<IfModule mod_rewrite.c>
+RewriteRule ^black-hole/?$ - [G,L]
+RewriteRule ^dark-matter/?$ - [G,L]
+RewriteRule ^fundamental-forces/?$ - [G,L]
+RewriteRule ^led/?$ - [G,L]
+RewriteRule ^matter-wave/?$ - [G,L]
+RewriteRule ^max-planck-blackbody/?$ - [G,L]
+RewriteRule ^noon-state/?$ - [G,L]
+RewriteRule ^quantum-art/?$ - [G,L]
+RewriteRule ^quantum-communication/?$ - [G,L]
+RewriteRule ^quantum-ethics/?$ - [G,L]
+RewriteRule ^quantum-game-theory/?$ - [G,L]
+RewriteRule ^quantum-interference/?$ - [G,L]
+RewriteRule ^quantum-investment/?$ - [G,L]
+RewriteRule ^quantum-key-distribution/?$ - [G,L]
+RewriteRule ^quantum-literacy/?$ - [G,L]
+RewriteRule ^quantum-photosynthesis/?$ - [G,L]
+RewriteRule ^quantum-policy/?$ - [G,L]
+RewriteRule ^quantum-smart-contract/?$ - [G,L]
+RewriteRule ^quantum-startup/?$ - [G,L]
+RewriteRule ^semiconductor/?$ - [G,L]
+RewriteRule ^swap-test/?$ - [G,L]
+RewriteRule ^transistor/?$ - [G,L]
+RewriteRule ^quantum-photosynthesis__trashed/?$ - [G,L]
+RewriteRule ^dirac-antimatter__trashed/?$ - [G,L]
+RewriteRule ^max-planck-blackbody__trashed/?$ - [G,L]
+RewriteRule ^led__trashed/?$ - [G,L]
+</IfModule>
+
+# BEGIN WordPress
+
+# دستورالعمل‌های (خطوط) بین "BEGIN WordPress" و "END WordPress"
+
+# به طور پویا تولید شده‌اند، و فقط باید به وسیلهٔ صافی‌های وردرپرس ویرایش شوند.
+
+# هر تغییری در دستورالعمل‌های بین این نشان‌گرها بازنویشی خواهند شد.
+
+<IfModule mod_rewrite.c>
+
+RewriteEngine On
+
+RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
+
+RewriteBase /
+
+RewriteRule ^index\.php$ - [L]
+
+RewriteCond %{REQUEST_FILENAME} !-f
+
+RewriteCond %{REQUEST_FILENAME} !-d
+
+RewriteRule . /index.php [L]
+
+</IfModule>
+
+
+
+# END WordPress
+
+
+
+ 
+
+ 
+
+# BEGIN cPanel-generated php ini directives, do not edit
+
+# Manual editing of this file may result in unexpected behavior.
+
+# To make changes to this file, use the cPanel MultiPHP INI Editor (Home >> Software >> MultiPHP INI Editor)
+
+# For more information, read our documentation (https://go.cpanel.net/EA4ModifyINI)
+
+<IfModule php8_module>
+
+   php_value max_execution_time 120
+
+   php_value max_input_time 120
+
+   php_value max_input_vars 5000
+
+   php_value memory_limit 256M
+
+   php_value post_max_size 64M
+
+   php_value upload_max_filesize 64M
+
+</IfModule>
+
+<IfModule lsapi_module>
+
+   php_value max_execution_time 120
+
+   php_value max_input_time 120
+
+   php_value max_input_vars 5000
+
+   php_value memory_limit 256M
+
+   php_value post_max_size 64M
+
+   php_value upload_max_filesize 64M
+
+</IfModule>
+
+# END cPanel-generated php ini directives, do not edit
+
+
+
+# php -- BEGIN cPanel-generated handler, do not edit
+
+# Set the “ea-php84” package as the default “PHP” programming language.
+
+<IfModule mime_module>
+
+  AddHandler application/x-httpd-ea-php84___lsphp .php .php8 .phtml
+
+</IfModule>
+
+# php -- END cPanel-generated handler, do not edit

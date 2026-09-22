@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="860" height="430" dir="ltr" font-family="Vazirmatn, Tahoma">
+<style>text{font-size:12px;fill:#111} .v{font-size:11px;fill:#374151;font-weight:bold}</style>
+<text x="10" y="16" font-weight="bold">۱۵ ایراد پرتکرار سایت (کل مقالات)</text>
+<text x="224" y="43" text-anchor="end">بدون پوشش سوءبرداشت رایج [C12]</text>
+<rect x="230" y="30" width="570" height="16" rx="3" fill="#3b82f6"/>
+<text x="805" y="43" class="v">293</text>
+<text x="224" y="69" text-anchor="end">کلیدواژه در پاراگراف آغازی [K04]</text>
+<rect x="230" y="56" width="381" height="16" rx="3" fill="#3b82f6"/>
+<text x="616" y="69" class="v">196</text>
+<text x="224" y="95" text-anchor="end">کلیدواژه کانونی در متای تو [K03]</text>
+<rect x="230" y="82" width="379" height="16" rx="3" fill="#3b82f6"/>
+<text x="614" y="95" class="v">195</text>
+<text x="224" y="121" text-anchor="end">رمزِ شِمای Rank Math ثبت ن [X04]</text>
+<rect x="230" y="108" width="365" height="16" rx="3" fill="#3b82f6"/>
+<text x="600" y="121" class="v">188</text>
+<text x="224" y="147" text-anchor="end">محتوای بسیار نازک [C01]</text>
+<rect x="230" y="134" width="282" height="16" rx="3" fill="#3b82f6"/>
+<text x="517" y="147" class="v">145</text>
+<text x="224" y="173" text-anchor="end">کلیدواژه کانونی در عنوان ن [K02]</text>
+<rect x="230" y="160" width="256" height="16" rx="3" fill="#3b82f6"/>
+<text x="491" y="173" class="v">132</text>
+<text x="224" y="199" text-anchor="end">بدون بخش جمع‌بندی [C11]</text>
+<rect x="230" y="186" width="219" height="16" rx="3" fill="#3b82f6"/>
+<text x="454" y="199" class="v">113</text>
+<text x="224" y="225" text-anchor="end">صفحه یتیم (بدون لینک ورودی [X05]</text>
+<rect x="230" y="212" width="192" height="16" rx="3" fill="#3b82f6"/>
+<text x="427" y="225" class="v">99</text>
+<text x="224" y="251" text-anchor="end">ارجاع خارجی کمتر از ۳ [C08]</text>
+<rect x="230" y="238" width="177" height="16" rx="3" fill="#3b82f6"/>
+<text x="412" y="251" class="v">91</text>
+<text x="224" y="277" text-anchor="end">لینک داخلی کمتر از ۳ [L01]</text>
+<rect x="230" y="264" width="118" height="16" rx="3" fill="#3b82f6"/>
+<text x="353" y="277" class="v">61</text>
+<text x="224" y="303" text-anchor="end">بخش پرسش‌های متداول ندارد [C09]</text>
+<rect x="230" y="290" width="81" height="16" rx="3" fill="#3b82f6"/>
+<text x="316" y="303" class="v">42</text>
+<text x="224" y="329" text-anchor="end">لینک داخلی شکسته (۴۰۴) [L02]</text>
+<rect x="230" y="316" width="79" height="16" rx="3" fill="#3b82f6"/>
+<text x="314" y="329" class="v">41</text>
+<text x="224" y="355" text-anchor="end">تراکم کلیدواژه بیش از حد [K06]</text>
+<rect x="230" y="342" width="66" height="16" rx="3" fill="#3b82f6"/>
+<text x="301" y="355" class="v">34</text>
+<text x="224" y="381" text-anchor="end">بخش منابع/ارجاع ندارد [C07]</text>
+<rect x="230" y="368" width="54" height="16" rx="3" fill="#3b82f6"/>
+<text x="289" y="381" class="v">28</text>
+<text x="224" y="407" text-anchor="end">عنوان خیلی بلند [T02]</text>
+<rect x="230" y="394" width="38" height="16" rx="3" fill="#3b82f6"/>
+<text x="273" y="407" class="v">20</text>
+</svg>
