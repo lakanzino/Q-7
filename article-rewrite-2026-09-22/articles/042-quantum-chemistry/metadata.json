@@ -1,0 +1,26 @@
+{
+  "new_sequence": 42,
+  "wxr_sequence": 46,
+  "post_id": 2480,
+  "post_type": "quantum_article",
+  "post_title": "شیمی کوانتومی چیست؟ چرا دستتان از دیوار رد نمی شود",
+  "slug": "quantum-chemistry",
+  "url": "https://qpedia.ir/quantum-chemistry/",
+  "post_date": "2026-09-05 22:39:44",
+  "featured_media_id": 3160,
+  "primary_keyword": "شیمی کوانتومی",
+  "seo_title": "شیمی کوانتومی چیست و چرا دست از دیوار رد نمی‌شود؟",
+  "meta_description": "شیمی کوانتومی چیست؟ نقش تابع موج، اصل طرد، دافعه الکتریکی، پیوند، هارتری–فوک و DFT را در ساختار و سختی ماده به زبان ساده بخوانید.",
+  "taxonomy": {
+    "mother_name": "کوانتوم و زندگی",
+    "mother_slug": "quantum-and-life",
+    "category_name": "زیست و پزشکی",
+    "category_slug": "quantum-biology-medicine"
+  },
+  "rank_math": {
+    "rank_math_title": "شیمی کوانتومی چیست و چرا دست از دیوار رد نمی‌شود؟",
+    "rank_math_description": "شیمی کوانتومی چیست؟ نقش تابع موج، اصل طرد، دافعه الکتریکی، پیوند، هارتری–فوک و DFT را در ساختار و سختی ماده به زبان ساده بخوانید.",
+    "rank_math_focus_keyword": "شیمی کوانتومی"
+  },
+  "status": "completed_and_individually_qa_checked"
+}
