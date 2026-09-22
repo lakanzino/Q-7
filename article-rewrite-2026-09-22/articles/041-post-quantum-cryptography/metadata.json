@@ -1,0 +1,26 @@
+{
+  "new_sequence": 41,
+  "wxr_sequence": 45,
+  "post_id": 2479,
+  "post_type": "quantum_article",
+  "post_title": "رمزنگاری پساکوانتومی؛ قفل های تازهٔ اینترنت",
+  "slug": "post-quantum-cryptography",
+  "url": "https://qpedia.ir/post-quantum-cryptography/",
+  "post_date": "2026-09-05 22:39:44",
+  "featured_media_id": 3257,
+  "primary_keyword": "رمزنگاری پساکوانتومی",
+  "seo_title": "رمزنگاری پساکوانتومی چیست و چرا اینترنت به آن نیاز دارد؟",
+  "meta_description": "رمزنگاری پساکوانتومی چیست؟ تهدید شور، خطر ذخیره و رمزگشایی آینده، استانداردهای ML-KEM و ML-DSA و مسیر مهاجرت اینترنت را ساده بخوانید.",
+  "taxonomy": {
+    "mother_name": "فناوری کوانتومی",
+    "mother_slug": "quantum-technology",
+    "category_name": "ارتباطات کوانتومی",
+    "category_slug": "quantum-communications"
+  },
+  "rank_math": {
+    "rank_math_title": "رمزنگاری پساکوانتومی چیست و چرا اینترنت به آن نیاز دارد؟",
+    "rank_math_description": "رمزنگاری پساکوانتومی چیست؟ تهدید شور، خطر ذخیره و رمزگشایی آینده، استانداردهای ML-KEM و ML-DSA و مسیر مهاجرت اینترنت را ساده بخوانید.",
+    "rank_math_focus_keyword": "رمزنگاری پساکوانتومی"
+  },
+  "status": "completed_and_individually_qa_checked"
+}
