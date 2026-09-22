@@ -11,6 +11,9 @@
   "rank_math_title": "ترازهای انرژی چیست؟ از طیف اتمی تا لیزر",
   "rank_math_description": "ترازهای انرژی چرا گسسته‌اند و چگونه رنگ، طیف اتمی و لیزر را می‌سازند؟ مدل بور، شرط مرزی، گذار فوتونی و محدودیت تمثیل نردبان را بخوانید.",
   "source_url": "https://qpedia.ir/energy-levels/",
-  "rewrite_status": "completed_and_qa_checked",
-  "importer_batch": "006-010"
+  "rewrite_status": "completed_qa_checked_and_general_reader_revised",
+  "importer_batch": "006-010",
+  "general_reader_revision": true,
+  "analogy_rule_checked": true,
+  "comprehensive_importer_batch": "001-025"
 }
