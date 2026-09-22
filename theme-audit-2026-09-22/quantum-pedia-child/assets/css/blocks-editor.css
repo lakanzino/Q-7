@@ -1,0 +1,29 @@
+/* قاب پیش‌نمایش بلوک‌های صفحه اصلی داخل ویرایشگر (v1.5.0) */
+.qp-block-ph{
+  border:2px dashed #3BA7F2;
+  border-radius:12px;
+  padding:20px 16px;
+  background:#E8F6FF;
+  text-align:center;
+}
+.qp-block-ph__icon{
+  font-size:1.6rem;
+  color:#3BA7F2;
+  line-height:1;
+}
+.qp-block-ph__title{
+  display:block;
+  margin:8px 0 4px;
+  font-size:1rem;
+  color:#333333;
+}
+.qp-block-ph__line{
+  margin:2px 0;
+  font-size:.85rem;
+  color:#475569;
+}
+.qp-block-ph__hint{
+  margin:10px 0 0;
+  font-size:.75rem;
+  color:#94a3b8;
+}

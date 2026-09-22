@@ -1,0 +1,318 @@
+/* ══════════════════════════════════════════════════════════════════
+   QPEDIA — برگهٔ راهنمای ورود («از کجا شروع کنیم»)
+   محل: quantum-pedia-child/assets/css/qpedia-guide.css
+   هر بخش رنگ خودش را دارد؛ مینیمال، تکنولوژیک و راست‌به‌چپ.
+   ══════════════════════════════════════════════════════════════════ */
+
+/* ── سربرگ صفحه ── */
+.qp-guide-hero{
+  background:linear-gradient(135deg,#082f6e 0%,#0B3D91 55%,#1a55b0 100%);
+  color:#fff;
+  border-radius:18px;
+  padding:40px 32px;
+  margin:0 0 26px;
+  position:relative;
+  overflow:hidden;
+}
+.qp-guide-hero::after{
+  content:"";
+  position:absolute;
+  inset-inline-end:-60px;
+  top:-60px;
+  width:220px;
+  height:220px;
+  border:2px solid rgba(255,255,255,.14);
+  border-radius:50%;
+}
+.qp-guide-hero::before{
+  content:"";
+  position:absolute;
+  inset-inline-end:-30px;
+  top:-30px;
+  width:140px;
+  height:140px;
+  border:2px solid rgba(255,255,255,.1);
+  border-radius:50%;
+}
+.qp-guide-hero__badge{
+  display:inline-block;
+  background:rgba(255,255,255,.16);
+  border:1px solid rgba(255,255,255,.3);
+  font-size:.8rem;
+  font-weight:700;
+  padding:5px 16px;
+  border-radius:999px;
+  margin-bottom:14px;
+}
+.qp-guide-hero__title{
+  margin:0 0 10px;
+  font-size:2rem;
+  font-weight:800;
+  color:#fff;
+}
+.qp-guide-hero__desc{
+  margin:0 0 18px;
+  line-height:2.1;
+  color:#E8F6FF;
+  max-width:60ch;
+}
+.qp-guide-hero__times{
+  display:flex;
+  flex-wrap:wrap;
+  gap:10px;
+}
+.qp-guide-hero__times a{
+  color:#fff;
+  text-decoration:none;
+  font-size:.85rem;
+  font-weight:700;
+  background:rgba(255,255,255,.12);
+  border:1px solid rgba(255,255,255,.35);
+  padding:8px 18px;
+  border-radius:999px;
+  transition:background .15s ease;
+}
+.qp-guide-hero__times a:hover{background:rgba(255,255,255,.25)}
+
+/* ── باکس‌های رنگی ── */
+.qp-guide-box{
+  border-radius:14px;
+  padding:24px 26px;
+  margin:0 0 22px;
+  border:1px solid;
+  border-right-width:5px;
+}
+.qp-guide-box__title{
+  margin:0 0 12px;
+  font-size:1.3rem;
+  font-weight:800;
+  display:flex;
+  align-items:center;
+  gap:10px;
+}
+.qp-guide-box__icon{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  width:38px;
+  height:38px;
+  border-radius:10px;
+  font-size:1.15rem;
+  flex:none;
+}
+.qp-guide-box p{margin:0 0 12px;line-height:2.05}
+.qp-guide-box p:last-child{margin-bottom:0}
+.qp-guide-box ul,.qp-guide-box ol{margin:0 0 12px;padding-right:1.3rem;line-height:2}
+.qp-guide-box li{margin-bottom:6px}
+.qp-guide-box a{font-weight:700;text-decoration:none;border-bottom:1px dashed currentColor}
+.qp-guide-box a:hover{border-bottom-style:solid}
+
+/* خاکستری — ۶۰ ثانیه‌ای */
+.qp-guide-box--slate{background:#f8fafc;border-color:#e2e8f0;border-right-color:#64748b}
+.qp-guide-box--slate .qp-guide-box__title{color:#333333}
+.qp-guide-box--slate .qp-guide-box__icon{background:#e2e8f0}
+.qp-guide-box--slate a{color:#3BA7F2}
+
+/* کهربایی — ۵ دقیقه‌ای */
+.qp-guide-box--amber{background:#FEF6EE;border-color:#F3D9BF;border-right-color:#F4A261}
+.qp-guide-box--amber .qp-guide-box__title{color:#7C3F10}
+.qp-guide-box--amber .qp-guide-box__icon{background:#FDE8D3}
+.qp-guide-box--amber a{color:#9A4B16}
+
+/* آبی — ۳۰ دقیقه‌ای */
+.qp-guide-box--blue{background:#E8F6FF;border-color:#BFDDF7;border-right-color:#3BA7F2}
+.qp-guide-box--blue .qp-guide-box__title{color:#0B3D91}
+.qp-guide-box--blue .qp-guide-box__icon{background:#D9EEFF}
+.qp-guide-box--blue a{color:#0B3D91}
+
+/* بنفش — مسیر کامل */
+.qp-guide-box--violet{background:#E9F0FB;border-color:#C9DAF2;border-right-color:#0B3D91}
+.qp-guide-box--violet .qp-guide-box__title{color:#0B3D91}
+.qp-guide-box--violet .qp-guide-box__icon{background:#D9E6F7}
+.qp-guide-box--violet a{color:#0B3D91}
+
+/* سبز — حال‌وهوا */
+.qp-guide-box--green{background:#E8FBF8;border-color:#B9EDE0;border-right-color:#7FE7D6}
+.qp-guide-box--green .qp-guide-box__title{color:#0B3D91}
+.qp-guide-box--green .qp-guide-box__icon{background:#D4F5EC}
+.qp-guide-box--green a{color:#0E7D6B}
+
+/* فیروزه‌ای — نقشه سایت */
+.qp-guide-box--cyan{background:#E3F2FF;border-color:#A8D8F8;border-right-color:#2E8FDB}
+.qp-guide-box--cyan .qp-guide-box__title{color:#0B3D91}
+.qp-guide-box--cyan .qp-guide-box__icon{background:#CDEAFF}
+.qp-guide-box--cyan a{color:#1D6FB0}
+
+/* رز — هشدار شبه‌علم */
+.qp-guide-box--rose{background:#FEF3E7;border-color:#F5CFA3;border-right-color:#E08A3C}
+.qp-guide-box--rose .qp-guide-box__title{color:#7C3F10}
+.qp-guide-box--rose .qp-guide-box__icon{background:#FBE3C8}
+.qp-guide-box--rose a{color:#9A4B16}
+
+/* ── گام‌های مسیر ── */
+.qp-guide-steps{list-style:none;margin:0;padding:0}
+.qp-guide-step{
+  background:#fff;
+  border:1px solid rgba(59,167,242,.18);
+  border-radius:12px;
+  padding:14px 16px;
+  margin:0 0 10px;
+  display:flex;
+  gap:14px;
+  align-items:flex-start;
+}
+.qp-guide-step:last-child{margin-bottom:0}
+.qp-guide-step__num{
+  flex:none;
+  width:36px;
+  height:36px;
+  border-radius:50%;
+  background:linear-gradient(135deg,#0B3D91,#3BA7F2);
+  color:#fff;
+  font-weight:800;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:1rem;
+}
+.qp-guide-step__body{flex:1;min-width:0}
+.qp-guide-step__level{
+  display:inline-block;
+  font-size:.72rem;
+  font-weight:700;
+  background:#D9EEFF;
+  color:#0B3D91;
+  padding:2px 10px;
+  border-radius:999px;
+  margin-bottom:6px;
+}
+.qp-guide-step__title{margin:0 0 4px;font-size:1.05rem}
+.qp-guide-step__title a{border-bottom:none}
+.qp-guide-step__desc{margin:0!important;color:#4b5563;font-size:.92rem}
+
+/* ── کارت‌های حال‌وهوا ── */
+.qp-guide-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(215px,1fr));
+  gap:12px;
+  margin-top:14px;
+}
+.qp-guide-card{
+  background:#fff;
+  border:1px solid rgba(59,167,242,.18);
+  border-top:4px solid #7FE7D6;
+  border-radius:12px;
+  padding:16px 18px;
+}
+.qp-guide-card--cyan{border-top-color:#2E8FDB}
+.qp-guide-card--rose{border-top-color:#E08A3C}
+.qp-guide-card__title{margin:0 0 8px;font-size:1rem;font-weight:800}
+.qp-guide-card__desc{margin:0 0 10px!important;font-size:.88rem;color:#4b5563}
+.qp-guide-card ul{margin:0;padding-right:1.1rem;font-size:.88rem}
+.qp-guide-card li{margin-bottom:4px}
+
+/* ── چیپ‌های نقشه سایت ── */
+.qp-guide-chips{display:flex;flex-wrap:wrap;gap:10px;margin-top:12px}
+.qp-guide-chips a{
+  background:#fff;
+  border:1px solid #A8D8F8;
+  color:#0B3D91!important;
+  font-weight:700;
+  font-size:.88rem;
+  padding:9px 18px;
+  border-radius:999px;
+  text-decoration:none;
+  border-bottom:1px solid #A8D8F8;
+  transition:background .15s ease,transform .15s ease;
+}
+.qp-guide-chips a:hover{background:#CDEAFF;transform:translateY(-2px)}
+
+/* ── جعبه پایانی + دکمه‌ها ── */
+.qp-guide-cta{
+  background:linear-gradient(135deg,#082f6e 0%,#0B3D91 60%,#3BA7F2 100%);
+  color:#fff;
+  border-radius:18px;
+  padding:36px 30px;
+  margin:0 0 26px;
+  text-align:center;
+}
+.qp-guide-cta__title{margin:0 0 10px;font-size:1.5rem;font-weight:800;color:#fff}
+.qp-guide-cta__desc{margin:0 auto 20px;line-height:2;color:#e2e8f0;max-width:56ch}
+.qp-guide-cta__actions{display:flex;flex-wrap:wrap;gap:12px;justify-content:center}
+.qp-guide-promise{
+  list-style:none;
+  margin:0 auto 22px;
+  padding:0;
+  display:flex;
+  flex-wrap:wrap;
+  gap:10px;
+  justify-content:center;
+}
+.qp-guide-promise li{
+  background:rgba(255,255,255,.1);
+  border:1px solid rgba(255,255,255,.25);
+  font-size:.83rem;
+  padding:7px 16px;
+  border-radius:999px;
+}
+
+/* ── سوالات متداول صفحه راهنما ── */
+.qp-guide-faq{margin:0 0 10px}
+.qp-guide-faq details{
+  background:#fff;
+  border:1px solid rgba(59,167,242,.18);
+  border-radius:10px;
+  padding:12px 18px;
+  margin-bottom:10px;
+}
+.qp-guide-faq summary{cursor:pointer;font-weight:700;color:#333333}
+.qp-guide-faq details p{margin:10px 0 2px;line-height:2;color:#333333}
+
+@media (max-width:640px){
+  .qp-guide-hero{padding:30px 22px}
+  .qp-guide-hero__title{font-size:1.6rem}
+  .qp-guide-box{padding:20px 18px}
+  .qp-guide-step{flex-direction:column;gap:8px}
+}
+
+/* ── بوم برگهٔ «صفحه اصلی» ── */
+.qp-home-canvas{padding:26px 0 44px}
+
+/* ── گرید دانشمندان (شورت‌کد qp_scientists) ── */
+.qp-sc-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(160px,1fr));
+  gap:12px;
+}
+.qp-sc-card{
+  background:var(--qp-card,#fff);
+  border:1px solid var(--qp-line,rgba(59,167,242,.15));
+  border-radius:14px;
+  padding:18px 12px;
+  text-align:center;
+  text-decoration:none;
+  color:inherit;
+  transition:border-color .16s ease,transform .16s ease,box-shadow .16s ease;
+}
+.qp-sc-card:hover{
+  border-color:var(--qp-accent,#3BA7F2);
+  transform:translateY(-3px);
+  box-shadow:0 12px 26px rgba(11,61,145,.10);
+}
+.qp-sc-ava{
+  width:72px;
+  height:72px;
+  border-radius:50%;
+  margin:0 auto 10px;
+  background:linear-gradient(135deg,#0B3D91,#3BA7F2);
+  color:#fff;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:1.6rem;
+  font-weight:800;
+  overflow:hidden;
+}
+.qp-sc-ava img{width:100%;height:100%;object-fit:cover;display:block}
+.qp-sc-name{margin:0;font-size:.95rem;font-weight:800;color:var(--qp-ink,#333333)}
+.qp-sc-latin{margin:4px 0 0;font-size:.78rem;color:var(--qp-dim,#6b7280);direction:ltr}
