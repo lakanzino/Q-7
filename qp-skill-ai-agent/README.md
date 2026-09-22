@@ -8,6 +8,12 @@
 |---|---|---|---|---|
 | [`no-ai-slop`](./no-ai-slop/) | [`petergyang/no-ai-slop`](https://github.com/petergyang/no-ai-slop) | تشخیص و حذف الگوهای نثر ماشینی با حفظ صدای نویسنده | [`SKILL.md`](./no-ai-slop/SKILL.md) | نصب سراسری و کنترل‌شده |
 
+## مجموعه‌های بررسی‌شده
+
+چکیده و موجودی پنج مخزن `skills`، `freebuff`، `blog-translation-agent`، `agentic-awesome-skills` و `agent-skills` در پوشه [`repositories/`](./repositories/) قرار دارد.
+
+فرمان استاندارد و قابل کپی برای بازنویسی مقاله‌های سایت در [`ARTICLE-REWRITE-COMMAND.md`](./ARTICLE-REWRITE-COMMAND.md) ثبت شده است.
+
 ## چکیده مهارت‌ها
 
 ### no-ai-slop

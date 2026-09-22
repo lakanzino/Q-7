@@ -1,0 +1,2 @@
+﻿name,description,path
+example-skill,An example skill demonstrating the SKILL.md format,common/src/templates/initial-agents-dir/skills/example-skill/SKILL.md
