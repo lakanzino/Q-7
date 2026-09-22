@@ -7,10 +7,13 @@
   "seo_title": "برهم‌نهی کوانتومی چیست؟ تفاوت آن با سکهٔ چرخان",
   "focus_keyword": "برهم‌نهی کوانتومی",
   "source_url": "https://qpedia.ir/quantum-superposition/",
-  "rewrite_status": "completed_and_qa_checked",
+  "rewrite_status": "completed_qa_checked_and_general_reader_revised",
   "importer_batch": "001-005",
   "meta_description": "برهم‌نهی کوانتومی یعنی حالت یک سامانه می‌تواند ترکیبی از چند حالت مجاز باشد. این ترکیب با «نمی‌دانیم کدام حالت برقرار است» فرق دارد، چون اجزای آن می‌توانند",
   "rank_math_focus_keyword": "برهم‌نهی کوانتومی",
   "rank_math_title": "برهم‌نهی کوانتومی چیست؟ تفاوت آن با سکهٔ چرخان",
-  "rank_math_description": "برهم‌نهی کوانتومی یعنی حالت یک سامانه می‌تواند ترکیبی از چند حالت مجاز باشد. این ترکیب با «نمی‌دانیم کدام حالت برقرار است» فرق دارد، چون اجزای آن می‌توانند"
+  "rank_math_description": "برهم‌نهی کوانتومی یعنی حالت یک سامانه می‌تواند ترکیبی از چند حالت مجاز باشد. این ترکیب با «نمی‌دانیم کدام حالت برقرار است» فرق دارد، چون اجزای آن می‌توانند",
+  "general_reader_revision": true,
+  "analogy_rule_checked": true,
+  "comprehensive_importer_batch": "001-025"
 }
