@@ -1,0 +1,185 @@
+﻿new_sequence,sequence,post_id,revised_title,slug,url,simple_mother,simple_mother_slug,simple_category,simple_category_slug
+1,1,286,کوانتوم یعنی چه؟,what-is-quantum,https://qpedia.ir/what-is-quantum/,مبانی کوانتوم,quantum-foundations,مفاهیم پایه,quantum-basics
+2,2,287,برهم‌نهی کوانتومی؛ چرا سکهٔ چرخان، الکترون نیست؟,quantum-superposition,https://qpedia.ir/quantum-superposition/,مبانی کوانتوم,quantum-foundations,مفاهیم پایه,quantum-basics
+3,3,288,دوگانگی موج و ذره,wave-particle-duality,https://qpedia.ir/wave-particle-duality/,مبانی کوانتوم,quantum-foundations,مفاهیم پایه,quantum-basics
+4,4,289,تابع موج چیست؟ کامل‌ترین نقشهٔ یک ذره — ولی خودش واقعیت نیست,wave-function,https://qpedia.ir/wave-function/,مبانی کوانتوم,quantum-foundations,مفاهیم پایه,quantum-basics
+5,5,291,اندازه‌گیری و فروپاشی در کوانتوم؛ بزرگ‌ترین درزِ مکانیک کوانتومی,quantum-measurement,https://qpedia.ir/quantum-measurement/,مبانی کوانتوم,quantum-foundations,مفاهیم پایه,quantum-basics
+6,6,292,اسپین؛ چرخشی که چرخش نیست,quantum-spin,https://qpedia.ir/quantum-spin/,مبانی کوانتوم,quantum-foundations,مفاهیم پایه,quantum-basics
+7,7,293,ترازهای انرژی و کوانتش,energy-levels,https://qpedia.ir/energy-levels/,مبانی کوانتوم,quantum-foundations,مفاهیم پایه,quantum-basics
+8,8,294,واهمدوسی (Decoherence)؛ چرا گربه‌ای را نمی‌بینیم که هم‌زمان زنده و مرده باشد؟,decoherence,https://qpedia.ir/decoherence/,مبانی کوانتوم,quantum-foundations,مفاهیم پایه,quantum-basics
+9,9,295,ثابت پلانک چیست؟ مقیاس بنیادی کوانتومی، نه کوچک‌ترین واحد جهان,planck-constant,https://qpedia.ir/planck-constant/,مبانی کوانتوم,quantum-foundations,مفاهیم پایه,quantum-basics
+10,10,297,آزمایش دو شکاف؛ معروف‌ترین آزمایش فیزیک، که هنوز هم درک کاملش سخت است,double-slit-experiment,https://qpedia.ir/double-slit-experiment/,مبانی کوانتوم,quantum-foundations,مفاهیم پایه,quantum-basics
+11,11,298,درهم‌تنیدگی کوانتومی؛ «اثر شبح‌وار» که واقعی است، اما پیام نمی‌فرستد,quantum-entanglement-explained,https://qpedia.ir/quantum-entanglement-explained/,مبانی کوانتوم,quantum-foundations,مفاهیم پایه,quantum-basics
+12,12,299,تونل‌زنی کوانتومی؛ پدیده‌ای که بدونش خورشید نمی‌تابید,quantum-tunneling,https://qpedia.ir/quantum-tunneling/,مبانی کوانتوم,quantum-foundations,مفاهیم پایه,quantum-basics
+13,13,300,اثر فوتوالکتریک,photoelectric-effect,https://qpedia.ir/photoelectric-effect/,جهان کوانتومی,quantum-world,نور کوانتومی,quantum-light
+14,14,302,اثر زنون کوانتومی,quantum-zeno-effect,https://qpedia.ir/quantum-zeno-effect/,مبانی کوانتوم,quantum-foundations,مفاهیم پایه,quantum-basics
+15,15,303,نوسانات خلأ,vacuum-fluctuations,https://qpedia.ir/vacuum-fluctuations/,مبانی کوانتوم,quantum-foundations,مفاهیم پایه,quantum-basics
+16,16,304,اثر کازیمیر,casimir-effect,https://qpedia.ir/casimir-effect/,مبانی کوانتوم,quantum-foundations,مفاهیم پایه,quantum-basics
+17,17,305,ابررسانایی,superconductivity,https://qpedia.ir/superconductivity/,جهان کوانتومی,quantum-world,مواد کوانتومی,quantum-materials
+18,18,306,ابرشارگی؛ مایعی که از لیوان بالا می‌رود,superfluidity,https://qpedia.ir/superfluidity/,جهان کوانتومی,quantum-world,مواد کوانتومی,quantum-materials
+19,19,307,فاجعهٔ فرابنفش,ultraviolet-catastrophe,https://qpedia.ir/ultraviolet-catastrophe/,مبانی کوانتوم,quantum-foundations,مفاهیم پایه,quantum-basics
+20,20,308,مدل اتمی بور,bohr-atomic-model,https://qpedia.ir/bohr-atomic-model/,مبانی کوانتوم,quantum-foundations,مفاهیم پایه,quantum-basics
+21,21,309,نامساوی بل,bell-inequality,https://qpedia.ir/bell-inequality/,مبانی کوانتوم,quantum-foundations,مفاهیم پایه,quantum-basics
+22,22,310,تفسیر کپنهاگی,copenhagen-interpretation,https://qpedia.ir/copenhagen-interpretation/,مبانی کوانتوم,quantum-foundations,فلسفه کوانتوم,quantum-philosophy
+23,23,311,تفسیر جهان‌های موازی,many-worlds-interpretation,https://qpedia.ir/many-worlds-interpretation/,مبانی کوانتوم,quantum-foundations,فلسفه کوانتوم,quantum-philosophy
+24,24,312,کیوبیت چیست؟ چرا «بیت کوانتومی» یک بیت بهتر نیست؟,qubit,https://qpedia.ir/qubit/,فناوری کوانتومی,quantum-technology,رایانش کوانتومی,quantum-computing
+25,25,313,لیزر چطور کار می‌کند؟,how-lasers-work,https://qpedia.ir/how-lasers-work/,جهان کوانتومی,quantum-world,نور کوانتومی,quantum-light
+26,26,314,ترانزیستور؛ کوانتوم در جیب شما,transistor-quantum,https://qpedia.ir/transistor-quantum/,کوانتوم و زندگی,quantum-and-life,حسگرها و ابزارها,quantum-tools
+27,27,315,ساعت اتمی و جی‌پی‌اس,atomic-clock-gps,https://qpedia.ir/atomic-clock-gps/,کوانتوم و زندگی,quantum-and-life,حسگرها و ابزارها,quantum-tools
+28,28,316,«همه‌چیز انرژی است» — بررسی یک ادعا,everything-is-energy-claim,https://qpedia.ir/everything-is-energy-claim/,کوانتوم و زندگی,quantum-and-life,تاریخ و جامعه,quantum-history-society
+29,29,320,تونل‌زنی کوانتومی در آنزیم‌ها؛ چه شواهدی داریم؟,enzyme-quantum-tunneling,https://qpedia.ir/enzyme-quantum-tunneling/,کوانتوم و زندگی,quantum-and-life,زیست و پزشکی,quantum-biology-medicine
+30,30,321,آیا مغز کوانتومی است؟,is-the-brain-quantum,https://qpedia.ir/is-the-brain-quantum/,کوانتوم و زندگی,quantum-and-life,زیست و پزشکی,quantum-biology-medicine
+31,31,511,کوانتوم و پزشکی,quantum-alternative-medicine-science,https://qpedia.ir/quantum-alternative-medicine-science/,کوانتوم و زندگی,quantum-and-life,زیست و پزشکی,quantum-biology-medicine
+32,32,514,ام‌آرآی (MRI) چگونه کار می‌کند؟ ریشهٔ کوانتومی آن,mri-quantum,https://qpedia.ir/mri-quantum/,کوانتوم و زندگی,quantum-and-life,زیست و پزشکی,quantum-biology-medicine
+33,33,518,چگونه ادعای شبه‌علمی را در یک جمله تشخیص دهیم,spot-pseudoscience-one-sentence,https://qpedia.ir/spot-pseudoscience-one-sentence/,کوانتوم و زندگی,quantum-and-life,تاریخ و جامعه,quantum-history-society
+34,34,545,تله پورت کوانتومی چیست؟,quantum-teleportation,https://qpedia.ir/quantum-teleportation/,فناوری کوانتومی,quantum-technology,ارتباطات کوانتومی,quantum-communications
+35,35,564,آیا کوانتوم ثابت می کند خدا وجود دارد یا ندارد؟,does-quantum-prove-god,https://qpedia.ir/does-quantum-prove-god/,مبانی کوانتوم,quantum-foundations,فلسفه کوانتوم,quantum-philosophy
+36,39,2236,کنفرانس سولوی ۱۹۲۷ چه بود؟,solvay-conference-1927,https://qpedia.ir/solvay-conference-1927/,کوانتوم و زندگی,quantum-and-life,تاریخ و جامعه,quantum-history-society
+37,40,2239,آزمایش آسپه ۱۹۸۲ چه بود؟,aspect-experiment-1982,https://qpedia.ir/aspect-experiment-1982/,کوانتوم و زندگی,quantum-and-life,تاریخ و جامعه,quantum-history-society
+38,41,2241,صفر مطلق چیست؟,absolute-zero,https://qpedia.ir/absolute-zero/,مبانی کوانتوم,quantum-foundations,مفاهیم پایه,quantum-basics
+39,42,2242,واپاشی آلفا چیست؟,alpha-decay,https://qpedia.ir/alpha-decay/,مبانی کوانتوم,quantum-foundations,مفاهیم پایه,quantum-basics
+40,44,2478,اصل هولوگرافیک؛ آیا جهان ما یک هولوگرام است؟,holographic-principle,https://qpedia.ir/holographic-principle/,مبانی کوانتوم,quantum-foundations,فلسفه کوانتوم,quantum-philosophy
+41,45,2479,رمزنگاری پساکوانتومی؛ قفل های تازهٔ اینترنت,post-quantum-cryptography,https://qpedia.ir/post-quantum-cryptography/,فناوری کوانتومی,quantum-technology,ارتباطات کوانتومی,quantum-communications
+42,46,2480,شیمی کوانتومی چیست؟ چرا دستتان از دیوار رد نمی شود,quantum-chemistry,https://qpedia.ir/quantum-chemistry/,کوانتوم و زندگی,quantum-and-life,زیست و پزشکی,quantum-biology-medicine
+43,47,2481,چرا کوانتوم را در زندگی روزمره حس نمی کنیم؟,quantum-classical-boundary,https://qpedia.ir/quantum-classical-boundary/,مبانی کوانتوم,quantum-foundations,مفاهیم پایه,quantum-basics
+44,48,2482,داروینیسم کوانتومی؛ چرا همه یک واقعیت می بینیم؟,quantum-darwinism,https://qpedia.ir/quantum-darwinism/,مبانی کوانتوم,quantum-foundations,فلسفه کوانتوم,quantum-philosophy
+45,49,2483,کوانتوم و ارادهٔ آزاد؛ آیا آینده از قبل نوشته شده؟,quantum-free-will,https://qpedia.ir/quantum-free-will/,مبانی کوانتوم,quantum-foundations,فلسفه کوانتوم,quantum-philosophy
+46,50,2484,گرانش کوانتومی چیست؟ بزرگ ترین چالش فیزیک,quantum-gravity,https://qpedia.ir/quantum-gravity/,جهان کوانتومی,quantum-world,کیهان کوانتومی,quantum-universe
+47,51,2485,شفای کوانتومی؛ چرا این ادعا شبه علم است؟,quantum-healing-debunked,https://qpedia.ir/quantum-healing-debunked/,کوانتوم و زندگی,quantum-and-life,زیست و پزشکی,quantum-biology-medicine
+48,52,2486,نظریهٔ ریسمان و کوانتوم؛ جهان از جنس نت است؟,string-theory-quantum,https://qpedia.ir/string-theory-quantum/,جهان کوانتومی,quantum-world,کیهان کوانتومی,quantum-universe
+49,53,2487,کریستال زمان چیست؟ ماده ای که در زمان تکرار می شود,time-crystal,https://qpedia.ir/time-crystal/,جهان کوانتومی,quantum-world,مواد کوانتومی,quantum-materials
+50,54,2489,نوبل فیزیک ۲۰۲۳؛ پالس‌های آتوثانیه‌ای و حرکت الکترون‌ها,attosecond-nobel-2023,https://qpedia.ir/attosecond-nobel-2023/,کوانتوم و زندگی,quantum-and-life,تاریخ و جامعه,quantum-history-society
+51,55,2490,پردازندهٔ IBM Condor؛ چرا هزار کیوبیت کافی نیست,ibm-condor-processor,https://qpedia.ir/ibm-condor-processor/,فناوری کوانتومی,quantum-technology,رایانش کوانتومی,quantum-computing
+52,56,2491,پادماده در پزشکی؛ اسکن پت چطور کار می کند؟,pet-scan-antimatter,https://qpedia.ir/pet-scan-antimatter/,کوانتوم و زندگی,quantum-and-life,زیست و پزشکی,quantum-biology-medicine
+53,58,2493,افت وخیز کوانتومی؛ چطور کهکشان ها متولد شدند؟,quantum-fluctuations-cosmos,https://qpedia.ir/quantum-fluctuations-cosmos/,جهان کوانتومی,quantum-world,کیهان کوانتومی,quantum-universe
+54,59,2494,اینترنت کوانتومی فضایی؛ ماجرای ماهوارهٔ میسیوس,quantum-internet-satellite,https://qpedia.ir/quantum-internet-satellite/,فناوری کوانتومی,quantum-technology,ارتباطات کوانتومی,quantum-communications
+55,60,2495,یادگیری ماشین کوانتومی؛ وعده ها و واقعیت ها,quantum-machine-learning,https://qpedia.ir/quantum-machine-learning/,فناوری کوانتومی,quantum-technology,هوش مصنوعی کوانتومی,quantum-ai
+56,61,2496,رادار کوانتومی؛ آیا جنگندهٔ رادارگریز را می بیند؟,quantum-radar,https://qpedia.ir/quantum-radar/,کوانتوم و زندگی,quantum-and-life,حسگرها و ابزارها,quantum-tools
+57,62,2497,مایع اسپینی کوانتومی؛ ماده ای که هرگز آرام نمی گیرد,quantum-spin-liquid,https://qpedia.ir/quantum-spin-liquid/,جهان کوانتومی,quantum-world,مواد کوانتومی,quantum-materials
+58,63,2498,ترمودینامیک کوانتومی؛ موتوری به اندازهٔ یک اتم,quantum-thermodynamics,https://qpedia.ir/quantum-thermodynamics/,مبانی کوانتوم,quantum-foundations,مفاهیم پایه,quantum-basics
+59,64,2500,پارادوکس اطلاعات سیاه چاله؛ معمای هاوکینگ,black-hole-information-paradox,https://qpedia.ir/black-hole-information-paradox/,جهان کوانتومی,quantum-world,کیهان کوانتومی,quantum-universe
+60,65,2501,چرا تله پورت انسان از نظر علمی غیرممکن است؟,human-teleportation,https://qpedia.ir/human-teleportation/,فناوری کوانتومی,quantum-technology,ارتباطات کوانتومی,quantum-communications
+61,67,2503,بهترین مستندهای فیزیک کوانتوم که باید ببینید,quantum-documentaries,https://qpedia.ir/quantum-documentaries/,کوانتوم و زندگی,quantum-and-life,تاریخ و جامعه,quantum-history-society
+62,68,2504,فیزیک کوانتوم در فیلم مرد مورچه ای؛ واقعیت یا تخیل؟,quantum-physics-in-movies-ant-man,https://qpedia.ir/quantum-physics-in-movies-ant-man/,کوانتوم و زندگی,quantum-and-life,تاریخ و جامعه,quantum-history-society
+63,69,2505,آیا سفر در زمان با فیزیک کوانتوم ممکن است؟,quantum-time-travel,https://qpedia.ir/quantum-time-travel/,مبانی کوانتوم,quantum-foundations,فلسفه کوانتوم,quantum-philosophy
+64,70,2512,قانون جذب و کوانتوم؛ کجای این استدلال می لنگد؟,law-of-attraction-quantum,https://qpedia.ir/law-of-attraction-quantum/,کوانتوم و زندگی,quantum-and-life,تاریخ و جامعه,quantum-history-society
+65,71,2513,نوبل فیزیک ۲۰۲۵؛ وقتی یک مدار مثل اتم رفتار کرد,nobel-physics-2025,https://qpedia.ir/nobel-physics-2025/,کوانتوم و زندگی,quantum-and-life,تاریخ و جامعه,quantum-history-society
+66,72,2514,روز کیو چیست و واقعاً کِی می رسد؟,q-day,https://qpedia.ir/q-day/,کوانتوم و زندگی,quantum-and-life,تاریخ و جامعه,quantum-history-society
+67,73,2515,نقطهٔ کوانتومی؛ کوانتومی که در تلویزیون شماست,quantum-dots-displays,https://qpedia.ir/quantum-dots-displays/,کوانتوم و زندگی,quantum-and-life,حسگرها و ابزارها,quantum-tools
+68,74,2516,تراشهٔ ویلو؛ گوگل واقعاً چه چیزی را ثابت کرد؟,willow-chip,https://qpedia.ir/willow-chip/,فناوری کوانتومی,quantum-technology,رایانش کوانتومی,quantum-computing
+69,75,2520,الان جمع کن، بعداً رمزگشایی کن؛ تهدیدی که فعال است,harvest-now-decrypt-later,https://qpedia.ir/harvest-now-decrypt-later/,فناوری کوانتومی,quantum-technology,ارتباطات کوانتومی,quantum-communications
+70,76,2521,آیا کامپیوتر کوانتومی بیت کوین را نابود می کند؟,bitcoin-quantum-threat,https://qpedia.ir/bitcoin-quantum-threat/,فناوری کوانتومی,quantum-technology,ارتباطات کوانتومی,quantum-communications
+71,77,2522,پاک کن کوانتومی؛ آیا آینده بر گذشته اثر می گذارد؟,quantum-eraser,https://qpedia.ir/quantum-eraser/,کوانتوم و زندگی,quantum-and-life,تاریخ و جامعه,quantum-history-society
+72,78,2523,پایان قانون مور؛ چرا ترانزیستورها به دیوار خوردند؟,moore-law-quantum-limit,https://qpedia.ir/moore-law-quantum-limit/,کوانتوم و زندگی,quantum-and-life,تاریخ و جامعه,quantum-history-society
+73,79,2524,صد سالگی کوانتوم؛ از جزیرهٔ هلگولاند تا امروز,quantum-century-2025,https://qpedia.ir/quantum-century-2025/,کوانتوم و زندگی,quantum-and-life,تاریخ و جامعه,quantum-history-society
+74,80,2527,مولد عدد تصادفی کوانتومی؛ آیا تصادف بنیادی قابل استفاده است؟,quantum-random-number-generator,https://qpedia.ir/quantum-random-number-generator/,مبانی کوانتوم,quantum-foundations,مفاهیم پایه,quantum-basics
+75,81,2528,ابررسانای دمای اتاق؛ درس LK-99 دربارهٔ هیجان علمی,room-temperature-superconductor,https://qpedia.ir/room-temperature-superconductor/,جهان کوانتومی,quantum-world,مواد کوانتومی,quantum-materials
+76,82,2529,انرژی نقطهٔ صفر و افسانهٔ انرژی رایگان,zero-point-energy-scam,https://qpedia.ir/zero-point-energy-scam/,کوانتوم و زندگی,quantum-and-life,تاریخ و جامعه,quantum-history-society
+77,83,2530,حباب هیجان کوانتومی؛ چقدرش واقعی است؟,quantum-hype-bubble,https://qpedia.ir/quantum-hype-bubble/,کوانتوم و زندگی,quantum-and-life,تاریخ و جامعه,quantum-history-society
+78,84,2531,آنیلینگ کوانتومی؛ چرا هزار کیوبیت یعنی هزار کیوبیت نیست,quantum-annealing-dwave,https://qpedia.ir/quantum-annealing-dwave/,فناوری کوانتومی,quantum-technology,رایانش کوانتومی,quantum-computing
+79,85,2533,پیوند جوزفسون؛ قلب تپندهٔ کامپیوتر کوانتومی,josephson-junction,https://qpedia.ir/josephson-junction/,جهان کوانتومی,quantum-world,مواد کوانتومی,quantum-materials
+80,86,2534,ناوبری کوانتومی؛ مسیریابی بدون ماهواره,quantum-navigation,https://qpedia.ir/quantum-navigation/,کوانتوم و زندگی,quantum-and-life,حسگرها و ابزارها,quantum-tools
+81,87,2535,پارادوکس دوست ویگنر؛ آیا واقعیت برای همه یکی است؟,wigner-friend,https://qpedia.ir/wigner-friend/,مبانی کوانتوم,quantum-foundations,فلسفه کوانتوم,quantum-philosophy
+82,88,2536,جاودانگی کوانتومی؛ کجای این استدلال می لنگد؟,quantum-immortality,https://qpedia.ir/quantum-immortality/,مبانی کوانتوم,quantum-foundations,فلسفه کوانتوم,quantum-philosophy
+83,89,2537,آیا جهان یک شبیه سازی است؟ نقد سه استدلال کوانتومی,simulation-hypothesis-quantum,https://qpedia.ir/simulation-hypothesis-quantum/,مبانی کوانتوم,quantum-foundations,فلسفه کوانتوم,quantum-philosophy
+84,90,2741,گلوئون و بوزون W و Z؛ چسب هسته و واپاشی,gluon-w-z-bosons,https://qpedia.ir/gluon-w-z-bosons/,مبانی کوانتوم,quantum-foundations,ذرات و نیروها,particles-and-forces
+85,91,2742,میون و تاو؛ پسرعموهای سنگین الکترون,muon-and-tau,https://qpedia.ir/muon-and-tau/,مبانی کوانتوم,quantum-foundations,ذرات و نیروها,particles-and-forces
+86,95,2747,نوبل فیزیک ۲۰۱۲؛ یک ذره را گرفتند و نکشتند,nobel-physics-2012,https://qpedia.ir/nobel-physics-2012/,کوانتوم و زندگی,quantum-and-life,تاریخ و جامعه,quantum-history-society
+87,96,2748,نوبل فیزیک ۲۰۲۲؛ درهم تنیدگی دیگر فلسفه نیست,nobel-physics-2022,https://qpedia.ir/nobel-physics-2022/,کوانتوم و زندگی,quantum-and-life,تاریخ و جامعه,quantum-history-society
+88,97,2749,آزمایش بل بدون حفره ۲۰۱۵ چه بود؟,loophole-free-bell-test,https://qpedia.ir/loophole-free-bell-test/,کوانتوم و زندگی,quantum-and-life,تاریخ و جامعه,quantum-history-society
+89,98,2750,انتخاب تأخیری ویلر؛ فوتون از قبل تصمیم نگرفته,wheeler-delayed-choice,https://qpedia.ir/wheeler-delayed-choice/,کوانتوم و زندگی,quantum-and-life,تاریخ و جامعه,quantum-history-society
+90,102,2755,محاسبه با اندازه گیری؛ کامپیوتر یک طرفه,measurement-based-quantum-computing,https://qpedia.ir/measurement-based-quantum-computing/,فناوری کوانتومی,quantum-technology,رایانش کوانتومی,quantum-computing
+91,104,2757,اثر آهارونوف-بوهم؛ فاز بدون میدان محلی,aharonov-bohm-effect,https://qpedia.ir/aharonov-bohm-effect/,مبانی کوانتوم,quantum-foundations,مفاهیم پایه,quantum-basics
+92,110,2764,کریستال درمانی؛ سنگ شفا نمی دهد,crystal-healing-debunked,https://qpedia.ir/crystal-healing-debunked/,کوانتوم و زندگی,quantum-and-life,زیست و پزشکی,quantum-biology-medicine
+93,111,2765,هوش مصنوعی کوانتومی؛ بیشترش برچسب است,quantum-ai-marketing-hype,https://qpedia.ir/quantum-ai-marketing-hype/,فناوری کوانتومی,quantum-technology,هوش مصنوعی کوانتومی,quantum-ai
+94,113,2835,ماکس بورن و تفسیر احتمالاتی؛ مربع تابع موج چه می گوید؟,born-probability,https://qpedia.ir/born-probability/,مبانی کوانتوم,quantum-foundations,مفاهیم پایه,quantum-basics
+95,118,2859,تاریخ صد ساله فیزیک کوانتوم,quantum-history,https://qpedia.ir/quantum-history/,کوانتوم و زندگی,quantum-and-life,تاریخ و جامعه,quantum-history-society
+96,120,2866,مایکروسافت و کیوبیت های توپولوژیک مایورانا,majorana-topological,https://qpedia.ir/majorana-topological/,فناوری کوانتومی,quantum-technology,رایانش کوانتومی,quantum-computing
+97,121,301,گربه شرودینگر؛ آزمایش فکری درباره اندازه‌گیری کوانتومی,schrodinger-cat,https://qpedia.ir/schrodinger-cat/,مبانی کوانتوم,quantum-foundations,فلسفه کوانتوم,quantum-philosophy
+98,124,504,فوتون دقیقا چیست ؟,photon,https://qpedia.ir/photon/,مبانی کوانتوم,quantum-foundations,ذرات و نیروها,particles-and-forces
+99,125,505,الکترون چیست؟ ویژگی‌ها، نقش در اتم و برق,electron,https://qpedia.ir/electron/,مبانی کوانتوم,quantum-foundations,ذرات و نیروها,particles-and-forces
+100,126,509,اصل طرد پاولی دقیقاً چه می‌گوید؟ به زبان ساده,pauli-exclusion-principle,https://qpedia.ir/pauli-exclusion-principle/,مبانی کوانتوم,quantum-foundations,مفاهیم پایه,quantum-basics
+101,127,512,رمزنگاری کوانتومی و آیندهٔ امنیت اینترنت,quantum-cryptography-internet-security,https://qpedia.ir/quantum-cryptography-internet-security/,فناوری کوانتومی,quantum-technology,ارتباطات کوانتومی,quantum-communications
+102,128,551,آیا با فکر کردن می توان واقعیت کوانتومی را تغییر داد؟,mind-quantum-reality,https://qpedia.ir/mind-quantum-reality/,کوانتوم و زندگی,quantum-and-life,تاریخ و جامعه,quantum-history-society
+103,129,553,آزمایش‌های بل؛ شواهد تجربی علیه واقع‌گرایی موضعی,bell-experiments,https://qpedia.ir/bell-experiments/,کوانتوم و زندگی,quantum-and-life,تاریخ و جامعه,quantum-history-society
+104,130,560,آیا فیزیک کلاسیک اشتباه بود؟ نه، محدود بود,is-classical-physics-wrong,https://qpedia.ir/is-classical-physics-wrong/,مبانی کوانتوم,quantum-foundations,مفاهیم پایه,quantum-basics
+105,131,561,آیا فیزیک دانان بر سر معنای اندازه گیری توافق دارند؟,quantum-interpretation-debate,https://qpedia.ir/quantum-interpretation-debate/,مبانی کوانتوم,quantum-foundations,فلسفه کوانتوم,quantum-philosophy
+106,132,563,آیا هوش مصنوعی از کوانتوم استفاده می کند؟,does-ai-use-quantum,https://qpedia.ir/does-ai-use-quantum/,فناوری کوانتومی,quantum-technology,هوش مصنوعی کوانتومی,quantum-ai
+107,133,565,آیا کوانتوم یعنی چندجهانی واقعی است؟,is-many-worlds-real,https://qpedia.ir/is-many-worlds-real/,مبانی کوانتوم,quantum-foundations,فلسفه کوانتوم,quantum-philosophy
+108,134,566,آینده شغلی: آیا باید فیزیک کوانتوم یاد بگیریم؟,quantum-career-future-learn,https://qpedia.ir/quantum-career-future-learn/,کوانتوم و زندگی,quantum-and-life,تاریخ و جامعه,quantum-history-society
+109,135,567,اصل عدم قطعیت هایزنبرگ به زبان ساده,heisenberg-uncertainty-principle,https://qpedia.ir/heisenberg-uncertainty-principle/,مبانی کوانتوم,quantum-foundations,مفاهیم پایه,quantum-basics
+110,137,570,برهم نهی یعنی چه، و چرا اشیای بزرگ برهم نهی نمی شوند,why-large-objects-dont-superpose,https://qpedia.ir/why-large-objects-dont-superpose/,مبانی کوانتوم,quantum-foundations,مفاهیم پایه,quantum-basics
+111,138,571,تفاوت جبرگرایی کلاسیک و احتمال کوانتومی,determinism-vs-probability,https://qpedia.ir/determinism-vs-probability/,مبانی کوانتوم,quantum-foundations,مفاهیم پایه,quantum-basics
+112,139,2873,نیلز بور و اصل تکمیل؛ چرا یک چیز هم موج است هم ذره؟,bohr-complementarity,https://qpedia.ir/bohr-complementarity/,مبانی کوانتوم,quantum-foundations,مفاهیم پایه,quantum-basics
+113,141,572,تفاوت فیزیک کوانتوم و مکانیک کوانتومی چیست؟,quantum-physics-vs-quantum-mechanics,https://qpedia.ir/quantum-physics-vs-quantum-mechanics/,مبانی کوانتوم,quantum-foundations,مفاهیم پایه,quantum-basics
+114,142,573,تمثیل تاس در مقابل تمثیل سکه: کدام برای عدم قطعیت بهتر است؟,coin-vs-dice-quantum-uncertainty,https://qpedia.ir/coin-vs-dice-quantum-uncertainty/,مبانی کوانتوم,quantum-foundations,مفاهیم پایه,quantum-basics
+115,143,574,تمرین ذهنی: خودتان یک تمثیل بسازید و مرزش را پیدا کنید,quantum-analogy-exercise-boundary,https://qpedia.ir/quantum-analogy-exercise-boundary/,کوانتوم و زندگی,quantum-and-life,تاریخ و جامعه,quantum-history-society
+116,144,575,چرا «نفهمیدنِ درست» کوانتوم، خودش یک دستاورد است؟,quantum-understanding-achievement,https://qpedia.ir/quantum-understanding-achievement/,کوانتوم و زندگی,quantum-and-life,تاریخ و جامعه,quantum-history-society
+117,145,2226,عدد کوانتومی چیست؟,quantum-number,https://qpedia.ir/quantum-number/,مبانی کوانتوم,quantum-foundations,مفاهیم پایه,quantum-basics
+118,146,2227,ناظر در کوانتوم چیست؟,observer,https://qpedia.ir/observer/,مبانی کوانتوم,quantum-foundations,مفاهیم پایه,quantum-basics
+119,147,2228,اصل مکملیت چیست؟,complementarity-principle,https://qpedia.ir/complementarity-principle/,مبانی کوانتوم,quantum-foundations,مفاهیم پایه,quantum-basics
+120,148,2230,نوترینو چیست؟,neutrino,https://qpedia.ir/neutrino/,مبانی کوانتوم,quantum-foundations,ذرات و نیروها,particles-and-forces
+121,149,2233,مدل استاندارد چیست؟,standard-model,https://qpedia.ir/standard-model/,مبانی کوانتوم,quantum-foundations,ذرات و نیروها,particles-and-forces
+122,150,2234,ذرات مجازی چیستند؟,virtual-particles,https://qpedia.ir/virtual-particles/,مبانی کوانتوم,quantum-foundations,مفاهیم پایه,quantum-basics
+123,151,2237,مقالهٔ EPR چیست؟,epr-paradox,https://qpedia.ir/epr-paradox/,کوانتوم و زندگی,quantum-and-life,تاریخ و جامعه,quantum-history-society
+124,152,2238,آزمایش اشترن-گرلاخ چیست؟,stern-gerlach-experiment,https://qpedia.ir/stern-gerlach-experiment/,کوانتوم و زندگی,quantum-and-life,تاریخ و جامعه,quantum-history-society
+125,153,2247,حافظهٔ فلش چطور کار می‌کند؟,flash-memory,https://qpedia.ir/flash-memory/,کوانتوم و زندگی,quantum-and-life,حسگرها و ابزارها,quantum-tools
+126,154,2248,میکروسکوپ تونلی چیست؟,scanning-tunneling-microscope,https://qpedia.ir/scanning-tunneling-microscope/,کوانتوم و زندگی,quantum-and-life,حسگرها و ابزارها,quantum-tools
+127,155,2249,فیبر نوری چگونه کار می‌کند؟,fiber-optics,https://qpedia.ir/fiber-optics/,کوانتوم و زندگی,quantum-and-life,حسگرها و ابزارها,quantum-tools
+128,156,2250,مزیت کوانتومی چیست؟ تفاوت آن با برتری مطلق رایانه‌ها,quantum-supremacy,https://qpedia.ir/quantum-supremacy/,فناوری کوانتومی,quantum-technology,رایانش کوانتومی,quantum-computing
+129,157,2251,الگوریتم شور چیست؟,shor-algorithm,https://qpedia.ir/shor-algorithm/,فناوری کوانتومی,quantum-technology,رایانش کوانتومی,quantum-computing
+130,158,2259,تفسیر دوبروی-بوهم چیست؟,pilot-wave,https://qpedia.ir/pilot-wave/,مبانی کوانتوم,quantum-foundations,فلسفه کوانتوم,quantum-philosophy
+131,159,2260,آیا جهش ژنتیکی کوانتومی است؟,genetic-mutation,https://qpedia.ir/genetic-mutation/,کوانتوم و زندگی,quantum-and-life,زیست و پزشکی,quantum-biology-medicine
+132,160,2743,پروتون از چه ساخته شده؟ کوارک کافی نیست,proton-neutron-quark-structure,https://qpedia.ir/proton-neutron-quark-structure/,مبانی کوانتوم,quantum-foundations,ذرات و نیروها,particles-and-forces
+133,161,2751,کامپیوتر توپولوژیک؛ گره ای که خطا را نمی بیند,topological-quantum-computing,https://qpedia.ir/topological-quantum-computing/,فناوری کوانتومی,quantum-technology,رایانش کوانتومی,quantum-computing
+134,163,3307,دوران NISQ و محدودیت‌های رایانه‌های کوانتومی کنونی,nisq-era,https://qpedia.ir/nisq-era/,فناوری کوانتومی,quantum-technology,رایانش کوانتومی,quantum-computing
+135,164,3319,روشن‌سازی کوانتومی؛ تشخیص هدف در محیط پرنویز,quantum-illumination,https://qpedia.ir/quantum-illumination/,جهان کوانتومی,quantum-world,نور کوانتومی,quantum-light
+136,165,3321,لیدار کوانتومی چیست و چگونه فاصله را با فوتون‌ها اندازه می‌گیرد؟,quantum-lidar,https://qpedia.ir/quantum-lidar/,کوانتوم و زندگی,quantum-and-life,حسگرها و ابزارها,quantum-tools
+137,171,3334,نور کند؛ کنترل سرعت گروهی بدون کندشدن ثابت بنیادی نور,slow-light,https://qpedia.ir/slow-light/,جهان کوانتومی,quantum-world,نور کوانتومی,quantum-light
+138,172,3336,لیتوگرافی کوانتومی؛ الگودهی زیر حد رایلی و هزینهٔ واقعی آن,quantum-lithography,https://qpedia.ir/quantum-lithography/,جهان کوانتومی,quantum-world,نور کوانتومی,quantum-light
+139,174,3340,انگشت‌نگاری کوانتومی؛ مقایسه داده با پیام بسیار کوتاه,quantum-fingerprinting,https://qpedia.ir/quantum-fingerprinting/,فناوری کوانتومی,quantum-technology,ارتباطات کوانتومی,quantum-communications
+140,178,3348,یخچال رقیق‌سازی؛ چگونه به چند میلی‌کلوین می‌رسیم؟,dilution-refrigerator,https://qpedia.ir/dilution-refrigerator/,فناوری کوانتومی,quantum-technology,رایانش کوانتومی,quantum-computing
+141,188,3369,اکسیون؛ ذره‌ای فرضی میان مسئلهٔ CP قوی و مادهٔ تاریک,axion,https://qpedia.ir/axion/,مبانی کوانتوم,quantum-foundations,ذرات و نیروها,particles-and-forces
+142,189,3371,ویمپ؛ نامزد مشهور مادهٔ تاریک که هنوز پنهان مانده است,wimp,https://qpedia.ir/wimp/,مبانی کوانتوم,quantum-foundations,ذرات و نیروها,particles-and-forces
+143,190,3373,انرژی تاریک و جهان کوانتومی؛ بحران کوچک‌ترین چگالی بزرگ فیزیک,dark-energy-quantum,https://qpedia.ir/dark-energy-quantum/,جهان کوانتومی,quantum-world,کیهان کوانتومی,quantum-universe
+144,191,3375,تورم کیهانی؛ جهش آغازین فضا و بذر ساختارهای جهان,cosmic-inflation,https://qpedia.ir/cosmic-inflation/,جهان کوانتومی,quantum-world,کیهان کوانتومی,quantum-universe
+145,192,3377,تابش زمینهٔ کیهانی؛ قدیمی‌ترین نوری که می‌توانیم ببینیم,cosmic-microwave-background,https://qpedia.ir/cosmic-microwave-background/,جهان کوانتومی,quantum-world,کیهان کوانتومی,quantum-universe
+146,193,3379,کرم‌چاله؛ میان‌بُر فضا–زمان میان ریاضیات و واقعیت,wormhole,https://qpedia.ir/wormhole/,جهان کوانتومی,quantum-world,کیهان کوانتومی,quantum-universe
+147,194,3381,کیهان‌شناسی کوانتومی؛ وقتی خود جهان موضوع نظریه کوانتومی می‌شود,quantum-cosmology,https://qpedia.ir/quantum-cosmology/,جهان کوانتومی,quantum-world,کیهان کوانتومی,quantum-universe
+148,195,3383,جهش کوانتومی کیهان؛ آیا پیش از مهبانگ مرحله‌ای دیگر وجود داشت؟,quantum-bounce,https://qpedia.ir/quantum-bounce/,جهان کوانتومی,quantum-world,کیهان کوانتومی,quantum-universe
+149,197,3387,موسیقی کوانتومی؛ از دادهٔ آزمایش تا صدا و آهنگ‌سازی,quantum-music,https://qpedia.ir/quantum-music/,کوانتوم و زندگی,quantum-and-life,تاریخ و جامعه,quantum-history-society
+150,198,3389,داستان علمی‌تخیلی کوانتومی؛ روایت جهان‌های ممکن بدون تحریف علم,quantum-fiction,https://qpedia.ir/quantum-fiction/,کوانتوم و زندگی,quantum-and-life,تاریخ و جامعه,quantum-history-society
+151,199,3391,فرهنگ کوانتومی؛ وقتی زبان فیزیک وارد جامعه می‌شود,quantum-culture,https://qpedia.ir/quantum-culture/,کوانتوم و زندگی,quantum-and-life,تاریخ و جامعه,quantum-history-society
+152,200,3393,زمستان کوانتومی؛ اگر سرمایه و اعتماد از فناوری عقب‌نشینی کنند,quantum-winter,https://qpedia.ir/quantum-winter/,فناوری کوانتومی,quantum-technology,رایانش کوانتومی,quantum-computing
+153,201,3395,تکینگی کوانتومی؛ مرز شکست نظریه یا جهش فرضی فناوری؟,quantum-singularity,https://qpedia.ir/quantum-singularity/,جهان کوانتومی,quantum-world,کیهان کوانتومی,quantum-universe
+154,211,3416,کوانتوم در سرطان؛ از ابزار تشخیص تا ادعاهای درمانی,quantum-cancer,https://qpedia.ir/quantum-cancer/,کوانتوم و زندگی,quantum-and-life,زیست و پزشکی,quantum-biology-medicine
+155,212,3418,کوانتوم در باکتری‌ها؛ از فتوسنتز تا حس‌کردن میدان,quantum-bacteria,https://qpedia.ir/quantum-bacteria/,کوانتوم و زندگی,quantum-and-life,زیست و پزشکی,quantum-biology-medicine
+156,213,3420,کوانتوم در ویروس‌ها؛ علم مولکولی یا برچسبی گمراه‌کننده؟,quantum-viruses,https://qpedia.ir/quantum-viruses/,کوانتوم و زندگی,quantum-and-life,زیست و پزشکی,quantum-biology-medicine
+157,220,3434,احتمال کوانتومی؛ چرا جمع دامنه‌ها با جمع احتمال‌ها فرق دارد؟,quantum-probability,https://qpedia.ir/quantum-probability/,مبانی کوانتوم,quantum-foundations,مفاهیم پایه,quantum-basics
+158,221,3436,تابش شتاب و اثر اونرو؛ آیا ناظر شتاب‌دار خلأ را گرم می‌بیند؟,acceleration-radiation,https://qpedia.ir/acceleration-radiation/,جهان کوانتومی,quantum-world,کیهان کوانتومی,quantum-universe
+159,224,3442,الکترودینامیک کوانتومی؛ نظریه‌ای که نور و بار را با دقت بی‌سابقه پیوند می‌دهد,quantum-electrodynamics,https://qpedia.ir/quantum-electrodynamics/,مبانی کوانتوم,quantum-foundations,ذرات و نیروها,particles-and-forces
+160,238,3472,عایق توپولوژیک؛ درون عایق، روی سطح رسانا,topological-insulator,https://qpedia.ir/topological-insulator/,جهان کوانتومی,quantum-world,مواد کوانتومی,quantum-materials
+161,252,3501,میکروسکوپ کوانتومی؛ دیدن نمونه با فوتون کمتر,quantum-microscopy,https://qpedia.ir/quantum-microscopy/,جهان کوانتومی,quantum-world,نور کوانتومی,quantum-light
+162,262,3521,شبکهٔ کوانتومی؛ زیرساختی برای توزیع درهم‌تنیدگی,quantum-network,https://qpedia.ir/quantum-network/,فناوری کوانتومی,quantum-technology,ارتباطات کوانتومی,quantum-communications
+163,263,3523,رایانش کوانتومی ابری؛ دسترسی از مرورگر به یک پردازنده واقعی,quantum-cloud,https://qpedia.ir/quantum-cloud/,فناوری کوانتومی,quantum-technology,رایانش کوانتومی,quantum-computing
+164,281,559,آیا درهم تنیدگی یعنی اطلاعات سریع تر از نور منتقل می شود؟,entanglement-myths,https://qpedia.ir/entanglement-myths/,مبانی کوانتوم,quantum-foundations,مفاهیم پایه,quantum-basics
+165,283,2086,نقشهٔ ذهنی پنج‌گانه برای فهم درست کوانتوم,quantum-fivefold-mental-map,https://qpedia.ir/quantum-fivefold-mental-map/,کوانتوم و زندگی,quantum-and-life,تاریخ و جامعه,quantum-history-society
+166,284,2087,حسگرهای کوانتومی؛ آیندهٔ دقت اندازه‌گیری,quantum-sensors,https://qpedia.ir/quantum-sensors/,کوانتوم و زندگی,quantum-and-life,حسگرها و ابزارها,quantum-tools
+167,285,2088,درهم‌تنیدگی در کامپیوترهای کوانتومی امروزی,entanglement-quantum-computers,https://qpedia.ir/entanglement-quantum-computers/,مبانی کوانتوم,quantum-foundations,مفاهیم پایه,quantum-basics
+168,287,2093,منابع معتبر فارسی و انگلیسی برای یادگیری عمیق‌تر کوانتوم,quantum-learning-resources,https://qpedia.ir/quantum-learning-resources/,کوانتوم و زندگی,quantum-and-life,تاریخ و جامعه,quantum-history-society
+169,289,2096,پنل خورشیدی و اثر فوتوالکتریک؛ تبدیل نور به جریان زندگی,solar-cells-photoelectric,https://qpedia.ir/solar-cells-photoelectric/,کوانتوم و زندگی,quantum-and-life,حسگرها و ابزارها,quantum-tools
+170,290,2097,چرا ریاضیات کوانتوم درست است ولی فهمش سخت است؟,why-quantum-math-works,https://qpedia.ir/why-quantum-math-works/,کوانتوم و زندگی,quantum-and-life,تاریخ و جامعه,quantum-history-society
+171,291,2098,کامپیوتر کوانتومی چیست و چقدر با واقعیت فاصله دارد؟,quantum-computer-reality,https://qpedia.ir/quantum-computer-reality/,فناوری کوانتومی,quantum-technology,رایانش کوانتومی,quantum-computing
+172,292,2225,حالت کوانتومی چیست؟ چرا «الکترون کجاست؟» پرسش اشتباه است؟,quantum-state,https://qpedia.ir/quantum-state/,مبانی کوانتوم,quantum-foundations,مفاهیم پایه,quantum-basics
+173,293,2229,کوارک چیست؟,quark,https://qpedia.ir/quark/,مبانی کوانتوم,quantum-foundations,ذرات و نیروها,particles-and-forces
+174,294,2231,بوزون هیگز چیست؟,higgs-boson,https://qpedia.ir/higgs-boson/,مبانی کوانتوم,quantum-foundations,ذرات و نیروها,particles-and-forces
+175,295,2232,پادماده چیست؟,antimatter,https://qpedia.ir/antimatter/,مبانی کوانتوم,quantum-foundations,ذرات و نیروها,particles-and-forces
+176,301,2235,اسپین هسته‌ای چیست؟,nuclear-spin,https://qpedia.ir/nuclear-spin/,مبانی کوانتوم,quantum-foundations,مفاهیم پایه,quantum-basics
+177,302,2240,همدوسی چیست؟,coherence,https://qpedia.ir/coherence/,مبانی کوانتوم,quantum-foundations,مفاهیم پایه,quantum-basics
+178,303,2252,الگوریتم گروور چیست؟,grover-algorithm,https://qpedia.ir/grover-algorithm/,فناوری کوانتومی,quantum-technology,رایانش کوانتومی,quantum-computing
+179,304,2253,تصحیح خطای کوانتومی چیست؟,quantum-error-correction,https://qpedia.ir/quantum-error-correction/,فناوری کوانتومی,quantum-technology,رایانش کوانتومی,quantum-computing
+180,305,2254,چگالش بوز-اینشتین چیست؟,bose-einstein-condensate,https://qpedia.ir/bose-einstein-condensate/,جهان کوانتومی,quantum-world,مواد کوانتومی,quantum-materials
+181,306,2255,همجوشی ستارگان چگونه ممکن است؟,stellar-fusion,https://qpedia.ir/stellar-fusion/,مبانی کوانتوم,quantum-foundations,ذرات و نیروها,particles-and-forces
+182,307,2256,قضیهٔ عدم‌کپی چیست؟,no-cloning-theorem,https://qpedia.ir/no-cloning-theorem/,مبانی کوانتوم,quantum-foundations,مفاهیم پایه,quantum-basics
+183,308,2257,گیت کوانتومی چیست؟,quantum-gate,https://qpedia.ir/quantum-gate/,فناوری کوانتومی,quantum-technology,رایانش کوانتومی,quantum-computing
+184,309,2258,شبیه‌سازی کوانتومی چیست؟,quantum-simulation,https://qpedia.ir/quantum-simulation/,فناوری کوانتومی,quantum-technology,رایانش کوانتومی,quantum-computing
