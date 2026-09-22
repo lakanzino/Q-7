@@ -11,6 +11,9 @@
   "rank_math_title": "ابررسانایی چیست؟ مقاومت صفر، مایسنر و جفت کوپر",
   "rank_math_description": "ابررسانایی چگونه مقاومت را صفر و میدان را بیرون می‌راند؟ اثر مایسنر، نظریه BCS، جفت کوپر، دمای بحرانی و کاربردهای واقعی را بخوانید.",
   "source_url": "https://qpedia.ir/superconductivity/",
-  "rewrite_status": "completed_and_qa_checked",
-  "importer_batch": "016-020"
+  "rewrite_status": "completed_qa_checked_and_general_reader_revised",
+  "importer_batch": "016-020",
+  "general_reader_revision": true,
+  "analogy_rule_checked": true,
+  "comprehensive_importer_batch": "001-025"
 }
