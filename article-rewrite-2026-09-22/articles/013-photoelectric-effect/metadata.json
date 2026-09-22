@@ -11,6 +11,9 @@
   "rank_math_title": "اثر فوتوالکتریک چیست؟ بسامد، شدت و معادله اینشتین",
   "rank_math_description": "اثر فوتوالکتریک چگونه با بسامد آستانه و معادله اینشتین توضیح داده می‌شود؟ تفاوت شدت و بسامد، تابع کار و سلول خورشیدی را بخوانید.",
   "source_url": "https://qpedia.ir/photoelectric-effect/",
-  "rewrite_status": "completed_and_qa_checked",
-  "importer_batch": "011-015"
+  "rewrite_status": "completed_qa_checked_and_general_reader_revised",
+  "importer_batch": "011-015",
+  "general_reader_revision": true,
+  "analogy_rule_checked": true,
+  "comprehensive_importer_batch": "001-025"
 }
