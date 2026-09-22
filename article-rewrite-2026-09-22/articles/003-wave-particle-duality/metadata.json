@@ -7,10 +7,13 @@
   "seo_title": "دوگانگی موج و ذره چیست؟ از تداخل تا آشکارسازی",
   "focus_keyword": "دوگانگی موج و ذره",
   "source_url": "https://qpedia.ir/wave-particle-duality/",
-  "rewrite_status": "completed_and_qa_checked",
+  "rewrite_status": "completed_qa_checked_and_general_reader_revised",
   "importer_batch": "001-005",
   "meta_description": "دوگانگی موج و ذره می‌گوید نور و ماده را نمی‌توان با تصویرهای کلاسیکِ «فقط موج» یا «فقط ذره» به‌طور کامل توصیف کرد. فوتون و الکترون در آشکارساز به‌صورت روید",
   "rank_math_focus_keyword": "دوگانگی موج و ذره",
   "rank_math_title": "دوگانگی موج و ذره چیست؟ از تداخل تا آشکارسازی",
-  "rank_math_description": "دوگانگی موج و ذره می‌گوید نور و ماده را نمی‌توان با تصویرهای کلاسیکِ «فقط موج» یا «فقط ذره» به‌طور کامل توصیف کرد. فوتون و الکترون در آشکارساز به‌صورت روید"
+  "rank_math_description": "دوگانگی موج و ذره می‌گوید نور و ماده را نمی‌توان با تصویرهای کلاسیکِ «فقط موج» یا «فقط ذره» به‌طور کامل توصیف کرد. فوتون و الکترون در آشکارساز به‌صورت روید",
+  "general_reader_revision": true,
+  "analogy_rule_checked": true,
+  "comprehensive_importer_batch": "001-025"
 }
