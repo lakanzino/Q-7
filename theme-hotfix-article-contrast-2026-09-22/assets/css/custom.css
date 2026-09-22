@@ -794,3 +794,10 @@ blockquote {
   color: var(--qp-dim, rgba(232, 246, 255, .72)) !important;
   opacity: 1 !important;
 }
+
+/* Main article title: replace the legacy dark blue with readable Cosmic blue. */
+.qp-article__title {
+  color: var(--qp-neon, #3BA7F2) !important;
+  opacity: 1 !important;
+  text-shadow: 0 0 18px rgba(59, 167, 242, .16);
+}
