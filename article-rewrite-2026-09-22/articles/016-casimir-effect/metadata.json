@@ -11,6 +11,9 @@
   "rank_math_title": "اثر کازیمیر چیست؟ نیروی خلأ میان دو صفحه",
   "rank_math_description": "اثر کازیمیر چگونه میان دو صفحه نزدیک نیرو می‌سازد؟ فرمول، اندازه‌گیری، نقش مواد واقعی، نانوفناوری و خطای انرژی رایگان را بخوانید.",
   "source_url": "https://qpedia.ir/casimir-effect/",
-  "rewrite_status": "completed_and_qa_checked",
-  "importer_batch": "016-020"
+  "rewrite_status": "completed_qa_checked_and_general_reader_revised",
+  "importer_batch": "016-020",
+  "general_reader_revision": true,
+  "analogy_rule_checked": true,
+  "comprehensive_importer_batch": "001-025"
 }
