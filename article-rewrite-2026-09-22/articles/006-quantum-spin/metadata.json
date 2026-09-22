@@ -11,6 +11,9 @@
   "rank_math_title": "اسپین کوانتومی چیست؟ از دو لکه تا چرخش ۷۲۰ درجه",
   "rank_math_description": "اسپین کوانتومی چرخش واقعی ذره نیست. آزمایش اشترن–گرلاخ، رفتار ۷۲۰ درجه‌ای اسپینور، اصل طرد پاولی و کاربردهای اسپین را دقیق بخوانید.",
   "source_url": "https://qpedia.ir/quantum-spin/",
-  "rewrite_status": "completed_and_qa_checked",
-  "importer_batch": "006-010"
+  "rewrite_status": "completed_qa_checked_and_general_reader_revised",
+  "importer_batch": "006-010",
+  "general_reader_revision": true,
+  "analogy_rule_checked": true,
+  "comprehensive_importer_batch": "001-025"
 }
