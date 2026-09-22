@@ -14,6 +14,9 @@
   "post_date": "2026-09-03 03:21:12",
   "author": "محمدرضا بردیا",
   "featured_image_id": 3102,
-  "rewrite_status": "completed_and_qa_checked",
-  "importer_batch": "021-025"
+  "rewrite_status": "completed_qa_checked_and_general_reader_revised",
+  "importer_batch": "021-025",
+  "general_reader_revision": true,
+  "analogy_rule_checked": true,
+  "comprehensive_importer_batch": "001-025"
 }
