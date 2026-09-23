@@ -1,0 +1,68 @@
+{
+  "source_screenshot": "Screenshot_2026-09-23-16-10-54-284_com.android.chrome.jpg",
+  "gate_policy": "Only individually reviewed PASS articles may enter an importer",
+  "articles": [
+    {
+      "sequence": 144,
+      "post_id": 3375,
+      "slug": "cosmic-inflation",
+      "status": "PASS"
+    },
+    {
+      "sequence": 145,
+      "post_id": 3377,
+      "slug": "cosmic-microwave-background",
+      "status": "PASS"
+    },
+    {
+      "sequence": 146,
+      "post_id": 3379,
+      "slug": "wormhole",
+      "status": "PASS"
+    },
+    {
+      "sequence": 147,
+      "post_id": 3381,
+      "slug": "quantum-cosmology",
+      "status": "PASS"
+    },
+    {
+      "sequence": 148,
+      "post_id": 3383,
+      "slug": "quantum-bounce",
+      "status": "PASS"
+    },
+    {
+      "sequence": 150,
+      "post_id": 3389,
+      "slug": "quantum-fiction",
+      "status": "PASS"
+    },
+    {
+      "sequence": 154,
+      "post_id": 3416,
+      "slug": "quantum-cancer",
+      "status": "PASS"
+    },
+    {
+      "sequence": 157,
+      "post_id": 3434,
+      "slug": "quantum-probability",
+      "status": "PASS"
+    },
+    {
+      "sequence": 152,
+      "post_id": 3393,
+      "slug": "quantum-winter",
+      "status": "PASS"
+    },
+    {
+      "sequence": 151,
+      "post_id": 3391,
+      "slug": "quantum-culture",
+      "status": "PASS"
+    }
+  ],
+  "importer_allowed": true,
+  "status": "PASS"
+}
