@@ -1,0 +1,26 @@
+{
+  "new_sequence": 55,
+  "wxr_sequence": 60,
+  "post_id": 2495,
+  "post_type": "quantum_article",
+  "post_title": "یادگیری ماشین کوانتومی؛ وعده ها و واقعیت ها",
+  "slug": "quantum-machine-learning",
+  "url": "https://qpedia.ir/quantum-machine-learning/",
+  "post_date": "2026-09-05 23:05:17",
+  "featured_media_id": 3176,
+  "primary_keyword": "یادگیری ماشین کوانتومی",
+  "seo_title": "یادگیری ماشین کوانتومی؛ وعده‌ها و واقعیت امروز",
+  "meta_description": "یادگیری ماشین کوانتومی چیست؟ فضای نمایی، بارگذاری داده، QRAM، کرنل کوانتومی، HHL، نویز و واقعیت مزیت QML نسبت به GPU را دقیق بخوانید.",
+  "taxonomy": {
+    "mother_name": "فناوری کوانتومی",
+    "mother_slug": "quantum-technology",
+    "category_name": "هوش مصنوعی کوانتومی",
+    "category_slug": "quantum-ai"
+  },
+  "rank_math": {
+    "rank_math_title": "یادگیری ماشین کوانتومی؛ وعده‌ها و واقعیت امروز",
+    "rank_math_description": "یادگیری ماشین کوانتومی چیست؟ فضای نمایی، بارگذاری داده، QRAM، کرنل کوانتومی، HHL، نویز و واقعیت مزیت QML نسبت به GPU را دقیق بخوانید.",
+    "rank_math_focus_keyword": "یادگیری ماشین کوانتومی"
+  },
+  "status": "completed_and_batch_qa_checked"
+}
