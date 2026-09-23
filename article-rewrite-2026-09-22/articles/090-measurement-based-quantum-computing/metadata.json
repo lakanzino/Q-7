@@ -1,0 +1,25 @@
+{
+  "new_sequence": 90,
+  "post_id": 2755,
+  "post_type": "quantum_article",
+  "post_title": "محاسبه کوانتومی مبتنی بر اندازه‌گیری چگونه کار می‌کند؟",
+  "slug": "measurement-based-quantum-computing",
+  "url": "https://qpedia.ir/measurement-based-quantum-computing/",
+  "post_date": "2026-09-14 20:00:35",
+  "featured_media_id": 2789,
+  "primary_keyword": "محاسبه کوانتومی مبتنی بر اندازه‌گیری",
+  "seo_title": "محاسبه کوانتومی مبتنی بر اندازه‌گیری چگونه کار می‌کند؟",
+  "meta_description": "محاسبه کوانتومی مبتنی بر اندازه‌گیری چیست؟ حالت خوشه‌ای، اندازه‌گیری تطبیقی، feed-forward و تفاوت رایانه یک‌طرفه با مدل گیت را ساده بخوانید.",
+  "taxonomy": {
+    "mother_name": "فناوری کوانتومی",
+    "mother_slug": "quantum-technology",
+    "category_name": "رایانش کوانتومی",
+    "category_slug": "quantum-computing"
+  },
+  "rank_math": {
+    "rank_math_title": "محاسبه کوانتومی مبتنی بر اندازه‌گیری چگونه کار می‌کند؟",
+    "rank_math_description": "محاسبه کوانتومی مبتنی بر اندازه‌گیری چیست؟ حالت خوشه‌ای، اندازه‌گیری تطبیقی، feed-forward و تفاوت رایانه یک‌طرفه با مدل گیت را ساده بخوانید.",
+    "rank_math_focus_keyword": "محاسبه کوانتومی مبتنی بر اندازه‌گیری"
+  },
+  "status": "passed_strict_seo_link_and_editorial_gate"
+}
