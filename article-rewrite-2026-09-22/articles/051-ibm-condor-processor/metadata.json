@@ -1,0 +1,26 @@
+{
+  "new_sequence": 51,
+  "wxr_sequence": 55,
+  "post_id": 2490,
+  "post_type": "quantum_article",
+  "post_title": "پردازندهٔ IBM Condor؛ چرا هزار کیوبیت کافی نیست",
+  "slug": "ibm-condor-processor",
+  "url": "https://qpedia.ir/ibm-condor-processor/",
+  "post_date": "2026-09-05 23:05:17",
+  "featured_media_id": 3135,
+  "primary_keyword": "پردازنده Condor",
+  "seo_title": "پردازنده Condor چیست و چرا ۱۱۲۱ کیوبیت کافی نیست؟",
+  "meta_description": "پردازنده Condor چیست؟ تفاوت ۱۱۲۱ کیوبیت فیزیکی با کیوبیت منطقی و نقش خطا، اتصال، Heron و تصحیح خطای کوانتومی را دقیق بخوانید.",
+  "taxonomy": {
+    "mother_name": "فناوری کوانتومی",
+    "mother_slug": "quantum-technology",
+    "category_name": "رایانش کوانتومی",
+    "category_slug": "quantum-computing"
+  },
+  "rank_math": {
+    "rank_math_title": "پردازنده Condor چیست و چرا ۱۱۲۱ کیوبیت کافی نیست؟",
+    "rank_math_description": "پردازنده Condor چیست؟ تفاوت ۱۱۲۱ کیوبیت فیزیکی با کیوبیت منطقی و نقش خطا، اتصال، Heron و تصحیح خطای کوانتومی را دقیق بخوانید.",
+    "rank_math_focus_keyword": "پردازنده Condor"
+  },
+  "status": "completed_and_individually_qa_checked"
+}
