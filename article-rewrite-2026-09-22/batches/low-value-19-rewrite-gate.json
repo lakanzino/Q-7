@@ -1,0 +1,122 @@
+{
+  "batch": "low-value-19-rewrite",
+  "plugin_policy": "Build importer after first 10 PASS, then after remaining 9 PASS",
+  "articles": [
+    {
+      "sequence": 126,
+      "post_id": 2248,
+      "slug": "scanning-tunneling-microscope",
+      "status": "PASS"
+    },
+    {
+      "sequence": 127,
+      "post_id": 2249,
+      "slug": "fiber-optics",
+      "status": "PASS"
+    },
+    {
+      "sequence": 129,
+      "post_id": 2251,
+      "slug": "shor-algorithm",
+      "status": "PASS"
+    },
+    {
+      "sequence": 130,
+      "post_id": 2259,
+      "slug": "pilot-wave",
+      "status": "PASS"
+    },
+    {
+      "sequence": 131,
+      "post_id": 2260,
+      "slug": "genetic-mutation",
+      "status": "PASS"
+    },
+    {
+      "sequence": 141,
+      "post_id": 3369,
+      "slug": "axion",
+      "status": "PASS"
+    },
+    {
+      "sequence": 142,
+      "post_id": 3371,
+      "slug": "wimp",
+      "status": "PASS"
+    },
+    {
+      "sequence": 143,
+      "post_id": 3373,
+      "slug": "dark-energy-quantum",
+      "status": "PASS"
+    },
+    {
+      "sequence": 149,
+      "post_id": 3387,
+      "slug": "quantum-music",
+      "status": "PASS"
+    },
+    {
+      "sequence": 159,
+      "post_id": 3442,
+      "slug": "quantum-electrodynamics",
+      "status": "PASS"
+    },
+    {
+      "sequence": 161,
+      "post_id": 3501,
+      "slug": "quantum-microscopy",
+      "status": "PENDING_FULL_REWRITE"
+    },
+    {
+      "sequence": 162,
+      "post_id": 3521,
+      "slug": "quantum-network",
+      "status": "PENDING_FULL_REWRITE"
+    },
+    {
+      "sequence": 163,
+      "post_id": 3523,
+      "slug": "quantum-cloud",
+      "status": "PENDING_FULL_REWRITE"
+    },
+    {
+      "sequence": 177,
+      "post_id": 2240,
+      "slug": "coherence",
+      "status": "PENDING_FULL_REWRITE"
+    },
+    {
+      "sequence": 178,
+      "post_id": 2252,
+      "slug": "grover-algorithm",
+      "status": "PENDING_FULL_REWRITE"
+    },
+    {
+      "sequence": 179,
+      "post_id": 2253,
+      "slug": "quantum-error-correction",
+      "status": "PENDING_FULL_REWRITE"
+    },
+    {
+      "sequence": 182,
+      "post_id": 2256,
+      "slug": "no-cloning-theorem",
+      "status": "PENDING_FULL_REWRITE"
+    },
+    {
+      "sequence": 183,
+      "post_id": 2257,
+      "slug": "quantum-gate",
+      "status": "PENDING_FULL_REWRITE"
+    },
+    {
+      "sequence": 184,
+      "post_id": 2258,
+      "slug": "quantum-simulation",
+      "status": "PENDING_FULL_REWRITE"
+    }
+  ],
+  "importer_allowed_first_10": true,
+  "importer_allowed_final_9": false
+}
