@@ -1,0 +1,26 @@
+{
+  "new_sequence": 58,
+  "wxr_sequence": 63,
+  "post_id": 2498,
+  "post_type": "quantum_article",
+  "post_title": "ترمودینامیک کوانتومی؛ موتوری به اندازهٔ یک اتم",
+  "slug": "quantum-thermodynamics",
+  "url": "https://qpedia.ir/quantum-thermodynamics/",
+  "post_date": "2026-09-05 23:05:17",
+  "featured_media_id": 3190,
+  "primary_keyword": "ترمودینامیک کوانتومی",
+  "seo_title": "ترمودینامیک کوانتومی؛ موتور و یخچال تک‌اتمی",
+  "meta_description": "ترمودینامیک کوانتومی چیست؟ قانون دوم، نوسان‌های گرما، رابطه ژارزینسکی و عملکرد موتور تک‌یونی و یخچال کوانتومی را ساده و دقیق بخوانید.",
+  "taxonomy": {
+    "mother_name": "مبانی کوانتوم",
+    "mother_slug": "quantum-foundations",
+    "category_name": "مفاهیم پایه",
+    "category_slug": "quantum-basics"
+  },
+  "rank_math": {
+    "rank_math_title": "ترمودینامیک کوانتومی؛ موتور و یخچال تک‌اتمی",
+    "rank_math_description": "ترمودینامیک کوانتومی چیست؟ قانون دوم، نوسان‌های گرما، رابطه ژارزینسکی و عملکرد موتور تک‌یونی و یخچال کوانتومی را ساده و دقیق بخوانید.",
+    "rank_math_focus_keyword": "ترمودینامیک کوانتومی"
+  },
+  "status": "completed_and_individually_qa_checked"
+}
