@@ -1,6 +1,6 @@
 <?php
 /**
- * Quantum Pedia Child — functions (v1.7.3)
+ * Quantum Pedia Child — functions (v1.8.0)
  *
  * پوستهٔ فرزند سبک و تمیز: فقط ساختارهای ضروری سایت.
  *
@@ -36,7 +36,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
-define( 'QPEDIA_CHILD_VERSION', '1.7.3' );
+define( 'QPEDIA_CHILD_VERSION', '1.8.0' );
 
 /* ── ۱. راه‌اندازی: بارگذاری ترجمه (رفع خطای Doing it Wrong) ── */
 function qpedia_child_setup() {
