@@ -1,14 +1,14 @@
 <?php
 /**
  * Plugin Name: Qpedia Category Tree Installer
- * Description: ساخت یک‌بارمصرف ساختار نهایی دسته‌بندی مقاله‌ها: ۴ دسته مادر و ۱۲ دسته عمومی، بدون تغییر نوشته‌ها یا پیوند یکتای مقاله‌ها.
- * Version: 1.0.0
+ * Description: پاک‌سازی کامل دسته‌بندی‌های قبلی مقاله‌ها و ساخت ساختار نهایی: ۴ دسته مادر و ۱۲ دسته عمومی، بدون تغییر نوشته‌ها یا پیوند یکتای مقاله‌ها.
+ * Version: 1.1.0
  * Author: Qpedia Editorial
  */
 
 if (!defined('ABSPATH')) exit;
 
-const QPCT_OPTION = 'qpedia_category_tree_installed_v1';
+const QPCT_OPTION = 'qpedia_category_tree_installed_v2';
 const QPCT_TAXONOMY = 'quantum_category';
 
 add_action('admin_menu', function () {
@@ -90,6 +90,24 @@ function qpct_install_tree() {
         return new WP_Error('taxonomy_not_hierarchical', 'تاکسونومی quantum_category سلسله‌مراتبی نیست.');
     }
 
+    // کاربر پاک‌سازی کامل را انتخاب کرده است: تمام termهای قدیمی این taxonomy
+    // (همراه با رابطه‌های دسته‌بندی نوشته‌ها) حذف می‌شوند؛ خود نوشته‌ها دست‌نخورده می‌مانند.
+    $old_terms = get_terms(array(
+        'taxonomy' => QPCT_TAXONOMY,
+        'hide_empty' => false,
+        'fields' => 'ids',
+    ));
+    if (is_wp_error($old_terms)) return $old_terms;
+
+    $deleted = 0;
+    // ابتدا فرزندان حذف می‌شوند تا وابستگی والد مانع پاک‌سازی نشود.
+    $old_terms = array_reverse(array_map('intval', $old_terms));
+    foreach ($old_terms as $term_id) {
+        $result = wp_delete_term($term_id, QPCT_TAXONOMY);
+        if (is_wp_error($result)) return $result;
+        if ($result !== false) $deleted++;
+    }
+
     $created = 0;
     $updated = 0;
     foreach (qpct_tree() as $mother) {
@@ -107,15 +125,16 @@ function qpct_install_tree() {
     }
 
     clean_term_cache(array(), QPCT_TAXONOMY);
-    return array('created' => $created, 'updated' => $updated, 'total' => 16);
+    return array('deleted' => $deleted, 'created' => $created, 'updated' => $updated, 'total' => 16);
 }
 
 function qpct_render_page() {
     if (!current_user_can('manage_options')) return;
 
     echo '<div class="wrap" dir="rtl"><h1>ساختار دسته‌بندی مقاله‌های Qpedia</h1>';
-    echo '<p>این ابزار فقط ۴ دسته مادر و ۱۲ دسته عمومی را در <code>quantum_category</code> ایجاد یا اصلاح می‌کند.</p>';
-    echo '<p><strong>هیچ مقاله‌ای ساخته، حذف یا ویرایش نمی‌شود و پیوند یکتای تخت مقاله‌ها به شکل <code>qpedia.ir/postname/</code> تغییر نمی‌کند.</strong></p>';
+    echo '<p>این ابزار ابتدا <strong>تمام دسته‌های قبلی</strong> در <code>quantum_category</code> و اتصال آن‌ها به مقاله‌ها را حذف می‌کند؛ سپس فقط ۴ دسته مادر و ۱۲ دسته عمومی نهایی را می‌سازد.</p>';
+    echo '<p><strong>خود مقاله‌ها ساخته، حذف یا ویرایش نمی‌شوند و پیوند یکتای تخت مقاله‌ها به شکل <code>qpedia.ir/postname/</code> تغییر نمی‌کند.</strong></p>';
+    echo '<div class="notice notice-warning inline"><p><strong>هشدار:</strong> پس از اجرا، مقاله‌های قبلی بدون دسته خواهند بود تا آن‌ها را دستی یا با درون‌ریزهای مقاله در دسته‌های نهایی قرار دهید.</p></div>';
 
     $done = get_option(QPCT_OPTION);
     if ($done) {
@@ -130,7 +149,7 @@ function qpct_render_page() {
             echo '<div class="notice notice-error"><p>'.esc_html($result->get_error_message()).'</p></div>';
         } else {
             update_option(QPCT_OPTION, current_time('mysql'), false);
-            echo '<div class="notice notice-success"><p>انجام شد: '.(int)$result['created'].' دسته ساخته و '.(int)$result['updated'].' دسته موجود اصلاح شد؛ مجموع ساختار ۱۶ دسته است.</p></div>';
+            echo '<div class="notice notice-success"><p>انجام شد: '.(int)$result['deleted'].' دسته قبلی حذف و '.(int)$result['created'].' دسته نهایی ساخته شد؛ مجموع ساختار جدید ۱۶ دسته است.</p></div>';
             echo '<p><strong>افزونه را اکنون غیرفعال و حذف کنید.</strong></p></div>';
             return;
         }
@@ -138,6 +157,6 @@ function qpct_render_page() {
 
     echo '<form method="post">';
     wp_nonce_field('qpct_install_tree');
-    submit_button('ایجاد ۴ دسته مادر و ۱۲ دسته عمومی', 'primary', 'qpct_run');
+    submit_button('حذف دسته‌های قبلی و ساخت ۱۶ دسته نهایی', 'primary', 'qpct_run');
     echo '</form></div>';
 }
