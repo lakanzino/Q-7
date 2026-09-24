@@ -1,4 +1,21 @@
-<?php
+#!/usr/bin/env python3
+"""Generate Qpedia Glossary TamRank SEO Fix & Bloat Cleaner Plugin."""
+import json
+from pathlib import Path
+import zipfile
+
+ROOT = Path(__file__).resolve().parents[1]
+PLUGIN_DIR = ROOT / 'article-rewrite-2026-09-22/importers/glossary-tamrank-seo-fix/qpedia-glossary-tamrank-seo-fix'
+PLUGIN_DIR.mkdir(parents=True, exist_ok=True)
+
+DATA_FILE = ROOT / 'article-rewrite-2026-09-22/glossary-201-tamrank-seo-data.json'
+with open(DATA_FILE, 'r', encoding='utf-8') as f:
+    terms_data = json.load(f)
+
+# Write terms-seo.json inside plugin dir
+(PLUGIN_DIR / 'terms-seo.json').write_text(json.dumps(terms_data, ensure_ascii=False, indent=2), encoding='utf-8')
+
+php_code = r'''<?php
 /**
  * Plugin Name: Qpedia Glossary TamRank SEO Fix & Bloat Cleaner
  * Description: به‌روزرسانی متادیتای سئوی تام‌رنک (TamRank SEO) برای تمام ۲۰۱ اصطلاح واژه‌نامه و پاک‌سازی حافظه حجیم کدهای رندرشده (_tamrank_schema_rendered_source) از دیتابیس وردپرس.
@@ -161,3 +178,22 @@ function qpg_seo_apply_updates($clean_bloat = true) {
 
     return array('ok' => true, 'message' => $msg, 'log' => $log);
 }
+'''
+
+php_file = PLUGIN_DIR / 'qpedia-glossary-tamrank-seo-fix.php'
+php_file.write_text(php_code.strip() + '\n', encoding='utf-8')
+print(f'Wrote {php_file}')
+
+# Create zip package
+zip_path = ROOT / 'article-rewrite-2026-09-22/importers/glossary-tamrank-seo-fix/qpedia-glossary-tamrank-seo-fix.zip'
+with zipfile.ZipFile(zip_path, 'w', zipfile.ZIP_DEFLATED) as zf:
+    for f in PLUGIN_DIR.glob('*'):
+        if f.is_file():
+            zf.write(f, arcname=f'qpedia-glossary-tamrank-seo-fix/{f.name}')
+
+print(f'Created {zip_path} ({zip_path.stat().st_size / 1024:.1f} KB)')
+
+# Copy to downloads
+dl_zip = ROOT / 'downloads/qpedia-glossary-tamrank-seo-fix.zip'
+dl_zip.write_bytes(zip_path.read_bytes())
+print(f'Copied to {dl_zip} ({dl_zip.stat().st_size / 1024:.1f} KB)')
