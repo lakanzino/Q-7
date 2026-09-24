@@ -1,0 +1,67 @@
+{
+  "batch": "incomplete-depth-first-10",
+  "status": "PASS",
+  "importer_allowed": true,
+  "articles": [
+    {
+      "sequence": 91,
+      "post_id": 2757,
+      "slug": "aharonov-bohm-effect",
+      "status": "PASS"
+    },
+    {
+      "sequence": 92,
+      "post_id": 2764,
+      "slug": "crystal-healing-debunked",
+      "status": "PASS"
+    },
+    {
+      "sequence": 93,
+      "post_id": 2765,
+      "slug": "quantum-ai-marketing-hype",
+      "status": "PASS"
+    },
+    {
+      "sequence": 97,
+      "post_id": 301,
+      "slug": "schrodinger-cat",
+      "status": "PASS"
+    },
+    {
+      "sequence": 98,
+      "post_id": 504,
+      "slug": "photon",
+      "status": "PASS"
+    },
+    {
+      "sequence": 99,
+      "post_id": 505,
+      "slug": "electron",
+      "status": "PASS"
+    },
+    {
+      "sequence": 100,
+      "post_id": 509,
+      "slug": "pauli-exclusion-principle",
+      "status": "PASS"
+    },
+    {
+      "sequence": 104,
+      "post_id": 560,
+      "slug": "is-classical-physics-wrong",
+      "status": "PASS"
+    },
+    {
+      "sequence": 105,
+      "post_id": 561,
+      "slug": "quantum-interpretation-debate",
+      "status": "PASS"
+    },
+    {
+      "sequence": 106,
+      "post_id": 563,
+      "slug": "does-ai-use-quantum",
+      "status": "PASS"
+    }
+  ]
+}
