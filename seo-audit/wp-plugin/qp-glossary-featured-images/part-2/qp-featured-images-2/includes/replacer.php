@@ -8,7 +8,7 @@
  *  ۲) نام فایل متفاوت است  →  تصویر تازه با نام اسلاگ ساخته می‌شود، شاخص مقاله
  *     می‌شود و تصویر قبلی از کتابخانه و سرور حذف می‌گردد.
  *
- * @package QP_Featured_Images
+ * @package QP_Featured_Images_Part_2
  */
 
 defined( 'ABSPATH' ) || exit;
@@ -23,7 +23,7 @@ defined( 'ABSPATH' ) || exit;
  * @param array $row ردیف نگاشت.
  * @return string
  */
-function qpfi_alt_for( $row ) {
+function qpfb_alt_for( $row ) {
 	$alt = ! empty( $row['alt'] ) ? $row['alt'] : $row['title'];
 
 	// حذف فاصله‌های اضافه.
@@ -50,7 +50,7 @@ function qpfi_alt_for( $row ) {
  * @param string $slug اسلاگ.
  * @return WP_Post|null
  */
-function qpfi_find_article( $slug ) {
+function qpfb_find_article( $slug ) {
 	$post = get_page_by_path( $slug, OBJECT, 'quantum_article' );
 
 	if ( $post instanceof WP_Post ) {
@@ -78,7 +78,7 @@ function qpfi_find_article( $slug ) {
  * @param int $post_id شناسهٔ مقاله.
  * @return array
  */
-function qpfi_current_image( $post_id ) {
+function qpfb_current_image( $post_id ) {
 	$id = (int) get_post_thumbnail_id( $post_id );
 
 	if ( ! $id ) {
@@ -107,7 +107,7 @@ function qpfi_current_image( $post_id ) {
  * @param int $exclude_id  مقاله‌ای که کنار گذاشته می‌شود.
  * @return array فهرست شناسهٔ مقالات دیگر.
  */
-function qpfi_attachment_used_elsewhere( $att_id, $exclude_id = 0 ) {
+function qpfb_attachment_used_elsewhere( $att_id, $exclude_id = 0 ) {
 	$att_id = (int) $att_id;
 
 	if ( ! $att_id ) {
@@ -142,7 +142,7 @@ function qpfi_attachment_used_elsewhere( $att_id, $exclude_id = 0 ) {
  *
  * @return string
  */
-function qpfi_backup_dir() {
+function qpfb_backup_dir() {
 	$uploads = wp_upload_dir();
 
 	return trailingslashit( $uploads['basedir'] ) . 'qp-fi-backup';
@@ -154,12 +154,12 @@ function qpfi_backup_dir() {
  * @param string $file مسیر فایل قبلی.
  * @return string نام فایل پشتیبان یا رشتهٔ خالی.
  */
-function qpfi_backup_file( $file ) {
+function qpfb_backup_file( $file ) {
 	if ( ! $file || ! file_exists( $file ) ) {
 		return '';
 	}
 
-	$dir = qpfi_backup_dir();
+	$dir = qpfb_backup_dir();
 
 	if ( ! file_exists( $dir ) && ! wp_mkdir_p( $dir ) ) {
 		return '';
@@ -182,7 +182,7 @@ function qpfi_backup_file( $file ) {
  * @param int $att_id شناسهٔ پیوست.
  * @return void
  */
-function qpfi_delete_intermediate_files( $att_id ) {
+function qpfb_delete_intermediate_files( $att_id ) {
 	$meta = wp_get_attachment_metadata( $att_id );
 
 	if ( empty( $meta['sizes'] ) || ! is_array( $meta['sizes'] ) ) {
@@ -214,7 +214,7 @@ function qpfi_delete_intermediate_files( $att_id ) {
  * @param array   $row    ردیف نگاشت.
  * @return array
  */
-function qpfi_create_attachment( $source, $dir, $file, $post, $row ) {
+function qpfb_create_attachment( $source, $dir, $file, $post, $row ) {
 	if ( ! wp_mkdir_p( $dir ) ) {
 		return array( 0, 'ساخت پوشهٔ مقصد ممکن نشد.' );
 	}
@@ -268,8 +268,8 @@ function qpfi_create_attachment( $source, $dir, $file, $post, $row ) {
  * @param bool  $dry_run فقط بررسی.
  * @return array گزارش.
  */
-function qpfi_process_row( $row, $dry_run = false ) {
-	$options = qpfi_options();
+function qpfb_process_row( $row, $dry_run = false ) {
+	$options = qpfb_options();
 
 	$report = array(
 		'slug'   => $row['slug'],
@@ -280,11 +280,11 @@ function qpfi_process_row( $row, $dry_run = false ) {
 		'url'    => '',
 		'backup' => '',
 		'note'   => '',
-		'alt'    => qpfi_alt_for( $row ),
+		'alt'    => qpfb_alt_for( $row ),
 		'kw'     => $row['kw'],
 	);
 
-	$source = qpfi_image_path( $row['file'] );
+	$source = qpfb_image_path( $row['file'] );
 
 	if ( ! file_exists( $source ) ) {
 		$report['status'] = 'error';
@@ -293,7 +293,7 @@ function qpfi_process_row( $row, $dry_run = false ) {
 		return $report;
 	}
 
-	$post = qpfi_find_article( $row['slug'] );
+	$post = qpfb_find_article( $row['slug'] );
 
 	if ( ! $post instanceof WP_Post ) {
 		$report['status'] = 'missing';
@@ -302,7 +302,7 @@ function qpfi_process_row( $row, $dry_run = false ) {
 		return $report;
 	}
 
-	$current       = qpfi_current_image( $post->ID );
+	$current       = qpfb_current_image( $post->ID );
 	$report['old'] = $current['basename'];
 
 	/* ── حالت ۱: بازنویسی سرجای فایل فعلی (نام یکسان) ── */
@@ -316,11 +316,11 @@ function qpfi_process_row( $row, $dry_run = false ) {
 		}
 
 		if ( ! empty( $options['backup_old'] ) ) {
-			$report['backup'] = qpfi_backup_file( $current['file'] );
+			$report['backup'] = qpfb_backup_file( $current['file'] );
 		}
 
 		// حذف فایل‌های اندازه‌های قبلی تا نسخهٔ قدیمی باقی نماند.
-		qpfi_delete_intermediate_files( $current['id'] );
+		qpfb_delete_intermediate_files( $current['id'] );
 
 		if ( ! copy( $source, $current['file'] ) ) {
 			$report['status'] = 'error';
@@ -340,9 +340,9 @@ function qpfi_process_row( $row, $dry_run = false ) {
 		}
 
 		if ( ! empty( $options['set_alt'] ) ) {
-			update_post_meta( $current['id'], '_wp_attachment_image_alt', qpfi_alt_for( $row ) );
+			update_post_meta( $current['id'], '_wp_attachment_image_alt', qpfb_alt_for( $row ) );
 			update_post_meta( $current['id'], '_qpfi_kw', $row['kw'] );
-			update_post_meta( $current['id'], '_qpfi_alt_source', 'qp-fi-1.1.0' );
+			update_post_meta( $current['id'], '_qpfi_alt_source', 'qp-fi-' . QPFB_VERSION );
 		}
 
 		if ( ! empty( $row['en'] ) ) {
@@ -368,7 +368,7 @@ function qpfi_process_row( $row, $dry_run = false ) {
 		$report['status'] = $current['id'] ? 'replace' : 'add';
 
 		if ( $current['id'] ) {
-			$others = qpfi_attachment_used_elsewhere( $current['id'], $post->ID );
+			$others = qpfb_attachment_used_elsewhere( $current['id'], $post->ID );
 
 			$report['note'] = empty( $others )
 				? sprintf( 'تصویر تازه ساخته می‌شود و «%s» حذف می‌شود.', $current['basename'] )
@@ -384,7 +384,7 @@ function qpfi_process_row( $row, $dry_run = false ) {
 	$uploads = wp_upload_dir();
 	$dir     = ( $current['file'] && file_exists( dirname( $current['file'] ) ) ) ? dirname( $current['file'] ) : $uploads['path'];
 
-	list( $new_id, $error ) = qpfi_create_attachment( $source, $dir, $row['file'], $post, $row );
+	list( $new_id, $error ) = qpfb_create_attachment( $source, $dir, $row['file'], $post, $row );
 
 	if ( ! $new_id ) {
 		$report['status'] = 'error';
@@ -394,9 +394,9 @@ function qpfi_process_row( $row, $dry_run = false ) {
 	}
 
 	if ( ! empty( $options['set_alt'] ) ) {
-		update_post_meta( $new_id, '_wp_attachment_image_alt', qpfi_alt_for( $row ) );
+		update_post_meta( $new_id, '_wp_attachment_image_alt', qpfb_alt_for( $row ) );
 		update_post_meta( $new_id, '_qpfi_kw', $row['kw'] );
-		update_post_meta( $new_id, '_qpfi_alt_source', 'qp-fi-1.1.0' );
+		update_post_meta( $new_id, '_qpfi_alt_source', 'qp-fi-' . QPFB_VERSION );
 	}
 
 	if ( ! empty( $row['en'] ) ) {
@@ -409,11 +409,11 @@ function qpfi_process_row( $row, $dry_run = false ) {
 
 	// حذف تصویر قبلی — مگر اینکه جای دیگری استفاده شده باشد.
 	if ( $current['id'] ) {
-		$others = qpfi_attachment_used_elsewhere( $current['id'], $post->ID );
+		$others = qpfb_attachment_used_elsewhere( $current['id'], $post->ID );
 
 		if ( empty( $others ) ) {
 			if ( ! empty( $options['backup_old'] ) ) {
-				$report['backup'] = qpfi_backup_file( $current['file'] );
+				$report['backup'] = qpfb_backup_file( $current['file'] );
 			}
 
 			wp_delete_attachment( $current['id'], true );
@@ -437,7 +437,7 @@ function qpfi_process_row( $row, $dry_run = false ) {
  *
  * @return void
  */
-function qpfi_clear_caches() {
+function qpfb_clear_caches() {
 	foreach ( array( 'qpedia_glossary_terms_v1', 'qpedia_glossary_terms_v2' ) as $key ) {
 		delete_transient( $key );
 	}
@@ -450,11 +450,11 @@ function qpfi_clear_caches() {
  *
  * @return array
  */
-function qpfi_plan() {
+function qpfb_plan() {
 	$plan = array();
 
-	foreach ( qpfi_map() as $row ) {
-		$plan[] = qpfi_process_row( $row, true );
+	foreach ( qpfb_map() as $row ) {
+		$plan[] = qpfb_process_row( $row, true );
 	}
 
 	return $plan;
@@ -466,21 +466,106 @@ function qpfi_plan() {
  * @param array $only_slugs فقط این اسلاگ‌ها.
  * @return array
  */
-function qpfi_run( $only_slugs = array() ) {
+function qpfb_run( $only_slugs = array() ) {
 	$reports = array();
 
-	foreach ( qpfi_map() as $row ) {
+	foreach ( qpfb_map() as $row ) {
 		if ( ! empty( $only_slugs ) && ! in_array( $row['slug'], $only_slugs, true ) ) {
 			continue;
 		}
 
-		$reports[] = qpfi_process_row( $row, false );
+		$reports[] = qpfb_process_row( $row, false );
 	}
 
-	qpfi_clear_caches();
-	update_option( QPFI_LOG, $reports, false );
+	qpfb_clear_caches();
+	update_option( QPFB_LOG, $reports, false );
 
 	return $reports;
+}
+
+/**
+ * اجرای مرحله‌ای (دسته‌ای).
+ *
+ * دلیل وجود: اجرای همهٔ تصویرها در یک درخواست روی هاست‌های اشتراکی طول می‌کشد و
+ * مرورگر/سرور اتصال را قطع می‌کند. این تابع در هر درخواست فقط چند مقاله را
+ * پردازش می‌کند و شمارهٔ مرحلهٔ بعد را برمی‌گرداند.
+ *
+ * @param int $offset شروع از چندمین ردیف.
+ * @param int $step   تعداد ردیف در این مرحله.
+ * @return array
+ */
+function qpfb_run_batch( $offset, $step = 0 ) {
+	$map   = array_values( qpfb_map() );
+	$total = count( $map );
+
+	// اندازهٔ مرحله خودکار تنظیم می‌شود (هاست کند ← مرحلهٔ کوچک‌تر).
+	if ( $step < 1 ) {
+		$step = (int) get_option( 'qpfb_batch_size', QPFB_BATCH_SIZE );
+	}
+
+	$step  = max( 1, min( 20, (int) $step ) );
+	$start = microtime( true );
+	$limit = 8.0; // حداکثر ثانیهٔ کار در هر درخواست (کمتر از محدودیت رایج هاست‌ها)
+	$rows  = array();
+
+	for ( $i = 0; $i < $step; $i++ ) {
+		$index = (int) $offset + $i;
+
+		if ( $index >= $total ) {
+			break;
+		}
+
+		$rows[] = qpfb_process_row( $map[ $index ], false );
+
+		// به سقف زمانی رسیدیم؟ باقی در مرحلهٔ بعد.
+		if ( microtime( true ) - $start > $limit ) {
+			break;
+		}
+	}
+
+	$elapsed   = microtime( true ) - $start;
+	$processed = count( $rows );
+	$next      = (int) $offset + $processed;
+	$done      = ( $next >= $total || 0 === $processed );
+
+	// اندازهٔ مرحلهٔ بعد: کند بود کوچک‌تر، تند بود بزرگ‌تر.
+	if ( $done ) {
+		$new_step = QPFB_BATCH_SIZE;
+	} elseif ( $elapsed > $limit && $processed > 1 ) {
+		$new_step = max( 1, (int) floor( $processed * 0.6 ) );
+	} elseif ( $elapsed < 2.0 && $processed === $step ) {
+		$new_step = min( 12, $step + 2 );
+	} else {
+		$new_step = $step;
+	}
+
+	update_option( 'qpfb_batch_size', $new_step, false );
+
+	// از مرحلهٔ اول، گزارش قبلی پاک و از نو ساخته می‌شود.
+	$stored = ( 0 === (int) $offset ) ? array() : get_option( QPFB_LOG, array() );
+
+	if ( ! is_array( $stored ) ) {
+		$stored = array();
+	}
+
+	update_option( QPFB_LOG, array_merge( $stored, $rows ), false );
+
+	if ( $done ) {
+		qpfb_clear_caches();
+		delete_option( 'qpfb_batch_offset' );
+	} else {
+		update_option( 'qpfb_batch_offset', $next, false );
+	}
+
+	return array(
+		'reports'   => $rows,
+		'next'      => $next,
+		'total'     => $total,
+		'done'      => $done,
+		'step'      => $new_step,
+		'processed' => $processed,
+		'elapsed'   => $elapsed,
+	);
 }
 
 /**
@@ -489,6 +574,6 @@ function qpfi_run( $only_slugs = array() ) {
  * @param array $args پارامترها.
  * @return string
  */
-function qpfi_page_url( $args = array() ) {
-	return add_query_arg( array_merge( array( 'page' => 'qpfi' ), $args ), admin_url( 'tools.php' ) );
+function qpfb_page_url( $args = array() ) {
+	return add_query_arg( array_merge( array( 'page' => 'qpfb' ), $args ), admin_url( 'tools.php' ) );
 }
