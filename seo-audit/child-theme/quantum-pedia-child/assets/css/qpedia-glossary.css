@@ -1,0 +1,836 @@
+/* ════════════════════════════════════════════════════════════════
+   واژه‌نامهٔ کوانتوم — اصطلاحات
+   ۱. لینک اصطلاح + تولتیپ در متن
+   ۲. آرشیو /glossary/
+   ۳. صفحهٔ یک اصطلاح
+   ۴. فهرست درون‌متنی [qglossary]
+   نسخه: 2.0.0 (قالب فرزند 1.8.1)
+   ════════════════════════════════════════════════════════════════ */
+
+/* ─────────────────────────── ۱. لینک اصطلاح ─────────────────────────── */
+.qpedia-glossary-term {
+    position: relative;
+    display: inline;
+    padding: 0 2px;
+    margin: 0;
+    border: 0;
+    border-bottom: 1px dashed rgba(59, 167, 242, .62);
+    border-radius: 3px;
+    background: linear-gradient(
+        180deg,
+        transparent 54%,
+        rgba(59, 167, 242, .16) 54%
+    );
+    color: inherit;
+    font: inherit;
+    font-weight: 650;
+    line-height: inherit;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color .16s ease, border-color .16s ease, color .16s ease;
+}
+
+.qpedia-glossary-term:hover,
+.qpedia-glossary-term:focus-visible,
+.qpedia-glossary-term[aria-expanded="true"] {
+    color: var(--qp-neon, #3BA7F2);
+    background: rgba(59, 167, 242, .16);
+    border-bottom-color: var(--qp-neon, #3BA7F2);
+    outline: 0;
+}
+
+.qpedia-glossary-term:focus-visible {
+    box-shadow: 0 0 0 3px rgba(59, 167, 242, .28);
+}
+
+/* ─────────────────────────── تولتیپ (بومی، بدون جاوااسکریپت) ─────────────────────────── */
+.qpedia-glossary-term[data-glossary-definition]::after {
+    content: attr(data-glossary-definition);
+    position: absolute;
+    z-index: 99999;
+    inset-inline-start: 0;
+    top: calc(100% + 10px);
+    width: min(320px, calc(100vw - 32px));
+    padding: 11px 13px;
+    border: 1px solid rgba(59, 167, 242, .34);
+    border-radius: 12px;
+    background: var(--qp-card-solid, #11203D);
+    color: var(--qp-ink, #E8F6FF);
+    font-size: .82rem;
+    font-weight: 500;
+    line-height: 1.85;
+    text-align: right;
+    direction: rtl;
+    box-shadow: 0 18px 44px rgba(0, 0, 0, .5);
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-4px);
+    transition: opacity .16s ease, transform .16s ease, visibility .16s;
+    pointer-events: none;
+}
+
+.qpedia-glossary-term[data-glossary-definition]:hover::after,
+.qpedia-glossary-term[data-glossary-definition]:focus-visible::after,
+.qpedia-glossary-term[aria-expanded="true"]::after {
+    opacity: 1;
+    visibility: visible;
+    transform: none;
+}
+
+/* در موبایل تولتیپ نمایش داده نشود (لمس → پاپ‌اور جاوااسکریپت) */
+@media (hover: none) {
+    .qpedia-glossary-term[data-glossary-definition]::after {
+        display: none;
+    }
+}
+
+/* ─────────────────────────── پاپ‌اور جاوااسکریپت ─────────────────────────── */
+.qpedia-glossary-popover {
+    --qpedia-glossary-arrow-x: 50%;
+    position: absolute;
+    z-index: 999999;
+    width: min(340px, calc(100vw - 24px));
+    padding: 14px 15px 12px;
+    border: 1px solid rgba(59, 167, 242, .34);
+    border-radius: 14px;
+    background: var(--qp-card-solid, #11203D);
+    color: var(--qp-ink, #E8F6FF);
+    box-shadow: 0 20px 50px rgba(0, 0, 0, .55);
+    font-family: inherit;
+    line-height: 1.8;
+    text-align: right;
+    direction: rtl;
+    opacity: 0;
+    transform: translateY(5px) scale(.98);
+    transition: opacity .16s ease, transform .16s ease;
+    pointer-events: none;
+}
+
+.qpedia-glossary-popover.is-open {
+    opacity: 1;
+    transform: none;
+    pointer-events: auto;
+}
+
+.qpedia-glossary-popover::before {
+    content: "";
+    position: absolute;
+    left: var(--qpedia-glossary-arrow-x);
+    width: 12px;
+    height: 12px;
+    background: inherit;
+    border: inherit;
+    transform: translateX(-50%) rotate(45deg);
+}
+
+.qpedia-glossary-popover[data-side="top"]::before {
+    bottom: -7px;
+    border-top: 0;
+    border-left: 0;
+}
+
+.qpedia-glossary-popover[data-side="bottom"]::before {
+    top: -7px;
+    border-right: 0;
+    border-bottom: 0;
+}
+
+.qpedia-glossary-popover__head {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 12px;
+    margin-bottom: 6px;
+}
+
+.qpedia-glossary-popover__title {
+    font-size: .95rem;
+    font-weight: 800;
+    color: var(--qp-neon, #3BA7F2);
+}
+
+.qpedia-glossary-popover__close {
+    flex: 0 0 27px;
+    width: 27px;
+    height: 27px;
+    display: grid;
+    place-items: center;
+    padding: 0;
+    border: 0;
+    border-radius: 8px;
+    background: rgba(59, 167, 242, .14);
+    color: var(--qp-ink, #E8F6FF);
+    font: 700 17px/1 sans-serif;
+    cursor: pointer;
+}
+
+.qpedia-glossary-popover__close:hover,
+.qpedia-glossary-popover__close:focus-visible {
+    background: rgba(59, 167, 242, .28);
+    outline: 2px solid rgba(59, 167, 242, .34);
+}
+
+.qpedia-glossary-popover__definition {
+    margin: 0;
+    font-size: .84rem;
+    color: var(--qp-dim, rgba(232, 246, 255, .78));
+}
+
+.qpedia-glossary-popover__more {
+    display: inline-flex;
+    margin-top: 8px;
+    color: var(--qp-neon, #3BA7F2);
+    font-size: .76rem;
+    font-weight: 750;
+    text-decoration: none;
+}
+
+.qpedia-glossary-popover__more:hover {
+    text-decoration: underline;
+}
+
+/* ─────────────────────────── ۲. آرشیو /glossary/ ─────────────────────────── */
+.qp-archive--glossary .qp-archive__title {
+    font-size: clamp(1.6rem, 4vw, 2.35rem);
+}
+
+.qp-glossary-count {
+    margin: 8px 0 0;
+    color: var(--qp-dim, rgba(232, 246, 255, .72));
+    font-size: .85rem;
+}
+
+.qp-glossary-tools {
+    display: grid;
+    gap: 14px;
+    margin: 22px 0 26px;
+    padding: 16px;
+    border: 1px solid rgba(59, 167, 242, .18);
+    border-radius: 16px;
+    background: var(--qp-card-solid, #11203D);
+}
+
+.qp-glossary-search {
+    width: 100%;
+    padding: 12px 14px;
+    border: 1px solid rgba(59, 167, 242, .26);
+    border-radius: 12px;
+    background: rgba(11, 20, 36, .72);
+    color: var(--qp-ink, #E8F6FF);
+    font: inherit;
+    font-size: .92rem;
+}
+
+.qp-glossary-search::placeholder {
+    color: rgba(232, 246, 255, .45);
+}
+
+.qp-glossary-search:focus {
+    outline: 0;
+    border-color: var(--qp-neon, #3BA7F2);
+    box-shadow: 0 0 0 3px rgba(59, 167, 242, .2);
+}
+
+.qp-glossary-alpha {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    align-items: center;
+}
+
+.qp-glossary-alpha__sep {
+    color: rgba(232, 246, 255, .28);
+    padding: 0 4px;
+}
+
+.qp-glossary-alpha__btn {
+    min-width: 34px;
+    padding: 6px 10px;
+    border: 1px solid rgba(59, 167, 242, .22);
+    border-radius: 9px;
+    background: transparent;
+    color: var(--qp-ink, #E8F6FF);
+    font: inherit;
+    font-size: .84rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color .15s ease, border-color .15s ease, color .15s ease;
+}
+
+.qp-glossary-alpha__btn:hover,
+.qp-glossary-alpha__btn:focus-visible {
+    border-color: var(--qp-neon, #3BA7F2);
+    color: var(--qp-neon, #3BA7F2);
+    outline: 0;
+}
+
+.qp-glossary-alpha__btn.is-active {
+    background: var(--qp-neon, #3BA7F2);
+    border-color: var(--qp-neon, #3BA7F2);
+    color: #06111f;
+}
+
+.qp-glossary-alpha__btn--en {
+    font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+    font-size: .78rem;
+}
+
+.qp-glossary-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
+    gap: 16px;
+}
+
+.qp-glossary-card {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 18px;
+    border: 1px solid rgba(59, 167, 242, .18);
+    border-radius: 16px;
+    background: var(--qp-card-solid, #11203D);
+    transition: border-color .18s ease, transform .18s ease, box-shadow .18s ease;
+}
+
+.qp-glossary-card:hover {
+    border-color: rgba(59, 167, 242, .45);
+    box-shadow: 0 14px 34px rgba(0, 0, 0, .38);
+    transform: translateY(-2px);
+}
+
+.qp-glossary-card__head {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.qp-glossary-card__title {
+    margin: 0;
+    font-size: 1.05rem;
+    font-weight: 800;
+    line-height: 1.55;
+}
+
+.qp-glossary-card__title a {
+    color: var(--qp-ink, #E8F6FF);
+    text-decoration: none;
+}
+
+.qp-glossary-card__title a:hover {
+    color: var(--qp-neon, #3BA7F2);
+}
+
+.qp-glossary-card__level {
+    flex-shrink: 0;
+    padding: 3px 8px;
+    border-radius: 999px;
+    background: rgba(59, 167, 242, .14);
+    color: var(--qp-dim, rgba(232, 246, 255, .8));
+    font-size: .68rem;
+    font-weight: 650;
+    white-space: nowrap;
+}
+
+.qp-glossary-card__level--beginner { background: rgba(127, 231, 214, .16); color: #7FE7D6; }
+.qp-glossary-card__level--intermediate { background: rgba(244, 162, 97, .16); color: #F4A261; }
+.qp-glossary-card__level--advanced { background: rgba(240, 106, 178, .16); color: #F58FC4; }
+
+.qp-glossary-card__en {
+    margin: 0;
+    color: var(--qp-dim, rgba(232, 246, 255, .62));
+    font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+    font-size: .78rem;
+    text-align: left;
+}
+
+.qp-glossary-card__def {
+    margin: 0;
+    color: var(--qp-dim, rgba(232, 246, 255, .78));
+    font-size: .87rem;
+    line-height: 1.95;
+}
+
+.qp-glossary-card__more {
+    margin-top: auto;
+    padding-top: 6px;
+    color: var(--qp-neon, #3BA7F2);
+    font-size: .82rem;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.qp-glossary-card__more:hover {
+    text-decoration: underline;
+}
+
+.qp-glossary-empty {
+    margin: 28px 0;
+    padding: 18px;
+    border: 1px dashed rgba(59, 167, 242, .28);
+    border-radius: 14px;
+    color: var(--qp-dim, rgba(232, 246, 255, .72));
+    text-align: center;
+}
+
+.qp-glossary-cta {
+    margin: 34px 0 10px;
+    padding: 22px;
+    border: 1px solid rgba(59, 167, 242, .18);
+    border-radius: 18px;
+    background: linear-gradient(160deg, rgba(59, 167, 242, .1), rgba(11, 20, 36, .4));
+    text-align: center;
+}
+
+.qp-glossary-cta__title {
+    margin: 0 0 8px;
+    font-size: 1.15rem;
+    font-weight: 800;
+}
+
+.qp-glossary-cta__desc {
+    margin: 0 0 14px;
+    color: var(--qp-dim, rgba(232, 246, 255, .72));
+    font-size: .88rem;
+}
+
+.qp-glossary-cta__links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+.qp-glossary-cta__links a {
+    padding: 9px 16px;
+    border: 1px solid rgba(59, 167, 242, .35);
+    border-radius: 10px;
+    color: var(--qp-neon, #3BA7F2);
+    font-size: .85rem;
+    font-weight: 650;
+    text-decoration: none;
+}
+
+.qp-glossary-cta__links a:hover {
+    background: rgba(59, 167, 242, .14);
+}
+
+/* ─────────────────────────── ۳. صفحهٔ یک اصطلاح ─────────────────────────── */
+.qp-shell--glossary {
+    max-width: 900px;
+    padding-top: 22px;
+    padding-bottom: 40px;
+}
+
+.qp-breadcrumb {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    align-items: center;
+    margin-bottom: 18px;
+    color: var(--qp-dim, rgba(232, 246, 255, .6));
+    font-size: .78rem;
+}
+
+.qp-breadcrumb a {
+    color: var(--qp-dim, rgba(232, 246, 255, .72));
+    text-decoration: none;
+}
+
+.qp-breadcrumb a:hover {
+    color: var(--qp-neon, #3BA7F2);
+}
+
+.qp-breadcrumb span[aria-current] {
+    color: var(--qp-ink, #E8F6FF);
+}
+
+.qp-glossary-entry__header {
+    margin-bottom: 20px;
+    padding-bottom: 18px;
+    border-bottom: 1px solid rgba(59, 167, 242, .16);
+}
+
+.qp-glossary-entry__eyebrow {
+    display: inline-block;
+    margin-bottom: 8px;
+    padding: 3px 10px;
+    border: 1px solid rgba(59, 167, 242, .3);
+    border-radius: 999px;
+    color: var(--qp-neon, #3BA7F2);
+    font-size: .7rem;
+    font-weight: 650;
+    letter-spacing: .2px;
+}
+
+.qp-glossary-entry__title {
+    margin: 0 0 6px;
+    font-size: clamp(1.5rem, 4vw, 2.1rem);
+    font-weight: 850;
+    line-height: 1.6;
+}
+
+.qp-glossary-entry__en {
+    margin: 0 0 12px;
+    color: var(--qp-dim, rgba(232, 246, 255, .68));
+    font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+    font-size: .9rem;
+    text-align: left;
+}
+
+.qp-glossary-entry__chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.qp-glossary-chip {
+    padding: 4px 10px;
+    border: 1px solid rgba(59, 167, 242, .22);
+    border-radius: 999px;
+    background: rgba(59, 167, 242, .08);
+    color: var(--qp-dim, rgba(232, 246, 255, .8));
+    font-size: .74rem;
+    font-weight: 600;
+}
+
+.qp-glossary-chip--abbr {
+    font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+    color: var(--qp-neon, #3BA7F2);
+}
+
+.qp-glossary-chip--code {
+    font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+    font-size: .7rem;
+    color: rgba(232, 246, 255, .5);
+}
+
+.qp-glossary-defbox {
+    margin: 0 0 24px;
+    padding: 18px 20px;
+    border: 1px solid rgba(59, 167, 242, .26);
+    border-inline-start: 3px solid var(--qp-neon, #3BA7F2);
+    border-radius: 14px;
+    background: linear-gradient(150deg, rgba(59, 167, 242, .12), rgba(11, 20, 36, .35));
+}
+
+.qp-glossary-defbox__label {
+    margin-bottom: 6px;
+    color: var(--qp-neon, #3BA7F2);
+    font-size: .74rem;
+    font-weight: 750;
+    letter-spacing: .2px;
+}
+
+.qp-glossary-defbox__text {
+    margin: 0;
+    color: var(--qp-ink, #E8F6FF);
+    font-size: .98rem;
+    font-weight: 550;
+    line-height: 2.05;
+}
+
+.qp-glossary-entry__content {
+    color: var(--qp-ink, #E8F6FF);
+    font-size: .98rem;
+    line-height: 2.1;
+}
+
+.qp-glossary-entry__content h2 {
+    margin: 30px 0 12px;
+    font-size: 1.25rem;
+    font-weight: 800;
+}
+
+.qp-glossary-entry__content h3 {
+    margin: 22px 0 10px;
+    font-size: 1.08rem;
+    font-weight: 750;
+}
+
+.qp-glossary-section {
+    margin: 30px 0 0;
+}
+
+.qp-glossary-section__title {
+    margin: 0 0 14px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid rgba(59, 167, 242, .16);
+    font-size: 1.12rem;
+    font-weight: 800;
+}
+
+.qp-glossary-faq__item {
+    margin-bottom: 10px;
+    border: 1px solid rgba(59, 167, 242, .16);
+    border-radius: 12px;
+    background: rgba(17, 32, 61, .6);
+    overflow: hidden;
+}
+
+.qp-glossary-faq__q {
+    padding: 13px 16px;
+    color: var(--qp-ink, #E8F6FF);
+    font-size: .93rem;
+    font-weight: 700;
+    cursor: pointer;
+    list-style: none;
+}
+
+.qp-glossary-faq__q::-webkit-details-marker {
+    display: none;
+}
+
+.qp-glossary-faq__q::after {
+    content: "+";
+    float: left;
+    color: var(--qp-neon, #3BA7F2);
+    font-weight: 800;
+}
+
+.qp-glossary-faq__item[open] .qp-glossary-faq__q::after {
+    content: "−";
+}
+
+.qp-glossary-faq__a {
+    padding: 0 16px 14px;
+    color: var(--qp-dim, rgba(232, 246, 255, .78));
+    font-size: .9rem;
+    line-height: 2;
+}
+
+.qp-glossary-faq__a p {
+    margin: 0 0 8px;
+}
+
+.qp-glossary-related {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 12px;
+}
+
+.qp-glossary-related__card {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 14px 16px;
+    border: 1px solid rgba(59, 167, 242, .18);
+    border-radius: 13px;
+    background: var(--qp-card-solid, #11203D);
+    text-decoration: none;
+    transition: border-color .16s ease, transform .16s ease;
+}
+
+.qp-glossary-related__card:hover {
+    border-color: rgba(59, 167, 242, .42);
+    transform: translateY(-2px);
+}
+
+.qp-glossary-related__kind {
+    color: var(--qp-neon, #3BA7F2);
+    font-size: .68rem;
+    font-weight: 700;
+}
+
+.qp-glossary-related__title {
+    color: var(--qp-ink, #E8F6FF);
+    font-size: .9rem;
+    font-weight: 650;
+    line-height: 1.7;
+}
+
+.qp-glossary-terms {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.qp-glossary-terms__link {
+    padding: 7px 14px;
+    border: 1px solid rgba(59, 167, 242, .24);
+    border-radius: 999px;
+    color: var(--qp-ink, #E8F6FF);
+    font-size: .84rem;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.qp-glossary-terms__link:hover {
+    border-color: var(--qp-neon, #3BA7F2);
+    color: var(--qp-neon, #3BA7F2);
+}
+
+.qp-glossary-sources__list {
+    margin: 0;
+    padding-inline-start: 20px;
+    color: var(--qp-dim, rgba(232, 246, 255, .72));
+    font-size: .84rem;
+    line-height: 2;
+}
+
+.qp-glossary-sources__list a {
+    color: rgba(232, 246, 255, .78);
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
+.qp-glossary-sources__list a:hover {
+    color: var(--qp-neon, #3BA7F2);
+}
+
+.qp-glossary-reviewed {
+    margin: 24px 0 0;
+    padding: 12px 16px;
+    border: 1px solid rgba(59, 167, 242, .14);
+    border-radius: 12px;
+    background: rgba(17, 32, 61, .45);
+    color: var(--qp-dim, rgba(232, 246, 255, .72));
+    font-size: .8rem;
+}
+
+.qp-glossary-entry__footer {
+    margin-top: 26px;
+}
+
+.qp-glossary-entry__back a {
+    color: var(--qp-neon, #3BA7F2);
+    font-size: .86rem;
+    font-weight: 650;
+    text-decoration: none;
+}
+
+.qp-glossary-entry__back a:hover {
+    text-decoration: underline;
+}
+
+.qp-glossary-nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(59, 167, 242, .16);
+}
+
+.qp-glossary-nav__link {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 14px 16px;
+    border: 1px solid rgba(59, 167, 242, .18);
+    border-radius: 13px;
+    background: rgba(17, 32, 61, .5);
+    text-decoration: none;
+}
+
+.qp-glossary-nav__link:hover {
+    border-color: rgba(59, 167, 242, .42);
+}
+
+.qp-glossary-nav__link--next {
+    text-align: left;
+}
+
+.qp-glossary-nav__dir {
+    color: var(--qp-dim, rgba(232, 246, 255, .55));
+    font-size: .7rem;
+}
+
+.qp-glossary-nav__title {
+    color: var(--qp-ink, #E8F6FF);
+    font-size: .9rem;
+    font-weight: 650;
+}
+
+/* ─────────────────────────── ۴. فهرست درون‌متنی ─────────────────────────── */
+.qp-glossary-inline {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.qp-glossary-inline__item {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    padding: 12px 14px;
+    border: 1px solid rgba(59, 167, 242, .16);
+    border-radius: 12px;
+    background: rgba(17, 32, 61, .5);
+    text-decoration: none;
+}
+
+.qp-glossary-inline__item:hover {
+    border-color: rgba(59, 167, 242, .4);
+}
+
+.qp-glossary-inline__fa {
+    color: var(--qp-ink, #E8F6FF);
+    font-size: .92rem;
+    font-weight: 700;
+}
+
+.qp-glossary-inline__en {
+    color: var(--qp-dim, rgba(232, 246, 255, .6));
+    font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+    font-size: .72rem;
+    text-align: left;
+}
+
+.qp-glossary-inline__def {
+    color: var(--qp-dim, rgba(232, 246, 255, .72));
+    font-size: .8rem;
+    line-height: 1.85;
+}
+
+/* ─────────────────────────── واکنش‌گرا ─────────────────────────── */
+@media (max-width: 720px) {
+    .qp-glossary-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .qp-glossary-nav {
+        grid-template-columns: 1fr;
+    }
+
+    .qp-glossary-related {
+        grid-template-columns: 1fr;
+    }
+
+    .qp-glossary-shell,
+    .qp-shell--glossary {
+        padding-inline: 14px;
+    }
+}
+
+@media (max-width: 520px) {
+    .qpedia-glossary-term {
+        padding-inline: 1px;
+    }
+
+    .qpedia-glossary-popover {
+        width: calc(100vw - 20px);
+        padding: 13px 14px 12px;
+        border-radius: 12px;
+    }
+
+    .qpedia-glossary-popover__definition {
+        font-size: .82rem;
+    }
+
+    .qp-glossary-alpha__btn {
+        min-width: 30px;
+        padding: 5px 8px;
+        font-size: .78rem;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .qpedia-glossary-term,
+    .qpedia-glossary-popover,
+    .qp-glossary-card,
+    .qp-glossary-related__card {
+        transition: none;
+    }
+}

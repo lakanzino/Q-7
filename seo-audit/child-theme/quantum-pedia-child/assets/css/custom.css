@@ -1,0 +1,864 @@
+@font-face {
+  font-family: "Vazirmatn";
+  src: url("../../fonts/Vazirmatn-Regular.woff2") format("woff2");
+  font-weight: 400; font-style: normal; font-display: swap;
+}
+@font-face {
+  font-family: "Vazirmatn";
+  src: url("../../fonts/Vazirmatn-Medium.woff2") format("woff2");
+  font-weight: 500; font-style: normal; font-display: swap;
+}
+@font-face {
+  font-family: "Vazirmatn";
+  src: url("../../fonts/Vazirmatn-SemiBold.woff2") format("woff2");
+  font-weight: 600; font-style: normal; font-display: swap;
+}
+@font-face {
+  font-family: "Vazirmatn";
+  src: url("../../fonts/Vazirmatn-Bold.woff2") format("woff2");
+  font-weight: 700; font-style: normal; font-display: swap;
+}
+@font-face {
+  font-family: "Vazirmatn";
+  src: url("../../fonts/Vazirmatn-ExtraBold.woff2") format("woff2");
+  font-weight: 800; font-style: normal; font-display: swap;
+}
+
+html,
+body,
+body h1, body h2, body h3, body h4, body h5, body h6,
+body p, body a, body li, body button, body input, body textarea, body select {
+  font-family: "Vazirmatn", sans-serif;
+}
+
+/* ════════════════════════════════════════════════════════════════
+   پالت Cosmic — تم تیره
+   متغیرها با همان نام‌های قالب اصلی تعریف شده‌اند تا کلاس‌های
+   qp-front-article، qp-archive-card، qp-single__* و غیره به‌درستی
+   با تم تیره هماهنگ شوند.
+   ════════════════════════════════════════════════════════════════ */
+:root{
+  /* ── رنگ‌های پایه ── */
+  --qp-bg:        #0B1424;
+  --qp-bg-soft:   #0F1A2D;   /* هدر/فوتر (مرز روشن‌تر) */
+  --qp-bg-card:   #11203D;   /* کارت‌های محتوایی */
+  --qp-text:      #E8F6FF;
+
+  /* ── رنگ‌های برند (Ocean Breeze — حفظ برای المان‌های تأکیدی) ── */
+  --qp-primary:         #0B3D91;
+  --qp-secondary:       #3BA7F2;
+  --qp-secondary-deep:  #1E7FD0;
+  --qp-tertiary:        #7FE7D6;
+  --qp-warm:            #F4A261;
+  --qp-warm-deep:       #B4692E;
+  --qp-neon:            #3BA7F2;
+  --qp-neon-soft:       rgba(59, 167, 242, .14);
+  --qp-neon-glow:       rgba(59, 167, 242, .35);
+
+  /* ── متغیرهای هماهنگ با قالب اصلی quantum-pedia (برای سازگاری) ──
+     این متغیرها در qpedia-layouts.css با مقادیر روشن تعریف شده‌اند.
+     ما در child theme آن‌ها را با مقادیر تیرهٔ Cosmic بازنویسی می‌کنیم
+     تا کارت‌های .qp-front-article، .qp-archive-card و غیره
+     به‌جای سفید، کارت تیره داشته باشند و متن‌ها روشن بمانند. */
+  --qp-ink:        #E8F6FF;            /* متن اصلی (روشن) */
+  --qp-dim:        rgba(232, 246, 255, .72);   /* متن ثانویه */
+  --qp-faint:      rgba(232, 246, 255, .52);   /* متن کم‌رنگ */
+  --qp-line:       rgba(59, 167, 242, .18);     /* خط حاشیه */
+  --qp-card:       rgba(17, 32, 61, .65);       /* پس‌زمینهٔ کارت — نیمه‌شفاف برای عمق */
+  --qp-card-solid: #11203D;                     /* نسخهٔ جامد برای بعضی جاها */
+  --qp-accent:        #3BA7F2;
+  --qp-accent-soft:   rgba(59, 167, 242, .14);
+  --qp-accent-strong: rgba(59, 167, 242, .45);
+
+  /* ── ارتفاع‌ها ── */
+  --qp-header-height:        64px;
+  --qp-header-height-mobile: 56px;
+
+  /* ── سایه‌ها ── */
+  --qp-card-shadow:        0 12px 28px rgba(0, 0, 0, .35);
+  --qp-card-shadow-hover:  0 18px 40px rgba(0, 0, 0, .45);
+
+  /* نام‌های قدیمی — حفظ برای سازگاری با قوانین قبلی */
+  --qp-ice:        #E8F6FF;
+  --qp-dark-1:     #0B3D91;
+  --qp-dark-2:     #0d47a8;
+  --qp-dark-3:     #1a55b0;
+  --qp-surface:    #11203D;
+}
+
+/* ════════════════════════════════════════════════════════════════
+   پس‌زمینهٔ سایت — Cosmic Navy با گرید و ذرات نورانی
+   ════════════════════════════════════════════════════════════════ */
+body{
+  background-color: var(--qp-bg);
+  background-image:
+    linear-gradient(rgba(59, 167, 242, .04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(59, 167, 242, .04) 1px, transparent 1px),
+    radial-gradient(2px 2px at 12% 18%, rgba(127, 231, 214, .55), transparent 60%),
+    radial-gradient(1.5px 1.5px at 78% 32%, rgba(59, 167, 242, .65), transparent 60%),
+    radial-gradient(1px 1px at 45% 75%, rgba(127, 231, 214, .5), transparent 60%),
+    radial-gradient(1.5px 1.5px at 88% 88%, rgba(59, 167, 242, .5), transparent 60%),
+    radial-gradient(1px 1px at 22% 92%, rgba(127, 231, 214, .45), transparent 60%),
+    radial-gradient(900px 500px at 50% 0%, rgba(59, 167, 242, .08), transparent 70%);
+  background-size: 48px 48px, 48px 48px, 100% 100%, 100% 100%, 100% 100%, 100% 100%, 100% 100%, 100% 100%;
+  background-attachment: fixed, fixed, fixed, fixed, fixed, fixed, fixed, fixed;
+  color: var(--qp-text);
+}
+
+/* ════════════════════════════════════════════════════════════════
+   هدرِ مینیمال — Cosmic v3
+   - پس‌زمینهٔ روشن‌تر از بدنه (#0F1A2D) → مرز نرم اما مشخص
+   - یک خط نورانی آبی در پایین برای جداسازی
+   ════════════════════════════════════════════════════════════════ */
+.qp-global-header{
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  background-color: var(--qp-bg-soft);
+  background-image:
+    radial-gradient(600px 80px at 50% 100%, rgba(59, 167, 242, .08), transparent 70%);
+  border: 0;
+  box-shadow: 0 1px 0 rgba(59, 167, 242, .12);
+  transition: box-shadow .35s ease;
+}
+/* خط نورانی آبی در پایین — مرز اصلی هدر با بدنه */
+.qp-global-header::after{
+  content: "";
+  position: absolute;
+  inset-inline: 0;
+  bottom: -1px;
+  height: 1px;
+  background: linear-gradient(90deg,
+    transparent 0%,
+    rgba(59, 167, 242, 0) 10%,
+    rgba(59, 167, 242, .35) 50%,
+    rgba(127, 231, 214, .25) 80%,
+    transparent 100%);
+  pointer-events: none;
+}
+/* هنگام اسکرول — سایهٔ عمیق‌تر زیر هدر */
+.qp-global-header.is-scrolled{
+  box-shadow: 0 8px 24px rgba(0, 0, 0, .45), 0 1px 0 rgba(59, 167, 242, .15);
+}
+
+.qp-global-header__inner{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  min-height: var(--qp-header-height);
+  padding-block: 10px;
+}
+
+.qp-global-header__brand{ flex: 1; display: flex; align-items: center; }
+.qp-brand{
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+  color: var(--qp-text);
+}
+.qp-brand__logo-wrap{
+  width: 44px; height: 44px; flex-shrink: 0;
+  display: inline-flex; align-items: center; justify-content: center;
+  background: var(--qp-bg);
+  border-radius: 50%;
+  box-shadow:
+    0 0 0 1px rgba(59, 167, 242, .35),
+    0 0 18px rgba(59, 167, 242, .25),
+    inset 0 0 12px rgba(59, 167, 242, .08);
+  transition: box-shadow .3s ease, transform .3s ease;
+}
+.qp-brand:hover .qp-brand__logo-wrap{
+  box-shadow:
+    0 0 0 1px rgba(59, 167, 242, .55),
+    0 0 26px rgba(59, 167, 242, .45),
+    inset 0 0 14px rgba(59, 167, 242, .12);
+  transform: scale(1.03);
+}
+.qp-brand__logo{ width: 36px; height: 36px; object-fit: cover; display: block; border-radius: 50%; }
+.qp-brand__text{ display: flex; align-items: center; gap: 8px; line-height: 1.2; }
+.qp-brand__title{
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--qp-text);
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: -.2px;
+  white-space: nowrap;
+}
+.qp-brand__title::before{
+  content: "";
+  width: 8px; height: 8px;
+  border-radius: 50%;
+  background: var(--qp-neon);
+  box-shadow: 0 0 10px rgba(59, 167, 242, .55);
+  flex-shrink: 0;
+}
+
+/* دکمهٔ جست‌وجو (فقط آیکون) */
+.qp-global-header__search-toggle{
+  flex-shrink: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px; height: 40px;
+  padding: 0;
+  border: 0;
+  border-radius: 50%;
+  background: transparent;
+  color: var(--qp-text);
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  transition: color .15s ease, background-color .15s ease, transform .15s ease;
+}
+.qp-global-header__search-toggle:hover,
+.qp-global-header__search-toggle:focus-visible{
+  color: var(--qp-neon);
+  background: rgba(59, 167, 242, .1);
+  outline: none;
+  transform: scale(1.05);
+}
+.qp-global-header__search-toggle:active{ transform: scale(.96); }
+
+/* ════════════════════════════════════════════════════════════════
+   اورلی جست‌وجو
+   ════════════════════════════════════════════════════════════════ */
+.qp-search-overlay{
+  position: fixed;
+  inset: 0;
+  z-index: 1001;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 80px 16px 16px;
+}
+.qp-search-overlay[hidden]{ display: none; }
+.qp-search-overlay__backdrop{
+  position: absolute; inset: 0;
+  background: rgba(6, 13, 27, .65);
+  -webkit-backdrop-filter: blur(4px);
+  backdrop-filter: blur(4px);
+  animation: qpFadeIn .2s ease both;
+}
+.qp-search-overlay__panel{
+  position: relative;
+  width: 100%;
+  max-width: 640px;
+  animation: qpSlideDown .25s cubic-bezier(.2, .9, .25, 1) both;
+}
+.qp-search-overlay__form{
+  display: flex;
+  align-items: center;
+  gap: 0;
+  padding: 6px 6px 6px 18px;
+  background: rgba(11, 20, 36, .85);
+  border: 1px solid rgba(59, 167, 242, .25);
+  border-radius: 16px;
+  box-shadow:
+    0 30px 60px rgba(0, 0, 0, .55),
+    0 0 0 1px rgba(59, 167, 242, .08),
+    0 0 24px rgba(59, 167, 242, .15);
+  -webkit-backdrop-filter: blur(14px) saturate(160%);
+  backdrop-filter: blur(14px) saturate(160%);
+}
+.qp-search-overlay__icon{
+  display: inline-flex;
+  align-items: center; justify-content: center;
+  width: 36px; height: 44px;
+  color: var(--qp-neon);
+  flex-shrink: 0;
+}
+.qp-search-overlay__input{
+  flex: 1; min-width: 0;
+  height: 50px;
+  padding: 0 8px;
+  border: 0;
+  background: transparent;
+  color: var(--qp-text);
+  font-family: inherit;
+  font-size: 1rem;
+  font-weight: 500;
+  outline: none;
+}
+.qp-search-overlay__input::placeholder{ color: rgba(232, 246, 255, .55); font-weight: 500; }
+.qp-search-overlay__close{
+  display: inline-flex; align-items: center; justify-content: center;
+  width: 44px; height: 44px;
+  margin-inline-start: 4px;
+  border: 0; border-radius: 12px;
+  background: rgba(59, 167, 242, .08);
+  color: var(--qp-text);
+  cursor: pointer; flex-shrink: 0;
+  transition: background-color .15s ease, color .15s ease;
+}
+.qp-search-overlay__close:hover,
+.qp-search-overlay__close:focus-visible{
+  background: rgba(59, 167, 242, .2);
+  color: var(--qp-neon);
+  outline: none;
+}
+@keyframes qpFadeIn{ from{ opacity: 0 } to{ opacity: 1 } }
+@keyframes qpSlideDown{ from{ opacity: 0; transform: translateY(-12px) scale(.98) } to{ opacity: 1; transform: translateY(0) scale(1) } }
+
+@media (prefers-reduced-motion: reduce){
+  .qp-search-overlay__backdrop,
+  .qp-search-overlay__panel{ animation: none; }
+}
+
+/* ════════════════════════════════════════════════════════════════
+   فوتر — Cosmic v3 (ساده‌شده، بدون EDITORIAL)
+   ════════════════════════════════════════════════════════════════ */
+.qp-global-footer{
+  margin-top: 60px;
+  /* پس‌زمینهٔ روشن‌تر از بدنه برای ایجاد مرز — همان هدر */
+  background-color: var(--qp-bg-soft);
+  background-image:
+    radial-gradient(600px 80px at 50% 0%, rgba(59, 167, 242, .08), transparent 70%);
+  border: 0;
+  box-shadow: 0 -1px 0 rgba(59, 167, 242, .12);
+  padding: 32px 0 24px;
+}
+/* خط نورانی بالای فوتر (مرز با بدنه) */
+.qp-global-footer::before{
+  content: "";
+  position: absolute;
+  inset-inline: 0;
+  top: -1px;
+  height: 1px;
+  background: linear-gradient(90deg,
+    transparent 0%,
+    rgba(59, 167, 242, 0) 10%,
+    rgba(59, 167, 242, .35) 50%,
+    rgba(127, 231, 214, .25) 80%,
+    transparent 100%);
+  pointer-events: none;
+}
+.qp-global-footer__inner{
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+/* ردیف اصلی: لوگو + QUANTUM PEDIA (کنار هم) + دکمه‌ها */
+.qp-global-footer__main{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.qp-global-footer__brand-side{
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+  color: var(--qp-text);
+}
+.qp-global-footer__logo{
+  width: 44px; height: 44px;
+  object-fit: cover;
+  display: block;
+  border-radius: 50%;
+  flex-shrink: 0;
+  box-shadow:
+    0 0 0 1px rgba(59, 167, 242, .35),
+    0 0 18px rgba(59, 167, 242, .25);
+}
+.qp-global-footer__brand-mark{
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--qp-text);
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 4px;
+}
+.qp-global-footer__dot{
+  color: var(--qp-neon);
+  font-size: .7rem;
+  filter: drop-shadow(0 0 6px rgba(59, 167, 242, .5));
+}
+.qp-global-footer__links{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  flex-shrink: 0;
+}
+.qp-global-footer__links a{
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 40px;
+  padding: 0 18px;
+  border-radius: 12px;
+  border: 1px solid rgba(232, 246, 255, .22);
+  background: transparent;
+  color: var(--qp-text);
+  text-decoration: none;
+  font-size: .85rem;
+  font-weight: 600;
+  transition: border-color .15s ease, color .15s ease, background-color .15s ease, transform .15s ease;
+}
+.qp-global-footer__links a:hover,
+.qp-global-footer__links a:focus-visible{
+  border-color: var(--qp-neon);
+  color: var(--qp-neon);
+  background: rgba(59, 167, 242, .08);
+  transform: translateY(-1px);
+  outline: none;
+}
+
+/* کپی‌رایت — زیر فوتر، خط جداگانه با فاصله */
+.qp-global-footer__copy{
+  color: rgba(232, 246, 255, .55);
+  font-size: .85rem;
+  margin: 0;
+  padding-top: 20px;
+  border-top: 1px solid rgba(59, 167, 242, .08);
+  text-align: center;
+}
+
+/* ════════════════════════════════════════════════════════════════
+   ریسپانسیو
+   ════════════════════════════════════════════════════════════════ */
+@media (max-width: 720px){
+  :root{ --qp-header-height: var(--qp-header-height-mobile); }
+  .qp-global-header__inner{ padding-block: 8px; }
+  .qp-brand__logo-wrap{ width: 38px; height: 38px; }
+  .qp-brand__logo{ width: 30px; height: 30px; }
+  .qp-brand__title{ font-size: .9rem; }
+  .qp-global-header__search-toggle{ width: 36px; height: 36px; }
+
+  .qp-global-footer__main{
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+  .qp-global-footer__links{
+    width: 100%;
+    justify-content: flex-start;
+  }
+}
+@media (max-width: 420px){
+  .qp-brand__title{ font-size: .82rem; }
+  .qp-brand{ gap: 8px; }
+  .qp-search-overlay{ padding: 60px 12px 12px; }
+  .qp-global-footer__brand-mark{ font-size: .85rem; letter-spacing: 3px; }
+}
+
+/* ════════════════════════════════════════════════════════════════
+   استایل‌های محتوایی صفحات — سازگار با تم تیره
+   متغیرهای --qp-ink/--qp-dim/--qp-card در :root بازنویسی شده‌اند،
+   پس کلاس‌های قالب اصلی (qp-front-article، qp-archive-card، ...)
+   به‌طور خودکار با تم تیره هماهنگ می‌شوند.
+   فقط استایل‌های تکمیلی اینجا اضافه می‌شوند.
+   ════════════════════════════════════════════════════════════════ */
+
+/* h1/h2 در محتوا — روشن */
+h1, h2 { color: var(--qp-ink); }
+h3, h4 { color: var(--qp-neon); }
+
+/* لینک‌ها */
+body a { color: var(--qp-neon); }
+body a:hover, body a:focus-visible { color: var(--qp-tertiary); }
+.qp-global-header a:hover, .qp-global-footer a:hover { color: var(--qp-neon); }
+
+/* فوکوس */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+[tabindex]:focus-visible{
+  outline: 2px solid var(--qp-warm);
+  outline-offset: 2px;
+}
+::selection{ background: rgba(59, 167, 242, .35); color: #fff; }
+
+/* عرض خواندن */
+.qp-article__content,
+.qp-single__content,
+.qp-scientist__content{
+  max-width: 800px;
+  margin-inline: auto;
+}
+
+/* دکمه‌های اصلی */
+.qp-front-btn { transition: all .2s ease-in-out; }
+.qp-front-btn--primary{
+  background: linear-gradient(135deg, var(--qp-neon) 0%, var(--qp-secondary-deep) 100%) !important;
+  border: 0 !important;
+  color: #06112a !important;
+  font-weight: 800;
+}
+.qp-front-btn--primary:hover{
+  transform: translateY(-2px);
+  box-shadow: 0 14px 30px rgba(59, 167, 242, .45) !important;
+}
+.qp-front-btn--ghost{
+  border: 1px solid rgba(59, 167, 242, .35) !important;
+  color: var(--qp-neon) !important;
+  background: transparent !important;
+}
+.qp-front-btn--ghost:hover{
+  border-color: var(--qp-warm) !important;
+  color: var(--qp-warm) !important;
+  transform: translateY(-2px);
+}
+
+/* باکس‌های روایتی و تأکیدی — برای تم تیره بازنویسی شده */
+.qp-narrative-box{
+  background: rgba(244, 162, 97, .08) !important;
+  border: 1px solid rgba(244, 162, 97, .25) !important;
+  border-right: 4px solid var(--qp-warm) !important;
+  border-radius: 0 10px 10px 0 !important;
+  padding: 18px 22px !important;
+  margin: 24px 0 !important;
+  color: #FFE9D2 !important;
+}
+.qp-intuition-box{
+  background: rgba(127, 231, 214, .06) !important;
+  border: 1px solid rgba(127, 231, 214, .22) !important;
+  border-right: 4px solid var(--qp-tertiary) !important;
+  border-radius: 0 10px 10px 0 !important;
+  padding: 18px 22px !important;
+  margin: 24px 0 !important;
+  color: var(--qp-text) !important;
+}
+.qp-article__content blockquote,
+.qp-single__content blockquote,
+.qp-scientist__content blockquote,
+.entry-content blockquote{
+  background: rgba(59, 167, 242, .06) !important;
+  border-right: 4px solid var(--qp-neon) !important;
+  color: var(--qp-text) !important;
+}
+
+.qp-article__content h2,
+.qp-single__content h2,
+.qp-scientist__content h2,
+.entry-content h2{ color: var(--qp-ink) !important; }
+.entry-content h3,
+.qp-article__content h3,
+.qp-single__content h3,
+.qp-scientist__content h3{ color: var(--qp-neon) !important; }
+
+/* آرشیو دسته */
+.tax-quantum_category .qp-archive__title{
+  background: linear-gradient(135deg, rgba(59, 167, 242, .15), rgba(127, 231, 214, .08)) !important;
+  color: var(--qp-ink) !important;
+  border: 1px solid rgba(59, 167, 242, .25) !important;
+}
+
+/* فرم جست‌وجوی صفحه اصلی */
+.qp-search-form{display:flex;gap:12px;align-items:center}
+.qp-search-form__input{
+  flex:1;min-height:54px;padding:0 18px;border-radius:14px;
+  border:1px solid rgba(59, 167, 242, .25);
+  background: rgba(11, 20, 36, .6);
+  color: var(--qp-text);
+  outline: none;
+}
+.qp-search-form__input::placeholder{ color: rgba(232, 246, 255, .55); }
+.qp-search-form__input:focus{
+  border-color: var(--qp-neon);
+  box-shadow: 0 0 0 4px rgba(59, 167, 242, .15);
+}
+.qp-search-form__submit{
+  min-height:54px;border:0;border-radius:14px;padding:0 24px;
+  background: linear-gradient(135deg, var(--qp-neon), var(--qp-secondary-deep));
+  color: #06112a;font-weight:800;cursor:pointer;
+  box-shadow: 0 12px 24px rgba(59, 167, 242, .35);
+}
+.qp-front-search .qp-search-form{
+  padding:16px;border-radius:20px;
+  background: rgba(11, 20, 36, .7);
+  border: 1px solid rgba(59, 167, 242, .2);
+  box-shadow: 0 20px 44px rgba(0, 0, 0, .4);
+}
+.qp-front-search .qp-search-form .qp-search-form__input{
+  background: rgba(6, 13, 27, .7);
+  color: var(--qp-text);
+}
+
+/* ترنزیشن‌ها */
+@media (prefers-reduced-motion: reduce){
+  .qp-global-header,
+  .qp-brand__logo-wrap,
+  .qp-global-header__search-toggle,
+  .qp-global-footer__links a,
+  .qp-front-btn{ transition: none !important; }
+}
+
+/* ========================================================================
+   FIX OVERLAY & INVISIBLE TEXT — اضافه شده 2026-09-22 برای رفع باگ فهرست مطالب سفید + متن روشن
+   مشکل: --qp-ink روشن (#E8F6FF) روی باکس‌های سفید والد تم اصلی می‌افتاد → متن نامرئی (اسکرین‌شات فهرست مطالب)
+   و بعضی جاها backdrop-filter + opacity باعث overly روشن/تاریک شده بود
+   ======================================================================== */
+
+/* 1) فهرست مطالب و کارت‌های آرشیو — حتما پس‌زمینه تیره + متن روشن */
+.qp-article__toc,
+.qp-toc,
+.table-of-contents,
+.ez-toc-container,
+.ez-toc-container nav,
+.qp-single__toc,
+.qp-front-article,
+.qp-archive-card,
+.qp-related-card,
+.qp-front-search,
+.qp-search-form,
+.qp-toc-wrapper,
+.toc-wrapper {
+  background: var(--qp-card-solid) !important;
+  background-color: var(--qp-card-solid) !important;
+  color: var(--qp-ink) !important;
+  border: 1px solid var(--qp-line) !important;
+  box-shadow: var(--qp-card-shadow) !important;
+}
+
+.qp-article__toc a,
+.qp-toc a,
+.table-of-contents a,
+.ez-toc-container a,
+.ez-toc-container a:visited,
+.qp-single__toc a,
+.qp-toc-wrapper a {
+  color: var(--qp-ink) !important;
+  opacity: 1 !important;
+}
+.qp-article__toc a:hover,
+.qp-toc a:hover,
+.ez-toc-container a:hover {
+  color: var(--qp-neon) !important;
+}
+
+.qp-article__toc-title,
+.qp-toc-title,
+.ez-toc-title,
+.qp-article__toc .ez-toc-title,
+.toc-title {
+  color: var(--qp-ink) !important;
+  opacity: 1 !important;
+}
+
+/* 2) محتوای مقاله — حذف پس‌زمینه سفید و overly */
+.qp-article__content,
+.qp-single__content,
+.qp-scientist__content,
+.entry-content,
+.qp-single__main,
+.qp-article__main,
+.qp-front-article__content,
+.qp-archive-card__content {
+  background: transparent !important;
+  background-color: transparent !important;
+  color: var(--qp-ink) !important;
+}
+
+.qp-article__content p,
+.qp-single__content p,
+.qp-scientist__content p,
+.entry-content p,
+.qp-article__content li,
+.qp-single__content li,
+.qp-scientist__content li,
+.entry-content li {
+  color: var(--qp-ink) !important;
+  opacity: 1 !important;
+  filter: none !important;
+}
+
+/* 3) حذف سفید خالی وسط مقاله (تصویر placeholder) */
+.qp-article__hero,
+.qp-article__image,
+.qp-single__hero,
+.qp-single__image,
+figure,
+.wp-block-image,
+.qp-article__content figure,
+.qp-single__content figure {
+  background: transparent !important;
+  background-color: transparent !important;
+}
+
+/* 4) حذف backdrop-filter و opacity که باعث overly می‌شد روی متن */
+.qp-article__content *,
+.qp-single__content *,
+.qp-scientist__content * {
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+}
+
+/* فقط اورلی جست‌وجو backdrop داشته باشد */
+.qp-search-overlay__backdrop {
+  -webkit-backdrop-filter: blur(4px) !important;
+  backdrop-filter: blur(4px) !important;
+}
+
+/* 5) بخش منابع و جزئیات تکمیلی که خیلی کم‌رنگ بود */
+.qp-article__content h2,
+.qp-single__content h2,
+.qp-scientist__content h2,
+.entry-content h2,
+.qp-article__content h3,
+.qp-single__content h3 {
+  color: var(--qp-ink) !important;
+  opacity: 1 !important;
+}
+
+/* 6) لینک‌های منابع — آبی نئون واضح */
+.entry-content a,
+.qp-article__content a,
+.qp-single__content a {
+  color: var(--qp-neon) !important;
+  text-decoration: none;
+}
+.entry-content a:hover,
+.qp-article__content a:hover {
+  color: var(--qp-tertiary) !important;
+  text-decoration: underline;
+}
+
+/* 7) باکس فهرست مطالب که سفید بود — فورس تیره */
+div[style*="background: white"],
+div[style*="background:#fff"],
+div[style*="background: #fff"],
+div[style*="background-color: white"],
+div[style*="background-color:#fff"] {
+  background: var(--qp-card-solid) !important;
+  background-color: var(--qp-card-solid) !important;
+}
+
+/* 8) رفع مشکل فونت خیلی روشن در حالت لایت باکس */
+.qp-narrative-box,
+.qp-intuition-box,
+blockquote {
+  opacity: 1 !important;
+  filter: none !important;
+}
+
+/* 9) فیکس اضافی برای باکس سفید فهرست مطالب در اسکرین‌شات 2:36 PM */
+.qp-article__toc,
+.qp-toc {
+  padding: 16px !important;
+  border-radius: 12px !important;
+}
+.qp-article__toc ul,
+.qp-toc ul,
+.ez-toc-list {
+  background: transparent !important;
+}
+.qp-article__toc li,
+.qp-toc li,
+.ez-toc-list li {
+  color: var(--qp-ink) !important;
+}
+/* ========================================================================
+   Article light-card contrast hotfix (2026-09-22)
+   The layout stylesheet uses hard-coded white backgrounds for these three
+   components while the Cosmic theme supplies light text variables.
+   ======================================================================== */
+.qp-article__chip,
+.qp-article-toc,
+.post-navigation .nav-previous,
+.post-navigation .nav-next {
+  background: var(--qp-card-solid, #11203D) !important;
+  border-color: var(--qp-line, rgba(59, 167, 242, .18)) !important;
+  color: var(--qp-ink, #E8F6FF) !important;
+}
+
+.qp-article__chip,
+.qp-article-toc__title,
+.qp-article-toc__list,
+.qp-article-toc__sub,
+.qp-article-toc a,
+.post-navigation a,
+.post-navigation .nav-title {
+  color: var(--qp-ink, #E8F6FF) !important;
+  opacity: 1 !important;
+}
+
+.qp-article-toc a:hover,
+.qp-article__chip:hover,
+.post-navigation a:hover .nav-title {
+  color: var(--qp-neon, #3BA7F2) !important;
+}
+
+.post-navigation .nav-subtitle {
+  color: var(--qp-dim, rgba(232, 246, 255, .72)) !important;
+  opacity: 1 !important;
+}
+
+/* ════════════════════════════════════════════════════════════════
+   ناوبری هدر — «دانشمندان» و «اصطلاحات» کنار آیکون جست‌وجو
+   (v1.8.1)
+   ════════════════════════════════════════════════════════════════ */
+.qp-global-header__actions{
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  flex-shrink: 0;
+}
+
+.qp-global-header__nav{
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.qp-global-header__nav-link{
+  position: relative;
+  display: inline-block;
+  padding: 8px 12px;
+  border-radius: 10px;
+  color: var(--qp-dim, rgba(232, 246, 255, .78));
+  font-size: .86rem;
+  font-weight: 600;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: color .15s ease, background-color .15s ease;
+}
+
+.qp-global-header__nav-link:hover,
+.qp-global-header__nav-link:focus-visible{
+  color: var(--qp-neon, #3BA7F2);
+  background: rgba(59, 167, 242, .1);
+  outline: none;
+}
+
+.qp-global-header__nav-link.is-current{
+  color: var(--qp-ink, #E8F6FF);
+  background: rgba(59, 167, 242, .16);
+}
+
+.qp-global-header__nav-link.is-current::after{
+  content: "";
+  position: absolute;
+  inset-inline: 12px;
+  bottom: 3px;
+  height: 2px;
+  border-radius: 2px;
+  background: var(--qp-neon, #3BA7F2);
+  box-shadow: 0 0 8px rgba(59, 167, 242, .6);
+}
+
+@media (max-width: 600px){
+  .qp-global-header__nav-link{
+    padding: 8px 9px;
+    font-size: .8rem;
+  }
+  .qp-global-header__nav-link.is-current::after{
+    inset-inline: 9px;
+  }
+}
+
+@media (max-width: 380px){
+  .qp-brand__title{ font-size: .88rem; }
+  .qp-global-header__nav-link{ padding: 7px 7px; font-size: .76rem; }
+}
