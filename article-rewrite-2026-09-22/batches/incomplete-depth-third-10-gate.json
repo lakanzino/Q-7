@@ -1,0 +1,77 @@
+{
+  "batch": "incomplete-depth-third-10",
+  "status": "PASS",
+  "importer_allowed": true,
+  "articles": [
+    {
+      "sequence": 119,
+      "post_id": 2228,
+      "slug": "complementarity-principle",
+      "status": "PASS",
+      "word_count": 2223
+    },
+    {
+      "sequence": 120,
+      "post_id": 2230,
+      "slug": "neutrino",
+      "status": "PASS",
+      "word_count": 2236
+    },
+    {
+      "sequence": 121,
+      "post_id": 2233,
+      "slug": "standard-model",
+      "status": "PASS",
+      "word_count": 2238
+    },
+    {
+      "sequence": 122,
+      "post_id": 2234,
+      "slug": "virtual-particles",
+      "status": "PASS",
+      "word_count": 2279
+    },
+    {
+      "sequence": 123,
+      "post_id": 2237,
+      "slug": "epr-paradox",
+      "status": "PASS",
+      "word_count": 2240
+    },
+    {
+      "sequence": 124,
+      "post_id": 2238,
+      "slug": "stern-gerlach-experiment",
+      "status": "PASS",
+      "word_count": 2221
+    },
+    {
+      "sequence": 125,
+      "post_id": 2247,
+      "slug": "flash-memory",
+      "status": "PASS",
+      "word_count": 2240
+    },
+    {
+      "sequence": 128,
+      "post_id": 2250,
+      "slug": "quantum-supremacy",
+      "status": "PASS",
+      "word_count": 2242
+    },
+    {
+      "sequence": 132,
+      "post_id": 2743,
+      "slug": "proton-neutron-quark-structure",
+      "status": "PASS",
+      "word_count": 2289
+    },
+    {
+      "sequence": 133,
+      "post_id": 2751,
+      "slug": "topological-quantum-computing",
+      "status": "PASS",
+      "word_count": 2435
+    }
+  ]
+}
