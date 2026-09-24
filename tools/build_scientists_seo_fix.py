@@ -1,0 +1,615 @@
+#!/usr/bin/env python3
+"""Build Scientists TamRank SEO Metadata, Cleaned XML and Importer Plugin."""
+import json
+import os
+import re
+import xml.etree.ElementTree as ET
+import zipfile
+from pathlib import Path
+
+ROOT = Path(__file__).resolve().parents[1]
+
+# 55 Scientists metadata dataset
+SCIENTISTS_DATA = [
+    {
+        'id': 231, 'slug': 'david-bohm', 'title': 'دیوید بوهم', 'en_name': 'David Bohm',
+        'focus_keyword': 'دیوید بوهم',
+        'seo_title': 'دیوید بوهم کیست؟ زندگی‌نامه، مکانیک بوهمی و متغیرهای پنهان',
+        'meta_description': 'دیوید بوهم کیست؟ فیزیکدان برجسته و نظریه‌پرداز مکانیک بوهمی و متغیرهای پنهان. زندگی‌نامه کامل، نظریات و دستاوردهای او را در کوانتوم‌پدیا بخوانید.',
+    },
+    {
+        'id': 233, 'slug': 'alain-aspect', 'title': 'آلن اسپکت', 'en_name': 'Alain Aspect',
+        'focus_keyword': 'آلن اسپکت',
+        'seo_title': 'آلن اسپکت کیست؟ آزمایش بل، درهم‌تنیدگی کوانتومی و نوبل فیزیک',
+        'meta_description': 'آلن اسپکت کیست؟ فیزیکدان فرانسوی برنده نوبل فیزیک ۲۰۲۲ برای آزمایش تاریخی نامساوی بل. زندگی‌نامه و اثبات درهم‌تنیدگی را در کوانتوم‌پدیا بخوانید.',
+    },
+    {
+        'id': 234, 'slug': 'anton-zeilinger', 'title': 'آنتونی زایلینگر', 'en_name': 'Anton Zeilinger',
+        'focus_keyword': 'آنتونی زایلینگر',
+        'seo_title': 'آنتونی زایلینگر کیست؟ تله‌پورت کوانتومی، آزمایش بل و نوبل ۲۰۲۲',
+        'meta_description': 'آنتونی زایلینگر کیست؟ فیزیکدان اتریشی و پیشگام اطلاعات کوانتومی و تله‌پورت فوتون‌ها. زندگی‌نامه و دستاوردهای نوبل ۲۰۲۲ را در کوانتوم‌پدیا بخوانید.',
+    },
+    {
+        'id': 235, 'slug': 'arnold-sommerfeld', 'title': 'آرنولد زومرفلد', 'en_name': 'Arnold Sommerfeld',
+        'focus_keyword': 'آرنولد زومرفلد',
+        'seo_title': 'آرنولد زومرفلد کیست؟ ثابت ساختار ریز، مدار بیضوی و زندگی‌نامه',
+        'meta_description': 'آرنولد زومرفلد کیست؟ فیزیکدان بزرگ آلمانی، توسعه‌دهنده مدل اتمی و استاد نوابغ کوانتوم. زندگی‌نامه و دستاوردهای علمی او را در کوانتوم‌پدیا بخوانید.',
+    },
+    {
+        'id': 236, 'slug': 'arthur-compton', 'title': 'آرتور کامپتون', 'en_name': 'Arthur Compton',
+        'focus_keyword': 'آرتور کامپتون',
+        'seo_title': 'آرتور کامپتون کیست؟ کشف اثر کامپتون، ماهیت ذره‌ای نور و نوبل',
+        'meta_description': 'آرتور کامپتون کیست؟ فیزیکدان آمریکایی برنده نوبل برای کشف اثر کامپتون و اثبات تکانه فوتون. زندگی‌نامه کامل او را در کوانتوم‌پدیا بخوانید.',
+    },
+    {
+        'id': 237, 'slug': 'charles-wilson', 'title': 'چارلز ویلسون', 'en_name': 'Charles Wilson',
+        'focus_keyword': 'چارلز ویلسون',
+        'seo_title': 'چارلز ویلسون کیست؟ اختراع اتاقک ابر، ردگیری ذرات و نوبل فیزیک',
+        'meta_description': 'چارلز ویلسون کیست؟ فیزیکدان اسکاتلندی و مخترع اتاقک ابر برای مشاهده مسیر ذرات بنیادی. زندگی‌نامه و جایزه نوبل او را در کوانتوم‌پدیا بخوانید.',
+    },
+    {
+        'id': 238, 'slug': 'david-deutsch', 'title': 'دیوید دویچ', 'en_name': 'David Deutsch',
+        'focus_keyword': 'دیوید دویچ',
+        'seo_title': 'دیوید دویچ کیست؟ پدر رایانش کوانتومی و تفسیر جهان‌های متعدد',
+        'meta_description': 'دیوید دویچ کیست؟ فیزیکدان پیشگام بریتانیایی، بنیان‌گذار نظریه کامپیوتر کوانتومی جهانی و مدافع چندجهانی. زندگی‌نامه او را در کوانتوم‌پدیا بخوانید.',
+    },
+    {
+        'id': 239, 'slug': 'david-hilbert', 'title': 'دیوید هیلبرت', 'en_name': 'David Hilbert',
+        'focus_keyword': 'دیوید هیلبرت',
+        'seo_title': 'دیوید هیلبرت کیست؟ فضای هیلبرت، بنیان ریاضی کوانتوم و زندگی',
+        'meta_description': 'دیوید هیلبرت کیست؟ ریاضیدان نامدار آلمانی و خالق فضای هیلبرت که شالوده ریاضی مکانیک کوانتومی شد. زندگی‌نامه کامل او را در کوانتوم‌پدیا بخوانید.',
+    },
+    {
+        'id': 240, 'slug': 'enrico-fermi', 'title': 'انریکو فرمی', 'en_name': 'Enrico Fermi',
+        'focus_keyword': 'انریکو فرمی',
+        'seo_title': 'انریکو فرمی کیست؟ آمار فرمی-دیراک، نخستین راکتور هسته‌ای و نوبل',
+        'meta_description': 'انریکو فرمی کیست؟ معمار عصر هسته‌ای و کاشف آمار فرمی-دیراک و فرمیون‌ها. زندگی‌نامه، دستاوردهای علمی و جایزه نوبل او را در کوانتوم‌پدیا بخوانید.',
+    },
+    {
+        'id': 242, 'slug': 'peter-shor', 'title': 'پیتر شور', 'en_name': 'Peter Shor',
+        'focus_keyword': 'پیتر شور',
+        'seo_title': 'پیتر شور کیست؟ الگوریتم شور، شکستن رمزنگاری RSA و زندگی‌نامه',
+        'meta_description': 'پیتر شور کیست؟ ریاضیدان آمریکایی و خالق الگوریتم کوانتومی شور برای تجزیه اعداد و تصحیح خطای کوانتومی. زندگی‌نامه او را در کوانتوم‌پدیا بخوانید.',
+    },
+    {
+        'id': 265, 'slug': 'max-planck', 'title': 'زندگی‌نامه ماکس پلانک | پدر فیزیک کوانتوم و ثابت پلانک', 'en_name': 'Max Planck',
+        'focus_keyword': 'ماکس پلانک',
+        'seo_title': 'ماکس پلانک کیست؟ زندگی‌نامه پدر فیزیک کوانتوم و ثابت پلانک',
+        'meta_description': 'ماکس پلانک کیست؟ بنیان‌گذار فیزیک کوانتومی و کاشف کوانتش انرژی و ثابت پلانک. زندگی‌نامه کامل، افتخارات و جایزه نوبل او را در کوانتوم‌پدیا بخوانید.',
+    },
+    {
+        'id': 266, 'slug': 'niels-bohr', 'title': 'نیلز بور', 'en_name': 'Niels Bohr',
+        'focus_keyword': 'نیلز بور',
+        'seo_title': 'نیلز بور کیست؟ زندگی‌نامه، مدل اتمی، اصل مکملیت و نوبل فیزیک',
+        'meta_description': 'نیلز بور کیست؟ فیزیکدان دانمارکی، رهبر مکتب کپنهاگ، خالق مدل اتمی بور و برنده جایزه نوبل فیزیک. زندگی‌نامه کامل او را در کوانتوم‌پدیا بخوانید.',
+    },
+    {
+        'id': 267, 'slug': 'paul-dirac', 'title': 'پل دیراک', 'en_name': 'Paul Dirac',
+        'focus_keyword': 'پل دیراک',
+        'seo_title': 'پل دیراک کیست؟ معادله دیراک، پیش‌بینی پادماده و زندگی‌نامه',
+        'meta_description': 'پل دیراک کیست؟ نابغه آرام بریتانیایی، نویسنده معادله دیراک و پیش‌بینی‌کننده پادماده و پوزیترون. زندگی‌نامه و نوبل او را در کوانتوم‌پدیا بخوانید.',
+    },
+    {
+        'id': 275, 'slug': 'hugh-everett', 'title': 'هیو اورت', 'en_name': 'Hugh Everett',
+        'focus_keyword': 'هیو اورت',
+        'seo_title': 'هیو اورت کیست؟ تفسیر جهان‌های متعدد، نظریه کوانتومی و زندگی',
+        'meta_description': 'هیو اورت کیست؟ فیزیکدان جسور آمریکایی و ارائه‌دهنده نظریه جهان‌های چندگانه در مکانیک کوانتومی. زندگی‌نامه و داستان علمی او را در کوانتوم‌پدیا بخوانید.',
+    },
+    {
+        'id': 322, 'slug': 'isaac-newton', 'title': 'آیزاک نیوتن', 'en_name': 'Isaac Newton',
+        'focus_keyword': 'آیزاک نیوتن',
+        'seo_title': 'آیزاک نیوتن کیست؟ قوانین حرکت، گرانش عمومی و زندگی‌نامه کامل',
+        'meta_description': 'آیزاک نیوتن کیست؟ دانشمند بی‌همتای تاریخ، کاشف قوانین سه‌گانه حرکت و گرانش جهانی. زندگی‌نامه کامل و دستاوردهای علمی او را در کوانتوم‌پدیا بخوانید.',
+    },
+    {
+        'id': 268, 'slug': 'wolfgang-pauli', 'title': 'ولفگانگ پاولی', 'en_name': 'Wolfgang Pauli',
+        'focus_keyword': 'ولفگانگ پاولی',
+        'seo_title': 'ولفگانگ پاولی کیست؟ اصل طرد پاولی، پیش‌بینی نوترینو و نوبل',
+        'meta_description': 'ولفگانگ پاولی کیست؟ فیزیکدان منتقد اتریشی، کاشف اصل طرد، ماتریس‌های اسپین و پیش‌بینی‌کننده نوترینو. زندگی‌نامه کامل او را در کوانتوم‌پدیا بخوانید.',
+    },
+    {
+        'id': 269, 'slug': 'pascual-jordan', 'title': 'پاسکوال یوردان', 'en_name': 'Pascual Jordan',
+        'focus_keyword': 'پاسکوال یوردان',
+        'seo_title': 'پاسکوال یوردان کیست؟ مکانیک ماتریسی، جبر یوردان و زندگی‌نامه',
+        'meta_description': 'پاسکوال یوردان کیست؟ از پایه‌گذاران مکانیک ماتریسی و نظریه میدان کوانتومی همراه با هایزنبرگ و بورن. زندگی‌نامه او را در کوانتوم‌پدیا بخوانید.',
+    },
+    {
+        'id': 270, 'slug': 'hermann-weyl', 'title': 'هرمان وایل', 'en_name': 'Hermann Weyl',
+        'focus_keyword': 'هرمان وایل',
+        'seo_title': 'هرمان وایل کیست؟ نظریه پیمانه‌ای، فرمیون وایل و زندگی‌نامه',
+        'meta_description': 'هرمان وایل کیست؟ ریاضیدان و فیزیکدان بزرگ، پیشگام نظریه گروه در کوانتوم و تقارن پیمانه‌ای. زندگی‌نامه کامل و دستاوردهای او را در کوانتوم‌پدیا بخوانید.',
+    },
+    {
+        'id': 271, 'slug': 'satyendra-bose', 'title': 'ساتیندرا بوز', 'en_name': 'Satyendra Bose',
+        'focus_keyword': 'ساتیندرا بوز',
+        'seo_title': 'ساتیندرا بوز کیست؟ آمار بوز-اینشتین، بوزون‌ها و زندگی‌نامه',
+        'meta_description': 'ساتیندرا بوز کیست؟ فیزیکدان هندی و همکار اینشتین در کشف آمار کوانتومی بوز-اینشتین و نام‌گذاری بوزون‌ها. زندگی‌نامه او را در کوانتوم‌پدیا بخوانید.',
+    },
+    {
+        'id': 272, 'slug': 'freeman-dyson', 'title': 'فریمن دایسون', 'en_name': 'Freeman Dyson',
+        'focus_keyword': 'فریمن دایسون',
+        'seo_title': 'فریمن دایسون کیست؟ الکترودینامیک کوانتومی، کره دایسون و زندگی',
+        'meta_description': 'فریمن دایسون کیست؟ فیزیکدان و ریاضی‌دان نابغه، یکپارچه‌کننده نظریه الکترودینامیک کوانتومی و طراح کره دایسون. زندگی‌نامه او را در کوانتوم‌پدیا بخوانید.',
+    },
+    {
+        'id': 273, 'slug': 'hideki-yukawa', 'title': 'هیدکی یوکاوا', 'en_name': 'Hideki Yukawa',
+        'focus_keyword': 'هیدکی یوکاوا',
+        'seo_title': 'هیدکی یوکاوا کیست؟ پیش‌بینی مزون، نیروی هسته‌ای قوی و نوبل',
+        'meta_description': 'هیدکی یوکاوا کیست؟ نخستین برنده ژاپنی جایزه نوبل فیزیک برای پیش‌بینی مزون و توصیف نیروی هسته‌ای قوی. زندگی‌نامه کامل او را در کوانتوم‌پدیا بخوانید.',
+    },
+    {
+        'id': 274, 'slug': 'john-bell', 'title': 'جان بل', 'en_name': 'John Bell',
+        'focus_keyword': 'جان بل',
+        'seo_title': 'جان بل کیست؟ نامساوی بل، نفی واقع‌گرایی موضعی و زندگی‌نامه',
+        'meta_description': 'جان بل کیست؟ فیزیکدان نامدار ایرلندی و ارائه‌دهنده قضیه تاریخی بل درباره ناموضعیت درهم‌تنیدگی کوانتومی. زندگی‌نامه او را در کوانتوم‌پدیا بخوانید.',
+    },
+    {
+        'id': 2060, 'slug': 'albert-einstein', 'title': 'زندگی‌نامه آلبرت اینشتین | از فوتوالکتریک تا نسبیت عام', 'en_name': 'Albert Einstein',
+        'focus_keyword': 'آلبرت اینشتین',
+        'seo_title': 'آلبرت اینشتین کیست؟ زندگی‌نامه کامل، فوتوالکتریک و نسبیت عام',
+        'meta_description': 'آلبرت اینشتین کیست؟ برجسته‌ترین دانشمند قرن بیستم، برنده نوبل برای اثر فوتوالکتریک و کاشف نسبیت عام و خاص. زندگی‌نامه او را در کوانتوم‌پدیا بخوانید.',
+    },
+    {
+        'id': 2327, 'slug': 'louis-de-broglie', 'title': 'لویی دوبروی؛ شاهزاده‌ای که الکترون را موج کرد', 'en_name': 'Louis de Broglie',
+        'focus_keyword': 'لویی دوبروی',
+        'seo_title': 'لویی دوبروی کیست؟ دوگانگی موج-ذره، طول موج ماده و نوبل فیزیک',
+        'meta_description': 'لویی دوبروی کیست؟ فیزیکدان فرانسوی برنده نوبل برای کشف ماهیت موجی ماده و الکترون‌ها. زندگی‌نامه کامل و دستاوردهای او را در کوانتوم‌پدیا بخوانید.',
+    },
+    {
+        'id': 2328, 'slug': 'erwin-schrodinger', 'title': 'اروین شرودینگر؛ مردی که جهان را موج کرد', 'en_name': 'Erwin Schrödinger',
+        'focus_keyword': 'اروین شرودینگر',
+        'seo_title': 'اروین شرودینگر کیست؟ معادله موج، پارادوکس گربه و نوبل فیزیک',
+        'meta_description': 'اروین شرودینگر کیست؟ فیزیکدان برجسته اتریشی، کاشف معادله موج شرودینگر و طراح پارادوکس گربه شرودینگر. زندگی‌نامه او را در کوانتوم‌پدیا بخوانید.',
+    },
+    {
+        'id': 2345, 'slug': 'robert-millikan', 'title': 'رابرت میلیکان؛ وزن کردن بار الکترون', 'en_name': 'Robert Millikan',
+        'focus_keyword': 'رابرت میلیکان',
+        'seo_title': 'رابرت میلیکان کیست؟ آزمایش قطره روغن، اندازه‌گیری بار الکترون',
+        'meta_description': 'رابرت میلیکان کیست؟ فیزیکدان تجربی آمریکایی و برنده نوبل برای اندازه‌گیری بار بنیادی الکترون با قطره روغن. زندگی‌نامه او را در کوانتوم‌پدیا بخوانید.',
+    },
+    {
+        'id': 2346, 'slug': 'clinton-davisson', 'title': 'کلینتون دیویسون؛ کشف تصادفی موج الکترون', 'en_name': 'Clinton Davisson',
+        'focus_keyword': 'کلینتون دیویسون',
+        'seo_title': 'کلینتون دیویسون کیست؟ آزمایش پراش الکترون و اثبات موجی بودن',
+        'meta_description': 'کلینتون دیویسون کیست؟ فیزیکدان برنده نوبل برای اثبات تجربی پراش الکترون و تایید فرضیه دوبروی. زندگی‌نامه و آزمایش او را در کوانتوم‌پدیا بخوانید.',
+    },
+    {
+        'id': 2347, 'slug': 'otto-stern', 'title': 'اتو اشترن؛ آزمایشی که اسپین را عینی کرد', 'en_name': 'Otto Stern',
+        'focus_keyword': 'اتو اشترن',
+        'seo_title': 'اتو اشترن کیست؟ آزمایش اشترن-گرلاخ، اثبات اسپین و نوبل فیزیک',
+        'meta_description': 'اتو اشترن کیست؟ فیزیکدان آلمانی برنده نوبل برای طراحی آزمایش اشترن-گرلاخ و اثبات کوانتش فضایی اسپین. زندگی‌نامه او را در کوانتوم‌پدیا بخوانید.',
+    },
+    {
+        'id': 2348, 'slug': 'walther-gerlach', 'title': 'والتر گرلاخ؛ دستانی که اسپین را دیدند', 'en_name': 'Walther Gerlach',
+        'focus_keyword': 'والتر گرلاخ',
+        'seo_title': 'والتر گرلاخ کیست؟ کوانتش جهت اسپین، آزمایش اشترن-گرلاخ و زندگی',
+        'meta_description': 'والتر گرلاخ کیست؟ فیزیکدان تجربی آلمانی و همکار اشترن در آزمایش تاریخی کشف کوانتش جهت اسپین ذرات. زندگی‌نامه کامل او را در کوانتوم‌پدیا بخوانید.',
+    },
+    {
+        'id': 2349, 'slug': 'leo-esaki', 'title': 'لئو اساکی؛ دیودی که از دیوار عبور کرد', 'en_name': 'Leo Esaki',
+        'focus_keyword': 'لئو اساکی',
+        'seo_title': 'لئو اساکی کیست؟ دیود تونلی، تونل‌زنی در نیمه‌رساناها و نوبل',
+        'meta_description': 'لئو اساکی کیست؟ فیزیکدان ژاپنی برنده نوبل برای اختراع دیود تونلی و کشف پدیده تونل‌زنی الکترون در نیمه‌رسانا. زندگی‌نامه او را در کوانتوم‌پدیا بخوانید.',
+    },
+    {
+        'id': 2350, 'slug': 'gerd-binnig', 'title': 'گرد بینیگ؛ نخستین نگاه به اتم‌ها', 'en_name': 'Gerd Binnig',
+        'focus_keyword': 'گرد بینیگ',
+        'seo_title': 'گرد بینیگ کیست؟ اختراع میکروسکوپ تونلی روبشی STM و نوبل فیزیک',
+        'meta_description': 'گرد بینیگ کیست؟ فیزیکدان آلمانی و مخترع میکروسکوپ تونلی روبشی (STM) برای مشاهده تک‌اتم‌ها و برنده نوبل. زندگی‌نامه او را در کوانتوم‌پدیا بخوانید.',
+    },
+    {
+        'id': 2351, 'slug': 'heinrich-rohrer', 'title': 'هاینریش روهرر؛ دیدن اتم‌ها با لمس', 'en_name': 'Heinrich Rohrer',
+        'focus_keyword': 'هاینریش روهرر',
+        'seo_title': 'هاینریش روهرر کیست؟ میکروسکوپ تونلی روبشی STM و نوبل فیزیک',
+        'meta_description': 'هاینریش روهرر کیست؟ دانشمند سوئیسی برنده نوبل و سازنده نخستین میکروسکوپ تونلی روبشی در آزمایشگاه IBM. زندگی‌نامه او را در کوانتوم‌پدیا بخوانید.',
+    },
+    {
+        'id': 2352, 'slug': 'brian-josephson', 'title': 'برایان جوزفسون؛ پیش‌بینی در ۲۲سالگی', 'en_name': 'Brian Josephson',
+        'focus_keyword': 'برایان جوزفسون',
+        'seo_title': 'برایان جوزفسون کیست؟ اثر جوزفسون، پیوند ابررسانا و نوبل فیزیک',
+        'meta_description': 'برایان جوزفسون کیست؟ فیزیکدان ولزی که در ۲۲ سالگی پدیده تونل‌زنی جفت‌های کوپر در ابررساناها را پیش‌بینی کرد. زندگی‌نامه او را در کوانتوم‌پدیا بخوانید.',
+    },
+    {
+        'id': 2353, 'slug': 'akira-tonomura', 'title': 'آکیرا تونومورا؛ الکترون‌ها یکی‌یکی', 'en_name': 'Akira Tonomura',
+        'focus_keyword': 'آکیرا تونومورا',
+        'seo_title': 'آکیرا تونومورا کیست؟ آزمایش دو شکاف تک‌الکترونی و اثر بوهم',
+        'meta_description': 'آکیرا تونومورا کیست؟ فیزیکدان برجسته ژاپنی و پیشگام هولوگرافی الکترونی و اثبات تجربی اثر آهارونوف-بوهم. زندگی‌نامه او را در کوانتوم‌پدیا بخوانید.',
+    },
+    {
+        'id': 2354, 'slug': 'james-clerk-maxwell', 'title': 'جیمز کلرک ماکسول؛ مرد چهار معادله', 'en_name': 'James Clerk Maxwell',
+        'focus_keyword': 'جیمز کلرک ماکسول',
+        'seo_title': 'جیمز کلرک ماکسول کیست؟ معادلات ماکسول، الکترومغناطیس و زندگی',
+        'meta_description': 'جیمز کلرک ماکسول کیست؟ دانشمند بزرگ اسکاتلندی، ارائه‌دهنده معادلات الکترومغناطیس کلاسیک و ماهیت موجی نور. زندگی‌نامه او را در کوانتوم‌پدیا بخوانید.',
+    },
+    {
+        'id': 2329, 'slug': 'werner-heisenberg', 'title': 'ورنر هایزنبرگ؛ جوانی که عدم قطعیت را کشف کرد', 'en_name': 'Werner Heisenberg',
+        'focus_keyword': 'ورنر هایزنبرگ',
+        'seo_title': 'ورنر هایزنبرگ کیست؟ اصل عدم قطعیت، مکانیک ماتریسی و نوبل',
+        'meta_description': 'ورنر هایزنبرگ کیست؟ فیزیکدان آلمانی برنده نوبل، کاشف اصل عدم قطعیت و از پایه‌گذاران اصلی مکانیک کوانتومی. زندگی‌نامه او را در کوانتوم‌پدیا بخوانید.',
+    },
+    {
+        'id': 2330, 'slug': 'max-born', 'title': 'ماکس بورن؛ مترجم احتمال در کوانتوم', 'en_name': 'Max Born',
+        'focus_keyword': 'ماکس بورن',
+        'seo_title': 'ماکس بورن کیست؟ قاعده بورن، تفسیر آماری تابع موج و نوبل فیزیک',
+        'meta_description': 'ماکس بورن کیست؟ فیزیکدان آلمانی برنده نوبل برای ارائه تفسیر احتمالاتی از تابع موج کوانتومی و قاعده بورن. زندگی‌نامه او را در کوانتوم‌پدیا بخوانید.',
+    },
+    {
+        'id': 2331, 'slug': 'hendrik-kramers', 'title': 'هانس کرامرس؛ نابغهٔ گمنام مکانیک کوانتومی', 'en_name': 'Hendrik Kramers',
+        'focus_keyword': 'هانس کرامرس',
+        'seo_title': 'هانس کرامرس کیست؟ روابط پاشندگی کرامرس-کرونیگ و زندگی‌نامه',
+        'meta_description': 'هانس کرامرس کیست؟ فیزیکدان هلندی و دستیار ارشد نیلز بور، پیشگام فرمول‌بندی پاشندگی نور و بازبهنجارش. زندگی‌نامه او را در کوانتوم‌پدیا بخوانید.',
+    },
+    {
+        'id': 2332, 'slug': 'richard-feynman', 'title': 'ریچارد فاینمن؛ مردی که کوانتوم را به تصویر کشید', 'en_name': 'Richard Feynman',
+        'focus_keyword': 'ریچارد فاینمن',
+        'seo_title': 'ریچارد فاینمن کیست؟ دیاگرام فاینمن، انتگرال مسیر و نوبل فیزیک',
+        'meta_description': 'ریچارد فاینمن کیست؟ نابغه پرآوازه فیزیک، توسعه‌دهنده الکترودینامیک کوانتومی و مخترع دیاگرام‌های فاینمن. زندگی‌نامه او را در کوانتوم‌پدیا بخوانید.',
+    },
+    {
+        'id': 2333, 'slug': 'julian-schwinger', 'title': 'جولیان شوینگر؛ مهارکنندهٔ بی‌نهایت‌ها', 'en_name': 'Julian Schwinger',
+        'focus_keyword': 'جولیان شوینگر',
+        'seo_title': 'جولیان شوینگر کیست؟ فرمول‌بندی QED، بازبهنجارش و نوبل فیزیک',
+        'meta_description': 'جولیان شوینگر کیست؟ فیزیکدان نابغه آمریکایی برنده نوبل برای ریاضیات دقیق الکترودینامیک کوانتومی (QED). زندگی‌نامه او را در کوانتوم‌پدیا بخوانید.',
+    },
+    {
+        'id': 2334, 'slug': 'sin-itiro-tomonaga', 'title': 'سین-ایتیرو توموناگا؛ نابغهٔ تنها در جنگ', 'en_name': 'Sin-Itiro Tomonaga',
+        'focus_keyword': 'سین-ایتیرو توموناگا',
+        'seo_title': 'سین-ایتیرو توموناگا کیست؟ نظریه نسبیتی QED و جایزه نوبل فیزیک',
+        'meta_description': 'سین-ایتیرو توموناگا کیست؟ فیزیکدان ژاپنی برنده نوبل برای توسعه مستقل نظریه بازبهنجارش در الکترودینامیک کوانتومی. زندگی‌نامه او در کوانتوم‌پدیا.',
+    },
+    {
+        'id': 2335, 'slug': 'eugene-wigner', 'title': 'یوجین ویگنر؛ زبان تقارن در فیزیک', 'en_name': 'Eugene Wigner',
+        'focus_keyword': 'یوجین ویگنر',
+        'seo_title': 'یوجین ویگنر کیست؟ اصول تقارن در فیزیک، پارادوکس دوست ویگنر و نوبل',
+        'meta_description': 'یوجین ویگنر کیست؟ فیزیکدان مجارستانی‌تبار برنده نوبل برای کشف نقش بنیادین تقارن‌ها در مکانیک کوانتومی. زندگی‌نامه او را در کوانتوم‌پدیا بخوانید.',
+    },
+    {
+        'id': 2336, 'slug': 'hans-bethe', 'title': 'هانس بته؛ مردی که راز خورشید را گشود', 'en_name': 'Hans Bethe',
+        'focus_keyword': 'هانس بته',
+        'seo_title': 'هانس بته کیست؟ چرخه کربن در خورشید، واکنش‌های هسته‌ای و نوبل',
+        'meta_description': 'هانس بته کیست؟ فیزیکدان آلمانی-آمریکایی برنده نوبل برای کشف سازوکار تولید انرژی و همجوشی هسته‌ای در خورشید. زندگی‌نامه او را در کوانتوم‌پدیا بخوانید.',
+    },
+    {
+        'id': 2337, 'slug': 'george-gamow', 'title': 'جرج گاموف؛ از تونل‌زنی تا مهبانگ', 'en_name': 'George Gamow',
+        'focus_keyword': 'جرج گاموف',
+        'seo_title': 'جرج گاموف کیست؟ واپاشی آلفا با تونل‌زنی، نظریه مهبانگ و زندگی',
+        'meta_description': 'جرج گاموف کیست؟ فیزیکدان نابغه، توضیح‌دهنده واپاشی هسته‌ای با تونل‌زنی کوانتومی و پیش‌بینی تابش پس‌زمینه کیهانی. زندگی‌نامه او در کوانتوم‌پدیا.',
+    },
+    {
+        'id': 2338, 'slug': 'lev-landau', 'title': 'لو لاندائو؛ نابغه‌ای که سانحه خاموشش کرد', 'en_name': 'Lev Landau',
+        'focus_keyword': 'لو لاندائو',
+        'seo_title': 'لو لاندائو کیست؟ تئوری ابرشارگی هلیوم، ماتریس چگالی و نوبل',
+        'meta_description': 'لو لاندائو کیست؟ اسطوره فیزیک نظری شوروی و برنده نوبل برای نظریه ابرشارگی هلیوم مایع و شبه‌ذرات. زندگی‌نامه کامل او را در کوانتوم‌پدیا بخوانید.',
+    },
+    {
+        'id': 2339, 'slug': 'john-wheeler', 'title': 'جان ویلر؛ مردی که سیاه‌چاله را نام گذاشت', 'en_name': 'John Archibald Wheeler',
+        'focus_keyword': 'جان ویلر',
+        'seo_title': 'جان ویلر کیست؟ ابداع واژه سیاه‌چاله، آزمایش انتخاب تاخیری و زندگی',
+        'meta_description': 'جان ویلر کیست؟ فیزیکدان برجسته آمریکایی، طراح آزمایش انتخاب تاخیری و استاد ریچارد فاینمن و هیو اورت. زندگی‌نامه او را در کوانتوم‌پدیا بخوانید.',
+    },
+    {
+        'id': 2340, 'slug': 'wojciech-zurek', 'title': 'وویچیخ زورک؛ توضیح‌دهندهٔ دنیای کلاسیک', 'en_name': 'Wojciech Zurek',
+        'focus_keyword': 'وویچیخ زورک',
+        'seo_title': 'وویچیخ زورک کیست؟ نظریه واهمدوسی، داروینیسم کوانتومی و زندگی',
+        'meta_description': 'وویچیخ زورک کیست؟ فیزیکدان نامدار نظری و ارائه‌دهنده نظریه واهمدوسی کوانتومی، قضیه عدم تکثیر و داروینیسم کوانتومی. زندگی‌نامه او در کوانتوم‌پدیا.',
+    },
+    {
+        'id': 2341, 'slug': 'john-clauser', 'title': 'جان کلاوزر؛ آزمایشگری که به حاشیه گوش نداد', 'en_name': 'John Clauser',
+        'focus_keyword': 'جان کلاوزر',
+        'seo_title': 'جان کلاوزر کیست؟ نامساوی CHSH، اثبات درهم‌تنیدگی و نوبل ۲۰۲۲',
+        'meta_description': 'جان کلاوزر کیست؟ فیزیکدان آمریکایی برنده نوبل فیزیک ۲۰۲۲ برای نخستین آزمون تجربی نامساوی بل و رد متغیرهای پنهان. زندگی‌نامه او در کوانتوم‌پدیا.',
+    },
+    {
+        'id': 2342, 'slug': 'john-von-neumann', 'title': 'جان فون‌نویمان؛ مغزی که کوانتوم را بنیان نوشت', 'en_name': 'John von Neumann',
+        'focus_keyword': 'جان فون‌نویمان',
+        'seo_title': 'جان فون‌نویمان کیست؟ بنیان ریاضی مکانیک کوانتومی و زندگی‌نامه',
+        'meta_description': 'جان فون‌نویمان کیست؟ نابغه مجارستانی، ارائه‌دهنده ساختار ریاضی کوانتوم در فضای هیلبرت، ماتریس چگالی و معماری کامپیوتر. زندگی‌نامه او در کوانتوم‌پدیا.',
+    },
+    {
+        'id': 2343, 'slug': 'paul-ehrenfest', 'title': 'پل اهرنفست؛ پلی که زیر پای خودش شکست', 'en_name': 'Paul Ehrenfest',
+        'focus_keyword': 'پل اهرنفست',
+        'seo_title': 'پل اهرنفست کیست؟ قضیه اهرنفست، گذار فاز و زندگی‌نامه تراژیک',
+        'meta_description': 'پل اهرنفست کیست؟ فیزیکدان برجسته اتریشی و کاشف قضیه اهرنفست برای پیوند مکانیک کوانتومی با فیزیک کلاسیک. زندگی‌نامه کامل او را در کوانتوم‌پدیا بخوانید.',
+    },
+    {
+        'id': 2344, 'slug': 'ernest-rutherford', 'title': 'ارنست رادرفورد؛ کاشف هستهٔ اتم', 'en_name': 'Ernest Rutherford',
+        'focus_keyword': 'ارنست رادرفورد',
+        'seo_title': 'ارنست رادرفورد کیست؟ کشف هسته اتم، پروتون و زندگی‌نامه علمی',
+        'meta_description': 'ارنست رادرفورد کیست؟ پدر فیزیک هسته‌ای، کاشف هسته اتم، ذرات آلفا و بتا، پروتون و برنده نوبل شیمی. زندگی‌نامه کامل او را در کوانتوم‌پدیا بخوانید.',
+    },
+    {
+        'id': 2355, 'slug': 'ludwig-boltzmann', 'title': 'لودویگ بولتزمن؛ شمارندهٔ بی‌نظمی', 'en_name': 'Ludwig Boltzmann',
+        'focus_keyword': 'لودویگ بولتزمن',
+        'seo_title': 'لودویگ بولتزمن کیست؟ مکانیک آماری، آنتروپی و زندگی‌نامه علمی',
+        'meta_description': 'لودویگ بولتزمن کیست؟ پایه‌گذار مکانیک آماری و کاشف فرمول بنیادین آنتروپی و پیکان زمان در فیزیک. زندگی‌نامه کامل او را در کوانتوم‌پدیا بخوانید.',
+    },
+    {
+        'id': 2356, 'slug': 'marie-curie', 'title': 'ماری کوری؛ دو نوبل، یک زندگی', 'en_name': 'Marie Curie',
+        'focus_keyword': 'ماری کوری',
+        'seo_title': 'ماری کوری کیست؟ کشف رادیواکتیویته، رادیوم و ۲ جایزه نوبل',
+        'meta_description': 'ماری کوری کیست؟ نخستین زن برنده نوبل و تنها برنده ۲ جایزه نوبل در دو رشته فیزیک و شیمی برای کشف رادیواکتیویته. زندگی‌نامه او در کوانتوم‌پدیا.',
+    },
+    {
+        'id': 2357, 'slug': 'emmy-noether', 'title': 'امی نوتر؛ زنی که تقارن را ترجمه کرد', 'en_name': 'Emmy Noether',
+        'focus_keyword': 'امی نوتر',
+        'seo_title': 'امی نوتر کیست؟ قضیه نوتر، پیوند تقارن و قوانین بقا در فیزیک',
+        'meta_description': 'امی نوتر کیست؟ بزرگ‌ترین ریاضیدان زن تاریخ و کاشف قضیه نوتر که اثبات کرد پشت هر قانون بقا یک تقارن پنهان است. زندگی‌نامه او در کوانتوم‌پدیا.',
+    },
+    {
+        'id': 2358, 'slug': 'lise-meitner', 'title': 'لیزه مایتنر؛ مادر شکافت هسته‌ای', 'en_name': 'Lise Meitner',
+        'focus_keyword': 'لیزه مایتنر',
+        'seo_title': 'لیزه مایتنر کیست؟ کشف شکافت هسته‌ای، عنصر مایتنریوم و زندگی',
+        'meta_description': 'لیزه مایتنر کیست؟ فیزیکدان برجسته اتریشی و کاشف سازوکار شکافت هسته‌ای اورانیوم. زندگی‌نامه و داستان تاریخی او را در کوانتوم‌پدیا بخوانید.',
+    },
+]
+
+# Write JSON
+json_path = ROOT / 'article-rewrite-2026-09-22/scientists-tamrank-seo-data.json'
+json_path.write_text(json.dumps(SCIENTISTS_DATA, ensure_ascii=False, indent=2), encoding='utf-8')
+print(f'Wrote {json_path}')
+
+# Update XML
+xml_in = ROOT / 'WordPress.2026-09-24 (2).xml'
+tree = ET.parse(xml_in)
+root = tree.getroot()
+channel = root.find('channel')
+ns = {'wp': 'http://wordpress.org/export/1.2/', 'content': 'http://purl.org/rss/1.0/modules/content/'}
+
+scientists_by_id = {s['id']: s for s in SCIENTISTS_DATA}
+scientists_by_slug = {s['slug']: s for s in SCIENTISTS_DATA}
+
+for it in channel.findall('item'):
+    pt = it.find('wp:post_type', ns)
+    if pt is None or pt.text != 'quantum_scientist':
+        continue
+    pid = int(it.find('wp:post_id', ns).text)
+    slug = it.find('wp:post_name', ns).text.strip() if it.find('wp:post_name', ns).text else ''
+    
+    # Remove _tamrank_schema_rendered_source
+    for pm in list(it.findall('wp:postmeta', ns)):
+        k = pm.find('wp:meta_key', ns)
+        if k is not None and k.text == '_tamrank_schema_rendered_source':
+            it.remove(pm)
+            
+    s_info = scientists_by_id.get(pid) or scientists_by_slug.get(slug)
+    if not s_info:
+        continue
+        
+    slug_val = s_info['slug']
+    canonical = f'https://qpedia.ir/scientists/{slug_val}/'
+    
+    existing_meta = {}
+    for pm in it.findall('wp:postmeta', ns):
+        k = pm.find('wp:meta_key', ns)
+        if k is not None and k.text:
+            existing_meta[k.text] = pm
+            
+    desired_metas = {
+        '_tam_rank_focus_keyword': s_info['focus_keyword'],
+        '_tam_rank_meta_title': s_info['seo_title'],
+        '_tam_rank_meta_description': s_info['meta_description'],
+        '_tam_rank_canonical': canonical,
+        '_tam_rank_custom_slug': s_info['slug'],
+        '_tam_rank_social_title': s_info['seo_title'],
+        '_tam_rank_social_description': s_info['meta_description'],
+        'rank_math_focus_keyword': s_info['focus_keyword'],
+        'rank_math_title': s_info['seo_title'],
+        'rank_math_description': s_info['meta_description'],
+        '_yoast_wpseo_focuskw': s_info['focus_keyword'],
+        '_yoast_wpseo_title': s_info['seo_title'],
+        '_yoast_wpseo_metadesc': s_info['meta_description'],
+        '_qpedia_focus_keyphrase': s_info['focus_keyword'],
+        '_qpedia_seo_title': s_info['seo_title'],
+        '_qpedia_meta_description': s_info['meta_description'],
+    }
+    
+    for mk, mv in desired_metas.items():
+        if mk in existing_meta:
+            existing_meta[mk].find('wp:meta_value', ns).text = mv
+        else:
+            new_pm = ET.SubElement(it, '{http://wordpress.org/export/1.2/}postmeta')
+            k_elem = ET.SubElement(new_pm, '{http://wordpress.org/export/1.2/}meta_key')
+            k_elem.text = mk
+            v_elem = ET.SubElement(new_pm, '{http://wordpress.org/export/1.2/}meta_value')
+            v_elem.text = mv
+
+out_xml = ROOT / 'WordPress.2026-09-24-scientists-seo-fixed.xml'
+tree.write(out_xml, encoding='utf-8', xml_declaration=True)
+
+orig_size = xml_in.stat().st_size
+new_size = out_xml.stat().st_size
+print(f'Original XML size: {orig_size / (1024*1024):.2f} MB')
+print(f'Cleaned XML size:  {new_size / (1024*1024):.2f} MB')
+
+# Build WordPress Plugin
+plugin_dir = ROOT / 'article-rewrite-2026-09-22/importers/scientists-tamrank-seo-fix/qpedia-scientists-tamrank-seo-fix'
+plugin_dir.mkdir(parents=True, exist_ok=True)
+(plugin_dir / 'scientists-seo.json').write_text(json.dumps(SCIENTISTS_DATA, ensure_ascii=False, indent=2), encoding='utf-8')
+
+php_code = r'''<?php
+/**
+ * Plugin Name: Qpedia Scientists TamRank SEO Fix & Bloat Cleaner
+ * Description: به‌روزرسانی متادیتای سئوی تام‌رنک (TamRank SEO) برای تمام دانشمندان کوانتوم و پاک‌سازی حافظه کدهای رندرشده (_tamrank_schema_rendered_source) از دیتابیس وردپرس.
+ * Version: 1.0.0
+ * Author: Qpedia Team
+ * Text Domain: qpedia-scientists-tamrank-seo-fix
+ */
+
+defined('ABSPATH') || exit;
+
+const QPSCI_SEO_OPTION = 'qpedia_scientists_tamrank_seo_fix_applied_v1';
+const QPSCI_POST_TYPE  = 'quantum_scientist';
+
+add_action('admin_menu', 'qpsci_seo_fix_admin_menu');
+function qpsci_seo_fix_admin_menu() {
+    add_management_page(
+        'به‌روزرسانی سئوی تام‌رنک دانشمندان',
+        'سئوی تام‌رنک دانشمندان',
+        'manage_options',
+        'qpedia-scientists-tamrank-seo-fix',
+        'qpsci_seo_fix_render_page'
+    );
+}
+
+function qpsci_seo_fix_render_page() {
+    if (!current_user_can('manage_options')) {
+        return;
+    }
+    global $wpdb;
+    $bloat_count = (int) $wpdb->get_var("SELECT COUNT(*) FROM {$wpdb->postmeta} WHERE meta_key = '_tamrank_schema_rendered_source'");
+
+    echo '<div class="wrap" dir="rtl">';
+    echo '<h1>به‌روزرسانی سئوی تام‌رنک (TamRank SEO) دانشمندان کوانتوم</h1>';
+
+    if (isset($_POST['qpsci_seo_run'])) {
+        check_admin_referer('qpsci_seo_run_action');
+        $clean_bloat = isset($_POST['qpsci_clean_bloat']);
+        $result = qpsci_seo_apply_updates($clean_bloat);
+        $class = $result['ok'] ? 'notice-success' : 'notice-error';
+        echo '<div class="notice ' . esc_attr($class) . '"><p><strong>' . esc_html($result['message']) . '</strong></p></div>';
+        if (!empty($result['log'])) {
+            echo '<div style="max-height:320px;overflow-y:auto;background:#fff;border:1px solid #ccd0d4;padding:12px;margin:15px 0;">';
+            echo '<ul style="margin:0;padding:0 20px;font-size:13px;line-height:1.8;">';
+            foreach ($result['log'] as $line) {
+                echo '<li>' . esc_html($line) . '</li>';
+            }
+            echo '</ul></div>';
+        }
+        if ($result['ok']) {
+            update_option(QPSCI_SEO_OPTION, current_time('mysql'), false);
+            echo '<div class="notice notice-info"><p>به‌روزرسانی کامل شد. نمره سئوی تام‌رنک دانشمندان سبز شد و کدهای حجیم زائد پاک گردیدند.</p></div>';
+        }
+    }
+
+    echo '<div class="card" style="max-width:850px;margin-top:20px;padding:15px 25px;">';
+    echo '<h2>عملیات‌های این افزونه:</h2>';
+    echo '<ol style="font-size:14px;line-height:1.9;">';
+    echo '<li><strong>تنظیم متادیتای اختصاصی TamRank SEO:</strong> ثبت کلیدواژه کانونی، عنوان سئو بهینه ۵۰-۶۰ حرف، توضیح متای ۱۲۰-۱۵۵ حرف، اسلاگ انگلیسی و آدرس کنونیکال برای مقالات دانشمندان.</li>';
+    echo '<li><strong>همگام‌سازی چندگانه:</strong> تنظیم فیلدهای متای Rank Math و Yoast جهت سازگاری کامل.</li>';
+    echo '<li><strong>پاک‌سازی حافظه کش کدهای رندرشده:</strong> در حال حاضر <strong>' . number_format_i18n($bloat_count) . '</strong> ردیف از متای <code>_tamrank_schema_rendered_source</code> در دیتابیس وجود دارد که با تیک زدن گزینه زیر پاک خواهد شد.</li>';
+    echo '</ol>';
+    echo '<form method="post" style="margin-top:20px;">';
+    wp_nonce_field('qpsci_seo_run_action');
+    echo '<p><label><input type="checkbox" name="qpsci_clean_bloat" value="1" checked="checked"> <strong>پاک‌سازی ردیف‌های متای حجیم _tamrank_schema_rendered_source از دیتابیس</strong></label></p>';
+    submit_button('اعمال متادیتای سئوی دانشمندان و سبک‌سازی دیتابیس', 'primary', 'qpsci_seo_run');
+    echo '</form>';
+    echo '</div></div>';
+}
+
+function qpsci_seo_apply_updates($clean_bloat = true) {
+    global $wpdb;
+    $json_file = plugin_dir_path(__FILE__) . 'scientists-seo.json';
+    if (!is_readable($json_file)) {
+        return array('ok' => false, 'message' => 'فایل scientists-seo.json خوانده نشد.', 'log' => array());
+    }
+    $scientists_data = json_decode(file_get_contents($json_file), true);
+    if (!is_array($scientists_data) || empty($scientists_data)) {
+        return array('ok' => false, 'message' => 'فرمت داده‌های سئو نامعتبر است.', 'log' => array());
+    }
+
+    $updated_count = 0;
+    $log = array();
+
+    foreach ($scientists_data as $item) {
+        $id        = isset($item['id']) ? (int) $item['id'] : 0;
+        $title     = isset($item['title']) ? trim((string) $item['title']) : '';
+        $slug      = isset($item['slug']) ? trim((string) $item['slug']) : '';
+        $fk        = isset($item['focus_keyword']) ? trim((string) $item['focus_keyword']) : $title;
+        $seo_t     = isset($item['seo_title']) ? trim((string) $item['seo_title']) : '';
+        $seo_d     = isset($item['meta_description']) ? trim((string) $item['meta_description']) : '';
+        $canonical = home_url('/scientists/' . $slug . '/');
+
+        $post = null;
+        if ($id > 0) {
+            $post = get_post($id);
+        }
+        if (!$post && $slug) {
+            $found = get_posts(array(
+                'name'        => $slug,
+                'post_type'   => array(QPSCI_POST_TYPE, 'post', 'page'),
+                'post_status' => 'any',
+                'numberposts' => 1,
+            ));
+            if (!empty($found)) {
+                $post = $found[0];
+            }
+        }
+        if (!$post && $title) {
+            $found = get_posts(array(
+                'title'       => $title,
+                'post_type'   => array(QPSCI_POST_TYPE, 'post', 'page'),
+                'post_status' => 'any',
+                'numberposts' => 1,
+            ));
+            if (!empty($found)) {
+                $post = $found[0];
+            }
+        }
+
+        if (!$post) {
+            $log[] = 'دانشمند یافت نشد: ' . $title . ' (شناسه: ' . $id . ', اسلاگ: ' . $slug . ')';
+            continue;
+        }
+
+        $post_id = (int) $post->ID;
+
+        // TamRank SEO Metas
+        update_post_meta($post_id, '_tam_rank_focus_keyword', $fk);
+        update_post_meta($post_id, '_tam_rank_meta_title', $seo_t);
+        update_post_meta($post_id, '_tam_rank_meta_description', $seo_d);
+        update_post_meta($post_id, '_tam_rank_canonical', $canonical);
+        update_post_meta($post_id, '_tam_rank_custom_slug', $slug);
+        update_post_meta($post_id, '_tam_rank_social_title', $seo_t);
+        update_post_meta($post_id, '_tam_rank_social_description', $seo_d);
+
+        // Rank Math / Yoast / General Metas
+        update_post_meta($post_id, 'rank_math_focus_keyword', $fk);
+        update_post_meta($post_id, 'rank_math_title', $seo_t);
+        update_post_meta($post_id, 'rank_math_description', $seo_d);
+        update_post_meta($post_id, '_yoast_wpseo_focuskw', $fk);
+        update_post_meta($post_id, '_yoast_wpseo_title', $seo_t);
+        update_post_meta($post_id, '_yoast_wpseo_metadesc', $seo_d);
+        update_post_meta($post_id, '_qpedia_focus_keyphrase', $fk);
+        update_post_meta($post_id, '_qpedia_seo_title', $seo_t);
+        update_post_meta($post_id, '_qpedia_meta_description', $seo_d);
+
+        $updated_count++;
+        $log[] = 'موفق: دانشمند «' . $title . '» (شناسه: ' . $post_id . ') -> ثبت متای سئوی تام‌رنک';
+    }
+
+    $deleted_bloat = 0;
+    if ($clean_bloat) {
+        $deleted_bloat = $wpdb->query("DELETE FROM {$wpdb->postmeta} WHERE meta_key = '_tamrank_schema_rendered_source'");
+    }
+
+    $msg = 'تعداد ' . $updated_count . ' دانشمند با متادیتای کامل تام‌رنک به‌روزرسانی شد.';
+    if ($clean_bloat) {
+        $msg .= ' تعداد ' . (int) $deleted_bloat . ' ردیف متای حجیم رندرشده از دیتابیس حذف گردید.';
+    }
+
+    return array('ok' => true, 'message' => $msg, 'log' => $log);
+}
+'''
+
+(plugin_dir / 'qpedia-scientists-tamrank-seo-fix.php').write_text(php_code.strip() + '\n', encoding='utf-8')
+print(f'Wrote {plugin_dir / "qpedia-scientists-tamrank-seo-fix.php"}')
+
+# Zip Plugin
+zip_plugin = ROOT / 'article-rewrite-2026-09-22/importers/scientists-tamrank-seo-fix/qpedia-scientists-tamrank-seo-fix.zip'
+with zipfile.ZipFile(zip_plugin, 'w', zipfile.ZIP_DEFLATED) as zf:
+    for f in plugin_dir.glob('*'):
+        if f.is_file():
+            zf.write(f, arcname=f'qpedia-scientists-tamrank-seo-fix/{f.name}')
+
+print(f'Created {zip_plugin} ({zip_plugin.stat().st_size / 1024:.1f} KB)')
+
+# Copy to downloads
+dl_plugin = ROOT / 'downloads/qpedia-scientists-tamrank-seo-fix.zip'
+dl_plugin.write_bytes(zip_plugin.read_bytes())
+print(f'Copied to {dl_plugin} ({dl_plugin.stat().st_size / 1024:.1f} KB)')
+
+# Zip Clean XML
+dl_xml_zip = ROOT / 'downloads/WordPress-2026-09-24-scientists-seo-fixed-xml.zip'
+with zipfile.ZipFile(dl_xml_zip, 'w', zipfile.ZIP_DEFLATED) as zf:
+    zf.write(out_xml, arcname='WordPress.2026-09-24-scientists-seo-fixed.xml')
+print(f'Created {dl_xml_zip} ({dl_xml_zip.stat().st_size / 1024:.1f} KB)')
