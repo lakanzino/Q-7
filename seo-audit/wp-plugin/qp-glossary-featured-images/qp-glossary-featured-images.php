@@ -2,8 +2,8 @@
 /**
  * Plugin Name: Qpedia Featured Images — تصاویر شاخص جدید
  * Plugin URI:  https://qpedia.ir/
- * Description: ۵۵ تصویر شاخص تازه (WebP، نسبت ۱۶:۹، نام‌گذاری با اسلاگ انگلیسی) را جای تصویر قبلی مقاله‌ها می‌گذارد و تصویر قبلی را حذف می‌کند. اگر تصویر قبلی با مقالهٔ دیگری مشترک باشد، حذف نمی‌شود.
- * Version:     1.0.0
+ * Description: ۵۵ تصویر شاخص تازه (WebP، ۱۶:۹، نام‌گذاری با اسلاگ انگلیسی) را جای تصویر قبلی می‌گذارد، تصویر قبلی را حذف می‌کند و متن جانشین (alt) استاندارد گوگل را با کلمهٔ کلیدی هر مقاله ثبت می‌کند.
+ * Version:     1.1.0
  * Author:      Qpedia
  * Author URI:  https://qpedia.ir/about-us/
  * License:     GPL-2.0-or-later
@@ -15,7 +15,7 @@
 
 defined( 'ABSPATH' ) || exit;
 
-define( 'QPFI_VERSION', '1.0.0' );
+define( 'QPFI_VERSION', '1.1.0' );
 define( 'QPFI_FILE', __FILE__ );
 define( 'QPFI_DIR', plugin_dir_path( __FILE__ ) );
 define( 'QPFI_URL', plugin_dir_url( __FILE__ ) );

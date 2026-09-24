@@ -13,6 +13,37 @@
 
 defined( 'ABSPATH' ) || exit;
 
+
+/**
+ * متن جانشین نهایی یک ردیف.
+ *
+ * طبق استاندارد گوگل: توصیفی و طبیعی، زیر ۱۲۵ نویسه، شامل کلمهٔ کلیدی کانونی،
+ * بدون انباشت کلیدواژه و بدون عبارت‌هایی مثل «تصویر از».
+ *
+ * @param array $row ردیف نگاشت.
+ * @return string
+ */
+function qpfi_alt_for( $row ) {
+	$alt = ! empty( $row['alt'] ) ? $row['alt'] : $row['title'];
+
+	// حذف فاصله‌های اضافه.
+	$alt = trim( preg_replace( '/\s+/u', ' ', $alt ) );
+
+	// سقف ۱۲۵ نویسه (توصیهٔ گوگل) با حفظ کلمهٔ کلیدی.
+	if ( function_exists( 'mb_strlen' ) && mb_strlen( $alt, 'UTF-8' ) > 125 ) {
+		$alt = mb_substr( $alt, 0, 124, 'UTF-8' );
+		$alt = preg_replace( '/\s+\S*$/u', '', $alt );
+	}
+
+	/**
+	 * اجازهٔ تغییر متن جانشین.
+	 *
+	 * @param string $alt متن جانشین.
+	 * @param array  $row ردیف نگاشت.
+	 */
+	return apply_filters( 'qpfi_alt_text', $alt, $row );
+}
+
 /**
  * یافتن مقاله از اسلاگ.
  *
@@ -241,14 +272,16 @@ function qpfi_process_row( $row, $dry_run = false ) {
 	$options = qpfi_options();
 
 	$report = array(
-		'slug'    => $row['slug'],
-		'title'   => $row['title'],
-		'status'  => 'skip',
-		'old'     => '',
-		'new'     => $row['file'],
-		'url'     => '',
-		'backup'  => '',
-		'note'    => '',
+		'slug'   => $row['slug'],
+		'title'  => $row['title'],
+		'status' => 'skip',
+		'old'    => '',
+		'new'    => $row['file'],
+		'url'    => '',
+		'backup' => '',
+		'note'   => '',
+		'alt'    => qpfi_alt_for( $row ),
+		'kw'     => $row['kw'],
 	);
 
 	$source = qpfi_image_path( $row['file'] );
@@ -307,7 +340,9 @@ function qpfi_process_row( $row, $dry_run = false ) {
 		}
 
 		if ( ! empty( $options['set_alt'] ) ) {
-			update_post_meta( $current['id'], '_wp_attachment_image_alt', $row['title'] );
+			update_post_meta( $current['id'], '_wp_attachment_image_alt', qpfi_alt_for( $row ) );
+			update_post_meta( $current['id'], '_qpfi_kw', $row['kw'] );
+			update_post_meta( $current['id'], '_qpfi_alt_source', 'qp-fi-1.1.0' );
 		}
 
 		if ( ! empty( $row['en'] ) ) {
@@ -359,7 +394,9 @@ function qpfi_process_row( $row, $dry_run = false ) {
 	}
 
 	if ( ! empty( $options['set_alt'] ) ) {
-		update_post_meta( $new_id, '_wp_attachment_image_alt', $row['title'] );
+		update_post_meta( $new_id, '_wp_attachment_image_alt', qpfi_alt_for( $row ) );
+		update_post_meta( $new_id, '_qpfi_kw', $row['kw'] );
+		update_post_meta( $new_id, '_qpfi_alt_source', 'qp-fi-1.1.0' );
 	}
 
 	if ( ! empty( $row['en'] ) ) {

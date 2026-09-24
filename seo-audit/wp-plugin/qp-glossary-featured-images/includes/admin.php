@@ -194,7 +194,7 @@ function qpfi_render_page() {
 			<input type="hidden" name="qpfi_action" value="options" />
 			<p>
 				<label style="margin-inline-end:18px"><input type="checkbox" name="backup_old" value="1" <?php checked( $options['backup_old'], 1 ); ?> /> نسخهٔ پشتیبان تصویر قبلی در <code>uploads/qp-fi-backup/</code> نگه داشته شود</label>
-				<label><input type="checkbox" name="set_alt" value="1" <?php checked( $options['set_alt'], 1 ); ?> /> متن جانشین (alt) فارسی روی تصویر تازه ثبت شود</label>
+				<label><input type="checkbox" name="set_alt" value="1" <?php checked( $options['set_alt'], 1 ); ?> /> متن جانشین (alt) استاندارد + کلمهٔ کلیدی روی تصویر تازه ثبت شود</label>
 				<button type="submit" class="button">ذخیرهٔ تنظیمات</button>
 			</p>
 		</form>
@@ -218,6 +218,7 @@ function qpfi_render_page() {
 						<th>مقاله</th>
 						<th style="width:200px">فایل فعلی ← فایل تازه</th>
 						<th style="width:190px">عملیات</th>
+						<th style="width:290px">متن جانشین (alt) و کلمهٔ کلیدی</th>
 					</tr>
 				</thead>
 				<tbody>
@@ -262,6 +263,14 @@ function qpfi_render_page() {
 								<?php endif; ?>
 							</td>
 							<td><strong style="color:<?php echo esc_attr( $state[2] ); ?>"><?php echo esc_html( $state[1] ); ?></strong></td>
+							<td style="font-size:12px;line-height:1.9">
+								<?php $alt_text = qpfi_alt_for( $row ); ?>
+								<div><?php echo esc_html( $alt_text ); ?></div>
+								<div style="color:#646970">
+									کلمهٔ کلیدی: <code><?php echo esc_html( $row['kw'] ); ?></code>
+									· <?php echo esc_html( number_format_i18n( function_exists( 'mb_strlen' ) ? mb_strlen( $alt_text, 'UTF-8' ) : strlen( $alt_text ) ) ); ?> نویسه
+								</div>
+							</td>
 						</tr>
 					<?php endforeach; ?>
 				</tbody>
@@ -279,7 +288,7 @@ function qpfi_render_page() {
 						<tr>
 							<td><?php echo esc_html( $row['title'] ); ?><div style="font-size:11px;color:#646970"><code><?php echo esc_html( $row['slug'] ); ?></code></div></td>
 							<td><code style="word-break:break-all"><?php echo esc_html( '' !== $row['old'] ? $row['old'] : '—' ); ?></code></td>
-							<td><code style="word-break:break-all"><?php echo esc_html( $row['new'] ); ?></code></td>
+							<td><code style="word-break:break-all"><?php echo esc_html( $row['new'] ); ?></code><div style="font-size:11px;color:#646970;margin-top:3px">alt: <?php echo esc_html( isset( $row['alt'] ) && '' !== $row['alt'] ? $row['alt'] : '' ); ?></div></td>
 							<td>
 								<?php
 								$label = isset( $status_labels[ $row['status'] ] ) ? $status_labels[ $row['status'] ] : array( '#646970', $row['status'] );
@@ -310,6 +319,8 @@ function qpfi_render_page() {
 			<li>در بقیه، تصویر تازه با نام اسلاگ ساخته می‌شود و تصویر قبلی از کتابخانه و سرور حذف می‌گردد.</li>
 			<li>اگر تصویر قبلی در مقالهٔ دیگری هم به‌کار رفته باشد، حذف نمی‌شود (چون آن مقاله خراب می‌شود).</li>
 			<li>پس از اجرا کش سایت را پاک کنید (کش قالب/افزونه/CDN).</li>
+			<li><strong>متن جانشین (alt):</strong> برای هر ۵۵ تصویر، متن alt مطابق استاندارد گوگل نوشته شده — توصیفی و طبیعی، زیر ۱۲۵ نویسه، بدون انباشت کلیدواژه و شامل کلمهٔ کلیدی کانونی همان مقاله (استخراج‌شده از Rank Math). ستون آخر جدول پیش‌نمایش، alt هر تصویر را نشان می‌دهد.</li>
+			<li><strong>اجرای دوباره بی‌خطر است:</strong> اگر قبلاً نسخهٔ ۱٫۰٫۰ را اجرا کرده‌اید، همین نسخه را اجرا کنید تا متن‌های alt ثبت/به‌روز شوند. فایل‌ها دوباره بازنویسی می‌شوند و تصویر اضافه‌ای ساخته نمی‌شود.</li>
 		</ul>
 	</div>
 
