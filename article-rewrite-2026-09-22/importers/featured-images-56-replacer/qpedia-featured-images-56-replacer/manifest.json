@@ -1,0 +1,506 @@
+[
+  {
+    "source_file": "1000098919.jpg",
+    "slug": "wave-particle-duality",
+    "filename": "wave-particle-duality.webp",
+    "title_fa": "دوگانگی موج و ذره",
+    "alt_fa": "تصویر شاخص دوگانگی موج و ذره در فیزیک کوانتوم",
+    "dimensions": "1200x675",
+    "size_kb": "25.9 KB"
+  },
+  {
+    "source_file": "1000098920.jpg",
+    "slug": "what-is-quantum",
+    "filename": "what-is-quantum.webp",
+    "title_fa": "کوانتوم یعنی چه؟",
+    "alt_fa": "تصویر شاخص کوانتوم یعنی چه و مبانی فیزیک کوانتومی",
+    "dimensions": "1200x675",
+    "size_kb": "28.7 KB"
+  },
+  {
+    "source_file": "1000098921.jpg",
+    "slug": "quantum-superposition",
+    "filename": "quantum-superposition.webp",
+    "title_fa": "برهم‌نهی کوانتومی",
+    "alt_fa": "تصویر شاخص برهم‌نهی کوانتومی و حالت‌های چندگانه",
+    "dimensions": "1200x675",
+    "size_kb": "26.4 KB"
+  },
+  {
+    "source_file": "1000098922.jpg",
+    "slug": "wave-function",
+    "filename": "wave-function.webp",
+    "title_fa": "تابع موج چیست؟",
+    "alt_fa": "تصویر شاخص تابع موج کوانتومی و معادله شرودینگر",
+    "dimensions": "1200x675",
+    "size_kb": "24.6 KB"
+  },
+  {
+    "source_file": "1000098923.jpg",
+    "slug": "quantum-measurement",
+    "filename": "quantum-measurement.webp",
+    "title_fa": "اندازه‌گیری و فروپاشی",
+    "alt_fa": "تصویر شاخص اندازه‌گیری کوانتومی و فروپاشی تابع موج",
+    "dimensions": "1200x675",
+    "size_kb": "25.6 KB"
+  },
+  {
+    "source_file": "1000098924.jpg",
+    "slug": "quantum-spin",
+    "filename": "quantum-spin.webp",
+    "title_fa": "اسپین؛ چرخشی که چرخش نیست",
+    "alt_fa": "تصویر شاخص اسپین کوانتومی و تکانه زاویه‌ای ذاتی",
+    "dimensions": "1200x675",
+    "size_kb": "27.4 KB"
+  },
+  {
+    "source_file": "1000098925.jpg",
+    "slug": "energy-levels",
+    "filename": "energy-levels.webp",
+    "title_fa": "ترازهای انرژی و کوانتش",
+    "alt_fa": "تصویر شاخص ترازهای گسسته انرژی و کوانتش",
+    "dimensions": "1200x675",
+    "size_kb": "27.6 KB"
+  },
+  {
+    "source_file": "1000098926.jpg",
+    "slug": "decoherence",
+    "filename": "decoherence.webp",
+    "title_fa": "واهمدوسی کوانتومی",
+    "alt_fa": "تصویر شاخص واهمدوسی کوانتومی و گذار به فیزیک کلاسیک",
+    "dimensions": "1200x675",
+    "size_kb": "34.0 KB"
+  },
+  {
+    "source_file": "1000098927.jpg",
+    "slug": "planck-constant",
+    "filename": "planck-constant.webp",
+    "title_fa": "ثابت پلانک چیست؟",
+    "alt_fa": "تصویر شاخص ثابت پلانک و مقیاس بنیادین کوانتوم",
+    "dimensions": "1200x675",
+    "size_kb": "29.1 KB"
+  },
+  {
+    "source_file": "1000098928.jpg",
+    "slug": "quantum-entanglement-explained",
+    "filename": "quantum-entanglement-explained.webp",
+    "title_fa": "درهم‌تنیدگی کوانتومی",
+    "alt_fa": "تصویر شاخص درهم‌تنیدگی کوانتومی و هم‌بستگی ذرات",
+    "dimensions": "1200x675",
+    "size_kb": "37.6 KB"
+  },
+  {
+    "source_file": "1000098929.jpg",
+    "slug": "quantum-zeno-effect",
+    "filename": "quantum-zeno-effect.webp",
+    "title_fa": "اثر زنون کوانتومی",
+    "alt_fa": "تصویر شاخص اثر زنون کوانتومی و مشاهده مداوم",
+    "dimensions": "1200x675",
+    "size_kb": "32.4 KB"
+  },
+  {
+    "source_file": "1000098930.jpg",
+    "slug": "vacuum-fluctuations",
+    "filename": "vacuum-fluctuations.webp",
+    "title_fa": "نوسانات خلأ",
+    "alt_fa": "تصویر شاخص افت‌وخیز کوانتومی و انرژی نقطه صفر خلأ",
+    "dimensions": "1200x675",
+    "size_kb": "29.4 KB"
+  },
+  {
+    "source_file": "1000098931.jpg",
+    "slug": "casimir-effect",
+    "filename": "casimir-effect.webp",
+    "title_fa": "اثر کازیمیر",
+    "alt_fa": "تصویر شاخص اثر کازیمیر و نیروی کوانتومی میان صفحات",
+    "dimensions": "1200x675",
+    "size_kb": "36.6 KB"
+  },
+  {
+    "source_file": "1000098932.jpg",
+    "slug": "ultraviolet-catastrophe",
+    "filename": "ultraviolet-catastrophe.webp",
+    "title_fa": "فاجعهٔ فرابنفش",
+    "alt_fa": "تصویر شاخص فاجعه فرابنفش و تابش جسم سیاه",
+    "dimensions": "1200x675",
+    "size_kb": "28.3 KB"
+  },
+  {
+    "source_file": "1000098933.jpg",
+    "slug": "bohr-atomic-model",
+    "filename": "bohr-atomic-model.webp",
+    "title_fa": "مدل اتمی بور",
+    "alt_fa": "تصویر شاخص مدل اتمی نیلز بور و مدارهای کوانتومی",
+    "dimensions": "1200x675",
+    "size_kb": "30.5 KB"
+  },
+  {
+    "source_file": "1000098934.jpg",
+    "slug": "bell-inequality",
+    "filename": "bell-inequality.webp",
+    "title_fa": "نامساوی بل",
+    "alt_fa": "تصویر شاخص قضیه و نامساوی بل در فیزیک کوانتوم",
+    "dimensions": "1200x675",
+    "size_kb": "31.7 KB"
+  },
+  {
+    "source_file": "1000098935.jpg",
+    "slug": "absolute-zero",
+    "filename": "absolute-zero.webp",
+    "title_fa": "صفر مطلق چیست؟",
+    "alt_fa": "تصویر شاخص صفر مطلق دما و توقف جنبش گرمایی",
+    "dimensions": "1200x675",
+    "size_kb": "29.6 KB"
+  },
+  {
+    "source_file": "1000098960.jpg",
+    "slug": "alpha-decay",
+    "filename": "alpha-decay.webp",
+    "title_fa": "واپاشی آلفا",
+    "alt_fa": "تصویر شاخص واپاشی آلفا و تونل‌زنی هسته‌ای",
+    "dimensions": "1200x675",
+    "size_kb": "22.6 KB"
+  },
+  {
+    "source_file": "1000098961.jpg",
+    "slug": "loophole-free-bell-test",
+    "filename": "loophole-free-bell-test.webp",
+    "title_fa": "نامساوی بل (آزمون بل)",
+    "alt_fa": "تصویر شاخص آزمایش بدون روزنه نامساوی بل",
+    "dimensions": "1200x675",
+    "size_kb": "26.6 KB"
+  },
+  {
+    "source_file": "1000098962.jpg",
+    "slug": "quantum-tunneling",
+    "filename": "quantum-tunneling.webp",
+    "title_fa": "تونل‌زنی کوانتومی",
+    "alt_fa": "تصویر شاخص تونل‌زنی کوانتومی و عبور ذره از سد پتانسیل",
+    "dimensions": "1200x675",
+    "size_kb": "28.6 KB"
+  },
+  {
+    "source_file": "1000098963.jpg",
+    "slug": "double-slit-experiment",
+    "filename": "double-slit-experiment.webp",
+    "title_fa": "آزمایش دو شکاف",
+    "alt_fa": "تصویر شاخص آزمایش دو شکاف یانگ در کوانتوم",
+    "dimensions": "1200x675",
+    "size_kb": "48.0 KB"
+  },
+  {
+    "source_file": "1000098964.jpg",
+    "slug": "no-cloning-theorem",
+    "filename": "no-cloning-theorem.webp",
+    "title_fa": "قضیهٔ عدم‌کپی",
+    "alt_fa": "تصویر شاخص قضیه عدم همسانه‌سازی یا کپی کوانتومی",
+    "dimensions": "1200x675",
+    "size_kb": "44.9 KB"
+  },
+  {
+    "source_file": "1000098965.jpg",
+    "slug": "coherence",
+    "filename": "coherence.webp",
+    "title_fa": "همدوسی",
+    "alt_fa": "تصویر شاخص همدوسی کوانتومی و فاز امواج",
+    "dimensions": "1200x675",
+    "size_kb": "30.4 KB"
+  },
+  {
+    "source_file": "1000098967.jpg",
+    "slug": "quantum-state",
+    "filename": "quantum-state.webp",
+    "title_fa": "حالت کوانتومی چیست؟",
+    "alt_fa": "تصویر شاخص بردار حالت کوانتومی در فضای هیلبرت",
+    "dimensions": "1200x675",
+    "size_kb": "37.0 KB"
+  },
+  {
+    "source_file": "1000098968.jpg",
+    "slug": "entanglement-quantum-computers",
+    "filename": "entanglement-quantum-computers.webp",
+    "title_fa": "درهم‌تنیدگی در کامپیوترهای کوانتومی",
+    "alt_fa": "تصویر شاخص درهم‌تنیدگی در پردازش کامپیوترهای کوانتومی",
+    "dimensions": "1200x675",
+    "size_kb": "49.6 KB"
+  },
+  {
+    "source_file": "1000098969.jpg",
+    "slug": "human-teleportation",
+    "filename": "human-teleportation.webp",
+    "title_fa": "درهم‌تنیدگی و سرعت نور",
+    "alt_fa": "تصویر شاخص بررسی انتقال اطلاعات در درهم‌تنیدگی کوانتومی",
+    "dimensions": "1200x675",
+    "size_kb": "42.9 KB"
+  },
+  {
+    "source_file": "1000098970.jpg",
+    "slug": "quantum-probability",
+    "filename": "quantum-probability.webp",
+    "title_fa": "احتمال کوانتومی",
+    "alt_fa": "تصویر شاخص ماهیت احتمالاتی مکانیک کوانتومی و قاعده بورن",
+    "dimensions": "1200x675",
+    "size_kb": "45.1 KB"
+  },
+  {
+    "source_file": "1000098971.jpg",
+    "slug": "virtual-particles",
+    "filename": "virtual-particles.webp",
+    "title_fa": "ذرات مجازی",
+    "alt_fa": "تصویر شاخص ذرات مجازی در میدان‌های کوانتومی",
+    "dimensions": "1200x675",
+    "size_kb": "35.6 KB"
+  },
+  {
+    "source_file": "1000098972.jpg",
+    "slug": "complementarity-principle",
+    "filename": "complementarity-principle.webp",
+    "title_fa": "اصل مکملیت",
+    "alt_fa": "تصویر شاخص اصل مکملیت نیلز بور در فیزیک کوانتوم",
+    "dimensions": "1200x675",
+    "size_kb": "35.0 KB"
+  },
+  {
+    "source_file": "1000098973.jpg",
+    "slug": "observer",
+    "filename": "observer.webp",
+    "title_fa": "ناظر در کوانتوم",
+    "alt_fa": "تصویر شاخص اثر ناظر و اندازه‌گیری در فیزیک کوانتومی",
+    "dimensions": "1200x675",
+    "size_kb": "29.3 KB"
+  },
+  {
+    "source_file": "1000098975.jpg",
+    "slug": "quantum-number",
+    "filename": "quantum-number.webp",
+    "title_fa": "عدد کوانتومی",
+    "alt_fa": "تصویر شاخص اعداد کوانتومی الکترون در اتم",
+    "dimensions": "1200x675",
+    "size_kb": "40.2 KB"
+  },
+  {
+    "source_file": "1000098976.jpg",
+    "slug": "coin-vs-dice-quantum-uncertainty",
+    "filename": "coin-vs-dice-quantum-uncertainty.webp",
+    "title_fa": "تمثیل تاس در مقابل تمثیل سکه",
+    "alt_fa": "تصویر شاخص تمثیل تاس و سکه در عدم قطعیت کوانتومی",
+    "dimensions": "1200x675",
+    "size_kb": "47.2 KB"
+  },
+  {
+    "source_file": "1000098977.jpg",
+    "slug": "quantum-physics-vs-quantum-mechanics",
+    "filename": "quantum-physics-vs-quantum-mechanics.webp",
+    "title_fa": "فیزیک کوانتوم و مکانیک کوانتومی",
+    "alt_fa": "تصویر شاخص تفاوت فیزیک کوانتوم و مکانیک کوانتومی",
+    "dimensions": "1200x675",
+    "size_kb": "54.4 KB"
+  },
+  {
+    "source_file": "1000098978.jpg",
+    "slug": "quantum-analogy-exercise-boundary",
+    "filename": "quantum-analogy-exercise-boundary.webp",
+    "title_fa": "نیلز بور و اصل تکمیل",
+    "alt_fa": "تصویر شاخص نیلز بور، اصل تکمیل و مرز شکست تمثیل",
+    "dimensions": "1200x675",
+    "size_kb": "40.7 KB"
+  },
+  {
+    "source_file": "1000098979.jpg",
+    "slug": "determinism-vs-probability",
+    "filename": "determinism-vs-probability.webp",
+    "title_fa": "جبرگرایی کلاسیک و احتمال کوانتومی",
+    "alt_fa": "تصویر شاخص جبرگرایی نیوتنی در برابر احتمال کوانتومی",
+    "dimensions": "1200x675",
+    "size_kb": "55.7 KB"
+  },
+  {
+    "source_file": "1000098980.jpg",
+    "slug": "why-large-objects-dont-superpose",
+    "filename": "why-large-objects-dont-superpose.webp",
+    "title_fa": "برهم‌نهی اشیای بزرگ",
+    "alt_fa": "تصویر شاخص علت عدم مشاهده برهم‌نهی در اشیای بزرگ",
+    "dimensions": "1200x675",
+    "size_kb": "49.3 KB"
+  },
+  {
+    "source_file": "1000098981.jpg",
+    "slug": "heisenberg-uncertainty-principle",
+    "filename": "heisenberg-uncertainty-principle.webp",
+    "title_fa": "اصل عدم قطعیت هایزنبرگ",
+    "alt_fa": "تصویر شاخص اصل عدم قطعیت هایزنبرگ در مکان و تکانه",
+    "dimensions": "1200x675",
+    "size_kb": "34.3 KB"
+  },
+  {
+    "source_file": "1000098982.jpg",
+    "slug": "is-classical-physics-wrong",
+    "filename": "is-classical-physics-wrong.webp",
+    "title_fa": "آیا فیزیک کلاسیک اشتباه بود؟",
+    "alt_fa": "تصویر شاخص حد کلاسیک و رابطه فیزیک نیوتنی با کوانتوم",
+    "dimensions": "1200x675",
+    "size_kb": "63.1 KB"
+  },
+  {
+    "source_file": "1000098983.jpg",
+    "slug": "pauli-exclusion-principle",
+    "filename": "pauli-exclusion-principle.webp",
+    "title_fa": "اصل طرد پاولی",
+    "alt_fa": "تصویر شاخص اصل طرد پاولی و آرایش الکترون‌ها",
+    "dimensions": "1200x675",
+    "size_kb": "23.8 KB"
+  },
+  {
+    "source_file": "1000098984.jpg",
+    "slug": "quantum-interpretation-debate",
+    "filename": "quantum-interpretation-debate.webp",
+    "title_fa": "ماکس بورن و تفسیر احتمالاتی",
+    "alt_fa": "تصویر شاخص ماکس بورن و جدال تفاسیر کوانتومی",
+    "dimensions": "1200x675",
+    "size_kb": "31.9 KB"
+  },
+  {
+    "source_file": "1000098985.jpg",
+    "slug": "aharonov-bohm-effect",
+    "filename": "aharonov-bohm-effect.webp",
+    "title_fa": "اثر آهارونوف-بوهم",
+    "alt_fa": "تصویر شاخص اثر آهارونوف-بوهم و پتانسیل الکترومغناطیسی",
+    "dimensions": "1200x675",
+    "size_kb": "40.2 KB"
+  },
+  {
+    "source_file": "1000098986.jpg",
+    "slug": "quantum-random-number-generator",
+    "filename": "quantum-random-number-generator.webp",
+    "title_fa": "مولد عدد تصادفی کوانتومی",
+    "alt_fa": "تصویر شاخص تولید اعداد تصادفی واقعی با کوانتوم",
+    "dimensions": "1200x675",
+    "size_kb": "34.7 KB"
+  },
+  {
+    "source_file": "1000098987.jpg",
+    "slug": "cosmic-inflation",
+    "filename": "cosmic-inflation.webp",
+    "title_fa": "تورم کیهانی",
+    "alt_fa": "تصویر شاخص نظریه تورم کیهانی در کیهان‌شناسی آغازین",
+    "dimensions": "1200x675",
+    "size_kb": "45.4 KB"
+  },
+  {
+    "source_file": "1000098988.jpg",
+    "slug": "cosmic-microwave-background",
+    "filename": "cosmic-microwave-background.webp",
+    "title_fa": "تابش زمینه کیهانی",
+    "alt_fa": "تصویر شاخص تابش پس‌زمینه کیهانی CMB از انفجار بزرگ",
+    "dimensions": "1200x675",
+    "size_kb": "53.5 KB"
+  },
+  {
+    "source_file": "1000098989.jpg",
+    "slug": "wormhole",
+    "filename": "wormhole.webp",
+    "title_fa": "کرم‌چاله",
+    "alt_fa": "تصویر شاخص ساختار نظری کرم‌چاله و پل اینشتین-روزن",
+    "dimensions": "1200x675",
+    "size_kb": "51.2 KB"
+  },
+  {
+    "source_file": "1000098990.jpg",
+    "slug": "quantum-bounce",
+    "filename": "quantum-bounce.webp",
+    "title_fa": "جهش کوانتومی کیهان",
+    "alt_fa": "تصویر شاخص نظریه جهش کوانتومی کیهان قبل از مهبانگ",
+    "dimensions": "1200x675",
+    "size_kb": "64.2 KB"
+  },
+  {
+    "source_file": "1000099001.jpg",
+    "slug": "quantum-culture",
+    "filename": "quantum-culture.webp",
+    "title_fa": "فرهنگ کوانتومی",
+    "alt_fa": "تصویر شاخص بازتاب مفاهیم کوانتومی در فرهنگ و هنر جامعه",
+    "dimensions": "1200x675",
+    "size_kb": "28.6 KB"
+  },
+  {
+    "source_file": "1000099002.jpg",
+    "slug": "quantum-winter",
+    "filename": "quantum-winter.webp",
+    "title_fa": "زمستان کوانتومی",
+    "alt_fa": "تصویر شاخص زمستان کوانتومی و چرخه‌های افت سرمایه‌گذاری",
+    "dimensions": "1200x675",
+    "size_kb": "37.9 KB"
+  },
+  {
+    "source_file": "1000099003.jpg",
+    "slug": "copenhagen-interpretation",
+    "filename": "copenhagen-interpretation.webp",
+    "title_fa": "تفسیر کپنهاگی",
+    "alt_fa": "تصویر شاخص تفسیر کپنهاگی از مکانیک کوانتومی",
+    "dimensions": "1200x675",
+    "size_kb": "30.0 KB"
+  },
+  {
+    "source_file": "1000099004.jpg",
+    "slug": "is-many-worlds-real",
+    "filename": "is-many-worlds-real.webp",
+    "title_fa": "جهان‌های موازی",
+    "alt_fa": "تصویر شاخص تفسیر چندجهانی اورت و انشعاب واقعیت‌ها",
+    "dimensions": "1200x675",
+    "size_kb": "39.2 KB"
+  },
+  {
+    "source_file": "1000099005.jpg",
+    "slug": "does-quantum-prove-god",
+    "filename": "does-quantum-prove-god.webp",
+    "title_fa": "کوانتوم و خدا",
+    "alt_fa": "تصویر شاخص بررسی نسبت فیزیک کوانتوم و مباحث فلسفی",
+    "dimensions": "1200x675",
+    "size_kb": "42.4 KB"
+  },
+  {
+    "source_file": "1000099006.jpg",
+    "slug": "holographic-principle",
+    "filename": "holographic-principle.webp",
+    "title_fa": "اصل هولوگرافیک",
+    "alt_fa": "تصویر شاخص اصل هولوگرافیک در گرانش کوانتومی و افق سیاه‌چاله",
+    "dimensions": "1200x675",
+    "size_kb": "43.1 KB"
+  },
+  {
+    "source_file": "1000099007.jpg",
+    "slug": "quantum-darwinism",
+    "filename": "quantum-darwinism.webp",
+    "title_fa": "داروینیسم کوانتومی",
+    "alt_fa": "تصویر شاخص نظریه داروینیسم کوانتومی زورک",
+    "dimensions": "1200x675",
+    "size_kb": "48.2 KB"
+  },
+  {
+    "source_file": "1000099008.jpg",
+    "slug": "quantum-free-will",
+    "filename": "quantum-free-will.webp",
+    "title_fa": "کوانتوم و اراده آزاد",
+    "alt_fa": "تصویر شاخص فیزیک کوانتومی و مسئله اراده آزاد و آگاهی",
+    "dimensions": "1200x675",
+    "size_kb": "45.6 KB"
+  },
+  {
+    "source_file": "1000099009.jpg",
+    "slug": "quantum-time-travel",
+    "filename": "quantum-time-travel.webp",
+    "title_fa": "سفر در زمان",
+    "alt_fa": "تصویر شاخص سفر در زمان از منظر فیزیک کوانتوم و نسبیت",
+    "dimensions": "1200x675",
+    "size_kb": "45.1 KB"
+  },
+  {
+    "source_file": "1000099010.jpg",
+    "slug": "wigner-friend",
+    "filename": "wigner-friend.webp",
+    "title_fa": "دوست ویگنر",
+    "alt_fa": "تصویر شاخص پارادوکس دوست ویگنر و مسئله ناظر",
+    "dimensions": "1200x675",
+    "size_kb": "46.3 KB"
+  }
+]
