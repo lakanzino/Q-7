@@ -1,0 +1,67 @@
+{
+  "batch": "incomplete-depth-second-10",
+  "status": "PASS",
+  "importer_allowed": true,
+  "articles": [
+    {
+      "sequence": 107,
+      "post_id": 565,
+      "slug": "is-many-worlds-real",
+      "status": "PASS"
+    },
+    {
+      "sequence": 108,
+      "post_id": 566,
+      "slug": "quantum-career-future-learn",
+      "status": "PASS"
+    },
+    {
+      "sequence": 109,
+      "post_id": 567,
+      "slug": "heisenberg-uncertainty-principle",
+      "status": "PASS"
+    },
+    {
+      "sequence": 110,
+      "post_id": 570,
+      "slug": "why-large-objects-dont-superpose",
+      "status": "PASS"
+    },
+    {
+      "sequence": 111,
+      "post_id": 571,
+      "slug": "determinism-vs-probability",
+      "status": "PASS"
+    },
+    {
+      "sequence": 113,
+      "post_id": 572,
+      "slug": "quantum-physics-vs-quantum-mechanics",
+      "status": "PASS"
+    },
+    {
+      "sequence": 114,
+      "post_id": 573,
+      "slug": "coin-vs-dice-quantum-uncertainty",
+      "status": "PASS"
+    },
+    {
+      "sequence": 115,
+      "post_id": 574,
+      "slug": "quantum-analogy-exercise-boundary",
+      "status": "PASS"
+    },
+    {
+      "sequence": 116,
+      "post_id": 575,
+      "slug": "quantum-understanding-achievement",
+      "status": "PASS"
+    },
+    {
+      "sequence": 117,
+      "post_id": 2226,
+      "slug": "quantum-number",
+      "status": "PASS"
+    }
+  ]
+}
