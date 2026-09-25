@@ -1,0 +1,1602 @@
+[
+  {
+    "sequence": 1,
+    "term": "مکانیک کوانتومی",
+    "slug": "what-is-quantum",
+    "category": "مفاهیم پایه",
+    "filename": "glossary-001-what-is-quantum.webp",
+    "alt": "تصویر شاخص مینیمال اصطلاح مکانیک کوانتومی در واژه‌نامه تخصصی کوانتوم با نشان qpedia.ir"
+  },
+  {
+    "sequence": 2,
+    "term": "فیزیک کوانتومی",
+    "slug": "quantum-physics-vs-quantum-mechanics",
+    "category": "مفاهیم پایه",
+    "filename": "glossary-002-quantum-physics-vs-quantum-mechanics.webp",
+    "alt": "تصویر شاخص مینیمال اصطلاح فیزیک کوانتومی در واژه‌نامه تخصصی کوانتوم با نشان qpedia.ir"
+  },
+  {
+    "sequence": 3,
+    "term": "کوانتش",
+    "slug": "energy-levels",
+    "category": "مفاهیم پایه",
+    "filename": "glossary-003-energy-levels.webp",
+    "alt": "تصویر شاخص مینیمال اصطلاح کوانتش در واژه‌نامه تخصصی کوانتوم با نشان qpedia.ir"
+  },
+  {
+    "sequence": 4,
+    "term": "حالت کوانتومی",
+    "slug": "quantum-state",
+    "category": "مفاهیم پایه",
+    "filename": "glossary-004-quantum-state.webp",
+    "alt": "تصویر شاخص مینیمال اصطلاح حالت کوانتومی در واژه‌نامه تخصصی کوانتوم با نشان qpedia.ir"
+  },
+  {
+    "sequence": 5,
+    "term": "تابع موج",
+    "slug": "wave-function",
+    "category": "مفاهیم پایه",
+    "filename": "glossary-005-wave-function.webp",
+    "alt": "تصویر شاخص مینیمال اصطلاح تابع موج در واژه‌نامه تخصصی کوانتوم با نشان qpedia.ir"
+  },
+  {
+    "sequence": 6,
+    "term": "دامنه احتمال",
+    "slug": "born-probability",
+    "category": "مفاهیم پایه",
+    "filename": "glossary-006-born-probability.webp",
+    "alt": "تصویر شاخص مینیمال اصطلاح دامنه احتمال در واژه‌نامه تخصصی کوانتوم با نشان qpedia.ir"
+  },
+  {
+    "sequence": 7,
+    "term": "احتمال کوانتومی",
+    "slug": "quantum-probability",
+    "category": "مفاهیم پایه",
+    "filename": "glossary-007-quantum-probability.webp",
+    "alt": "تصویر شاخص مینیمال اصطلاح احتمال کوانتومی در واژه‌نامه تخصصی کوانتوم با نشان qpedia.ir"
+  },
+  {
+    "sequence": 8,
+    "term": "برهم‌نهی کوانتومی",
+    "slug": "quantum-superposition",
+    "category": "مفاهیم پایه",
+    "filename": "glossary-008-quantum-superposition.webp",
+    "alt": "تصویر شاخص مینیمال اصطلاح برهم‌نهی کوانتومی در واژه‌نامه تخصصی کوانتوم با نشان qpedia.ir"
+  },
+  {
+    "sequence": 9,
+    "term": "درهم‌تنیدگی کوانتومی",
+    "slug": "quantum-entanglement-explained",
+    "category": "مفاهیم پایه",
+    "filename": "glossary-009-quantum-entanglement-explained.webp",
+    "alt": "تصویر شاخص مینیمال اصطلاح درهم‌تنیدگی کوانتومی در واژه‌نامه تخصصی کوانتوم با نشان qpedia.ir"
+  },
+  {
+    "sequence": 10,
+    "term": "همدوسی کوانتومی",
+    "slug": "coherence",
+    "category": "مفاهیم پایه",
+    "filename": "glossary-010-coherence.webp",
+    "alt": "تصویر شاخص مینیمال اصطلاح همدوسی کوانتومی در واژه‌نامه تخصصی کوانتوم با نشان qpedia.ir"
+  },
+  {
+    "sequence": 11,
+    "term": "واهمدوسی",
+    "slug": "decoherence",
+    "category": "مفاهیم پایه",
+    "filename": "glossary-011-decoherence.webp",
+    "alt": "تصویر شاخص مینیمال اصطلاح واهمدوسی در واژه‌نامه تخصصی کوانتوم با نشان qpedia.ir"
+  },
+  {
+    "sequence": 12,
+    "term": "اندازه‌گیری کوانتومی",
+    "slug": "quantum-measurement",
+    "category": "مفاهیم پایه",
+    "filename": "glossary-012-quantum-measurement.webp",
+    "alt": "تصویر شاخص مینیمال اصطلاح اندازه‌گیری کوانتومی در واژه‌نامه تخصصی کوانتوم با نشان qpedia.ir"
+  },
+  {
+    "sequence": 13,
+    "term": "فروپاشی تابع موج",
+    "slug": "quantum-measurement",
+    "category": "مفاهیم پایه",
+    "filename": "glossary-013-quantum-measurement.webp",
+    "alt": "تصویر شاخص مینیمال اصطلاح فروپاشی تابع موج در واژه‌نامه تخصصی کوانتوم با نشان qpedia.ir"
+  },
+  {
+    "sequence": 14,
+    "term": "ناظر کوانتومی",
+    "slug": "observer",
+    "category": "مفاهیم پایه",
+    "filename": "glossary-014-observer.webp",
+    "alt": "تصویر شاخص مینیمال اصطلاح ناظر کوانتومی در واژه‌نامه تخصصی کوانتوم با نشان qpedia.ir"
+  },
+  {
+    "sequence": 15,
+    "term": "اصل عدم قطعیت",
+    "slug": "heisenberg-uncertainty-principle",
+    "category": "مفاهیم پایه",
+    "filename": "glossary-015-heisenberg-uncertainty-principle.webp",
+    "alt": "تصویر شاخص مینیمال اصطلاح اصل عدم قطعیت در واژه‌نامه تخصصی کوانتوم با نشان qpedia.ir"
+  },
+  {
+    "sequence": 16,
+    "term": "دوگانگی موج و ذره",
+    "slug": "wave-particle-duality",
+    "category": "مفاهیم پایه",
+    "filename": "glossary-016-wave-particle-duality.webp",
+    "alt": "تصویر شاخص مینیمال اصطلاح دوگانگی موج و ذره در واژه‌نامه تخصصی کوانتوم با نشان qpedia.ir"
+  },
+  {
+    "sequence": 17,
+    "term": "تداخل کوانتومی",
+    "slug": "double-slit-experiment",
+    "category": "مفاهیم پایه",
+    "filename": "glossary-017-double-slit-experiment.webp",
+    "alt": "تصویر شاخص مینیمال اصطلاح تداخل کوانتومی در واژه‌نامه تخصصی کوانتوم با نشان qpedia.ir"
+  },
+  {
+    "sequence": 18,
+    "term": "تونل‌زنی کوانتومی",
+    "slug": "quantum-tunneling",
+    "category": "مفاهیم پایه",
+    "filename": "glossary-018-quantum-tunneling.webp",
+    "alt": "تصویر شاخص مینیمال اصطلاح تونل‌زنی کوانتومی در واژه‌نامه تخصصی کوانتوم با نشان qpedia.ir"
+  },
+  {
+    "sequence": 19,
+    "term": "اثر زنون کوانتومی",
+    "slug": "quantum-zeno-effect",
+    "category": "مفاهیم پایه",
+    "filename": "glossary-019-quantum-zeno-effect.webp",
+    "alt": "تصویر شاخص مینیمال اصطلاح اثر زنون کوانتومی در واژه‌نامه تخصصی کوانتوم با نشان qpedia.ir"
+  },
+  {
+    "sequence": 20,
+    "term": "اصل مکملیت",
+    "slug": "complementarity-principle",
+    "category": "مفاهیم پایه",
+    "filename": "glossary-020-complementarity-principle.webp",
+    "alt": "تصویر شاخص مینیمال اصطلاح اصل مکملیت در واژه‌نامه تخصصی کوانتوم با نشان qpedia.ir"
+  },
+  {
+    "sequence": 21,
+    "term": "قضیه عدم شبیه‌سازی",
+    "slug": "quantum-simulation",
+    "category": "رایانش کوانتومی",
+    "filename": "glossary-021-quantum-simulation.webp",
+    "alt": "تصویر شاخص مینیمال اصطلاح قضیه عدم شبیه‌سازی در واژه‌نامه تخصصی کوانتوم با نشان qpedia.ir"
+  },
+  {
+    "sequence": 22,
+    "term": "یکانی بودن",
+    "slug": "why-quantum-math-works",
+    "category": "تاریخ و جامعه",
+    "filename": "glossary-022-why-quantum-math-works.webp",
+    "alt": "تصویر شاخص مینیمال اصطلاح یکانی بودن در واژه‌نامه تخصصی کوانتوم با نشان qpedia.ir"
+  },
+  {
+    "sequence": 23,
+    "term": "تراز انرژی",
+    "slug": "energy-levels",
+    "category": "مفاهیم پایه",
+    "filename": "glossary-023-energy-levels.webp",
+    "alt": "تصویر شاخص مینیمال اصطلاح تراز انرژی در واژه‌نامه تخصصی کوانتوم با نشان qpedia.ir"
+  },
+  {
+    "sequence": 24,
+    "term": "حالت پایه",
+    "slug": "quantum-state",
+    "category": "مفاهیم پایه",
+    "filename": "glossary-024-quantum-state.webp",
+    "alt": "تصویر شاخص مینیمال اصطلاح حالت پایه در واژه‌نامه تخصصی کوانتوم با نشان qpedia.ir"
+  },
+  {
+    "sequence": 25,
+    "term": "حالت برانگیخته",
+    "slug": "energy-levels",
+    "category": "مفاهیم پایه",
+    "filename": "glossary-025-energy-levels.webp",
+    "alt": "تصویر شاخص مینیمال اصطلاح حالت برانگیخته در واژه‌نامه تخصصی کوانتوم با نشان qpedia.ir"
+  },
+  {
+    "sequence": 26,
+    "term": "اسپین کوانتومی",
+    "slug": "quantum-spin",
+    "category": "مفاهیم پایه",
+    "filename": "glossary-026-quantum-spin.webp",
+    "alt": "تصویر شاخص مینیمال اصطلاح اسپین کوانتومی در واژه‌نامه تخصصی کوانتوم با نشان qpedia.ir"
+  },
+  {
+    "sequence": 27,
+    "term": "تکانه زاویه‌ای",
+    "slug": "quantum-number",
+    "category": "مفاهیم پایه",
+    "filename": "glossary-027-quantum-number.webp",
+    "alt": "تصویر شاخص مینیمال اصطلاح تکانه زاویه‌ای در واژه‌نامه تخصصی کوانتوم با نشان qpedia.ir"
+  },
+  {
+    "sequence": 28,
+    "term": "عدد کوانتومی",
+    "slug": "quantum-number",
+    "category": "مفاهیم پایه",
+    "filename": "glossary-028-quantum-number.webp",
+    "alt": "تصویر شاخص مینیمال اصطلاح عدد کوانتومی در واژه‌نامه تخصصی کوانتوم با نشان qpedia.ir"
+  },
+  {
+    "sequence": 29,
+    "term": "ذره بنیادی",
+    "slug": "standard-model",
+    "category": "ذرات و نیروها",
+    "filename": "glossary-029-standard-model.webp",
+    "alt": "تصویر شاخص مینیمال اصطلاح ذره بنیادی در واژه‌نامه تخصصی کوانتوم با نشان qpedia.ir"
+  },
+  {
+    "sequence": 30,
+    "term": "شبه‌ذره",
+    "slug": "superconductivity",
+    "category": "مواد کوانتومی",
+    "filename": "glossary-030-superconductivity.webp",
+    "alt": "تصویر شاخص مینیمال اصطلاح شبه‌ذره در واژه‌نامه تخصصی کوانتوم با نشان qpedia.ir"
+  },
+  {
+    "sequence": 31,
+    "term": "فوتون",
+    "slug": "photon",
+    "category": "ذرات و نیروها",
+    "filename": "glossary-031-photon.webp",
+    "alt": "تصویر شاخص مینیمال اصطلاح فوتون در واژه‌نامه تخصصی کوانتوم با نشان qpedia.ir"
+  },
+  {
+    "sequence": 32,
+    "term": "الکترون",
+    "slug": "electron",
+    "category": "ذرات و نیروها",
+    "filename": "glossary-032-electron.webp",
+    "alt": "تصویر شاخص مینیمال اصطلاح الکترون در واژه‌نامه تخصصی کوانتوم با نشان qpedia.ir"
+  },
+  {
+    "sequence": 33,
+    "term": "پوزیترون",
+    "slug": "antimatter",
+    "category": "ذرات و نیروها",
+    "filename": "glossary-033-antimatter.webp",
+    "alt": "تصویر شاخص مینیمال اصطلاح پوزیترون در واژه‌نامه تخصصی کوانتوم با نشان qpedia.ir"
+  },
+  {
+    "sequence": 34,
+    "term": "پروتون",
+    "slug": "proton-neutron-quark-structure",
+    "category": "ذرات و نیروها",
+    "filename": "glossary-034-proton-neutron-quark-structure.webp",
+    "alt": "تصویر شاخص مینیمال اصطلاح پروتون در واژه‌نامه تخصصی کوانتوم با نشان qpedia.ir"
+  },
+  {
+    "sequence": 35,
+    "term": "نوترون",
+    "slug": "proton-neutron-quark-structure",
+    "category": "ذرات و نیروها",
+    "filename": "glossary-035-proton-neutron-quark-structure.webp",
+    "alt": "تصویر شاخص مینیمال اصطلاح نوترون در واژه‌نامه تخصصی کوانتوم با نشان qpedia.ir"
+  },
+  {
+    "sequence": 36,
+    "term": "نوترینو",
+    "slug": "neutrino",
+    "category": "ذرات و نیروها",
+    "filename": "glossary-036-neutrino.webp",
+    "alt": "تصویر شاخص مینیمال اصطلاح نوترینو در واژه‌نامه تخصصی کوانتوم با نشان qpedia.ir"
+  },
+  {
+    "sequence": 37,
+    "term": "کوارک",
+    "slug": "quark",
+    "category": "ذرات و نیروها",
+    "filename": "glossary-037-quark.webp",
+    "alt": "تصویر شاخص مینیمال اصطلاح کوارک در واژه‌نامه تخصصی کوانتوم با نشان qpedia.ir"
+  },
+  {
+    "sequence": 38,
+    "term": "گلوئون",
+    "slug": "gluon-w-z-bosons",
+    "category": "ذرات و نیروها",
+    "filename": "glossary-038-gluon-w-z-bosons.webp",
+    "alt": "تصویر شاخص مینیمال اصطلاح گلوئون در واژه‌نامه تخصصی کوانتوم با نشان qpedia.ir"
+  },
+  {
+    "sequence": 39,
+    "term": "بوزون",
+    "slug": "gluon-w-z-bosons",
+    "category": "ذرات و نیروها",
+    "filename": "glossary-039-gluon-w-z-bosons.webp",
+    "alt": "تصویر شاخص مینیمال اصطلاح بوزون در واژه‌نامه تخصصی کوانتوم با نشان qpedia.ir"
+  },
+  {
+    "sequence": 40,
+    "term": "فرمیون",
+    "slug": "pauli-exclusion-principle",
+    "category": "مفاهیم پایه",
+    "filename": "glossary-040-pauli-exclusion-principle.webp",
+    "alt": "تصویر شاخص مینیمال اصطلاح فرمیون در واژه‌نامه تخصصی کوانتوم با نشان qpedia.ir"
+  },
+  {
+    "sequence": 41,
+    "term": "بوزون هیگز",
+    "slug": "higgs-boson",
+    "category": "ذرات و نیروها",
+    "filename": "glossary-041-higgs-boson.webp",
+    "alt": "تصویر شاخص مینیمال اصطلاح بوزون هیگز در واژه‌نامه تخصصی کوانتوم با نشان qpedia.ir"
+  },
+  {
+    "sequence": 42,
+    "term": "پادماده",
+    "slug": "antimatter",
+    "category": "ذرات و نیروها",
+    "filename": "glossary-042-antimatter.webp",
+    "alt": "تصویر شاخص مینیمال اصطلاح پادماده در واژه‌نامه تخصصی کوانتوم با نشان qpedia.ir"
+  },
+  {
+    "sequence": 43,
+    "term": "نابودی ماده و پادماده",
+    "slug": "pet-scan-antimatter",
+    "category": "زیست و پزشکی",
+    "filename": "glossary-043-pet-scan-antimatter.webp",
+    "alt": "تصویر شاخص مینیمال اصطلاح نابودی ماده و پادماده در واژه‌نامه تخصصی کوانتوم با نشان qpedia.ir"
+  },
+  {
+    "sequence": 44,
+    "term": "مدل استاندارد",
+    "slug": "standard-model",
+    "category": "ذرات و نیروها",
+    "filename": "glossary-044-standard-model.webp",
+    "alt": "تصویر شاخص مینیمال اصطلاح مدل استاندارد در واژه‌نامه تخصصی کوانتوم با نشان qpedia.ir"
+  },
+  {
+    "sequence": 45,
+    "term": "نیروی الکترومغناطیسی",
+    "slug": "quantum-electrodynamics",
+    "category": "ذرات و نیروها",
+    "filename": "glossary-045-quantum-electrodynamics.webp",
+    "alt": "تصویر شاخص مینیمال اصطلاح نیروی الکترومغناطیسی در واژه‌نامه تخصصی کوانتوم با نشان qpedia.ir"
+  },
+  {
+    "sequence": 46,
+    "term": "نیروی هسته‌ای قوی",
+    "slug": "gluon-w-z-bosons",
+    "category": "ذرات و نیروها",
+    "filename": "glossary-046-gluon-w-z-bosons.webp",
+    "alt": "تصویر شاخص مینیمال اصطلاح نیروی هسته‌ای قوی در واژه‌نامه تخصصی کوانتوم با نشان qpedia.ir"
+  },
+  {
+    "sequence": 47,
+    "term": "نیروی هسته‌ای ضعیف",
+    "slug": "neutrino",
+    "category": "ذرات و نیروها",
+    "filename": "glossary-047-neutrino.webp",
+    "alt": "تصویر شاخص مینیمال اصطلاح نیروی هسته‌ای ضعیف در واژه‌نامه تخصصی کوانتوم با نشان qpedia.ir"
+  },
+  {
+    "sequence": 48,
+    "term": "نظریه میدان کوانتومی",
+    "slug": "quantum-electrodynamics",
+    "category": "ذرات و نیروها",
+    "filename": "glossary-048-quantum-electrodynamics.webp",
+    "alt": "تصویر شاخص مینیمال اصطلاح نظریه میدان کوانتومی در واژه‌نامه تخصصی کوانتوم با نشان qpedia.ir"
+  },
+  {
+    "sequence": 49,
+    "term": "الکترودینامیک کوانتومی",
+    "slug": "quantum-electrodynamics",
+    "category": "ذرات و نیروها",
+    "filename": "glossary-049-quantum-electrodynamics.webp",
+    "alt": "تصویر شاخص مینیمال اصطلاح الکترودینامیک کوانتومی در واژه‌نامه تخصصی کوانتوم با نشان qpedia.ir"
+  },
+  {
+    "sequence": 50,
+    "term": "خلأ کوانتومی",
+    "slug": "vacuum-fluctuations",
+    "category": "مفاهیم پایه",
+    "filename": "glossary-050-vacuum-fluctuations.webp",
+    "alt": "تصویر شاخص مینیمال اصطلاح خلأ کوانتومی در واژه‌نامه تخصصی کوانتوم با نشان qpedia.ir"
+  },
+  {
+    "sequence": 51,
+    "term": "افت‌وخیز کوانتومی",
+    "slug": "quantum-fluctuations-cosmos",
+    "category": "کیهان کوانتومی",
+    "filename": "glossary-051-quantum-fluctuations-cosmos.webp",
+    "alt": "تصویر شاخص مینیمال اصطلاح افت‌وخیز کوانتومی در واژه‌نامه تخصصی کوانتوم با نشان qpedia.ir"
+  },
+  {
+    "sequence": 52,
+    "term": "انرژی نقطه صفر",
+    "slug": "zero-point-energy-scam",
+    "category": "تاریخ و جامعه",
+    "filename": "glossary-052-zero-point-energy-scam.webp",
+    "alt": "تصویر شاخص مینیمال اصطلاح انرژی نقطه صفر در واژه‌نامه تخصصی کوانتوم با نشان qpedia.ir"
+  },
+  {
+    "sequence": 53,
+    "term": "اثر کازیمیر",
+    "slug": "casimir-effect",
+    "category": "مفاهیم پایه",
+    "filename": "glossary-053-casimir-effect.webp",
+    "alt": "تصویر شاخص مینیمال اصطلاح اثر کازیمیر در واژه‌نامه تخصصی کوانتوم با نشان qpedia.ir"
+  },
+  {
+    "sequence": 54,
+    "term": "ذره مجازی",
+    "slug": "virtual-particles",
+    "category": "مفاهیم پایه",
+    "filename": "glossary-054-virtual-particles.webp",
+    "alt": "تصویر شاخص مینیمال اصطلاح ذره مجازی در واژه‌نامه تخصصی کوانتوم با نشان qpedia.ir"
+  },
+  {
+    "sequence": 55,
+    "term": "ثابت پلانک",
+    "slug": "planck-constant",
+    "category": "مفاهیم پایه",
+    "filename": "glossary-055-planck-constant.webp",
+    "alt": "تصویر شاخص مینیمال اصطلاح ثابت پلانک در واژه‌نامه تخصصی کوانتوم با نشان qpedia.ir"
+  },
+  {
+    "sequence": 56,
+    "term": "طول موج دوبروی",
+    "slug": "wave-particle-duality",
+    "category": "مفاهیم پایه",
+    "filename": "glossary-056-wave-particle-duality.webp",
+    "alt": "تصویر شاخص مینیمال اصطلاح طول موج دوبروی در واژه‌نامه تخصصی کوانتوم با نشان qpedia.ir"
+  },
+  {
+    "sequence": 57,
+    "term": "آزمایش دو شکاف",
+    "slug": "double-slit-experiment",
+    "category": "مفاهیم پایه",
+    "filename": "glossary-057-double-slit-experiment.webp",
+    "alt": "تصویر شاخص مینیمال اصطلاح آزمایش دو شکاف در واژه‌نامه تخصصی کوانتوم با نشان qpedia.ir"
+  },
+  {
+    "sequence": 58,
+    "term": "نامساوی بل",
+    "slug": "bell-inequality",
+    "category": "مفاهیم پایه",
+    "filename": "glossary-058-bell-inequality.webp",
+    "alt": "تصویر شاخص مینیمال اصطلاح نامساوی بل در واژه‌نامه تخصصی کوانتوم با نشان qpedia.ir"
+  },
+  {
+    "sequence": 59,
+    "term": "آزمون بل",
+    "slug": "bell-experiments",
+    "category": "تاریخ و جامعه",
+    "filename": "glossary-059-bell-experiments.webp",
+    "alt": "تصویر شاخص مینیمال اصطلاح آزمون بل در واژه‌نامه تخصصی کوانتوم با نشان qpedia.ir"
+  },
+  {
+    "sequence": 60,
+    "term": "متغیر پنهان",
+    "slug": "pilot-wave",
+    "category": "فلسفه کوانتوم",
+    "filename": "glossary-060-pilot-wave.webp",
+    "alt": "تصویر شاخص مینیمال اصطلاح متغیر پنهان در واژه‌نامه تخصصی کوانتوم با نشان qpedia.ir"
+  },
+  {
+    "sequence": 61,
+    "term": "واقع‌گرایی موضعی",
+    "slug": "bell-experiments",
+    "category": "تاریخ و جامعه",
+    "filename": "glossary-061-bell-experiments.webp",
+    "alt": "تصویر شاخص مینیمال اصطلاح واقع‌گرایی موضعی در واژه‌نامه تخصصی کوانتوم با نشان qpedia.ir"
+  },
+  {
+    "sequence": 62,
+    "term": "تفسیر کپنهاگی",
+    "slug": "copenhagen-interpretation",
+    "category": "فلسفه کوانتوم",
+    "filename": "glossary-062-copenhagen-interpretation.webp",
+    "alt": "تصویر شاخص مینیمال اصطلاح تفسیر کپنهاگی در واژه‌نامه تخصصی کوانتوم با نشان qpedia.ir"
+  },
+  {
+    "sequence": 63,
+    "term": "تفسیر جهان‌های متعدد",
+    "slug": "many-worlds-interpretation",
+    "category": "فلسفه کوانتوم",
+    "filename": "glossary-063-many-worlds-interpretation.webp",
+    "alt": "تصویر شاخص مینیمال اصطلاح تفسیر جهان‌های متعدد در واژه‌نامه تخصصی کوانتوم با نشان qpedia.ir"
+  },
+  {
+    "sequence": 64,
+    "term": "پارادوکس EPR",
+    "slug": "epr-paradox",
+    "category": "تاریخ و جامعه",
+    "filename": "glossary-064-epr-paradox.webp",
+    "alt": "تصویر شاخص مینیمال اصطلاح پارادوکس EPR در واژه‌نامه تخصصی کوانتوم با نشان qpedia.ir"
+  },
+  {
+    "sequence": 65,
+    "term": "گربه شرودینگر",
+    "slug": "schrodinger-cat",
+    "category": "فلسفه کوانتوم",
+    "filename": "glossary-065-schrodinger-cat.webp",
+    "alt": "تصویر شاخص مینیمال اصطلاح گربه شرودینگر در واژه‌نامه تخصصی کوانتوم با نشان qpedia.ir"
+  },
+  {
+    "sequence": 66,
+    "term": "دوست ویگنر",
+    "slug": "wigner-friend",
+    "category": "فلسفه کوانتوم",
+    "filename": "glossary-066-wigner-friend.webp",
+    "alt": "تصویر شاخص مینیمال اصطلاح دوست ویگنر در واژه‌نامه تخصصی کوانتوم با نشان qpedia.ir"
+  },
+  {
+    "sequence": 67,
+    "term": "کیوبیت",
+    "slug": "qubit",
+    "category": "رایانش کوانتومی",
+    "filename": "glossary-067-qubit.webp",
+    "alt": "تصویر شاخص مینیمال اصطلاح کیوبیت در واژه‌نامه تخصصی کوانتوم با نشان qpedia.ir"
+  },
+  {
+    "sequence": 68,
+    "term": "کیوبیت فیزیکی",
+    "slug": "ibm-condor-processor",
+    "category": "رایانش کوانتومی",
+    "filename": "glossary-068-ibm-condor-processor.webp",
+    "alt": "تصویر شاخص مینیمال اصطلاح کیوبیت فیزیکی در واژه‌نامه تخصصی کوانتوم با نشان qpedia.ir"
+  },
+  {
+    "sequence": 69,
+    "term": "کیوبیت منطقی",
+    "slug": "quantum-error-correction",
+    "category": "رایانش کوانتومی",
+    "filename": "glossary-069-quantum-error-correction.webp",
+    "alt": "تصویر شاخص مینیمال اصطلاح کیوبیت منطقی در واژه‌نامه تخصصی کوانتوم با نشان qpedia.ir"
+  },
+  {
+    "sequence": 70,
+    "term": "گیت کوانتومی",
+    "slug": "quantum-gate",
+    "category": "رایانش کوانتومی",
+    "filename": "glossary-070-quantum-gate.webp",
+    "alt": "تصویر شاخص مینیمال اصطلاح گیت کوانتومی در واژه‌نامه تخصصی کوانتوم با نشان qpedia.ir"
+  },
+  {
+    "sequence": 71,
+    "term": "مدار کوانتومی",
+    "slug": "quantum-gate",
+    "category": "رایانش کوانتومی",
+    "filename": "glossary-071-quantum-gate.webp",
+    "alt": "تصویر شاخص مینیمال اصطلاح مدار کوانتومی در واژه‌نامه تخصصی کوانتوم با نشان qpedia.ir"
+  },
+  {
+    "sequence": 72,
+    "term": "الگوریتم کوانتومی",
+    "slug": "shor-algorithm",
+    "category": "رایانش کوانتومی",
+    "filename": "glossary-072-shor-algorithm.webp",
+    "alt": "تصویر شاخص مینیمال اصطلاح الگوریتم کوانتومی در واژه‌نامه تخصصی کوانتوم با نشان qpedia.ir"
+  },
+  {
+    "sequence": 73,
+    "term": "تصحیح خطای کوانتومی",
+    "slug": "quantum-error-correction",
+    "category": "رایانش کوانتومی",
+    "filename": "glossary-073-quantum-error-correction.webp",
+    "alt": "تصویر شاخص مینیمال اصطلاح تصحیح خطای کوانتومی در واژه‌نامه تخصصی کوانتوم با نشان qpedia.ir"
+  },
+  {
+    "sequence": 74,
+    "term": "کاهش خطای کوانتومی",
+    "slug": "topological-quantum-computing",
+    "category": "رایانش کوانتومی",
+    "filename": "glossary-074-topological-quantum-computing.webp",
+    "alt": "تصویر شاخص مینیمال اصطلاح کاهش خطای کوانتومی در واژه‌نامه تخصصی کوانتوم با نشان qpedia.ir"
+  },
+  {
+    "sequence": 75,
+    "term": "رایانش تحمل‌پذیر در برابر خطا",
+    "slug": "topological-quantum-computing",
+    "category": "رایانش کوانتومی",
+    "filename": "glossary-075-topological-quantum-computing.webp",
+    "alt": "تصویر شاخص مینیمال اصطلاح رایانش تحمل‌پذیر در برابر خطا در واژه‌نامه تخصصی کوانتوم با نشان qpedia.ir"
+  },
+  {
+    "sequence": 76,
+    "term": "عصر NISQ",
+    "slug": "nisq-era",
+    "category": "رایانش کوانتومی",
+    "filename": "glossary-076-nisq-era.webp",
+    "alt": "تصویر شاخص مینیمال اصطلاح عصر NISQ در واژه‌نامه تخصصی کوانتوم با نشان qpedia.ir"
+  },
+  {
+    "sequence": 77,
+    "term": "برتری کوانتومی",
+    "slug": "quantum-supremacy",
+    "category": "رایانش کوانتومی",
+    "filename": "glossary-077-quantum-supremacy.webp",
+    "alt": "تصویر شاخص مینیمال اصطلاح برتری کوانتومی در واژه‌نامه تخصصی کوانتوم با نشان qpedia.ir"
+  },
+  {
+    "sequence": 78,
+    "term": "یادگیری ماشین کوانتومی",
+    "slug": "quantum-machine-learning",
+    "category": "هوش مصنوعی کوانتومی",
+    "filename": "glossary-078-quantum-machine-learning.webp",
+    "alt": "تصویر شاخص مینیمال اصطلاح یادگیری ماشین کوانتومی در واژه‌نامه تخصصی کوانتوم با نشان qpedia.ir"
+  },
+  {
+    "sequence": 79,
+    "term": "کرنل کوانتومی",
+    "slug": "quantum-machine-learning",
+    "category": "هوش مصنوعی کوانتومی",
+    "filename": "glossary-079-quantum-machine-learning.webp",
+    "alt": "تصویر شاخص مینیمال اصطلاح کرنل کوانتومی در واژه‌نامه تخصصی کوانتوم با نشان qpedia.ir"
+  },
+  {
+    "sequence": 80,
+    "term": "حافظه کوانتومی",
+    "slug": "quantum-network",
+    "category": "ارتباطات کوانتومی",
+    "filename": "glossary-080-quantum-network.webp",
+    "alt": "تصویر شاخص مینیمال اصطلاح حافظه کوانتومی در واژه‌نامه تخصصی کوانتوم با نشان qpedia.ir"
+  },
+  {
+    "sequence": 81,
+    "term": "تله‌پورت کوانتومی",
+    "slug": "quantum-teleportation",
+    "category": "ارتباطات کوانتومی",
+    "filename": "glossary-081-quantum-teleportation.webp",
+    "alt": "تصویر شاخص مینیمال اصطلاح تله‌پورت کوانتومی در واژه‌نامه تخصصی کوانتوم با نشان qpedia.ir"
+  },
+  {
+    "sequence": 82,
+    "term": "توزیع کلید کوانتومی",
+    "slug": "quantum-cryptography-internet-security",
+    "category": "ارتباطات کوانتومی",
+    "filename": "glossary-082-quantum-cryptography-internet-security.webp",
+    "alt": "تصویر شاخص مینیمال اصطلاح توزیع کلید کوانتومی در واژه‌نامه تخصصی کوانتوم با نشان qpedia.ir"
+  },
+  {
+    "sequence": 83,
+    "term": "رمزنگاری پساکوانتومی",
+    "slug": "post-quantum-cryptography",
+    "category": "ارتباطات کوانتومی",
+    "filename": "glossary-083-post-quantum-cryptography.webp",
+    "alt": "تصویر شاخص مینیمال اصطلاح رمزنگاری پساکوانتومی در واژه‌نامه تخصصی کوانتوم با نشان qpedia.ir"
+  },
+  {
+    "sequence": 84,
+    "term": "تکرارگر کوانتومی",
+    "slug": "quantum-network",
+    "category": "ارتباطات کوانتومی",
+    "filename": "glossary-084-quantum-network.webp",
+    "alt": "تصویر شاخص مینیمال اصطلاح تکرارگر کوانتومی در واژه‌نامه تخصصی کوانتوم با نشان qpedia.ir"
+  },
+  {
+    "sequence": 85,
+    "term": "شبکه کوانتومی",
+    "slug": "quantum-network",
+    "category": "ارتباطات کوانتومی",
+    "filename": "glossary-085-quantum-network.webp",
+    "alt": "تصویر شاخص مینیمال اصطلاح شبکه کوانتومی در واژه‌نامه تخصصی کوانتوم با نشان qpedia.ir"
+  },
+  {
+    "sequence": 86,
+    "term": "پیوند جوزفسون",
+    "slug": "josephson-junction",
+    "category": "مواد کوانتومی",
+    "filename": "glossary-086-josephson-junction.webp",
+    "alt": "تصویر شاخص مینیمال اصطلاح پیوند جوزفسون در واژه‌نامه تخصصی کوانتوم با نشان qpedia.ir"
+  },
+  {
+    "sequence": 87,
+    "term": "جفت کوپر",
+    "slug": "superconductivity",
+    "category": "مواد کوانتومی",
+    "filename": "glossary-087-superconductivity.webp",
+    "alt": "تصویر شاخص مینیمال اصطلاح جفت کوپر در واژه‌نامه تخصصی کوانتوم با نشان qpedia.ir"
+  },
+  {
+    "sequence": 88,
+    "term": "ابررسانایی",
+    "slug": "superconductivity",
+    "category": "مواد کوانتومی",
+    "filename": "glossary-088-superconductivity.webp",
+    "alt": "تصویر شاخص مینیمال اصطلاح ابررسانایی در واژه‌نامه تخصصی کوانتوم با نشان qpedia.ir"
+  },
+  {
+    "sequence": 89,
+    "term": "ابرشارگی",
+    "slug": "superfluidity",
+    "category": "مواد کوانتومی",
+    "filename": "glossary-089-superfluidity.webp",
+    "alt": "تصویر شاخص مینیمال اصطلاح ابرشارگی در واژه‌نامه تخصصی کوانتوم با نشان qpedia.ir"
+  },
+  {
+    "sequence": 90,
+    "term": "چگالش بوز–اینشتین",
+    "slug": "bose-einstein-condensate",
+    "category": "مواد کوانتومی",
+    "filename": "glossary-090-bose-einstein-condensate.webp",
+    "alt": "تصویر شاخص مینیمال اصطلاح چگالش بوز–اینشتین در واژه‌نامه تخصصی کوانتوم با نشان qpedia.ir"
+  },
+  {
+    "sequence": 91,
+    "term": "ماده کوانتومی",
+    "slug": "quantum-spin-liquid",
+    "category": "مواد کوانتومی",
+    "filename": "glossary-091-quantum-spin-liquid.webp",
+    "alt": "تصویر شاخص مینیمال اصطلاح ماده کوانتومی در واژه‌نامه تخصصی کوانتوم با نشان qpedia.ir"
+  },
+  {
+    "sequence": 92,
+    "term": "مایع اسپینی کوانتومی",
+    "slug": "quantum-spin-liquid",
+    "category": "مواد کوانتومی",
+    "filename": "glossary-092-quantum-spin-liquid.webp",
+    "alt": "تصویر شاخص مینیمال اصطلاح مایع اسپینی کوانتومی در واژه‌نامه تخصصی کوانتوم با نشان qpedia.ir"
+  },
+  {
+    "sequence": 93,
+    "term": "عایق توپولوژیک",
+    "slug": "topological-insulator",
+    "category": "مواد کوانتومی",
+    "filename": "glossary-093-topological-insulator.webp",
+    "alt": "تصویر شاخص مینیمال اصطلاح عایق توپولوژیک در واژه‌نامه تخصصی کوانتوم با نشان qpedia.ir"
+  },
+  {
+    "sequence": 94,
+    "term": "گرانش کوانتومی",
+    "slug": "quantum-gravity",
+    "category": "کیهان کوانتومی",
+    "filename": "glossary-094-quantum-gravity.webp",
+    "alt": "تصویر شاخص مینیمال اصطلاح گرانش کوانتومی در واژه‌نامه تخصصی کوانتوم با نشان qpedia.ir"
+  },
+  {
+    "sequence": 95,
+    "term": "تابش هاوکینگ",
+    "slug": "black-hole-information-paradox",
+    "category": "کیهان کوانتومی",
+    "filename": "glossary-095-black-hole-information-paradox.webp",
+    "alt": "تصویر شاخص مینیمال اصطلاح تابش هاوکینگ در واژه‌نامه تخصصی کوانتوم با نشان qpedia.ir"
+  },
+  {
+    "sequence": 96,
+    "term": "افق رویداد",
+    "slug": "black-hole-information-paradox",
+    "category": "کیهان کوانتومی",
+    "filename": "glossary-096-black-hole-information-paradox.webp",
+    "alt": "تصویر شاخص مینیمال اصطلاح افق رویداد در واژه‌نامه تخصصی کوانتوم با نشان qpedia.ir"
+  },
+  {
+    "sequence": 97,
+    "term": "پارادوکس اطلاعات سیاه‌چاله",
+    "slug": "black-hole-information-paradox",
+    "category": "کیهان کوانتومی",
+    "filename": "glossary-097-black-hole-information-paradox.webp",
+    "alt": "تصویر شاخص مینیمال اصطلاح پارادوکس اطلاعات سیاه‌چاله در واژه‌نامه تخصصی کوانتوم با نشان qpedia.ir"
+  },
+  {
+    "sequence": 98,
+    "term": "منحنی پیج",
+    "slug": "holographic-principle",
+    "category": "فلسفه کوانتوم",
+    "filename": "glossary-098-holographic-principle.webp",
+    "alt": "تصویر شاخص مینیمال اصطلاح منحنی پیج در واژه‌نامه تخصصی کوانتوم با نشان qpedia.ir"
+  },
+  {
+    "sequence": 99,
+    "term": "اصل هولوگرافیک",
+    "slug": "holographic-principle",
+    "category": "فلسفه کوانتوم",
+    "filename": "glossary-099-holographic-principle.webp",
+    "alt": "تصویر شاخص مینیمال اصطلاح اصل هولوگرافیک در واژه‌نامه تخصصی کوانتوم با نشان qpedia.ir"
+  },
+  {
+    "sequence": 100,
+    "term": "تورم کیهانی",
+    "slug": "cosmic-inflation",
+    "category": "کیهان کوانتومی",
+    "filename": "glossary-100-cosmic-inflation.webp",
+    "alt": "تصویر شاخص مینیمال اصطلاح تورم کیهانی در واژه‌نامه تخصصی کوانتوم با نشان qpedia.ir"
+  },
+  {
+    "sequence": 101,
+    "term": "اثر آهارونوف–بوهم",
+    "slug": "aharonov-bohm-effect",
+    "category": "مفاهیم پایه",
+    "filename": "glossary-101-aharonov-bohm-effect.webp",
+    "alt": "تصویر شاخص مینیمال اصطلاح اثر آهارونوف–بوهم در واژه‌نامه تخصصی کوانتوم با نشان qpedia.ir"
+  },
+  {
+    "sequence": 102,
+    "term": "کریستال‌درمانی",
+    "slug": "crystal-healing-debunked",
+    "category": "زیست و پزشکی",
+    "filename": "glossary-102-crystal-healing-debunked.webp",
+    "alt": "تصویر شاخص مینیمال اصطلاح کریستال‌درمانی در واژه‌نامه تخصصی کوانتوم با نشان qpedia.ir"
+  },
+  {
+    "sequence": 103,
+    "term": "هوش مصنوعی کوانتومی",
+    "slug": "quantum-ai-marketing-hype",
+    "category": "هوش مصنوعی کوانتومی",
+    "filename": "glossary-103-quantum-ai-marketing-hype.webp",
+    "alt": "تصویر شاخص مینیمال اصطلاح هوش مصنوعی کوانتومی در واژه‌نامه تخصصی کوانتوم با نشان qpedia.ir"
+  },
+  {
+    "sequence": 104,
+    "term": "اصل طرد پاولی",
+    "slug": "pauli-exclusion-principle",
+    "category": "مفاهیم پایه",
+    "filename": "glossary-104-pauli-exclusion-principle.webp",
+    "alt": "تصویر شاخص مینیمال اصطلاح اصل طرد پاولی در واژه‌نامه تخصصی کوانتوم با نشان qpedia.ir"
+  },
+  {
+    "sequence": 105,
+    "term": "حد کلاسیک",
+    "slug": "is-classical-physics-wrong",
+    "category": "مفاهیم پایه",
+    "filename": "glossary-105-is-classical-physics-wrong.webp",
+    "alt": "تصویر شاخص مینیمال اصطلاح حد کلاسیک در واژه‌نامه تخصصی کوانتوم با نشان qpedia.ir"
+  },
+  {
+    "sequence": 106,
+    "term": "تفسیر مکانیک کوانتومی",
+    "slug": "quantum-interpretation-debate",
+    "category": "فلسفه کوانتوم",
+    "filename": "glossary-106-quantum-interpretation-debate.webp",
+    "alt": "تصویر شاخص مینیمال اصطلاح تفسیر مکانیک کوانتومی در واژه‌نامه تخصصی کوانتوم با نشان qpedia.ir"
+  },
+  {
+    "sequence": 107,
+    "term": "کوانتوم‌واشینگ",
+    "slug": "quantum-hype-bubble",
+    "category": "تاریخ و جامعه",
+    "filename": "glossary-107-quantum-hype-bubble.webp",
+    "alt": "تصویر شاخص مینیمال اصطلاح کوانتوم‌واشینگ در واژه‌نامه تخصصی کوانتوم با نشان qpedia.ir"
+  },
+  {
+    "sequence": 108,
+    "term": "میکروسکوپ تونلی روبشی",
+    "slug": "scanning-tunneling-microscope",
+    "category": "حسگرها و ابزارها",
+    "filename": "glossary-108-scanning-tunneling-microscope.webp",
+    "alt": "تصویر شاخص مینیمال اصطلاح میکروسکوپ تونلی روبشی در واژه‌نامه تخصصی کوانتوم با نشان qpedia.ir"
+  },
+  {
+    "sequence": 109,
+    "term": "فیبر نوری",
+    "slug": "fiber-optics",
+    "category": "حسگرها و ابزارها",
+    "filename": "glossary-109-fiber-optics.webp",
+    "alt": "تصویر شاخص مینیمال اصطلاح فیبر نوری در واژه‌نامه تخصصی کوانتوم با نشان qpedia.ir"
+  },
+  {
+    "sequence": 110,
+    "term": "الگوریتم شور",
+    "slug": "shor-algorithm",
+    "category": "رایانش کوانتومی",
+    "filename": "glossary-110-shor-algorithm.webp",
+    "alt": "تصویر شاخص مینیمال اصطلاح الگوریتم شور در واژه‌نامه تخصصی کوانتوم با نشان qpedia.ir"
+  },
+  {
+    "sequence": 111,
+    "term": "نظریه موج راهنما",
+    "slug": "pilot-wave",
+    "category": "فلسفه کوانتوم",
+    "filename": "glossary-111-pilot-wave.webp",
+    "alt": "تصویر شاخص مینیمال اصطلاح نظریه موج راهنما در واژه‌نامه تخصصی کوانتوم با نشان qpedia.ir"
+  },
+  {
+    "sequence": 112,
+    "term": "جهش ژنتیکی کوانتومی",
+    "slug": "genetic-mutation",
+    "category": "زیست و پزشکی",
+    "filename": "glossary-112-genetic-mutation.webp",
+    "alt": "تصویر شاخص مینیمال اصطلاح جهش ژنتیکی کوانتومی در واژه‌نامه تخصصی کوانتوم با نشان qpedia.ir"
+  },
+  {
+    "sequence": 113,
+    "term": "لیدار کوانتومی",
+    "slug": "quantum-lidar",
+    "category": "حسگرها و ابزارها",
+    "filename": "glossary-113-quantum-lidar.webp",
+    "alt": "تصویر شاخص مینیمال اصطلاح لیدار کوانتومی در واژه‌نامه تخصصی کوانتوم با نشان qpedia.ir"
+  },
+  {
+    "sequence": 114,
+    "term": "نور کند",
+    "slug": "slow-light",
+    "category": "نور کوانتومی",
+    "filename": "glossary-114-slow-light.webp",
+    "alt": "تصویر شاخص مینیمال اصطلاح نور کند در واژه‌نامه تخصصی کوانتوم با نشان qpedia.ir"
+  },
+  {
+    "sequence": 115,
+    "term": "لیتوگرافی کوانتومی",
+    "slug": "quantum-lithography",
+    "category": "نور کوانتومی",
+    "filename": "glossary-115-quantum-lithography.webp",
+    "alt": "تصویر شاخص مینیمال اصطلاح لیتوگرافی کوانتومی در واژه‌نامه تخصصی کوانتوم با نشان qpedia.ir"
+  },
+  {
+    "sequence": 116,
+    "term": "انگشت‌نگاری کوانتومی",
+    "slug": "quantum-fingerprinting",
+    "category": "ارتباطات کوانتومی",
+    "filename": "glossary-116-quantum-fingerprinting.webp",
+    "alt": "تصویر شاخص مینیمال اصطلاح انگشت‌نگاری کوانتومی در واژه‌نامه تخصصی کوانتوم با نشان qpedia.ir"
+  },
+  {
+    "sequence": 117,
+    "term": "یخچال رقیق‌سازی",
+    "slug": "dilution-refrigerator",
+    "category": "رایانش کوانتومی",
+    "filename": "glossary-117-dilution-refrigerator.webp",
+    "alt": "تصویر شاخص مینیمال اصطلاح یخچال رقیق‌سازی در واژه‌نامه تخصصی کوانتوم با نشان qpedia.ir"
+  },
+  {
+    "sequence": 118,
+    "term": "اکسیون",
+    "slug": "axion",
+    "category": "ذرات و نیروها",
+    "filename": "glossary-118-axion.webp",
+    "alt": "تصویر شاخص مینیمال اصطلاح اکسیون در واژه‌نامه تخصصی کوانتوم با نشان qpedia.ir"
+  },
+  {
+    "sequence": 119,
+    "term": "ویمپ",
+    "slug": "wimp",
+    "category": "ذرات و نیروها",
+    "filename": "glossary-119-wimp.webp",
+    "alt": "تصویر شاخص مینیمال اصطلاح ویمپ در واژه‌نامه تخصصی کوانتوم با نشان qpedia.ir"
+  },
+  {
+    "sequence": 120,
+    "term": "انرژی تاریک و جهان کوانتومی",
+    "slug": "dark-energy-quantum",
+    "category": "کیهان کوانتومی",
+    "filename": "glossary-120-dark-energy-quantum.webp",
+    "alt": "تصویر شاخص مینیمال اصطلاح انرژی تاریک و جهان کوانتومی در واژه‌نامه تخصصی کوانتوم با نشان qpedia.ir"
+  },
+  {
+    "sequence": 121,
+    "term": "تابش زمینه کیهانی",
+    "slug": "cosmic-microwave-background",
+    "category": "کیهان کوانتومی",
+    "filename": "glossary-121-cosmic-microwave-background.webp",
+    "alt": "تصویر شاخص مینیمال اصطلاح تابش زمینه کیهانی در واژه‌نامه تخصصی کوانتوم با نشان qpedia.ir"
+  },
+  {
+    "sequence": 122,
+    "term": "کرم‌چاله",
+    "slug": "wormhole",
+    "category": "کیهان کوانتومی",
+    "filename": "glossary-122-wormhole.webp",
+    "alt": "تصویر شاخص مینیمال اصطلاح کرم‌چاله در واژه‌نامه تخصصی کوانتوم با نشان qpedia.ir"
+  },
+  {
+    "sequence": 123,
+    "term": "کیهان‌شناسی کوانتومی",
+    "slug": "quantum-cosmology",
+    "category": "کیهان کوانتومی",
+    "filename": "glossary-123-quantum-cosmology.webp",
+    "alt": "تصویر شاخص مینیمال اصطلاح کیهان‌شناسی کوانتومی در واژه‌نامه تخصصی کوانتوم با نشان qpedia.ir"
+  },
+  {
+    "sequence": 124,
+    "term": "جهش کوانتومی کیهان",
+    "slug": "quantum-bounce",
+    "category": "کیهان کوانتومی",
+    "filename": "glossary-124-quantum-bounce.webp",
+    "alt": "تصویر شاخص مینیمال اصطلاح جهش کوانتومی کیهان در واژه‌نامه تخصصی کوانتوم با نشان qpedia.ir"
+  },
+  {
+    "sequence": 125,
+    "term": "موسیقی کوانتومی",
+    "slug": "quantum-music",
+    "category": "تاریخ و جامعه",
+    "filename": "glossary-125-quantum-music.webp",
+    "alt": "تصویر شاخص مینیمال اصطلاح موسیقی کوانتومی در واژه‌نامه تخصصی کوانتوم با نشان qpedia.ir"
+  },
+  {
+    "sequence": 126,
+    "term": "داستان علمی‌تخیلی کوانتومی",
+    "slug": "quantum-fiction",
+    "category": "تاریخ و جامعه",
+    "filename": "glossary-126-quantum-fiction.webp",
+    "alt": "تصویر شاخص مینیمال اصطلاح داستان علمی‌تخیلی کوانتومی در واژه‌نامه تخصصی کوانتوم با نشان qpedia.ir"
+  },
+  {
+    "sequence": 127,
+    "term": "فرهنگ کوانتومی",
+    "slug": "quantum-culture",
+    "category": "تاریخ و جامعه",
+    "filename": "glossary-127-quantum-culture.webp",
+    "alt": "تصویر شاخص مینیمال اصطلاح فرهنگ کوانتومی در واژه‌نامه تخصصی کوانتوم با نشان qpedia.ir"
+  },
+  {
+    "sequence": 128,
+    "term": "زمستان کوانتومی",
+    "slug": "quantum-winter",
+    "category": "رایانش کوانتومی",
+    "filename": "glossary-128-quantum-winter.webp",
+    "alt": "تصویر شاخص مینیمال اصطلاح زمستان کوانتومی در واژه‌نامه تخصصی کوانتوم با نشان qpedia.ir"
+  },
+  {
+    "sequence": 129,
+    "term": "تکینگی کوانتومی",
+    "slug": "quantum-singularity",
+    "category": "کیهان کوانتومی",
+    "filename": "glossary-129-quantum-singularity.webp",
+    "alt": "تصویر شاخص مینیمال اصطلاح تکینگی کوانتومی در واژه‌نامه تخصصی کوانتوم با نشان qpedia.ir"
+  },
+  {
+    "sequence": 130,
+    "term": "کوانتوم و سرطان",
+    "slug": "quantum-cancer",
+    "category": "زیست و پزشکی",
+    "filename": "glossary-130-quantum-cancer.webp",
+    "alt": "تصویر شاخص مینیمال اصطلاح کوانتوم و سرطان در واژه‌نامه تخصصی کوانتوم با نشان qpedia.ir"
+  },
+  {
+    "sequence": 131,
+    "term": "کوانتوم در باکتری‌ها",
+    "slug": "quantum-bacteria",
+    "category": "زیست و پزشکی",
+    "filename": "glossary-131-quantum-bacteria.webp",
+    "alt": "تصویر شاخص مینیمال اصطلاح کوانتوم در باکتری‌ها در واژه‌نامه تخصصی کوانتوم با نشان qpedia.ir"
+  },
+  {
+    "sequence": 132,
+    "term": "کوانتوم در ویروس‌ها",
+    "slug": "quantum-viruses",
+    "category": "زیست و پزشکی",
+    "filename": "glossary-132-quantum-viruses.webp",
+    "alt": "تصویر شاخص مینیمال اصطلاح کوانتوم در ویروس‌ها در واژه‌نامه تخصصی کوانتوم با نشان qpedia.ir"
+  },
+  {
+    "sequence": 133,
+    "term": "تابش شتاب و اثر اونرو",
+    "slug": "acceleration-radiation",
+    "category": "کیهان کوانتومی",
+    "filename": "glossary-133-acceleration-radiation.webp",
+    "alt": "تصویر شاخص مینیمال اصطلاح تابش شتاب و اثر اونرو در واژه‌نامه تخصصی کوانتوم با نشان qpedia.ir"
+  },
+  {
+    "sequence": 134,
+    "term": "میکروسکوپ کوانتومی",
+    "slug": "quantum-microscopy",
+    "category": "نور کوانتومی",
+    "filename": "glossary-134-quantum-microscopy.webp",
+    "alt": "تصویر شاخص مینیمال اصطلاح میکروسکوپ کوانتومی در واژه‌نامه تخصصی کوانتوم با نشان qpedia.ir"
+  },
+  {
+    "sequence": 135,
+    "term": "رایانش کوانتومی ابری",
+    "slug": "quantum-cloud",
+    "category": "رایانش کوانتومی",
+    "filename": "glossary-135-quantum-cloud.webp",
+    "alt": "تصویر شاخص مینیمال اصطلاح رایانش کوانتومی ابری در واژه‌نامه تخصصی کوانتوم با نشان qpedia.ir"
+  },
+  {
+    "sequence": 136,
+    "term": "الگوریتم گروور",
+    "slug": "grover-algorithm",
+    "category": "رایانش کوانتومی",
+    "filename": "glossary-136-grover-algorithm.webp",
+    "alt": "تصویر شاخص مینیمال اصطلاح الگوریتم گروور در واژه‌نامه تخصصی کوانتوم با نشان qpedia.ir"
+  },
+  {
+    "sequence": 137,
+    "term": "قضیه عدم‌کپی کوانتومی",
+    "slug": "no-cloning-theorem",
+    "category": "مفاهیم پایه",
+    "filename": "glossary-137-no-cloning-theorem.webp",
+    "alt": "تصویر شاخص مینیمال اصطلاح قضیه عدم‌کپی کوانتومی در واژه‌نامه تخصصی کوانتوم با نشان qpedia.ir"
+  },
+  {
+    "sequence": 138,
+    "term": "شبیه‌سازی کوانتومی",
+    "slug": "quantum-simulation",
+    "category": "رایانش کوانتومی",
+    "filename": "glossary-138-quantum-simulation.webp",
+    "alt": "تصویر شاخص مینیمال اصطلاح شبیه‌سازی کوانتومی در واژه‌نامه تخصصی کوانتوم با نشان qpedia.ir"
+  },
+  {
+    "sequence": 139,
+    "term": "بازتاب کلی درونی",
+    "slug": "fiber-optics",
+    "category": "حسگرها و ابزارها",
+    "filename": "glossary-139-fiber-optics.webp",
+    "alt": "تصویر شاخص مینیمال اصطلاح بازتاب کلی درونی در واژه‌نامه تخصصی کوانتوم با نشان qpedia.ir"
+  },
+  {
+    "sequence": 140,
+    "term": "فتوسنتز کوانتومی",
+    "slug": "quantum-bacteria",
+    "category": "زیست و پزشکی",
+    "filename": "glossary-140-quantum-bacteria.webp",
+    "alt": "تصویر شاخص مینیمال اصطلاح فتوسنتز کوانتومی در واژه‌نامه تخصصی کوانتوم با نشان qpedia.ir"
+  },
+  {
+    "sequence": 141,
+    "term": "پالس آتوثانیه",
+    "slug": "attosecond-nobel-2023",
+    "category": "تاریخ و جامعه",
+    "filename": "glossary-141-attosecond-nobel-2023.webp",
+    "alt": "تصویر شاخص مینیمال اصطلاح پالس آتوثانیه در واژه‌نامه تخصصی کوانتوم با نشان qpedia.ir"
+  },
+  {
+    "sequence": 142,
+    "term": "پروتکل BB84",
+    "slug": "quantum-cryptography-internet-security",
+    "category": "ارتباطات کوانتومی",
+    "filename": "glossary-142-quantum-cryptography-internet-security.webp",
+    "alt": "تصویر شاخص مینیمال اصطلاح پروتکل BB84 در واژه‌نامه تخصصی کوانتوم با نشان qpedia.ir"
+  },
+  {
+    "sequence": 143,
+    "term": "چاه کوانتومی",
+    "slug": "quantum-dots-displays",
+    "category": "حسگرها و ابزارها",
+    "filename": "glossary-143-quantum-dots-displays.webp",
+    "alt": "تصویر شاخص مینیمال اصطلاح چاه کوانتومی در واژه‌نامه تخصصی کوانتوم با نشان qpedia.ir"
+  },
+  {
+    "sequence": 144,
+    "term": "ثابت کیهان‌شناسی",
+    "slug": "dark-energy-quantum",
+    "category": "کیهان کوانتومی",
+    "filename": "glossary-144-dark-energy-quantum.webp",
+    "alt": "تصویر شاخص مینیمال اصطلاح ثابت کیهان‌شناسی در واژه‌نامه تخصصی کوانتوم با نشان qpedia.ir"
+  },
+  {
+    "sequence": 145,
+    "term": "آزمایش فکری",
+    "slug": "schrodinger-cat",
+    "category": "فلسفه کوانتوم",
+    "filename": "glossary-145-schrodinger-cat.webp",
+    "alt": "تصویر شاخص مینیمال اصطلاح آزمایش فکری در واژه‌نامه تخصصی کوانتوم با نشان qpedia.ir"
+  },
+  {
+    "sequence": 146,
+    "term": "مرز پلانک",
+    "slug": "quantum-gravity",
+    "category": "کیهان کوانتومی",
+    "filename": "glossary-146-quantum-gravity.webp",
+    "alt": "تصویر شاخص مینیمال اصطلاح مرز پلانک در واژه‌نامه تخصصی کوانتوم با نشان qpedia.ir"
+  },
+  {
+    "sequence": 147,
+    "term": "حس مغناطیسی",
+    "slug": "quantum-navigation",
+    "category": "حسگرها و ابزارها",
+    "filename": "glossary-147-quantum-navigation.webp",
+    "alt": "تصویر شاخص مینیمال اصطلاح حس مغناطیسی در واژه‌نامه تخصصی کوانتوم با نشان qpedia.ir"
+  },
+  {
+    "sequence": 148,
+    "term": "اثر هال کوانتومی",
+    "slug": "topological-insulator",
+    "category": "مواد کوانتومی",
+    "filename": "glossary-148-topological-insulator.webp",
+    "alt": "تصویر شاخص مینیمال اصطلاح اثر هال کوانتومی در واژه‌نامه تخصصی کوانتوم با نشان qpedia.ir"
+  },
+  {
+    "sequence": 149,
+    "term": "گرافن",
+    "slug": "transistor-quantum",
+    "category": "حسگرها و ابزارها",
+    "filename": "glossary-149-transistor-quantum.webp",
+    "alt": "تصویر شاخص مینیمال اصطلاح گرافن در واژه‌نامه تخصصی کوانتوم با نشان qpedia.ir"
+  },
+  {
+    "sequence": 150,
+    "term": "فضای هیلبرت",
+    "slug": "why-quantum-math-works",
+    "category": "تاریخ و جامعه",
+    "filename": "glossary-150-why-quantum-math-works.webp",
+    "alt": "تصویر شاخص مینیمال اصطلاح فضای هیلبرت در واژه‌نامه تخصصی کوانتوم با نشان qpedia.ir"
+  },
+  {
+    "sequence": 151,
+    "term": "عملگر کوانتومی",
+    "slug": "why-quantum-math-works",
+    "category": "تاریخ و جامعه",
+    "filename": "glossary-151-why-quantum-math-works.webp",
+    "alt": "تصویر شاخص مینیمال اصطلاح عملگر کوانتومی در واژه‌نامه تخصصی کوانتوم با نشان qpedia.ir"
+  },
+  {
+    "sequence": 152,
+    "term": "مقدار ویژه",
+    "slug": "energy-levels",
+    "category": "مفاهیم پایه",
+    "filename": "glossary-152-energy-levels.webp",
+    "alt": "تصویر شاخص مینیمال اصطلاح مقدار ویژه در واژه‌نامه تخصصی کوانتوم با نشان qpedia.ir"
+  },
+  {
+    "sequence": 153,
+    "term": "حالت ویژه",
+    "slug": "quantum-state",
+    "category": "مفاهیم پایه",
+    "filename": "glossary-153-quantum-state.webp",
+    "alt": "تصویر شاخص مینیمال اصطلاح حالت ویژه در واژه‌نامه تخصصی کوانتوم با نشان qpedia.ir"
+  },
+  {
+    "sequence": 154,
+    "term": "برا و کت",
+    "slug": "why-quantum-math-works",
+    "category": "تاریخ و جامعه",
+    "filename": "glossary-154-why-quantum-math-works.webp",
+    "alt": "تصویر شاخص مینیمال اصطلاح برا و کت در واژه‌نامه تخصصی کوانتوم با نشان qpedia.ir"
+  },
+  {
+    "sequence": 155,
+    "term": "ماتریس چگالی",
+    "slug": "quantum-state",
+    "category": "مفاهیم پایه",
+    "filename": "glossary-155-quantum-state.webp",
+    "alt": "تصویر شاخص مینیمال اصطلاح ماتریس چگالی در واژه‌نامه تخصصی کوانتوم با نشان qpedia.ir"
+  },
+  {
+    "sequence": 156,
+    "term": "حالت خالص",
+    "slug": "quantum-state",
+    "category": "مفاهیم پایه",
+    "filename": "glossary-156-quantum-state.webp",
+    "alt": "تصویر شاخص مینیمال اصطلاح حالت خالص در واژه‌نامه تخصصی کوانتوم با نشان qpedia.ir"
+  },
+  {
+    "sequence": 157,
+    "term": "حالت آمیزه‌ای",
+    "slug": "decoherence",
+    "category": "مفاهیم پایه",
+    "filename": "glossary-157-decoherence.webp",
+    "alt": "تصویر شاخص مینیمال اصطلاح حالت آمیزه‌ای در واژه‌نامه تخصصی کوانتوم با نشان qpedia.ir"
+  },
+  {
+    "sequence": 158,
+    "term": "رد جزئی",
+    "slug": "entanglement-quantum-computers",
+    "category": "مفاهیم پایه",
+    "filename": "glossary-158-entanglement-quantum-computers.webp",
+    "alt": "تصویر شاخص مینیمال اصطلاح رد جزئی در واژه‌نامه تخصصی کوانتوم با نشان qpedia.ir"
+  },
+  {
+    "sequence": 159,
+    "term": "پایه اندازه‌گیری",
+    "slug": "quantum-measurement",
+    "category": "مفاهیم پایه",
+    "filename": "glossary-159-quantum-measurement.webp",
+    "alt": "تصویر شاخص مینیمال اصطلاح پایه اندازه‌گیری در واژه‌نامه تخصصی کوانتوم با نشان qpedia.ir"
+  },
+  {
+    "sequence": 160,
+    "term": "مشاهده‌پذیر",
+    "slug": "quantum-measurement",
+    "category": "مفاهیم پایه",
+    "filename": "glossary-160-quantum-measurement.webp",
+    "alt": "تصویر شاخص مینیمال اصطلاح مشاهده‌پذیر در واژه‌نامه تخصصی کوانتوم با نشان qpedia.ir"
+  },
+  {
+    "sequence": 161,
+    "term": "جابجایی‌گر",
+    "slug": "heisenberg-uncertainty-principle",
+    "category": "مفاهیم پایه",
+    "filename": "glossary-161-heisenberg-uncertainty-principle.webp",
+    "alt": "تصویر شاخص مینیمال اصطلاح جابجایی‌گر در واژه‌نامه تخصصی کوانتوم با نشان qpedia.ir"
+  },
+  {
+    "sequence": 162,
+    "term": "فاز نسبی",
+    "slug": "coherence",
+    "category": "مفاهیم پایه",
+    "filename": "glossary-162-coherence.webp",
+    "alt": "تصویر شاخص مینیمال اصطلاح فاز نسبی در واژه‌نامه تخصصی کوانتوم با نشان qpedia.ir"
+  },
+  {
+    "sequence": 163,
+    "term": "فاز کلی",
+    "slug": "aharonov-bohm-effect",
+    "category": "مفاهیم پایه",
+    "filename": "glossary-163-aharonov-bohm-effect.webp",
+    "alt": "تصویر شاخص مینیمال اصطلاح فاز کلی در واژه‌نامه تخصصی کوانتوم با نشان qpedia.ir"
+  },
+  {
+    "sequence": 164,
+    "term": "قاعده بورن",
+    "slug": "born-probability",
+    "category": "مفاهیم پایه",
+    "filename": "glossary-164-born-probability.webp",
+    "alt": "تصویر شاخص مینیمال اصطلاح قاعده بورن در واژه‌نامه تخصصی کوانتوم با نشان qpedia.ir"
+  },
+  {
+    "sequence": 165,
+    "term": "تحول واحدی",
+    "slug": "decoherence",
+    "category": "مفاهیم پایه",
+    "filename": "glossary-165-decoherence.webp",
+    "alt": "تصویر شاخص مینیمال اصطلاح تحول واحدی در واژه‌نامه تخصصی کوانتوم با نشان qpedia.ir"
+  },
+  {
+    "sequence": 166,
+    "term": "معادله شرودینگر",
+    "slug": "wave-function",
+    "category": "مفاهیم پایه",
+    "filename": "glossary-166-wave-function.webp",
+    "alt": "تصویر شاخص مینیمال اصطلاح معادله شرودینگر در واژه‌نامه تخصصی کوانتوم با نشان qpedia.ir"
+  },
+  {
+    "sequence": 167,
+    "term": "معادله دیراک",
+    "slug": "antimatter",
+    "category": "ذرات و نیروها",
+    "filename": "glossary-167-antimatter.webp",
+    "alt": "تصویر شاخص مینیمال اصطلاح معادله دیراک در واژه‌نامه تخصصی کوانتوم با نشان qpedia.ir"
+  },
+  {
+    "sequence": 168,
+    "term": "معادله هایزنبرگ",
+    "slug": "heisenberg-uncertainty-principle",
+    "category": "مفاهیم پایه",
+    "filename": "glossary-168-heisenberg-uncertainty-principle.webp",
+    "alt": "تصویر شاخص مینیمال اصطلاح معادله هایزنبرگ در واژه‌نامه تخصصی کوانتوم با نشان qpedia.ir"
+  },
+  {
+    "sequence": 169,
+    "term": "انتگرال مسیر",
+    "slug": "why-quantum-math-works",
+    "category": "تاریخ و جامعه",
+    "filename": "glossary-169-why-quantum-math-works.webp",
+    "alt": "تصویر شاخص مینیمال اصطلاح انتگرال مسیر در واژه‌نامه تخصصی کوانتوم با نشان qpedia.ir"
+  },
+  {
+    "sequence": 170,
+    "term": "کنش",
+    "slug": "planck-constant",
+    "category": "مفاهیم پایه",
+    "filename": "glossary-170-planck-constant.webp",
+    "alt": "تصویر شاخص مینیمال اصطلاح کنش در واژه‌نامه تخصصی کوانتوم با نشان qpedia.ir"
+  },
+  {
+    "sequence": 171,
+    "term": "بسته موج",
+    "slug": "wave-particle-duality",
+    "category": "مفاهیم پایه",
+    "filename": "glossary-171-wave-particle-duality.webp",
+    "alt": "تصویر شاخص مینیمال اصطلاح بسته موج در واژه‌نامه تخصصی کوانتوم با نشان qpedia.ir"
+  },
+  {
+    "sequence": 172,
+    "term": "سرعت گروه",
+    "slug": "slow-light",
+    "category": "نور کوانتومی",
+    "filename": "glossary-172-slow-light.webp",
+    "alt": "تصویر شاخص مینیمال اصطلاح سرعت گروه در واژه‌نامه تخصصی کوانتوم با نشان qpedia.ir"
+  },
+  {
+    "sequence": 173,
+    "term": "سرعت فاز",
+    "slug": "slow-light",
+    "category": "نور کوانتومی",
+    "filename": "glossary-173-slow-light.webp",
+    "alt": "تصویر شاخص مینیمال اصطلاح سرعت فاز در واژه‌نامه تخصصی کوانتوم با نشان qpedia.ir"
+  },
+  {
+    "sequence": 174,
+    "term": "فضای پیکربندی",
+    "slug": "quantum-entanglement-explained",
+    "category": "مفاهیم پایه",
+    "filename": "glossary-174-quantum-entanglement-explained.webp",
+    "alt": "تصویر شاخص مینیمال اصطلاح فضای پیکربندی در واژه‌نامه تخصصی کوانتوم با نشان qpedia.ir"
+  },
+  {
+    "sequence": 175,
+    "term": "سامانه باز کوانتومی",
+    "slug": "decoherence",
+    "category": "مفاهیم پایه",
+    "filename": "glossary-175-decoherence.webp",
+    "alt": "تصویر شاخص مینیمال اصطلاح سامانه باز کوانتومی در واژه‌نامه تخصصی کوانتوم با نشان qpedia.ir"
+  },
+  {
+    "sequence": 176,
+    "term": "سامانه بسته کوانتومی",
+    "slug": "why-large-objects-dont-superpose",
+    "category": "مفاهیم پایه",
+    "filename": "glossary-176-why-large-objects-dont-superpose.webp",
+    "alt": "تصویر شاخص مینیمال اصطلاح سامانه بسته کوانتومی در واژه‌نامه تخصصی کوانتوم با نشان qpedia.ir"
+  },
+  {
+    "sequence": 177,
+    "term": "مخزن کوانتومی",
+    "slug": "decoherence",
+    "category": "مفاهیم پایه",
+    "filename": "glossary-177-decoherence.webp",
+    "alt": "تصویر شاخص مینیمال اصطلاح مخزن کوانتومی در واژه‌نامه تخصصی کوانتوم با نشان qpedia.ir"
+  },
+  {
+    "sequence": 178,
+    "term": "نویز کوانتومی",
+    "slug": "quantum-error-correction",
+    "category": "رایانش کوانتومی",
+    "filename": "glossary-178-quantum-error-correction.webp",
+    "alt": "تصویر شاخص مینیمال اصطلاح نویز کوانتومی در واژه‌نامه تخصصی کوانتوم با نشان qpedia.ir"
+  },
+  {
+    "sequence": 179,
+    "term": "توموگرافی کوانتومی",
+    "slug": "quantum-state",
+    "category": "مفاهیم پایه",
+    "filename": "glossary-179-quantum-state.webp",
+    "alt": "تصویر شاخص مینیمال اصطلاح توموگرافی کوانتومی در واژه‌نامه تخصصی کوانتوم با نشان qpedia.ir"
+  },
+  {
+    "sequence": 180,
+    "term": "وفاداری کوانتومی",
+    "slug": "quantum-error-correction",
+    "category": "رایانش کوانتومی",
+    "filename": "glossary-180-quantum-error-correction.webp",
+    "alt": "تصویر شاخص مینیمال اصطلاح وفاداری کوانتومی در واژه‌نامه تخصصی کوانتوم با نشان qpedia.ir"
+  },
+  {
+    "sequence": 181,
+    "term": "آنتروپی فون نویمان",
+    "slug": "quantum-thermodynamics",
+    "category": "مفاهیم پایه",
+    "filename": "glossary-181-quantum-thermodynamics.webp",
+    "alt": "تصویر شاخص مینیمال اصطلاح آنتروپی فون نویمان در واژه‌نامه تخصصی کوانتوم با نشان qpedia.ir"
+  },
+  {
+    "sequence": 182,
+    "term": "آنتروپی درهم‌تنیدگی",
+    "slug": "entanglement-quantum-computers",
+    "category": "مفاهیم پایه",
+    "filename": "glossary-182-entanglement-quantum-computers.webp",
+    "alt": "تصویر شاخص مینیمال اصطلاح آنتروپی درهم‌تنیدگی در واژه‌نامه تخصصی کوانتوم با نشان qpedia.ir"
+  },
+  {
+    "sequence": 183,
+    "term": "سرعت نور",
+    "slug": "entanglement-myths",
+    "category": "مفاهیم پایه",
+    "filename": "glossary-183-entanglement-myths.webp",
+    "alt": "تصویر شاخص مینیمال اصطلاح سرعت نور در واژه‌نامه تخصصی کوانتوم با نشان qpedia.ir"
+  },
+  {
+    "sequence": 184,
+    "term": "تبادل درهم‌تنیدگی",
+    "slug": "nobel-physics-2022",
+    "category": "تاریخ و جامعه",
+    "filename": "glossary-184-nobel-physics-2022.webp",
+    "alt": "تصویر شاخص مینیمال اصطلاح تبادل درهم‌تنیدگی در واژه‌نامه تخصصی کوانتوم با نشان qpedia.ir"
+  },
+  {
+    "sequence": 185,
+    "term": "تقطیر درهم‌تنیدگی",
+    "slug": "quantum-network",
+    "category": "ارتباطات کوانتومی",
+    "filename": "glossary-185-quantum-network.webp",
+    "alt": "تصویر شاخص مینیمال اصطلاح تقطیر درهم‌تنیدگی در واژه‌نامه تخصصی کوانتوم با نشان qpedia.ir"
+  },
+  {
+    "sequence": 186,
+    "term": "گیت هادامارد",
+    "slug": "quantum-gate",
+    "category": "رایانش کوانتومی",
+    "filename": "glossary-186-quantum-gate.webp",
+    "alt": "تصویر شاخص مینیمال اصطلاح گیت هادامارد در واژه‌نامه تخصصی کوانتوم با نشان qpedia.ir"
+  },
+  {
+    "sequence": 187,
+    "term": "گیت CNOT",
+    "slug": "quantum-gate",
+    "category": "رایانش کوانتومی",
+    "filename": "glossary-187-quantum-gate.webp",
+    "alt": "تصویر شاخص مینیمال اصطلاح گیت CNOT در واژه‌نامه تخصصی کوانتوم با نشان qpedia.ir"
+  },
+  {
+    "sequence": 188,
+    "term": "گیت فاز",
+    "slug": "quantum-gate",
+    "category": "رایانش کوانتومی",
+    "filename": "glossary-188-quantum-gate.webp",
+    "alt": "تصویر شاخص مینیمال اصطلاح گیت فاز در واژه‌نامه تخصصی کوانتوم با نشان qpedia.ir"
+  },
+  {
+    "sequence": 189,
+    "term": "کره بلاخ",
+    "slug": "qubit",
+    "category": "رایانش کوانتومی",
+    "filename": "glossary-189-qubit.webp",
+    "alt": "تصویر شاخص مینیمال اصطلاح کره بلاخ در واژه‌نامه تخصصی کوانتوم با نشان qpedia.ir"
+  },
+  {
+    "sequence": 190,
+    "term": "عمق مدار",
+    "slug": "nobel-physics-2025",
+    "category": "تاریخ و جامعه",
+    "filename": "glossary-190-nobel-physics-2025.webp",
+    "alt": "تصویر شاخص مینیمال اصطلاح عمق مدار در واژه‌نامه تخصصی کوانتوم با نشان qpedia.ir"
+  },
+  {
+    "sequence": 191,
+    "term": "کد سطحی",
+    "slug": "quantum-error-correction",
+    "category": "رایانش کوانتومی",
+    "filename": "glossary-191-quantum-error-correction.webp",
+    "alt": "تصویر شاخص مینیمال اصطلاح کد سطحی در واژه‌نامه تخصصی کوانتوم با نشان qpedia.ir"
+  },
+  {
+    "sequence": 192,
+    "term": "فاصله کد",
+    "slug": "quantum-error-correction",
+    "category": "رایانش کوانتومی",
+    "filename": "glossary-192-quantum-error-correction.webp",
+    "alt": "تصویر شاخص مینیمال اصطلاح فاصله کد در واژه‌نامه تخصصی کوانتوم با نشان qpedia.ir"
+  },
+  {
+    "sequence": 193,
+    "term": "آستانه خطا",
+    "slug": "topological-quantum-computing",
+    "category": "رایانش کوانتومی",
+    "filename": "glossary-193-topological-quantum-computing.webp",
+    "alt": "تصویر شاخص مینیمال اصطلاح آستانه خطا در واژه‌نامه تخصصی کوانتوم با نشان qpedia.ir"
+  },
+  {
+    "sequence": 194,
+    "term": "معیارسنجی تصادفی",
+    "slug": "quantum-error-correction",
+    "category": "رایانش کوانتومی",
+    "filename": "glossary-194-quantum-error-correction.webp",
+    "alt": "تصویر شاخص مینیمال اصطلاح معیارسنجی تصادفی در واژه‌نامه تخصصی کوانتوم با نشان qpedia.ir"
+  },
+  {
+    "sequence": 195,
+    "term": "همدوسی زمانی",
+    "slug": "coherence",
+    "category": "مفاهیم پایه",
+    "filename": "glossary-195-coherence.webp",
+    "alt": "تصویر شاخص مینیمال اصطلاح همدوسی زمانی در واژه‌نامه تخصصی کوانتوم با نشان qpedia.ir"
+  },
+  {
+    "sequence": 196,
+    "term": "زمان T1",
+    "slug": "decoherence",
+    "category": "مفاهیم پایه",
+    "filename": "glossary-196-decoherence.webp",
+    "alt": "تصویر شاخص مینیمال اصطلاح زمان T1 در واژه‌نامه تخصصی کوانتوم با نشان qpedia.ir"
+  },
+  {
+    "sequence": 197,
+    "term": "زمان T2",
+    "slug": "decoherence",
+    "category": "مفاهیم پایه",
+    "filename": "glossary-197-decoherence.webp",
+    "alt": "تصویر شاخص مینیمال اصطلاح زمان T2 در واژه‌نامه تخصصی کوانتوم با نشان qpedia.ir"
+  },
+  {
+    "sequence": 198,
+    "term": "شات کوانتومی",
+    "slug": "quantum-cloud",
+    "category": "رایانش کوانتومی",
+    "filename": "glossary-198-quantum-cloud.webp",
+    "alt": "تصویر شاخص مینیمال اصطلاح شات کوانتومی در واژه‌نامه تخصصی کوانتوم با نشان qpedia.ir"
+  },
+  {
+    "sequence": 199,
+    "term": "پس‌انتخاب",
+    "slug": "wheeler-delayed-choice",
+    "category": "تاریخ و جامعه",
+    "filename": "glossary-199-wheeler-delayed-choice.webp",
+    "alt": "تصویر شاخص مینیمال اصطلاح پس‌انتخاب در واژه‌نامه تخصصی کوانتوم با نشان qpedia.ir"
+  },
+  {
+    "sequence": 200,
+    "term": "کدگذاری دامنه",
+    "slug": "quantum-machine-learning",
+    "category": "هوش مصنوعی کوانتومی",
+    "filename": "glossary-200-quantum-machine-learning.webp",
+    "alt": "تصویر شاخص مینیمال اصطلاح کدگذاری دامنه در واژه‌نامه تخصصی کوانتوم با نشان qpedia.ir"
+  }
+]
