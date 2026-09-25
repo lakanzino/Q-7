@@ -80,7 +80,8 @@ for src_name, (slug, title_fa, alt_fa) in sorted(IMAGE_MAP.items()):
     
     assert src_file.exists(), f'Missing {src_file}'
     
-    # 16:9 resize & crop to 1200x675 with ImageMagick
+    font = '/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf'
+    # 16:9 resize & crop to 1200x675 with ImageMagick + standard qpedia.ir watermark badge
     cmd = [
         'convert', str(src_file),
         '-auto-orient',
@@ -88,7 +89,13 @@ for src_name, (slug, title_fa, alt_fa) in sorted(IMAGE_MAP.items()):
         '-gravity', 'center',
         '-extent', '1200x675',
         '-strip',
-        '-quality', '82',
+        '(', '-size', '130x34', 'xc:none',
+        '-fill', 'rgba(10, 18, 32, 0.65)', '-draw', 'roundrectangle 0,0 129,33 7,7',
+        '-stroke', 'rgba(0, 212, 255, 0.45)', '-strokewidth', '1', '-draw', 'roundrectangle 0,0 129,33 7,7',
+        '-font', font, '-pointsize', '14', '-fill', 'rgba(232, 244, 252, 0.95)',
+        '-gravity', 'center', '-annotate', '+0+0', 'qpedia.ir', ')',
+        '-gravity', 'NorthEast', '-geometry', '+35+30', '-composite',
+        '-quality', '85',
         str(dst_file)
     ]
     subprocess.run(cmd, check=True)
