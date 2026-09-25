@@ -413,7 +413,7 @@ def main():
 defined('ABSPATH') || exit;
 
 add_action('admin_menu', 'qp_glossary_img_menu');
-function q_glossary_img_menu() {
+function qp_glossary_img_menu() {
     add_management_page(
         'اتصال تصاویر اصطلاحات واژه‌نامه',
         'تصاویر واژه‌نامه (200)',
