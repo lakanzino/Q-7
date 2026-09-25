@@ -1,0 +1,38 @@
+[
+  {
+    "slug": "quantum-time-travel",
+    "title": "سفر در زمان",
+    "filename": "quantum-time-travel.webp",
+    "alt": "تصویر شاخص سفر در زمان از منظر فیزیک کوانتوم و نسبیت با نشان qpedia.ir"
+  },
+  {
+    "slug": "quantum-tunneling",
+    "title": "تونل‌زنی کوانتومی",
+    "filename": "quantum-tunneling.webp",
+    "alt": "تصویر شاخص تونل‌زنی کوانتومی و عبور ذره از سد پتانسیل با نشان qpedia.ir"
+  },
+  {
+    "slug": "quantum-superposition",
+    "title": "برهم‌نهی کوانتومی",
+    "filename": "quantum-superposition.webp",
+    "alt": "تصویر شاخص برهم‌نهی کوانتومی و حالت‌های چندگانه با نشان qpedia.ir"
+  },
+  {
+    "slug": "quantum-state",
+    "title": "حالت کوانتومی چیست؟",
+    "filename": "quantum-state.webp",
+    "alt": "تصویر شاخص بردار حالت کوانتومی در فضای هیلبرت با نشان qpedia.ir"
+  },
+  {
+    "slug": "quantum-spin",
+    "title": "اسپین؛ چرخشی که چرخش نیست",
+    "filename": "quantum-spin.webp",
+    "alt": "تصویر شاخص اسپین کوانتومی و تکانه زاویه‌ای ذاتی با نشان qpedia.ir"
+  },
+  {
+    "slug": "quantum-random-number-generator",
+    "title": "مولد عدد تصادفی کوانتومی",
+    "filename": "quantum-random-number-generator.webp",
+    "alt": "تصویر شاخص تولید اعداد تصادفی واقعی با کوانتوم با نشان qpedia.ir"
+  }
+]
