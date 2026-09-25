@@ -1,0 +1,32 @@
+[
+  {
+    "slug": "ultraviolet-catastrophe",
+    "title": "فاجعهٔ فرابنفش",
+    "filename": "ultraviolet-catastrophe.webp",
+    "alt": "تصویر شاخص فاجعه فرابنفش و تابش جسم سیاه"
+  },
+  {
+    "slug": "vacuum-fluctuations",
+    "title": "نوسانات خلأ",
+    "filename": "vacuum-fluctuations.webp",
+    "alt": "تصویر شاخص افت‌وخیز کوانتومی و انرژی نقطه صفر خلأ"
+  },
+  {
+    "slug": "variational-quantum-eigensolver",
+    "title": "حلقه الگوریتم تغییراتی کوانتومی",
+    "filename": "variational-quantum-eigensolver.webp",
+    "alt": "حلقه الگوریتم تغییراتی کوانتومی"
+  },
+  {
+    "slug": "virtual-particles",
+    "title": "ذرات مجازی",
+    "filename": "virtual-particles.webp",
+    "alt": "تصویر شاخص ذرات مجازی در میدان‌های کوانتومی"
+  },
+  {
+    "slug": "wave-function",
+    "title": "تابع موج چیست؟",
+    "filename": "wave-function.webp",
+    "alt": "تصویر شاخص تابع موج کوانتومی و معادله شرودینگر"
+  }
+]

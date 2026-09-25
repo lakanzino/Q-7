@@ -1,0 +1,32 @@
+[
+  {
+    "slug": "polaron",
+    "title": "پولارون در شبکه بلوری",
+    "filename": "polaron.webp",
+    "alt": "پولارون در شبکه بلوری"
+  },
+  {
+    "slug": "proton-decay",
+    "title": "واپاشی پروتون",
+    "filename": "proton-decay.webp",
+    "alt": "واپاشی پروتون"
+  },
+  {
+    "slug": "qaoa",
+    "title": "الگوریتم بهینه‌سازی تقریبی کوانتومی",
+    "filename": "qaoa.webp",
+    "alt": "الگوریتم بهینه‌سازی تقریبی کوانتومی"
+  },
+  {
+    "slug": "quantum-analogy-exercise-boundary",
+    "title": "نیلز بور و اصل تکمیل",
+    "filename": "quantum-analogy-exercise-boundary.webp",
+    "alt": "تصویر شاخص نیلز بور، اصل تکمیل و مرز شکست تمثیل"
+  },
+  {
+    "slug": "quantum-anesthesia",
+    "title": "بیهوشی و فرضیه‌های کوانتومی",
+    "filename": "quantum-anesthesia.webp",
+    "alt": "بیهوشی و فرضیه‌های کوانتومی"
+  }
+]

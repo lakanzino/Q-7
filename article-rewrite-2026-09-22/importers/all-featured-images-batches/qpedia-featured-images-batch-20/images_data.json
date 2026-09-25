@@ -1,0 +1,32 @@
+[
+  {
+    "slug": "quantum-droplet",
+    "title": "قطره کوانتومی خودبسته",
+    "filename": "quantum-droplet.webp",
+    "alt": "قطره کوانتومی خودبسته"
+  },
+  {
+    "slug": "quantum-electrodynamics",
+    "title": "الکترودینامیک کوانتومی",
+    "filename": "quantum-electrodynamics.webp",
+    "alt": "الکترودینامیک کوانتومی"
+  },
+  {
+    "slug": "quantum-engine-efficiency",
+    "title": "بازده موتور کوانتومی",
+    "filename": "quantum-engine-efficiency.webp",
+    "alt": "بازده موتور کوانتومی"
+  },
+  {
+    "slug": "quantum-entanglement-explained",
+    "title": "درهم‌تنیدگی کوانتومی",
+    "filename": "quantum-entanglement-explained.webp",
+    "alt": "تصویر شاخص درهم‌تنیدگی کوانتومی و هم‌بستگی ذرات"
+  },
+  {
+    "slug": "quantum-entropy",
+    "title": "آنتروپی کوانتومی",
+    "filename": "quantum-entropy.webp",
+    "alt": "آنتروپی کوانتومی"
+  }
+]

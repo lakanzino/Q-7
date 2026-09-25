@@ -1,0 +1,32 @@
+[
+  {
+    "slug": "many-body-localization",
+    "title": "جایگزیدگی چندجسمی",
+    "filename": "many-body-localization.webp",
+    "alt": "جایگزیدگی چندجسمی"
+  },
+  {
+    "slug": "measurement-device-independent-qkd",
+    "title": "توزیع کلید کوانتومی مستقل از دستگاه اندازه‌گیری",
+    "filename": "measurement-device-independent-qkd.webp",
+    "alt": "توزیع کلید کوانتومی مستقل از دستگاه اندازه‌گیری"
+  },
+  {
+    "slug": "mott-insulator",
+    "title": "عایق مات",
+    "filename": "mott-insulator.webp",
+    "alt": "عایق مات"
+  },
+  {
+    "slug": "nanowire",
+    "title": "نانوسیم و ساختارهای نانومتری",
+    "filename": "nanowire.webp",
+    "alt": "نانوسیم و ساختارهای نانومتری"
+  },
+  {
+    "slug": "no-cloning-theorem",
+    "title": "قضیهٔ عدم‌کپی",
+    "filename": "no-cloning-theorem.webp",
+    "alt": "تصویر شاخص قضیه عدم همسانه‌سازی یا کپی کوانتومی"
+  }
+]

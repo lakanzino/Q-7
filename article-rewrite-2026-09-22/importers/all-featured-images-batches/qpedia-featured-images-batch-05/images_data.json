@@ -1,0 +1,32 @@
+[
+  {
+    "slug": "cryogenic-electronics",
+    "title": "الکترونیک سرد درون یخچال برودتی",
+    "filename": "cryogenic-electronics.webp",
+    "alt": "الکترونیک سرد درون یخچال برودتی"
+  },
+  {
+    "slug": "dark-energy-quantum",
+    "title": "انرژی تاریک کوانتومی",
+    "filename": "dark-energy-quantum.webp",
+    "alt": "انرژی تاریک کوانتومی"
+  },
+  {
+    "slug": "decoherence",
+    "title": "واهمدوسی کوانتومی",
+    "filename": "decoherence.webp",
+    "alt": "تصویر شاخص واهمدوسی کوانتومی و گذار به فیزیک کلاسیک"
+  },
+  {
+    "slug": "determinism-vs-probability",
+    "title": "جبرگرایی کلاسیک و احتمال کوانتومی",
+    "filename": "determinism-vs-probability.webp",
+    "alt": "تصویر شاخص جبرگرایی نیوتنی در برابر احتمال کوانتومی"
+  },
+  {
+    "slug": "deutsch-jozsa-algorithm",
+    "title": "مدار الگوریتم دویچ–جوزا",
+    "filename": "deutsch-jozsa-algorithm.webp",
+    "alt": "مدار الگوریتم دویچ–جوزا"
+  }
+]

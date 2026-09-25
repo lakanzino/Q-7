@@ -1,0 +1,32 @@
+[
+  {
+    "slug": "casimir-effect",
+    "title": "اثر کازیمیر",
+    "filename": "casimir-effect.webp",
+    "alt": "تصویر شاخص اثر کازیمیر و نیروی کوانتومی میان صفحات"
+  },
+  {
+    "slug": "cavity-qed",
+    "title": "الکترودینامیک کوانتومی حفره",
+    "filename": "cavity-qed.webp",
+    "alt": "الکترودینامیک کوانتومی حفره"
+  },
+  {
+    "slug": "circuit-qed",
+    "title": "الکترودینامیک کوانتومی مدار",
+    "filename": "circuit-qed.webp",
+    "alt": "الکترودینامیک کوانتومی مدار"
+  },
+  {
+    "slug": "coherence",
+    "title": "همدوسی",
+    "filename": "coherence.webp",
+    "alt": "تصویر شاخص همدوسی کوانتومی و فاز امواج"
+  },
+  {
+    "slug": "coherent-states",
+    "title": "حالت همدوس و نمایش فضای فاز",
+    "filename": "coherent-states.webp",
+    "alt": "حالت همدوس و نمایش فضای فاز"
+  }
+]

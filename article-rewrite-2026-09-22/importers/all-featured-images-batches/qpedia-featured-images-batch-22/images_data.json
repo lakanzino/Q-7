@@ -1,0 +1,32 @@
+[
+  {
+    "slug": "quantum-free-will",
+    "title": "کوانتوم و اراده آزاد",
+    "filename": "quantum-free-will.webp",
+    "alt": "تصویر شاخص فیزیک کوانتومی و مسئله اراده آزاد و آگاهی"
+  },
+  {
+    "slug": "quantum-game-theory",
+    "title": "نظریه بازی کوانتومی",
+    "filename": "quantum-game-theory.webp",
+    "alt": "تصویر مفهومی نظریه بازی کوانتومی، دو مهره شطرنج نوری پیوندیافته با حلقه درهم‌تنیدگی و امواج احتمالاتی"
+  },
+  {
+    "slug": "quantum-games",
+    "title": "بازی‌های کوانتومی",
+    "filename": "quantum-games.webp",
+    "alt": "تصویر مفهومی بازی‌های کوانتومی با صفحه و مهره‌های شطرنج نوری در وضعیت برهم‌نهی کوانتومی"
+  },
+  {
+    "slug": "quantum-generative-model",
+    "title": "مدل مولد کوانتومی",
+    "filename": "quantum-generative-model.webp",
+    "alt": "مدل مولد کوانتومی"
+  },
+  {
+    "slug": "quantum-heat-engine",
+    "title": "موتور گرمایی کوانتومی",
+    "filename": "quantum-heat-engine.webp",
+    "alt": "موتور گرمایی کوانتومی"
+  }
+]

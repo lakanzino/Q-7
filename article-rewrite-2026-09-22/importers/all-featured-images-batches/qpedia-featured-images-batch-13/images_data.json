@@ -1,0 +1,32 @@
+[
+  {
+    "slug": "observer",
+    "title": "ناظر در کوانتوم",
+    "filename": "observer.webp",
+    "alt": "تصویر شاخص اثر ناظر و اندازه‌گیری در فیزیک کوانتومی"
+  },
+  {
+    "slug": "optical-lattice",
+    "title": "شبکه نوری برای به‌دام‌اندازی اتم‌ها",
+    "filename": "optical-lattice.webp",
+    "alt": "شبکه نوری برای به‌دام‌اندازی اتم‌ها"
+  },
+  {
+    "slug": "optical-parametric-oscillator",
+    "title": "نوسانگر پارامتری نوری و تولید سیگنال و آیدلر",
+    "filename": "optical-parametric-oscillator.webp",
+    "alt": "نوسانگر پارامتری نوری و تولید سیگنال و آیدلر"
+  },
+  {
+    "slug": "pauli-exclusion-principle",
+    "title": "اصل طرد پاولی",
+    "filename": "pauli-exclusion-principle.webp",
+    "alt": "تصویر شاخص اصل طرد پاولی و آرایش الکترون‌ها"
+  },
+  {
+    "slug": "phonon",
+    "title": "فونون و ارتعاش شبکه بلوری",
+    "filename": "phonon.webp",
+    "alt": "فونون و ارتعاش شبکه بلوری"
+  }
+]

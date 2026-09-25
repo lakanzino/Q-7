@@ -1,0 +1,32 @@
+[
+  {
+    "slug": "four-wave-mixing",
+    "title": "فرایند چهارموجی در محیط غیرخطی",
+    "filename": "four-wave-mixing.webp",
+    "alt": "فرایند چهارموجی در محیط غیرخطی"
+  },
+  {
+    "slug": "fractional-quantum-hall-effect",
+    "title": "اثر هال کوانتومی کسری",
+    "filename": "fractional-quantum-hall-effect.webp",
+    "alt": "اثر هال کوانتومی کسری"
+  },
+  {
+    "slug": "ghz-state",
+    "title": "حالت درهم‌تنیده GHZ",
+    "filename": "ghz-state.webp",
+    "alt": "حالت درهم‌تنیده GHZ"
+  },
+  {
+    "slug": "hardy-paradox",
+    "title": "چیدمان پارادوکس هاردی",
+    "filename": "hardy-paradox.webp",
+    "alt": "چیدمان پارادوکس هاردی"
+  },
+  {
+    "slug": "heavy-fermion",
+    "title": "فرمیون سنگین",
+    "filename": "heavy-fermion.webp",
+    "alt": "فرمیون سنگین"
+  }
+]

@@ -1,0 +1,32 @@
+[
+  {
+    "slug": "quantum-thermalization",
+    "title": "گرمایی‌شدن کوانتومی",
+    "filename": "quantum-thermalization.webp",
+    "alt": "گرمایی‌شدن کوانتومی"
+  },
+  {
+    "slug": "quantum-thermometry",
+    "title": "دماسنجی کوانتومی",
+    "filename": "quantum-thermometry.webp",
+    "alt": "دماسنجی کوانتومی"
+  },
+  {
+    "slug": "quantum-time-travel",
+    "title": "سفر در زمان",
+    "filename": "quantum-time-travel.webp",
+    "alt": "تصویر شاخص سفر در زمان از منظر فیزیک کوانتوم و نسبیت"
+  },
+  {
+    "slug": "quantum-tunneling",
+    "title": "تونل‌زنی کوانتومی",
+    "filename": "quantum-tunneling.webp",
+    "alt": "تصویر شاخص تونل‌زنی کوانتومی و عبور ذره از سد پتانسیل"
+  },
+  {
+    "slug": "quantum-viruses",
+    "title": "تصویر مفهومی کوانتوم در ویروس‌ها",
+    "filename": "quantum-viruses.webp",
+    "alt": "تصویر مفهومی کوانتوم در ویروس‌ها"
+  }
+]

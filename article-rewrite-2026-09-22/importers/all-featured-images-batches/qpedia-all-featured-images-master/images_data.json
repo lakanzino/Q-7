@@ -1,0 +1,1034 @@
+[
+  {
+    "slug": "absolute-zero",
+    "title": "صفر مطلق چیست؟",
+    "filename": "absolute-zero.webp",
+    "alt": "تصویر شاخص صفر مطلق دما و توقف جنبش گرمایی"
+  },
+  {
+    "slug": "acceleration-radiation",
+    "title": "اثر شتاب و تابش اونرو",
+    "filename": "acceleration-radiation.webp",
+    "alt": "اثر شتاب و تابش اونرو"
+  },
+  {
+    "slug": "aharonov-bohm-effect",
+    "title": "اثر آهارونوف-بوهم",
+    "filename": "aharonov-bohm-effect.webp",
+    "alt": "تصویر شاخص اثر آهارونوف-بوهم و پتانسیل الکترومغناطیسی"
+  },
+  {
+    "slug": "alpha-decay",
+    "title": "واپاشی آلفا",
+    "filename": "alpha-decay.webp",
+    "alt": "تصویر شاخص واپاشی آلفا و تونل‌زنی هسته‌ای"
+  },
+  {
+    "slug": "anomalous-magnetic-moment",
+    "title": "گشتاور مغناطیسی ناهنجار",
+    "filename": "anomalous-magnetic-moment.webp",
+    "alt": "گشتاور مغناطیسی ناهنجار"
+  },
+  {
+    "slug": "anyon",
+    "title": "آنیون و آمار ذرات دوبعدی",
+    "filename": "anyon.webp",
+    "alt": "آنیون و آمار ذرات دوبعدی"
+  },
+  {
+    "slug": "axion",
+    "title": "اکسیون",
+    "filename": "axion.webp",
+    "alt": "اکسیون"
+  },
+  {
+    "slug": "bell-inequality",
+    "title": "نامساوی بل",
+    "filename": "bell-inequality.webp",
+    "alt": "تصویر شاخص قضیه و نامساوی بل در فیزیک کوانتوم"
+  },
+  {
+    "slug": "bernstein-vazirani-algorithm",
+    "title": "مدار الگوریتم برنشتاین–وزیرانی",
+    "filename": "bernstein-vazirani-algorithm.webp",
+    "alt": "مدار الگوریتم برنشتاین–وزیرانی"
+  },
+  {
+    "slug": "bohr-atomic-model",
+    "title": "مدل اتمی بور",
+    "filename": "bohr-atomic-model.webp",
+    "alt": "تصویر شاخص مدل اتمی نیلز بور و مدارهای کوانتومی"
+  },
+  {
+    "slug": "casimir-effect",
+    "title": "اثر کازیمیر",
+    "filename": "casimir-effect.webp",
+    "alt": "تصویر شاخص اثر کازیمیر و نیروی کوانتومی میان صفحات"
+  },
+  {
+    "slug": "cavity-qed",
+    "title": "الکترودینامیک کوانتومی حفره",
+    "filename": "cavity-qed.webp",
+    "alt": "الکترودینامیک کوانتومی حفره"
+  },
+  {
+    "slug": "circuit-qed",
+    "title": "الکترودینامیک کوانتومی مدار",
+    "filename": "circuit-qed.webp",
+    "alt": "الکترودینامیک کوانتومی مدار"
+  },
+  {
+    "slug": "coherence",
+    "title": "همدوسی",
+    "filename": "coherence.webp",
+    "alt": "تصویر شاخص همدوسی کوانتومی و فاز امواج"
+  },
+  {
+    "slug": "coherent-states",
+    "title": "حالت همدوس و نمایش فضای فاز",
+    "filename": "coherent-states.webp",
+    "alt": "حالت همدوس و نمایش فضای فاز"
+  },
+  {
+    "slug": "coin-vs-dice-quantum-uncertainty",
+    "title": "تمثیل تاس در مقابل تمثیل سکه",
+    "filename": "coin-vs-dice-quantum-uncertainty.webp",
+    "alt": "تصویر شاخص تمثیل تاس و سکه در عدم قطعیت کوانتومی"
+  },
+  {
+    "slug": "complementarity-principle",
+    "title": "اصل مکملیت",
+    "filename": "complementarity-principle.webp",
+    "alt": "تصویر شاخص اصل مکملیت نیلز بور در فیزیک کوانتوم"
+  },
+  {
+    "slug": "copenhagen-interpretation",
+    "title": "تفسیر کپنهاگی",
+    "filename": "copenhagen-interpretation.webp",
+    "alt": "تصویر شاخص تفسیر کپنهاگی از مکانیک کوانتومی"
+  },
+  {
+    "slug": "cosmic-inflation",
+    "title": "تورم کیهانی",
+    "filename": "cosmic-inflation.webp",
+    "alt": "تصویر شاخص نظریه تورم کیهانی در کیهان‌شناسی آغازین"
+  },
+  {
+    "slug": "cosmic-microwave-background",
+    "title": "تابش زمینه کیهانی",
+    "filename": "cosmic-microwave-background.webp",
+    "alt": "تصویر شاخص تابش پس‌زمینه کیهانی CMB از انفجار بزرگ"
+  },
+  {
+    "slug": "cryogenic-electronics",
+    "title": "الکترونیک سرد درون یخچال برودتی",
+    "filename": "cryogenic-electronics.webp",
+    "alt": "الکترونیک سرد درون یخچال برودتی"
+  },
+  {
+    "slug": "dark-energy-quantum",
+    "title": "انرژی تاریک کوانتومی",
+    "filename": "dark-energy-quantum.webp",
+    "alt": "انرژی تاریک کوانتومی"
+  },
+  {
+    "slug": "decoherence",
+    "title": "واهمدوسی کوانتومی",
+    "filename": "decoherence.webp",
+    "alt": "تصویر شاخص واهمدوسی کوانتومی و گذار به فیزیک کلاسیک"
+  },
+  {
+    "slug": "determinism-vs-probability",
+    "title": "جبرگرایی کلاسیک و احتمال کوانتومی",
+    "filename": "determinism-vs-probability.webp",
+    "alt": "تصویر شاخص جبرگرایی نیوتنی در برابر احتمال کوانتومی"
+  },
+  {
+    "slug": "deutsch-jozsa-algorithm",
+    "title": "مدار الگوریتم دویچ–جوزا",
+    "filename": "deutsch-jozsa-algorithm.webp",
+    "alt": "مدار الگوریتم دویچ–جوزا"
+  },
+  {
+    "slug": "device-independent-qkd",
+    "title": "توزیع کلید کوانتومی مستقل از دستگاه",
+    "filename": "device-independent-qkd.webp",
+    "alt": "توزیع کلید کوانتومی مستقل از دستگاه"
+  },
+  {
+    "slug": "dilution-refrigerator",
+    "title": "یخچال رقیق‌سازی و مراحل دمایی آن",
+    "filename": "dilution-refrigerator.webp",
+    "alt": "یخچال رقیق‌سازی و مراحل دمایی آن"
+  },
+  {
+    "slug": "dipolar-gas",
+    "title": "گاز دوقطبی و آرایش ذرات قطبی",
+    "filename": "dipolar-gas.webp",
+    "alt": "گاز دوقطبی و آرایش ذرات قطبی"
+  },
+  {
+    "slug": "dirac-semimetal",
+    "title": "نیمه‌فلز دیراک",
+    "filename": "dirac-semimetal.webp",
+    "alt": "نیمه‌فلز دیراک"
+  },
+  {
+    "slug": "does-quantum-prove-god",
+    "title": "کوانتوم و خدا",
+    "filename": "does-quantum-prove-god.webp",
+    "alt": "تصویر شاخص بررسی نسبت فیزیک کوانتوم و مباحث فلسفی"
+  },
+  {
+    "slug": "double-slit-experiment",
+    "title": "آزمایش دو شکاف",
+    "filename": "double-slit-experiment.webp",
+    "alt": "تصویر شاخص آزمایش دو شکاف یانگ در کوانتوم"
+  },
+  {
+    "slug": "eigenstate-thermalization",
+    "title": "فرضیه گرمایی‌شدن حالت ویژه",
+    "filename": "eigenstate-thermalization.webp",
+    "alt": "فرضیه گرمایی‌شدن حالت ویژه"
+  },
+  {
+    "slug": "electromagnetically-induced-transparency",
+    "title": "شفافیت القایی الکترومغناطیسی",
+    "filename": "electromagnetically-induced-transparency.webp",
+    "alt": "شفافیت القایی الکترومغناطیسی"
+  },
+  {
+    "slug": "electroweak-theory",
+    "title": "نظریه الکتروضعیف",
+    "filename": "electroweak-theory.webp",
+    "alt": "نظریه الکتروضعیف"
+  },
+  {
+    "slug": "energy-levels",
+    "title": "ترازهای انرژی و کوانتش",
+    "filename": "energy-levels.webp",
+    "alt": "تصویر شاخص ترازهای گسسته انرژی و کوانتش"
+  },
+  {
+    "slug": "entanglement-quantum-computers",
+    "title": "درهم‌تنیدگی در کامپیوترهای کوانتومی",
+    "filename": "entanglement-quantum-computers.webp",
+    "alt": "تصویر شاخص درهم‌تنیدگی در پردازش کامپیوترهای کوانتومی"
+  },
+  {
+    "slug": "exciton",
+    "title": "اکسایتون در شبکه بلوری",
+    "filename": "exciton.webp",
+    "alt": "اکسایتون در شبکه بلوری"
+  },
+  {
+    "slug": "fermi-gas",
+    "title": "گاز فرمی و پرشدن ترازها تا انرژی فرمی",
+    "filename": "fermi-gas.webp",
+    "alt": "گاز فرمی و پرشدن ترازها تا انرژی فرمی"
+  },
+  {
+    "slug": "fine-structure-constant",
+    "title": "ثابت ساختار ریز",
+    "filename": "fine-structure-constant.webp",
+    "alt": "ثابت ساختار ریز"
+  },
+  {
+    "slug": "fock-state",
+    "title": "حالت فوک با تعداد مشخص کوانتوم",
+    "filename": "fock-state.webp",
+    "alt": "حالت فوک با تعداد مشخص کوانتوم"
+  },
+  {
+    "slug": "four-wave-mixing",
+    "title": "فرایند چهارموجی در محیط غیرخطی",
+    "filename": "four-wave-mixing.webp",
+    "alt": "فرایند چهارموجی در محیط غیرخطی"
+  },
+  {
+    "slug": "fractional-quantum-hall-effect",
+    "title": "اثر هال کوانتومی کسری",
+    "filename": "fractional-quantum-hall-effect.webp",
+    "alt": "اثر هال کوانتومی کسری"
+  },
+  {
+    "slug": "ghz-state",
+    "title": "حالت درهم‌تنیده GHZ",
+    "filename": "ghz-state.webp",
+    "alt": "حالت درهم‌تنیده GHZ"
+  },
+  {
+    "slug": "hardy-paradox",
+    "title": "چیدمان پارادوکس هاردی",
+    "filename": "hardy-paradox.webp",
+    "alt": "چیدمان پارادوکس هاردی"
+  },
+  {
+    "slug": "heavy-fermion",
+    "title": "فرمیون سنگین",
+    "filename": "heavy-fermion.webp",
+    "alt": "فرمیون سنگین"
+  },
+  {
+    "slug": "heisenberg-uncertainty-principle",
+    "title": "اصل عدم قطعیت هایزنبرگ",
+    "filename": "heisenberg-uncertainty-principle.webp",
+    "alt": "تصویر شاخص اصل عدم قطعیت هایزنبرگ در مکان و تکانه"
+  },
+  {
+    "slug": "holographic-principle",
+    "title": "اصل هولوگرافیک",
+    "filename": "holographic-principle.webp",
+    "alt": "تصویر شاخص اصل هولوگرافیک در گرانش کوانتومی و افق سیاه‌چاله"
+  },
+  {
+    "slug": "homodyne-detection",
+    "title": "آشکارسازی هوموداین با سیگنال و نوسان‌ساز محلی",
+    "filename": "homodyne-detection.webp",
+    "alt": "آشکارسازی هوموداین با سیگنال و نوسان‌ساز محلی"
+  },
+  {
+    "slug": "human-teleportation",
+    "title": "درهم‌تنیدگی و سرعت نور",
+    "filename": "human-teleportation.webp",
+    "alt": "تصویر شاخص بررسی انتقال اطلاعات در درهم‌تنیدگی کوانتومی"
+  },
+  {
+    "slug": "is-classical-physics-wrong",
+    "title": "آیا فیزیک کلاسیک اشتباه بود؟",
+    "filename": "is-classical-physics-wrong.webp",
+    "alt": "تصویر شاخص حد کلاسیک و رابطه فیزیک نیوتنی با کوانتوم"
+  },
+  {
+    "slug": "is-many-worlds-real",
+    "title": "جهان‌های موازی",
+    "filename": "is-many-worlds-real.webp",
+    "alt": "تصویر شاخص تفسیر چندجهانی اورت و انشعاب واقعیت‌ها"
+  },
+  {
+    "slug": "kondo-effect",
+    "title": "اثر کوندو",
+    "filename": "kondo-effect.webp",
+    "alt": "اثر کوندو"
+  },
+  {
+    "slug": "loophole-free-bell-test",
+    "title": "نامساوی بل (آزمون بل)",
+    "filename": "loophole-free-bell-test.webp",
+    "alt": "تصویر شاخص آزمایش بدون روزنه نامساوی بل"
+  },
+  {
+    "slug": "magnon",
+    "title": "مگنون و موج اسپینی",
+    "filename": "magnon.webp",
+    "alt": "مگنون و موج اسپینی"
+  },
+  {
+    "slug": "majorana-fermion",
+    "title": "فرمیون مایورانا",
+    "filename": "majorana-fermion.webp",
+    "alt": "فرمیون مایورانا"
+  },
+  {
+    "slug": "many-body-localization",
+    "title": "جایگزیدگی چندجسمی",
+    "filename": "many-body-localization.webp",
+    "alt": "جایگزیدگی چندجسمی"
+  },
+  {
+    "slug": "measurement-device-independent-qkd",
+    "title": "توزیع کلید کوانتومی مستقل از دستگاه اندازه‌گیری",
+    "filename": "measurement-device-independent-qkd.webp",
+    "alt": "توزیع کلید کوانتومی مستقل از دستگاه اندازه‌گیری"
+  },
+  {
+    "slug": "mott-insulator",
+    "title": "عایق مات",
+    "filename": "mott-insulator.webp",
+    "alt": "عایق مات"
+  },
+  {
+    "slug": "nanowire",
+    "title": "نانوسیم و ساختارهای نانومتری",
+    "filename": "nanowire.webp",
+    "alt": "نانوسیم و ساختارهای نانومتری"
+  },
+  {
+    "slug": "no-cloning-theorem",
+    "title": "قضیهٔ عدم‌کپی",
+    "filename": "no-cloning-theorem.webp",
+    "alt": "تصویر شاخص قضیه عدم همسانه‌سازی یا کپی کوانتومی"
+  },
+  {
+    "slug": "observer",
+    "title": "ناظر در کوانتوم",
+    "filename": "observer.webp",
+    "alt": "تصویر شاخص اثر ناظر و اندازه‌گیری در فیزیک کوانتومی"
+  },
+  {
+    "slug": "optical-lattice",
+    "title": "شبکه نوری برای به‌دام‌اندازی اتم‌ها",
+    "filename": "optical-lattice.webp",
+    "alt": "شبکه نوری برای به‌دام‌اندازی اتم‌ها"
+  },
+  {
+    "slug": "optical-parametric-oscillator",
+    "title": "نوسانگر پارامتری نوری و تولید سیگنال و آیدلر",
+    "filename": "optical-parametric-oscillator.webp",
+    "alt": "نوسانگر پارامتری نوری و تولید سیگنال و آیدلر"
+  },
+  {
+    "slug": "pauli-exclusion-principle",
+    "title": "اصل طرد پاولی",
+    "filename": "pauli-exclusion-principle.webp",
+    "alt": "تصویر شاخص اصل طرد پاولی و آرایش الکترون‌ها"
+  },
+  {
+    "slug": "phonon",
+    "title": "فونون و ارتعاش شبکه بلوری",
+    "filename": "phonon.webp",
+    "alt": "فونون و ارتعاش شبکه بلوری"
+  },
+  {
+    "slug": "photon-blockade",
+    "title": "انسداد فوتونی و عبور یک فوتون",
+    "filename": "photon-blockade.webp",
+    "alt": "انسداد فوتونی و عبور یک فوتون"
+  },
+  {
+    "slug": "photon-counting",
+    "title": "شمارش فوتون و توزیع تعداد رویدادها",
+    "filename": "photon-counting.webp",
+    "alt": "شمارش فوتون و توزیع تعداد رویدادها"
+  },
+  {
+    "slug": "planck-constant",
+    "title": "ثابت پلانک چیست؟",
+    "filename": "planck-constant.webp",
+    "alt": "تصویر شاخص ثابت پلانک و مقیاس بنیادین کوانتوم"
+  },
+  {
+    "slug": "plasmon",
+    "title": "پلاسمون و نوسان جمعی الکترون‌ها",
+    "filename": "plasmon.webp",
+    "alt": "پلاسمون و نوسان جمعی الکترون‌ها"
+  },
+  {
+    "slug": "polariton",
+    "title": "پولاریتون حاصل برهم‌کنش نور و ماده",
+    "filename": "polariton.webp",
+    "alt": "پولاریتون حاصل برهم‌کنش نور و ماده"
+  },
+  {
+    "slug": "polaron",
+    "title": "پولارون در شبکه بلوری",
+    "filename": "polaron.webp",
+    "alt": "پولارون در شبکه بلوری"
+  },
+  {
+    "slug": "proton-decay",
+    "title": "واپاشی پروتون",
+    "filename": "proton-decay.webp",
+    "alt": "واپاشی پروتون"
+  },
+  {
+    "slug": "qaoa",
+    "title": "الگوریتم بهینه‌سازی تقریبی کوانتومی",
+    "filename": "qaoa.webp",
+    "alt": "الگوریتم بهینه‌سازی تقریبی کوانتومی"
+  },
+  {
+    "slug": "quantum-analogy-exercise-boundary",
+    "title": "نیلز بور و اصل تکمیل",
+    "filename": "quantum-analogy-exercise-boundary.webp",
+    "alt": "تصویر شاخص نیلز بور، اصل تکمیل و مرز شکست تمثیل"
+  },
+  {
+    "slug": "quantum-anesthesia",
+    "title": "بیهوشی و فرضیه‌های کوانتومی",
+    "filename": "quantum-anesthesia.webp",
+    "alt": "بیهوشی و فرضیه‌های کوانتومی"
+  },
+  {
+    "slug": "quantum-arms-race",
+    "title": "مسابقه تسلیحاتی کوانتومی",
+    "filename": "quantum-arms-race.webp",
+    "alt": "تصویر مفهومی مسابقه تسلیحاتی کوانتومی با نشانه‌گیر راداری نئونی و برهم‌کنش ذرات فوتون و الکترون"
+  },
+  {
+    "slug": "quantum-auction",
+    "title": "مزایده کوانتومی با چند پیشنهاددهنده",
+    "filename": "quantum-auction.webp",
+    "alt": "مزایده کوانتومی با چند پیشنهاددهنده"
+  },
+  {
+    "slug": "quantum-bacteria",
+    "title": "کوانتوم در باکتری‌ها",
+    "filename": "quantum-bacteria.webp",
+    "alt": "کوانتوم در باکتری‌ها"
+  },
+  {
+    "slug": "quantum-blockchain",
+    "title": "زنجیره بلوک‌های بلاک‌چین کوانتومی",
+    "filename": "quantum-blockchain.webp",
+    "alt": "زنجیره بلوک‌های بلاک‌چین کوانتومی"
+  },
+  {
+    "slug": "quantum-bounce",
+    "title": "جهش کوانتومی کیهان",
+    "filename": "quantum-bounce.webp",
+    "alt": "تصویر شاخص نظریه جهش کوانتومی کیهان قبل از مهبانگ"
+  },
+  {
+    "slug": "quantum-cancer",
+    "title": "کوانتوم در پژوهش سرطان",
+    "filename": "quantum-cancer.webp",
+    "alt": "کوانتوم در پژوهش سرطان"
+  },
+  {
+    "slug": "quantum-cell-signaling",
+    "title": "پیام‌رسانی سلولی کوانتومی",
+    "filename": "quantum-cell-signaling.webp",
+    "alt": "پیام‌رسانی سلولی کوانتومی"
+  },
+  {
+    "slug": "quantum-cheshire-cat",
+    "title": "گربه چشایر کوانتومی",
+    "filename": "quantum-cheshire-cat.webp",
+    "alt": "گربه چشایر کوانتومی"
+  },
+  {
+    "slug": "quantum-chromodynamics",
+    "title": "کرومودینامیک کوانتومی",
+    "filename": "quantum-chromodynamics.webp",
+    "alt": "کرومودینامیک کوانتومی"
+  },
+  {
+    "slug": "quantum-cloud",
+    "title": "رایانش ابری کوانتومی",
+    "filename": "quantum-cloud.webp",
+    "alt": "رایانش ابری کوانتومی"
+  },
+  {
+    "slug": "quantum-compiler",
+    "title": "کامپایلر کوانتومی",
+    "filename": "quantum-compiler.webp",
+    "alt": "کامپایلر کوانتومی"
+  },
+  {
+    "slug": "quantum-conference-key-agreement",
+    "title": "توافق کلید کوانتومی",
+    "filename": "quantum-conference-key-agreement.webp",
+    "alt": "تصویر مفهومی توافق کلید کوانتومی چندطرفه با هشت گره درهم‌تنیده حول قفل امنیتی نئونی"
+  },
+  {
+    "slug": "quantum-contextuality",
+    "title": "زمینه‌مندی کوانتومی",
+    "filename": "quantum-contextuality.webp",
+    "alt": "زمینه‌مندی کوانتومی"
+  },
+  {
+    "slug": "quantum-control",
+    "title": "کنترل کوانتومی سامانه",
+    "filename": "quantum-control.webp",
+    "alt": "کنترل کوانتومی سامانه"
+  },
+  {
+    "slug": "quantum-cosmology",
+    "title": "روند مفهومی کیهان‌شناسی کوانتومی از جهان آغازین",
+    "filename": "quantum-cosmology.webp",
+    "alt": "روند مفهومی کیهان‌شناسی کوانتومی از جهان آغازین"
+  },
+  {
+    "slug": "quantum-criticality",
+    "title": "بحرانیت کوانتومی",
+    "filename": "quantum-criticality.webp",
+    "alt": "بحرانیت کوانتومی"
+  },
+  {
+    "slug": "quantum-culture",
+    "title": "فرهنگ کوانتومی",
+    "filename": "quantum-culture.webp",
+    "alt": "تصویر شاخص بازتاب مفاهیم کوانتومی در فرهنگ و هنر جامعه"
+  },
+  {
+    "slug": "quantum-darwinism",
+    "title": "داروینیسم کوانتومی",
+    "filename": "quantum-darwinism.webp",
+    "alt": "تصویر شاخص نظریه داروینیسم کوانتومی زورک"
+  },
+  {
+    "slug": "quantum-digital-signature",
+    "title": "امضای دیجیتال کوانتومی",
+    "filename": "quantum-digital-signature.webp",
+    "alt": "امضای دیجیتال کوانتومی"
+  },
+  {
+    "slug": "quantum-dimer",
+    "title": "دیمر کوانتومی و پیوند میان دو جایگاه",
+    "filename": "quantum-dimer.webp",
+    "alt": "دیمر کوانتومی و پیوند میان دو جایگاه"
+  },
+  {
+    "slug": "quantum-droplet",
+    "title": "قطره کوانتومی خودبسته",
+    "filename": "quantum-droplet.webp",
+    "alt": "قطره کوانتومی خودبسته"
+  },
+  {
+    "slug": "quantum-electrodynamics",
+    "title": "الکترودینامیک کوانتومی",
+    "filename": "quantum-electrodynamics.webp",
+    "alt": "الکترودینامیک کوانتومی"
+  },
+  {
+    "slug": "quantum-engine-efficiency",
+    "title": "بازده موتور کوانتومی",
+    "filename": "quantum-engine-efficiency.webp",
+    "alt": "بازده موتور کوانتومی"
+  },
+  {
+    "slug": "quantum-entanglement-explained",
+    "title": "درهم‌تنیدگی کوانتومی",
+    "filename": "quantum-entanglement-explained.webp",
+    "alt": "تصویر شاخص درهم‌تنیدگی کوانتومی و هم‌بستگی ذرات"
+  },
+  {
+    "slug": "quantum-entropy",
+    "title": "آنتروپی کوانتومی",
+    "filename": "quantum-entropy.webp",
+    "alt": "آنتروپی کوانتومی"
+  },
+  {
+    "slug": "quantum-fiction",
+    "title": "داستان علمی‌تخیلی کوانتومی و جهان‌های روایی",
+    "filename": "quantum-fiction.webp",
+    "alt": "داستان علمی‌تخیلی کوانتومی و جهان‌های روایی"
+  },
+  {
+    "slug": "quantum-finance",
+    "title": "محاسبات کوانتومی در وال‌استریت",
+    "filename": "quantum-finance.webp",
+    "alt": "تصویر مفهومی محاسبات کوانتومی در وال‌استریت و بازارهای مالی با نمودار صعودی و احتمالات چندمسیره"
+  },
+  {
+    "slug": "quantum-fingerprinting",
+    "title": "انگشت‌نگاری کوانتومی برای مقایسه داده‌ها",
+    "filename": "quantum-fingerprinting.webp",
+    "alt": "انگشت‌نگاری کوانتومی برای مقایسه داده‌ها"
+  },
+  {
+    "slug": "quantum-fluctuation-theorem",
+    "title": "قضیه نوسان کوانتومی",
+    "filename": "quantum-fluctuation-theorem.webp",
+    "alt": "قضیه نوسان کوانتومی"
+  },
+  {
+    "slug": "quantum-fpga",
+    "title": "FPGA کوانتومی و کنترل بازپیکربندی‌پذیر",
+    "filename": "quantum-fpga.webp",
+    "alt": "FPGA کوانتومی و کنترل بازپیکربندی‌پذیر"
+  },
+  {
+    "slug": "quantum-free-will",
+    "title": "کوانتوم و اراده آزاد",
+    "filename": "quantum-free-will.webp",
+    "alt": "تصویر شاخص فیزیک کوانتومی و مسئله اراده آزاد و آگاهی"
+  },
+  {
+    "slug": "quantum-game-theory",
+    "title": "نظریه بازی کوانتومی",
+    "filename": "quantum-game-theory.webp",
+    "alt": "تصویر مفهومی نظریه بازی کوانتومی، دو مهره شطرنج نوری پیوندیافته با حلقه درهم‌تنیدگی و امواج احتمالاتی"
+  },
+  {
+    "slug": "quantum-games",
+    "title": "بازی‌های کوانتومی",
+    "filename": "quantum-games.webp",
+    "alt": "تصویر مفهومی بازی‌های کوانتومی با صفحه و مهره‌های شطرنج نوری در وضعیت برهم‌نهی کوانتومی"
+  },
+  {
+    "slug": "quantum-generative-model",
+    "title": "مدل مولد کوانتومی",
+    "filename": "quantum-generative-model.webp",
+    "alt": "مدل مولد کوانتومی"
+  },
+  {
+    "slug": "quantum-heat-engine",
+    "title": "موتور گرمایی کوانتومی",
+    "filename": "quantum-heat-engine.webp",
+    "alt": "موتور گرمایی کوانتومی"
+  },
+  {
+    "slug": "quantum-imaging-undetected-photons",
+    "title": "تصویربرداری کوانتومی با فوتون‌های آشکارنشده",
+    "filename": "quantum-imaging-undetected-photons.webp",
+    "alt": "تصویربرداری کوانتومی با فوتون‌های آشکارنشده"
+  },
+  {
+    "slug": "quantum-interpretation-debate",
+    "title": "ماکس بورن و تفسیر احتمالاتی",
+    "filename": "quantum-interpretation-debate.webp",
+    "alt": "تصویر شاخص ماکس بورن و جدال تفاسیر کوانتومی"
+  },
+  {
+    "slug": "quantum-kernel",
+    "title": "هسته کوانتومی در یادگیری ماشین",
+    "filename": "quantum-kernel.webp",
+    "alt": "هسته کوانتومی در یادگیری ماشین"
+  },
+  {
+    "slug": "quantum-lithography",
+    "title": "لیتوگرافی کوانتومی و ایجاد الگوی ریز",
+    "filename": "quantum-lithography.webp",
+    "alt": "لیتوگرافی کوانتومی و ایجاد الگوی ریز"
+  },
+  {
+    "slug": "quantum-logic",
+    "title": "منطق کوانتومی و مدار منطقی",
+    "filename": "quantum-logic.webp",
+    "alt": "منطق کوانتومی و مدار منطقی"
+  },
+  {
+    "slug": "quantum-maxwell-demon",
+    "title": "دیو ماکسول کوانتومی",
+    "filename": "quantum-maxwell-demon.webp",
+    "alt": "دیو ماکسول کوانتومی"
+  },
+  {
+    "slug": "quantum-measurement",
+    "title": "اندازه‌گیری و فروپاشی",
+    "filename": "quantum-measurement.webp",
+    "alt": "تصویر شاخص اندازه‌گیری کوانتومی و فروپاشی تابع موج"
+  },
+  {
+    "slug": "quantum-microscopy",
+    "title": "میکروسکوپ کوانتومی و تصویربرداری نمونه",
+    "filename": "quantum-microscopy.webp",
+    "alt": "میکروسکوپ کوانتومی و تصویربرداری نمونه"
+  },
+  {
+    "slug": "quantum-money",
+    "title": "پول کوانتومی",
+    "filename": "quantum-money.webp",
+    "alt": "پول کوانتومی"
+  },
+  {
+    "slug": "quantum-music",
+    "title": "موسیقی کوانتومی و تبدیل داده کوانتومی به صدا",
+    "filename": "quantum-music.webp",
+    "alt": "موسیقی کوانتومی و تبدیل داده کوانتومی به صدا"
+  },
+  {
+    "slug": "quantum-network",
+    "title": "شبکه کوانتومی",
+    "filename": "quantum-network.webp",
+    "alt": "شبکه کوانتومی"
+  },
+  {
+    "slug": "quantum-neural-network",
+    "title": "شبکه عصبی کوانتومی",
+    "filename": "quantum-neural-network.webp",
+    "alt": "شبکه عصبی کوانتومی"
+  },
+  {
+    "slug": "quantum-number",
+    "title": "عدد کوانتومی",
+    "filename": "quantum-number.webp",
+    "alt": "تصویر شاخص اعداد کوانتومی الکترون در اتم"
+  },
+  {
+    "slug": "quantum-phase-estimation",
+    "title": "مدار تخمین فاز کوانتومی",
+    "filename": "quantum-phase-estimation.webp",
+    "alt": "مدار تخمین فاز کوانتومی"
+  },
+  {
+    "slug": "quantum-phase-transition",
+    "title": "گذار فاز کوانتومی",
+    "filename": "quantum-phase-transition.webp",
+    "alt": "گذار فاز کوانتومی"
+  },
+  {
+    "slug": "quantum-physics-vs-quantum-mechanics",
+    "title": "فیزیک کوانتوم و مکانیک کوانتومی",
+    "filename": "quantum-physics-vs-quantum-mechanics.webp",
+    "alt": "تصویر شاخص تفاوت فیزیک کوانتوم و مکانیک کوانتومی"
+  },
+  {
+    "slug": "quantum-pigeonhole",
+    "title": "اصل لانه‌کبوتری کوانتومی",
+    "filename": "quantum-pigeonhole.webp",
+    "alt": "اصل لانه‌کبوتری کوانتومی"
+  },
+  {
+    "slug": "quantum-probability",
+    "title": "احتمال کوانتومی",
+    "filename": "quantum-probability.webp",
+    "alt": "تصویر شاخص ماهیت احتمالاتی مکانیک کوانتومی و قاعده بورن"
+  },
+  {
+    "slug": "quantum-programming-language",
+    "title": "زبان برنامه‌نویسی کوانتومی",
+    "filename": "quantum-programming-language.webp",
+    "alt": "زبان برنامه‌نویسی کوانتومی"
+  },
+  {
+    "slug": "quantum-random-number-generator",
+    "title": "مولد عدد تصادفی کوانتومی",
+    "filename": "quantum-random-number-generator.webp",
+    "alt": "تصویر شاخص تولید اعداد تصادفی واقعی با کوانتوم"
+  },
+  {
+    "slug": "quantum-refrigerator",
+    "title": "یخچال کوانتومی",
+    "filename": "quantum-refrigerator.webp",
+    "alt": "یخچال کوانتومی"
+  },
+  {
+    "slug": "quantum-reinforcement-learning",
+    "title": "یادگیری تقویتی کوانتومی",
+    "filename": "quantum-reinforcement-learning.webp",
+    "alt": "یادگیری تقویتی کوانتومی"
+  },
+  {
+    "slug": "quantum-router",
+    "title": "مسیریاب کوانتومی",
+    "filename": "quantum-router.webp",
+    "alt": "مسیریاب کوانتومی"
+  },
+  {
+    "slug": "quantum-secret-sharing",
+    "title": "اشتراک راز کوانتومی",
+    "filename": "quantum-secret-sharing.webp",
+    "alt": "اشتراک راز کوانتومی"
+  },
+  {
+    "slug": "quantum-secure-direct-communication",
+    "title": "ارتباط مستقیم امن کوانتومی میان فرستنده و گیرنده",
+    "filename": "quantum-secure-direct-communication.webp",
+    "alt": "ارتباط مستقیم امن کوانتومی میان فرستنده و گیرنده"
+  },
+  {
+    "slug": "quantum-singularity",
+    "title": "تکینگی کوانتومی در فضا–زمان",
+    "filename": "quantum-singularity.webp",
+    "alt": "تکینگی کوانتومی در فضا–زمان"
+  },
+  {
+    "slug": "quantum-solipsism",
+    "title": "سولیپسیسم کوانتومی و مسئله ناظر",
+    "filename": "quantum-solipsism.webp",
+    "alt": "سولیپسیسم کوانتومی و مسئله ناظر"
+  },
+  {
+    "slug": "quantum-spin",
+    "title": "اسپین؛ چرخشی که چرخش نیست",
+    "filename": "quantum-spin.webp",
+    "alt": "تصویر شاخص اسپین کوانتومی و تکانه زاویه‌ای ذاتی"
+  },
+  {
+    "slug": "quantum-state",
+    "title": "حالت کوانتومی چیست؟",
+    "filename": "quantum-state.webp",
+    "alt": "تصویر شاخص بردار حالت کوانتومی در فضای هیلبرت"
+  },
+  {
+    "slug": "quantum-superposition",
+    "title": "برهم‌نهی کوانتومی",
+    "filename": "quantum-superposition.webp",
+    "alt": "تصویر شاخص برهم‌نهی کوانتومی و حالت‌های چندگانه"
+  },
+  {
+    "slug": "quantum-thermalization",
+    "title": "گرمایی‌شدن کوانتومی",
+    "filename": "quantum-thermalization.webp",
+    "alt": "گرمایی‌شدن کوانتومی"
+  },
+  {
+    "slug": "quantum-thermometry",
+    "title": "دماسنجی کوانتومی",
+    "filename": "quantum-thermometry.webp",
+    "alt": "دماسنجی کوانتومی"
+  },
+  {
+    "slug": "quantum-time-travel",
+    "title": "سفر در زمان",
+    "filename": "quantum-time-travel.webp",
+    "alt": "تصویر شاخص سفر در زمان از منظر فیزیک کوانتوم و نسبیت"
+  },
+  {
+    "slug": "quantum-tunneling",
+    "title": "تونل‌زنی کوانتومی",
+    "filename": "quantum-tunneling.webp",
+    "alt": "تصویر شاخص تونل‌زنی کوانتومی و عبور ذره از سد پتانسیل"
+  },
+  {
+    "slug": "quantum-viruses",
+    "title": "تصویر مفهومی کوانتوم در ویروس‌ها",
+    "filename": "quantum-viruses.webp",
+    "alt": "تصویر مفهومی کوانتوم در ویروس‌ها"
+  },
+  {
+    "slug": "quantum-voting",
+    "title": "رأی‌گیری کوانتومی",
+    "filename": "quantum-voting.webp",
+    "alt": "رأی‌گیری کوانتومی"
+  },
+  {
+    "slug": "quantum-walk",
+    "title": "مقایسه قدم‌زدن کلاسیک و کوانتومی",
+    "filename": "quantum-walk.webp",
+    "alt": "مقایسه قدم‌زدن کلاسیک و کوانتومی"
+  },
+  {
+    "slug": "quantum-winter",
+    "title": "زمستان کوانتومی",
+    "filename": "quantum-winter.webp",
+    "alt": "تصویر شاخص زمستان کوانتومی و چرخه‌های افت سرمایه‌گذاری"
+  },
+  {
+    "slug": "quantum-zeno-effect",
+    "title": "اثر زنون کوانتومی",
+    "filename": "quantum-zeno-effect.webp",
+    "alt": "تصویر شاخص اثر زنون کوانتومی و مشاهده مداوم"
+  },
+  {
+    "slug": "rabi-oscillations",
+    "title": "نمودار نوسانات رابی در سامانه دوترازی",
+    "filename": "rabi-oscillations.webp",
+    "alt": "نمودار نوسانات رابی در سامانه دوترازی"
+  },
+  {
+    "slug": "rydberg-atom",
+    "title": "اتم ریدبرگ و ترازهای انرژی",
+    "filename": "rydberg-atom.webp",
+    "alt": "اتم ریدبرگ و ترازهای انرژی"
+  },
+  {
+    "slug": "simon-algorithm",
+    "title": "نمایش الگوریتم سایمون",
+    "filename": "simon-algorithm.webp",
+    "alt": "نمایش الگوریتم سایمون"
+  },
+  {
+    "slug": "slow-light",
+    "title": "نور کند در محیط پاشنده",
+    "filename": "slow-light.webp",
+    "alt": "نور کند در محیط پاشنده"
+  },
+  {
+    "slug": "soliton",
+    "title": "سالیتون و حفظ شکل موج هنگام انتشار",
+    "filename": "soliton.webp",
+    "alt": "سالیتون و حفظ شکل موج هنگام انتشار"
+  },
+  {
+    "slug": "spin-ice",
+    "title": "ساختار یخ اسپینی",
+    "filename": "spin-ice.webp",
+    "alt": "ساختار یخ اسپینی"
+  },
+  {
+    "slug": "squid",
+    "title": "تداخل‌سنج کوانتومی ابررسانا اسکویید",
+    "filename": "squid.webp",
+    "alt": "تداخل‌سنج کوانتومی ابررسانا اسکویید"
+  },
+  {
+    "slug": "super-resolution-quantum",
+    "title": "ابر تفکیک کوانتومی",
+    "filename": "super-resolution-quantum.webp",
+    "alt": "ابر تفکیک کوانتومی"
+  },
+  {
+    "slug": "three-box-paradox",
+    "title": "پارادوکس سه جعبه",
+    "filename": "three-box-paradox.webp",
+    "alt": "پارادوکس سه جعبه"
+  },
+  {
+    "slug": "topological-insulator",
+    "title": "ساختار عایق توپولوژیک",
+    "filename": "topological-insulator.webp",
+    "alt": "ساختار عایق توپولوژیک"
+  },
+  {
+    "slug": "twin-field-qkd",
+    "title": "توزیع کلید کوانتومی میدان دوقلو",
+    "filename": "twin-field-qkd.webp",
+    "alt": "توزیع کلید کوانتومی میدان دوقلو"
+  },
+  {
+    "slug": "ultraviolet-catastrophe",
+    "title": "فاجعهٔ فرابنفش",
+    "filename": "ultraviolet-catastrophe.webp",
+    "alt": "تصویر شاخص فاجعه فرابنفش و تابش جسم سیاه"
+  },
+  {
+    "slug": "vacuum-fluctuations",
+    "title": "نوسانات خلأ",
+    "filename": "vacuum-fluctuations.webp",
+    "alt": "تصویر شاخص افت‌وخیز کوانتومی و انرژی نقطه صفر خلأ"
+  },
+  {
+    "slug": "variational-quantum-eigensolver",
+    "title": "حلقه الگوریتم تغییراتی کوانتومی",
+    "filename": "variational-quantum-eigensolver.webp",
+    "alt": "حلقه الگوریتم تغییراتی کوانتومی"
+  },
+  {
+    "slug": "virtual-particles",
+    "title": "ذرات مجازی",
+    "filename": "virtual-particles.webp",
+    "alt": "تصویر شاخص ذرات مجازی در میدان‌های کوانتومی"
+  },
+  {
+    "slug": "wave-function",
+    "title": "تابع موج چیست؟",
+    "filename": "wave-function.webp",
+    "alt": "تصویر شاخص تابع موج کوانتومی و معادله شرودینگر"
+  },
+  {
+    "slug": "wave-particle-duality",
+    "title": "دوگانگی موج و ذره",
+    "filename": "wave-particle-duality.webp",
+    "alt": "تصویر شاخص دوگانگی موج و ذره در فیزیک کوانتوم"
+  },
+  {
+    "slug": "weyl-semimetal",
+    "title": "نیمه‌فلز ویل",
+    "filename": "weyl-semimetal.webp",
+    "alt": "نیمه‌فلز ویل"
+  },
+  {
+    "slug": "what-is-quantum",
+    "title": "کوانتوم یعنی چه؟",
+    "filename": "what-is-quantum.webp",
+    "alt": "تصویر شاخص کوانتوم یعنی چه و مبانی فیزیک کوانتومی"
+  },
+  {
+    "slug": "why-large-objects-dont-superpose",
+    "title": "برهم‌نهی اشیای بزرگ",
+    "filename": "why-large-objects-dont-superpose.webp",
+    "alt": "تصویر شاخص علت عدم مشاهده برهم‌نهی در اشیای بزرگ"
+  },
+  {
+    "slug": "wigner-friend",
+    "title": "دوست ویگنر",
+    "filename": "wigner-friend.webp",
+    "alt": "تصویر شاخص پارادوکس دوست ویگنر و مسئله ناظر"
+  },
+  {
+    "slug": "wimp",
+    "title": "ذره فرضی ویمپ",
+    "filename": "wimp.webp",
+    "alt": "ذره فرضی ویمپ"
+  },
+  {
+    "slug": "wormhole",
+    "title": "کرم‌چاله",
+    "filename": "wormhole.webp",
+    "alt": "تصویر شاخص ساختار نظری کرم‌چاله و پل اینشتین-روزن"
+  }
+]

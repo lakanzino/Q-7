@@ -1,0 +1,32 @@
+[
+  {
+    "slug": "quantum-voting",
+    "title": "رأی‌گیری کوانتومی",
+    "filename": "quantum-voting.webp",
+    "alt": "رأی‌گیری کوانتومی"
+  },
+  {
+    "slug": "quantum-walk",
+    "title": "مقایسه قدم‌زدن کلاسیک و کوانتومی",
+    "filename": "quantum-walk.webp",
+    "alt": "مقایسه قدم‌زدن کلاسیک و کوانتومی"
+  },
+  {
+    "slug": "quantum-winter",
+    "title": "زمستان کوانتومی",
+    "filename": "quantum-winter.webp",
+    "alt": "تصویر شاخص زمستان کوانتومی و چرخه‌های افت سرمایه‌گذاری"
+  },
+  {
+    "slug": "quantum-zeno-effect",
+    "title": "اثر زنون کوانتومی",
+    "filename": "quantum-zeno-effect.webp",
+    "alt": "تصویر شاخص اثر زنون کوانتومی و مشاهده مداوم"
+  },
+  {
+    "slug": "rabi-oscillations",
+    "title": "نمودار نوسانات رابی در سامانه دوترازی",
+    "filename": "rabi-oscillations.webp",
+    "alt": "نمودار نوسانات رابی در سامانه دوترازی"
+  }
+]

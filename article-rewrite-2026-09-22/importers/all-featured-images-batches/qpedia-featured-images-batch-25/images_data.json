@@ -1,0 +1,32 @@
+[
+  {
+    "slug": "quantum-network",
+    "title": "شبکه کوانتومی",
+    "filename": "quantum-network.webp",
+    "alt": "شبکه کوانتومی"
+  },
+  {
+    "slug": "quantum-neural-network",
+    "title": "شبکه عصبی کوانتومی",
+    "filename": "quantum-neural-network.webp",
+    "alt": "شبکه عصبی کوانتومی"
+  },
+  {
+    "slug": "quantum-number",
+    "title": "عدد کوانتومی",
+    "filename": "quantum-number.webp",
+    "alt": "تصویر شاخص اعداد کوانتومی الکترون در اتم"
+  },
+  {
+    "slug": "quantum-phase-estimation",
+    "title": "مدار تخمین فاز کوانتومی",
+    "filename": "quantum-phase-estimation.webp",
+    "alt": "مدار تخمین فاز کوانتومی"
+  },
+  {
+    "slug": "quantum-phase-transition",
+    "title": "گذار فاز کوانتومی",
+    "filename": "quantum-phase-transition.webp",
+    "alt": "گذار فاز کوانتومی"
+  }
+]

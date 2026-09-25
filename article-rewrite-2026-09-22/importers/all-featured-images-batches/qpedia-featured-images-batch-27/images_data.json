@@ -1,0 +1,32 @@
+[
+  {
+    "slug": "quantum-refrigerator",
+    "title": "یخچال کوانتومی",
+    "filename": "quantum-refrigerator.webp",
+    "alt": "یخچال کوانتومی"
+  },
+  {
+    "slug": "quantum-reinforcement-learning",
+    "title": "یادگیری تقویتی کوانتومی",
+    "filename": "quantum-reinforcement-learning.webp",
+    "alt": "یادگیری تقویتی کوانتومی"
+  },
+  {
+    "slug": "quantum-router",
+    "title": "مسیریاب کوانتومی",
+    "filename": "quantum-router.webp",
+    "alt": "مسیریاب کوانتومی"
+  },
+  {
+    "slug": "quantum-secret-sharing",
+    "title": "اشتراک راز کوانتومی",
+    "filename": "quantum-secret-sharing.webp",
+    "alt": "اشتراک راز کوانتومی"
+  },
+  {
+    "slug": "quantum-secure-direct-communication",
+    "title": "ارتباط مستقیم امن کوانتومی میان فرستنده و گیرنده",
+    "filename": "quantum-secure-direct-communication.webp",
+    "alt": "ارتباط مستقیم امن کوانتومی میان فرستنده و گیرنده"
+  }
+]

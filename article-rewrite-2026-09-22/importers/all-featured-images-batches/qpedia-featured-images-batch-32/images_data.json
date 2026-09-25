@@ -1,0 +1,32 @@
+[
+  {
+    "slug": "squid",
+    "title": "تداخل‌سنج کوانتومی ابررسانا اسکویید",
+    "filename": "squid.webp",
+    "alt": "تداخل‌سنج کوانتومی ابررسانا اسکویید"
+  },
+  {
+    "slug": "super-resolution-quantum",
+    "title": "ابر تفکیک کوانتومی",
+    "filename": "super-resolution-quantum.webp",
+    "alt": "ابر تفکیک کوانتومی"
+  },
+  {
+    "slug": "three-box-paradox",
+    "title": "پارادوکس سه جعبه",
+    "filename": "three-box-paradox.webp",
+    "alt": "پارادوکس سه جعبه"
+  },
+  {
+    "slug": "topological-insulator",
+    "title": "ساختار عایق توپولوژیک",
+    "filename": "topological-insulator.webp",
+    "alt": "ساختار عایق توپولوژیک"
+  },
+  {
+    "slug": "twin-field-qkd",
+    "title": "توزیع کلید کوانتومی میدان دوقلو",
+    "filename": "twin-field-qkd.webp",
+    "alt": "توزیع کلید کوانتومی میدان دوقلو"
+  }
+]

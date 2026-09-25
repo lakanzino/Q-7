@@ -1,0 +1,32 @@
+[
+  {
+    "slug": "quantum-physics-vs-quantum-mechanics",
+    "title": "فیزیک کوانتوم و مکانیک کوانتومی",
+    "filename": "quantum-physics-vs-quantum-mechanics.webp",
+    "alt": "تصویر شاخص تفاوت فیزیک کوانتوم و مکانیک کوانتومی"
+  },
+  {
+    "slug": "quantum-pigeonhole",
+    "title": "اصل لانه‌کبوتری کوانتومی",
+    "filename": "quantum-pigeonhole.webp",
+    "alt": "اصل لانه‌کبوتری کوانتومی"
+  },
+  {
+    "slug": "quantum-probability",
+    "title": "احتمال کوانتومی",
+    "filename": "quantum-probability.webp",
+    "alt": "تصویر شاخص ماهیت احتمالاتی مکانیک کوانتومی و قاعده بورن"
+  },
+  {
+    "slug": "quantum-programming-language",
+    "title": "زبان برنامه‌نویسی کوانتومی",
+    "filename": "quantum-programming-language.webp",
+    "alt": "زبان برنامه‌نویسی کوانتومی"
+  },
+  {
+    "slug": "quantum-random-number-generator",
+    "title": "مولد عدد تصادفی کوانتومی",
+    "filename": "quantum-random-number-generator.webp",
+    "alt": "تصویر شاخص تولید اعداد تصادفی واقعی با کوانتوم"
+  }
+]

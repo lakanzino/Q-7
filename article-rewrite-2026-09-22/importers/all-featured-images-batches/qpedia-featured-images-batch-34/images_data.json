@@ -1,0 +1,32 @@
+[
+  {
+    "slug": "wave-particle-duality",
+    "title": "دوگانگی موج و ذره",
+    "filename": "wave-particle-duality.webp",
+    "alt": "تصویر شاخص دوگانگی موج و ذره در فیزیک کوانتوم"
+  },
+  {
+    "slug": "weyl-semimetal",
+    "title": "نیمه‌فلز ویل",
+    "filename": "weyl-semimetal.webp",
+    "alt": "نیمه‌فلز ویل"
+  },
+  {
+    "slug": "what-is-quantum",
+    "title": "کوانتوم یعنی چه؟",
+    "filename": "what-is-quantum.webp",
+    "alt": "تصویر شاخص کوانتوم یعنی چه و مبانی فیزیک کوانتومی"
+  },
+  {
+    "slug": "why-large-objects-dont-superpose",
+    "title": "برهم‌نهی اشیای بزرگ",
+    "filename": "why-large-objects-dont-superpose.webp",
+    "alt": "تصویر شاخص علت عدم مشاهده برهم‌نهی در اشیای بزرگ"
+  },
+  {
+    "slug": "wigner-friend",
+    "title": "دوست ویگنر",
+    "filename": "wigner-friend.webp",
+    "alt": "تصویر شاخص پارادوکس دوست ویگنر و مسئله ناظر"
+  }
+]

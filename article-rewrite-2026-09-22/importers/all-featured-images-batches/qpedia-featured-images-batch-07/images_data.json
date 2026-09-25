@@ -1,0 +1,32 @@
+[
+  {
+    "slug": "double-slit-experiment",
+    "title": "آزمایش دو شکاف",
+    "filename": "double-slit-experiment.webp",
+    "alt": "تصویر شاخص آزمایش دو شکاف یانگ در کوانتوم"
+  },
+  {
+    "slug": "eigenstate-thermalization",
+    "title": "فرضیه گرمایی‌شدن حالت ویژه",
+    "filename": "eigenstate-thermalization.webp",
+    "alt": "فرضیه گرمایی‌شدن حالت ویژه"
+  },
+  {
+    "slug": "electromagnetically-induced-transparency",
+    "title": "شفافیت القایی الکترومغناطیسی",
+    "filename": "electromagnetically-induced-transparency.webp",
+    "alt": "شفافیت القایی الکترومغناطیسی"
+  },
+  {
+    "slug": "electroweak-theory",
+    "title": "نظریه الکتروضعیف",
+    "filename": "electroweak-theory.webp",
+    "alt": "نظریه الکتروضعیف"
+  },
+  {
+    "slug": "energy-levels",
+    "title": "ترازهای انرژی و کوانتش",
+    "filename": "energy-levels.webp",
+    "alt": "تصویر شاخص ترازهای گسسته انرژی و کوانتش"
+  }
+]

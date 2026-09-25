@@ -1,0 +1,32 @@
+[
+  {
+    "slug": "absolute-zero",
+    "title": "صفر مطلق چیست؟",
+    "filename": "absolute-zero.webp",
+    "alt": "تصویر شاخص صفر مطلق دما و توقف جنبش گرمایی"
+  },
+  {
+    "slug": "acceleration-radiation",
+    "title": "اثر شتاب و تابش اونرو",
+    "filename": "acceleration-radiation.webp",
+    "alt": "اثر شتاب و تابش اونرو"
+  },
+  {
+    "slug": "aharonov-bohm-effect",
+    "title": "اثر آهارونوف-بوهم",
+    "filename": "aharonov-bohm-effect.webp",
+    "alt": "تصویر شاخص اثر آهارونوف-بوهم و پتانسیل الکترومغناطیسی"
+  },
+  {
+    "slug": "alpha-decay",
+    "title": "واپاشی آلفا",
+    "filename": "alpha-decay.webp",
+    "alt": "تصویر شاخص واپاشی آلفا و تونل‌زنی هسته‌ای"
+  },
+  {
+    "slug": "anomalous-magnetic-moment",
+    "title": "گشتاور مغناطیسی ناهنجار",
+    "filename": "anomalous-magnetic-moment.webp",
+    "alt": "گشتاور مغناطیسی ناهنجار"
+  }
+]

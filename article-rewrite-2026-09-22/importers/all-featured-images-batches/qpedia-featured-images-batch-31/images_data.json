@@ -1,0 +1,32 @@
+[
+  {
+    "slug": "rydberg-atom",
+    "title": "اتم ریدبرگ و ترازهای انرژی",
+    "filename": "rydberg-atom.webp",
+    "alt": "اتم ریدبرگ و ترازهای انرژی"
+  },
+  {
+    "slug": "simon-algorithm",
+    "title": "نمایش الگوریتم سایمون",
+    "filename": "simon-algorithm.webp",
+    "alt": "نمایش الگوریتم سایمون"
+  },
+  {
+    "slug": "slow-light",
+    "title": "نور کند در محیط پاشنده",
+    "filename": "slow-light.webp",
+    "alt": "نور کند در محیط پاشنده"
+  },
+  {
+    "slug": "soliton",
+    "title": "سالیتون و حفظ شکل موج هنگام انتشار",
+    "filename": "soliton.webp",
+    "alt": "سالیتون و حفظ شکل موج هنگام انتشار"
+  },
+  {
+    "slug": "spin-ice",
+    "title": "ساختار یخ اسپینی",
+    "filename": "spin-ice.webp",
+    "alt": "ساختار یخ اسپینی"
+  }
+]

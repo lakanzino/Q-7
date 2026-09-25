@@ -1,0 +1,32 @@
+[
+  {
+    "slug": "quantum-maxwell-demon",
+    "title": "دیو ماکسول کوانتومی",
+    "filename": "quantum-maxwell-demon.webp",
+    "alt": "دیو ماکسول کوانتومی"
+  },
+  {
+    "slug": "quantum-measurement",
+    "title": "اندازه‌گیری و فروپاشی",
+    "filename": "quantum-measurement.webp",
+    "alt": "تصویر شاخص اندازه‌گیری کوانتومی و فروپاشی تابع موج"
+  },
+  {
+    "slug": "quantum-microscopy",
+    "title": "میکروسکوپ کوانتومی و تصویربرداری نمونه",
+    "filename": "quantum-microscopy.webp",
+    "alt": "میکروسکوپ کوانتومی و تصویربرداری نمونه"
+  },
+  {
+    "slug": "quantum-money",
+    "title": "پول کوانتومی",
+    "filename": "quantum-money.webp",
+    "alt": "پول کوانتومی"
+  },
+  {
+    "slug": "quantum-music",
+    "title": "موسیقی کوانتومی و تبدیل داده کوانتومی به صدا",
+    "filename": "quantum-music.webp",
+    "alt": "موسیقی کوانتومی و تبدیل داده کوانتومی به صدا"
+  }
+]

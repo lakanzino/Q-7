@@ -1,0 +1,32 @@
+[
+  {
+    "slug": "anyon",
+    "title": "آنیون و آمار ذرات دوبعدی",
+    "filename": "anyon.webp",
+    "alt": "آنیون و آمار ذرات دوبعدی"
+  },
+  {
+    "slug": "axion",
+    "title": "اکسیون",
+    "filename": "axion.webp",
+    "alt": "اکسیون"
+  },
+  {
+    "slug": "bell-inequality",
+    "title": "نامساوی بل",
+    "filename": "bell-inequality.webp",
+    "alt": "تصویر شاخص قضیه و نامساوی بل در فیزیک کوانتوم"
+  },
+  {
+    "slug": "bernstein-vazirani-algorithm",
+    "title": "مدار الگوریتم برنشتاین–وزیرانی",
+    "filename": "bernstein-vazirani-algorithm.webp",
+    "alt": "مدار الگوریتم برنشتاین–وزیرانی"
+  },
+  {
+    "slug": "bohr-atomic-model",
+    "title": "مدل اتمی بور",
+    "filename": "bohr-atomic-model.webp",
+    "alt": "تصویر شاخص مدل اتمی نیلز بور و مدارهای کوانتومی"
+  }
+]

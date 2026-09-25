@@ -1,0 +1,32 @@
+[
+  {
+    "slug": "quantum-compiler",
+    "title": "کامپایلر کوانتومی",
+    "filename": "quantum-compiler.webp",
+    "alt": "کامپایلر کوانتومی"
+  },
+  {
+    "slug": "quantum-conference-key-agreement",
+    "title": "توافق کلید کوانتومی",
+    "filename": "quantum-conference-key-agreement.webp",
+    "alt": "تصویر مفهومی توافق کلید کوانتومی چندطرفه با هشت گره درهم‌تنیده حول قفل امنیتی نئونی"
+  },
+  {
+    "slug": "quantum-contextuality",
+    "title": "زمینه‌مندی کوانتومی",
+    "filename": "quantum-contextuality.webp",
+    "alt": "زمینه‌مندی کوانتومی"
+  },
+  {
+    "slug": "quantum-control",
+    "title": "کنترل کوانتومی سامانه",
+    "filename": "quantum-control.webp",
+    "alt": "کنترل کوانتومی سامانه"
+  },
+  {
+    "slug": "quantum-cosmology",
+    "title": "روند مفهومی کیهان‌شناسی کوانتومی از جهان آغازین",
+    "filename": "quantum-cosmology.webp",
+    "alt": "روند مفهومی کیهان‌شناسی کوانتومی از جهان آغازین"
+  }
+]

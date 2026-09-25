@@ -1,0 +1,32 @@
+[
+  {
+    "slug": "entanglement-quantum-computers",
+    "title": "درهم‌تنیدگی در کامپیوترهای کوانتومی",
+    "filename": "entanglement-quantum-computers.webp",
+    "alt": "تصویر شاخص درهم‌تنیدگی در پردازش کامپیوترهای کوانتومی"
+  },
+  {
+    "slug": "exciton",
+    "title": "اکسایتون در شبکه بلوری",
+    "filename": "exciton.webp",
+    "alt": "اکسایتون در شبکه بلوری"
+  },
+  {
+    "slug": "fermi-gas",
+    "title": "گاز فرمی و پرشدن ترازها تا انرژی فرمی",
+    "filename": "fermi-gas.webp",
+    "alt": "گاز فرمی و پرشدن ترازها تا انرژی فرمی"
+  },
+  {
+    "slug": "fine-structure-constant",
+    "title": "ثابت ساختار ریز",
+    "filename": "fine-structure-constant.webp",
+    "alt": "ثابت ساختار ریز"
+  },
+  {
+    "slug": "fock-state",
+    "title": "حالت فوک با تعداد مشخص کوانتوم",
+    "filename": "fock-state.webp",
+    "alt": "حالت فوک با تعداد مشخص کوانتوم"
+  }
+]
