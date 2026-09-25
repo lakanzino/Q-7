@@ -1,0 +1,3197 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>گالری بازبینی تصاویر شاخص کیوپدیا (172 تصویر) - Qpedia</title>
+    <link rel="preconnect" href="https://cdn.jsdelivr.net">
+    <link href="https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/Vazirmatn-font-face.css" rel="stylesheet" type="text/css" />
+    <style>
+        :root {
+            --bg-primary: #0a0e17;
+            --bg-secondary: #121826;
+            --bg-card: rgba(26, 34, 52, 0.7);
+            --text-primary: #f1f5f9;
+            --text-secondary: #94a3b8;
+            --text-muted: #64748b;
+            --accent-cyan: #06b6d4;
+            --accent-glow: rgba(6, 182, 212, 0.3);
+            --accent-blue: #3b82f6;
+            --accent-green: #10b981;
+            --border-color: rgba(255, 255, 255, 0.08);
+            --card-border: rgba(6, 182, 212, 0.2);
+            --radius-sm: 8px;
+            --radius-md: 12px;
+            --radius-lg: 16px;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Vazirmatn', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            background: radial-gradient(circle at 50% 0%, #152238 0%, #0a0e17 60%, #05070d 100%);
+            color: var(--text-primary);
+            min-height: 100vh;
+            padding: 0 0 60px 0;
+            line-height: 1.6;
+        }
+
+        header {
+            background: rgba(10, 14, 23, 0.85);
+            backdrop-filter: blur(16px);
+            border-bottom: 1px solid var(--border-color);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            padding: 16px 24px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+        }
+
+        .header-content {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 16px;
+        }
+
+        .brand {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .brand-logo {
+            background: linear-gradient(135deg, #06b6d4, #3b82f6);
+            color: #fff;
+            padding: 6px 14px;
+            border-radius: var(--radius-sm);
+            font-weight: 800;
+            font-size: 16px;
+            letter-spacing: 0.5px;
+            box-shadow: 0 0 15px var(--accent-glow);
+        }
+
+        .brand-title h1 {
+            font-size: 18px;
+            font-weight: 700;
+            color: #fff;
+        }
+
+        .brand-title p {
+            font-size: 12px;
+            color: var(--text-secondary);
+        }
+
+        .header-actions {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: linear-gradient(135deg, #06b6d4, #2563eb);
+            color: #fff;
+            text-decoration: none;
+            padding: 9px 18px;
+            border-radius: var(--radius-sm);
+            font-size: 13px;
+            font-weight: 600;
+            transition: all 0.2s ease;
+            box-shadow: 0 4px 12px rgba(6, 182, 212, 0.3);
+            border: none;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 18px rgba(6, 182, 212, 0.5);
+        }
+
+        .btn-outline {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid var(--border-color);
+            color: var(--text-secondary);
+            box-shadow: none;
+        }
+
+        .btn-outline:hover {
+            background: rgba(255, 255, 255, 0.1);
+            color: #fff;
+            border-color: rgba(255, 255, 255, 0.2);
+            box-shadow: none;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 24px auto;
+            padding: 0 20px;
+        }
+
+        /* Control Panel */
+        .controls-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius-lg);
+            padding: 20px 24px;
+            margin-bottom: 28px;
+            backdrop-filter: blur(12px);
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+
+        .stats-bar {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            padding-bottom: 16px;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .stat-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 13px;
+            color: var(--text-secondary);
+        }
+
+        .stat-item strong {
+            color: var(--accent-cyan);
+            font-size: 16px;
+        }
+
+        .filter-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 16px;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .search-box {
+            flex: 1;
+            min-width: 260px;
+            position: relative;
+        }
+
+        .search-input {
+            width: 100%;
+            background: rgba(10, 14, 23, 0.8);
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius-sm);
+            padding: 10px 16px;
+            color: #fff;
+            font-family: inherit;
+            font-size: 13px;
+            outline: none;
+            transition: all 0.2s ease;
+        }
+
+        .search-input:focus {
+            border-color: var(--accent-cyan);
+            box-shadow: 0 0 0 3px rgba(6, 182, 212, 0.2);
+        }
+
+        .batch-filter-wrap {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .select-filter {
+            background: rgba(10, 14, 23, 0.8);
+            border: 1px solid var(--border-color);
+            color: #fff;
+            padding: 10px 14px;
+            border-radius: var(--radius-sm);
+            font-family: inherit;
+            font-size: 13px;
+            outline: none;
+            cursor: pointer;
+        }
+
+        .select-filter:focus {
+            border-color: var(--accent-cyan);
+        }
+
+        /* Image Grid */
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+            gap: 20px;
+        }
+
+        .img-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius-md);
+            overflow: hidden;
+            transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+            display: flex;
+            flex-direction: column;
+            cursor: pointer;
+            position: relative;
+        }
+
+        .img-card:hover {
+            transform: translateY(-4px);
+            border-color: var(--card-border);
+            box-shadow: 0 10px 24px rgba(0, 0, 0, 0.5), 0 0 16px var(--accent-glow);
+        }
+
+        .img-frame {
+            width: 100%;
+            position: relative;
+            aspect-ratio: 16 / 9;
+            background: #000;
+            overflow: hidden;
+        }
+
+        .img-frame img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+            display: block;
+        }
+
+        .img-card:hover .img-frame img {
+            transform: scale(1.05);
+        }
+
+        .badge-batch {
+            position: absolute;
+            top: 8px;
+            left: 8px;
+            background: rgba(10, 14, 23, 0.85);
+            backdrop-filter: blur(6px);
+            color: var(--accent-cyan);
+            font-size: 11px;
+            font-weight: 700;
+            padding: 3px 8px;
+            border-radius: 4px;
+            border: 1px solid rgba(6, 182, 212, 0.4);
+        }
+
+        .badge-watermark {
+            position: absolute;
+            top: 8px;
+            right: 8px;
+            background: rgba(6, 182, 212, 0.2);
+            backdrop-filter: blur(6px);
+            color: #fff;
+            font-size: 10px;
+            font-weight: 800;
+            padding: 2px 7px;
+            border-radius: 4px;
+            border: 1px solid rgba(6, 182, 212, 0.5);
+            letter-spacing: 0.5px;
+        }
+
+        .card-body {
+            padding: 12px 14px;
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+            flex: 1;
+            justify-content: space-between;
+        }
+
+        .card-title {
+            font-size: 13.5px;
+            font-weight: 700;
+            color: #fff;
+            line-height: 1.4;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+
+        .card-slug {
+            font-size: 11px;
+            color: var(--text-muted);
+            direction: ltr;
+            text-align: right;
+            font-family: monospace;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .card-footer {
+            margin-top: 8px;
+            padding-top: 8px;
+            border-top: 1px solid rgba(255, 255, 255, 0.05);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 11px;
+            color: var(--text-secondary);
+        }
+
+        /* Modal */
+        .modal-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.85);
+            backdrop-filter: blur(10px);
+            z-index: 1000;
+            display: none;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .modal-overlay.active {
+            display: flex;
+        }
+
+        .modal-box {
+            background: var(--bg-secondary);
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius-lg);
+            max-width: 900px;
+            width: 100%;
+            overflow: hidden;
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.7);
+            display: flex;
+            flex-direction: column;
+            position: relative;
+        }
+
+        .modal-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 16px 20px;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .modal-close {
+            background: none;
+            border: none;
+            color: var(--text-secondary);
+            font-size: 24px;
+            cursor: pointer;
+            line-height: 1;
+        }
+
+        .modal-close:hover {
+            color: #fff;
+        }
+
+        .modal-img-wrap {
+            width: 100%;
+            background: #000;
+            aspect-ratio: 16 / 9;
+            overflow: hidden;
+        }
+
+        .modal-img-wrap img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+
+        .modal-details {
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .detail-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            font-size: 13px;
+        }
+
+        .detail-label {
+            color: var(--text-muted);
+            min-width: 90px;
+        }
+
+        .detail-val {
+            color: var(--text-primary);
+            font-weight: 500;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .gallery-grid {
+                grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+                gap: 12px;
+            }
+            .card-title {
+                font-size: 12px;
+            }
+            .header-content {
+                flex-direction: column;
+                align-items: stretch;
+            }
+            .header-actions {
+                justify-content: space-between;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="header-content">
+            <div class="brand">
+                <span class="brand-logo">qpedia.ir</span>
+                <div class="brand-title">
+                    <h1>گالری بازبینی تصاویر شاخص دانشنامه</h1>
+                    <p>۱۷۲ تصویر شاخص بازنویسی‌شده با نشان نئونی شیشه‌ای qpedia.ir</p>
+                </div>
+            </div>
+            <div class="header-actions">
+                <a href="https://github.com/lakanzino/Q-7/raw/arena/01a0bba0-q-7/downloads/qpedia-all-featured-images-master.zip" class="btn">
+                    📦 دانلود افزونه جامع مستر (172 تصویر)
+                </a>
+                <button class="btn btn-outline" onclick="window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' })">
+                    فهرست ۳۵ بسته ۵ عددی ▾
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <!-- Controls & Filter -->
+        <div class="controls-card">
+            <div class="stats-bar">
+                <div class="stat-item">کل تصاویر شاخص: <strong id="total-count">172</strong> تصویر</div>
+                <div class="stat-item">ابعاد استاندارد: <strong>1200x675 (16:9)</strong></div>
+                <div class="stat-item">فرمت: <strong>WebP بهینه‌شده</strong></div>
+                <div class="stat-item">وضعیت واترمارک: <strong style="color: var(--accent-green);">✓ درج شده (NorthEast)</strong></div>
+                <div class="stat-item">تصاویر در حال نمایش: <strong id="visible-count">172</strong></div>
+            </div>
+
+            <div class="filter-row">
+                <div class="search-box">
+                    <input type="text" id="searchInput" class="search-input" placeholder="🔍 جستجو در عنوان مقاله، اسلاگ انگلیسی یا متن جایگزین..." oninput="filterGallery()">
+                </div>
+                <div class="batch-filter-wrap">
+                    <label for="batchSelect" style="font-size: 13px; color: var(--text-secondary);">فیلتر بر اساس بسته:</label>
+                    <select id="batchSelect" class="select-filter" onchange="filterGallery()">
+                        <option value="all">نمایش تمامی بسته‌ها (۱ تا ۳۵)</option>
+                        <option value="1">بسته 01 (۵ تصویر)</option>
+                        <option value="2">بسته 02 (۵ تصویر)</option>
+                        <option value="3">بسته 03 (۵ تصویر)</option>
+                        <option value="4">بسته 04 (۵ تصویر)</option>
+                        <option value="5">بسته 05 (۵ تصویر)</option>
+                        <option value="6">بسته 06 (۵ تصویر)</option>
+                        <option value="7">بسته 07 (۵ تصویر)</option>
+                        <option value="8">بسته 08 (۵ تصویر)</option>
+                        <option value="9">بسته 09 (۵ تصویر)</option>
+                        <option value="10">بسته 10 (۵ تصویر)</option>
+                        <option value="11">بسته 11 (۵ تصویر)</option>
+                        <option value="12">بسته 12 (۵ تصویر)</option>
+                        <option value="13">بسته 13 (۵ تصویر)</option>
+                        <option value="14">بسته 14 (۵ تصویر)</option>
+                        <option value="15">بسته 15 (۵ تصویر)</option>
+                        <option value="16">بسته 16 (۵ تصویر)</option>
+                        <option value="17">بسته 17 (۵ تصویر)</option>
+                        <option value="18">بسته 18 (۵ تصویر)</option>
+                        <option value="19">بسته 19 (۵ تصویر)</option>
+                        <option value="20">بسته 20 (۵ تصویر)</option>
+                        <option value="21">بسته 21 (۵ تصویر)</option>
+                        <option value="22">بسته 22 (۵ تصویر)</option>
+                        <option value="23">بسته 23 (۵ تصویر)</option>
+                        <option value="24">بسته 24 (۵ تصویر)</option>
+                        <option value="25">بسته 25 (۵ تصویر)</option>
+                        <option value="26">بسته 26 (۵ تصویر)</option>
+                        <option value="27">بسته 27 (۵ تصویر)</option>
+                        <option value="28">بسته 28 (۵ تصویر)</option>
+                        <option value="29">بسته 29 (۵ تصویر)</option>
+                        <option value="30">بسته 30 (۵ تصویر)</option>
+                        <option value="31">بسته 31 (۵ تصویر)</option>
+                        <option value="32">بسته 32 (۵ تصویر)</option>
+                        <option value="33">بسته 33 (۵ تصویر)</option>
+                        <option value="34">بسته 34 (۵ تصویر)</option>
+                        <option value="35">بسته 35 (۵ تصویر)</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <!-- Gallery Grid -->
+        <div class="gallery-grid" id="galleryGrid">
+            <div class="img-card" data-batch="1" data-title="صفر مطلق چیست؟" data-slug="absolute-zero" data-alt="تصویر شاخص صفر مطلق دما و توقف جنبش گرمایی" onclick="openModal('absolute-zero.webp', 'صفر مطلق چیست؟', 'absolute-zero', 'تصویر شاخص صفر مطلق دما و توقف جنبش گرمایی', 1)">
+                <div class="img-frame">
+                    <img src="images/absolute-zero.webp" alt="تصویر شاخص صفر مطلق دما و توقف جنبش گرمایی" loading="lazy">
+                    <span class="badge-batch">بسته 01</span>
+                    <span class="badge-watermark">qpedia.ir</span>
+                </div>
+                <div class="card-body">
+                    <h3 class="card-title">صفر مطلق چیست؟</h3>
+                    <span class="card-slug">absolute-zero</span>
+                    <div class="card-footer">
+                        <span>WebP</span>
+                        <span>1200×675</span>
+                    </div>
+                </div>
+            </div>
+            <div class="img-card" data-batch="1" data-title="اثر شتاب و تابش اونرو" data-slug="acceleration-radiation" data-alt="اثر شتاب و تابش اونرو" onclick="openModal('acceleration-radiation.webp', 'اثر شتاب و تابش اونرو', 'acceleration-radiation', 'اثر شتاب و تابش اونرو', 1)">
+                <div class="img-frame">
+                    <img src="images/acceleration-radiation.webp" alt="اثر شتاب و تابش اونرو" loading="lazy">
+                    <span class="badge-batch">بسته 01</span>
+                    <span class="badge-watermark">qpedia.ir</span>
+                </div>
+                <div class="card-body">
+                    <h3 class="card-title">اثر شتاب و تابش اونرو</h3>
+                    <span class="card-slug">acceleration-radiation</span>
+                    <div class="card-footer">
+                        <span>WebP</span>
+                        <span>1200×675</span>
+                    </div>
+                </div>
+            </div>
+            <div class="img-card" data-batch="1" data-title="اثر آهارونوف-بوهم" data-slug="aharonov-bohm-effect" data-alt="تصویر شاخص اثر آهارونوف-بوهم و پتانسیل الکترومغناطیسی" onclick="openModal('aharonov-bohm-effect.webp', 'اثر آهارونوف-بوهم', 'aharonov-bohm-effect', 'تصویر شاخص اثر آهارونوف-بوهم و پتانسیل الکترومغناطیسی', 1)">
+                <div class="img-frame">
+                    <img src="images/aharonov-bohm-effect.webp" alt="تصویر شاخص اثر آهارونوف-بوهم و پتانسیل الکترومغناطیسی" loading="lazy">
+                    <span class="badge-batch">بسته 01</span>
+                    <span class="badge-watermark">qpedia.ir</span>
+                </div>
+                <div class="card-body">
+                    <h3 class="card-title">اثر آهارونوف-بوهم</h3>
+                    <span class="card-slug">aharonov-bohm-effect</span>
+                    <div class="card-footer">
+                        <span>WebP</span>
+                        <span>1200×675</span>
+                    </div>
+                </div>
+            </div>
+            <div class="img-card" data-batch="1" data-title="واپاشی آلفا" data-slug="alpha-decay" data-alt="تصویر شاخص واپاشی آلفا و تونل‌زنی هسته‌ای" onclick="openModal('alpha-decay.webp', 'واپاشی آلفا', 'alpha-decay', 'تصویر شاخص واپاشی آلفا و تونل‌زنی هسته‌ای', 1)">
+                <div class="img-frame">
+                    <img src="images/alpha-decay.webp" alt="تصویر شاخص واپاشی آلفا و تونل‌زنی هسته‌ای" loading="lazy">
+                    <span class="badge-batch">بسته 01</span>
+                    <span class="badge-watermark">qpedia.ir</span>
+                </div>
+                <div class="card-body">
+                    <h3 class="card-title">واپاشی آلفا</h3>
+                    <span class="card-slug">alpha-decay</span>
+                    <div class="card-footer">
+                        <span>WebP</span>
+                        <span>1200×675</span>
+                    </div>
+                </div>
+            </div>
+            <div class="img-card" data-batch="1" data-title="گشتاور مغناطیسی ناهنجار" data-slug="anomalous-magnetic-moment" data-alt="گشتاور مغناطیسی ناهنجار" onclick="openModal('anomalous-magnetic-moment.webp', 'گشتاور مغناطیسی ناهنجار', 'anomalous-magnetic-moment', 'گشتاور مغناطیسی ناهنجار', 1)">
+                <div class="img-frame">
+                    <img src="images/anomalous-magnetic-moment.webp" alt="گشتاور مغناطیسی ناهنجار" loading="lazy">
+                    <span class="badge-batch">بسته 01</span>
+                    <span class="badge-watermark">qpedia.ir</span>
+                </div>
+                <div class="card-body">
+                    <h3 class="card-title">گشتاور مغناطیسی ناهنجار</h3>
+                    <span class="card-slug">anomalous-magnetic-moment</span>
+                    <div class="card-footer">
+                        <span>WebP</span>
+                        <span>1200×675</span>
+                    </div>
+                </div>
+            </div>
+            <div class="img-card" data-batch="2" data-title="آنیون و آمار ذرات دوبعدی" data-slug="anyon" data-alt="آنیون و آمار ذرات دوبعدی" onclick="openModal('anyon.webp', 'آنیون و آمار ذرات دوبعدی', 'anyon', 'آنیون و آمار ذرات دوبعدی', 2)">
+                <div class="img-frame">
+                    <img src="images/anyon.webp" alt="آنیون و آمار ذرات دوبعدی" loading="lazy">
+                    <span class="badge-batch">بسته 02</span>
+                    <span class="badge-watermark">qpedia.ir</span>
+                </div>
+                <div class="card-body">
+                    <h3 class="card-title">آنیون و آمار ذرات دوبعدی</h3>
+                    <span class="card-slug">anyon</span>
+                    <div class="card-footer">
+                        <span>WebP</span>
+                        <span>1200×675</span>
+                    </div>
+                </div>
+            </div>
+            <div class="img-card" data-batch="2" data-title="اکسیون" data-slug="axion" data-alt="اکسیون" onclick="openModal('axion.webp', 'اکسیون', 'axion', 'اکسیون', 2)">
+                <div class="img-frame">
+                    <img src="images/axion.webp" alt="اکسیون" loading="lazy">
+                    <span class="badge-batch">بسته 02</span>
+                    <span class="badge-watermark">qpedia.ir</span>
+                </div>
+                <div class="card-body">
+                    <h3 class="card-title">اکسیون</h3>
+                    <span class="card-slug">axion</span>
+                    <div class="card-footer">
+                        <span>WebP</span>
+                        <span>1200×675</span>
+                    </div>
+                </div>
+            </div>
+            <div class="img-card" data-batch="2" data-title="نامساوی بل" data-slug="bell-inequality" data-alt="تصویر شاخص قضیه و نامساوی بل در فیزیک کوانتوم" onclick="openModal('bell-inequality.webp', 'نامساوی بل', 'bell-inequality', 'تصویر شاخص قضیه و نامساوی بل در فیزیک کوانتوم', 2)">
+                <div class="img-frame">
+                    <img src="images/bell-inequality.webp" alt="تصویر شاخص قضیه و نامساوی بل در فیزیک کوانتوم" loading="lazy">
+                    <span class="badge-batch">بسته 02</span>
+                    <span class="badge-watermark">qpedia.ir</span>
+                </div>
+                <div class="card-body">
+                    <h3 class="card-title">نامساوی بل</h3>
+                    <span class="card-slug">bell-inequality</span>
+                    <div class="card-footer">
+                        <span>WebP</span>
+                        <span>1200×675</span>
+                    </div>
+                </div>
+            </div>
+            <div class="img-card" data-batch="2" data-title="مدار الگوریتم برنشتاین–وزیرانی" data-slug="bernstein-vazirani-algorithm" data-alt="مدار الگوریتم برنشتاین–وزیرانی" onclick="openModal('bernstein-vazirani-algorithm.webp', 'مدار الگوریتم برنشتاین–وزیرانی', 'bernstein-vazirani-algorithm', 'مدار الگوریتم برنشتاین–وزیرانی', 2)">
+                <div class="img-frame">
+                    <img src="images/bernstein-vazirani-algorithm.webp" alt="مدار الگوریتم برنشتاین–وزیرانی" loading="lazy">
+                    <span class="badge-batch">بسته 02</span>
+                    <span class="badge-watermark">qpedia.ir</span>
+                </div>
+                <div class="card-body">
+                    <h3 class="card-title">مدار الگوریتم برنشتاین–وزیرانی</h3>
+                    <span class="card-slug">bernstein-vazirani-algorithm</span>
+                    <div class="card-footer">
+                        <span>WebP</span>
+                        <span>1200×675</span>
+                    </div>
+                </div>
+            </div>
+            <div class="img-card" data-batch="2" data-title="مدل اتمی بور" data-slug="bohr-atomic-model" data-alt="تصویر شاخص مدل اتمی نیلز بور و مدارهای کوانتومی" onclick="openModal('bohr-atomic-model.webp', 'مدل اتمی بور', 'bohr-atomic-model', 'تصویر شاخص مدل اتمی نیلز بور و مدارهای کوانتومی', 2)">
+                <div class="img-frame">
+                    <img src="images/bohr-atomic-model.webp" alt="تصویر شاخص مدل اتمی نیلز بور و مدارهای کوانتومی" loading="lazy">
+                    <span class="badge-batch">بسته 02</span>
+                    <span class="badge-watermark">qpedia.ir</span>
+                </div>
+                <div class="card-body">
+                    <h3 class="card-title">مدل اتمی بور</h3>
+                    <span class="card-slug">bohr-atomic-model</span>
+                    <div class="card-footer">
+                        <span>WebP</span>
+                        <span>1200×675</span>
+                    </div>
+                </div>
+            </div>
+            <div class="img-card" data-batch="3" data-title="اثر کازیمیر" data-slug="casimir-effect" data-alt="تصویر شاخص اثر کازیمیر و نیروی کوانتومی میان صفحات" onclick="openModal('casimir-effect.webp', 'اثر کازیمیر', 'casimir-effect', 'تصویر شاخص اثر کازیمیر و نیروی کوانتومی میان صفحات', 3)">
+                <div class="img-frame">
+                    <img src="images/casimir-effect.webp" alt="تصویر شاخص اثر کازیمیر و نیروی کوانتومی میان صفحات" loading="lazy">
+                    <span class="badge-batch">بسته 03</span>
+                    <span class="badge-watermark">qpedia.ir</span>
+                </div>
+                <div class="card-body">
+                    <h3 class="card-title">اثر کازیمیر</h3>
+                    <span class="card-slug">casimir-effect</span>
+                    <div class="card-footer">
+                        <span>WebP</span>
+                        <span>1200×675</span>
+                    </div>
+                </div>
+            </div>
+            <div class="img-card" data-batch="3" data-title="الکترودینامیک کوانتومی حفره" data-slug="cavity-qed" data-alt="الکترودینامیک کوانتومی حفره" onclick="openModal('cavity-qed.webp', 'الکترودینامیک کوانتومی حفره', 'cavity-qed', 'الکترودینامیک کوانتومی حفره', 3)">
+                <div class="img-frame">
+                    <img src="images/cavity-qed.webp" alt="الکترودینامیک کوانتومی حفره" loading="lazy">
+                    <span class="badge-batch">بسته 03</span>
+                    <span class="badge-watermark">qpedia.ir</span>
+                </div>
+                <div class="card-body">
+                    <h3 class="card-title">الکترودینامیک کوانتومی حفره</h3>
+                    <span class="card-slug">cavity-qed</span>
+                    <div class="card-footer">
+                        <span>WebP</span>
+                        <span>1200×675</span>
+                    </div>
+                </div>
+            </div>
+            <div class="img-card" data-batch="3" data-title="الکترودینامیک کوانتومی مدار" data-slug="circuit-qed" data-alt="الکترودینامیک کوانتومی مدار" onclick="openModal('circuit-qed.webp', 'الکترودینامیک کوانتومی مدار', 'circuit-qed', 'الکترودینامیک کوانتومی مدار', 3)">
+                <div class="img-frame">
+                    <img src="images/circuit-qed.webp" alt="الکترودینامیک کوانتومی مدار" loading="lazy">
+                    <span class="badge-batch">بسته 03</span>
+                    <span class="badge-watermark">qpedia.ir</span>
+                </div>
+                <div class="card-body">
+                    <h3 class="card-title">الکترودینامیک کوانتومی مدار</h3>
+                    <span class="card-slug">circuit-qed</span>
+                    <div class="card-footer">
+                        <span>WebP</span>
+                        <span>1200×675</span>
+                    </div>
+                </div>
+            </div>
+            <div class="img-card" data-batch="3" data-title="همدوسی" data-slug="coherence" data-alt="تصویر شاخص همدوسی کوانتومی و فاز امواج" onclick="openModal('coherence.webp', 'همدوسی', 'coherence', 'تصویر شاخص همدوسی کوانتومی و فاز امواج', 3)">
+                <div class="img-frame">
+                    <img src="images/coherence.webp" alt="تصویر شاخص همدوسی کوانتومی و فاز امواج" loading="lazy">
+                    <span class="badge-batch">بسته 03</span>
+                    <span class="badge-watermark">qpedia.ir</span>
+                </div>
+                <div class="card-body">
+                    <h3 class="card-title">همدوسی</h3>
+                    <span class="card-slug">coherence</span>
+                    <div class="card-footer">
+                        <span>WebP</span>
+                        <span>1200×675</span>
+                    </div>
+                </div>
+            </div>
+            <div class="img-card" data-batch="3" data-title="حالت همدوس و نمایش فضای فاز" data-slug="coherent-states" data-alt="حالت همدوس و نمایش فضای فاز" onclick="openModal('coherent-states.webp', 'حالت همدوس و نمایش فضای فاز', 'coherent-states', 'حالت همدوس و نمایش فضای فاز', 3)">
+                <div class="img-frame">
+                    <img src="images/coherent-states.webp" alt="حالت همدوس و نمایش فضای فاز" loading="lazy">
+                    <span class="badge-batch">بسته 03</span>
+                    <span class="badge-watermark">qpedia.ir</span>
+                </div>
+                <div class="card-body">
+                    <h3 class="card-title">حالت همدوس و نمایش فضای فاز</h3>
+                    <span class="card-slug">coherent-states</span>
+                    <div class="card-footer">
+                        <span>WebP</span>
+                        <span>1200×675</span>
+                    </div>
+                </div>
+            </div>
+            <div class="img-card" data-batch="4" data-title="تمثیل تاس در مقابل تمثیل سکه" data-slug="coin-vs-dice-quantum-uncertainty" data-alt="تصویر شاخص تمثیل تاس و سکه در عدم قطعیت کوانتومی" onclick="openModal('coin-vs-dice-quantum-uncertainty.webp', 'تمثیل تاس در مقابل تمثیل سکه', 'coin-vs-dice-quantum-uncertainty', 'تصویر شاخص تمثیل تاس و سکه در عدم قطعیت کوانتومی', 4)">
+                <div class="img-frame">
+                    <img src="images/coin-vs-dice-quantum-uncertainty.webp" alt="تصویر شاخص تمثیل تاس و سکه در عدم قطعیت کوانتومی" loading="lazy">
+                    <span class="badge-batch">بسته 04</span>
+                    <span class="badge-watermark">qpedia.ir</span>
+                </div>
+                <div class="card-body">
+                    <h3 class="card-title">تمثیل تاس در مقابل تمثیل سکه</h3>
+                    <span class="card-slug">coin-vs-dice-quantum-uncertainty</span>
+                    <div class="card-footer">
+                        <span>WebP</span>
+                        <span>1200×675</span>
+                    </div>
+                </div>
+            </div>
+            <div class="img-card" data-batch="4" data-title="اصل مکملیت" data-slug="complementarity-principle" data-alt="تصویر شاخص اصل مکملیت نیلز بور در فیزیک کوانتوم" onclick="openModal('complementarity-principle.webp', 'اصل مکملیت', 'complementarity-principle', 'تصویر شاخص اصل مکملیت نیلز بور در فیزیک کوانتوم', 4)">
+                <div class="img-frame">
+                    <img src="images/complementarity-principle.webp" alt="تصویر شاخص اصل مکملیت نیلز بور در فیزیک کوانتوم" loading="lazy">
+                    <span class="badge-batch">بسته 04</span>
+                    <span class="badge-watermark">qpedia.ir</span>
+                </div>
+                <div class="card-body">
+                    <h3 class="card-title">اصل مکملیت</h3>
+                    <span class="card-slug">complementarity-principle</span>
+                    <div class="card-footer">
+                        <span>WebP</span>
+                        <span>1200×675</span>
+                    </div>
+                </div>
+            </div>
+            <div class="img-card" data-batch="4" data-title="تفسیر کپنهاگی" data-slug="copenhagen-interpretation" data-alt="تصویر شاخص تفسیر کپنهاگی از مکانیک کوانتومی" onclick="openModal('copenhagen-interpretation.webp', 'تفسیر کپنهاگی', 'copenhagen-interpretation', 'تصویر شاخص تفسیر کپنهاگی از مکانیک کوانتومی', 4)">
+                <div class="img-frame">
+                    <img src="images/copenhagen-interpretation.webp" alt="تصویر شاخص تفسیر کپنهاگی از مکانیک کوانتومی" loading="lazy">
+                    <span class="badge-batch">بسته 04</span>
+                    <span class="badge-watermark">qpedia.ir</span>
+                </div>
+                <div class="card-body">
+                    <h3 class="card-title">تفسیر کپنهاگی</h3>
+                    <span class="card-slug">copenhagen-interpretation</span>
+                    <div class="card-footer">
+                        <span>WebP</span>
+                        <span>1200×675</span>
+                    </div>
+                </div>
+            </div>
+            <div class="img-card" data-batch="4" data-title="تورم کیهانی" data-slug="cosmic-inflation" data-alt="تصویر شاخص نظریه تورم کیهانی در کیهان‌شناسی آغازین" onclick="openModal('cosmic-inflation.webp', 'تورم کیهانی', 'cosmic-inflation', 'تصویر شاخص نظریه تورم کیهانی در کیهان‌شناسی آغازین', 4)">
+                <div class="img-frame">
+                    <img src="images/cosmic-inflation.webp" alt="تصویر شاخص نظریه تورم کیهانی در کیهان‌شناسی آغازین" loading="lazy">
+                    <span class="badge-batch">بسته 04</span>
+                    <span class="badge-watermark">qpedia.ir</span>
+                </div>
+                <div class="card-body">
+                    <h3 class="card-title">تورم کیهانی</h3>
+                    <span class="card-slug">cosmic-inflation</span>
+                    <div class="card-footer">
+                        <span>WebP</span>
+                        <span>1200×675</span>
+                    </div>
+                </div>
+            </div>
+            <div class="img-card" data-batch="4" data-title="تابش زمینه کیهانی" data-slug="cosmic-microwave-background" data-alt="تصویر شاخص تابش پس‌زمینه کیهانی CMB از انفجار بزرگ" onclick="openModal('cosmic-microwave-background.webp', 'تابش زمینه کیهانی', 'cosmic-microwave-background', 'تصویر شاخص تابش پس‌زمینه کیهانی CMB از انفجار بزرگ', 4)">
+                <div class="img-frame">
+                    <img src="images/cosmic-microwave-background.webp" alt="تصویر شاخص تابش پس‌زمینه کیهانی CMB از انفجار بزرگ" loading="lazy">
+                    <span class="badge-batch">بسته 04</span>
+                    <span class="badge-watermark">qpedia.ir</span>
+                </div>
+                <div class="card-body">
+                    <h3 class="card-title">تابش زمینه کیهانی</h3>
+                    <span class="card-slug">cosmic-microwave-background</span>
+                    <div class="card-footer">
+                        <span>WebP</span>
+                        <span>1200×675</span>
+                    </div>
+                </div>
+            </div>
+            <div class="img-card" data-batch="5" data-title="الکترونیک سرد درون یخچال برودتی" data-slug="cryogenic-electronics" data-alt="الکترونیک سرد درون یخچال برودتی" onclick="openModal('cryogenic-electronics.webp', 'الکترونیک سرد درون یخچال برودتی', 'cryogenic-electronics', 'الکترونیک سرد درون یخچال برودتی', 5)">
+                <div class="img-frame">
+                    <img src="images/cryogenic-electronics.webp" alt="الکترونیک سرد درون یخچال برودتی" loading="lazy">
+                    <span class="badge-batch">بسته 05</span>
+                    <span class="badge-watermark">qpedia.ir</span>
+                </div>
+                <div class="card-body">
+                    <h3 class="card-title">الکترونیک سرد درون یخچال برودتی</h3>
+                    <span class="card-slug">cryogenic-electronics</span>
+                    <div class="card-footer">
+                        <span>WebP</span>
+                        <span>1200×675</span>
+                    </div>
+                </div>
+            </div>
+            <div class="img-card" data-batch="5" data-title="انرژی تاریک کوانتومی" data-slug="dark-energy-quantum" data-alt="انرژی تاریک کوانتومی" onclick="openModal('dark-energy-quantum.webp', 'انرژی تاریک کوانتومی', 'dark-energy-quantum', 'انرژی تاریک کوانتومی', 5)">
+                <div class="img-frame">
+                    <img src="images/dark-energy-quantum.webp" alt="انرژی تاریک کوانتومی" loading="lazy">
+                    <span class="badge-batch">بسته 05</span>
+                    <span class="badge-watermark">qpedia.ir</span>
+                </div>
+                <div class="card-body">
+                    <h3 class="card-title">انرژی تاریک کوانتومی</h3>
+                    <span class="card-slug">dark-energy-quantum</span>
+                    <div class="card-footer">
+                        <span>WebP</span>
+                        <span>1200×675</span>
+                    </div>
+                </div>
+            </div>
+            <div class="img-card" data-batch="5" data-title="واهمدوسی کوانتومی" data-slug="decoherence" data-alt="تصویر شاخص واهمدوسی کوانتومی و گذار به فیزیک کلاسیک" onclick="openModal('decoherence.webp', 'واهمدوسی کوانتومی', 'decoherence', 'تصویر شاخص واهمدوسی کوانتومی و گذار به فیزیک کلاسیک', 5)">
+                <div class="img-frame">
+                    <img src="images/decoherence.webp" alt="تصویر شاخص واهمدوسی کوانتومی و گذار به فیزیک کلاسیک" loading="lazy">
+                    <span class="badge-batch">بسته 05</span>
+                    <span class="badge-watermark">qpedia.ir</span>
+                </div>
+                <div class="card-body">
+                    <h3 class="card-title">واهمدوسی کوانتومی</h3>
+                    <span class="card-slug">decoherence</span>
+                    <div class="card-footer">
+                        <span>WebP</span>
+                        <span>1200×675</span>
+                    </div>
+                </div>
+            </div>
+            <div class="img-card" data-batch="5" data-title="جبرگرایی کلاسیک و احتمال کوانتومی" data-slug="determinism-vs-probability" data-alt="تصویر شاخص جبرگرایی نیوتنی در برابر احتمال کوانتومی" onclick="openModal('determinism-vs-probability.webp', 'جبرگرایی کلاسیک و احتمال کوانتومی', 'determinism-vs-probability', 'تصویر شاخص جبرگرایی نیوتنی در برابر احتمال کوانتومی', 5)">
+                <div class="img-frame">
+                    <img src="images/determinism-vs-probability.webp" alt="تصویر شاخص جبرگرایی نیوتنی در برابر احتمال کوانتومی" loading="lazy">
+                    <span class="badge-batch">بسته 05</span>
+                    <span class="badge-watermark">qpedia.ir</span>
+                </div>
+                <div class="card-body">
+                    <h3 class="card-title">جبرگرایی کلاسیک و احتمال کوانتومی</h3>
+                    <span class="card-slug">determinism-vs-probability</span>
+                    <div class="card-footer">
+                        <span>WebP</span>
+                        <span>1200×675</span>
+                    </div>
+                </div>
+            </div>
+            <div class="img-card" data-batch="5" data-title="مدار الگوریتم دویچ–جوزا" data-slug="deutsch-jozsa-algorithm" data-alt="مدار الگوریتم دویچ–جوزا" onclick="openModal('deutsch-jozsa-algorithm.webp', 'مدار الگوریتم دویچ–جوزا', 'deutsch-jozsa-algorithm', 'مدار الگوریتم دویچ–جوزا', 5)">
+                <div class="img-frame">
+                    <img src="images/deutsch-jozsa-algorithm.webp" alt="مدار الگوریتم دویچ–جوزا" loading="lazy">
+                    <span class="badge-batch">بسته 05</span>
+                    <span class="badge-watermark">qpedia.ir</span>
+                </div>
+                <div class="card-body">
+                    <h3 class="card-title">مدار الگوریتم دویچ–جوزا</h3>
+                    <span class="card-slug">deutsch-jozsa-algorithm</span>
+                    <div class="card-footer">
+                        <span>WebP</span>
+                        <span>1200×675</span>
+                    </div>
+                </div>
+            </div>
+            <div class="img-card" data-batch="6" data-title="توزیع کلید کوانتومی مستقل از دستگاه" data-slug="device-independent-qkd" data-alt="توزیع کلید کوانتومی مستقل از دستگاه" onclick="openModal('device-independent-qkd.webp', 'توزیع کلید کوانتومی مستقل از دستگاه', 'device-independent-qkd', 'توزیع کلید کوانتومی مستقل از دستگاه', 6)">
+                <div class="img-frame">
+                    <img src="images/device-independent-qkd.webp" alt="توزیع کلید کوانتومی مستقل از دستگاه" loading="lazy">
+                    <span class="badge-batch">بسته 06</span>
+                    <span class="badge-watermark">qpedia.ir</span>
+                </div>
+                <div class="card-body">
+                    <h3 class="card-title">توزیع کلید کوانتومی مستقل از دستگاه</h3>
+                    <span class="card-slug">device-independent-qkd</span>
+                    <div class="card-footer">
+                        <span>WebP</span>
+                        <span>1200×675</span>
+                    </div>
+                </div>
+            </div>
+            <div class="img-card" data-batch="6" data-title="یخچال رقیق‌سازی و مراحل دمایی آن" data-slug="dilution-refrigerator" data-alt="یخچال رقیق‌سازی و مراحل دمایی آن" onclick="openModal('dilution-refrigerator.webp', 'یخچال رقیق‌سازی و مراحل دمایی آن', 'dilution-refrigerator', 'یخچال رقیق‌سازی و مراحل دمایی آن', 6)">
+                <div class="img-frame">
+                    <img src="images/dilution-refrigerator.webp" alt="یخچال رقیق‌سازی و مراحل دمایی آن" loading="lazy">
+                    <span class="badge-batch">بسته 06</span>
+                    <span class="badge-watermark">qpedia.ir</span>
+                </div>
+                <div class="card-body">
+                    <h3 class="card-title">یخچال رقیق‌سازی و مراحل دمایی آن</h3>
+                    <span class="card-slug">dilution-refrigerator</span>
+                    <div class="card-footer">
+                        <span>WebP</span>
+                        <span>1200×675</span>
+                    </div>
+                </div>
+            </div>
+            <div class="img-card" data-batch="6" data-title="گاز دوقطبی و آرایش ذرات قطبی" data-slug="dipolar-gas" data-alt="گاز دوقطبی و آرایش ذرات قطبی" onclick="openModal('dipolar-gas.webp', 'گاز دوقطبی و آرایش ذرات قطبی', 'dipolar-gas', 'گاز دوقطبی و آرایش ذرات قطبی', 6)">
+                <div class="img-frame">
+                    <img src="images/dipolar-gas.webp" alt="گاز دوقطبی و آرایش ذرات قطبی" loading="lazy">
+                    <span class="badge-batch">بسته 06</span>
+                    <span class="badge-watermark">qpedia.ir</span>
+                </div>
+                <div class="card-body">
+                    <h3 class="card-title">گاز دوقطبی و آرایش ذرات قطبی</h3>
+                    <span class="card-slug">dipolar-gas</span>
+                    <div class="card-footer">
+                        <span>WebP</span>
+                        <span>1200×675</span>
+                    </div>
+                </div>
+            </div>
+            <div class="img-card" data-batch="6" data-title="نیمه‌فلز دیراک" data-slug="dirac-semimetal" data-alt="نیمه‌فلز دیراک" onclick="openModal('dirac-semimetal.webp', 'نیمه‌فلز دیراک', 'dirac-semimetal', 'نیمه‌فلز دیراک', 6)">
+                <div class="img-frame">
+                    <img src="images/dirac-semimetal.webp" alt="نیمه‌فلز دیراک" loading="lazy">
+                    <span class="badge-batch">بسته 06</span>
+                    <span class="badge-watermark">qpedia.ir</span>
+                </div>
+                <div class="card-body">
+                    <h3 class="card-title">نیمه‌فلز دیراک</h3>
+                    <span class="card-slug">dirac-semimetal</span>
+                    <div class="card-footer">
+                        <span>WebP</span>
+                        <span>1200×675</span>
+                    </div>
+                </div>
+            </div>
+            <div class="img-card" data-batch="6" data-title="کوانتوم و خدا" data-slug="does-quantum-prove-god" data-alt="تصویر شاخص بررسی نسبت فیزیک کوانتوم و مباحث فلسفی" onclick="openModal('does-quantum-prove-god.webp', 'کوانتوم و خدا', 'does-quantum-prove-god', 'تصویر شاخص بررسی نسبت فیزیک کوانتوم و مباحث فلسفی', 6)">
+                <div class="img-frame">
+                    <img src="images/does-quantum-prove-god.webp" alt="تصویر شاخص بررسی نسبت فیزیک کوانتوم و مباحث فلسفی" loading="lazy">
+                    <span class="badge-batch">بسته 06</span>
+                    <span class="badge-watermark">qpedia.ir</span>
+                </div>
+                <div class="card-body">
+                    <h3 class="card-title">کوانتوم و خدا</h3>
+                    <span class="card-slug">does-quantum-prove-god</span>
+                    <div class="card-footer">
+                        <span>WebP</span>
+                        <span>1200×675</span>
+                    </div>
+                </div>
+            </div>
+            <div class="img-card" data-batch="7" data-title="آزمایش دو شکاف" data-slug="double-slit-experiment" data-alt="تصویر شاخص آزمایش دو شکاف یانگ در کوانتوم" onclick="openModal('double-slit-experiment.webp', 'آزمایش دو شکاف', 'double-slit-experiment', 'تصویر شاخص آزمایش دو شکاف یانگ در کوانتوم', 7)">
+                <div class="img-frame">
+                    <img src="images/double-slit-experiment.webp" alt="تصویر شاخص آزمایش دو شکاف یانگ در کوانتوم" loading="lazy">
+                    <span class="badge-batch">بسته 07</span>
+                    <span class="badge-watermark">qpedia.ir</span>
+                </div>
+                <div class="card-body">
+                    <h3 class="card-title">آزمایش دو شکاف</h3>
+                    <span class="card-slug">double-slit-experiment</span>
+                    <div class="card-footer">
+                        <span>WebP</span>
+                        <span>1200×675</span>
+                    </div>
+                </div>
+            </div>
+            <div class="img-card" data-batch="7" data-title="فرضیه گرمایی‌شدن حالت ویژه" data-slug="eigenstate-thermalization" data-alt="فرضیه گرمایی‌شدن حالت ویژه" onclick="openModal('eigenstate-thermalization.webp', 'فرضیه گرمایی‌شدن حالت ویژه', 'eigenstate-thermalization', 'فرضیه گرمایی‌شدن حالت ویژه', 7)">
+                <div class="img-frame">
+                    <img src="images/eigenstate-thermalization.webp" alt="فرضیه گرمایی‌شدن حالت ویژه" loading="lazy">
+                    <span class="badge-batch">بسته 07</span>
+                    <span class="badge-watermark">qpedia.ir</span>
+                </div>
+                <div class="card-body">
+                    <h3 class="card-title">فرضیه گرمایی‌شدن حالت ویژه</h3>
+                    <span class="card-slug">eigenstate-thermalization</span>
+                    <div class="card-footer">
+                        <span>WebP</span>
+                        <span>1200×675</span>
+                    </div>
+                </div>
+            </div>
+            <div class="img-card" data-batch="7" data-title="شفافیت القایی الکترومغناطیسی" data-slug="electromagnetically-induced-transparency" data-alt="شفافیت القایی الکترومغناطیسی" onclick="openModal('electromagnetically-induced-transparency.webp', 'شفافیت القایی الکترومغناطیسی', 'electromagnetically-induced-transparency', 'شفافیت القایی الکترومغناطیسی', 7)">
+                <div class="img-frame">
+                    <img src="images/electromagnetically-induced-transparency.webp" alt="شفافیت القایی الکترومغناطیسی" loading="lazy">
+                    <span class="badge-batch">بسته 07</span>
+                    <span class="badge-watermark">qpedia.ir</span>
+                </div>
+                <div class="card-body">
+                    <h3 class="card-title">شفافیت القایی الکترومغناطیسی</h3>
+                    <span class="card-slug">electromagnetically-induced-transparency</span>
+                    <div class="card-footer">
+                        <span>WebP</span>
+                        <span>1200×675</span>
+                    </div>
+                </div>
+            </div>
+            <div class="img-card" data-batch="7" data-title="نظریه الکتروضعیف" data-slug="electroweak-theory" data-alt="نظریه الکتروضعیف" onclick="openModal('electroweak-theory.webp', 'نظریه الکتروضعیف', 'electroweak-theory', 'نظریه الکتروضعیف', 7)">
+                <div class="img-frame">
+                    <img src="images/electroweak-theory.webp" alt="نظریه الکتروضعیف" loading="lazy">
+                    <span class="badge-batch">بسته 07</span>
+                    <span class="badge-watermark">qpedia.ir</span>
+                </div>
+                <div class="card-body">
+                    <h3 class="card-title">نظریه الکتروضعیف</h3>
+                    <span class="card-slug">electroweak-theory</span>
+                    <div class="card-footer">
+                        <span>WebP</span>
+                        <span>1200×675</span>
+                    </div>
+                </div>
+            </div>
+            <div class="img-card" data-batch="7" data-title="ترازهای انرژی و کوانتش" data-slug="energy-levels" data-alt="تصویر شاخص ترازهای گسسته انرژی و کوانتش" onclick="openModal('energy-levels.webp', 'ترازهای انرژی و کوانتش', 'energy-levels', 'تصویر شاخص ترازهای گسسته انرژی و کوانتش', 7)">
+                <div class="img-frame">
+                    <img src="images/energy-levels.webp" alt="تصویر شاخص ترازهای گسسته انرژی و کوانتش" loading="lazy">
+                    <span class="badge-batch">بسته 07</span>
+                    <span class="badge-watermark">qpedia.ir</span>
+                </div>
+                <div class="card-body">
+                    <h3 class="card-title">ترازهای انرژی و کوانتش</h3>
+                    <span class="card-slug">energy-levels</span>
+                    <div class="card-footer">
+                        <span>WebP</span>
+                        <span>1200×675</span>
+                    </div>
+                </div>
+            </div>
+            <div class="img-card" data-batch="8" data-title="درهم‌تنیدگی در کامپیوترهای کوانتومی" data-slug="entanglement-quantum-computers" data-alt="تصویر شاخص درهم‌تنیدگی در پردازش کامپیوترهای کوانتومی" onclick="openModal('entanglement-quantum-computers.webp', 'درهم‌تنیدگی در کامپیوترهای کوانتومی', 'entanglement-quantum-computers', 'تصویر شاخص درهم‌تنیدگی در پردازش کامپیوترهای کوانتومی', 8)">
+                <div class="img-frame">
+                    <img src="images/entanglement-quantum-computers.webp" alt="تصویر شاخص درهم‌تنیدگی در پردازش کامپیوترهای کوانتومی" loading="lazy">
+                    <span class="badge-batch">بسته 08</span>
+                    <span class="badge-watermark">qpedia.ir</span>
+                </div>
+                <div class="card-body">
+                    <h3 class="card-title">درهم‌تنیدگی در کامپیوترهای کوانتومی</h3>
+                    <span class="card-slug">entanglement-quantum-computers</span>
+                    <div class="card-footer">
+                        <span>WebP</span>
+                        <span>1200×675</span>
+                    </div>
+                </div>
+            </div>
+            <div class="img-card" data-batch="8" data-title="اکسایتون در شبکه بلوری" data-slug="exciton" data-alt="اکسایتون در شبکه بلوری" onclick="openModal('exciton.webp', 'اکسایتون در شبکه بلوری', 'exciton', 'اکسایتون در شبکه بلوری', 8)">
+                <div class="img-frame">
+                    <img src="images/exciton.webp" alt="اکسایتون در شبکه بلوری" loading="lazy">
+                    <span class="badge-batch">بسته 08</span>
+                    <span class="badge-watermark">qpedia.ir</span>
+                </div>
+                <div class="card-body">
+                    <h3 class="card-title">اکسایتون در شبکه بلوری</h3>
+                    <span class="card-slug">exciton</span>
+                    <div class="card-footer">
+                        <span>WebP</span>
+                        <span>1200×675</span>
+                    </div>
+                </div>
+            </div>
+            <div class="img-card" data-batch="8" data-title="گاز فرمی و پرشدن ترازها تا انرژی فرمی" data-slug="fermi-gas" data-alt="گاز فرمی و پرشدن ترازها تا انرژی فرمی" onclick="openModal('fermi-gas.webp', 'گاز فرمی و پرشدن ترازها تا انرژی فرمی', 'fermi-gas', 'گاز فرمی و پرشدن ترازها تا انرژی فرمی', 8)">
+                <div class="img-frame">
+                    <img src="images/fermi-gas.webp" alt="گاز فرمی و پرشدن ترازها تا انرژی فرمی" loading="lazy">
+                    <span class="badge-batch">بسته 08</span>
+                    <span class="badge-watermark">qpedia.ir</span>
+                </div>
+                <div class="card-body">
+                    <h3 class="card-title">گاز فرمی و پرشدن ترازها تا انرژی فرمی</h3>
+                    <span class="card-slug">fermi-gas</span>
+                    <div class="card-footer">
+                        <span>WebP</span>
+                        <span>1200×675</span>
+                    </div>
+                </div>
+            </div>
+            <div class="img-card" data-batch="8" data-title="ثابت ساختار ریز" data-slug="fine-structure-constant" data-alt="ثابت ساختار ریز" onclick="openModal('fine-structure-constant.webp', 'ثابت ساختار ریز', 'fine-structure-constant', 'ثابت ساختار ریز', 8)">
+                <div class="img-frame">
+                    <img src="images/fine-structure-constant.webp" alt="ثابت ساختار ریز" loading="lazy">
+                    <span class="badge-batch">بسته 08</span>
+                    <span class="badge-watermark">qpedia.ir</span>
+                </div>
+                <div class="card-body">
+                    <h3 class="card-title">ثابت ساختار ریز</h3>
+                    <span class="card-slug">fine-structure-constant</span>
+                    <div class="card-footer">
+                        <span>WebP</span>
+                        <span>1200×675</span>
+                    </div>
+                </div>
+            </div>
+            <div class="img-card" data-batch="8" data-title="حالت فوک با تعداد مشخص کوانتوم" data-slug="fock-state" data-alt="حالت فوک با تعداد مشخص کوانتوم" onclick="openModal('fock-state.webp', 'حالت فوک با تعداد مشخص کوانتوم', 'fock-state', 'حالت فوک با تعداد مشخص کوانتوم', 8)">
+                <div class="img-frame">
+                    <img src="images/fock-state.webp" alt="حالت فوک با تعداد مشخص کوانتوم" loading="lazy">
+                    <span class="badge-batch">بسته 08</span>
+                    <span class="badge-watermark">qpedia.ir</span>
+                </div>
+                <div class="card-body">
+                    <h3 class="card-title">حالت فوک با تعداد مشخص کوانتوم</h3>
+                    <span class="card-slug">fock-state</span>
+                    <div class="card-footer">
+                        <span>WebP</span>
+                        <span>1200×675</span>
+                    </div>
+                </div>
+            </div>
+            <div class="img-card" data-batch="9" data-title="فرایند چهارموجی در محیط غیرخطی" data-slug="four-wave-mixing" data-alt="فرایند چهارموجی در محیط غیرخطی" onclick="openModal('four-wave-mixing.webp', 'فرایند چهارموجی در محیط غیرخطی', 'four-wave-mixing', 'فرایند چهارموجی در محیط غیرخطی', 9)">
+                <div class="img-frame">
+                    <img src="images/four-wave-mixing.webp" alt="فرایند چهارموجی در محیط غیرخطی" loading="lazy">
+                    <span class="badge-batch">بسته 09</span>
+                    <span class="badge-watermark">qpedia.ir</span>
+                </div>
+                <div class="card-body">
+                    <h3 class="card-title">فرایند چهارموجی در محیط غیرخطی</h3>
+                    <span class="card-slug">four-wave-mixing</span>
+                    <div class="card-footer">
+                        <span>WebP</span>
+                        <span>1200×675</span>
+                    </div>
+                </div>
+            </div>
+            <div class="img-card" data-batch="9" data-title="اثر هال کوانتومی کسری" data-slug="fractional-quantum-hall-effect" data-alt="اثر هال کوانتومی کسری" onclick="openModal('fractional-quantum-hall-effect.webp', 'اثر هال کوانتومی کسری', 'fractional-quantum-hall-effect', 'اثر هال کوانتومی کسری', 9)">
+                <div class="img-frame">
+                    <img src="images/fractional-quantum-hall-effect.webp" alt="اثر هال کوانتومی کسری" loading="lazy">
+                    <span class="badge-batch">بسته 09</span>
+                    <span class="badge-watermark">qpedia.ir</span>
+                </div>
+                <div class="card-body">
+                    <h3 class="card-title">اثر هال کوانتومی کسری</h3>
+                    <span class="card-slug">fractional-quantum-hall-effect</span>
+                    <div class="card-footer">
+                        <span>WebP</span>
+                        <span>1200×675</span>
+                    </div>
+                </div>
+            </div>
+            <div class="img-card" data-batch="9" data-title="حالت درهم‌تنیده GHZ" data-slug="ghz-state" data-alt="حالت درهم‌تنیده GHZ" onclick="openModal('ghz-state.webp', 'حالت درهم‌تنیده GHZ', 'ghz-state', 'حالت درهم‌تنیده GHZ', 9)">
+                <div class="img-frame">
+                    <img src="images/ghz-state.webp" alt="حالت درهم‌تنیده GHZ" loading="lazy">
+                    <span class="badge-batch">بسته 09</span>
+                    <span class="badge-watermark">qpedia.ir</span>
+                </div>
+                <div class="card-body">
+                    <h3 class="card-title">حالت درهم‌تنیده GHZ</h3>
+                    <span class="card-slug">ghz-state</span>
+                    <div class="card-footer">
+                        <span>WebP</span>
+                        <span>1200×675</span>
+                    </div>
+                </div>
+            </div>
+            <div class="img-card" data-batch="9" data-title="چیدمان پارادوکس هاردی" data-slug="hardy-paradox" data-alt="چیدمان پارادوکس هاردی" onclick="openModal('hardy-paradox.webp', 'چیدمان پارادوکس هاردی', 'hardy-paradox', 'چیدمان پارادوکس هاردی', 9)">
+                <div class="img-frame">
+                    <img src="images/hardy-paradox.webp" alt="چیدمان پارادوکس هاردی" loading="lazy">
+                    <span class="badge-batch">بسته 09</span>
+                    <span class="badge-watermark">qpedia.ir</span>
+                </div>
+                <div class="card-body">
+                    <h3 class="card-title">چیدمان پارادوکس هاردی</h3>
+                    <span class="card-slug">hardy-paradox</span>
+                    <div class="card-footer">
+                        <span>WebP</span>
+                        <span>1200×675</span>
+                    </div>
+                </div>
+            </div>
+            <div class="img-card" data-batch="9" data-title="فرمیون سنگین" data-slug="heavy-fermion" data-alt="فرمیون سنگین" onclick="openModal('heavy-fermion.webp', 'فرمیون سنگین', 'heavy-fermion', 'فرمیون سنگین', 9)">
+                <div class="img-frame">
+                    <img src="images/heavy-fermion.webp" alt="فرمیون سنگین" loading="lazy">
+                    <span class="badge-batch">بسته 09</span>
+                    <span class="badge-watermark">qpedia.ir</span>
+                </div>
+                <div class="card-body">
+                    <h3 class="card-title">فرمیون سنگین</h3>
+                    <span class="card-slug">heavy-fermion</span>
+                    <div class="card-footer">
+                        <span>WebP</span>
+                        <span>1200×675</span>
+                    </div>
+                </div>
+            </div>
+            <div class="img-card" data-batch="10" data-title="اصل عدم قطعیت هایزنبرگ" data-slug="heisenberg-uncertainty-principle" data-alt="تصویر شاخص اصل عدم قطعیت هایزنبرگ در مکان و تکانه" onclick="openModal('heisenberg-uncertainty-principle.webp', 'اصل عدم قطعیت هایزنبرگ', 'heisenberg-uncertainty-principle', 'تصویر شاخص اصل عدم قطعیت هایزنبرگ در مکان و تکانه', 10)">
+                <div class="img-frame">
+                    <img src="images/heisenberg-uncertainty-principle.webp" alt="تصویر شاخص اصل عدم قطعیت هایزنبرگ در مکان و تکانه" loading="lazy">
+                    <span class="badge-batch">بسته 10</span>
+                    <span class="badge-watermark">qpedia.ir</span>
+                </div>
+                <div class="card-body">
+                    <h3 class="card-title">اصل عدم قطعیت هایزنبرگ</h3>
+                    <span class="card-slug">heisenberg-uncertainty-principle</span>
+                    <div class="card-footer">
+                        <span>WebP</span>
+                        <span>1200×675</span>
+                    </div>
+                </div>
+            </div>
+            <div class="img-card" data-batch="10" data-title="اصل هولوگرافیک" data-slug="holographic-principle" data-alt="تصویر شاخص اصل هولوگرافیک در گرانش کوانتومی و افق سیاه‌چاله" onclick="openModal('holographic-principle.webp', 'اصل هولوگرافیک', 'holographic-principle', 'تصویر شاخص اصل هولوگرافیک در گرانش کوانتومی و افق سیاه‌چاله', 10)">
+                <div class="img-frame">
+                    <img src="images/holographic-principle.webp" alt="تصویر شاخص اصل هولوگرافیک در گرانش کوانتومی و افق سیاه‌چاله" loading="lazy">
+                    <span class="badge-batch">بسته 10</span>
+                    <span class="badge-watermark">qpedia.ir</span>
+                </div>
+                <div class="card-body">
+                    <h3 class="card-title">اصل هولوگرافیک</h3>
+                    <span class="card-slug">holographic-principle</span>
+                    <div class="card-footer">
+                        <span>WebP</span>
+                        <span>1200×675</span>
+                    </div>
+                </div>
+            </div>
+            <div class="img-card" data-batch="10" data-title="آشکارسازی هوموداین با سیگنال و نوسان‌ساز محلی" data-slug="homodyne-detection" data-alt="آشکارسازی هوموداین با سیگنال و نوسان‌ساز محلی" onclick="openModal('homodyne-detection.webp', 'آشکارسازی هوموداین با سیگنال و نوسان‌ساز محلی', 'homodyne-detection', 'آشکارسازی هوموداین با سیگنال و نوسان‌ساز محلی', 10)">
+                <div class="img-frame">
+                    <img src="images/homodyne-detection.webp" alt="آشکارسازی هوموداین با سیگنال و نوسان‌ساز محلی" loading="lazy">
+                    <span class="badge-batch">بسته 10</span>
+                    <span class="badge-watermark">qpedia.ir</span>
+                </div>
+                <div class="card-body">
+                    <h3 class="card-title">آشکارسازی هوموداین با سیگنال و نوسان‌ساز محلی</h3>
+                    <span class="card-slug">homodyne-detection</span>
+                    <div class="card-footer">
+                        <span>WebP</span>
+                        <span>1200×675</span>
+                    </div>
+                </div>
+            </div>
+            <div class="img-card" data-batch="10" data-title="درهم‌تنیدگی و سرعت نور" data-slug="human-teleportation" data-alt="تصویر شاخص بررسی انتقال اطلاعات در درهم‌تنیدگی کوانتومی" onclick="openModal('human-teleportation.webp', 'درهم‌تنیدگی و سرعت نور', 'human-teleportation', 'تصویر شاخص بررسی انتقال اطلاعات در درهم‌تنیدگی کوانتومی', 10)">
+                <div class="img-frame">
+                    <img src="images/human-teleportation.webp" alt="تصویر شاخص بررسی انتقال اطلاعات در درهم‌تنیدگی کوانتومی" loading="lazy">
+                    <span class="badge-batch">بسته 10</span>
+                    <span class="badge-watermark">qpedia.ir</span>
+                </div>
+                <div class="card-body">
+                    <h3 class="card-title">درهم‌تنیدگی و سرعت نور</h3>
+                    <span class="card-slug">human-teleportation</span>
+                    <div class="card-footer">
+                        <span>WebP</span>
+                        <span>1200×675</span>
+                    </div>
+                </div>
+            </div>
+            <div class="img-card" data-batch="10" data-title="آیا فیزیک کلاسیک اشتباه بود؟" data-slug="is-classical-physics-wrong" data-alt="تصویر شاخص حد کلاسیک و رابطه فیزیک نیوتنی با کوانتوم" onclick="openModal('is-classical-physics-wrong.webp', 'آیا فیزیک کلاسیک اشتباه بود؟', 'is-classical-physics-wrong', 'تصویر شاخص حد کلاسیک و رابطه فیزیک نیوتنی با کوانتوم', 10)">
+                <div class="img-frame">
+                    <img src="images/is-classical-physics-wrong.webp" alt="تصویر شاخص حد کلاسیک و رابطه فیزیک نیوتنی با کوانتوم" loading="lazy">
+                    <span class="badge-batch">بسته 10</span>
+                    <span class="badge-watermark">qpedia.ir</span>
+                </div>
+                <div class="card-body">
+                    <h3 class="card-title">آیا فیزیک کلاسیک اشتباه بود؟</h3>
+                    <span class="card-slug">is-classical-physics-wrong</span>
+                    <div class="card-footer">
+                        <span>WebP</span>
+                        <span>1200×675</span>
+                    </div>
+                </div>
+            </div>
+            <div class="img-card" data-batch="11" data-title="جهان‌های موازی" data-slug="is-many-worlds-real" data-alt="تصویر شاخص تفسیر چندجهانی اورت و انشعاب واقعیت‌ها" onclick="openModal('is-many-worlds-real.webp', 'جهان‌های موازی', 'is-many-worlds-real', 'تصویر شاخص تفسیر چندجهانی اورت و انشعاب واقعیت‌ها', 11)">
+                <div class="img-frame">
+                    <img src="images/is-many-worlds-real.webp" alt="تصویر شاخص تفسیر چندجهانی اورت و انشعاب واقعیت‌ها" loading="lazy">
+                    <span class="badge-batch">بسته 11</span>
+                    <span class="badge-watermark">qpedia.ir</span>
+                </div>
+                <div class="card-body">
+                    <h3 class="card-title">جهان‌های موازی</h3>
+                    <span class="card-slug">is-many-worlds-real</span>
+                    <div class="card-footer">
+                        <span>WebP</span>
+                        <span>1200×675</span>
+                    </div>
+                </div>
+            </div>
+            <div class="img-card" data-batch="11" data-title="اثر کوندو" data-slug="kondo-effect" data-alt="اثر کوندو" onclick="openModal('kondo-effect.webp', 'اثر کوندو', 'kondo-effect', 'اثر کوندو', 11)">
+                <div class="img-frame">
+                    <img src="images/kondo-effect.webp" alt="اثر کوندو" loading="lazy">
+                    <span class="badge-batch">بسته 11</span>
+                    <span class="badge-watermark">qpedia.ir</span>
+                </div>
+                <div class="card-body">
+                    <h3 class="card-title">اثر کوندو</h3>
+                    <span class="card-slug">kondo-effect</span>
+                    <div class="card-footer">
+                        <span>WebP</span>
+                        <span>1200×675</span>
+                    </div>
+                </div>
+            </div>
+            <div class="img-card" data-batch="11" data-title="نامساوی بل (آزمون بل)" data-slug="loophole-free-bell-test" data-alt="تصویر شاخص آزمایش بدون روزنه نامساوی بل" onclick="openModal('loophole-free-bell-test.webp', 'نامساوی بل (آزمون بل)', 'loophole-free-bell-test', 'تصویر شاخص آزمایش بدون روزنه نامساوی بل', 11)">
+                <div class="img-frame">
+                    <img src="images/loophole-free-bell-test.webp" alt="تصویر شاخص آزمایش بدون روزنه نامساوی بل" loading="lazy">
+                    <span class="badge-batch">بسته 11</span>
+                    <span class="badge-watermark">qpedia.ir</span>
+                </div>
+                <div class="card-body">
+                    <h3 class="card-title">نامساوی بل (آزمون بل)</h3>
+                    <span class="card-slug">loophole-free-bell-test</span>
+                    <div class="card-footer">
+                        <span>WebP</span>
+                        <span>1200×675</span>
+                    </div>
+                </div>
+            </div>
+            <div class="img-card" data-batch="11" data-title="مگنون و موج اسپینی" data-slug="magnon" data-alt="مگنون و موج اسپینی" onclick="openModal('magnon.webp', 'مگنون و موج اسپینی', 'magnon', 'مگنون و موج اسپینی', 11)">
+                <div class="img-frame">
+                    <img src="images/magnon.webp" alt="مگنون و موج اسپینی" loading="lazy">
+                    <span class="badge-batch">بسته 11</span>
+                    <span class="badge-watermark">qpedia.ir</span>
+                </div>
+                <div class="card-body">
+                    <h3 class="card-title">مگنون و موج اسپینی</h3>
+                    <span class="card-slug">magnon</span>
+                    <div class="card-footer">
+                        <span>WebP</span>
+                        <span>1200×675</span>
+                    </div>
+                </div>
+            </div>
+            <div class="img-card" data-batch="11" data-title="فرمیون مایورانا" data-slug="majorana-fermion" data-alt="فرمیون مایورانا" onclick="openModal('majorana-fermion.webp', 'فرمیون مایورانا', 'majorana-fermion', 'فرمیون مایورانا', 11)">
+                <div class="img-frame">
+                    <img src="images/majorana-fermion.webp" alt="فرمیون مایورانا" loading="lazy">
+                    <span class="badge-batch">بسته 11</span>
+                    <span class="badge-watermark">qpedia.ir</span>
+                </div>
+                <div class="card-body">
+                    <h3 class="card-title">فرمیون مایورانا</h3>
+                    <span class="card-slug">majorana-fermion</span>
+                    <div class="card-footer">
+                        <span>WebP</span>
+                        <span>1200×675</span>
+                    </div>
+                </div>
+            </div>
+            <div class="img-card" data-batch="12" data-title="جایگزیدگی چندجسمی" data-slug="many-body-localization" data-alt="جایگزیدگی چندجسمی" onclick="openModal('many-body-localization.webp', 'جایگزیدگی چندجسمی', 'many-body-localization', 'جایگزیدگی چندجسمی', 12)">
+                <div class="img-frame">
+                    <img src="images/many-body-localization.webp" alt="جایگزیدگی چندجسمی" loading="lazy">
+                    <span class="badge-batch">بسته 12</span>
+                    <span class="badge-watermark">qpedia.ir</span>
+                </div>
+                <div class="card-body">
+                    <h3 class="card-title">جایگزیدگی چندجسمی</h3>
+                    <span class="card-slug">many-body-localization</span>
+                    <div class="card-footer">
+                        <span>WebP</span>
+                        <span>1200×675</span>
+                    </div>
+                </div>
+            </div>
+            <div class="img-card" data-batch="12" data-title="توزیع کلید کوانتومی مستقل از دستگاه اندازه‌گیری" data-slug="measurement-device-independent-qkd" data-alt="توزیع کلید کوانتومی مستقل از دستگاه اندازه‌گیری" onclick="openModal('measurement-device-independent-qkd.webp', 'توزیع کلید کوانتومی مستقل از دستگاه اندازه‌گیری', 'measurement-device-independent-qkd', 'توزیع کلید کوانتومی مستقل از دستگاه اندازه‌گیری', 12)">
+                <div class="img-frame">
+                    <img src="images/measurement-device-independent-qkd.webp" alt="توزیع کلید کوانتومی مستقل از دستگاه اندازه‌گیری" loading="lazy">
+                    <span class="badge-batch">بسته 12</span>
+                    <span class="badge-watermark">qpedia.ir</span>
+                </div>
+                <div class="card-body">
+                    <h3 class="card-title">توزیع کلید کوانتومی مستقل از دستگاه اندازه‌گیری</h3>
+                    <span class="card-slug">measurement-device-independent-qkd</span>
+                    <div class="card-footer">
+                        <span>WebP</span>
+                        <span>1200×675</span>
+                    </div>
+                </div>
+            </div>
+            <div class="img-card" data-batch="12" data-title="عایق مات" data-slug="mott-insulator" data-alt="عایق مات" onclick="openModal('mott-insulator.webp', 'عایق مات', 'mott-insulator', 'عایق مات', 12)">
+                <div class="img-frame">
+                    <img src="images/mott-insulator.webp" alt="عایق مات" loading="lazy">
+                    <span class="badge-batch">بسته 12</span>
+                    <span class="badge-watermark">qpedia.ir</span>
+                </div>
+                <div class="card-body">
+                    <h3 class="card-title">عایق مات</h3>
+                    <span class="card-slug">mott-insulator</span>
+                    <div class="card-footer">
+                        <span>WebP</span>
+                        <span>1200×675</span>
+                    </div>
+                </div>
+            </div>
+            <div class="img-card" data-batch="12" data-title="نانوسیم و ساختارهای نانومتری" data-slug="nanowire" data-alt="نانوسیم و ساختارهای نانومتری" onclick="openModal('nanowire.webp', 'نانوسیم و ساختارهای نانومتری', 'nanowire', 'نانوسیم و ساختارهای نانومتری', 12)">
+                <div class="img-frame">
+                    <img src="images/nanowire.webp" alt="نانوسیم و ساختارهای نانومتری" loading="lazy">
+                    <span class="badge-batch">بسته 12</span>
+                    <span class="badge-watermark">qpedia.ir</span>
+                </div>
+                <div class="card-body">
+                    <h3 class="card-title">نانوسیم و ساختارهای نانومتری</h3>
+                    <span class="card-slug">nanowire</span>
+                    <div class="card-footer">
+                        <span>WebP</span>
+                        <span>1200×675</span>
+                    </div>
+                </div>
+            </div>
+            <div class="img-card" data-batch="12" data-title="قضیهٔ عدم‌کپی" data-slug="no-cloning-theorem" data-alt="تصویر شاخص قضیه عدم همسانه‌سازی یا کپی کوانتومی" onclick="openModal('no-cloning-theorem.webp', 'قضیهٔ عدم‌کپی', 'no-cloning-theorem', 'تصویر شاخص قضیه عدم همسانه‌سازی یا کپی کوانتومی', 12)">
+                <div class="img-frame">
+                    <img src="images/no-cloning-theorem.webp" alt="تصویر شاخص قضیه عدم همسانه‌سازی یا کپی کوانتومی" loading="lazy">
+                    <span class="badge-batch">بسته 12</span>
+                    <span class="badge-watermark">qpedia.ir</span>
+                </div>
+                <div class="card-body">
+                    <h3 class="card-title">قضیهٔ عدم‌کپی</h3>
+                    <span class="card-slug">no-cloning-theorem</span>
+                    <div class="card-footer">
+                        <span>WebP</span>
+                        <span>1200×675</span>
+                    </div>
+                </div>
+            </div>
+            <div class="img-card" data-batch="13" data-title="ناظر در کوانتوم" data-slug="observer" data-alt="تصویر شاخص اثر ناظر و اندازه‌گیری در فیزیک کوانتومی" onclick="openModal('observer.webp', 'ناظر در کوانتوم', 'observer', 'تصویر شاخص اثر ناظر و اندازه‌گیری در فیزیک کوانتومی', 13)">
+                <div class="img-frame">
+                    <img src="images/observer.webp" alt="تصویر شاخص اثر ناظر و اندازه‌گیری در فیزیک کوانتومی" loading="lazy">
+                    <span class="badge-batch">بسته 13</span>
+                    <span class="badge-watermark">qpedia.ir</span>
+                </div>
+                <div class="card-body">
+                    <h3 class="card-title">ناظر در کوانتوم</h3>
+                    <span class="card-slug">observer</span>
+                    <div class="card-footer">
+                        <span>WebP</span>
+                        <span>1200×675</span>
+                    </div>
+                </div>
+            </div>
+            <div class="img-card" data-batch="13" data-title="شبکه نوری برای به‌دام‌اندازی اتم‌ها" data-slug="optical-lattice" data-alt="شبکه نوری برای به‌دام‌اندازی اتم‌ها" onclick="openModal('optical-lattice.webp', 'شبکه نوری برای به‌دام‌اندازی اتم‌ها', 'optical-lattice', 'شبکه نوری برای به‌دام‌اندازی اتم‌ها', 13)">
+                <div class="img-frame">
+                    <img src="images/optical-lattice.webp" alt="شبکه نوری برای به‌دام‌اندازی اتم‌ها" loading="lazy">
+                    <span class="badge-batch">بسته 13</span>
+                    <span class="badge-watermark">qpedia.ir</span>
+                </div>
+                <div class="card-body">
+                    <h3 class="card-title">شبکه نوری برای به‌دام‌اندازی اتم‌ها</h3>
+                    <span class="card-slug">optical-lattice</span>
+                    <div class="card-footer">
+                        <span>WebP</span>
+                        <span>1200×675</span>
+                    </div>
+                </div>
+            </div>
+            <div class="img-card" data-batch="13" data-title="نوسانگر پارامتری نوری و تولید سیگنال و آیدلر" data-slug="optical-parametric-oscillator" data-alt="نوسانگر پارامتری نوری و تولید سیگنال و آیدلر" onclick="openModal('optical-parametric-oscillator.webp', 'نوسانگر پارامتری نوری و تولید سیگنال و آیدلر', 'optical-parametric-oscillator', 'نوسانگر پارامتری نوری و تولید سیگنال و آیدلر', 13)">
+                <div class="img-frame">
+                    <img src="images/optical-parametric-oscillator.webp" alt="نوسانگر پارامتری نوری و تولید سیگنال و آیدلر" loading="lazy">
+                    <span class="badge-batch">بسته 13</span>
+                    <span class="badge-watermark">qpedia.ir</span>
+                </div>
+                <div class="card-body">
+                    <h3 class="card-title">نوسانگر پارامتری نوری و تولید سیگنال و آیدلر</h3>
+                    <span class="card-slug">optical-parametric-oscillator</span>
+                    <div class="card-footer">
+                        <span>WebP</span>
+                        <span>1200×675</span>
+                    </div>
+                </div>
+            </div>
+            <div class="img-card" data-batch="13" data-title="اصل طرد پاولی" data-slug="pauli-exclusion-principle" data-alt="تصویر شاخص اصل طرد پاولی و آرایش الکترون‌ها" onclick="openModal('pauli-exclusion-principle.webp', 'اصل طرد پاولی', 'pauli-exclusion-principle', 'تصویر شاخص اصل طرد پاولی و آرایش الکترون‌ها', 13)">
+                <div class="img-frame">
+                    <img src="images/pauli-exclusion-principle.webp" alt="تصویر شاخص اصل طرد پاولی و آرایش الکترون‌ها" loading="lazy">
+                    <span class="badge-batch">بسته 13</span>
+                    <span class="badge-watermark">qpedia.ir</span>
+                </div>
+                <div class="card-body">
+                    <h3 class="card-title">اصل طرد پاولی</h3>
+                    <span class="card-slug">pauli-exclusion-principle</span>
+                    <div class="card-footer">
+                        <span>WebP</span>
+                        <span>1200×675</span>
+                    </div>
+                </div>
+            </div>
+            <div class="img-card" data-batch="13" data-title="فونون و ارتعاش شبکه بلوری" data-slug="phonon" data-alt="فونون و ارتعاش شبکه بلوری" onclick="openModal('phonon.webp', 'فونون و ارتعاش شبکه بلوری', 'phonon', 'فونون و ارتعاش شبکه بلوری', 13)">
+                <div class="img-frame">
+                    <img src="images/phonon.webp" alt="فونون و ارتعاش شبکه بلوری" loading="lazy">
+                    <span class="badge-batch">بسته 13</span>
+                    <span class="badge-watermark">qpedia.ir</span>
+                </div>
+                <div class="card-body">
+                    <h3 class="card-title">فونون و ارتعاش شبکه بلوری</h3>
+                    <span class="card-slug">phonon</span>
+                    <div class="card-footer">
+                        <span>WebP</span>
+                        <span>1200×675</span>
+                    </div>
+                </div>
+            </div>
+            <div class="img-card" data-batch="14" data-title="انسداد فوتونی و عبور یک فوتون" data-slug="photon-blockade" data-alt="انسداد فوتونی و عبور یک فوتون" onclick="openModal('photon-blockade.webp', 'انسداد فوتونی و عبور یک فوتون', 'photon-blockade', 'انسداد فوتونی و عبور یک فوتون', 14)">
+                <div class="img-frame">
+                    <img src="images/photon-blockade.webp" alt="انسداد فوتونی و عبور یک فوتون" loading="lazy">
+                    <span class="badge-batch">بسته 14</span>
+                    <span class="badge-watermark">qpedia.ir</span>
+                </div>
+                <div class="card-body">
+                    <h3 class="card-title">انسداد فوتونی و عبور یک فوتون</h3>
+                    <span class="card-slug">photon-blockade</span>
+                    <div class="card-footer">
+                        <span>WebP</span>
+                        <span>1200×675</span>
+                    </div>
+                </div>
+            </div>
+            <div class="img-card" data-batch="14" data-title="شمارش فوتون و توزیع تعداد رویدادها" data-slug="photon-counting" data-alt="شمارش فوتون و توزیع تعداد رویدادها" onclick="openModal('photon-counting.webp', 'شمارش فوتون و توزیع تعداد رویدادها', 'photon-counting', 'شمارش فوتون و توزیع تعداد رویدادها', 14)">
+                <div class="img-frame">
+                    <img src="images/photon-counting.webp" alt="شمارش فوتون و توزیع تعداد رویدادها" loading="lazy">
+                    <span class="badge-batch">بسته 14</span>
+                    <span class="badge-watermark">qpedia.ir</span>
+                </div>
+                <div class="card-body">
+                    <h3 class="card-title">شمارش فوتون و توزیع تعداد رویدادها</h3>
+                    <span class="card-slug">photon-counting</span>
+                    <div class="card-footer">
+                        <span>WebP</span>
+                        <span>1200×675</span>
+                    </div>
+                </div>
+            </div>
+            <div class="img-card" data-batch="14" data-title="ثابت پلانک چیست؟" data-slug="planck-constant" data-alt="تصویر شاخص ثابت پلانک و مقیاس بنیادین کوانتوم" onclick="openModal('planck-constant.webp', 'ثابت پلانک چیست؟', 'planck-constant', 'تصویر شاخص ثابت پلانک و مقیاس بنیادین کوانتوم', 14)">
+                <div class="img-frame">
+                    <img src="images/planck-constant.webp" alt="تصویر شاخص ثابت پلانک و مقیاس بنیادین کوانتوم" loading="lazy">
+                    <span class="badge-batch">بسته 14</span>
+                    <span class="badge-watermark">qpedia.ir</span>
+                </div>
+                <div class="card-body">
+                    <h3 class="card-title">ثابت پلانک چیست؟</h3>
+                    <span class="card-slug">planck-constant</span>
+                    <div class="card-footer">
+                        <span>WebP</span>
+                        <span>1200×675</span>
+                    </div>
+                </div>
+            </div>
+            <div class="img-card" data-batch="14" data-title="پلاسمون و نوسان جمعی الکترون‌ها" data-slug="plasmon" data-alt="پلاسمون و نوسان جمعی الکترون‌ها" onclick="openModal('plasmon.webp', 'پلاسمون و نوسان جمعی الکترون‌ها', 'plasmon', 'پلاسمون و نوسان جمعی الکترون‌ها', 14)">
+                <div class="img-frame">
+                    <img src="images/plasmon.webp" alt="پلاسمون و نوسان جمعی الکترون‌ها" loading="lazy">
+                    <span class="badge-batch">بسته 14</span>
+                    <span class="badge-watermark">qpedia.ir</span>
+                </div>
+                <div class="card-body">
+                    <h3 class="card-title">پلاسمون و نوسان جمعی الکترون‌ها</h3>
+                    <span class="card-slug">plasmon</span>
+                    <div class="card-footer">
+                        <span>WebP</span>
+                        <span>1200×675</span>
+                    </div>
+                </div>
+            </div>
+            <div class="img-card" data-batch="14" data-title="پولاریتون حاصل برهم‌کنش نور و ماده" data-slug="polariton" data-alt="پولاریتون حاصل برهم‌کنش نور و ماده" onclick="openModal('polariton.webp', 'پولاریتون حاصل برهم‌کنش نور و ماده', 'polariton', 'پولاریتون حاصل برهم‌کنش نور و ماده', 14)">
+                <div class="img-frame">
+                    <img src="images/polariton.webp" alt="پولاریتون حاصل برهم‌کنش نور و ماده" loading="lazy">
+                    <span class="badge-batch">بسته 14</span>
+                    <span class="badge-watermark">qpedia.ir</span>
+                </div>
+                <div class="card-body">
+                    <h3 class="card-title">پولاریتون حاصل برهم‌کنش نور و ماده</h3>
+                    <span class="card-slug">polariton</span>
+                    <div class="card-footer">
+                        <span>WebP</span>
+                        <span>1200×675</span>
+                    </div>
+                </div>
+            </div>
+            <div class="img-card" data-batch="15" data-title="پولارون در شبکه بلوری" data-slug="polaron" data-alt="پولارون در شبکه بلوری" onclick="openModal('polaron.webp', 'پولارون در شبکه بلوری', 'polaron', 'پولارون در شبکه بلوری', 15)">
+                <div class="img-frame">
+                    <img src="images/polaron.webp" alt="پولارون در شبکه بلوری" loading="lazy">
+                    <span class="badge-batch">بسته 15</span>
+                    <span class="badge-watermark">qpedia.ir</span>
+                </div>
+                <div class="card-body">
+                    <h3 class="card-title">پولارون در شبکه بلوری</h3>
+                    <span class="card-slug">polaron</span>
+                    <div class="card-footer">
+                        <span>WebP</span>
+                        <span>1200×675</span>
+                    </div>
+                </div>
+            </div>
+            <div class="img-card" data-batch="15" data-title="واپاشی پروتون" data-slug="proton-decay" data-alt="واپاشی پروتون" onclick="openModal('proton-decay.webp', 'واپاشی پروتون', 'proton-decay', 'واپاشی پروتون', 15)">
+                <div class="img-frame">
+                    <img src="images/proton-decay.webp" alt="واپاشی پروتون" loading="lazy">
+                    <span class="badge-batch">بسته 15</span>
+                    <span class="badge-watermark">qpedia.ir</span>
+                </div>
+                <div class="card-body">
+                    <h3 class="card-title">واپاشی پروتون</h3>
+                    <span class="card-slug">proton-decay</span>
+                    <div class="card-footer">
+                        <span>WebP</span>
+                        <span>1200×675</span>
+                    </div>
+                </div>
+            </div>
+            <div class="img-card" data-batch="15" data-title="الگوریتم بهینه‌سازی تقریبی کوانتومی" data-slug="qaoa" data-alt="الگوریتم بهینه‌سازی تقریبی کوانتومی" onclick="openModal('qaoa.webp', 'الگوریتم بهینه‌سازی تقریبی کوانتومی', 'qaoa', 'الگوریتم بهینه‌سازی تقریبی کوانتومی', 15)">
+                <div class="img-frame">
+                    <img src="images/qaoa.webp" alt="الگوریتم بهینه‌سازی تقریبی کوانتومی" loading="lazy">
+                    <span class="badge-batch">بسته 15</span>
+                    <span class="badge-watermark">qpedia.ir</span>
+                </div>
+                <div class="card-body">
+                    <h3 class="card-title">الگوریتم بهینه‌سازی تقریبی کوانتومی</h3>
+                    <span class="card-slug">qaoa</span>
+                    <div class="card-footer">
+                        <span>WebP</span>
+                        <span>1200×675</span>
+                    </div>
+                </div>
+            </div>
+            <div class="img-card" data-batch="15" data-title="نیلز بور و اصل تکمیل" data-slug="quantum-analogy-exercise-boundary" data-alt="تصویر شاخص نیلز بور، اصل تکمیل و مرز شکست تمثیل" onclick="openModal('quantum-analogy-exercise-boundary.webp', 'نیلز بور و اصل تکمیل', 'quantum-analogy-exercise-boundary', 'تصویر شاخص نیلز بور، اصل تکمیل و مرز شکست تمثیل', 15)">
+                <div class="img-frame">
+                    <img src="images/quantum-analogy-exercise-boundary.webp" alt="تصویر شاخص نیلز بور، اصل تکمیل و مرز شکست تمثیل" loading="lazy">
+                    <span class="badge-batch">بسته 15</span>
+                    <span class="badge-watermark">qpedia.ir</span>
+                </div>
+                <div class="card-body">
+                    <h3 class="card-title">نیلز بور و اصل تکمیل</h3>
+                    <span class="card-slug">quantum-analogy-exercise-boundary</span>
+                    <div class="card-footer">
+                        <span>WebP</span>
+                        <span>1200×675</span>
+                    </div>
+                </div>
+            </div>
+            <div class="img-card" data-batch="15" data-title="بیهوشی و فرضیه‌های کوانتومی" data-slug="quantum-anesthesia" data-alt="بیهوشی و فرضیه‌های کوانتومی" onclick="openModal('quantum-anesthesia.webp', 'بیهوشی و فرضیه‌های کوانتومی', 'quantum-anesthesia', 'بیهوشی و فرضیه‌های کوانتومی', 15)">
+                <div class="img-frame">
+                    <img src="images/quantum-anesthesia.webp" alt="بیهوشی و فرضیه‌های کوانتومی" loading="lazy">
+                    <span class="badge-batch">بسته 15</span>
+                    <span class="badge-watermark">qpedia.ir</span>
+                </div>
+                <div class="card-body">
+                    <h3 class="card-title">بیهوشی و فرضیه‌های کوانتومی</h3>
+                    <span class="card-slug">quantum-anesthesia</span>
+                    <div class="card-footer">
+                        <span>WebP</span>
+                        <span>1200×675</span>
+                    </div>
+                </div>
+            </div>
+            <div class="img-card" data-batch="16" data-title="مسابقه تسلیحاتی کوانتومی" data-slug="quantum-arms-race" data-alt="تصویر مفهومی مسابقه تسلیحاتی کوانتومی با نشانه‌گیر راداری نئونی و برهم‌کنش ذرات فوتون و الکترون" onclick="openModal('quantum-arms-race.webp', 'مسابقه تسلیحاتی کوانتومی', 'quantum-arms-race', 'تصویر مفهومی مسابقه تسلیحاتی کوانتومی با نشانه‌گیر راداری نئونی و برهم‌کنش ذرات فوتون و الکترون', 16)">
+                <div class="img-frame">
+                    <img src="images/quantum-arms-race.webp" alt="تصویر مفهومی مسابقه تسلیحاتی کوانتومی با نشانه‌گیر راداری نئونی و برهم‌کنش ذرات فوتون و الکترون" loading="lazy">
+                    <span class="badge-batch">بسته 16</span>
+                    <span class="badge-watermark">qpedia.ir</span>
+                </div>
+                <div class="card-body">
+                    <h3 class="card-title">مسابقه تسلیحاتی کوانتومی</h3>
+                    <span class="card-slug">quantum-arms-race</span>
+                    <div class="card-footer">
+                        <span>WebP</span>
+                        <span>1200×675</span>
+                    </div>
+                </div>
+            </div>
+            <div class="img-card" data-batch="16" data-title="مزایده کوانتومی با چند پیشنهاددهنده" data-slug="quantum-auction" data-alt="مزایده کوانتومی با چند پیشنهاددهنده" onclick="openModal('quantum-auction.webp', 'مزایده کوانتومی با چند پیشنهاددهنده', 'quantum-auction', 'مزایده کوانتومی با چند پیشنهاددهنده', 16)">
+                <div class="img-frame">
+                    <img src="images/quantum-auction.webp" alt="مزایده کوانتومی با چند پیشنهاددهنده" loading="lazy">
+                    <span class="badge-batch">بسته 16</span>
+                    <span class="badge-watermark">qpedia.ir</span>
+                </div>
+                <div class="card-body">
+                    <h3 class="card-title">مزایده کوانتومی با چند پیشنهاددهنده</h3>
+                    <span class="card-slug">quantum-auction</span>
+                    <div class="card-footer">
+                        <span>WebP</span>
+                        <span>1200×675</span>
+                    </div>
+                </div>
+            </div>
+            <div class="img-card" data-batch="16" data-title="کوانتوم در باکتری‌ها" data-slug="quantum-bacteria" data-alt="کوانتوم در باکتری‌ها" onclick="openModal('quantum-bacteria.webp', 'کوانتوم در باکتری‌ها', 'quantum-bacteria', 'کوانتوم در باکتری‌ها', 16)">
+                <div class="img-frame">
+                    <img src="images/quantum-bacteria.webp" alt="کوانتوم در باکتری‌ها" loading="lazy">
+                    <span class="badge-batch">بسته 16</span>
+                    <span class="badge-watermark">qpedia.ir</span>
+                </div>
+                <div class="card-body">
+                    <h3 class="card-title">کوانتوم در باکتری‌ها</h3>
+                    <span class="card-slug">quantum-bacteria</span>
+                    <div class="card-footer">
+                        <span>WebP</span>
+                        <span>1200×675</span>
+                    </div>
+                </div>
+            </div>
+            <div class="img-card" data-batch="16" data-title="زنجیره بلوک‌های بلاک‌چین کوانتومی" data-slug="quantum-blockchain" data-alt="زنجیره بلوک‌های بلاک‌چین کوانتومی" onclick="openModal('quantum-blockchain.webp', 'زنجیره بلوک‌های بلاک‌چین کوانتومی', 'quantum-blockchain', 'زنجیره بلوک‌های بلاک‌چین کوانتومی', 16)">
+                <div class="img-frame">
+                    <img src="images/quantum-blockchain.webp" alt="زنجیره بلوک‌های بلاک‌چین کوانتومی" loading="lazy">
+                    <span class="badge-batch">بسته 16</span>
+                    <span class="badge-watermark">qpedia.ir</span>
+                </div>
+                <div class="card-body">
+                    <h3 class="card-title">زنجیره بلوک‌های بلاک‌چین کوانتومی</h3>
+                    <span class="card-slug">quantum-blockchain</span>
+                    <div class="card-footer">
+                        <span>WebP</span>
+                        <span>1200×675</span>
+                    </div>
+                </div>
+            </div>
+            <div class="img-card" data-batch="16" data-title="جهش کوانتومی کیهان" data-slug="quantum-bounce" data-alt="تصویر شاخص نظریه جهش کوانتومی کیهان قبل از مهبانگ" onclick="openModal('quantum-bounce.webp', 'جهش کوانتومی کیهان', 'quantum-bounce', 'تصویر شاخص نظریه جهش کوانتومی کیهان قبل از مهبانگ', 16)">
+                <div class="img-frame">
+                    <img src="images/quantum-bounce.webp" alt="تصویر شاخص نظریه جهش کوانتومی کیهان قبل از مهبانگ" loading="lazy">
+                    <span class="badge-batch">بسته 16</span>
+                    <span class="badge-watermark">qpedia.ir</span>
+                </div>
+                <div class="card-body">
+                    <h3 class="card-title">جهش کوانتومی کیهان</h3>
+                    <span class="card-slug">quantum-bounce</span>
+                    <div class="card-footer">
+                        <span>WebP</span>
+                        <span>1200×675</span>
+                    </div>
+                </div>
+            </div>
+            <div class="img-card" data-batch="17" data-title="کوانتوم در پژوهش سرطان" data-slug="quantum-cancer" data-alt="کوانتوم در پژوهش سرطان" onclick="openModal('quantum-cancer.webp', 'کوانتوم در پژوهش سرطان', 'quantum-cancer', 'کوانتوم در پژوهش سرطان', 17)">
+                <div class="img-frame">
+                    <img src="images/quantum-cancer.webp" alt="کوانتوم در پژوهش سرطان" loading="lazy">
+                    <span class="badge-batch">بسته 17</span>
+                    <span class="badge-watermark">qpedia.ir</span>
+                </div>
+                <div class="card-body">
+                    <h3 class="card-title">کوانتوم در پژوهش سرطان</h3>
+                    <span class="card-slug">quantum-cancer</span>
+                    <div class="card-footer">
+                        <span>WebP</span>
+                        <span>1200×675</span>
+                    </div>
+                </div>
+            </div>
+            <div class="img-card" data-batch="17" data-title="پیام‌رسانی سلولی کوانتومی" data-slug="quantum-cell-signaling" data-alt="پیام‌رسانی سلولی کوانتومی" onclick="openModal('quantum-cell-signaling.webp', 'پیام‌رسانی سلولی کوانتومی', 'quantum-cell-signaling', 'پیام‌رسانی سلولی کوانتومی', 17)">
+                <div class="img-frame">
+                    <img src="images/quantum-cell-signaling.webp" alt="پیام‌رسانی سلولی کوانتومی" loading="lazy">
+                    <span class="badge-batch">بسته 17</span>
+                    <span class="badge-watermark">qpedia.ir</span>
+                </div>
+                <div class="card-body">
+                    <h3 class="card-title">پیام‌رسانی سلولی کوانتومی</h3>
+                    <span class="card-slug">quantum-cell-signaling</span>
+                    <div class="card-footer">
+                        <span>WebP</span>
+                        <span>1200×675</span>
+                    </div>
+                </div>
+            </div>
+            <div class="img-card" data-batch="17" data-title="گربه چشایر کوانتومی" data-slug="quantum-cheshire-cat" data-alt="گربه چشایر کوانتومی" onclick="openModal('quantum-cheshire-cat.webp', 'گربه چشایر کوانتومی', 'quantum-cheshire-cat', 'گربه چشایر کوانتومی', 17)">
+                <div class="img-frame">
+                    <img src="images/quantum-cheshire-cat.webp" alt="گربه چشایر کوانتومی" loading="lazy">
+                    <span class="badge-batch">بسته 17</span>
+                    <span class="badge-watermark">qpedia.ir</span>
+                </div>
+                <div class="card-body">
+                    <h3 class="card-title">گربه چشایر کوانتومی</h3>
+                    <span class="card-slug">quantum-cheshire-cat</span>
+                    <div class="card-footer">
+                        <span>WebP</span>
+                        <span>1200×675</span>
+                    </div>
+                </div>
+            </div>
+            <div class="img-card" data-batch="17" data-title="کرومودینامیک کوانتومی" data-slug="quantum-chromodynamics" data-alt="کرومودینامیک کوانتومی" onclick="openModal('quantum-chromodynamics.webp', 'کرومودینامیک کوانتومی', 'quantum-chromodynamics', 'کرومودینامیک کوانتومی', 17)">
+                <div class="img-frame">
+                    <img src="images/quantum-chromodynamics.webp" alt="کرومودینامیک کوانتومی" loading="lazy">
+                    <span class="badge-batch">بسته 17</span>
+                    <span class="badge-watermark">qpedia.ir</span>
+                </div>
+                <div class="card-body">
+                    <h3 class="card-title">کرومودینامیک کوانتومی</h3>
+                    <span class="card-slug">quantum-chromodynamics</span>
+                    <div class="card-footer">
+                        <span>WebP</span>
+                        <span>1200×675</span>
+                    </div>
+                </div>
+            </div>
+            <div class="img-card" data-batch="17" data-title="رایانش ابری کوانتومی" data-slug="quantum-cloud" data-alt="رایانش ابری کوانتومی" onclick="openModal('quantum-cloud.webp', 'رایانش ابری کوانتومی', 'quantum-cloud', 'رایانش ابری کوانتومی', 17)">
+                <div class="img-frame">
+                    <img src="images/quantum-cloud.webp" alt="رایانش ابری کوانتومی" loading="lazy">
+                    <span class="badge-batch">بسته 17</span>
+                    <span class="badge-watermark">qpedia.ir</span>
+                </div>
+                <div class="card-body">
+                    <h3 class="card-title">رایانش ابری کوانتومی</h3>
+                    <span class="card-slug">quantum-cloud</span>
+                    <div class="card-footer">
+                        <span>WebP</span>
+                        <span>1200×675</span>
+                    </div>
+                </div>
+            </div>
+            <div class="img-card" data-batch="18" data-title="کامپایلر کوانتومی" data-slug="quantum-compiler" data-alt="کامپایلر کوانتومی" onclick="openModal('quantum-compiler.webp', 'کامپایلر کوانتومی', 'quantum-compiler', 'کامپایلر کوانتومی', 18)">
+                <div class="img-frame">
+                    <img src="images/quantum-compiler.webp" alt="کامپایلر کوانتومی" loading="lazy">
+                    <span class="badge-batch">بسته 18</span>
+                    <span class="badge-watermark">qpedia.ir</span>
+                </div>
+                <div class="card-body">
+                    <h3 class="card-title">کامپایلر کوانتومی</h3>
+                    <span class="card-slug">quantum-compiler</span>
+                    <div class="card-footer">
+                        <span>WebP</span>
+                        <span>1200×675</span>
+                    </div>
+                </div>
+            </div>
+            <div class="img-card" data-batch="18" data-title="توافق کلید کوانتومی" data-slug="quantum-conference-key-agreement" data-alt="تصویر مفهومی توافق کلید کوانتومی چندطرفه با هشت گره درهم‌تنیده حول قفل امنیتی نئونی" onclick="openModal('quantum-conference-key-agreement.webp', 'توافق کلید کوانتومی', 'quantum-conference-key-agreement', 'تصویر مفهومی توافق کلید کوانتومی چندطرفه با هشت گره درهم‌تنیده حول قفل امنیتی نئونی', 18)">
+                <div class="img-frame">
+                    <img src="images/quantum-conference-key-agreement.webp" alt="تصویر مفهومی توافق کلید کوانتومی چندطرفه با هشت گره درهم‌تنیده حول قفل امنیتی نئونی" loading="lazy">
+                    <span class="badge-batch">بسته 18</span>
+                    <span class="badge-watermark">qpedia.ir</span>
+                </div>
+                <div class="card-body">
+                    <h3 class="card-title">توافق کلید کوانتومی</h3>
+                    <span class="card-slug">quantum-conference-key-agreement</span>
+                    <div class="card-footer">
+                        <span>WebP</span>
+                        <span>1200×675</span>
+                    </div>
+                </div>
+            </div>
+            <div class="img-card" data-batch="18" data-title="زمینه‌مندی کوانتومی" data-slug="quantum-contextuality" data-alt="زمینه‌مندی کوانتومی" onclick="openModal('quantum-contextuality.webp', 'زمینه‌مندی کوانتومی', 'quantum-contextuality', 'زمینه‌مندی کوانتومی', 18)">
+                <div class="img-frame">
+                    <img src="images/quantum-contextuality.webp" alt="زمینه‌مندی کوانتومی" loading="lazy">
+                    <span class="badge-batch">بسته 18</span>
+                    <span class="badge-watermark">qpedia.ir</span>
+                </div>
+                <div class="card-body">
+                    <h3 class="card-title">زمینه‌مندی کوانتومی</h3>
+                    <span class="card-slug">quantum-contextuality</span>
+                    <div class="card-footer">
+                        <span>WebP</span>
+                        <span>1200×675</span>
+                    </div>
+                </div>
+            </div>
+            <div class="img-card" data-batch="18" data-title="کنترل کوانتومی سامانه" data-slug="quantum-control" data-alt="کنترل کوانتومی سامانه" onclick="openModal('quantum-control.webp', 'کنترل کوانتومی سامانه', 'quantum-control', 'کنترل کوانتومی سامانه', 18)">
+                <div class="img-frame">
+                    <img src="images/quantum-control.webp" alt="کنترل کوانتومی سامانه" loading="lazy">
+                    <span class="badge-batch">بسته 18</span>
+                    <span class="badge-watermark">qpedia.ir</span>
+                </div>
+                <div class="card-body">
+                    <h3 class="card-title">کنترل کوانتومی سامانه</h3>
+                    <span class="card-slug">quantum-control</span>
+                    <div class="card-footer">
+                        <span>WebP</span>
+                        <span>1200×675</span>
+                    </div>
+                </div>
+            </div>
+            <div class="img-card" data-batch="18" data-title="روند مفهومی کیهان‌شناسی کوانتومی از جهان آغازین" data-slug="quantum-cosmology" data-alt="روند مفهومی کیهان‌شناسی کوانتومی از جهان آغازین" onclick="openModal('quantum-cosmology.webp', 'روند مفهومی کیهان‌شناسی کوانتومی از جهان آغازین', 'quantum-cosmology', 'روند مفهومی کیهان‌شناسی کوانتومی از جهان آغازین', 18)">
+                <div class="img-frame">
+                    <img src="images/quantum-cosmology.webp" alt="روند مفهومی کیهان‌شناسی کوانتومی از جهان آغازین" loading="lazy">
+                    <span class="badge-batch">بسته 18</span>
+                    <span class="badge-watermark">qpedia.ir</span>
+                </div>
+                <div class="card-body">
+                    <h3 class="card-title">روند مفهومی کیهان‌شناسی کوانتومی از جهان آغازین</h3>
+                    <span class="card-slug">quantum-cosmology</span>
+                    <div class="card-footer">
+                        <span>WebP</span>
+                        <span>1200×675</span>
+                    </div>
+                </div>
+            </div>
+            <div class="img-card" data-batch="19" data-title="بحرانیت کوانتومی" data-slug="quantum-criticality" data-alt="بحرانیت کوانتومی" onclick="openModal('quantum-criticality.webp', 'بحرانیت کوانتومی', 'quantum-criticality', 'بحرانیت کوانتومی', 19)">
+                <div class="img-frame">
+                    <img src="images/quantum-criticality.webp" alt="بحرانیت کوانتومی" loading="lazy">
+                    <span class="badge-batch">بسته 19</span>
+                    <span class="badge-watermark">qpedia.ir</span>
+                </div>
+                <div class="card-body">
+                    <h3 class="card-title">بحرانیت کوانتومی</h3>
+                    <span class="card-slug">quantum-criticality</span>
+                    <div class="card-footer">
+                        <span>WebP</span>
+                        <span>1200×675</span>
+                    </div>
+                </div>
+            </div>
+            <div class="img-card" data-batch="19" data-title="فرهنگ کوانتومی" data-slug="quantum-culture" data-alt="تصویر شاخص بازتاب مفاهیم کوانتومی در فرهنگ و هنر جامعه" onclick="openModal('quantum-culture.webp', 'فرهنگ کوانتومی', 'quantum-culture', 'تصویر شاخص بازتاب مفاهیم کوانتومی در فرهنگ و هنر جامعه', 19)">
+                <div class="img-frame">
+                    <img src="images/quantum-culture.webp" alt="تصویر شاخص بازتاب مفاهیم کوانتومی در فرهنگ و هنر جامعه" loading="lazy">
+                    <span class="badge-batch">بسته 19</span>
+                    <span class="badge-watermark">qpedia.ir</span>
+                </div>
+                <div class="card-body">
+                    <h3 class="card-title">فرهنگ کوانتومی</h3>
+                    <span class="card-slug">quantum-culture</span>
+                    <div class="card-footer">
+                        <span>WebP</span>
+                        <span>1200×675</span>
+                    </div>
+                </div>
+            </div>
+            <div class="img-card" data-batch="19" data-title="داروینیسم کوانتومی" data-slug="quantum-darwinism" data-alt="تصویر شاخص نظریه داروینیسم کوانتومی زورک" onclick="openModal('quantum-darwinism.webp', 'داروینیسم کوانتومی', 'quantum-darwinism', 'تصویر شاخص نظریه داروینیسم کوانتومی زورک', 19)">
+                <div class="img-frame">
+                    <img src="images/quantum-darwinism.webp" alt="تصویر شاخص نظریه داروینیسم کوانتومی زورک" loading="lazy">
+                    <span class="badge-batch">بسته 19</span>
+                    <span class="badge-watermark">qpedia.ir</span>
+                </div>
+                <div class="card-body">
+                    <h3 class="card-title">داروینیسم کوانتومی</h3>
+                    <span class="card-slug">quantum-darwinism</span>
+                    <div class="card-footer">
+                        <span>WebP</span>
+                        <span>1200×675</span>
+                    </div>
+                </div>
+            </div>
+            <div class="img-card" data-batch="19" data-title="امضای دیجیتال کوانتومی" data-slug="quantum-digital-signature" data-alt="امضای دیجیتال کوانتومی" onclick="openModal('quantum-digital-signature.webp', 'امضای دیجیتال کوانتومی', 'quantum-digital-signature', 'امضای دیجیتال کوانتومی', 19)">
+                <div class="img-frame">
+                    <img src="images/quantum-digital-signature.webp" alt="امضای دیجیتال کوانتومی" loading="lazy">
+                    <span class="badge-batch">بسته 19</span>
+                    <span class="badge-watermark">qpedia.ir</span>
+                </div>
+                <div class="card-body">
+                    <h3 class="card-title">امضای دیجیتال کوانتومی</h3>
+                    <span class="card-slug">quantum-digital-signature</span>
+                    <div class="card-footer">
+                        <span>WebP</span>
+                        <span>1200×675</span>
+                    </div>
+                </div>
+            </div>
+            <div class="img-card" data-batch="19" data-title="دیمر کوانتومی و پیوند میان دو جایگاه" data-slug="quantum-dimer" data-alt="دیمر کوانتومی و پیوند میان دو جایگاه" onclick="openModal('quantum-dimer.webp', 'دیمر کوانتومی و پیوند میان دو جایگاه', 'quantum-dimer', 'دیمر کوانتومی و پیوند میان دو جایگاه', 19)">
+                <div class="img-frame">
+                    <img src="images/quantum-dimer.webp" alt="دیمر کوانتومی و پیوند میان دو جایگاه" loading="lazy">
+                    <span class="badge-batch">بسته 19</span>
+                    <span class="badge-watermark">qpedia.ir</span>
+                </div>
+                <div class="card-body">
+                    <h3 class="card-title">دیمر کوانتومی و پیوند میان دو جایگاه</h3>
+                    <span class="card-slug">quantum-dimer</span>
+                    <div class="card-footer">
+                        <span>WebP</span>
+                        <span>1200×675</span>
+                    </div>
+                </div>
+            </div>
+            <div class="img-card" data-batch="20" data-title="قطره کوانتومی خودبسته" data-slug="quantum-droplet" data-alt="قطره کوانتومی خودبسته" onclick="openModal('quantum-droplet.webp', 'قطره کوانتومی خودبسته', 'quantum-droplet', 'قطره کوانتومی خودبسته', 20)">
+                <div class="img-frame">
+                    <img src="images/quantum-droplet.webp" alt="قطره کوانتومی خودبسته" loading="lazy">
+                    <span class="badge-batch">بسته 20</span>
+                    <span class="badge-watermark">qpedia.ir</span>
+                </div>
+                <div class="card-body">
+                    <h3 class="card-title">قطره کوانتومی خودبسته</h3>
+                    <span class="card-slug">quantum-droplet</span>
+                    <div class="card-footer">
+                        <span>WebP</span>
+                        <span>1200×675</span>
+                    </div>
+                </div>
+            </div>
+            <div class="img-card" data-batch="20" data-title="الکترودینامیک کوانتومی" data-slug="quantum-electrodynamics" data-alt="الکترودینامیک کوانتومی" onclick="openModal('quantum-electrodynamics.webp', 'الکترودینامیک کوانتومی', 'quantum-electrodynamics', 'الکترودینامیک کوانتومی', 20)">
+                <div class="img-frame">
+                    <img src="images/quantum-electrodynamics.webp" alt="الکترودینامیک کوانتومی" loading="lazy">
+                    <span class="badge-batch">بسته 20</span>
+                    <span class="badge-watermark">qpedia.ir</span>
+                </div>
+                <div class="card-body">
+                    <h3 class="card-title">الکترودینامیک کوانتومی</h3>
+                    <span class="card-slug">quantum-electrodynamics</span>
+                    <div class="card-footer">
+                        <span>WebP</span>
+                        <span>1200×675</span>
+                    </div>
+                </div>
+            </div>
+            <div class="img-card" data-batch="20" data-title="بازده موتور کوانتومی" data-slug="quantum-engine-efficiency" data-alt="بازده موتور کوانتومی" onclick="openModal('quantum-engine-efficiency.webp', 'بازده موتور کوانتومی', 'quantum-engine-efficiency', 'بازده موتور کوانتومی', 20)">
+                <div class="img-frame">
+                    <img src="images/quantum-engine-efficiency.webp" alt="بازده موتور کوانتومی" loading="lazy">
+                    <span class="badge-batch">بسته 20</span>
+                    <span class="badge-watermark">qpedia.ir</span>
+                </div>
+                <div class="card-body">
+                    <h3 class="card-title">بازده موتور کوانتومی</h3>
+                    <span class="card-slug">quantum-engine-efficiency</span>
+                    <div class="card-footer">
+                        <span>WebP</span>
+                        <span>1200×675</span>
+                    </div>
+                </div>
+            </div>
+            <div class="img-card" data-batch="20" data-title="درهم‌تنیدگی کوانتومی" data-slug="quantum-entanglement-explained" data-alt="تصویر شاخص درهم‌تنیدگی کوانتومی و هم‌بستگی ذرات" onclick="openModal('quantum-entanglement-explained.webp', 'درهم‌تنیدگی کوانتومی', 'quantum-entanglement-explained', 'تصویر شاخص درهم‌تنیدگی کوانتومی و هم‌بستگی ذرات', 20)">
+                <div class="img-frame">
+                    <img src="images/quantum-entanglement-explained.webp" alt="تصویر شاخص درهم‌تنیدگی کوانتومی و هم‌بستگی ذرات" loading="lazy">
+                    <span class="badge-batch">بسته 20</span>
+                    <span class="badge-watermark">qpedia.ir</span>
+                </div>
+                <div class="card-body">
+                    <h3 class="card-title">درهم‌تنیدگی کوانتومی</h3>
+                    <span class="card-slug">quantum-entanglement-explained</span>
+                    <div class="card-footer">
+                        <span>WebP</span>
+                        <span>1200×675</span>
+                    </div>
+                </div>
+            </div>
+            <div class="img-card" data-batch="20" data-title="آنتروپی کوانتومی" data-slug="quantum-entropy" data-alt="آنتروپی کوانتومی" onclick="openModal('quantum-entropy.webp', 'آنتروپی کوانتومی', 'quantum-entropy', 'آنتروپی کوانتومی', 20)">
+                <div class="img-frame">
+                    <img src="images/quantum-entropy.webp" alt="آنتروپی کوانتومی" loading="lazy">
+                    <span class="badge-batch">بسته 20</span>
+                    <span class="badge-watermark">qpedia.ir</span>
+                </div>
+                <div class="card-body">
+                    <h3 class="card-title">آنتروپی کوانتومی</h3>
+                    <span class="card-slug">quantum-entropy</span>
+                    <div class="card-footer">
+                        <span>WebP</span>
+                        <span>1200×675</span>
+                    </div>
+                </div>
+            </div>
+            <div class="img-card" data-batch="21" data-title="داستان علمی‌تخیلی کوانتومی و جهان‌های روایی" data-slug="quantum-fiction" data-alt="داستان علمی‌تخیلی کوانتومی و جهان‌های روایی" onclick="openModal('quantum-fiction.webp', 'داستان علمی‌تخیلی کوانتومی و جهان‌های روایی', 'quantum-fiction', 'داستان علمی‌تخیلی کوانتومی و جهان‌های روایی', 21)">
+                <div class="img-frame">
+                    <img src="images/quantum-fiction.webp" alt="داستان علمی‌تخیلی کوانتومی و جهان‌های روایی" loading="lazy">
+                    <span class="badge-batch">بسته 21</span>
+                    <span class="badge-watermark">qpedia.ir</span>
+                </div>
+                <div class="card-body">
+                    <h3 class="card-title">داستان علمی‌تخیلی کوانتومی و جهان‌های روایی</h3>
+                    <span class="card-slug">quantum-fiction</span>
+                    <div class="card-footer">
+                        <span>WebP</span>
+                        <span>1200×675</span>
+                    </div>
+                </div>
+            </div>
+            <div class="img-card" data-batch="21" data-title="محاسبات کوانتومی در وال‌استریت" data-slug="quantum-finance" data-alt="تصویر مفهومی محاسبات کوانتومی در وال‌استریت و بازارهای مالی با نمودار صعودی و احتمالات چندمسیره" onclick="openModal('quantum-finance.webp', 'محاسبات کوانتومی در وال‌استریت', 'quantum-finance', 'تصویر مفهومی محاسبات کوانتومی در وال‌استریت و بازارهای مالی با نمودار صعودی و احتمالات چندمسیره', 21)">
+                <div class="img-frame">
+                    <img src="images/quantum-finance.webp" alt="تصویر مفهومی محاسبات کوانتومی در وال‌استریت و بازارهای مالی با نمودار صعودی و احتمالات چندمسیره" loading="lazy">
+                    <span class="badge-batch">بسته 21</span>
+                    <span class="badge-watermark">qpedia.ir</span>
+                </div>
+                <div class="card-body">
+                    <h3 class="card-title">محاسبات کوانتومی در وال‌استریت</h3>
+                    <span class="card-slug">quantum-finance</span>
+                    <div class="card-footer">
+                        <span>WebP</span>
+                        <span>1200×675</span>
+                    </div>
+                </div>
+            </div>
+            <div class="img-card" data-batch="21" data-title="انگشت‌نگاری کوانتومی برای مقایسه داده‌ها" data-slug="quantum-fingerprinting" data-alt="انگشت‌نگاری کوانتومی برای مقایسه داده‌ها" onclick="openModal('quantum-fingerprinting.webp', 'انگشت‌نگاری کوانتومی برای مقایسه داده‌ها', 'quantum-fingerprinting', 'انگشت‌نگاری کوانتومی برای مقایسه داده‌ها', 21)">
+                <div class="img-frame">
+                    <img src="images/quantum-fingerprinting.webp" alt="انگشت‌نگاری کوانتومی برای مقایسه داده‌ها" loading="lazy">
+                    <span class="badge-batch">بسته 21</span>
+                    <span class="badge-watermark">qpedia.ir</span>
+                </div>
+                <div class="card-body">
+                    <h3 class="card-title">انگشت‌نگاری کوانتومی برای مقایسه داده‌ها</h3>
+                    <span class="card-slug">quantum-fingerprinting</span>
+                    <div class="card-footer">
+                        <span>WebP</span>
+                        <span>1200×675</span>
+                    </div>
+                </div>
+            </div>
+            <div class="img-card" data-batch="21" data-title="قضیه نوسان کوانتومی" data-slug="quantum-fluctuation-theorem" data-alt="قضیه نوسان کوانتومی" onclick="openModal('quantum-fluctuation-theorem.webp', 'قضیه نوسان کوانتومی', 'quantum-fluctuation-theorem', 'قضیه نوسان کوانتومی', 21)">
+                <div class="img-frame">
+                    <img src="images/quantum-fluctuation-theorem.webp" alt="قضیه نوسان کوانتومی" loading="lazy">
+                    <span class="badge-batch">بسته 21</span>
+                    <span class="badge-watermark">qpedia.ir</span>
+                </div>
+                <div class="card-body">
+                    <h3 class="card-title">قضیه نوسان کوانتومی</h3>
+                    <span class="card-slug">quantum-fluctuation-theorem</span>
+                    <div class="card-footer">
+                        <span>WebP</span>
+                        <span>1200×675</span>
+                    </div>
+                </div>
+            </div>
+            <div class="img-card" data-batch="21" data-title="FPGA کوانتومی و کنترل بازپیکربندی‌پذیر" data-slug="quantum-fpga" data-alt="FPGA کوانتومی و کنترل بازپیکربندی‌پذیر" onclick="openModal('quantum-fpga.webp', 'FPGA کوانتومی و کنترل بازپیکربندی‌پذیر', 'quantum-fpga', 'FPGA کوانتومی و کنترل بازپیکربندی‌پذیر', 21)">
+                <div class="img-frame">
+                    <img src="images/quantum-fpga.webp" alt="FPGA کوانتومی و کنترل بازپیکربندی‌پذیر" loading="lazy">
+                    <span class="badge-batch">بسته 21</span>
+                    <span class="badge-watermark">qpedia.ir</span>
+                </div>
+                <div class="card-body">
+                    <h3 class="card-title">FPGA کوانتومی و کنترل بازپیکربندی‌پذیر</h3>
+                    <span class="card-slug">quantum-fpga</span>
+                    <div class="card-footer">
+                        <span>WebP</span>
+                        <span>1200×675</span>
+                    </div>
+                </div>
+            </div>
+            <div class="img-card" data-batch="22" data-title="کوانتوم و اراده آزاد" data-slug="quantum-free-will" data-alt="تصویر شاخص فیزیک کوانتومی و مسئله اراده آزاد و آگاهی" onclick="openModal('quantum-free-will.webp', 'کوانتوم و اراده آزاد', 'quantum-free-will', 'تصویر شاخص فیزیک کوانتومی و مسئله اراده آزاد و آگاهی', 22)">
+                <div class="img-frame">
+                    <img src="images/quantum-free-will.webp" alt="تصویر شاخص فیزیک کوانتومی و مسئله اراده آزاد و آگاهی" loading="lazy">
+                    <span class="badge-batch">بسته 22</span>
+                    <span class="badge-watermark">qpedia.ir</span>
+                </div>
+                <div class="card-body">
+                    <h3 class="card-title">کوانتوم و اراده آزاد</h3>
+                    <span class="card-slug">quantum-free-will</span>
+                    <div class="card-footer">
+                        <span>WebP</span>
+                        <span>1200×675</span>
+                    </div>
+                </div>
+            </div>
+            <div class="img-card" data-batch="22" data-title="نظریه بازی کوانتومی" data-slug="quantum-game-theory" data-alt="تصویر مفهومی نظریه بازی کوانتومی، دو مهره شطرنج نوری پیوندیافته با حلقه درهم‌تنیدگی و امواج احتمالاتی" onclick="openModal('quantum-game-theory.webp', 'نظریه بازی کوانتومی', 'quantum-game-theory', 'تصویر مفهومی نظریه بازی کوانتومی، دو مهره شطرنج نوری پیوندیافته با حلقه درهم‌تنیدگی و امواج احتمالاتی', 22)">
+                <div class="img-frame">
+                    <img src="images/quantum-game-theory.webp" alt="تصویر مفهومی نظریه بازی کوانتومی، دو مهره شطرنج نوری پیوندیافته با حلقه درهم‌تنیدگی و امواج احتمالاتی" loading="lazy">
+                    <span class="badge-batch">بسته 22</span>
+                    <span class="badge-watermark">qpedia.ir</span>
+                </div>
+                <div class="card-body">
+                    <h3 class="card-title">نظریه بازی کوانتومی</h3>
+                    <span class="card-slug">quantum-game-theory</span>
+                    <div class="card-footer">
+                        <span>WebP</span>
+                        <span>1200×675</span>
+                    </div>
+                </div>
+            </div>
+            <div class="img-card" data-batch="22" data-title="بازی‌های کوانتومی" data-slug="quantum-games" data-alt="تصویر مفهومی بازی‌های کوانتومی با صفحه و مهره‌های شطرنج نوری در وضعیت برهم‌نهی کوانتومی" onclick="openModal('quantum-games.webp', 'بازی‌های کوانتومی', 'quantum-games', 'تصویر مفهومی بازی‌های کوانتومی با صفحه و مهره‌های شطرنج نوری در وضعیت برهم‌نهی کوانتومی', 22)">
+                <div class="img-frame">
+                    <img src="images/quantum-games.webp" alt="تصویر مفهومی بازی‌های کوانتومی با صفحه و مهره‌های شطرنج نوری در وضعیت برهم‌نهی کوانتومی" loading="lazy">
+                    <span class="badge-batch">بسته 22</span>
+                    <span class="badge-watermark">qpedia.ir</span>
+                </div>
+                <div class="card-body">
+                    <h3 class="card-title">بازی‌های کوانتومی</h3>
+                    <span class="card-slug">quantum-games</span>
+                    <div class="card-footer">
+                        <span>WebP</span>
+                        <span>1200×675</span>
+                    </div>
+                </div>
+            </div>
+            <div class="img-card" data-batch="22" data-title="مدل مولد کوانتومی" data-slug="quantum-generative-model" data-alt="مدل مولد کوانتومی" onclick="openModal('quantum-generative-model.webp', 'مدل مولد کوانتومی', 'quantum-generative-model', 'مدل مولد کوانتومی', 22)">
+                <div class="img-frame">
+                    <img src="images/quantum-generative-model.webp" alt="مدل مولد کوانتومی" loading="lazy">
+                    <span class="badge-batch">بسته 22</span>
+                    <span class="badge-watermark">qpedia.ir</span>
+                </div>
+                <div class="card-body">
+                    <h3 class="card-title">مدل مولد کوانتومی</h3>
+                    <span class="card-slug">quantum-generative-model</span>
+                    <div class="card-footer">
+                        <span>WebP</span>
+                        <span>1200×675</span>
+                    </div>
+                </div>
+            </div>
+            <div class="img-card" data-batch="22" data-title="موتور گرمایی کوانتومی" data-slug="quantum-heat-engine" data-alt="موتور گرمایی کوانتومی" onclick="openModal('quantum-heat-engine.webp', 'موتور گرمایی کوانتومی', 'quantum-heat-engine', 'موتور گرمایی کوانتومی', 22)">
+                <div class="img-frame">
+                    <img src="images/quantum-heat-engine.webp" alt="موتور گرمایی کوانتومی" loading="lazy">
+                    <span class="badge-batch">بسته 22</span>
+                    <span class="badge-watermark">qpedia.ir</span>
+                </div>
+                <div class="card-body">
+                    <h3 class="card-title">موتور گرمایی کوانتومی</h3>
+                    <span class="card-slug">quantum-heat-engine</span>
+                    <div class="card-footer">
+                        <span>WebP</span>
+                        <span>1200×675</span>
+                    </div>
+                </div>
+            </div>
+            <div class="img-card" data-batch="23" data-title="تصویربرداری کوانتومی با فوتون‌های آشکارنشده" data-slug="quantum-imaging-undetected-photons" data-alt="تصویربرداری کوانتومی با فوتون‌های آشکارنشده" onclick="openModal('quantum-imaging-undetected-photons.webp', 'تصویربرداری کوانتومی با فوتون‌های آشکارنشده', 'quantum-imaging-undetected-photons', 'تصویربرداری کوانتومی با فوتون‌های آشکارنشده', 23)">
+                <div class="img-frame">
+                    <img src="images/quantum-imaging-undetected-photons.webp" alt="تصویربرداری کوانتومی با فوتون‌های آشکارنشده" loading="lazy">
+                    <span class="badge-batch">بسته 23</span>
+                    <span class="badge-watermark">qpedia.ir</span>
+                </div>
+                <div class="card-body">
+                    <h3 class="card-title">تصویربرداری کوانتومی با فوتون‌های آشکارنشده</h3>
+                    <span class="card-slug">quantum-imaging-undetected-photons</span>
+                    <div class="card-footer">
+                        <span>WebP</span>
+                        <span>1200×675</span>
+                    </div>
+                </div>
+            </div>
+            <div class="img-card" data-batch="23" data-title="ماکس بورن و تفسیر احتمالاتی" data-slug="quantum-interpretation-debate" data-alt="تصویر شاخص ماکس بورن و جدال تفاسیر کوانتومی" onclick="openModal('quantum-interpretation-debate.webp', 'ماکس بورن و تفسیر احتمالاتی', 'quantum-interpretation-debate', 'تصویر شاخص ماکس بورن و جدال تفاسیر کوانتومی', 23)">
+                <div class="img-frame">
+                    <img src="images/quantum-interpretation-debate.webp" alt="تصویر شاخص ماکس بورن و جدال تفاسیر کوانتومی" loading="lazy">
+                    <span class="badge-batch">بسته 23</span>
+                    <span class="badge-watermark">qpedia.ir</span>
+                </div>
+                <div class="card-body">
+                    <h3 class="card-title">ماکس بورن و تفسیر احتمالاتی</h3>
+                    <span class="card-slug">quantum-interpretation-debate</span>
+                    <div class="card-footer">
+                        <span>WebP</span>
+                        <span>1200×675</span>
+                    </div>
+                </div>
+            </div>
+            <div class="img-card" data-batch="23" data-title="هسته کوانتومی در یادگیری ماشین" data-slug="quantum-kernel" data-alt="هسته کوانتومی در یادگیری ماشین" onclick="openModal('quantum-kernel.webp', 'هسته کوانتومی در یادگیری ماشین', 'quantum-kernel', 'هسته کوانتومی در یادگیری ماشین', 23)">
+                <div class="img-frame">
+                    <img src="images/quantum-kernel.webp" alt="هسته کوانتومی در یادگیری ماشین" loading="lazy">
+                    <span class="badge-batch">بسته 23</span>
+                    <span class="badge-watermark">qpedia.ir</span>
+                </div>
+                <div class="card-body">
+                    <h3 class="card-title">هسته کوانتومی در یادگیری ماشین</h3>
+                    <span class="card-slug">quantum-kernel</span>
+                    <div class="card-footer">
+                        <span>WebP</span>
+                        <span>1200×675</span>
+                    </div>
+                </div>
+            </div>
+            <div class="img-card" data-batch="23" data-title="لیتوگرافی کوانتومی و ایجاد الگوی ریز" data-slug="quantum-lithography" data-alt="لیتوگرافی کوانتومی و ایجاد الگوی ریز" onclick="openModal('quantum-lithography.webp', 'لیتوگرافی کوانتومی و ایجاد الگوی ریز', 'quantum-lithography', 'لیتوگرافی کوانتومی و ایجاد الگوی ریز', 23)">
+                <div class="img-frame">
+                    <img src="images/quantum-lithography.webp" alt="لیتوگرافی کوانتومی و ایجاد الگوی ریز" loading="lazy">
+                    <span class="badge-batch">بسته 23</span>
+                    <span class="badge-watermark">qpedia.ir</span>
+                </div>
+                <div class="card-body">
+                    <h3 class="card-title">لیتوگرافی کوانتومی و ایجاد الگوی ریز</h3>
+                    <span class="card-slug">quantum-lithography</span>
+                    <div class="card-footer">
+                        <span>WebP</span>
+                        <span>1200×675</span>
+                    </div>
+                </div>
+            </div>
+            <div class="img-card" data-batch="23" data-title="منطق کوانتومی و مدار منطقی" data-slug="quantum-logic" data-alt="منطق کوانتومی و مدار منطقی" onclick="openModal('quantum-logic.webp', 'منطق کوانتومی و مدار منطقی', 'quantum-logic', 'منطق کوانتومی و مدار منطقی', 23)">
+                <div class="img-frame">
+                    <img src="images/quantum-logic.webp" alt="منطق کوانتومی و مدار منطقی" loading="lazy">
+                    <span class="badge-batch">بسته 23</span>
+                    <span class="badge-watermark">qpedia.ir</span>
+                </div>
+                <div class="card-body">
+                    <h3 class="card-title">منطق کوانتومی و مدار منطقی</h3>
+                    <span class="card-slug">quantum-logic</span>
+                    <div class="card-footer">
+                        <span>WebP</span>
+                        <span>1200×675</span>
+                    </div>
+                </div>
+            </div>
+            <div class="img-card" data-batch="24" data-title="دیو ماکسول کوانتومی" data-slug="quantum-maxwell-demon" data-alt="دیو ماکسول کوانتومی" onclick="openModal('quantum-maxwell-demon.webp', 'دیو ماکسول کوانتومی', 'quantum-maxwell-demon', 'دیو ماکسول کوانتومی', 24)">
+                <div class="img-frame">
+                    <img src="images/quantum-maxwell-demon.webp" alt="دیو ماکسول کوانتومی" loading="lazy">
+                    <span class="badge-batch">بسته 24</span>
+                    <span class="badge-watermark">qpedia.ir</span>
+                </div>
+                <div class="card-body">
+                    <h3 class="card-title">دیو ماکسول کوانتومی</h3>
+                    <span class="card-slug">quantum-maxwell-demon</span>
+                    <div class="card-footer">
+                        <span>WebP</span>
+                        <span>1200×675</span>
+                    </div>
+                </div>
+            </div>
+            <div class="img-card" data-batch="24" data-title="اندازه‌گیری و فروپاشی" data-slug="quantum-measurement" data-alt="تصویر شاخص اندازه‌گیری کوانتومی و فروپاشی تابع موج" onclick="openModal('quantum-measurement.webp', 'اندازه‌گیری و فروپاشی', 'quantum-measurement', 'تصویر شاخص اندازه‌گیری کوانتومی و فروپاشی تابع موج', 24)">
+                <div class="img-frame">
+                    <img src="images/quantum-measurement.webp" alt="تصویر شاخص اندازه‌گیری کوانتومی و فروپاشی تابع موج" loading="lazy">
+                    <span class="badge-batch">بسته 24</span>
+                    <span class="badge-watermark">qpedia.ir</span>
+                </div>
+                <div class="card-body">
+                    <h3 class="card-title">اندازه‌گیری و فروپاشی</h3>
+                    <span class="card-slug">quantum-measurement</span>
+                    <div class="card-footer">
+                        <span>WebP</span>
+                        <span>1200×675</span>
+                    </div>
+                </div>
+            </div>
+            <div class="img-card" data-batch="24" data-title="میکروسکوپ کوانتومی و تصویربرداری نمونه" data-slug="quantum-microscopy" data-alt="میکروسکوپ کوانتومی و تصویربرداری نمونه" onclick="openModal('quantum-microscopy.webp', 'میکروسکوپ کوانتومی و تصویربرداری نمونه', 'quantum-microscopy', 'میکروسکوپ کوانتومی و تصویربرداری نمونه', 24)">
+                <div class="img-frame">
+                    <img src="images/quantum-microscopy.webp" alt="میکروسکوپ کوانتومی و تصویربرداری نمونه" loading="lazy">
+                    <span class="badge-batch">بسته 24</span>
+                    <span class="badge-watermark">qpedia.ir</span>
+                </div>
+                <div class="card-body">
+                    <h3 class="card-title">میکروسکوپ کوانتومی و تصویربرداری نمونه</h3>
+                    <span class="card-slug">quantum-microscopy</span>
+                    <div class="card-footer">
+                        <span>WebP</span>
+                        <span>1200×675</span>
+                    </div>
+                </div>
+            </div>
+            <div class="img-card" data-batch="24" data-title="پول کوانتومی" data-slug="quantum-money" data-alt="پول کوانتومی" onclick="openModal('quantum-money.webp', 'پول کوانتومی', 'quantum-money', 'پول کوانتومی', 24)">
+                <div class="img-frame">
+                    <img src="images/quantum-money.webp" alt="پول کوانتومی" loading="lazy">
+                    <span class="badge-batch">بسته 24</span>
+                    <span class="badge-watermark">qpedia.ir</span>
+                </div>
+                <div class="card-body">
+                    <h3 class="card-title">پول کوانتومی</h3>
+                    <span class="card-slug">quantum-money</span>
+                    <div class="card-footer">
+                        <span>WebP</span>
+                        <span>1200×675</span>
+                    </div>
+                </div>
+            </div>
+            <div class="img-card" data-batch="24" data-title="موسیقی کوانتومی و تبدیل داده کوانتومی به صدا" data-slug="quantum-music" data-alt="موسیقی کوانتومی و تبدیل داده کوانتومی به صدا" onclick="openModal('quantum-music.webp', 'موسیقی کوانتومی و تبدیل داده کوانتومی به صدا', 'quantum-music', 'موسیقی کوانتومی و تبدیل داده کوانتومی به صدا', 24)">
+                <div class="img-frame">
+                    <img src="images/quantum-music.webp" alt="موسیقی کوانتومی و تبدیل داده کوانتومی به صدا" loading="lazy">
+                    <span class="badge-batch">بسته 24</span>
+                    <span class="badge-watermark">qpedia.ir</span>
+                </div>
+                <div class="card-body">
+                    <h3 class="card-title">موسیقی کوانتومی و تبدیل داده کوانتومی به صدا</h3>
+                    <span class="card-slug">quantum-music</span>
+                    <div class="card-footer">
+                        <span>WebP</span>
+                        <span>1200×675</span>
+                    </div>
+                </div>
+            </div>
+            <div class="img-card" data-batch="25" data-title="شبکه کوانتومی" data-slug="quantum-network" data-alt="شبکه کوانتومی" onclick="openModal('quantum-network.webp', 'شبکه کوانتومی', 'quantum-network', 'شبکه کوانتومی', 25)">
+                <div class="img-frame">
+                    <img src="images/quantum-network.webp" alt="شبکه کوانتومی" loading="lazy">
+                    <span class="badge-batch">بسته 25</span>
+                    <span class="badge-watermark">qpedia.ir</span>
+                </div>
+                <div class="card-body">
+                    <h3 class="card-title">شبکه کوانتومی</h3>
+                    <span class="card-slug">quantum-network</span>
+                    <div class="card-footer">
+                        <span>WebP</span>
+                        <span>1200×675</span>
+                    </div>
+                </div>
+            </div>
+            <div class="img-card" data-batch="25" data-title="شبکه عصبی کوانتومی" data-slug="quantum-neural-network" data-alt="شبکه عصبی کوانتومی" onclick="openModal('quantum-neural-network.webp', 'شبکه عصبی کوانتومی', 'quantum-neural-network', 'شبکه عصبی کوانتومی', 25)">
+                <div class="img-frame">
+                    <img src="images/quantum-neural-network.webp" alt="شبکه عصبی کوانتومی" loading="lazy">
+                    <span class="badge-batch">بسته 25</span>
+                    <span class="badge-watermark">qpedia.ir</span>
+                </div>
+                <div class="card-body">
+                    <h3 class="card-title">شبکه عصبی کوانتومی</h3>
+                    <span class="card-slug">quantum-neural-network</span>
+                    <div class="card-footer">
+                        <span>WebP</span>
+                        <span>1200×675</span>
+                    </div>
+                </div>
+            </div>
+            <div class="img-card" data-batch="25" data-title="عدد کوانتومی" data-slug="quantum-number" data-alt="تصویر شاخص اعداد کوانتومی الکترون در اتم" onclick="openModal('quantum-number.webp', 'عدد کوانتومی', 'quantum-number', 'تصویر شاخص اعداد کوانتومی الکترون در اتم', 25)">
+                <div class="img-frame">
+                    <img src="images/quantum-number.webp" alt="تصویر شاخص اعداد کوانتومی الکترون در اتم" loading="lazy">
+                    <span class="badge-batch">بسته 25</span>
+                    <span class="badge-watermark">qpedia.ir</span>
+                </div>
+                <div class="card-body">
+                    <h3 class="card-title">عدد کوانتومی</h3>
+                    <span class="card-slug">quantum-number</span>
+                    <div class="card-footer">
+                        <span>WebP</span>
+                        <span>1200×675</span>
+                    </div>
+                </div>
+            </div>
+            <div class="img-card" data-batch="25" data-title="مدار تخمین فاز کوانتومی" data-slug="quantum-phase-estimation" data-alt="مدار تخمین فاز کوانتومی" onclick="openModal('quantum-phase-estimation.webp', 'مدار تخمین فاز کوانتومی', 'quantum-phase-estimation', 'مدار تخمین فاز کوانتومی', 25)">
+                <div class="img-frame">
+                    <img src="images/quantum-phase-estimation.webp" alt="مدار تخمین فاز کوانتومی" loading="lazy">
+                    <span class="badge-batch">بسته 25</span>
+                    <span class="badge-watermark">qpedia.ir</span>
+                </div>
+                <div class="card-body">
+                    <h3 class="card-title">مدار تخمین فاز کوانتومی</h3>
+                    <span class="card-slug">quantum-phase-estimation</span>
+                    <div class="card-footer">
+                        <span>WebP</span>
+                        <span>1200×675</span>
+                    </div>
+                </div>
+            </div>
+            <div class="img-card" data-batch="25" data-title="گذار فاز کوانتومی" data-slug="quantum-phase-transition" data-alt="گذار فاز کوانتومی" onclick="openModal('quantum-phase-transition.webp', 'گذار فاز کوانتومی', 'quantum-phase-transition', 'گذار فاز کوانتومی', 25)">
+                <div class="img-frame">
+                    <img src="images/quantum-phase-transition.webp" alt="گذار فاز کوانتومی" loading="lazy">
+                    <span class="badge-batch">بسته 25</span>
+                    <span class="badge-watermark">qpedia.ir</span>
+                </div>
+                <div class="card-body">
+                    <h3 class="card-title">گذار فاز کوانتومی</h3>
+                    <span class="card-slug">quantum-phase-transition</span>
+                    <div class="card-footer">
+                        <span>WebP</span>
+                        <span>1200×675</span>
+                    </div>
+                </div>
+            </div>
+            <div class="img-card" data-batch="26" data-title="فیزیک کوانتوم و مکانیک کوانتومی" data-slug="quantum-physics-vs-quantum-mechanics" data-alt="تصویر شاخص تفاوت فیزیک کوانتوم و مکانیک کوانتومی" onclick="openModal('quantum-physics-vs-quantum-mechanics.webp', 'فیزیک کوانتوم و مکانیک کوانتومی', 'quantum-physics-vs-quantum-mechanics', 'تصویر شاخص تفاوت فیزیک کوانتوم و مکانیک کوانتومی', 26)">
+                <div class="img-frame">
+                    <img src="images/quantum-physics-vs-quantum-mechanics.webp" alt="تصویر شاخص تفاوت فیزیک کوانتوم و مکانیک کوانتومی" loading="lazy">
+                    <span class="badge-batch">بسته 26</span>
+                    <span class="badge-watermark">qpedia.ir</span>
+                </div>
+                <div class="card-body">
+                    <h3 class="card-title">فیزیک کوانتوم و مکانیک کوانتومی</h3>
+                    <span class="card-slug">quantum-physics-vs-quantum-mechanics</span>
+                    <div class="card-footer">
+                        <span>WebP</span>
+                        <span>1200×675</span>
+                    </div>
+                </div>
+            </div>
+            <div class="img-card" data-batch="26" data-title="اصل لانه‌کبوتری کوانتومی" data-slug="quantum-pigeonhole" data-alt="اصل لانه‌کبوتری کوانتومی" onclick="openModal('quantum-pigeonhole.webp', 'اصل لانه‌کبوتری کوانتومی', 'quantum-pigeonhole', 'اصل لانه‌کبوتری کوانتومی', 26)">
+                <div class="img-frame">
+                    <img src="images/quantum-pigeonhole.webp" alt="اصل لانه‌کبوتری کوانتومی" loading="lazy">
+                    <span class="badge-batch">بسته 26</span>
+                    <span class="badge-watermark">qpedia.ir</span>
+                </div>
+                <div class="card-body">
+                    <h3 class="card-title">اصل لانه‌کبوتری کوانتومی</h3>
+                    <span class="card-slug">quantum-pigeonhole</span>
+                    <div class="card-footer">
+                        <span>WebP</span>
+                        <span>1200×675</span>
+                    </div>
+                </div>
+            </div>
+            <div class="img-card" data-batch="26" data-title="احتمال کوانتومی" data-slug="quantum-probability" data-alt="تصویر شاخص ماهیت احتمالاتی مکانیک کوانتومی و قاعده بورن" onclick="openModal('quantum-probability.webp', 'احتمال کوانتومی', 'quantum-probability', 'تصویر شاخص ماهیت احتمالاتی مکانیک کوانتومی و قاعده بورن', 26)">
+                <div class="img-frame">
+                    <img src="images/quantum-probability.webp" alt="تصویر شاخص ماهیت احتمالاتی مکانیک کوانتومی و قاعده بورن" loading="lazy">
+                    <span class="badge-batch">بسته 26</span>
+                    <span class="badge-watermark">qpedia.ir</span>
+                </div>
+                <div class="card-body">
+                    <h3 class="card-title">احتمال کوانتومی</h3>
+                    <span class="card-slug">quantum-probability</span>
+                    <div class="card-footer">
+                        <span>WebP</span>
+                        <span>1200×675</span>
+                    </div>
+                </div>
+            </div>
+            <div class="img-card" data-batch="26" data-title="زبان برنامه‌نویسی کوانتومی" data-slug="quantum-programming-language" data-alt="زبان برنامه‌نویسی کوانتومی" onclick="openModal('quantum-programming-language.webp', 'زبان برنامه‌نویسی کوانتومی', 'quantum-programming-language', 'زبان برنامه‌نویسی کوانتومی', 26)">
+                <div class="img-frame">
+                    <img src="images/quantum-programming-language.webp" alt="زبان برنامه‌نویسی کوانتومی" loading="lazy">
+                    <span class="badge-batch">بسته 26</span>
+                    <span class="badge-watermark">qpedia.ir</span>
+                </div>
+                <div class="card-body">
+                    <h3 class="card-title">زبان برنامه‌نویسی کوانتومی</h3>
+                    <span class="card-slug">quantum-programming-language</span>
+                    <div class="card-footer">
+                        <span>WebP</span>
+                        <span>1200×675</span>
+                    </div>
+                </div>
+            </div>
+            <div class="img-card" data-batch="26" data-title="مولد عدد تصادفی کوانتومی" data-slug="quantum-random-number-generator" data-alt="تصویر شاخص تولید اعداد تصادفی واقعی با کوانتوم" onclick="openModal('quantum-random-number-generator.webp', 'مولد عدد تصادفی کوانتومی', 'quantum-random-number-generator', 'تصویر شاخص تولید اعداد تصادفی واقعی با کوانتوم', 26)">
+                <div class="img-frame">
+                    <img src="images/quantum-random-number-generator.webp" alt="تصویر شاخص تولید اعداد تصادفی واقعی با کوانتوم" loading="lazy">
+                    <span class="badge-batch">بسته 26</span>
+                    <span class="badge-watermark">qpedia.ir</span>
+                </div>
+                <div class="card-body">
+                    <h3 class="card-title">مولد عدد تصادفی کوانتومی</h3>
+                    <span class="card-slug">quantum-random-number-generator</span>
+                    <div class="card-footer">
+                        <span>WebP</span>
+                        <span>1200×675</span>
+                    </div>
+                </div>
+            </div>
+            <div class="img-card" data-batch="27" data-title="یخچال کوانتومی" data-slug="quantum-refrigerator" data-alt="یخچال کوانتومی" onclick="openModal('quantum-refrigerator.webp', 'یخچال کوانتومی', 'quantum-refrigerator', 'یخچال کوانتومی', 27)">
+                <div class="img-frame">
+                    <img src="images/quantum-refrigerator.webp" alt="یخچال کوانتومی" loading="lazy">
+                    <span class="badge-batch">بسته 27</span>
+                    <span class="badge-watermark">qpedia.ir</span>
+                </div>
+                <div class="card-body">
+                    <h3 class="card-title">یخچال کوانتومی</h3>
+                    <span class="card-slug">quantum-refrigerator</span>
+                    <div class="card-footer">
+                        <span>WebP</span>
+                        <span>1200×675</span>
+                    </div>
+                </div>
+            </div>
+            <div class="img-card" data-batch="27" data-title="یادگیری تقویتی کوانتومی" data-slug="quantum-reinforcement-learning" data-alt="یادگیری تقویتی کوانتومی" onclick="openModal('quantum-reinforcement-learning.webp', 'یادگیری تقویتی کوانتومی', 'quantum-reinforcement-learning', 'یادگیری تقویتی کوانتومی', 27)">
+                <div class="img-frame">
+                    <img src="images/quantum-reinforcement-learning.webp" alt="یادگیری تقویتی کوانتومی" loading="lazy">
+                    <span class="badge-batch">بسته 27</span>
+                    <span class="badge-watermark">qpedia.ir</span>
+                </div>
+                <div class="card-body">
+                    <h3 class="card-title">یادگیری تقویتی کوانتومی</h3>
+                    <span class="card-slug">quantum-reinforcement-learning</span>
+                    <div class="card-footer">
+                        <span>WebP</span>
+                        <span>1200×675</span>
+                    </div>
+                </div>
+            </div>
+            <div class="img-card" data-batch="27" data-title="مسیریاب کوانتومی" data-slug="quantum-router" data-alt="مسیریاب کوانتومی" onclick="openModal('quantum-router.webp', 'مسیریاب کوانتومی', 'quantum-router', 'مسیریاب کوانتومی', 27)">
+                <div class="img-frame">
+                    <img src="images/quantum-router.webp" alt="مسیریاب کوانتومی" loading="lazy">
+                    <span class="badge-batch">بسته 27</span>
+                    <span class="badge-watermark">qpedia.ir</span>
+                </div>
+                <div class="card-body">
+                    <h3 class="card-title">مسیریاب کوانتومی</h3>
+                    <span class="card-slug">quantum-router</span>
+                    <div class="card-footer">
+                        <span>WebP</span>
+                        <span>1200×675</span>
+                    </div>
+                </div>
+            </div>
+            <div class="img-card" data-batch="27" data-title="اشتراک راز کوانتومی" data-slug="quantum-secret-sharing" data-alt="اشتراک راز کوانتومی" onclick="openModal('quantum-secret-sharing.webp', 'اشتراک راز کوانتومی', 'quantum-secret-sharing', 'اشتراک راز کوانتومی', 27)">
+                <div class="img-frame">
+                    <img src="images/quantum-secret-sharing.webp" alt="اشتراک راز کوانتومی" loading="lazy">
+                    <span class="badge-batch">بسته 27</span>
+                    <span class="badge-watermark">qpedia.ir</span>
+                </div>
+                <div class="card-body">
+                    <h3 class="card-title">اشتراک راز کوانتومی</h3>
+                    <span class="card-slug">quantum-secret-sharing</span>
+                    <div class="card-footer">
+                        <span>WebP</span>
+                        <span>1200×675</span>
+                    </div>
+                </div>
+            </div>
+            <div class="img-card" data-batch="27" data-title="ارتباط مستقیم امن کوانتومی میان فرستنده و گیرنده" data-slug="quantum-secure-direct-communication" data-alt="ارتباط مستقیم امن کوانتومی میان فرستنده و گیرنده" onclick="openModal('quantum-secure-direct-communication.webp', 'ارتباط مستقیم امن کوانتومی میان فرستنده و گیرنده', 'quantum-secure-direct-communication', 'ارتباط مستقیم امن کوانتومی میان فرستنده و گیرنده', 27)">
+                <div class="img-frame">
+                    <img src="images/quantum-secure-direct-communication.webp" alt="ارتباط مستقیم امن کوانتومی میان فرستنده و گیرنده" loading="lazy">
+                    <span class="badge-batch">بسته 27</span>
+                    <span class="badge-watermark">qpedia.ir</span>
+                </div>
+                <div class="card-body">
+                    <h3 class="card-title">ارتباط مستقیم امن کوانتومی میان فرستنده و گیرنده</h3>
+                    <span class="card-slug">quantum-secure-direct-communication</span>
+                    <div class="card-footer">
+                        <span>WebP</span>
+                        <span>1200×675</span>
+                    </div>
+                </div>
+            </div>
+            <div class="img-card" data-batch="28" data-title="تکینگی کوانتومی در فضا–زمان" data-slug="quantum-singularity" data-alt="تکینگی کوانتومی در فضا–زمان" onclick="openModal('quantum-singularity.webp', 'تکینگی کوانتومی در فضا–زمان', 'quantum-singularity', 'تکینگی کوانتومی در فضا–زمان', 28)">
+                <div class="img-frame">
+                    <img src="images/quantum-singularity.webp" alt="تکینگی کوانتومی در فضا–زمان" loading="lazy">
+                    <span class="badge-batch">بسته 28</span>
+                    <span class="badge-watermark">qpedia.ir</span>
+                </div>
+                <div class="card-body">
+                    <h3 class="card-title">تکینگی کوانتومی در فضا–زمان</h3>
+                    <span class="card-slug">quantum-singularity</span>
+                    <div class="card-footer">
+                        <span>WebP</span>
+                        <span>1200×675</span>
+                    </div>
+                </div>
+            </div>
+            <div class="img-card" data-batch="28" data-title="سولیپسیسم کوانتومی و مسئله ناظر" data-slug="quantum-solipsism" data-alt="سولیپسیسم کوانتومی و مسئله ناظر" onclick="openModal('quantum-solipsism.webp', 'سولیپسیسم کوانتومی و مسئله ناظر', 'quantum-solipsism', 'سولیپسیسم کوانتومی و مسئله ناظر', 28)">
+                <div class="img-frame">
+                    <img src="images/quantum-solipsism.webp" alt="سولیپسیسم کوانتومی و مسئله ناظر" loading="lazy">
+                    <span class="badge-batch">بسته 28</span>
+                    <span class="badge-watermark">qpedia.ir</span>
+                </div>
+                <div class="card-body">
+                    <h3 class="card-title">سولیپسیسم کوانتومی و مسئله ناظر</h3>
+                    <span class="card-slug">quantum-solipsism</span>
+                    <div class="card-footer">
+                        <span>WebP</span>
+                        <span>1200×675</span>
+                    </div>
+                </div>
+            </div>
+            <div class="img-card" data-batch="28" data-title="اسپین؛ چرخشی که چرخش نیست" data-slug="quantum-spin" data-alt="تصویر شاخص اسپین کوانتومی و تکانه زاویه‌ای ذاتی" onclick="openModal('quantum-spin.webp', 'اسپین؛ چرخشی که چرخش نیست', 'quantum-spin', 'تصویر شاخص اسپین کوانتومی و تکانه زاویه‌ای ذاتی', 28)">
+                <div class="img-frame">
+                    <img src="images/quantum-spin.webp" alt="تصویر شاخص اسپین کوانتومی و تکانه زاویه‌ای ذاتی" loading="lazy">
+                    <span class="badge-batch">بسته 28</span>
+                    <span class="badge-watermark">qpedia.ir</span>
+                </div>
+                <div class="card-body">
+                    <h3 class="card-title">اسپین؛ چرخشی که چرخش نیست</h3>
+                    <span class="card-slug">quantum-spin</span>
+                    <div class="card-footer">
+                        <span>WebP</span>
+                        <span>1200×675</span>
+                    </div>
+                </div>
+            </div>
+            <div class="img-card" data-batch="28" data-title="حالت کوانتومی چیست؟" data-slug="quantum-state" data-alt="تصویر شاخص بردار حالت کوانتومی در فضای هیلبرت" onclick="openModal('quantum-state.webp', 'حالت کوانتومی چیست؟', 'quantum-state', 'تصویر شاخص بردار حالت کوانتومی در فضای هیلبرت', 28)">
+                <div class="img-frame">
+                    <img src="images/quantum-state.webp" alt="تصویر شاخص بردار حالت کوانتومی در فضای هیلبرت" loading="lazy">
+                    <span class="badge-batch">بسته 28</span>
+                    <span class="badge-watermark">qpedia.ir</span>
+                </div>
+                <div class="card-body">
+                    <h3 class="card-title">حالت کوانتومی چیست؟</h3>
+                    <span class="card-slug">quantum-state</span>
+                    <div class="card-footer">
+                        <span>WebP</span>
+                        <span>1200×675</span>
+                    </div>
+                </div>
+            </div>
+            <div class="img-card" data-batch="28" data-title="برهم‌نهی کوانتومی" data-slug="quantum-superposition" data-alt="تصویر شاخص برهم‌نهی کوانتومی و حالت‌های چندگانه" onclick="openModal('quantum-superposition.webp', 'برهم‌نهی کوانتومی', 'quantum-superposition', 'تصویر شاخص برهم‌نهی کوانتومی و حالت‌های چندگانه', 28)">
+                <div class="img-frame">
+                    <img src="images/quantum-superposition.webp" alt="تصویر شاخص برهم‌نهی کوانتومی و حالت‌های چندگانه" loading="lazy">
+                    <span class="badge-batch">بسته 28</span>
+                    <span class="badge-watermark">qpedia.ir</span>
+                </div>
+                <div class="card-body">
+                    <h3 class="card-title">برهم‌نهی کوانتومی</h3>
+                    <span class="card-slug">quantum-superposition</span>
+                    <div class="card-footer">
+                        <span>WebP</span>
+                        <span>1200×675</span>
+                    </div>
+                </div>
+            </div>
+            <div class="img-card" data-batch="29" data-title="گرمایی‌شدن کوانتومی" data-slug="quantum-thermalization" data-alt="گرمایی‌شدن کوانتومی" onclick="openModal('quantum-thermalization.webp', 'گرمایی‌شدن کوانتومی', 'quantum-thermalization', 'گرمایی‌شدن کوانتومی', 29)">
+                <div class="img-frame">
+                    <img src="images/quantum-thermalization.webp" alt="گرمایی‌شدن کوانتومی" loading="lazy">
+                    <span class="badge-batch">بسته 29</span>
+                    <span class="badge-watermark">qpedia.ir</span>
+                </div>
+                <div class="card-body">
+                    <h3 class="card-title">گرمایی‌شدن کوانتومی</h3>
+                    <span class="card-slug">quantum-thermalization</span>
+                    <div class="card-footer">
+                        <span>WebP</span>
+                        <span>1200×675</span>
+                    </div>
+                </div>
+            </div>
+            <div class="img-card" data-batch="29" data-title="دماسنجی کوانتومی" data-slug="quantum-thermometry" data-alt="دماسنجی کوانتومی" onclick="openModal('quantum-thermometry.webp', 'دماسنجی کوانتومی', 'quantum-thermometry', 'دماسنجی کوانتومی', 29)">
+                <div class="img-frame">
+                    <img src="images/quantum-thermometry.webp" alt="دماسنجی کوانتومی" loading="lazy">
+                    <span class="badge-batch">بسته 29</span>
+                    <span class="badge-watermark">qpedia.ir</span>
+                </div>
+                <div class="card-body">
+                    <h3 class="card-title">دماسنجی کوانتومی</h3>
+                    <span class="card-slug">quantum-thermometry</span>
+                    <div class="card-footer">
+                        <span>WebP</span>
+                        <span>1200×675</span>
+                    </div>
+                </div>
+            </div>
+            <div class="img-card" data-batch="29" data-title="سفر در زمان" data-slug="quantum-time-travel" data-alt="تصویر شاخص سفر در زمان از منظر فیزیک کوانتوم و نسبیت" onclick="openModal('quantum-time-travel.webp', 'سفر در زمان', 'quantum-time-travel', 'تصویر شاخص سفر در زمان از منظر فیزیک کوانتوم و نسبیت', 29)">
+                <div class="img-frame">
+                    <img src="images/quantum-time-travel.webp" alt="تصویر شاخص سفر در زمان از منظر فیزیک کوانتوم و نسبیت" loading="lazy">
+                    <span class="badge-batch">بسته 29</span>
+                    <span class="badge-watermark">qpedia.ir</span>
+                </div>
+                <div class="card-body">
+                    <h3 class="card-title">سفر در زمان</h3>
+                    <span class="card-slug">quantum-time-travel</span>
+                    <div class="card-footer">
+                        <span>WebP</span>
+                        <span>1200×675</span>
+                    </div>
+                </div>
+            </div>
+            <div class="img-card" data-batch="29" data-title="تونل‌زنی کوانتومی" data-slug="quantum-tunneling" data-alt="تصویر شاخص تونل‌زنی کوانتومی و عبور ذره از سد پتانسیل" onclick="openModal('quantum-tunneling.webp', 'تونل‌زنی کوانتومی', 'quantum-tunneling', 'تصویر شاخص تونل‌زنی کوانتومی و عبور ذره از سد پتانسیل', 29)">
+                <div class="img-frame">
+                    <img src="images/quantum-tunneling.webp" alt="تصویر شاخص تونل‌زنی کوانتومی و عبور ذره از سد پتانسیل" loading="lazy">
+                    <span class="badge-batch">بسته 29</span>
+                    <span class="badge-watermark">qpedia.ir</span>
+                </div>
+                <div class="card-body">
+                    <h3 class="card-title">تونل‌زنی کوانتومی</h3>
+                    <span class="card-slug">quantum-tunneling</span>
+                    <div class="card-footer">
+                        <span>WebP</span>
+                        <span>1200×675</span>
+                    </div>
+                </div>
+            </div>
+            <div class="img-card" data-batch="29" data-title="تصویر مفهومی کوانتوم در ویروس‌ها" data-slug="quantum-viruses" data-alt="تصویر مفهومی کوانتوم در ویروس‌ها" onclick="openModal('quantum-viruses.webp', 'تصویر مفهومی کوانتوم در ویروس‌ها', 'quantum-viruses', 'تصویر مفهومی کوانتوم در ویروس‌ها', 29)">
+                <div class="img-frame">
+                    <img src="images/quantum-viruses.webp" alt="تصویر مفهومی کوانتوم در ویروس‌ها" loading="lazy">
+                    <span class="badge-batch">بسته 29</span>
+                    <span class="badge-watermark">qpedia.ir</span>
+                </div>
+                <div class="card-body">
+                    <h3 class="card-title">تصویر مفهومی کوانتوم در ویروس‌ها</h3>
+                    <span class="card-slug">quantum-viruses</span>
+                    <div class="card-footer">
+                        <span>WebP</span>
+                        <span>1200×675</span>
+                    </div>
+                </div>
+            </div>
+            <div class="img-card" data-batch="30" data-title="رأی‌گیری کوانتومی" data-slug="quantum-voting" data-alt="رأی‌گیری کوانتومی" onclick="openModal('quantum-voting.webp', 'رأی‌گیری کوانتومی', 'quantum-voting', 'رأی‌گیری کوانتومی', 30)">
+                <div class="img-frame">
+                    <img src="images/quantum-voting.webp" alt="رأی‌گیری کوانتومی" loading="lazy">
+                    <span class="badge-batch">بسته 30</span>
+                    <span class="badge-watermark">qpedia.ir</span>
+                </div>
+                <div class="card-body">
+                    <h3 class="card-title">رأی‌گیری کوانتومی</h3>
+                    <span class="card-slug">quantum-voting</span>
+                    <div class="card-footer">
+                        <span>WebP</span>
+                        <span>1200×675</span>
+                    </div>
+                </div>
+            </div>
+            <div class="img-card" data-batch="30" data-title="مقایسه قدم‌زدن کلاسیک و کوانتومی" data-slug="quantum-walk" data-alt="مقایسه قدم‌زدن کلاسیک و کوانتومی" onclick="openModal('quantum-walk.webp', 'مقایسه قدم‌زدن کلاسیک و کوانتومی', 'quantum-walk', 'مقایسه قدم‌زدن کلاسیک و کوانتومی', 30)">
+                <div class="img-frame">
+                    <img src="images/quantum-walk.webp" alt="مقایسه قدم‌زدن کلاسیک و کوانتومی" loading="lazy">
+                    <span class="badge-batch">بسته 30</span>
+                    <span class="badge-watermark">qpedia.ir</span>
+                </div>
+                <div class="card-body">
+                    <h3 class="card-title">مقایسه قدم‌زدن کلاسیک و کوانتومی</h3>
+                    <span class="card-slug">quantum-walk</span>
+                    <div class="card-footer">
+                        <span>WebP</span>
+                        <span>1200×675</span>
+                    </div>
+                </div>
+            </div>
+            <div class="img-card" data-batch="30" data-title="زمستان کوانتومی" data-slug="quantum-winter" data-alt="تصویر شاخص زمستان کوانتومی و چرخه‌های افت سرمایه‌گذاری" onclick="openModal('quantum-winter.webp', 'زمستان کوانتومی', 'quantum-winter', 'تصویر شاخص زمستان کوانتومی و چرخه‌های افت سرمایه‌گذاری', 30)">
+                <div class="img-frame">
+                    <img src="images/quantum-winter.webp" alt="تصویر شاخص زمستان کوانتومی و چرخه‌های افت سرمایه‌گذاری" loading="lazy">
+                    <span class="badge-batch">بسته 30</span>
+                    <span class="badge-watermark">qpedia.ir</span>
+                </div>
+                <div class="card-body">
+                    <h3 class="card-title">زمستان کوانتومی</h3>
+                    <span class="card-slug">quantum-winter</span>
+                    <div class="card-footer">
+                        <span>WebP</span>
+                        <span>1200×675</span>
+                    </div>
+                </div>
+            </div>
+            <div class="img-card" data-batch="30" data-title="اثر زنون کوانتومی" data-slug="quantum-zeno-effect" data-alt="تصویر شاخص اثر زنون کوانتومی و مشاهده مداوم" onclick="openModal('quantum-zeno-effect.webp', 'اثر زنون کوانتومی', 'quantum-zeno-effect', 'تصویر شاخص اثر زنون کوانتومی و مشاهده مداوم', 30)">
+                <div class="img-frame">
+                    <img src="images/quantum-zeno-effect.webp" alt="تصویر شاخص اثر زنون کوانتومی و مشاهده مداوم" loading="lazy">
+                    <span class="badge-batch">بسته 30</span>
+                    <span class="badge-watermark">qpedia.ir</span>
+                </div>
+                <div class="card-body">
+                    <h3 class="card-title">اثر زنون کوانتومی</h3>
+                    <span class="card-slug">quantum-zeno-effect</span>
+                    <div class="card-footer">
+                        <span>WebP</span>
+                        <span>1200×675</span>
+                    </div>
+                </div>
+            </div>
+            <div class="img-card" data-batch="30" data-title="نمودار نوسانات رابی در سامانه دوترازی" data-slug="rabi-oscillations" data-alt="نمودار نوسانات رابی در سامانه دوترازی" onclick="openModal('rabi-oscillations.webp', 'نمودار نوسانات رابی در سامانه دوترازی', 'rabi-oscillations', 'نمودار نوسانات رابی در سامانه دوترازی', 30)">
+                <div class="img-frame">
+                    <img src="images/rabi-oscillations.webp" alt="نمودار نوسانات رابی در سامانه دوترازی" loading="lazy">
+                    <span class="badge-batch">بسته 30</span>
+                    <span class="badge-watermark">qpedia.ir</span>
+                </div>
+                <div class="card-body">
+                    <h3 class="card-title">نمودار نوسانات رابی در سامانه دوترازی</h3>
+                    <span class="card-slug">rabi-oscillations</span>
+                    <div class="card-footer">
+                        <span>WebP</span>
+                        <span>1200×675</span>
+                    </div>
+                </div>
+            </div>
+            <div class="img-card" data-batch="31" data-title="اتم ریدبرگ و ترازهای انرژی" data-slug="rydberg-atom" data-alt="اتم ریدبرگ و ترازهای انرژی" onclick="openModal('rydberg-atom.webp', 'اتم ریدبرگ و ترازهای انرژی', 'rydberg-atom', 'اتم ریدبرگ و ترازهای انرژی', 31)">
+                <div class="img-frame">
+                    <img src="images/rydberg-atom.webp" alt="اتم ریدبرگ و ترازهای انرژی" loading="lazy">
+                    <span class="badge-batch">بسته 31</span>
+                    <span class="badge-watermark">qpedia.ir</span>
+                </div>
+                <div class="card-body">
+                    <h3 class="card-title">اتم ریدبرگ و ترازهای انرژی</h3>
+                    <span class="card-slug">rydberg-atom</span>
+                    <div class="card-footer">
+                        <span>WebP</span>
+                        <span>1200×675</span>
+                    </div>
+                </div>
+            </div>
+            <div class="img-card" data-batch="31" data-title="نمایش الگوریتم سایمون" data-slug="simon-algorithm" data-alt="نمایش الگوریتم سایمون" onclick="openModal('simon-algorithm.webp', 'نمایش الگوریتم سایمون', 'simon-algorithm', 'نمایش الگوریتم سایمون', 31)">
+                <div class="img-frame">
+                    <img src="images/simon-algorithm.webp" alt="نمایش الگوریتم سایمون" loading="lazy">
+                    <span class="badge-batch">بسته 31</span>
+                    <span class="badge-watermark">qpedia.ir</span>
+                </div>
+                <div class="card-body">
+                    <h3 class="card-title">نمایش الگوریتم سایمون</h3>
+                    <span class="card-slug">simon-algorithm</span>
+                    <div class="card-footer">
+                        <span>WebP</span>
+                        <span>1200×675</span>
+                    </div>
+                </div>
+            </div>
+            <div class="img-card" data-batch="31" data-title="نور کند در محیط پاشنده" data-slug="slow-light" data-alt="نور کند در محیط پاشنده" onclick="openModal('slow-light.webp', 'نور کند در محیط پاشنده', 'slow-light', 'نور کند در محیط پاشنده', 31)">
+                <div class="img-frame">
+                    <img src="images/slow-light.webp" alt="نور کند در محیط پاشنده" loading="lazy">
+                    <span class="badge-batch">بسته 31</span>
+                    <span class="badge-watermark">qpedia.ir</span>
+                </div>
+                <div class="card-body">
+                    <h3 class="card-title">نور کند در محیط پاشنده</h3>
+                    <span class="card-slug">slow-light</span>
+                    <div class="card-footer">
+                        <span>WebP</span>
+                        <span>1200×675</span>
+                    </div>
+                </div>
+            </div>
+            <div class="img-card" data-batch="31" data-title="سالیتون و حفظ شکل موج هنگام انتشار" data-slug="soliton" data-alt="سالیتون و حفظ شکل موج هنگام انتشار" onclick="openModal('soliton.webp', 'سالیتون و حفظ شکل موج هنگام انتشار', 'soliton', 'سالیتون و حفظ شکل موج هنگام انتشار', 31)">
+                <div class="img-frame">
+                    <img src="images/soliton.webp" alt="سالیتون و حفظ شکل موج هنگام انتشار" loading="lazy">
+                    <span class="badge-batch">بسته 31</span>
+                    <span class="badge-watermark">qpedia.ir</span>
+                </div>
+                <div class="card-body">
+                    <h3 class="card-title">سالیتون و حفظ شکل موج هنگام انتشار</h3>
+                    <span class="card-slug">soliton</span>
+                    <div class="card-footer">
+                        <span>WebP</span>
+                        <span>1200×675</span>
+                    </div>
+                </div>
+            </div>
+            <div class="img-card" data-batch="31" data-title="ساختار یخ اسپینی" data-slug="spin-ice" data-alt="ساختار یخ اسپینی" onclick="openModal('spin-ice.webp', 'ساختار یخ اسپینی', 'spin-ice', 'ساختار یخ اسپینی', 31)">
+                <div class="img-frame">
+                    <img src="images/spin-ice.webp" alt="ساختار یخ اسپینی" loading="lazy">
+                    <span class="badge-batch">بسته 31</span>
+                    <span class="badge-watermark">qpedia.ir</span>
+                </div>
+                <div class="card-body">
+                    <h3 class="card-title">ساختار یخ اسپینی</h3>
+                    <span class="card-slug">spin-ice</span>
+                    <div class="card-footer">
+                        <span>WebP</span>
+                        <span>1200×675</span>
+                    </div>
+                </div>
+            </div>
+            <div class="img-card" data-batch="32" data-title="تداخل‌سنج کوانتومی ابررسانا اسکویید" data-slug="squid" data-alt="تداخل‌سنج کوانتومی ابررسانا اسکویید" onclick="openModal('squid.webp', 'تداخل‌سنج کوانتومی ابررسانا اسکویید', 'squid', 'تداخل‌سنج کوانتومی ابررسانا اسکویید', 32)">
+                <div class="img-frame">
+                    <img src="images/squid.webp" alt="تداخل‌سنج کوانتومی ابررسانا اسکویید" loading="lazy">
+                    <span class="badge-batch">بسته 32</span>
+                    <span class="badge-watermark">qpedia.ir</span>
+                </div>
+                <div class="card-body">
+                    <h3 class="card-title">تداخل‌سنج کوانتومی ابررسانا اسکویید</h3>
+                    <span class="card-slug">squid</span>
+                    <div class="card-footer">
+                        <span>WebP</span>
+                        <span>1200×675</span>
+                    </div>
+                </div>
+            </div>
+            <div class="img-card" data-batch="32" data-title="ابر تفکیک کوانتومی" data-slug="super-resolution-quantum" data-alt="ابر تفکیک کوانتومی" onclick="openModal('super-resolution-quantum.webp', 'ابر تفکیک کوانتومی', 'super-resolution-quantum', 'ابر تفکیک کوانتومی', 32)">
+                <div class="img-frame">
+                    <img src="images/super-resolution-quantum.webp" alt="ابر تفکیک کوانتومی" loading="lazy">
+                    <span class="badge-batch">بسته 32</span>
+                    <span class="badge-watermark">qpedia.ir</span>
+                </div>
+                <div class="card-body">
+                    <h3 class="card-title">ابر تفکیک کوانتومی</h3>
+                    <span class="card-slug">super-resolution-quantum</span>
+                    <div class="card-footer">
+                        <span>WebP</span>
+                        <span>1200×675</span>
+                    </div>
+                </div>
+            </div>
+            <div class="img-card" data-batch="32" data-title="پارادوکس سه جعبه" data-slug="three-box-paradox" data-alt="پارادوکس سه جعبه" onclick="openModal('three-box-paradox.webp', 'پارادوکس سه جعبه', 'three-box-paradox', 'پارادوکس سه جعبه', 32)">
+                <div class="img-frame">
+                    <img src="images/three-box-paradox.webp" alt="پارادوکس سه جعبه" loading="lazy">
+                    <span class="badge-batch">بسته 32</span>
+                    <span class="badge-watermark">qpedia.ir</span>
+                </div>
+                <div class="card-body">
+                    <h3 class="card-title">پارادوکس سه جعبه</h3>
+                    <span class="card-slug">three-box-paradox</span>
+                    <div class="card-footer">
+                        <span>WebP</span>
+                        <span>1200×675</span>
+                    </div>
+                </div>
+            </div>
+            <div class="img-card" data-batch="32" data-title="ساختار عایق توپولوژیک" data-slug="topological-insulator" data-alt="ساختار عایق توپولوژیک" onclick="openModal('topological-insulator.webp', 'ساختار عایق توپولوژیک', 'topological-insulator', 'ساختار عایق توپولوژیک', 32)">
+                <div class="img-frame">
+                    <img src="images/topological-insulator.webp" alt="ساختار عایق توپولوژیک" loading="lazy">
+                    <span class="badge-batch">بسته 32</span>
+                    <span class="badge-watermark">qpedia.ir</span>
+                </div>
+                <div class="card-body">
+                    <h3 class="card-title">ساختار عایق توپولوژیک</h3>
+                    <span class="card-slug">topological-insulator</span>
+                    <div class="card-footer">
+                        <span>WebP</span>
+                        <span>1200×675</span>
+                    </div>
+                </div>
+            </div>
+            <div class="img-card" data-batch="32" data-title="توزیع کلید کوانتومی میدان دوقلو" data-slug="twin-field-qkd" data-alt="توزیع کلید کوانتومی میدان دوقلو" onclick="openModal('twin-field-qkd.webp', 'توزیع کلید کوانتومی میدان دوقلو', 'twin-field-qkd', 'توزیع کلید کوانتومی میدان دوقلو', 32)">
+                <div class="img-frame">
+                    <img src="images/twin-field-qkd.webp" alt="توزیع کلید کوانتومی میدان دوقلو" loading="lazy">
+                    <span class="badge-batch">بسته 32</span>
+                    <span class="badge-watermark">qpedia.ir</span>
+                </div>
+                <div class="card-body">
+                    <h3 class="card-title">توزیع کلید کوانتومی میدان دوقلو</h3>
+                    <span class="card-slug">twin-field-qkd</span>
+                    <div class="card-footer">
+                        <span>WebP</span>
+                        <span>1200×675</span>
+                    </div>
+                </div>
+            </div>
+            <div class="img-card" data-batch="33" data-title="فاجعهٔ فرابنفش" data-slug="ultraviolet-catastrophe" data-alt="تصویر شاخص فاجعه فرابنفش و تابش جسم سیاه" onclick="openModal('ultraviolet-catastrophe.webp', 'فاجعهٔ فرابنفش', 'ultraviolet-catastrophe', 'تصویر شاخص فاجعه فرابنفش و تابش جسم سیاه', 33)">
+                <div class="img-frame">
+                    <img src="images/ultraviolet-catastrophe.webp" alt="تصویر شاخص فاجعه فرابنفش و تابش جسم سیاه" loading="lazy">
+                    <span class="badge-batch">بسته 33</span>
+                    <span class="badge-watermark">qpedia.ir</span>
+                </div>
+                <div class="card-body">
+                    <h3 class="card-title">فاجعهٔ فرابنفش</h3>
+                    <span class="card-slug">ultraviolet-catastrophe</span>
+                    <div class="card-footer">
+                        <span>WebP</span>
+                        <span>1200×675</span>
+                    </div>
+                </div>
+            </div>
+            <div class="img-card" data-batch="33" data-title="نوسانات خلأ" data-slug="vacuum-fluctuations" data-alt="تصویر شاخص افت‌وخیز کوانتومی و انرژی نقطه صفر خلأ" onclick="openModal('vacuum-fluctuations.webp', 'نوسانات خلأ', 'vacuum-fluctuations', 'تصویر شاخص افت‌وخیز کوانتومی و انرژی نقطه صفر خلأ', 33)">
+                <div class="img-frame">
+                    <img src="images/vacuum-fluctuations.webp" alt="تصویر شاخص افت‌وخیز کوانتومی و انرژی نقطه صفر خلأ" loading="lazy">
+                    <span class="badge-batch">بسته 33</span>
+                    <span class="badge-watermark">qpedia.ir</span>
+                </div>
+                <div class="card-body">
+                    <h3 class="card-title">نوسانات خلأ</h3>
+                    <span class="card-slug">vacuum-fluctuations</span>
+                    <div class="card-footer">
+                        <span>WebP</span>
+                        <span>1200×675</span>
+                    </div>
+                </div>
+            </div>
+            <div class="img-card" data-batch="33" data-title="حلقه الگوریتم تغییراتی کوانتومی" data-slug="variational-quantum-eigensolver" data-alt="حلقه الگوریتم تغییراتی کوانتومی" onclick="openModal('variational-quantum-eigensolver.webp', 'حلقه الگوریتم تغییراتی کوانتومی', 'variational-quantum-eigensolver', 'حلقه الگوریتم تغییراتی کوانتومی', 33)">
+                <div class="img-frame">
+                    <img src="images/variational-quantum-eigensolver.webp" alt="حلقه الگوریتم تغییراتی کوانتومی" loading="lazy">
+                    <span class="badge-batch">بسته 33</span>
+                    <span class="badge-watermark">qpedia.ir</span>
+                </div>
+                <div class="card-body">
+                    <h3 class="card-title">حلقه الگوریتم تغییراتی کوانتومی</h3>
+                    <span class="card-slug">variational-quantum-eigensolver</span>
+                    <div class="card-footer">
+                        <span>WebP</span>
+                        <span>1200×675</span>
+                    </div>
+                </div>
+            </div>
+            <div class="img-card" data-batch="33" data-title="ذرات مجازی" data-slug="virtual-particles" data-alt="تصویر شاخص ذرات مجازی در میدان‌های کوانتومی" onclick="openModal('virtual-particles.webp', 'ذرات مجازی', 'virtual-particles', 'تصویر شاخص ذرات مجازی در میدان‌های کوانتومی', 33)">
+                <div class="img-frame">
+                    <img src="images/virtual-particles.webp" alt="تصویر شاخص ذرات مجازی در میدان‌های کوانتومی" loading="lazy">
+                    <span class="badge-batch">بسته 33</span>
+                    <span class="badge-watermark">qpedia.ir</span>
+                </div>
+                <div class="card-body">
+                    <h3 class="card-title">ذرات مجازی</h3>
+                    <span class="card-slug">virtual-particles</span>
+                    <div class="card-footer">
+                        <span>WebP</span>
+                        <span>1200×675</span>
+                    </div>
+                </div>
+            </div>
+            <div class="img-card" data-batch="33" data-title="تابع موج چیست؟" data-slug="wave-function" data-alt="تصویر شاخص تابع موج کوانتومی و معادله شرودینگر" onclick="openModal('wave-function.webp', 'تابع موج چیست؟', 'wave-function', 'تصویر شاخص تابع موج کوانتومی و معادله شرودینگر', 33)">
+                <div class="img-frame">
+                    <img src="images/wave-function.webp" alt="تصویر شاخص تابع موج کوانتومی و معادله شرودینگر" loading="lazy">
+                    <span class="badge-batch">بسته 33</span>
+                    <span class="badge-watermark">qpedia.ir</span>
+                </div>
+                <div class="card-body">
+                    <h3 class="card-title">تابع موج چیست؟</h3>
+                    <span class="card-slug">wave-function</span>
+                    <div class="card-footer">
+                        <span>WebP</span>
+                        <span>1200×675</span>
+                    </div>
+                </div>
+            </div>
+            <div class="img-card" data-batch="34" data-title="دوگانگی موج و ذره" data-slug="wave-particle-duality" data-alt="تصویر شاخص دوگانگی موج و ذره در فیزیک کوانتوم" onclick="openModal('wave-particle-duality.webp', 'دوگانگی موج و ذره', 'wave-particle-duality', 'تصویر شاخص دوگانگی موج و ذره در فیزیک کوانتوم', 34)">
+                <div class="img-frame">
+                    <img src="images/wave-particle-duality.webp" alt="تصویر شاخص دوگانگی موج و ذره در فیزیک کوانتوم" loading="lazy">
+                    <span class="badge-batch">بسته 34</span>
+                    <span class="badge-watermark">qpedia.ir</span>
+                </div>
+                <div class="card-body">
+                    <h3 class="card-title">دوگانگی موج و ذره</h3>
+                    <span class="card-slug">wave-particle-duality</span>
+                    <div class="card-footer">
+                        <span>WebP</span>
+                        <span>1200×675</span>
+                    </div>
+                </div>
+            </div>
+            <div class="img-card" data-batch="34" data-title="نیمه‌فلز ویل" data-slug="weyl-semimetal" data-alt="نیمه‌فلز ویل" onclick="openModal('weyl-semimetal.webp', 'نیمه‌فلز ویل', 'weyl-semimetal', 'نیمه‌فلز ویل', 34)">
+                <div class="img-frame">
+                    <img src="images/weyl-semimetal.webp" alt="نیمه‌فلز ویل" loading="lazy">
+                    <span class="badge-batch">بسته 34</span>
+                    <span class="badge-watermark">qpedia.ir</span>
+                </div>
+                <div class="card-body">
+                    <h3 class="card-title">نیمه‌فلز ویل</h3>
+                    <span class="card-slug">weyl-semimetal</span>
+                    <div class="card-footer">
+                        <span>WebP</span>
+                        <span>1200×675</span>
+                    </div>
+                </div>
+            </div>
+            <div class="img-card" data-batch="34" data-title="کوانتوم یعنی چه؟" data-slug="what-is-quantum" data-alt="تصویر شاخص کوانتوم یعنی چه و مبانی فیزیک کوانتومی" onclick="openModal('what-is-quantum.webp', 'کوانتوم یعنی چه؟', 'what-is-quantum', 'تصویر شاخص کوانتوم یعنی چه و مبانی فیزیک کوانتومی', 34)">
+                <div class="img-frame">
+                    <img src="images/what-is-quantum.webp" alt="تصویر شاخص کوانتوم یعنی چه و مبانی فیزیک کوانتومی" loading="lazy">
+                    <span class="badge-batch">بسته 34</span>
+                    <span class="badge-watermark">qpedia.ir</span>
+                </div>
+                <div class="card-body">
+                    <h3 class="card-title">کوانتوم یعنی چه؟</h3>
+                    <span class="card-slug">what-is-quantum</span>
+                    <div class="card-footer">
+                        <span>WebP</span>
+                        <span>1200×675</span>
+                    </div>
+                </div>
+            </div>
+            <div class="img-card" data-batch="34" data-title="برهم‌نهی اشیای بزرگ" data-slug="why-large-objects-dont-superpose" data-alt="تصویر شاخص علت عدم مشاهده برهم‌نهی در اشیای بزرگ" onclick="openModal('why-large-objects-dont-superpose.webp', 'برهم‌نهی اشیای بزرگ', 'why-large-objects-dont-superpose', 'تصویر شاخص علت عدم مشاهده برهم‌نهی در اشیای بزرگ', 34)">
+                <div class="img-frame">
+                    <img src="images/why-large-objects-dont-superpose.webp" alt="تصویر شاخص علت عدم مشاهده برهم‌نهی در اشیای بزرگ" loading="lazy">
+                    <span class="badge-batch">بسته 34</span>
+                    <span class="badge-watermark">qpedia.ir</span>
+                </div>
+                <div class="card-body">
+                    <h3 class="card-title">برهم‌نهی اشیای بزرگ</h3>
+                    <span class="card-slug">why-large-objects-dont-superpose</span>
+                    <div class="card-footer">
+                        <span>WebP</span>
+                        <span>1200×675</span>
+                    </div>
+                </div>
+            </div>
+            <div class="img-card" data-batch="34" data-title="دوست ویگنر" data-slug="wigner-friend" data-alt="تصویر شاخص پارادوکس دوست ویگنر و مسئله ناظر" onclick="openModal('wigner-friend.webp', 'دوست ویگنر', 'wigner-friend', 'تصویر شاخص پارادوکس دوست ویگنر و مسئله ناظر', 34)">
+                <div class="img-frame">
+                    <img src="images/wigner-friend.webp" alt="تصویر شاخص پارادوکس دوست ویگنر و مسئله ناظر" loading="lazy">
+                    <span class="badge-batch">بسته 34</span>
+                    <span class="badge-watermark">qpedia.ir</span>
+                </div>
+                <div class="card-body">
+                    <h3 class="card-title">دوست ویگنر</h3>
+                    <span class="card-slug">wigner-friend</span>
+                    <div class="card-footer">
+                        <span>WebP</span>
+                        <span>1200×675</span>
+                    </div>
+                </div>
+            </div>
+            <div class="img-card" data-batch="35" data-title="ذره فرضی ویمپ" data-slug="wimp" data-alt="ذره فرضی ویمپ" onclick="openModal('wimp.webp', 'ذره فرضی ویمپ', 'wimp', 'ذره فرضی ویمپ', 35)">
+                <div class="img-frame">
+                    <img src="images/wimp.webp" alt="ذره فرضی ویمپ" loading="lazy">
+                    <span class="badge-batch">بسته 35</span>
+                    <span class="badge-watermark">qpedia.ir</span>
+                </div>
+                <div class="card-body">
+                    <h3 class="card-title">ذره فرضی ویمپ</h3>
+                    <span class="card-slug">wimp</span>
+                    <div class="card-footer">
+                        <span>WebP</span>
+                        <span>1200×675</span>
+                    </div>
+                </div>
+            </div>
+            <div class="img-card" data-batch="35" data-title="کرم‌چاله" data-slug="wormhole" data-alt="تصویر شاخص ساختار نظری کرم‌چاله و پل اینشتین-روزن" onclick="openModal('wormhole.webp', 'کرم‌چاله', 'wormhole', 'تصویر شاخص ساختار نظری کرم‌چاله و پل اینشتین-روزن', 35)">
+                <div class="img-frame">
+                    <img src="images/wormhole.webp" alt="تصویر شاخص ساختار نظری کرم‌چاله و پل اینشتین-روزن" loading="lazy">
+                    <span class="badge-batch">بسته 35</span>
+                    <span class="badge-watermark">qpedia.ir</span>
+                </div>
+                <div class="card-body">
+                    <h3 class="card-title">کرم‌چاله</h3>
+                    <span class="card-slug">wormhole</span>
+                    <div class="card-footer">
+                        <span>WebP</span>
+                        <span>1200×675</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal for Zoom & Details -->
+    <div class="modal-overlay" id="modalOverlay" onclick="closeModal(event)">
+        <div class="modal-box" onclick="event.stopPropagation()">
+            <div class="modal-header">
+                <h3 id="modalTitle" style="font-size: 16px; font-weight: 700;">عنوان تصویر</h3>
+                <button class="modal-close" onclick="closeModal()">&times;</button>
+            </div>
+            <div class="modal-img-wrap">
+                <img id="modalImg" src="" alt="">
+            </div>
+            <div class="modal-details">
+                <div class="detail-row">
+                    <span class="detail-label">شناسه (اسلاگ):</span>
+                    <span class="detail-val" id="modalSlug" style="direction: ltr; font-family: monospace;"></span>
+                </div>
+                <div class="detail-row">
+                    <span class="detail-label">نام فایل:</span>
+                    <span class="detail-val" id="modalFilename" style="direction: ltr; font-family: monospace;"></span>
+                </div>
+                <div class="detail-row">
+                    <span class="detail-label">متن جایگزین (Alt):</span>
+                    <span class="detail-val" id="modalAlt"></span>
+                </div>
+                <div class="detail-row">
+                    <span class="detail-label">بسته افزونه:</span>
+                    <span class="detail-val" id="modalBatch"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function filterGallery() {
+            const search = document.getElementById('searchInput').value.toLowerCase().trim();
+            const batch = document.getElementById('batchSelect').value;
+            const cards = document.querySelectorAll('.img-card');
+            let visible = 0;
+
+            cards.forEach(card => {
+                const cardBatch = card.getAttribute('data-batch');
+                const title = (card.getAttribute('data-title') || '').toLowerCase();
+                const slug = (card.getAttribute('data-slug') || '').toLowerCase();
+                const alt = (card.getAttribute('data-alt') || '').toLowerCase();
+
+                const matchBatch = (batch === 'all' || cardBatch === batch);
+                const matchSearch = (!search || title.includes(search) || slug.includes(search) || alt.includes(search));
+
+                if (matchBatch && matchSearch) {
+                    card.style.display = 'flex';
+                    visible++;
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+
+            document.getElementById('visible-count').textContent = visible;
+        }
+
+        function openModal(filename, title, slug, alt, batch) {
+            document.getElementById('modalImg').src = 'images/' + filename;
+            document.getElementById('modalTitle').textContent = title;
+            document.getElementById('modalSlug').textContent = slug;
+            document.getElementById('modalFilename').textContent = filename;
+            document.getElementById('modalAlt').textContent = alt;
+            document.getElementById('modalBatch').textContent = 'بسته شماره ' + batch;
+            document.getElementById('modalOverlay').classList.add('active');
+        }
+
+        function closeModal(e) {
+            document.getElementById('modalOverlay').classList.remove('active');
+        }
+
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') closeModal();
+        });
+    </script>
+</body>
+</html>
