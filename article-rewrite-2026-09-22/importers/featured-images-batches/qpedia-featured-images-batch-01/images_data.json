@@ -1,0 +1,37 @@
+[
+  {
+    "src_file": "1000098919.jpg",
+    "slug": "wave-particle-duality",
+    "title": "دوگانگی موج و ذره",
+    "filename": "wave-particle-duality.webp",
+    "alt": "تصویر شاخص دوگانگی موج و ذره در فیزیک کوانتوم"
+  },
+  {
+    "src_file": "1000098920.jpg",
+    "slug": "what-is-quantum",
+    "title": "کوانتوم یعنی چه؟",
+    "filename": "what-is-quantum.webp",
+    "alt": "تصویر شاخص کوانتوم یعنی چه و مبانی فیزیک کوانتومی"
+  },
+  {
+    "src_file": "1000098921.jpg",
+    "slug": "quantum-superposition",
+    "title": "برهم‌نهی کوانتومی",
+    "filename": "quantum-superposition.webp",
+    "alt": "تصویر شاخص برهم‌نهی کوانتومی و حالت‌های چندگانه"
+  },
+  {
+    "src_file": "1000098922.jpg",
+    "slug": "wave-function",
+    "title": "تابع موج چیست؟",
+    "filename": "wave-function.webp",
+    "alt": "تصویر شاخص تابع موج کوانتومی و معادله شرودینگر"
+  },
+  {
+    "src_file": "1000098923.jpg",
+    "slug": "quantum-measurement",
+    "title": "اندازه‌گیری و فروپاشی",
+    "filename": "quantum-measurement.webp",
+    "alt": "تصویر شاخص اندازه‌گیری کوانتومی و فروپاشی تابع موج"
+  }
+]

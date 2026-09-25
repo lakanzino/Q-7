@@ -1,0 +1,37 @@
+[
+  {
+    "src_file": "1000098975.jpg",
+    "slug": "quantum-number",
+    "title": "عدد کوانتومی",
+    "filename": "quantum-number.webp",
+    "alt": "تصویر شاخص اعداد کوانتومی الکترون در اتم"
+  },
+  {
+    "src_file": "1000098976.jpg",
+    "slug": "coin-vs-dice-quantum-uncertainty",
+    "title": "تمثیل تاس در مقابل تمثیل سکه",
+    "filename": "coin-vs-dice-quantum-uncertainty.webp",
+    "alt": "تصویر شاخص تمثیل تاس و سکه در عدم قطعیت کوانتومی"
+  },
+  {
+    "src_file": "1000098977.jpg",
+    "slug": "quantum-physics-vs-quantum-mechanics",
+    "title": "فیزیک کوانتوم و مکانیک کوانتومی",
+    "filename": "quantum-physics-vs-quantum-mechanics.webp",
+    "alt": "تصویر شاخص تفاوت فیزیک کوانتوم و مکانیک کوانتومی"
+  },
+  {
+    "src_file": "1000098978.jpg",
+    "slug": "quantum-analogy-exercise-boundary",
+    "title": "نیلز بور و اصل تکمیل",
+    "filename": "quantum-analogy-exercise-boundary.webp",
+    "alt": "تصویر شاخص نیلز بور، اصل تکمیل و مرز شکست تمثیل"
+  },
+  {
+    "src_file": "1000098979.jpg",
+    "slug": "determinism-vs-probability",
+    "title": "جبرگرایی کلاسیک و احتمال کوانتومی",
+    "filename": "determinism-vs-probability.webp",
+    "alt": "تصویر شاخص جبرگرایی نیوتنی در برابر احتمال کوانتومی"
+  }
+]

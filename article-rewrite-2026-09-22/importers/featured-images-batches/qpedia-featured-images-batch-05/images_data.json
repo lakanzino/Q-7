@@ -1,0 +1,37 @@
+[
+  {
+    "src_file": "1000098963.jpg",
+    "slug": "double-slit-experiment",
+    "title": "آزمایش دو شکاف",
+    "filename": "double-slit-experiment.webp",
+    "alt": "تصویر شاخص آزمایش دو شکاف یانگ در کوانتوم"
+  },
+  {
+    "src_file": "1000098964.jpg",
+    "slug": "no-cloning-theorem",
+    "title": "قضیهٔ عدم‌کپی",
+    "filename": "no-cloning-theorem.webp",
+    "alt": "تصویر شاخص قضیه عدم همسانه‌سازی یا کپی کوانتومی"
+  },
+  {
+    "src_file": "1000098965.jpg",
+    "slug": "coherence",
+    "title": "همدوسی",
+    "filename": "coherence.webp",
+    "alt": "تصویر شاخص همدوسی کوانتومی و فاز امواج"
+  },
+  {
+    "src_file": "1000098967.jpg",
+    "slug": "quantum-state",
+    "title": "حالت کوانتومی چیست؟",
+    "filename": "quantum-state.webp",
+    "alt": "تصویر شاخص بردار حالت کوانتومی در فضای هیلبرت"
+  },
+  {
+    "src_file": "1000098968.jpg",
+    "slug": "entanglement-quantum-computers",
+    "title": "درهم‌تنیدگی در کامپیوترهای کوانتومی",
+    "filename": "entanglement-quantum-computers.webp",
+    "alt": "تصویر شاخص درهم‌تنیدگی در پردازش کامپیوترهای کوانتومی"
+  }
+]

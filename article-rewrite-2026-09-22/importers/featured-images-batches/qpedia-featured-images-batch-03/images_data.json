@@ -1,0 +1,37 @@
+[
+  {
+    "src_file": "1000098929.jpg",
+    "slug": "quantum-zeno-effect",
+    "title": "اثر زنون کوانتومی",
+    "filename": "quantum-zeno-effect.webp",
+    "alt": "تصویر شاخص اثر زنون کوانتومی و مشاهده مداوم"
+  },
+  {
+    "src_file": "1000098930.jpg",
+    "slug": "vacuum-fluctuations",
+    "title": "نوسانات خلأ",
+    "filename": "vacuum-fluctuations.webp",
+    "alt": "تصویر شاخص افت‌وخیز کوانتومی و انرژی نقطه صفر خلأ"
+  },
+  {
+    "src_file": "1000098931.jpg",
+    "slug": "casimir-effect",
+    "title": "اثر کازیمیر",
+    "filename": "casimir-effect.webp",
+    "alt": "تصویر شاخص اثر کازیمیر و نیروی کوانتومی میان صفحات"
+  },
+  {
+    "src_file": "1000098932.jpg",
+    "slug": "ultraviolet-catastrophe",
+    "title": "فاجعهٔ فرابنفش",
+    "filename": "ultraviolet-catastrophe.webp",
+    "alt": "تصویر شاخص فاجعه فرابنفش و تابش جسم سیاه"
+  },
+  {
+    "src_file": "1000098933.jpg",
+    "slug": "bohr-atomic-model",
+    "title": "مدل اتمی بور",
+    "filename": "bohr-atomic-model.webp",
+    "alt": "تصویر شاخص مدل اتمی نیلز بور و مدارهای کوانتومی"
+  }
+]
