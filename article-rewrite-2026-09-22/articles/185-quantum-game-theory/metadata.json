@@ -1,0 +1,31 @@
+{
+  "sequence": 185,
+  "post_id": null,
+  "slug": "quantum-game-theory",
+  "title": "نظریه بازی کوانتومی؛ وقتی برهم‌نهی و درهم‌تنیدگی قواعد تصمیم‌گیری را دگرگون می‌کنند",
+  "h1": "نظریه بازی کوانتومی؛ وقتی برهم‌نهی و درهم‌تنیدگی قواعد تصمیم‌گیری را دگرگون می‌کنند",
+  "seo_title": "نظریه بازی کوانتومی چیست؟ برهم‌نهی و تصمیم‌گیری کوانتومی",
+  "meta_description": "با نظریه بازی کوانتومی و نحوه تغییر استراتژی‌های کلاسیک مانند معمای زندانی و سکه مه‌یر به کمک برهم‌نهی و درهم‌تنیدگی آشنا شوید.",
+  "focus_keyword": "نظریه بازی کوانتومی",
+  "category": "کاربردها و محاسبات کوانتومی",
+  "date": "2026-09-25 10:00:00",
+  "modified": "2026-09-25 10:00:00",
+  "word_count": 2144,
+  "internal_links_count": 12,
+  "internal_links": [
+    "/what-is-quantum/",
+    "/quantum-superposition/",
+    "/quantum-entanglement-explained/",
+    "/qubit/",
+    "/quantum-gate/",
+    "/quantum-entanglement-explained/",
+    "/quantum-measurement/",
+    "/quantum-internet-satellite/",
+    "/quantum-machine-learning/",
+    "/decoherence/",
+    "/copenhagen-interpretation/",
+    "/no-cloning-theorem/"
+  ],
+  "analogy_concept": "تمثیل سکه دو رو در برابر سکه چرخان در حالت برهم‌نهی کوانتومی و قایق‌رانان در رودخانه مه‌آلود",
+  "analogy_breakdown": "سکه چرخان کلاسیک در نهایت با متوقف شدن به یک حالت قطعی (رو یا پشت) می‌رسد و چرخش آن فقط ناشی از بی‌خبری ناظر است؛ اما در برهم‌نهی کوانتومی، سکه تا لحظه اندازه‌گیری فاقد وضعیت قطعی است و اعمال گیت‌های کوانتومی به بازیکن اجازه می‌دهد بدون دیدن سکه، برتری ۱۰۰ درصدی در بازی پیدا کند."
+}

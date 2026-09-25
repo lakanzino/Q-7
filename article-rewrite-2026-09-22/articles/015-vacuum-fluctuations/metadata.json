@@ -11,9 +11,6 @@
   "rank_math_title": "نوسانات خلأ چیست؟ از اثر کازیمیر تا انرژی نقطه صفر",
   "rank_math_description": "نوسانات خلأ چیست و چرا خلأ کوانتومی واقعاً هیچ نیست؟ اثر کازیمیر، جابه‌جایی لمب، ذرات مجازی و خطای انرژی رایگان را دقیق بخوانید.",
   "source_url": "https://qpedia.ir/vacuum-fluctuations/",
-  "rewrite_status": "completed_qa_checked_and_general_reader_revised",
-  "importer_batch": "011-015",
-  "general_reader_revision": true,
-  "analogy_rule_checked": true,
-  "comprehensive_importer_batch": "001-025"
+  "rewrite_status": "completed_and_qa_checked",
+  "importer_batch": "011-015"
 }

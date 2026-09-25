@@ -11,9 +11,6 @@
   "rank_math_title": "واهمدوسی چیست؟ از گربه شرودینگر تا کیوبیت",
   "rank_math_description": "واهمدوسی چگونه تداخل را از بین می‌برد و جهان را کلاسیک نشان می‌دهد؟ نقش محیط، درهم‌تنیدگی، گربه شرودینگر و تفاوت آن با فروپاشی را بخوانید.",
   "source_url": "https://qpedia.ir/decoherence/",
-  "rewrite_status": "completed_qa_checked_and_general_reader_revised",
-  "importer_batch": "006-010",
-  "general_reader_revision": true,
-  "analogy_rule_checked": true,
-  "comprehensive_importer_batch": "001-025"
+  "rewrite_status": "completed_and_qa_checked",
+  "importer_batch": "006-010"
 }

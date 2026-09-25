@@ -1,0 +1,28 @@
+{
+  "sequence": 189,
+  "post_id": null,
+  "slug": "quantum-conference-key-agreement",
+  "title": "توافق کلید کنفرانسی کوانتومی؛ پروتکل‌های امن ارتباط چندنفره بدون امکان شنود",
+  "h1": "توافق کلید کنفرانسی کوانتومی؛ پروتکل‌های امن ارتباط چندنفره بدون امکان شنود",
+  "seo_title": "توافق کلید کنفرانسی کوانتومی چیست؟ ارتباطات امن چندنفره",
+  "meta_description": "با پروتکل توافق کلید کنفرانسی کوانتومی (QCKA)، نحوه ایجاد کلیدهای رمزنگاری مشترک میان چند کاربر با حالت‌های GHZ و امنیت کامل آشنا شوید.",
+  "focus_keyword": "توافق کلید کنفرانسی کوانتومی",
+  "category": "کاربردها و محاسبات کوانتومی",
+  "date": "2026-09-25 11:00:00",
+  "modified": "2026-09-25 11:00:00",
+  "word_count": 1865,
+  "internal_links_count": 9,
+  "internal_links": [
+    "/quantum-internet-satellite/",
+    "/quantum-superposition/",
+    "/quantum-entanglement-explained/",
+    "/quantum-random-number-generator/",
+    "/no-cloning-theorem/",
+    "/no-cloning-theorem/",
+    "/quantum-measurement/",
+    "/quantum-error-correction/",
+    "/quantum-internet-satellite/"
+  ],
+  "analogy_concept": "تمثیل زنگوله چندرشته‌ای در اتاق تاریک که با کمترین لرزش دست بیگانه هشدار می‌دهد",
+  "analogy_breakdown": "تار یا سیم کلاسیک را می‌توان با ابزار دقیق برید یا بای‌پَس کرد؛ اما در درهم‌تنیدگی کوانتومی GHZ، پیوند فازی ذرات در بنیاد قوانین جهان قرار دارد و تلاش برای شنود باعث تغییر بلافاصله بردار حالت کل سیستم می‌شود و همه کاربران از نفوذ باخبر می‌شوند."
+}

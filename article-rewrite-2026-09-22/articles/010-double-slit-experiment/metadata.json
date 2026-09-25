@@ -11,9 +11,6 @@
   "rank_math_title": "آزمایش دو شکاف چیست؟ تداخل، مسیر و نقش ناظر",
   "rank_math_description": "آزمایش دو شکاف چگونه با ذرات منفرد الگوی تداخل می‌سازد؟ نقش اطلاعات مسیر، واهمدوسی، ناظر و تفاوت آن با تونل‌زنی را دقیق بخوانید.",
   "source_url": "https://qpedia.ir/double-slit-experiment/",
-  "rewrite_status": "completed_qa_checked_and_general_reader_revised",
-  "importer_batch": "006-010",
-  "general_reader_revision": true,
-  "analogy_rule_checked": true,
-  "comprehensive_importer_batch": "001-025"
+  "rewrite_status": "completed_and_qa_checked",
+  "importer_batch": "006-010"
 }

@@ -11,9 +11,6 @@
   "rank_math_title": "ثابت پلانک چیست؟ از جسم سیاه تا تعریف کیلوگرم",
   "rank_math_description": "ثابت پلانک چیست و چرا در انرژی فوتون، موج ماده و تعریف کیلوگرم ظاهر می‌شود؟ مقدار دقیق h، تفاوت آن با ħ و خطای «پیکسل جهان» را بخوانید.",
   "source_url": "https://qpedia.ir/planck-constant/",
-  "rewrite_status": "completed_qa_checked_and_general_reader_revised",
-  "importer_batch": "006-010",
-  "general_reader_revision": true,
-  "analogy_rule_checked": true,
-  "comprehensive_importer_batch": "001-025"
+  "rewrite_status": "completed_and_qa_checked",
+  "importer_batch": "006-010"
 }
