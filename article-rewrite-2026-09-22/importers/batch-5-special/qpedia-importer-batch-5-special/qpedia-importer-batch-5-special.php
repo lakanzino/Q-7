@@ -136,6 +136,56 @@ function qp_batch5_execute_import() {
             if (!empty($art['schema'])) {
                 update_post_meta($post_id, '_qpedia_schema_json', wp_json_encode($art['schema']));
             }
+
+            // تنظیم خودکار تصویر شاخص WebP و متن جایگزین سئو
+            if (!empty($art['featured_image'])) {
+                $img_name = basename((string)$art['featured_image']);
+                $img_file = plugin_dir_path(__FILE__) . 'images/' . $img_name;
+
+                if (file_exists($img_file)) {
+                    $upload_dir = wp_upload_dir();
+                    $target_file = $upload_dir['path'] . '/' . $img_name;
+
+                    if (!file_exists($target_file)) {
+                        wp_mkdir_p($upload_dir['path']);
+                        copy($img_file, $target_file);
+                    }
+
+                    $base_slug = pathinfo($img_name, PATHINFO_FILENAME);
+                    $existing_img = get_posts(array(
+                        'post_type'      => 'attachment',
+                        'name'           => $base_slug,
+                        'posts_per_page' => 1,
+                        'post_status'    => 'inherit'
+                    ));
+
+                    if (!empty($existing_img)) {
+                        $attach_id = (int)$existing_img[0]->ID;
+                    } else {
+                        $wp_filetype = wp_check_filetype($img_name, null);
+                        $attachment = array(
+                            'guid'           => $upload_dir['url'] . '/' . $img_name,
+                            'post_mime_type' => !empty($wp_filetype['type']) ? $wp_filetype['type'] : 'image/webp',
+                            'post_title'     => sanitize_text_field(!empty($art['image_title']) ? $art['image_title'] : $h1),
+                            'post_content'   => '',
+                            'post_status'    => 'inherit'
+                        );
+                        $attach_id = wp_insert_attachment($attachment, $target_file, $post_id);
+                        if (!is_wp_error($attach_id) && $attach_id > 0) {
+                            require_once(ABSPATH . 'wp-admin/includes/image.php');
+                            $attach_data = wp_generate_attachment_metadata($attach_id, $target_file);
+                            wp_update_attachment_metadata($attach_id, $attach_data);
+                        }
+                    }
+
+                    if (!empty($attach_id) && !is_wp_error($attach_id)) {
+                        set_post_thumbnail($post_id, $attach_id);
+                        update_post_meta($attach_id, '_wp_attachment_image_alt', sanitize_text_field(!empty($art['image_alt']) ? $art['image_alt'] : $h1));
+                        update_post_meta($post_id, '_thumbnail_id', $attach_id);
+                        $log[] = '🖼️ تصویر شاخص WebP متصل شد: ' . $img_name . ' (شناسه رسانه ' . $attach_id . ')';
+                    }
+                }
+            }
         }
     }
 

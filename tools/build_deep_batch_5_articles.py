@@ -466,6 +466,9 @@ ARTICLES_DATA = [
         'modified': '2026-09-25 10:00:00',
         'analogy_concept': 'تمثیل سکه دو رو در برابر سکه چرخان در حالت برهم‌نهی کوانتومی و قایق‌رانان در رودخانه مه‌آلود',
         'analogy_breakdown': 'سکه چرخان کلاسیک در نهایت با متوقف شدن به یک حالت قطعی (رو یا پشت) می‌رسد و چرخش آن فقط ناشی از بی‌خبری ناظر است؛ اما در برهم‌نهی کوانتومی، سکه تا لحظه اندازه‌گیری فاقد وضعیت قطعی است و اعمال گیت‌های کوانتومی به بازیکن اجازه می‌دهد بدون دیدن سکه، برتری ۱۰۰ درصدی در بازی پیدا کند.',
+        'image_filename': 'quantum-game-theory.webp',
+        'image_alt': 'تصویر مفهومی نظریه بازی کوانتومی، دو مهره شطرنج نوری پیوندیافته با حلقه درهم‌تنیدگی و امواج احتمالاتی',
+        'image_title': 'نظریه بازی کوانتومی',
         'content': art1_content
     },
     {
@@ -480,6 +483,9 @@ ARTICLES_DATA = [
         'modified': '2026-09-25 10:15:00',
         'analogy_concept': 'تمثیل شطرنج با مهره‌های دوگانه و پازل آینه‌های چرخان در خانه ارواح',
         'analogy_breakdown': 'در بازی‌های کلاسیک، چندشاخه شدن صرفاً کدهای موازی در رم است؛ اما در شطرنج کوانتومی واقعی روی پردازنده‌ها، تداخل فازها رخ می‌دهد و امواج می‌توانند اثر یکدیگر را خنثی یا تقویت کنند.',
+        'image_filename': 'quantum-games.webp',
+        'image_alt': 'تصویر مفهومی بازی‌های کوانتومی با صفحه و مهره‌های شطرنج نوری در وضعیت برهم‌نهی کوانتومی',
+        'image_title': 'بازی‌های کوانتومی',
         'content': art2_content
     },
     {
@@ -494,6 +500,9 @@ ARTICLES_DATA = [
         'modified': '2026-09-25 10:30:00',
         'analogy_concept': 'تمثیل تابش نور لیزر به منشور هزاروجهی برای پیدا کردن کوتاه‌ترین مسیر میان صدها شهر بدون تست تک‌تک راه‌ها',
         'analogy_breakdown': 'منشور نوری فوتون‌ها را بر اساس قوانین فیزیک تفکیک می‌کند و نیازی به پردازش داده‌های اقتصادی ندارد؛ در حالی که بازارهای مالی بازتابی از رفتار جمعی انسان‌ها، اخبار سیاسی و رویدادهای تصادفی هستند و کوانتوم فقط محاسبات ریسک را تسریع می‌کند نه اینکه آینده بازار را پیشگویی غیبی کند.',
+        'image_filename': 'quantum-finance.webp',
+        'image_alt': 'تصویر مفهومی محاسبات کوانتومی در وال‌استریت و بازارهای مالی با نمودار صعودی و احتمالات چندمسیره',
+        'image_title': 'محاسبات کوانتومی در وال‌استریت',
         'content': art3_content
     },
     {
@@ -508,6 +517,9 @@ ARTICLES_DATA = [
         'modified': '2026-09-25 10:45:00',
         'analogy_concept': 'تمثیل مسابقه ساخت صندوقچه‌های نامرئی و اشعه‌های همه‌جابین میان دو قلعه باستانی',
         'analogy_breakdown': 'اشعه ایکس کلاسیک با سپرهای ضخیم سربی متوقف می‌شود؛ اما برتری کوانتومی در امنیت ملی ماهیتی اطلاعاتی و نامرئی دارد. فناوری‌های کوانتومی ساختمان‌ها را منفجر نمی‌کنند، بلکه کلیدهای ارتباطات نظامی را غیرقابل ردیابی کرده یا سیستم‌های راداری پنهان‌کار را خنثی می‌سازند.',
+        'image_filename': 'quantum-arms-race.webp',
+        'image_alt': 'تصویر مفهومی مسابقه تسلیحاتی کوانتومی با نشانه‌گیر راداری نئونی و برهم‌کنش ذرات فوتون و الکترون',
+        'image_title': 'مسابقه تسلیحاتی کوانتومی',
         'content': art4_content
     },
     {
@@ -522,6 +534,9 @@ ARTICLES_DATA = [
         'modified': '2026-09-25 11:00:00',
         'analogy_concept': 'تمثیل زنگوله چندرشته‌ای در اتاق تاریک که با کمترین لرزش دست بیگانه هشدار می‌دهد',
         'analogy_breakdown': 'تار یا سیم کلاسیک را می‌توان با ابزار دقیق برید یا بای‌پَس کرد؛ اما در درهم‌تنیدگی کوانتومی GHZ، پیوند فازی ذرات در بنیاد قوانین جهان قرار دارد و تلاش برای شنود باعث تغییر بلافاصله بردار حالت کل سیستم می‌شود و همه کاربران از نفوذ باخبر می‌شوند.',
+        'image_filename': 'quantum-conference-key-agreement.webp',
+        'image_alt': 'تصویر مفهومی توافق کلید کوانتومی چندطرفه با هشت گره درهم‌تنیده حول قفل امنیتی نئونی',
+        'image_title': 'توافق کلید کوانتومی',
         'content': art5_content
     }
 ]
@@ -583,7 +598,10 @@ for art in ARTICLES_DATA:
         'internal_links_count': len(internal_links),
         'internal_links': internal_links,
         'analogy_concept': art['analogy_concept'],
-        'analogy_breakdown': art['analogy_breakdown']
+        'analogy_breakdown': art['analogy_breakdown'],
+        'featured_image': art.get('image_filename'),
+        'image_alt': art.get('image_alt'),
+        'image_title': art.get('image_title')
     }
     (target_dir / 'metadata.json').write_text(json.dumps(metadata, ensure_ascii=False, indent=2), encoding='utf-8')
     
@@ -634,6 +652,9 @@ for art in ARTICLES_DATA:
         'date': art['date'],
         'modified': art['modified'],
         'content': html_content,
+        'featured_image': art.get('image_filename'),
+        'image_alt': art.get('image_alt'),
+        'image_title': art.get('image_title'),
         'faqs': faqs,
         'schema': schema
     })
@@ -643,6 +664,18 @@ plugin_base = ROOT / 'article-rewrite-2026-09-22/importers/batch-5-special/qpedi
 plugin_base.mkdir(parents=True, exist_ok=True)
 
 (plugin_base / 'articles_data.json').write_text(json.dumps(importer_articles_payload, ensure_ascii=False, indent=2), encoding='utf-8')
+
+# Ensure images exist in plugin
+import shutil
+img_dest = plugin_base / 'images'
+img_dest.mkdir(parents=True, exist_ok=True)
+for item in importer_articles_payload:
+    fname = item.get('featured_image')
+    if fname:
+        src = ROOT / f'featured-images-batch-5/{fname}'
+        if src.exists():
+            shutil.copy2(src, img_dest / fname)
+            print(f'Embedded image: {fname} ({src.stat().st_size / 1024:.1f} KB)')
 
 php_plugin = r'''<?php
 /**
@@ -781,6 +814,56 @@ function qp_batch5_execute_import() {
 
             if (!empty($art['schema'])) {
                 update_post_meta($post_id, '_qpedia_schema_json', wp_json_encode($art['schema']));
+            }
+
+            // تنظیم خودکار تصویر شاخص WebP و متن جایگزین سئو
+            if (!empty($art['featured_image'])) {
+                $img_name = basename((string)$art['featured_image']);
+                $img_file = plugin_dir_path(__FILE__) . 'images/' . $img_name;
+
+                if (file_exists($img_file)) {
+                    $upload_dir = wp_upload_dir();
+                    $target_file = $upload_dir['path'] . '/' . $img_name;
+
+                    if (!file_exists($target_file)) {
+                        wp_mkdir_p($upload_dir['path']);
+                        copy($img_file, $target_file);
+                    }
+
+                    $base_slug = pathinfo($img_name, PATHINFO_FILENAME);
+                    $existing_img = get_posts(array(
+                        'post_type'      => 'attachment',
+                        'name'           => $base_slug,
+                        'posts_per_page' => 1,
+                        'post_status'    => 'inherit'
+                    ));
+
+                    if (!empty($existing_img)) {
+                        $attach_id = (int)$existing_img[0]->ID;
+                    } else {
+                        $wp_filetype = wp_check_filetype($img_name, null);
+                        $attachment = array(
+                            'guid'           => $upload_dir['url'] . '/' . $img_name,
+                            'post_mime_type' => !empty($wp_filetype['type']) ? $wp_filetype['type'] : 'image/webp',
+                            'post_title'     => sanitize_text_field(!empty($art['image_title']) ? $art['image_title'] : $h1),
+                            'post_content'   => '',
+                            'post_status'    => 'inherit'
+                        );
+                        $attach_id = wp_insert_attachment($attachment, $target_file, $post_id);
+                        if (!is_wp_error($attach_id) && $attach_id > 0) {
+                            require_once(ABSPATH . 'wp-admin/includes/image.php');
+                            $attach_data = wp_generate_attachment_metadata($attach_id, $target_file);
+                            wp_update_attachment_metadata($attach_id, $attach_data);
+                        }
+                    }
+
+                    if (!empty($attach_id) && !is_wp_error($attach_id)) {
+                        set_post_thumbnail($post_id, $attach_id);
+                        update_post_meta($attach_id, '_wp_attachment_image_alt', sanitize_text_field(!empty($art['image_alt']) ? $art['image_alt'] : $h1));
+                        update_post_meta($post_id, '_thumbnail_id', $attach_id);
+                        $log[] = '🖼️ تصویر شاخص WebP متصل شد: ' . $img_name . ' (شناسه رسانه ' . $attach_id . ')';
+                    }
+                }
             }
         }
     }
